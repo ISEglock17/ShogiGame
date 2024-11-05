@@ -3,6 +3,12 @@ import threading
 import time
 import re
 
+"""
+メモ
+
+問題点:
+・まだ合法手の判別ができない。(動かせない駒の動きは検出できるが，成れるかどうか，詰みかどうかの判定ができない)
+"""
 
 def sfen_to_board(sfen):
     """ SFEN表記を解析し、盤面、手番、持ち駒、手数を返す関数 """
