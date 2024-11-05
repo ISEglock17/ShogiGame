@@ -3,7 +3,6 @@ import threading
 import time
 import re
 
-
 def sfen_to_board(sfen):
     """ SFEN表記を解析し、盤面、手番、持ち駒、手数を返す関数 """
     # SFEN表記をスペースで分割して、各情報を取得
@@ -185,19 +184,18 @@ def apply_move(sfen, move):
     # SFEN形式の持ち駒を辞書に変換する
     captured_pieces = {}
     i = 0
-    if captured_pieces_sfen != '-':
-        while i < len(captured_pieces_sfen):
-            char = captured_pieces_sfen[i]
-            if char.isdigit():
-                i += 1
-                continue
-            if i + 1 < len(captured_pieces_sfen) and captured_pieces_sfen[i + 1].isdigit():
-                count = int(captured_pieces_sfen[i + 1])
-                i += 2
-            else:
-                count = 1
-                i += 1
-            captured_pieces[char] = captured_pieces.get(char, 0) + count
+    while i < len(captured_pieces_sfen):
+        char = captured_pieces_sfen[i]
+        if char.isdigit():
+            i += 1
+            continue
+        if i + 1 < len(captured_pieces_sfen) and captured_pieces_sfen[i + 1].isdigit():
+            count = int(captured_pieces_sfen[i + 1])
+            i += 2
+        else:
+            count = 1
+            i += 1
+        captured_pieces[char] = captured_pieces.get(char, 0) + count
 
     try:
         # 成りの指示があるかを判定
@@ -235,8 +233,6 @@ def apply_move(sfen, move):
             # 移動先に駒があれば捕獲する
             captured_piece = board[to_row][to_col].strip()
             if captured_piece and captured_piece != ".":
-                if captured_piece[0] == '+':
-                    captured_piece = captured_piece[1]
                 captured_piece_name = captured_piece.upper() if turn == "b" else captured_piece.lower()
                 count = captured_pieces.get(captured_piece_name, 0) + 1
                 captured_pieces[captured_piece_name] = count
@@ -247,7 +243,7 @@ def apply_move(sfen, move):
             
             # 駒を移動先に配置
             board[to_row][to_col] = piece
-                
+        
         # 持ち駒を SFEN 形式に変換
         if not captured_pieces:  # 持ち駒が空の場合
             captured_pieces_str = "-"
@@ -272,132 +268,17 @@ def apply_move(sfen, move):
         return -1
 
 
-# やねうら王の応答を読み取る
-def read_output(process, response_queue):
-    while True:
-        output = process.stdout.readline()
-        if output == '' and process.poll() is not None:
-            break
-        if output:
-            print(f"やねうら王の応答: {output.strip()}")
-            if any(keyword in output for keyword in ["readyok", "bestmove", "Error"]):
-                response_queue.append(output.strip())
+sfen = initialize_board()
+sfen = "lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/9/LNSGKGSNL b BR 1"
+print(sfen)
+display_board(sfen)
 
-# やねうら王を起動
-def run_yaneuraou():
-    executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
-    
-    process = subprocess.Popen(
-        [executable_path], 
-        stdin=subprocess.PIPE, 
-        stdout=subprocess.PIPE, 
-        stderr=subprocess.PIPE, 
-        text=True,
-        encoding='shift_jis'
-    )
-
-    response_queue = []
-    thread = threading.Thread(target=read_output, args=(process, response_queue))
-    thread.start()
-
-    # やねうら王の準備コマンド
-    initial_commands = ["usi\n", "isready\n", "usinewgame\n"]
-    for command in initial_commands:
-        process.stdin.write(command)
-        process.stdin.flush()
-        time.sleep(0.5)
-
-    while "readyok" not in response_queue:
-        time.sleep(0.1)
-
-    response_queue.pop(0)
-    sfen = initialize_board()
-    display_board(sfen)
-    print("対局を開始します。指し手を入力してください (例: '7g7f')。'q' を入力すると終了します。")
-    moves = []
-
-
-
-    try:
-        # ユーザーの指し手を適用する前に、やねうら王に問い合わせを行う
-        while True:
-            user_move = input("あなたの指し手: ").strip()
-            if user_move.lower() == 'q':
-                print("対局を終了します。")
-                break
-
-            # USI形式の指し手のバリエーション (移動, 持ち駒, 成る)
-            if not re.match(r"^[1-9][a-i][1-9][a-i](\+)?$|^[PLNSBRGK]\*[1-9][a-i]$", user_move):
-                print("無効な指し手です。移動は '7g7f'、持ち駒を打つ場合は 'P*5e'、成る場合は '7g7f+' の形式で入力してください。")
-                continue
-
-            # 現在の指し手をmovesに追加
-            moves.append(user_move)
-
-            # 指し手を盤面に適用してみる（エラーがないかチェック）
-            position_command = f"position startpos moves {' '.join(moves)}\n"
-            process.stdin.write(position_command)
-            process.stdin.flush()
-            time.sleep(0.1)
-        
-            # 合法手かの確認
-            if response_queue:
-                response = response_queue.pop(0)
-                if "Illegal Input Move" in response:
-                    print(f"エラー: {response.strip()}\n無効な指し手のため、最後の指し手を取り消します。")
-                    moves.pop()  # 無効な指し手をリストから削除
-                    display_board(sfen)  # 盤面を再表示
-                    print(sfen)
-                    continue # ループを抜けて再入力を促す
-
-            if apply_move(sfen, user_move) == -1:
-                continue
-            else:
-                sfen = apply_move(sfen, user_move)
-            display_board(sfen)
-            print(sfen)
-            
-            process.stdin.write("go depth 10\n")
-            process.stdin.flush()
-
-            start_time = time.time()
-            yaneuraou_move = None
-
-            while True:
-                if response_queue:
-                    response = response_queue.pop(0)
-                    print(f"やねうら王の応答: {response}")  # 応答を表示
-                    if "bestmove" in response:
-                        yaneuraou_move = response.split(" ")[1]
-                        print(f"やねうら王の指し手: {yaneuraou_move}")
-                        moves.append(yaneuraou_move)
-                        
-                        if apply_move(sfen, yaneuraou_move) == -1:
-                            continue
-                        else:
-                            sfen = apply_move(sfen, yaneuraou_move)
-                        display_board(sfen)
-                        print(sfen)
-                        break
-                    
-
-                # やねうら王の応答が遅い場合
-                if time.time() - start_time > 10:
-                    print("やねうら王の応答が遅いため、もう一度検索します。")
-                    process.stdin.write("go depth 10\n")
-                    process.stdin.flush()
-                    start_time = time.time()
-
-                time.sleep(0.1)
-
-
-    except Exception as e:
-        print(f"エラーが発生しました: {e}")
-    finally:
-        process.terminate()
-        thread.join()
-        print("やねうら王のプロセスが終了しました。")
-
-# 実行
-if __name__ == "__main__":
-    run_yaneuraou()
+while True:
+    move = input("駒の動きは: ")
+    if move != 'q':
+        sfen = apply_move(sfen, move)
+        display_board(sfen)
+        print(sfen)
+        continue
+    else:
+        break
