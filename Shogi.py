@@ -148,6 +148,7 @@ def run_yaneuraou():
             position_command = f"position startpos moves {' '.join(moves)}\n"
             process.stdin.write(position_command)
             process.stdin.flush()
+            time.sleep(0.1)
         
             # 合法手かの確認
             if response_queue:
