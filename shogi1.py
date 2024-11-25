@@ -34,12 +34,12 @@ def play_game(executable_path):
     try:
         # やねうら王の起動と初期化
         
-        process = start_yaneuraou(executable_path)
-        threading.Thread(target=read_output, args=(process, response_queue), daemon=True).start()
-        initialize_yaneuraou(process, response_queue)
+        process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
+        threading.Thread(target=read_output, args=(process, response_queue), daemon=True).start()   # スレッドの準備
+        initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
 
-        sfen = initialize_board()
-        display_board(sfen)
+        sfen = initialize_board()   # 盤面の初期化
+        display_board(sfen) # 盤面の表示
         print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
         moves = []
 
