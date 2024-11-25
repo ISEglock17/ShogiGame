@@ -6,6 +6,7 @@ import threading
 from multiprocessing import process
 import time
 from concurrent.futures import thread
+import re
 
 #-----------------------------------------------------------------------------------
 #　盤面表示
@@ -383,22 +384,16 @@ def process_user_move(sfen, user_move, moves, process, response_queue):
         response = response_queue.pop(0)
         if "Illegal Input Move" in response:
             print(f"エラー: {response.strip()}\n無効な指し手のため、最後の指し手を取り消します。")
-            moves.pop()  # 無効な指し手をリストから削除
-            display_board(sfen)  # 盤面を再表示
-            print(sfen)
+            moves.pop() # moveを取り消す
             return sfen, False
     
     # 指し手が有効なら盤面を更新
     if apply_move(sfen, user_move) != -1:
         sfen = apply_move(sfen, user_move)
-        display_board(sfen)
-        print(sfen)
         return sfen, True
     else:
         print("無効な指し手です。")
-        moves.pop()  # 無効な指し手を削除
-        display_board(sfen)  # 盤面を再表示
-        print(sfen)
+        moves.pop() # moveを取り消す
         return sfen, False
 
 
@@ -418,4 +413,17 @@ def get_engine_move(process, response_queue):
             send_command(process, "go depth 10")
         time.sleep(0.1)
 
+
+def process_engine_move(sfen, engine_move, moves):
+    """
+    やねうら王の指し手を処理する。
+    合法であれば盤面を更新し、合法性を返す。
+    """
+    new_sfen = apply_move(sfen, engine_move)
+    if new_sfen != -1:
+        moves.append(engine_move)
+        return new_sfen, True
+    else:
+        moves.pop() # moveを取り消す
+        return sfen, False
 
