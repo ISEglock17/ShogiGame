@@ -12,7 +12,7 @@ def read_output(process):
 
 def run_yaneuraou():
     # やねうら王の実行ファイル名を指定（環境に応じて適宜変更）
-    executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
+    executable_path = "./YaneuraOu/windows/YaneuraOu_MATE/YaneuraOu_MATE-tournament-clang++-avx2.exe"
     
     # やねうら王のプロセスを起動（UTF-8エンコードを指定）
     process = subprocess.Popen(

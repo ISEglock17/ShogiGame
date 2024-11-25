@@ -1,9 +1,11 @@
 from multiprocessing import process
+from pygame.locals import *
 import subprocess
 import threading
 import time
 import re
-from tkinter import messagebox
+import pygame
+import sys
 
 """
 メモ
@@ -159,9 +161,45 @@ def initialize_board():
     return initial_sfen
 
 
+
+def draw_board(board):
+    """
+    SFEN解析済みの盤面データをもとに描画
+    :param board: 2Dリスト形式の盤面
+    """
+    screen.blit(board_img, (0, 0))  # 盤面画像を描画
+    for row in range(9):
+        for col in range(9):
+            piece = board[row][col]
+            if piece != ".":
+                piece_image = piece_images.get(piece.upper(), None)
+                if piece_image:
+                    x = int(BOARD_POS[0] + col * CELL_SIZE[0])
+                    y = int(BOARD_POS[1] + row * CELL_SIZE[1])
+                    # 駒を描画
+                    screen.blit(piece_image, (x, y))
+
 def display_board(sfen):
     """ 盤面を表示するメソッド """
     board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+
+    """
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+    """
+    # 盤面描画
+    draw_board(board)
+    pygame.display.flip()
+    clock.tick(60)
+
+    # pygame.quit()
+    
+    
+    """
     print("    9   8   7   6   5   4   3   2   1")
     letters = "abcdefghi"
     
@@ -174,7 +212,7 @@ def display_board(sfen):
             else:
                 row_str += " " + piece + "  "  # +が含まれていない場合は前にスペースを追加
         print(row_str)
-
+    """
     
     # 手番の表示
     print("\n手番:", turn_to_turn_player(turn))
@@ -434,7 +472,56 @@ def run_yaneuraou():
         process.terminate()
         thread.join()
         print("やねうら王のプロセスが終了しました。")
+        
+    
 
-# 実行
+
+
+
+
+                    
+
+#**********************************************
+#　　　　初期化
+#**********************************************
+import pygame
+
+# ウィンドウサイズと座標定義
+WINDOW_SIZE = 800
+BOARD_IMAGE_SIZE = 4000
+BOARD_POS = (145 / BOARD_IMAGE_SIZE * WINDOW_SIZE, 152 / BOARD_IMAGE_SIZE * WINDOW_SIZE)  # 盤面左上
+BOARD_END = (3873 / BOARD_IMAGE_SIZE * WINDOW_SIZE, 3851 / BOARD_IMAGE_SIZE * WINDOW_SIZE)  # 盤面右下
+CELL_SIZE = (BOARD_END[0] - BOARD_POS[0]) / 9, (BOARD_END[1] - BOARD_POS[1]) / 9  # 各マスの幅・高さ
+
+#**********************************************
+#　　　　メイン処理
+#**********************************************
 if __name__ == "__main__":
+    # 初期化と設定
+    pygame.init()
+    screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
+    pygame.display.set_caption("将棋GUI")
+    clock = pygame.time.Clock()
+
+    # 画像ロード
+    board_img = pygame.image.load("./image/board.png")
+    board_img = pygame.transform.scale(board_img, (WINDOW_SIZE, WINDOW_SIZE))  # ウィンドウに合わせて縮小
+    piece_images = {}
+    
+    # 駒画像をロード（例: ./image/pieces/P.png など）
+    PIECES = ["P", "+P", "L", "+L", "N", "+N", "S", "+S", "G", "B", "+B", "R", "+R", "K"]
+    PIECES_NAME = ["fuhyo", "to", "kyosha", "nari-kyo", "keima", "nari-kei", "ginsho", "nari-gin", "kinsho", "kakugyo", "ryuma", "hisha", "ryuou", "ousho"]
+    pieces_dict = dict(zip(PIECES, PIECES_NAME))
+    for piece in PIECES:
+        image = pygame.image.load(f"./image/pieces/{pieces_dict[piece]}.png")
+        piece_images[piece] = pygame.transform.scale(image, (int(CELL_SIZE[0]), int(CELL_SIZE[1]))) 
+        
     run_yaneuraou()
+    
+    
+    #イベント処理
+    for event in pygame.event.get():
+        if event.type == QUIT: #閉じるボタンが押されたら終了
+            pygame.quit() #Pygameの終了(画面閉じられる)
+            sys.exit()
+

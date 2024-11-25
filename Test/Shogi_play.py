@@ -15,7 +15,7 @@ def read_output(process, response_queue):
                 response_queue.append(output.strip())
 
 def run_yaneuraou():
-    executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
+    executable_path = "./YaneuraOu/windows/YaneuraOu_MATE/YaneuraOu_MATE-tournament-clang++-avx2.exe"
     
     process = subprocess.Popen(
         [executable_path], 
