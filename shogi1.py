@@ -27,73 +27,6 @@ def main():
     play_game(executable_path)
 
 
-
-def initialize_yaneuraou(process, response_queue):
-    """やねうら王の初期化コマンドを送信"""
-    initial_commands = ["usi", "isready", "usinewgame"]
-    for command in initial_commands:
-        send_command(process, command)
-        time.sleep(0.5)  # 応答を待つ時間
-    # 応答キューに "readyok" が来るまで待機
-    while "readyok" not in response_queue:
-        time.sleep(0.1)
-        
-    response_queue.pop(0)
-
-def process_user_move(sfen, user_move, moves, process, response_queue):
-    """ユーザーの指し手を処理"""
-    # 入力形式を検証
-    if not re.match(r"^[1-9][a-i][1-9][a-i](\+)?$|^[PLNSBRGK]\*[1-9][a-i]$", user_move):
-        print("無効な指し手です。正しい形式で入力してください。")
-        return sfen, False
-
-    moves.append(user_move)
-    # やねうら王に指し手を送信
-    position_command = f"position startpos moves {' '.join(moves)}"
-    send_command(process, position_command)    
-    time.sleep(0.1)
-
-    # 合法手かの確認
-    if response_queue:
-        response = response_queue.pop(0)
-        if "Illegal Input Move" in response:
-            print(f"エラー: {response.strip()}\n無効な指し手のため、最後の指し手を取り消します。")
-            moves.pop()  # 無効な指し手をリストから削除
-            display_board(sfen)  # 盤面を再表示
-            print(sfen)
-            return sfen, False
-    
-    # 指し手が有効なら盤面を更新
-    if apply_move(sfen, user_move) != -1:
-        sfen = apply_move(sfen, user_move)
-        display_board(sfen)
-        print(sfen)
-        return sfen, True
-    else:
-        print("無効な指し手です。")
-        moves.pop()  # 無効な指し手を削除
-        display_board(sfen)  # 盤面を再表示
-        print(sfen)
-        return sfen, False
-
-
-def get_engine_move(process, response_queue):
-    """やねうら王の指し手を取得"""
-    send_command(process, "go depth 10")
-    start_time = time.time()
-    
-    while True:
-        if response_queue:
-            response = response_queue.pop(0)
-            if "bestmove" in response:
-                move = response.split(" ")[1]
-                return move
-        if time.time() - start_time > 10:  # タイムアウトの処理
-            print("応答が遅延しています。再送信します。")
-            send_command(process, "go depth 10")
-        time.sleep(0.1)
-
-
 def play_game(executable_path):
     """対局のメインループ"""
     process = None
@@ -137,7 +70,6 @@ def play_game(executable_path):
     finally:
         if process:
             stop_yaneuraou(process)
-
 
 
 
