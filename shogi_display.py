@@ -1,6 +1,13 @@
 #-----------------------------------------------------------------------------------
 #　将棋の表示に関する関数
 #-----------------------------------------------------------------------------------
+import subprocess
+import threading
+from multiprocessing import process
+import time
+from concurrent.futures import thread
+
+
 def sfen_to_board(sfen):
     """ SFEN表記を解析し、盤面、手番、持ち駒、手数を返す関数 """
     # SFEN表記をスペースで分割して、各情報を取得
@@ -299,13 +306,38 @@ def apply_move(sfen, move):
         return -1
 
 
+def start_yaneuraou(executable_path):
+    """やねうら王のプロセスを起動"""
+    process = subprocess.Popen(
+        [executable_path],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding='shift_jis'
+    )
+    return process
+
+
+def stop_yaneuraou(process):
+    """やねうら王のプロセスを終了"""
+    if process:
+        process.terminate()
+
+
+def send_command(process, command):
+    """やねうら王にコマンドを送信"""
+    process.stdin.write(command + "\n")
+    process.stdin.flush()
+
+
 def read_output(process, response_queue):
-    """ やねうら王の応答を読み取る関数 """
+    """ やねうら王の応答を非同期で読みとる関数 """
     while True:
         output = process.stdout.readline()
         if output == '' and process.poll() is not None:
             break
         if output:
             print(f"やねうら王の応答: {output.strip()}")
-            if any(keyword in output for keyword in ["readyok", "bestmove", "Error"]):
+            if any(keyword in output for keyword in ["readyok", "bestmove", "multipv", "Error"]):
                 response_queue.append(output.strip())
