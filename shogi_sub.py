@@ -388,8 +388,9 @@ def process_user_move(sfen, user_move, moves, process, response_queue):
             return sfen, False
     
     # 指し手が有効なら盤面を更新
-    if apply_move(sfen, user_move) != -1:
-        sfen = apply_move(sfen, user_move)
+    result = apply_move(sfen, user_move)
+    if result != -1:
+        sfen = result
         return sfen, True
     else:
         print("無効な指し手です。")
