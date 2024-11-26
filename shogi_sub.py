@@ -7,9 +7,45 @@ from multiprocessing import process
 import time
 from concurrent.futures import thread
 import re
-
+import pygame
+from pygame.locals import *
+import sys
+    
 #-----------------------------------------------------------------------------------
-#　盤面表示
+#　Pygame 初期化
+#-----------------------------------------------------------------------------------
+
+# ウィンドウサイズと座標定義
+WINDOW_SIZE_X = 1600
+WINDOW_SIZE_Y = 1000
+BOARD_IMAGE_SIZE = 4000
+BOARD_SIZE_X = 800
+BOARD_SIZE_Y = 800
+BOARD_POS = (145 / BOARD_IMAGE_SIZE * BOARD_SIZE_X, 152 / BOARD_IMAGE_SIZE * BOARD_SIZE_Y)  # 盤面左上
+BOARD_END = (3873 / BOARD_IMAGE_SIZE * BOARD_SIZE_X, 3851 / BOARD_IMAGE_SIZE * BOARD_SIZE_Y)  # 盤面右下
+CELL_SIZE = (BOARD_END[0] - BOARD_POS[0]) / 9, (BOARD_END[1] - BOARD_POS[1]) / 9  # 各マスの幅・高さ
+
+
+screen = pygame.display.set_mode((WINDOW_SIZE_X, WINDOW_SIZE_Y))
+pygame.display.set_caption("将棋GUI")
+clock = pygame.time.Clock()
+    
+# 画像ロード
+board_img = pygame.image.load("./image/board.png")
+board_img = pygame.transform.scale(board_img, (BOARD_SIZE_X, BOARD_SIZE_Y))  # ウィンドウに合わせて縮小
+piece_images = {}
+
+# 駒画像をロード（例: ./image/pieces/P.png など）
+PIECES = ["P", "+P", "L", "+L", "N", "+N", "S", "+S", "G", "B", "+B", "R", "+R", "K"]
+PIECES_NAME = ["fuhyo", "to", "kyosha", "nari-kyo", "keima", "nari-kei", "ginsho", "nari-gin", "kinsho", "kakugyo", "ryuma", "hisha", "ryuou", "ousho"]
+pieces_dict = dict(zip(PIECES, PIECES_NAME))
+for piece in PIECES:
+    image = pygame.image.load(f"./image/pieces/{pieces_dict[piece]}.png")
+    piece_images[piece] = pygame.transform.scale(image, (int(CELL_SIZE[0]), int(CELL_SIZE[1]))) 
+    
+    
+#-----------------------------------------------------------------------------------
+#　盤面表示 関数
 #-----------------------------------------------------------------------------------
 def sfen_to_board(sfen):
     """ SFEN表記を解析し、盤面、手番、持ち駒、手数を返す関数 """
@@ -307,6 +343,45 @@ def apply_move(sfen, move):
     except (ValueError, IndexError):
         print(f"無効な指し手の形式です: {move}。 '7g7f' または 'P*7f' のように入力してください。")
         return -1
+
+
+#-----------------------------------------------------------------------------------
+#　Pygame 盤面表示 関数
+#-----------------------------------------------------------------------------------
+
+
+def convert_click_to_board(click_pos):
+    """クリック位置をボード上のSFEN座標に変換"""
+    x, y = click_pos
+    board_x = int((x - BOARD_POS[0]) / CELL_SIZE[0])
+    board_y = int((y - BOARD_POS[1]) / CELL_SIZE[1])
+    if 0 <= board_x < 9 and 0 <= board_y < 9:
+        sfen_x = 9 - board_x
+        sfen_y = chr(ord('a') + board_y)
+        return f"{sfen_x}{sfen_y}"  # ボード内なら座標を返す
+    else:
+        return None  # ボード外なら無効
+    
+def draw_board(board):
+    """
+    SFEN解析済みの盤面データをもとに描画
+    :param board: 2Dリスト形式の盤面
+    """
+    screen.blit(board_img, (0, 0))  # 盤面画像を描画
+    for row in range(9):
+        for col in range(9):
+            piece = board[row][col]
+            if piece != ".":
+                piece_image = piece_images.get(piece.upper(), None)
+                if piece.islower():  # 小文字 => 後手の駒
+                        piece_image = pygame.transform.flip(piece_image, False, True)  # 後手の駒は上下反転
+                if piece_image:
+                    x = int(BOARD_POS[0] + col * CELL_SIZE[0])
+                    y = int(BOARD_POS[1] + row * CELL_SIZE[1])
+                    # 駒を描画
+                    screen.blit(piece_image, (x, y))
+
+
 
 #-----------------------------------------------------------------------------------
 #　やねうら王の動作
