@@ -16,50 +16,23 @@ from shogi_sub import *
 問題点:
 ・まだ合法手の判別ができない。(動かせない駒の動きは検出できるが，成れるかどうか，詰みかどうかの判定ができない)
 """
+#-----------------------------------------------------------------------------------
+#　初期化
+#-----------------------------------------------------------------------------------
 executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
 
 pygame.init()
-    
-    
-# ウィンドウサイズと座標定義
-WINDOW_SIZE = 800
-BOARD_IMAGE_SIZE = 4000
-BOARD_POS = (145 / BOARD_IMAGE_SIZE * WINDOW_SIZE, 152 / BOARD_IMAGE_SIZE * WINDOW_SIZE)  # 盤面左上
-BOARD_END = (3873 / BOARD_IMAGE_SIZE * WINDOW_SIZE, 3851 / BOARD_IMAGE_SIZE * WINDOW_SIZE)  # 盤面右下
-CELL_SIZE = (BOARD_END[0] - BOARD_POS[0]) / 9, (BOARD_END[1] - BOARD_POS[1]) / 9  # 各マスの幅・高さ
 
-
-screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
-pygame.display.set_caption("将棋GUI")
-clock = pygame.time.Clock()
-
-
-    
-# 画像ロード
-board_img = pygame.image.load("./image/board.png")
-board_img = pygame.transform.scale(board_img, (WINDOW_SIZE, WINDOW_SIZE))  # ウィンドウに合わせて縮小
-piece_images = {}
-
-# 駒画像をロード（例: ./image/pieces/P.png など）
-PIECES = ["P", "+P", "L", "+L", "N", "+N", "S", "+S", "G", "B", "+B", "R", "+R", "K"]
-PIECES_NAME = ["fuhyo", "to", "kyosha", "nari-kyo", "keima", "nari-kei", "ginsho", "nari-gin", "kinsho", "kakugyo", "ryuma", "hisha", "ryuou", "ousho"]
-pieces_dict = dict(zip(PIECES, PIECES_NAME))
-for piece in PIECES:
-    image = pygame.image.load(f"./image/pieces/{pieces_dict[piece]}.png")
-    piece_images[piece] = pygame.transform.scale(image, (int(CELL_SIZE[0]), int(CELL_SIZE[1]))) 
-    
 #-----------------------------------------------------------------------------------
 #　関数部
 #-----------------------------------------------------------------------------------
 def main():
     """ メインメソッド """
-
-    
     state_queue = queue.Queue()    # SFEN状態の共有
     command_queue = queue.Queue()  # ユーザー指し手や入力の共有
     
-    engine_thread = threading.Thread(target=play_game, args=(executable_path, state_queue, command_queue), daemon=True)
-    engine_thread.start()
+    game_thread = threading.Thread(target=play_game, args=(executable_path, state_queue, command_queue), daemon=True)
+    game_thread.start()
 
     running = True
     
@@ -83,49 +56,19 @@ def main():
             if response == 'q':
                 running = False
         
+        # 表示の更新
         pygame.display.flip()
         # FPS制御
         clock.tick(60)
     
-      # やねうら王スレッドの終了を待つ
-    if engine_thread.is_alive():
-        engine_thread.join()
+    # やねうら王スレッドの終了を待つ
+    if game_thread.is_alive():
+        game_thread.join()
         
     pygame.quit()
     print("終了しました。")
             
 
-
-def convert_click_to_board(click_pos):
-    """クリック位置をボード上の座標に変換"""
-    x, y = click_pos
-    board_x = int((x - BOARD_POS[0]) / CELL_SIZE[0])
-    board_y = int((y - BOARD_POS[1]) / CELL_SIZE[1])
-    if 0 <= board_x < 9 and 0 <= board_y < 9:
-        sfen_x = 9 - board_x
-        sfen_y = chr(ord('a') + board_y)
-        return f"{sfen_x}{sfen_y}"  # ボード内なら座標を返す
-    else:
-        return None  # ボード外なら無効
-    
-def draw_board(board):
-    """
-    SFEN解析済みの盤面データをもとに描画
-    :param board: 2Dリスト形式の盤面
-    """
-    screen.blit(board_img, (0, 0))  # 盤面画像を描画
-    for row in range(9):
-        for col in range(9):
-            piece = board[row][col]
-            if piece != ".":
-                piece_image = piece_images.get(piece.upper(), None)
-                if piece.islower():  # 小文字 => 後手の駒
-                        piece_image = pygame.transform.flip(piece_image, False, True)  # 後手の駒は上下反転
-                if piece_image:
-                    x = int(BOARD_POS[0] + col * CELL_SIZE[0])
-                    y = int(BOARD_POS[1] + row * CELL_SIZE[1])
-                    # 駒を描画
-                    screen.blit(piece_image, (x, y))
                     
 
 
@@ -143,10 +86,11 @@ def play_game(executable_path, state_queue, command_queue):
         initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
 
         sfen = initialize_board()   # 盤面の初期化
-        print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
-        moves = []
-
+        moves = [] # 棋譜を入れるリスト
         winner = None
+        
+        print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
+        
         
         while True:
             if winner != None:
@@ -158,8 +102,7 @@ def play_game(executable_path, state_queue, command_queue):
                 draw_board(board)
                 display_board(sfen)
                 print(sfen)
-                # 指し手の入力待ち
-                # user_move = input("あなたの指し手: ").strip()
+
                 print("どの駒を?")
                 while command_queue.empty():
                     pass
@@ -169,6 +112,7 @@ def play_game(executable_path, state_queue, command_queue):
                     winner = 0
                     break
                 print(user_move1)
+
                 print("どこに動かす?")
                 while command_queue.empty():
                     pass
@@ -185,8 +129,6 @@ def play_game(executable_path, state_queue, command_queue):
                     winner = 0
                     break
                 
-                
-                #user_move = input("あなたの指し手: ").strip()
                 if user_move.lower() == 'q':
                     print("対局を終了します。")
                     winner = 0
