@@ -10,6 +10,7 @@ import re
 import pygame
 from pygame.locals import *
 import sys
+import pygame.mixer
     
 #-----------------------------------------------------------------------------------
 #　Pygame 初期化
@@ -42,8 +43,22 @@ pieces_dict = dict(zip(PIECES, PIECES_NAME))
 for piece in PIECES:
     image = pygame.image.load(f"./image/pieces/{pieces_dict[piece]}.png")
     piece_images[piece] = pygame.transform.scale(image, (int(CELL_SIZE[0]), int(CELL_SIZE[1]))) 
-    
-    
+
+
+pygame.mixer.init() #初期化
+
+beep_se = pygame.mixer.Sound("./bgm/SE/beep.mp3")
+koma_se = pygame.mixer.Sound("./bgm/SE/koma_put.mp3")
+pop1_se = pygame.mixer.Sound("./bgm/SE/pop1.mp3")
+push_se = pygame.mixer.Sound("./bgm/SE/push.mp3")
+yoroshiku_se = pygame.mixer.Sound("./bgm/SE/yoroshiku.mp3")
+
+pygame.mixer.music.load("./bgm/battle.mp3") #読み込み
+
+pygame.mixer.music.play(1) #再生
+
+pygame.mixer.music.set_volume(0.2)    
+
 #-----------------------------------------------------------------------------------
 #　盤面表示 関数
 #-----------------------------------------------------------------------------------
@@ -380,6 +395,7 @@ def draw_board(board):
                     y = int(BOARD_POS[1] + row * CELL_SIZE[1])
                     # 駒を描画
                     screen.blit(piece_image, (x, y))
+
 
 
 

@@ -9,6 +9,7 @@ import pygame
 from pygame.locals import *
 import sys
 from shogi_sub import *
+import pygame.mixer
 
 """
 メモ
@@ -35,6 +36,8 @@ def main():
     game_thread.start()
 
     running = True
+    
+
     
     while running:
         #イベント処理
@@ -65,6 +68,7 @@ def main():
     if game_thread.is_alive():
         game_thread.join()
         
+    pygame.mixer.music.stop() #終了
     pygame.quit()
     print("終了しました。")
             
@@ -90,6 +94,7 @@ def play_game(executable_path, state_queue, command_queue):
         winner = None
         
         print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
+        yoroshiku_se.play()
         
         
         while True:
@@ -112,6 +117,7 @@ def play_game(executable_path, state_queue, command_queue):
                     winner = 0
                     break
                 print(user_move1)
+                pop1_se.play()
 
                 print("どこに動かす?")
                 while command_queue.empty():
@@ -122,6 +128,7 @@ def play_game(executable_path, state_queue, command_queue):
                     winner = 0
                     break
                 print(user_move2)
+                pop1_se.play()
                 
                 user_move = f"{user_move1}{user_move2}"
                 if user_move == 'q':
@@ -136,9 +143,14 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)    # プレイヤーの指し手を適用
                 if not valid:
+                    beep_se.play()
                     continue
                 else:
+                    koma_se.play()
                     break
+                
+            if winner != None:
+                break
                 
             # エンジンのターン
             while True:
@@ -151,9 +163,11 @@ def play_game(executable_path, state_queue, command_queue):
                 engine_move = get_engine_move(process, response_queue)  
                 sfen, valid = process_engine_move(sfen, engine_move, moves) # エンジンの指し手を適用
                 if not valid:
+                    beep_se.play()
                     continue
                 else:
                     print(f"やねうら王の指し手: {engine_move}")
+                    koma_se.play()
                     break
 
 
@@ -162,6 +176,7 @@ def play_game(executable_path, state_queue, command_queue):
     finally:
         state_queue.put("q")
         stop_yaneuraou(process)
+        pygame.mixer.music.stop() #終了
         """
         # スレッドの終了を待つ
         if yaneura_thread:
@@ -173,4 +188,5 @@ def play_game(executable_path, state_queue, command_queue):
 #-----------------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
+    
     
