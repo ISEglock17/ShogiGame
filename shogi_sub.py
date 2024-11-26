@@ -328,7 +328,7 @@ def stop_yaneuraou(process):
     """やねうら王のプロセスを終了"""
     if process:
         process.terminate()
-
+        process.wait()
 
 def send_command(process, command):
     """やねうら王にコマンドを送信"""

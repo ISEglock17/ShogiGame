@@ -7,7 +7,7 @@ import re
 import pygame
 from pygame.locals import *
 import sys
-from shogi_display import *
+from shogi_sub import *
 
 """
 メモ
