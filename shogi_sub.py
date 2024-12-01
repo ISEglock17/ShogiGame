@@ -26,6 +26,10 @@ BOARD_POS = (145 / BOARD_IMAGE_SIZE * BOARD_SIZE_X, 152 / BOARD_IMAGE_SIZE * BOA
 BOARD_END = (3873 / BOARD_IMAGE_SIZE * BOARD_SIZE_X, 3851 / BOARD_IMAGE_SIZE * BOARD_SIZE_Y)  # 盤面右下
 CELL_SIZE = (BOARD_END[0] - BOARD_POS[0]) / 9, (BOARD_END[1] - BOARD_POS[1]) / 9  # 各マスの幅・高さ
 
+CAPTURED_PIECES_PLACE_WIDTH, CAPTURED_PIECES_PLACE_HEIGHT = 400, 300    #駒置きの大きさ
+
+background_color = (255, 255, 255)  # 背景色
+
 
 screen = pygame.display.set_mode((WINDOW_SIZE_X, WINDOW_SIZE_Y))
 pygame.display.set_caption("将棋GUI")
@@ -44,9 +48,29 @@ for piece in PIECES:
     image = pygame.image.load(f"./image/pieces/{pieces_dict[piece]}.png")
     piece_images[piece] = pygame.transform.scale(image, (int(CELL_SIZE[0]), int(CELL_SIZE[1]))) 
 
+# 駒置き画像のロード
+captured_pieces_place_img = pygame.image.load("./image/komaoki.png")
+captured_pieces_place_img = pygame.transform.scale(captured_pieces_place_img, (CAPTURED_PIECES_PLACE_WIDTH, CAPTURED_PIECES_PLACE_HEIGHT)) # 駒置きの大きさを縮小
 
+# マーク画像のロード
+mark_img = pygame.image.load("./image/mark_frame.png")
+mark_img = pygame.transform.scale(mark_img, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+mark_img_red = pygame.image.load("./image/mark_frame2.png")
+mark_img_red = pygame.transform.scale(mark_img_red, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+mark_img2 = pygame.image.load("./image/mark_frame3.png")
+mark_img2 = pygame.transform.scale(mark_img2, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+mark_img2_red = pygame.image.load("./image/mark_frame4.png")
+mark_img2_red = pygame.transform.scale(mark_img2_red, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+legal_img = pygame.image.load("./image/mark_frame5.png")
+legal_img = pygame.transform.scale(legal_img, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+legal_img_red = pygame.image.load("./image/mark_frame6.png")
+legal_img_red = pygame.transform.scale(legal_img_red, (CELL_SIZE[0], CELL_SIZE[1])) # 駒置きの大きさを縮小
+system_frame_img = pygame.image.load("./image/system_frame.png")
+pro_button_img = pygame.image.load("./image/pro_button.png")
+not_pro_button_img = pygame.image.load("./image/not_pro_button.png")
+
+#BGM設定
 pygame.mixer.init() #初期化
-
 beep_se = pygame.mixer.Sound("./bgm/SE/beep.mp3")
 koma_se = pygame.mixer.Sound("./bgm/SE/koma_put.mp3")
 pop1_se = pygame.mixer.Sound("./bgm/SE/pop1.mp3")
@@ -54,10 +78,17 @@ push_se = pygame.mixer.Sound("./bgm/SE/push.mp3")
 yoroshiku_se = pygame.mixer.Sound("./bgm/SE/yoroshiku.mp3")
 
 pygame.mixer.music.load("./bgm/battle.mp3") #読み込み
-
-pygame.mixer.music.play(1) #再生
-
+pygame.mixer.music.play(-1) #再生
 pygame.mixer.music.set_volume(0.2)    
+
+#盤面の表示
+screen.fill(background_color)   # 背景を埋める
+screen.blit(board_img, (0, 0))  # 盤面画像を描画
+# 駒置き画像の配置
+screen.blit(captured_pieces_place_img, (800, 0))    # 左側
+screen.blit(captured_pieces_place_img, (800, 500))  # 右側
+screen.blit(system_frame_img, (800, 300))  # 右側
+
 
 #-----------------------------------------------------------------------------------
 #　盤面表示 関数
@@ -178,10 +209,10 @@ def captured_display(captured_pieces):
                 continue
 
             # 持ち駒の数を取得
-            if i + 1 < len(captured_pieces) and captured_pieces[i + 1].isdigit():
+            if i + 1 < len(captured_pieces) and captured_pieces[i + 1].isdigit():   # 駒の数もあるなら
                 count = int(captured_pieces[i + 1])
                 i += 2  # 駒と数を消費
-            else:
+            else:   # 駒が1個のみなら
                 count = 1
                 i += 1  # 駒のみ消費
 
@@ -202,6 +233,7 @@ def captured_display(captured_pieces):
         opponent_text = pieces_to_text(opponent_pieces)
 
         return f"先手の持ち駒: {player_text} / 後手の持ち駒: {opponent_text}"        
+
 
 # 盤面の初期化
 def initialize_board():
@@ -360,14 +392,60 @@ def apply_move(sfen, move):
         return -1
 
 
+def move_to_coord(move, turn = "b"):
+    """ 
+    move(7fやP*)などを座標変換する関数
+    """
+    # 駒の種類と対応する from_col 値
+    piece_to_col = {
+        "P": 0,  # 歩
+        "L": 1,  # 香車
+        "N": 2,  # 桂馬
+        "R": 3,  # 飛車
+        "B": 4,  # 角
+        "S": 5,  # 銀
+        "G": 6   # 金
+    }
+    
+    if len(move) == 2 and move[0].isdigit() and 'a' <= move[1] <= 'i':
+        from_row, from_col = ord(move[1]) - ord('a'), 9 - int(move[0])    
+    elif len(move) == 2 and move[1] == '*' and move[0].isalpha():
+        if turn == "b":   #先手番なら
+            from_row = -1
+        else:   # 後手番なら
+            from_row = -2
+                
+        from_col = piece_to_col[move[0]]
+    return from_row, from_col
+    
+
+def is_promotable(board, move1, move2):
+    """ 
+    成れるか判定する関数
+    条件1: 動かす前の駒が成れる駒
+    条件2: 動かす前の座標が敵陣地
+    条件3: 動かした後の座標が敵陣地
+    """
+    promotable_pieces = ["P", "L", "N", "R", "B"]  # 成れる駒
+    move_before = move_to_coord(move1)
+    move_after = move_to_coord(move2)
+    
+    if 0 <= move_before[0] <= 8: # 動かす前のマスが盤面上か
+        piece = board[move_before[0]][move_before[1]]    
+        if piece.upper() in promotable_pieces:  # 動かす駒が成れる駒か
+            if 0 <= move_before[1] <= 2 or 0 <= move_after[1] <= 2:
+                return True
+    return False
+
+
 #-----------------------------------------------------------------------------------
 #　Pygame 盤面表示 関数
 #-----------------------------------------------------------------------------------
-
-
 def convert_click_to_board(click_pos):
     """クリック位置をボード上のSFEN座標に変換"""
     x, y = click_pos
+    
+    # 盤面のクリックチェック        
     board_x = int((x - BOARD_POS[0]) / CELL_SIZE[0])
     board_y = int((y - BOARD_POS[1]) / CELL_SIZE[1])
     if 0 <= board_x < 9 and 0 <= board_y < 9:
@@ -375,14 +453,80 @@ def convert_click_to_board(click_pos):
         sfen_y = chr(ord('a') + board_y)
         return f"{sfen_x}{sfen_y}"  # ボード内なら座標を返す
     else:
+        # 持ち駒の座標範囲
+        opponent_positions = {
+            "P": (865, 0), "L": (955, 0), "N": (1045, 0),
+            "R": (900, 100), "B": (1020, 100),
+            "S": (900, 200), "G": (1020, 200),
+        }
+        player_positions = {
+            "P": (865, 500), "L": (955, 500), "N": (1045, 500),
+            "R": (900, 600), "B": (1020, 600),
+            "S": (900, 700), "G": (1020, 700),
+        }
+
+        # 持ち駒のクリックチェック
+        for piece, (px, py) in opponent_positions.items():
+            if px <= x <= px + CELL_SIZE[0] and py <= y <= py + CELL_SIZE[1]:
+                return f"{piece}*"
+
+        for piece, (px, py) in player_positions.items():
+            if px <= x <= px + CELL_SIZE[0] and py <= y <= py + CELL_SIZE[1]:
+                return f"{piece}*"
+            
+        # 成りボタンのクリックチェック
+        # ボタンの位置とサイズ
+        pro_button_rect = pygame.Rect(810, 390, 120, 100)  # 成ボタンの位置とサイズ
+        not_pro_button_rect = pygame.Rect(950, 390, 120, 100)  # 不成ボタンの位置とサイズ
+         # クリック位置が成ボタンに含まれる場合
+        if pro_button_rect.collidepoint(click_pos):
+            return "+"
+        
+        # クリック位置が不成ボタンに含まれる場合
+        if not_pro_button_rect.collidepoint(click_pos):
+            return ""
+
+            
         return None  # ボード外なら無効
     
-def draw_board(board):
+    
+    
+def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_cells = [], legal_mark = [], pro_flag = False):
     """
     SFEN解析済みの盤面データをもとに描画
-    :param board: 2Dリスト形式の盤面
+    board: 2Dリスト形式の盤面
+    turn: 手番
+    captured_pieces: 持ち駒
+    move_number: 手数
+    mark_cells: マークするマス
+    legal_mark: 合法手のマーキング
     """
     screen.blit(board_img, (0, 0))  # 盤面画像を描画
+    # 駒置き画像の配置
+    screen.blit(captured_pieces_place_img, (800, 0))    # 左側
+    screen.blit(captured_pieces_place_img, (800, 500))  # 右側
+    screen.blit(system_frame_img, (800, 300))  # 右側
+    
+    # 成るボタンの描画
+    if pro_flag:
+        screen.blit(pro_button_img, (810, 390))  # 右側
+        screen.blit(not_pro_button_img, (950, 390))  # 右側
+    
+    # マークの描画
+    if mark_cells:
+        draw_marked_cells(mark_cells)
+        
+        # for row, col in mark_cells:
+        #     x = int(BOARD_POS[0] + col * CELL_SIZE[0])
+        #     y = int(BOARD_POS[1] + row * CELL_SIZE[1])
+        #     screen.blit(mark_img, (x, y))
+
+    if legal_mark:
+        for row, col in legal_mark:
+            x = int(BOARD_POS[0] + col * CELL_SIZE[0])
+            y = int(BOARD_POS[1] + row * CELL_SIZE[1])
+            screen.blit(legal_img, (x, y))
+    
     for row in range(9):
         for col in range(9):
             piece = board[row][col]
@@ -396,8 +540,139 @@ def draw_board(board):
                     # 駒を描画
                     screen.blit(piece_image, (x, y))
 
+    draw_captured(captured_pieces)
+    font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+    font = pygame.font.Font(font_path, 24)  # フォントとサイズ（変更可能）
+    #font = pygame.font.Font(None, 36)  # フォントとサイズ（変更可能）
+    
+    # 手番の表示
+    turn_text = turn_to_turn_player(turn)
+    turn_surface = font.render(f"手番: {turn_text}", True, (0, 0, 15))  # 青色で描画
+    screen.blit(turn_surface, (820, 320))  # (820, 320) の位置に表示
 
+    # 手数の表示
+    move_text = f"手数: {move_number}"
+    move_surface = font.render(move_text, True, (0, 0, 15))  # 青色で描画
+    screen.blit(move_surface, (820, 360))  # (820, 360) の位置に表示
 
+def draw_marked_cells(mark_cells):
+    """
+    マークされたセルを描画
+    :param mark_cells: マークするセルのリスト
+    """
+    # 持ち駒の座標範囲
+    opponent_positions = {
+        "P": (865, 0), "L": (955, 0), "N": (1045, 0),
+        "R": (900, 100), "B": (1020, 100),
+        "S": (900, 200), "G": (1020, 200),
+    }
+    player_positions = {
+        "P": (865, 500), "L": (955, 500), "N": (1045, 500),
+        "R": (900, 600), "B": (1020, 600),
+        "S": (900, 700), "G": (1020, 700),
+    }
+    
+    piece_to_col = {
+        "P": 0,  # 歩
+        "L": 1,  # 香車
+        "N": 2,  # 桂馬
+        "R": 3,  # 飛車
+        "B": 4,  # 角
+        "S": 5,  # 銀
+        "G": 6   # 金
+    }
+
+    for from_row, from_col, color in mark_cells:
+        
+        # マスが盤上の場合
+        if 0 <= from_row < 9 and 0 <= from_col < 9:
+            x = int(BOARD_POS[0] + from_col * CELL_SIZE[0])
+            y = int(BOARD_POS[1] + from_row * CELL_SIZE[1])
+        
+        # 持ち駒エリアの場合
+        elif from_row == -1 or from_row == -2:
+            positions = player_positions if from_row == -1 else opponent_positions
+            for piece, (px, py) in positions.items():
+                if piece_to_col[piece] == from_col:
+                    x, y = px, py
+                    break
+
+        # マークを描画
+        if color == 1:
+            screen.blit(mark_img, (x, y))
+        elif color == 2:
+            screen.blit(mark_img_red, (x, y))
+        elif color == 3:
+            screen.blit(mark_img2, (x, y))
+        elif color == 4:
+            screen.blit(mark_img2_red, (x, y))
+        else:
+            pass
+
+def draw_captured(captured_pieces):
+    """ 持ち駒の画面描画 """
+    # 持ち駒の個数を格納する辞書
+    player_pieces = {}
+    opponent_pieces = {}
+    
+    if captured_pieces == "-":
+        pass
+    
+    else:
+        # SFENの文字列を解析
+        i = 0
+        while i < len(captured_pieces):
+            char = captured_pieces[i]
+            if char.isdigit():
+                i += 1  # 数字の次の文字に進む
+                continue
+
+            # 持ち駒の数を取得
+            if i + 1 < len(captured_pieces) and captured_pieces[i + 1].isdigit():   # 駒の数もあるなら
+                count = int(captured_pieces[i + 1])
+                i += 2  # 駒と数を消費
+            else:   # 駒が1個のみなら
+                count = 1
+                i += 1  # 駒のみ消費
+
+            # 大文字：自分の駒、小文字：相手の駒
+            if char.isupper():
+                player_pieces[char] = player_pieces.get(char, 0) + count
+            else:
+                opponent_pieces[char.upper()] = opponent_pieces.get(char.upper(), 0) + count
+
+        # 駒を描画する座標
+        opponent_positions = {
+            "P": (865, 0), "L": (955, 0), "N": (1045, 0),
+            "R": (900, 100), "B": (1020, 100),
+            "S": (900, 200), "G": (1020, 200),
+        }
+        player_positions = {
+            "P": (865, 500), "L": (955, 500), "N": (1045, 500),
+            "R": (900, 600), "B": (1020, 600),
+            "S": (900, 700), "G": (1020, 700),
+        }
+        
+        # フォントの設定
+        font = pygame.font.Font(None, 30)  # フォントとサイズの設定
+
+        # 相手の持ち駒を描画
+        for piece, count in opponent_pieces.items():
+            if piece in opponent_positions:
+                x, y = opponent_positions[piece]
+                screen.blit(piece_images[piece], (x, y))  # 駒を描画
+                # 枚数を描画
+                count_text = font.render(str(count), True, (224, 255, 255))  # 黒い文字
+                screen.blit(count_text, (x + 65, y + 75))  # 駒の右下に表示
+
+        # 自分の持ち駒を描画
+        for piece, count in player_pieces.items():
+            if piece in player_positions:
+                x, y = player_positions[piece]
+                screen.blit(piece_images[piece], (x, y))  # 駒を描画
+                # 枚数を描画
+                count_text = font.render(str(count), True, (224, 255, 255))  # 黒い文字
+                screen.blit(count_text, (x + 65, y + 75))  # 駒の右下に表示        
 
 #-----------------------------------------------------------------------------------
 #　やねうら王の動作
@@ -456,6 +731,24 @@ def initialize_yaneuraou(process, response_queue):
 #-----------------------------------------------------------------------------------
 #　ゲームの流れ
 #-----------------------------------------------------------------------------------
+
+# def legal_moves(process, response_queue):
+#     """ 合法手一覧を取得する"""
+#     legal_moves = []
+    
+#     command = f"legal_moves"
+#     send_command(process, command)    
+#     time.sleep(0.1)
+    
+#     # 合法手かの確認
+#     if response_queue:
+#         response = response_queue.pop(0)
+#         if "legal_moves" in response:
+#             legal_moves = response.strip()
+#             print(legal_moves)
+#             return legal_moves[1:]
+
+
 
 def process_user_move(sfen, user_move, moves, process, response_queue):
     """ユーザーの指し手を処理"""

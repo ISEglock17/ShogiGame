@@ -37,8 +37,6 @@ def main():
 
     running = True
     
-
-    
     while running:
         #イベント処理
         for event in pygame.event.get():            
@@ -50,7 +48,8 @@ def main():
                 click_pos = pygame.mouse.get_pos()
                 board_pos = convert_click_to_board(click_pos)  # クリック位置をボード上の座標に変換
                 print(f"クリック位置: {board_pos}")
-                command_queue.put(board_pos)  # キューに送信
+                if board_pos is not None:
+                    command_queue.put(board_pos)  # キューに送信
 
         # エンジンからの応答を非ブロッキングで取得
         while not state_queue.empty():
@@ -73,9 +72,6 @@ def main():
     print("終了しました。")
             
 
-                    
-
-
 def play_game(executable_path, state_queue, command_queue):
     """対局のメインループ"""
     process = None
@@ -91,20 +87,21 @@ def play_game(executable_path, state_queue, command_queue):
 
         sfen = initialize_board()   # 盤面の初期化
         moves = [] # 棋譜を入れるリスト
+        mark_cells = [] # マークする座標を入れるリスト
         winner = None
         
         print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
         yoroshiku_se.play()
         
-        
         while True:
             if winner != None:
                 break
+            
             # プレイヤーのターン
             while True:
                 #state_queue.put(sfen)
-                board, _, _, _ = sfen_to_board(sfen)
-                draw_board(board)
+                board, turn, captured_pieces, move_number= sfen_to_board(sfen)
+                draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 display_board(sfen)
                 print(sfen)
 
@@ -116,6 +113,12 @@ def play_game(executable_path, state_queue, command_queue):
                     print("対局を終了します。")
                     winner = 0
                     break
+                if len(mark_cells) >= 2:
+                    mark_cells = []
+                x, y = move_to_coord(user_move1)
+                mark_cells.append((x, y, 1))
+                
+                draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 print(user_move1)
                 pop1_se.play()
 
@@ -127,10 +130,27 @@ def play_game(executable_path, state_queue, command_queue):
                     print("対局を終了します。")
                     winner = 0
                     break
+                
+
+                x, y = move_to_coord(user_move2)
+                mark_cells.append((x, y, 3))                
+                user_move3 = ""
+                if is_promotable(board, user_move1, user_move2):    # 成れる場合
+                    draw_board(board, turn, captured_pieces, move_number, mark_cells, pro_flag = True)
+                    while command_queue.empty():
+                        pass
+                    user_move3 = command_queue.get()
+                    if user_move3 == "+":  # 成る場合
+                        pass
+                    elif user_move3 == "": # 成らない場合
+                        pass
+                    else:
+                        continue
+                draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 print(user_move2)
                 pop1_se.play()
                 
-                user_move = f"{user_move1}{user_move2}"
+                user_move = f"{user_move1}{user_move2}{user_move3}"
                 if user_move == 'q':
                     print("対局を終了します。")
                     winner = 0
@@ -155,19 +175,25 @@ def play_game(executable_path, state_queue, command_queue):
             # エンジンのターン
             while True:
                 #state_queue.put(sfen)
-                board, _, _, _ = sfen_to_board(sfen)
-                draw_board(board)
+                board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+                draw_board(board, turn, captured_pieces, move_number)
                 display_board(sfen)
                 print(sfen)
                 
                 engine_move = get_engine_move(process, response_queue)  
                 sfen, valid = process_engine_move(sfen, engine_move, moves) # エンジンの指し手を適用
-                if not valid:
+                if not valid:   # 有効てでない場合
                     beep_se.play()
                     continue
-                else:
+                else:   # 有効手な場合
                     print(f"やねうら王の指し手: {engine_move}")
                     koma_se.play()
+                    if len(mark_cells) >= 2:
+                        mark_cells = []
+                    x, y = move_to_coord(engine_move[0:2])
+                    mark_cells.append((x, y, 2))
+                    x, y = move_to_coord(engine_move[2:4])
+                    mark_cells.append((x, y, 4))
                     break
 
 
