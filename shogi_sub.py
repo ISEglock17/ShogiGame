@@ -407,6 +407,7 @@ def move_to_coord(move, turn = "b"):
         "G": 6   # 金
     }
     from_row, from_col = None, None  # from_rowとfrom_colの初期化
+    
     if len(move) == 2:
         if move[0].isdigit() and 'a' <= move[1] <= 'i':
             from_row, from_col = ord(move[1]) - ord('a'), 9 - int(move[0])    
@@ -430,6 +431,14 @@ def is_promotable(board, move1, move2):
     promotable_pieces = ["P", "L", "N", "R", "B", "S"]  # 成れる駒
     move_before = move_to_coord(move1)
     move_after = move_to_coord(move2)
+    
+    move_before_row, move_before_col = move_to_coord(move1)
+    move_after_row, move_after_col = move_to_coord(move2)
+    # move_to_coordの結果が無効な場合は処理を中止
+    if move_before_row is None or move_before_col is None or move_after_row is None or move_after_col is None:
+        print("無効な指し手です")
+        return False
+    
     
     if 0 <= move_before[0] <= 8: # 動かす前のマスが盤面上か
         piece = board[move_before[0]][move_before[1]]    
@@ -584,6 +593,9 @@ def draw_marked_cells(mark_cells):
     }
 
     for from_row, from_col, color in mark_cells:
+        
+        if from_row is None or from_col is None:
+            break
         
         # マスが盤上の場合
         if 0 <= from_row < 9 and 0 <= from_col < 9:

@@ -116,8 +116,6 @@ def play_game(executable_path, state_queue, command_queue):
                     print("対局を終了します。")
                     winner = 0
                     break
-                elif user_move1 == "+" or user_move1 == "":
-                    continue
                 if len(mark_cells) >= 2:
                     mark_cells = []
                 x, y = move_to_coord(user_move1)
@@ -135,8 +133,6 @@ def play_game(executable_path, state_queue, command_queue):
                     print("対局を終了します。")
                     winner = 0
                     break
-                elif user_move2 == "+" or user_move2 == "":
-                    user_move2 = None
 
                 x, y = move_to_coord(user_move2)
                 mark_cells.append((x, y, 3))                
