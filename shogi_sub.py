@@ -433,7 +433,7 @@ def is_promotable(board, move1, move2):
     if 0 <= move_before[0] <= 8: # 動かす前のマスが盤面上か
         piece = board[move_before[0]][move_before[1]]    
         if piece.upper() in promotable_pieces:  # 動かす駒が成れる駒か
-            if 0 <= move_before[1] <= 2 or 0 <= move_after[1] <= 2:
+            if 0 <= move_before[0] <= 2 or 0 <= move_after[0] <= 2:
                 return True
     return False
 
