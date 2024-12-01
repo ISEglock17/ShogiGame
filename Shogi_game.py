@@ -136,7 +136,7 @@ def play_game(executable_path, state_queue, command_queue):
                     winner = 0
                     break
                 elif user_move2 == "+" or user_move2 == "":
-                    continue
+                    user_move2 = None
 
                 x, y = move_to_coord(user_move2)
                 mark_cells.append((x, y, 3))                
