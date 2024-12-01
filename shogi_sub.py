@@ -407,16 +407,16 @@ def move_to_coord(move, turn = "b"):
         "G": 6   # 金
     }
     from_row, from_col = None, None  # from_rowとfrom_colの初期化
-    
-    if len(move) == 2 and move[0].isdigit() and 'a' <= move[1] <= 'i':
-        from_row, from_col = ord(move[1]) - ord('a'), 9 - int(move[0])    
-    elif len(move) == 2 and move[1] == '*' and move[0].isalpha():
-        if turn == "b":   #先手番なら
-            from_row = -1
-        else:   # 後手番なら
-            from_row = -2
-                
-        from_col = piece_to_col[move[0]]
+    if len(move) == 2:
+        if move[0].isdigit() and 'a' <= move[1] <= 'i':
+            from_row, from_col = ord(move[1]) - ord('a'), 9 - int(move[0])    
+        elif move[1] == '*' and move[0].isalpha():
+            if turn == "b":   #先手番なら
+                from_row = -1
+            else:   # 後手番なら
+                from_row = -2
+                    
+            from_col = piece_to_col[move[0]]
     return from_row, from_col
     
 
