@@ -426,7 +426,7 @@ def is_promotable(board, move1, move2):
     条件2: 動かす前の座標が敵陣地
     条件3: 動かした後の座標が敵陣地
     """
-    promotable_pieces = ["P", "L", "N", "R", "B"]  # 成れる駒
+    promotable_pieces = ["P", "L", "N", "R", "B", "S"]  # 成れる駒
     move_before = move_to_coord(move1)
     move_after = move_to_coord(move2)
     
