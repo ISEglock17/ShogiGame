@@ -710,7 +710,7 @@ def read_output(process, response_queue):
             break
         if output:
             print(f"やねうら王の応答: {output.strip()}")
-            if any(keyword in output for keyword in ["readyok", "bestmove", "multipv", "Error"]):
+            if any(keyword in output for keyword in ["readyok", "bestmove", "multipv", "Error", "mate"]):
                 response_queue.append(output.strip())
 
 
@@ -748,6 +748,45 @@ def initialize_yaneuraou(process, response_queue):
 #             print(legal_moves)
 #             return legal_moves[1:]
 
+
+def is_checkmate(process, response_queue, sfen, max_depth=1, timeout=3):
+    """
+    詰みかどうかを判定するメソッド
+    
+    Args:
+        process: やねうら王のプロセス
+        response_queue: エンジン応答を格納するキュー
+        sfen: 現在の局面 (SFEN形式)
+        max_depth: 詰み探索の深さ (デフォルトは1手詰み)
+    
+    Returns:
+        True: 詰み
+        False: 詰みでない
+    """
+    # SFEN局面を設定
+    send_command(process, f"position sfen {sfen}")
+    time.sleep(0.1)
+
+    # 詰み探索コマンドを送信
+    send_command(process, f"go mate {max_depth}")
+    time.sleep(0.1)
+
+    # タイムアウトを設定して応答を待機
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        # キューが空でないか確認
+        if response_queue:  # リストが空でない
+            response = response_queue.pop(0)  # 先頭の応答を取得
+            if "mate found" in response:  # 詰みが見つかった場合
+                return False
+        # 応答待機時間を短縮
+        time.sleep(0.05)
+
+    # タイムアウト時には詰みと判断しない
+    return False
+
+    # タイムアウト時は詰みではないとみなす
+    return False
 
 
 def process_user_move(sfen, user_move, moves, process, response_queue):

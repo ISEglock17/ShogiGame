@@ -94,6 +94,9 @@ def play_game(executable_path, state_queue, command_queue):
         yoroshiku_se.play()
         
         while True:
+            # if is_checkmate(process, response_queue, sfen):
+            #     print("詰みです。あんたの負けです。")
+            #     break
             if winner != None:
                 break
             
