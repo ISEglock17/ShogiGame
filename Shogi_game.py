@@ -10,6 +10,7 @@ from pygame.locals import *
 import sys
 from shogi_sub import *
 import pygame.mixer
+from cshogi import *
 
 """
 メモ
@@ -44,12 +45,15 @@ def main():
                 running = False
                 command_queue.put("q")
             elif event.type == pygame.MOUSEBUTTONDOWN:
-                # クリック位置を取得
-                click_pos = pygame.mouse.get_pos()
-                board_pos = convert_click_to_board(click_pos)  # クリック位置をボード上の座標に変換
-                print(f"クリック位置: {board_pos}")
-                if board_pos is not None:
-                    command_queue.put(board_pos)  # キューに送信
+                if event.button == 3:
+                    command_queue.put("r")  # キューに送信
+                else:
+                    # クリック位置を取得
+                    click_pos = pygame.mouse.get_pos()
+                    board_pos = convert_click_to_board(click_pos)  # クリック位置をボード上の座標に変換
+                    print(f"クリック位置: {board_pos}")
+                    if board_pos is not None:
+                        command_queue.put(board_pos)  # キューに送信
 
         # エンジンからの応答を非ブロッキングで取得
         while not state_queue.empty():
@@ -102,74 +106,104 @@ def play_game(executable_path, state_queue, command_queue):
             
             # プレイヤーのターン
             while True:
+                # 合法手取得テスト
+                board2 = Board()
+                board2.set_sfen(sfen)
+                for move1 in board2.legal_moves:
+                    print(move1, end=", ")
+                    print(move_to_usi(move1))
+                    
                 #state_queue.put(sfen)
                 board, turn, captured_pieces, move_number= sfen_to_board(sfen)
                 draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 display_board(sfen)
                 print(sfen)
-
-                print("どの駒を?")
-                while command_queue.empty():
-                    pass
-                user_move1 = command_queue.get()
-                if user_move1 == 'q':
-                    print("対局を終了します。")
-                    winner = 0
-                    break
-                if len(mark_cells) >= 2:
-                    mark_cells = []
-                x, y = move_to_coord(user_move1)
-                mark_cells.append((x, y, 1))
                 
-                draw_board(board, turn, captured_pieces, move_number, mark_cells)
-                print(user_move1)
-                pop1_se.play()
+                phase = 1 # ファイズを示す変数(0: 通常，1: 駒選択，2: 駒の動き先，3: 成りの有無)
 
-                print("どこに動かす?")
-                while command_queue.empty():
-                    pass
-                user_move2 = command_queue.get()
-                if user_move2 == 'q':
-                    print("対局を終了します。")
-                    winner = 0
-                    break
-
-                x, y = move_to_coord(user_move2)
-                mark_cells.append((x, y, 3))                
-                user_move3 = ""
-                if is_promotable(board, user_move1, user_move2):    # 成れる場合
-                    draw_board(board, turn, captured_pieces, move_number, mark_cells, pro_flag = True)
+                if phase == 1:
+                    print("どの駒を?")
                     while command_queue.empty():
                         pass
-                    user_move3 = command_queue.get()
-                    if user_move3 == "+":  # 成る場合
+                    user_move1 = command_queue.get()
+                    if user_move1 == 'q':
+                        print("対局を終了します。")
+                        winner = 0
+                        break
+                    elif user_move1 == 'r':
+                        phase = 1
+                        continue 
+                    if len(mark_cells) >= 4:
+                        mark_cells = []
+                    x, y = move_to_coord(user_move1)
+                    mark_cells.append((x, y, 1))
+                    
+                    draw_board(board, turn, captured_pieces, move_number, mark_cells)
+                    print(user_move1)
+                    pop1_se.play()
+                    phase = 2
+
+                if phase == 2:    
+                    print("どこに動かす?")
+                    while command_queue.empty():
                         pass
-                    elif user_move3 == "": # 成らない場合
-                        pass
-                    else:
+                    user_move2 = command_queue.get()
+                    if user_move2 == 'q':
+                        print("対局を終了します。")
+                        winner = 0
+                        break
+                    elif user_move2 == 'r':
+                        mark_cells.pop()
+                        phase = 1
+                        continue 
+                    
+                    x, y = move_to_coord(user_move2)
+                    mark_cells.append((x, y, 3))                
+                    user_move3 = ""
+                    if is_promotable(board, user_move1, user_move2):    # 成れる場合
+                        phase = 3
+                    
+                    if phase == 3:
+                        draw_board(board, turn, captured_pieces, move_number, mark_cells, pro_flag = True)
+                        while command_queue.empty():
+                            pass
+                        user_move3 = command_queue.get()
+                        if user_move3 == "+":  # 成る場合
+                            pass
+                        elif user_move3 == "": # 成らない場合
+                            pass
+                        elif user_move3 == 'r':
+                            del mark_cells[-2:]
+                            phase = 1
+                            continue 
+                        else:
+                            continue
+                        
+                    draw_board(board, turn, captured_pieces, move_number, mark_cells)
+                    print(user_move2)
+                    pop1_se.play()
+                    phase = 0
+                
+                if phase == 0:
+                    user_move = f"{user_move1}{user_move2}{user_move3}"              
+                    if user_move.lower() == 'q':
+                        print("対局を終了します。")
+                        winner = 0
+                        break
+                    elif user_move == 'r':
+                        del mark_cells[-2:]
+                        phase = 1
+                        continue 
+                    
+                    sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)    # プレイヤーの指し手を適用
+                    if not valid:
+                        del mark_cells[-2:]
+                        beep_se.play()
+                        phase = 1
                         continue
-                draw_board(board, turn, captured_pieces, move_number, mark_cells)
-                print(user_move2)
-                pop1_se.play()
-                
-                user_move = f"{user_move1}{user_move2}{user_move3}"
-                if user_move == 'q':
-                    print("対局を終了します。")
-                    winner = 0
-                    break
-                
-                if user_move.lower() == 'q':
-                    print("対局を終了します。")
-                    winner = 0
-                    break
-                
-                sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)    # プレイヤーの指し手を適用
-                if not valid:
-                    beep_se.play()
-                    continue
-                else:
-                    koma_se.play()
-                    break
+                    else:
+                        koma_se.play()
+                        break
                 
             if winner != None:
                 break
