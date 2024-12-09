@@ -72,8 +72,13 @@ def main():
         game_thread.join()
         
     pygame.mixer.music.stop() #終了
-    pygame.quit()
-    print("終了しました。")
+    input1 = input("もう一度やりますか(y/n)")
+    if input1 == "y":
+        pygame.mixer.music.play(-1) #再生
+        main()
+    else:
+        pygame.quit()
+        print("終了しました。")
             
 
 def play_game(executable_path, state_queue, command_queue):
@@ -93,7 +98,7 @@ def play_game(executable_path, state_queue, command_queue):
         moves = [] # 棋譜を入れるリスト
         mark_cells = [] # マークする座標を入れるリスト
         winner = None
-        
+        board2 = Board()
         print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
         yoroshiku_se.play()
         
@@ -103,21 +108,24 @@ def play_game(executable_path, state_queue, command_queue):
             #     break
             if winner != None:
                 break
-            
+                       
             # プレイヤーのターン
             while True:
                 # 合法手取得テスト
-                board2 = Board()
+                print(sfen)
                 board2.set_sfen(sfen)
-                for move1 in board2.legal_moves:
-                    print(move1, end=", ")
-                    print(move_to_usi(move1))
-                    
+                legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+                print(legal_moves_list)
+                                    
                 #state_queue.put(sfen)
                 board, turn, captured_pieces, move_number= sfen_to_board(sfen)
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 末尾(マークの種類)が1,3のみ削除
                 draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 display_board(sfen)
                 print(sfen)
+                if not legal_moves_list:
+                    winner = 1
+                    break
                 
                 phase = 1 # ファイズを示す変数(0: 通常，1: 駒選択，2: 駒の動き先，3: 成りの有無)
 
@@ -138,6 +146,13 @@ def play_game(executable_path, state_queue, command_queue):
                     x, y = move_to_coord(user_move1)
                     mark_cells.append((x, y, 1))
                     
+                    suffixes = extract_move_suffixes(legal_moves_list, user_move1)
+                    for suffix in suffixes:
+                        # move_to_coordで座標を取得
+                        x, y = move_to_coord(suffix)
+                        # mark_cellsに追加 (x, y, 5)
+                        mark_cells.append((x, y, 5))
+        
                     draw_board(board, turn, captured_pieces, move_number, mark_cells)
                     print(user_move1)
                     pop1_se.play()
@@ -153,9 +168,15 @@ def play_game(executable_path, state_queue, command_queue):
                         winner = 0
                         break
                     elif user_move2 == 'r':
-                        mark_cells.pop()
+                        # mark_cells.pop()
                         phase = 1
                         continue 
+                    
+                    if user_move2 not in suffixes:
+                        beep_se.play()
+                        phase = 1
+                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
+                        continue
                     
                     x, y = move_to_coord(user_move2)
                     mark_cells.append((x, y, 3))                
@@ -173,7 +194,7 @@ def play_game(executable_path, state_queue, command_queue):
                         elif user_move3 == "": # 成らない場合
                             pass
                         elif user_move3 == 'r':
-                            del mark_cells[-2:]
+                            # del mark_cells[-2:]
                             phase = 1
                             continue 
                         else:
@@ -191,18 +212,20 @@ def play_game(executable_path, state_queue, command_queue):
                         winner = 0
                         break
                     elif user_move == 'r':
-                        del mark_cells[-2:]
+                        # del mark_cells[-2:]
                         phase = 1
                         continue 
                     
                     sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)    # プレイヤーの指し手を適用
                     if not valid:
-                        del mark_cells[-2:]
+                        # del mark_cells[-2:]
                         beep_se.play()
                         phase = 1
+                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
                         continue
                     else:
                         koma_se.play()
+                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
                         break
                 
             if winner != None:
@@ -231,7 +254,11 @@ def play_game(executable_path, state_queue, command_queue):
                     x, y = move_to_coord(engine_move[2:4])
                     mark_cells.append((x, y, 4))
                     break
-
+        
+        if winner == 0:
+            print("あなたの勝ちです。")
+        elif winner == 1:
+            print("あなたの負けです。")
 
     except Exception as e:
         print(f"エラーが発生しました: {e}")

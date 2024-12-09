@@ -151,7 +151,7 @@ def board_to_sfen(board, turn="b", captured_pieces=None, move_count=1):
         empty_count = 0
         row_sfen = ""
         for cell in row:
-            if cell.strip == ".":
+            if cell.strip() == ".":
                 empty_count += 1
             else:
                 if empty_count > 0:
@@ -419,7 +419,36 @@ def move_to_coord(move, turn = "b"):
                     
             from_col = piece_to_col[move[0]]
     return from_row, from_col
+
+
+def extract_move_suffixes(legal_moves_list, user_move1):
+    """ 
+    # user_move1の最初の2文字を取り出す
+    # 使用例
+    legal_moves_list = ['B*5g', '7g7f', 'P*7f', '5g5f']
+    user_move1 = 'B*5g'
+
+    # 該当する後半2文字をリストとして抽出
+    suffixes = extract_move_suffixes(legal_moves_list, user_move1)
+    print(suffixes)  # 出力例: ['5g']
+    """
+    # user_move1の最初の2文字を取り出す
+    user_move_prefix = user_move1[:2]
+
+    # 一致する指し手の後半部分を格納するリスト
+    suffixes = []
+
+    # legal_moves_listの中から一致する指し手を探す
+    for move in legal_moves_list:
+        # 指し手の最初の2文字が一致する場合
+        if move[:2] == user_move_prefix:
+            # 一致する場合、その後半の2文字をリストに追加
+            suffixes.append(move[2:])
     
+    # 一致する指し手がない場合は空のリストを返す
+    return suffixes
+
+
 
 def is_promotable(board, move1, move2):
     """ 
@@ -501,7 +530,7 @@ def convert_click_to_board(click_pos):
     
     
     
-def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_cells = [], legal_mark = [], pro_flag = False):
+def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_cells = [], pro_flag = False):
     """
     SFEN解析済みの盤面データをもとに描画
     board: 2Dリスト形式の盤面
@@ -516,6 +545,7 @@ def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_c
     screen.blit(captured_pieces_place_img, (800, 0))    # 左側
     screen.blit(captured_pieces_place_img, (800, 500))  # 右側
     screen.blit(system_frame_img, (800, 300))  # 右側
+    legal_mark = []
     
     # 成るボタンの描画
     if pro_flag:
@@ -524,19 +554,10 @@ def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_c
     
     # マークの描画
     if mark_cells:
+        legal_mark = [(x, y, z) for x, y, z in mark_cells if z == 5]
+        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5]
         draw_marked_cells(mark_cells)
         
-        # for row, col in mark_cells:
-        #     x = int(BOARD_POS[0] + col * CELL_SIZE[0])
-        #     y = int(BOARD_POS[1] + row * CELL_SIZE[1])
-        #     screen.blit(mark_img, (x, y))
-
-    if legal_mark:
-        for row, col in legal_mark:
-            x = int(BOARD_POS[0] + col * CELL_SIZE[0])
-            y = int(BOARD_POS[1] + row * CELL_SIZE[1])
-            screen.blit(legal_img, (x, y))
-    
     for row in range(9):
         for col in range(9):
             piece = board[row][col]
@@ -550,7 +571,12 @@ def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_c
                     # 駒を描画
                     screen.blit(piece_image, (x, y))
 
+    if legal_mark:
+        draw_marked_cells(legal_mark)
+    
+    # 持ち駒の表示
     draw_captured(captured_pieces)
+    
     font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
     font = pygame.font.Font(font_path, 24)  # フォントとサイズ（変更可能）
     #font = pygame.font.Font(None, 36)  # フォントとサイズ（変更可能）
@@ -619,6 +645,10 @@ def draw_marked_cells(mark_cells):
             screen.blit(mark_img2, (x, y))
         elif color == 4:
             screen.blit(mark_img2_red, (x, y))
+        elif color == 5:
+            screen.blit(legal_img, (x, y))
+        elif color == 6:
+            screen.blit(legal_img_red, (x, y))
         else:
             pass
 
@@ -723,7 +753,7 @@ def read_output(process, response_queue):
             break
         if output:
             print(f"やねうら王の応答: {output.strip()}")
-            if any(keyword in output for keyword in ["readyok", "bestmove", "multipv", "Error", "mate"]):
+            if any(keyword in output for keyword in ["readyok", "bestmove", "multipv", "Error", "mate", "info"]):
                 response_queue.append(output.strip())
 
 
