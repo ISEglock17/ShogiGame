@@ -72,6 +72,7 @@ def main():
         game_thread.join()
         
     pygame.mixer.music.stop() #終了
+    pygame.quit()
     input1 = input("もう一度やりますか(y/n)")
     if input1 == "y":
         pygame.mixer.music.play(-1) #再生
@@ -257,8 +258,12 @@ def play_game(executable_path, state_queue, command_queue):
         
         if winner == 0:
             print("あなたの勝ちです。")
+            while command_queue.empty():
+                pass
         elif winner == 1:
             print("あなたの負けです。")
+            while command_queue.empty():
+                pass
 
     except Exception as e:
         print(f"エラーが発生しました: {e}")
