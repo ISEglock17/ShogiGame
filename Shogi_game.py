@@ -45,7 +45,7 @@ def main():
                 running = False
                 command_queue.put("q")
             elif event.type == pygame.MOUSEBUTTONDOWN:
-                if event.button == 3:
+                if event.button == 3:   # 右クリックした場合
                     command_queue.put("r")  # キューに送信
                 else:
                     # クリック位置を取得
@@ -104,29 +104,27 @@ def play_game(executable_path, state_queue, command_queue):
         yoroshiku_se.play()
         
         while True:
-            # if is_checkmate(process, response_queue, sfen):
-            #     print("詰みです。あんたの負けです。")
-            #     break
             if winner != None:
                 break
                        
             # プレイヤーのターン
             while True:
-                # 合法手取得テスト
+                # 合法手取得
                 print(sfen)
                 board2.set_sfen(sfen)
                 legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
                 print(legal_moves_list)
+                if not legal_moves_list: # 詰み判定
+                    winner = 1
+                    break
                                     
-                #state_queue.put(sfen)
+                # SFENから盤面情報を解析
                 board, turn, captured_pieces, move_number= sfen_to_board(sfen)
-                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 末尾(マークの種類)が1,3のみ削除
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 末尾(マークの種類)が1,3, 5のみ削除
                 draw_board(board, turn, captured_pieces, move_number, mark_cells)
                 display_board(sfen)
                 print(sfen)
-                if not legal_moves_list:
-                    winner = 1
-                    break
+ 
                 
                 phase = 1 # ファイズを示す変数(0: 通常，1: 駒選択，2: 駒の動き先，3: 成りの有無)
 
@@ -235,6 +233,14 @@ def play_game(executable_path, state_queue, command_queue):
             # エンジンのターン
             while True:
                 #state_queue.put(sfen)
+                print(sfen)
+                board2.set_sfen(sfen)
+                legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+                print(legal_moves_list)                   
+                if not legal_moves_list: # 詰み判定
+                    winner = 0
+                    break
+                
                 board, turn, captured_pieces, move_number = sfen_to_board(sfen)
                 draw_board(board, turn, captured_pieces, move_number)
                 display_board(sfen)
@@ -244,12 +250,11 @@ def play_game(executable_path, state_queue, command_queue):
                 sfen, valid = process_engine_move(sfen, engine_move, moves) # エンジンの指し手を適用
                 if not valid:   # 有効てでない場合
                     beep_se.play()
+                    print("エンジンが非合法な手を打ちました。")
                     continue
                 else:   # 有効手な場合
                     print(f"やねうら王の指し手: {engine_move}")
                     koma_se.play()
-                    if len(mark_cells) >= 2:
-                        mark_cells = []
                     x, y = move_to_coord(engine_move[0:2])
                     mark_cells.append((x, y, 2))
                     x, y = move_to_coord(engine_move[2:4])
