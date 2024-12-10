@@ -225,6 +225,7 @@ def play_game(executable_path, state_queue, command_queue):
                     else:
                         koma_se.play()
                         mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
+                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4)]
                         break
                 
             if winner != None:
@@ -232,7 +233,6 @@ def play_game(executable_path, state_queue, command_queue):
                 
             # エンジンのターン
             while True:
-                #state_queue.put(sfen)
                 print(sfen)
                 board2.set_sfen(sfen)
                 legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]

@@ -111,7 +111,7 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
             if user_move1 == 'q':
                 print("対局を終了します。")
                 winner = 0
-                return sfen
+                return sfen, 'q'
             elif user_move1 == 'r':
                 phase = 1
                 continue
@@ -137,7 +137,7 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
             if user_move2 == 'q':
                 print("対局を終了します。")
                 winner = 0
-                return sfen
+                return sfen, 'q'
             elif user_move2 == 'r':
                 phase = 1
                 continue
@@ -171,8 +171,9 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
                 continue
             else:
                 koma_se.play()
-                mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5]
-                return sfen
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
+                draw_board(board, turn, captured_pieces, move_number, mark_cells)
+                return sfen, None
 
 
 def computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma_se):
@@ -225,7 +226,7 @@ def play_game(executable_path, state_queue, command_queue):
         mark_cells = [] # マークする座標を入れるリスト
         winner = None
         board2 = Board()
-        phase = 0
+        phase = 1
         print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
         yoroshiku_se.play()
         
@@ -234,9 +235,12 @@ def play_game(executable_path, state_queue, command_queue):
                 break
 
             # プレイヤーのターン
-            sfen = player_turn(sfen, board2, moves, process, response_queue, command_queue, mark_cells, phase, pop1_se, beep_se, koma_se)
+            sfen, flag = player_turn(sfen, board2, moves, process, response_queue, command_queue, mark_cells, phase, pop1_se, beep_se, koma_se)
+            if flag == 'q':
+                break
             if winner is not None:
                 break
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
 
             # コンピューターのターン
             sfen = computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma_se)

@@ -587,7 +587,7 @@ def draw_board(board, turn = "b", captured_pieces = "-", move_number = 1, mark_c
     screen.blit(turn_surface, (820, 320))  # (820, 320) の位置に表示
 
     # 手数の表示
-    move_text = f"手数: {move_number}"
+    move_text = f"手数: {move_number - 1}"
     move_surface = font.render(move_text, True, (0, 0, 15))  # 青色で描画
     screen.blit(move_surface, (820, 360))  # (820, 360) の位置に表示
 
