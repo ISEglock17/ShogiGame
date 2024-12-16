@@ -144,14 +144,18 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 # コンピューターのターン
                 sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
-                if flag == 0:
-                    winner = 0
+                if flag == 'q':
+                    break
+                if flag == 1:
+                    winner = 1
                     break
                 
                 # コンピューターのターン
                 sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
-                if flag == 0:
-                    winner = 1
+                if flag == 'q':
+                    break
+                if flag == 1:
+                    winner = 0
                     break
                 
             
@@ -355,7 +359,7 @@ def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cell
         legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
         print(legal_moves_list)
         if not legal_moves_list:  # 詰み判定
-            return sfen, 0
+            return sfen, 1
 
         board, turn, captured_pieces, move_number = sfen_to_board(sfen)
         draw_board(board, turn, captured_pieces, move_number)
@@ -364,7 +368,7 @@ def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cell
         # やねうら王に指し手を送信
         position_command = f"position startpos moves {' '.join(moves)}"
         send_command(process, position_command)    
-        print(position_command)
+        print(f"やねうら王への送信: {position_command}")
         time.sleep(0.1)
         
         engine_move = get_engine_move(process, response_queue)
