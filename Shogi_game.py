@@ -1,15 +1,14 @@
 import queue
-import subprocess
 import threading
-from multiprocessing import process
-import time
-from concurrent.futures import thread
-import re
 import pygame
 from pygame.locals import *
-import sys
-from shogi_sub import *
 import pygame.mixer
+from shogi_sub import *         # ゲームの流れに関する関数を読み込み
+from shogi_board import *       # 盤面解析に関する関数を読み込み
+from shogi_engine import *      # 将棋エンジンに関する関数を読み込み
+from setting import *           # Pygameなどの設定に関する変数や関数を読み込み
+from draw import *              # Pygameの描画を読み込み
+
 from cshogi import *
 
 """
@@ -50,10 +49,7 @@ def main():
                 else:
                     # クリック位置を取得
                     click_pos = pygame.mouse.get_pos()
-                    board_pos = convert_click_to_board(click_pos)  # クリック位置をボード上の座標に変換
-                    print(f"クリック位置: {board_pos}")
-                    if board_pos is not None:
-                        command_queue.put(board_pos)  # キューに送信
+                    command_queue.put(click_pos)  # キューに送信
 
         # エンジンからの応答を非ブロッキングで取得
         while not state_queue.empty():
@@ -61,6 +57,10 @@ def main():
             print(f"state_queue: {response}")
             if response == 'q':
                 running = False
+                break
+            # elif response == 'r':
+            #     break
+                
         
         # 表示の更新
         pygame.display.flip()
@@ -70,224 +70,331 @@ def main():
     # やねうら王スレッドの終了を待つ
     if game_thread.is_alive():
         game_thread.join()
-        
-    pygame.mixer.music.stop() #終了
-    pygame.quit()
-    input1 = input("もう一度やりますか(y/n)")
-    if input1 == "y":
-        pygame.mixer.music.play(-1) #再生
-        main()
-    else:
+    
+    # もし終了ボタンを押していたら
+    if event.type == QUIT:
         pygame.quit()
-        print("終了しました。")
+    
+    # pygame.mixer.music.stop() #終了
+    # if event.type != QUIT:
+    #     input1 = input("もう一度やりますか(y/n)")
+    #     if input1 == "y":
+    #         pygame.mixer.music.play(-1) #再生
+    #         main()
+    #     else:
+    #         pygame.quit()
+    #         print("終了しました。")
+    # else:
+    #     pygame.quit()
+    #     print("終了しました。")
             
+
 
 def play_game(executable_path, state_queue, command_queue):
     """対局のメインループ"""
-    process = None
-    response_queue = []
-    try:
-        # やねうら王の起動と初期化
-        
-        process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
-        yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)   # スレッドの準備
-        yaneura_thread.start()
-        
-        initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
+    while True:
+        process = None
+        response_queue = []
+        try:
+            # やねうら王の起動と初期化
+            
+            process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
+            yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)   # スレッドの準備
+            yaneura_thread.start()
+            
+            initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
 
-        sfen = initialize_board()   # 盤面の初期化
-        moves = [] # 棋譜を入れるリスト
-        mark_cells = [] # マークする座標を入れるリスト
-        winner = None
-        board2 = Board()
-        print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
-        yoroshiku_se.play()
-        
-        while True:
-            if winner != None:
-                break
-                       
-            # プレイヤーのターン
+            #----------------------------------------------------------------------------------------------------------------
+            #  変数定義
+            #----------------------------------------------------------------------------------------------------------------
+            sfen = initialize_board()   # 盤面の初期化
+            moves = [] # 棋譜を入れるリスト
+            mark_cells = [] # マークする座標を入れるリスト
+            winner = None
+            
+            
+            #----------------------------------------------------------------------------------------------------------------
+            #  ゲーム展開
+            #----------------------------------------------------------------------------------------------------------------
+            print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
+            yoroshiku_se.play()
+            
             while True:
-                # 合法手取得
-                print(sfen)
-                board2.set_sfen(sfen)
-                legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
-                print(legal_moves_list)
-                if not legal_moves_list: # 詰み判定
+                """
+                # プレイヤーのターン
+                sfen, flag = player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se)
+                if flag == 'q':
+                    break
+                elif flag == 1:
                     winner = 1
                     break
-                                    
-                # SFENから盤面情報を解析
-                board, turn, captured_pieces, move_number= sfen_to_board(sfen)
-                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 末尾(マークの種類)が1,3, 5のみ削除
-                draw_board(board, turn, captured_pieces, move_number, mark_cells)
-                display_board(sfen)
-                print(sfen)
- 
                 
-                phase = 1 # ファイズを示す変数(0: 通常，1: 駒選択，2: 駒の動き先，3: 成りの有無)
+                # mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
 
-                if phase == 1:
-                    print("どの駒を?")
-                    while command_queue.empty():
-                        pass
-                    user_move1 = command_queue.get()
-                    if user_move1 == 'q':
-                        print("対局を終了します。")
-                        winner = 0
-                        break
-                    elif user_move1 == 'r':
-                        phase = 1
-                        continue 
-                    if len(mark_cells) >= 4:
-                        mark_cells = []
-                    x, y = move_to_coord(user_move1)
-                    mark_cells.append((x, y, 1))
-                    
-                    suffixes = extract_move_suffixes(legal_moves_list, user_move1)
-                    for suffix in suffixes:
-                        # move_to_coordで座標を取得
-                        x, y = move_to_coord(suffix)
-                        # mark_cellsに追加 (x, y, 5)
-                        mark_cells.append((x, y, 5))
-        
-                    draw_board(board, turn, captured_pieces, move_number, mark_cells)
-                    print(user_move1)
-                    pop1_se.play()
-                    phase = 2
-
-                if phase == 2:    
-                    print("どこに動かす?")
-                    while command_queue.empty():
-                        pass
-                    user_move2 = command_queue.get()
-                    if user_move2 == 'q':
-                        print("対局を終了します。")
-                        winner = 0
-                        break
-                    elif user_move2 == 'r':
-                        # mark_cells.pop()
-                        phase = 1
-                        continue 
-                    
-                    if user_move2 not in suffixes:
-                        beep_se.play()
-                        phase = 1
-                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
-                        continue
-                    
-                    x, y = move_to_coord(user_move2)
-                    mark_cells.append((x, y, 3))                
-                    user_move3 = ""
-                    if is_promotable(board, user_move1, user_move2):    # 成れる場合
-                        phase = 3
-                    
-                    if phase == 3:
-                        draw_board(board, turn, captured_pieces, move_number, mark_cells, pro_flag = True)
-                        while command_queue.empty():
-                            pass
-                        user_move3 = command_queue.get()
-                        if user_move3 == "+":  # 成る場合
-                            pass
-                        elif user_move3 == "": # 成らない場合
-                            pass
-                        elif user_move3 == 'r':
-                            # del mark_cells[-2:]
-                            phase = 1
-                            continue 
-                        else:
-                            continue
-                        
-                    draw_board(board, turn, captured_pieces, move_number, mark_cells)
-                    print(user_move2)
-                    pop1_se.play()
-                    phase = 0
                 
-                if phase == 0:
-                    user_move = f"{user_move1}{user_move2}{user_move3}"              
-                    if user_move.lower() == 'q':
-                        print("対局を終了します。")
-                        winner = 0
-                        break
-                    elif user_move == 'r':
-                        # del mark_cells[-2:]
-                        phase = 1
-                        continue 
-                    
-                    sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)    # プレイヤーの指し手を適用
-                    if not valid:
-                        # del mark_cells[-2:]
-                        beep_se.play()
-                        phase = 1
-                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
-                        continue
-                    else:
-                        koma_se.play()
-                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z != 5] # 末尾(マークの種類)が1,3のみ削除
-                        mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4)]
-                        break
+                # プレイヤーのターン
+                sfen, flag = player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se)
+                if flag == 'q':
+                    break
+                elif flag == 1:
+                    winner = 0
+                    break
+                """
                 
-            if winner != None:
-                break
                 
-            # エンジンのターン
-            while True:
-                print(sfen)
-                board2.set_sfen(sfen)
-                legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
-                print(legal_moves_list)                   
-                if not legal_moves_list: # 詰み判定
+                # コンピューターのターン
+                sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
+                if flag == 0:
                     winner = 0
                     break
                 
-                board, turn, captured_pieces, move_number = sfen_to_board(sfen)
-                draw_board(board, turn, captured_pieces, move_number)
-                display_board(sfen)
-                print(sfen)
-                
-                engine_move = get_engine_move(process, response_queue)  
-                sfen, valid = process_engine_move(sfen, engine_move, moves) # エンジンの指し手を適用
-                if not valid:   # 有効てでない場合
-                    beep_se.play()
-                    print("エンジンが非合法な手を打ちました。")
-                    continue
-                else:   # 有効手な場合
-                    print(f"やねうら王の指し手: {engine_move}")
-                    koma_se.play()
-                    x, y = move_to_coord(engine_move[0:2])
-                    mark_cells.append((x, y, 2))
-                    x, y = move_to_coord(engine_move[2:4])
-                    mark_cells.append((x, y, 4))
+                # コンピューターのターン
+                sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
+                if flag == 0:
+                    winner = 1
                     break
+                
+            
+            if winner == 0:
+                print("あなたの勝ちです。")
+                font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+                font = pygame.font.Font(font_path, 128)  # フォントとサイズ（変更可能）
+                
+                turn_surface = font.render("あなたの勝ちです。", True, (0, 0, 15))  # 青色で描画
+                screen.blit(turn_surface, (300, 300))  
+  
+            elif winner == 1:
+                print("あなたの負けです。")
+                
+                font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+                font = pygame.font.Font(font_path, 128)  # フォントとサイズ（変更可能）
+                
+                turn_surface = font.render("あなたの負けです。", True, (0, 0, 15))  # 青色で描画
+                screen.blit(turn_surface, (300, 300))  
+  
+        except Exception as e:
+            print(f"エラーが発生しました: {e}")
+            return
+            
+        finally:
+            pygame.mixer.music.stop() #終了
+            stop_yaneuraou(process)
         
-        if winner == 0:
-            print("あなたの勝ちです。")
-            draw_board(board, turn, captured_pieces, move_number, mark_cells)
+        if flag == 'q':
+            return
+        else:    
+            print("もう一度やりますか。")
             while command_queue.empty():
                 pass
-        elif winner == 1:
-            print("あなたの負けです。")
-            draw_board(board, turn, captured_pieces, move_number, mark_cells)
-            while command_queue.empty():
-                pass
+            user_move1 = command_queue.get()           
+            if user_move1 == 'q':
+                print("対局を終了します。")
+                return 
+            elif len(user_move1) < 2:
+                print("終了しました。")
+                state_queue.put("q")
+                return
+            else:
+                pygame.mixer.music.play(-1) #再生
+                state_queue.put("r")
+        
+        
 
-    except Exception as e:
-        print(f"エラーが発生しました: {e}")
-    finally:
-        state_queue.put("q")
-        stop_yaneuraou(process)
-        pygame.mixer.music.stop() #終了
-        """
-        # スレッドの終了を待つ
-        if yaneura_thread:
-            yaneura_thread.join()  # スレッドが終了するのを待つ
-        """
+def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se):
+    """ プレイヤーのターンを処理 """
+    phase = 1       # フェイズの定義(1: 駒選択，2: 動かす先選択, 3: 成るかどうか)
+    
+    while True:
+        # 合法手取得
+        print(sfen)
+        board2 = Board()    # cshogi用のボード
+        board2.set_sfen(sfen)
+        legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+        print(legal_moves_list)
+
+        # SFENから盤面情報を解析
+        board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+        
+        # 盤面マークの削除
+        if turn == 'b':
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 先手の場合 先手マークを消す
+        else:
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 6)] # 後手の場合 後手マークを消す
+        
+        # 盤面の描画
+        draw_board(board, turn, captured_pieces, move_number, mark_cells)
+        display_board(sfen)
+        
+        if not legal_moves_list:  # 詰み判定    
+            return sfen, 1  # ターンを終了
+        
+        # 駒選択フェイズ
+        if phase == 1:
+            print("どの駒を?")
+                                    
+            while True:
+                if not command_queue.empty():  
+                    command = command_queue.get() 
+                    if command == 'q':
+                        print("対局を終了します。")
+                        return sfen, 'q'
+                    elif command == 'r':     # 右クリックした場合
+                        continue 
+                    
+                    user_move1 = convert_click_to_board(command)
+
+                    if user_move1 is None:    # クリックした場所の盤面情報が拾えなかった場合
+                        continue
+                    elif not can_move(legal_moves_list, user_move1): # 動かせない駒の場合
+                        print("そこの駒は動かせません。")
+                        continue
+                    else:       # 動かせる駒をタッチした場合
+                        break
+
+            x, y = move_to_coord(user_move1)
+            if turn == 'b':
+                mark_cells.append((x, y, 1))
+            else:
+                mark_cells.append((x, y, 2))
+
+            suffixes = extract_move_suffixes(legal_moves_list, user_move1)
+            for suffix in suffixes:
+                x, y = move_to_coord(suffix)
+                if turn == 'b':
+                    mark_cells.append((x, y, 5))
+                else:
+                    mark_cells.append((x, y, 6))
+
+            draw_board(board, turn, captured_pieces, move_number, mark_cells)
+            pop1_se.play()
+            phase = 2
+
+        # 動き先フェイズ
+        if phase == 2:
+            print("どこに動かす?")
+            while True:
+                if not command_queue.empty():  
+                    command = command_queue.get() 
+                    if command == 'q':
+                        print("対局を終了します。")
+                        return sfen, 'q'
+                    elif command == 'r':     # 右クリックした場合
+                        phase = 1
+                        break
+                    
+                    user_move2 = convert_click_to_board(command)
+
+                    if user_move2 is None:    # クリックした場所の盤面情報が拾えなかった場合
+                        continue
+                    else:       # 動かせる駒をタッチした場合
+                        if user_move2 not in suffixes:  # 動かせるかどうかの判定
+                            beep_se.play()
+                            phase = 1
+                            continue
+
+                        x, y = move_to_coord(user_move2)
+                        if turn == 'b':
+                            mark_cells.append((x, y, 3))
+                        else:
+                            mark_cells.append((x, y, 4))
+                            
+                        user_move3 = ""
+                        if is_promotable(board, user_move1, user_move2, turn):
+                            phase = 3
+                            break
+                        else:
+                            phase = 0
+                            break
+
+        # 成るかどうか
+        if phase == 3:
+            draw_board(board, turn, captured_pieces, move_number, mark_cells, pro_flag=True)
+            
+            while True:
+                if not command_queue.empty():  
+                    command = command_queue.get()
+                    if  command == 'q':
+                        print("対局を終了します。")
+                        return sfen, 'q'
+                    elif command == 'r':     # 右クリックした場合
+                        phase = 1
+                        break
+                    
+                    user_move3 = convert_click_to_board(command)
+                 
+                    if user_move3 not in ("+", ""):
+                        continue
+                    else:       # 動かせる駒をタッチした場合
+                        phase = 0
+                        break
+        
+        # 駒の動き入力完了
+        if phase == 0:
+            user_move = f"{user_move1}{user_move2}{user_move3}"
+            sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)
+            if not valid:
+                beep_se.play()
+                phase = 1
+                continue
+            else:
+                koma_se.play()
+                if turn == 'b':
+                    mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
+                else:
+                    mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 6)]
+                draw_board(board, turn, captured_pieces, move_number, mark_cells)
+                return sfen, None
+
+
+def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se):
+    """ コンピューターのターンを処理 """
+    while True:
+        print(sfen)
+        board2 = Board()
+        board2.set_sfen(sfen)
+        legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+        print(legal_moves_list)
+        if not legal_moves_list:  # 詰み判定
+            return sfen, 0
+
+        board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+        draw_board(board, turn, captured_pieces, move_number)
+        display_board(sfen)
+
+        # やねうら王に指し手を送信
+        position_command = f"position startpos moves {' '.join(moves)}"
+        send_command(process, position_command)    
+        print(position_command)
+        time.sleep(0.1)
+        
+        engine_move = get_engine_move(process, response_queue)
+        sfen, valid = process_engine_move(sfen, engine_move, moves)
+        
+        if not command_queue.empty():  
+            command = command_queue.get() 
+            if command == 'q':
+                print("対局を終了します。")
+                return sfen, 'q'
+                    
+        if not valid:
+            print("エンジンが非合法な手を打ちました。")
+            continue
+        else:
+            print(f"やねうら王の指し手: {engine_move}")
+            koma_se.play()
+            x, y = move_to_coord(engine_move[0:2])
+            mark_cells.append((x, y, 2))
+            x, y = move_to_coord(engine_move[2:4])
+            mark_cells.append((x, y, 4))
+            return sfen, None
+
+
 
 #-----------------------------------------------------------------------------------
 #　メインメソッド
 #-----------------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
+    
     
     
