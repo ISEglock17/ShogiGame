@@ -72,7 +72,8 @@ def main():
         game_thread.join()
         
     pygame.mixer.music.stop() #終了
-    pygame.quit()
+    while command_queue.empty():
+        pass
     input1 = input("もう一度やりますか(y/n)")
     if input1 == "y":
         pygame.mixer.music.play(-1) #再生
@@ -85,7 +86,6 @@ def main():
 
 def player_turn(sfen, board2, moves, process, response_queue, command_queue, mark_cells, phase, pop1_se, beep_se, koma_se):
     """ プレイヤーのターンを処理 """
-    global winner
     while True:
         # 合法手取得
         print(sfen)
@@ -94,7 +94,7 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
         print(legal_moves_list)
         if not legal_moves_list:  # 詰み判定
             winner = 1
-            return sfen  # ターンを終了
+            return sfen, None  # ターンを終了
 
         # SFENから盤面情報を解析
         board, turn, captured_pieces, move_number = sfen_to_board(sfen)
@@ -110,7 +110,6 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
             user_move1 = command_queue.get()
             if user_move1 == 'q':
                 print("対局を終了します。")
-                winner = 0
                 return sfen, 'q'
             elif user_move1 == 'r':
                 phase = 1
@@ -259,6 +258,7 @@ def play_game(executable_path, state_queue, command_queue):
 
     except Exception as e:
         print(f"エラーが発生しました: {e}")
+        pygame.quit()
     finally:
         state_queue.put("q")
         stop_yaneuraou(process)

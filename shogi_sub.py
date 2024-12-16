@@ -408,7 +408,7 @@ def move_to_coord(move, turn = "b"):
     }
     from_row, from_col = None, None  # from_rowとfrom_colの初期化
     
-    if len(move) == 2:
+    if 2 <= len(move) <= 3:
         if move[0].isdigit() and 'a' <= move[1] <= 'i':
             from_row, from_col = ord(move[1]) - ord('a'), 9 - int(move[0])    
         elif move[1] == '*' and move[0].isalpha():

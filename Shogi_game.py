@@ -263,10 +263,12 @@ def play_game(executable_path, state_queue, command_queue):
         
         if winner == 0:
             print("あなたの勝ちです。")
+            draw_board(board, turn, captured_pieces, move_number, mark_cells)
             while command_queue.empty():
                 pass
         elif winner == 1:
             print("あなたの負けです。")
+            draw_board(board, turn, captured_pieces, move_number, mark_cells)
             while command_queue.empty():
                 pass
 
