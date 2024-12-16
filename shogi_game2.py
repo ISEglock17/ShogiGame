@@ -61,6 +61,9 @@ def main():
             print(f"state_queue: {response}")
             if response == 'q':
                 running = False
+                break
+            # elif response == 'r':
+            #     break
         
         # 表示の更新
         pygame.display.flip()
@@ -70,17 +73,21 @@ def main():
     # やねうら王スレッドの終了を待つ
     if game_thread.is_alive():
         game_thread.join()
-        
-    pygame.mixer.music.stop() #終了
-    while command_queue.empty():
-        pass
-    input1 = input("もう一度やりますか(y/n)")
-    if input1 == "y":
-        pygame.mixer.music.play(-1) #再生
-        main()
-    else:
+            
+    if event.type == QUIT:
         pygame.quit()
-        print("終了しました。")
+    # pygame.mixer.music.stop() #終了
+    # if event.type != QUIT:
+    #     input1 = input("もう一度やりますか(y/n)")
+    #     if input1 == "y":
+    #         pygame.mixer.music.play(-1) #再生
+    #         main()
+    #     else:
+    #         pygame.quit()
+    #         print("終了しました。")
+    # else:
+    #     pygame.quit()
+    #     print("終了しました。")
             
 
 
@@ -92,15 +99,14 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
         board2.set_sfen(sfen)
         legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
         print(legal_moves_list)
-        if not legal_moves_list:  # 詰み判定
-            winner = 1
-            return sfen, None  # ターンを終了
 
         # SFENから盤面情報を解析
         board, turn, captured_pieces, move_number = sfen_to_board(sfen)
         mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)]
         draw_board(board, turn, captured_pieces, move_number, mark_cells)
         display_board(sfen)
+        if not legal_moves_list:  # 詰み判定
+            return sfen, 1  # ターンを終了
 
         # 駒選択フェイズ
         if phase == 1:
@@ -135,7 +141,6 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
             user_move2 = command_queue.get()
             if user_move2 == 'q':
                 print("対局を終了します。")
-                winner = 0
                 return sfen, 'q'
             elif user_move2 == 'r':
                 phase = 1
@@ -177,15 +182,13 @@ def player_turn(sfen, board2, moves, process, response_queue, command_queue, mar
 
 def computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma_se):
     """ コンピューターのターンを処理 """
-    global winner
     while True:
         print(sfen)
         board2.set_sfen(sfen)
         legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
         print(legal_moves_list)
         if not legal_moves_list:  # 詰み判定
-            winner = 0
-            return sfen
+            return sfen, 0
 
         board, turn, captured_pieces, move_number = sfen_to_board(sfen)
         draw_board(board, turn, captured_pieces, move_number)
@@ -203,66 +206,95 @@ def computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma
             mark_cells.append((x, y, 2))
             x, y = move_to_coord(engine_move[2:4])
             mark_cells.append((x, y, 4))
-            return sfen
+            return sfen, None
 
 
 
 def play_game(executable_path, state_queue, command_queue):
     """対局のメインループ"""
-    process = None
-    response_queue = []
-    try:
-        # やねうら王の起動と初期化
-        
-        process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
-        yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)   # スレッドの準備
-        yaneura_thread.start()
-        
-        initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
+    while True:
+        process = None
+        response_queue = []
+        try:
+            # やねうら王の起動と初期化
+            
+            process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
+            yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)   # スレッドの準備
+            yaneura_thread.start()
+            
+            initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
 
-        sfen = initialize_board()   # 盤面の初期化
-        moves = [] # 棋譜を入れるリスト
-        mark_cells = [] # マークする座標を入れるリスト
-        winner = None
-        board2 = Board()
-        phase = 1
-        print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
-        yoroshiku_se.play()
+            sfen = initialize_board()   # 盤面の初期化
+            moves = [] # 棋譜を入れるリスト
+            mark_cells = [] # マークする座標を入れるリスト
+            winner = None
+            board2 = Board()
+            phase = 1
+            print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
+            yoroshiku_se.play()
+            
+            while True:
+                # プレイヤーのターン
+                sfen, flag = player_turn(sfen, board2, moves, process, response_queue, command_queue, mark_cells, phase, pop1_se, beep_se, koma_se)
+                if flag == 'q':
+                    break
+                elif flag == 1:
+                    winner = 1
+                    break
+                
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
+
+                # コンピューターのターン
+                sfen, flag = computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma_se)
+                if flag == 0:
+                    winner = 0
+                    break
+
+            
+            if winner == 0:
+                print("あなたの勝ちです。")
+  
+            elif winner == 1:
+                print("あなたの負けです。")
+  
+        except Exception as e:
+            print(f"エラーが発生しました: {e}")
+            pygame.quit()
+            return
+            
+        finally:
+            pygame.mixer.music.stop() #終了
+            stop_yaneuraou(process)
         
-        while True:
-            if winner is not None:
-                break
-
-            # プレイヤーのターン
-            sfen, flag = player_turn(sfen, board2, moves, process, response_queue, command_queue, mark_cells, phase, pop1_se, beep_se, koma_se)
-            if flag == 'q':
-                break
-            if winner is not None:
-                break
-            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
-
-            # コンピューターのターン
-            sfen = computer_turn(sfen, board2, moves, process, response_queue, mark_cells, koma_se)
-            if winner is not None:
-                break
-
-        
-        if winner == 0:
-            print("あなたの勝ちです。")
+        if flag == 'q':
+            return
+        else:    
+            print("もう一度やりますか。")
             while command_queue.empty():
                 pass
-        elif winner == 1:
-            print("あなたの負けです。")
-            while command_queue.empty():
-                pass
-
-    except Exception as e:
-        print(f"エラーが発生しました: {e}")
-        pygame.quit()
-    finally:
-        state_queue.put("q")
-        stop_yaneuraou(process)
-        pygame.mixer.music.stop() #終了
+            user_move1 = command_queue.get()           
+            if user_move1 == 'q':
+                print("対局を終了します。")
+                return 
+            elif len(user_move1) < 2:
+                print("終了しました。")
+                state_queue.put("q")
+                return
+            else:
+                pygame.mixer.music.play(-1) #再生
+                state_queue.put("r")
+        
+        
+            # input1 = input("もう一度やりますか(y/n)")
+            # if input1 == "y":
+            #     pygame.mixer.music.play(-1) #再生
+            #     state_queue.put("r")
+            # else:
+            #     pygame.quit()
+            #     print("終了しました。")
+            #     state_queue.put("q")
+            #     return
+        
         """
         # スレッドの終了を待つ
         if yaneura_thread:
