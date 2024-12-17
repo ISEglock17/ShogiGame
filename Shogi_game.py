@@ -8,7 +8,7 @@ from shogi_board import *       # 盤面解析に関する関数を読み込み
 from shogi_engine import *      # 将棋エンジンに関する関数を読み込み
 from setting import *           # Pygameなどの設定に関する変数や関数を読み込み
 from draw import *              # Pygameの描画を読み込み
-
+from openai import OpenAI, ChatCompletion
 from cshogi import *
 
 """
@@ -21,6 +21,8 @@ from cshogi import *
 #　初期化
 #-----------------------------------------------------------------------------------
 executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
+# アクセストークン（先ほど発行されたアクセストークンに書き換えてください）
+TOKEN = "7006349742:AAGpThmoISdMJhKq_IpEe0c2nGCunCWfAnA"
 
 pygame.init()
 
@@ -120,7 +122,7 @@ def play_game(executable_path, state_queue, command_queue):
             yoroshiku_se.play()
             
             while True:
-                """
+                
                 # プレイヤーのターン
                 sfen, flag = player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se)
                 if flag == 'q':
@@ -139,9 +141,9 @@ def play_game(executable_path, state_queue, command_queue):
                 elif flag == 1:
                     winner = 0
                     break
+                
+                
                 """
-                
-                
                 # コンピューターのターン
                 sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
                 if flag == 'q':
@@ -157,7 +159,7 @@ def play_game(executable_path, state_queue, command_queue):
                 if flag == 1:
                     winner = 0
                     break
-                
+                """
             
             if winner == 0:
                 print("あなたの勝ちです。")
@@ -207,18 +209,38 @@ def play_game(executable_path, state_queue, command_queue):
 def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se):
     """ プレイヤーのターンを処理 """
     phase = 1       # フェイズの定義(1: 駒選択，2: 動かす先選択, 3: 成るかどうか)
-    
-    while True:
-        # 合法手取得
-        print(sfen)
-        board2 = Board()    # cshogi用のボード
-        board2.set_sfen(sfen)
-        legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
-        print(legal_moves_list)
 
-        # SFENから盤面情報を解析
-        board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+    # 合法手取得
+    print(sfen)
+    board2 = Board()    # cshogi用のボード
+    board2.set_sfen(sfen)
+    legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+    print(legal_moves_list)
+
+    # SFENから盤面情報を解析
+    board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+
+    # やねうら王に指し手を送信
+    position_command = f"position startpos moves {' '.join(moves)}"
+    send_command(process, position_command)    
+    print(f"やねうら王への送信: {position_command}")
+    time.sleep(0.1)
+      
         
+    bestmove, comments = get_engine_move(process, response_queue)        
+    pygame.draw.rect(screen, (255,255,255), (100, 810, 1500, 390))   
+    
+    font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+    font = pygame.font.Font(font_path, 12)  # フォントとサイズ（変更可能）
+    
+    comment_img = []        
+    for i in range(len(comments)):
+        comment_img.append(font.render(f"{comments[i]}", True, (0, 0, 15)))  # 青色で描画
+    comment_img.append(font.render(f"最善手: {bestmove}", True, (0, 0, 15)))  # 青色で描画
+    for i in range(len(comment_img)):
+        screen.blit(comment_img[i], (100, 810 + 30 * i)) 
+                
+    while True:
         # 盤面マークの削除
         if turn == 'b':
             mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 先手の場合 先手マークを消す
@@ -228,10 +250,7 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
         # 盤面の描画
         draw_board(board, turn, captured_pieces, move_number, mark_cells)
         display_board(sfen)
-        
-        if not legal_moves_list:  # 詰み判定    
-            return sfen, 1  # ターンを終了
-        
+    
         # 駒選択フェイズ
         if phase == 1:
             print("どの駒を?")
@@ -371,8 +390,29 @@ def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cell
         print(f"やねうら王への送信: {position_command}")
         time.sleep(0.1)
         
-        engine_move = get_engine_move(process, response_queue)
+        engine_move, comments = get_engine_move(process, response_queue)
         sfen, valid = process_engine_move(sfen, engine_move, moves)
+        
+        font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+        font = pygame.font.Font(font_path, 12)  # フォントとサイズ（変更可能）
+        
+        comment_img = []        
+        for i in range(len(comments)):
+            comment_img.append(font.render(f"{comments[i]}", True, (0, 0, 15)))  # 青色で描画
+        for i in range(len(comment_img)):
+            screen.blit(comment_img[i], (100, 810 + 30 * i)) 
+        
+        while True:
+            if not command_queue.empty():  
+                command = command_queue.get() 
+                if command == 'q':
+                    print("対局を終了します。")
+                    return sfen, 'q'
+                elif command == 'r':     # 右クリックした場合
+                    phase = 1
+                    break
+        pygame.draw.rect(screen, (255,255,255), (100, 810, 1500, 390))            
+        
         
         if not command_queue.empty():  
             command = command_queue.get() 

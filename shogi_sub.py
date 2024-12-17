@@ -44,6 +44,9 @@ def process_user_move(sfen, user_move, moves, process, response_queue):
 
 def get_engine_move(process, response_queue):
     """やねうら王の指し手を取得"""
+    comments = []
+    COUNT = 3
+    
     send_command(process, "go depth 10")
     
     start_time = time.time()
@@ -53,11 +56,22 @@ def get_engine_move(process, response_queue):
             response = response_queue.pop(0)
             if "bestmove" in response:
                 move = response.split(" ")[1]
-                return move
+                # bestmove が見つかった時点で直前の count 件を返却
+                return move, comments[-COUNT:]
+            
+            # bestmove が見つかる前のレスポンスを格納
+            comments.append(response)   
+       
+        # if response_queue:
+        #     response = response_queue.pop()
+        #     if "bestmove" in response:
+        #         move = response.split(" ")[1]
+        #         return move
         if time.time() - start_time > 10:  # タイムアウトの処理
             print("応答が遅延しています。再送信します。")
             send_command(process, "go depth 10")
         time.sleep(0.1)
+        
 
 
 def process_engine_move(sfen, engine_move, moves):
