@@ -2,7 +2,7 @@ import os
 import openai
 
 # OpenAI APIキーを環境変数から取得
-openai.api_key ="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"
+openai.api_key = os.getenv("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")
 
 # GPT解析関数
 def analyze_with_gpt(position_command, comments, bestmove):

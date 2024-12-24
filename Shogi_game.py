@@ -23,8 +23,6 @@ from cshogi import *
 #　初期化
 #-----------------------------------------------------------------------------------
 executable_path = "./YaneuraOu_NNUE_halfKP256-V830Git_ZEN2.exe"
-# アクセストークン（先ほど発行されたアクセストークンに書き換えてください）
-TOKEN = "7006349742:AAGpThmoISdMJhKq_IpEe0c2nGCunCWfAnA"
 
 pygame.init()
 
