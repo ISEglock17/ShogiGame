@@ -340,7 +340,7 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
                     else:       # 動かせる駒をタッチした場合
                         break
 
-            x, y = move_to_coord(user_move1)
+            x, y = move_to_coord(user_move1, turn)
             if turn == 'b':
                 mark_cells.append((x, y, 1))
             else:
@@ -348,7 +348,7 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
 
             suffixes = extract_move_suffixes(legal_moves_list, user_move1)
             for suffix in suffixes:
-                x, y = move_to_coord(suffix)
+                x, y = move_to_coord(suffix, turn)
                 if turn == 'b':
                     mark_cells.append((x, y, 5))
                 else:
@@ -381,7 +381,7 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
                             phase = 1
                             continue
 
-                        x, y = move_to_coord(user_move2)
+                        x, y = move_to_coord(user_move2, turn)
                         if turn == 'b':
                             mark_cells.append((x, y, 3))
                         else:
@@ -496,9 +496,9 @@ def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cell
         else:
             print(f"やねうら王の指し手: {engine_move}")
             koma_se.play()
-            x, y = move_to_coord(engine_move[0:2])
+            x, y = move_to_coord(engine_move[0:2], turn)
             mark_cells.append((x, y, 2))
-            x, y = move_to_coord(engine_move[2:4])
+            x, y = move_to_coord(engine_move[2:4], turn)
             mark_cells.append((x, y, 4))
             return sfen, None
 
