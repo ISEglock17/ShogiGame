@@ -2,7 +2,7 @@ import os
 import openai
 
 # OpenAI APIキーを環境変数から取得
-openai.api_key = os.getenv("")
+#openai.api_key = os.getenv("")
 
 
 # GPT解析関数
