@@ -79,7 +79,7 @@ def get_score(process, response_queue):
     scores = []
     flag = False
     send_command(process, "go depth 10")
-    time.sleep(0.1)        
+    time.sleep(0.2)        
     # 各手に対する評価値と読み筋を保存するための辞書
     moves_info = {}
     

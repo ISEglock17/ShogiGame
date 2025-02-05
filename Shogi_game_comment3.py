@@ -168,6 +168,7 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 turn_surface = font.render("あなたの勝ちです。", True, (0, 0, 15))  # 青色で描画
                 screen.blit(turn_surface, (300, 300))  
+                break
   
             elif winner == 1:
                 print("あなたの負けです。")
@@ -177,6 +178,7 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 turn_surface = font.render("あなたの負けです。", True, (0, 0, 15))  # 青色で描画
                 screen.blit(turn_surface, (300, 300))  
+                break
   
         except Exception as e:
             print(f"エラーが発生しました: {e}")
@@ -257,7 +259,11 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
     # bestmove, comments = get_engine_move(process, response_queue)
     # legal_moves_evaluations = extract_multiPV_evaluations(comments)
     bestmoves, comments, legal_moves_evaluations = get_score(process, response_queue)
-    bestmove = bestmoves[0]
+    if bestmoves:
+        bestmove = bestmoves[0]
+    else:
+        bestmove = None
+        
 
     pygame.draw.rect(screen, (255, 255, 255), (100, 810, 1500, 390))
 
@@ -270,6 +276,7 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
     for move, eval_value, pred_moves, eval_values in legal_moves_evaluations:
         comment_img.append(font.render(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}", True, (0, 0, 15)))  # 青色で描画
         print(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}")
+    print(f"最善手: {bestmove}")
 
     # 最善手の描画
     comment_img.append(font.render(f"最善手: {bestmove}", True, (0, 0, 15)))  # 青色で描画
