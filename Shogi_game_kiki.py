@@ -14,7 +14,8 @@ from cshogi import *
 
 
 """
-メモ
+メモ:
+利き情報を管理するためのプログラム
 
 問題点:
 
@@ -387,9 +388,13 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
                             mark_cells.append((x, y, 4))
                             
                         user_move3 = ""
-                        if is_promotable(board, user_move1, user_move2, turn):
+                        if is_promotable(board, user_move1, user_move2, turn) == 1:
                             phase = 3
-                            break
+                            break                            
+                        elif is_promotable(board, user_move1, user_move2, turn) == 2:
+                            phase = 0
+                            user_move3 = "+"
+                            break                            
                         else:
                             phase = 0
                             break

@@ -383,19 +383,29 @@ def is_promotable(board, move1, move2, turn='b'):
     # move_to_coordの結果が無効な場合は処理を中止
     if move_before_row is None or move_before_col is None or move_after_row is None or move_after_col is None:
         print("無効な指し手です")
-        return False
+        return 0
     
     if turn == 'b':
         if 0 <= move_before[0] <= 8: # 動かす前のマスが盤面上か
             piece = board[move_before[0]][move_before[1]]    
             if piece.upper() in promotable_pieces:  # 動かす駒が成れる駒か
                 if 0 <= move_before[0] <= 2 or 0 <= move_after[0] <= 2:
-                    return True
+                    if piece.upper() == 'P' and move_after[0] == 0:
+                        return 2
+                    elif piece.upper() == 'N' and 0 <= move_after[0] <= 1:
+                        return 2
+                    else:
+                        return 1
     else:
         if 0 <= move_before[0] <= 8: # 動かす前のマスが盤面上か
             piece = board[move_before[0]][move_before[1]]    
             if piece.upper() in promotable_pieces:  # 動かす駒が成れる駒か
                 if 6 <= move_before[0] <= 8 or 6 <= move_after[0] <= 8:
-                    return True
-    return False
+                    if piece.upper() == 'P' and move_after[0] == 8:
+                        return 2
+                    elif piece.upper() == 'N' and 7 <= move_after[0] <= 8:
+                        return 2
+                    else:
+                        return 1
+    return 0
 
