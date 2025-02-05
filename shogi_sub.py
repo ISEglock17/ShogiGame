@@ -45,19 +45,18 @@ def process_user_move(sfen, user_move, moves, process, response_queue):
 def get_engine_move(process, response_queue):
     """やねうら王の指し手を取得"""
     comments = []
-    COUNT = 20
     
     send_command(process, "go depth 10")
     
     start_time = time.time()
     
     while True:
-        if response_queue:
+        while response_queue:
             response = response_queue.pop(0)
             if "bestmove" in response:
                 move = response.split(" ")[1]
                 # bestmove が見つかった時点で直前の count 件を返却
-                return move, comments[-COUNT:]
+                return move, comments
             
             # bestmove が見つかる前のレスポンスを格納
             comments.append(response)   
@@ -71,6 +70,73 @@ def get_engine_move(process, response_queue):
             print("応答が遅延しています。再送信します。")
             send_command(process, "go depth 10")
         time.sleep(0.1)
+        
+
+def get_score(process, response_queue):
+    """やねうら王の評価値を取得"""
+    bestmoves = []
+    comments = []
+    scores = []
+    flag = False
+    send_command(process, "go depth 10")
+    time.sleep(0.1)        
+    # 各手に対する評価値と読み筋を保存するための辞書
+    moves_info = {}
+    
+    while True:
+        while response_queue:
+            response = response_queue.pop(0)
+            if "info multipv" in response:
+                parts = response.split()
+                move = parts[parts.index("pv") + 1]  # 手
+                eval_value = parts[parts.index("score") + 2]  # 評価値
+                pred_moves = parts[parts.index("pv") + 1:-1]  # 読み筋
+                comments.append(response)
+                
+                # 手ごとに最も深い読みの情報を保存
+                if move not in moves_info:
+                    moves_info[move] = {
+                        "eval_value": eval_value,
+                        "eval_values": [eval_value],
+                        "pred_moves": pred_moves
+                    }
+                else:
+                    moves_info[move]["eval_value"] = eval_value
+                    moves_info[move]["pred_moves"] = pred_moves
+                    moves_info[move]["eval_values"].append(eval_value)
+                
+                # scores.append((move, eval_value, pred_moves))
+                flag = True
+            if not flag and "info depth" in response:
+                # 応答を分割
+                parts = response.split()
+                move = parts[parts.index("pv") + 1]  # 手
+                eval_value = parts[parts.index("score") + 2]  # 評価値
+                pred_moves = parts[parts.index("pv") + 1:]  # 読み筋
+                comments.append(response)
+                
+                # 手ごとに最も深い読みの情報を保存
+                if move not in moves_info:
+                    moves_info[move] = {
+                        "eval_value": eval_value,
+                        "eval_values": [eval_value],
+                        "pred_moves": pred_moves
+                    }
+                else:
+                    moves_info[move]["eval_value"] = eval_value
+                    moves_info[move]["pred_moves"] = pred_moves
+                    moves_info[move]["eval_values"].append(eval_value)
+                
+                        
+            if "bestmove" in response:
+                bestmove = response.split(" ")[1]
+                bestmoves.append(bestmove)
+                comments.append(response) 
+            
+        # moves_info を scores リストに変換
+        scores = [(move, info['eval_value'], ' '.join(info['pred_moves']), info['eval_values']) for move, info in moves_info.items()]     
+       
+        return bestmoves, comments, scores
         
 
 
