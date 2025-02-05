@@ -242,6 +242,8 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
     board2.set_sfen(sfen)
     legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
     print(legal_moves_list)
+    if not legal_moves_list:  # 詰み判定
+        return sfen, 1
 
     # SFENから盤面情報を解析
     board, turn, captured_pieces, move_number = sfen_to_board(sfen)
