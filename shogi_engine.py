@@ -53,3 +53,30 @@ def initialize_yaneuraou(process, response_queue):
         
     response_queue.pop(0)
     
+    
+
+def extract_evaluation_value(comments):
+    """
+    やねうら王のコメントから評価値を抽出する。
+    例: 'info depth 15 score cp 58 time 1234' から '58' を取得
+    """
+    for comment in comments:
+        if "score cp" in comment:
+            parts = comment.split()
+            try:
+                idx = parts.index("cp")
+                return int(parts[idx + 1])
+            except (ValueError, IndexError):
+                continue
+    return None  # 評価値が見つからない場合
+
+def extract_multiPV_evaluations(comments):
+    evaluations = []
+    for line in comments:
+        if "info" in line and "multipv" in line:
+            parts = line.split()
+            move = parts[parts.index("pv") + 1]  # 手
+            eval_value = parts[parts.index("score") + 2]  # 評価値
+            evaluations.append((move, int(eval_value)))
+    return evaluations
+    

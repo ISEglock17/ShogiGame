@@ -53,7 +53,7 @@ for row in board:
     print(" ".join(row))
 """
 
-def board_to_sfen(board, turn="b", captured_pieces=None, move_count=1):
+def board_to_sfen(board, turn="b", captured_pieces="-", move_count=1):
     """ 盤面の駒配置をSFEN表記に変換 """
     # 1. 盤面を表現
     sfen_board = []

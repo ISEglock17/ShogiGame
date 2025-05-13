@@ -10,8 +10,11 @@ from setting import *           # Pygameなどの設定に関する変数や関�
 from draw import *              # Pygameの描画を読み込み
 from ai_comments import *       # aiのコメントに関する関数を読み込み
 from openai import OpenAI, ChatCompletion
-from cshogi import *
+from cshogi import *    #やねうら王の補助プログラム
+from board import *     #利き情報のクラス
 
+from kifu_parse6 import *
+from jp_record_2_sfen import *
 
 """
 メモ:
@@ -145,6 +148,61 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 
                 """
+                # 自動棋譜再生
+                result = parse_kif_file("./ShogiData/10001.txt")
+
+                print("先手:", result["sente"])
+                print("後手:", result["gote"])
+
+                print("\n棋譜とコメント:")
+                for i, move_info in enumerate(result["moves"], 1):
+                    jp_move = move_info["move"]
+                    from_pos = move_info["from_pos"]
+                    time_spent = move_info["time_spent"]
+                    total_time = move_info["total_time"]
+                    comment = result["move_comments"][i - 1]
+
+                    print(f"{i}: {jp_move}")
+                    print(f"   移動元: {from_pos}, 消費時間: {time_spent}, 累積時間: {total_time}")
+                    if comment:
+                        print(f"   コメント: {comment}")
+
+                    
+                    # 自動入力のターン
+                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos)
+                    if flag == 'q':
+                        break
+                    elif flag == 1:
+                        winner = i % 2
+                        break
+                    
+
+                print("\nその他のコメント:")
+                for i, comment in enumerate(result["other_comments"], 1):
+                    print(f"{i}: {comment}")
+
+                """
+
+                """
+                # 自動入力のターン
+                sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos)
+                if flag == 'q':
+                    break
+                elif flag == 1:
+                    winner = 1
+                    break
+                
+                
+                # 自動入力のターン
+                sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos)
+                if flag == 'q':
+                    break
+                elif flag == 1:
+                    winner = 0
+                    break
+                """
+                
+                """
                 # コンピューターのターン
                 sfen, flag = computer_turn(sfen, moves, process, response_queue, command_queue, mark_cells, koma_se)
                 if flag == 'q':
@@ -207,31 +265,6 @@ def play_game(executable_path, state_queue, command_queue):
                 pygame.mixer.music.play(-1) #再生
                 state_queue.put("r")
         
-def extract_evaluation_value(comments):
-    """
-    やねうら王のコメントから評価値を抽出する。
-    例: 'info depth 15 score cp 58 time 1234' から '58' を取得
-    """
-    for comment in comments:
-        if "score cp" in comment:
-            parts = comment.split()
-            try:
-                idx = parts.index("cp")
-                return int(parts[idx + 1])
-            except (ValueError, IndexError):
-                continue
-    return None  # 評価値が見つからない場合
-
-def extract_multiPV_evaluations(comments):
-    evaluations = []
-    for line in comments:
-        if "info" in line and "multipv" in line:
-            parts = line.split()
-            move = parts[parts.index("pv") + 1]  # 手
-            eval_value = parts[parts.index("score") + 2]  # 評価値
-            evaluations.append((move, int(eval_value)))
-    return evaluations
-
 
 def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se):
     """ 
@@ -259,6 +292,10 @@ def player_turn(sfen, moves, process, response_queue, command_queue, mark_cells,
 
     # SFENから盤面情報を解析
     board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+    
+    #利き情報の出力
+    ef = EffectBoard(board)
+    ef.print_effect()
 
     # やねうら王にMultiPV設定を送信
     send_command(process, "setoption name MultiPV value 10")
@@ -501,6 +538,263 @@ def computer_turn(sfen, moves, process, response_queue, command_queue, mark_cell
             x, y = move_to_coord(engine_move[2:4], turn)
             mark_cells.append((x, y, 4))
             return sfen, None
+
+
+
+def input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se):
+    """ 
+        手動棋譜入力モード
+        sfen: 盤面情報, 
+        moves: 棋譜, 
+        process, 
+        response_queue, 
+        command_queue, 
+        mark_cells, 
+        pop1_se, 
+        beep_se, 
+        koma_se
+    """
+    phase = 1       # フェイズの定義(1: 駒選択，2: 動かす先選択, 3: 成るかどうか)
+
+    # 合法手取得
+    print(sfen)
+    board2 = Board()  # cshogi用のボード
+    board2.set_sfen(sfen)
+    legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+    print(legal_moves_list)
+    if not legal_moves_list:  # 詰み判定
+        return sfen, 1
+
+    # SFENから盤面情報を解析
+    board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+    
+    #利き情報の出力
+    ef = EffectBoard(board)
+    ef.print_effect()
+
+    # やねうら王にMultiPV設定を送信
+    send_command(process, "setoption name MultiPV value 10")
+    
+    # メイン処理
+    position_command = f"position startpos moves {' '.join(moves)}"
+    send_command(process, position_command)
+    print(f"やねうら王への送信: {position_command}")
+    time.sleep(0.1)
+
+   # 最善手とMultiPV情報を取得
+    # bestmove, comments = get_engine_move(process, response_queue)
+    # legal_moves_evaluations = extract_multiPV_evaluations(comments)
+    bestmoves, comments, legal_moves_evaluations = get_score(process, response_queue)
+    if bestmoves:
+        bestmove = bestmoves[0]
+    else:
+        bestmove = None
+        
+
+    pygame.draw.rect(screen, (255, 255, 255), (100, 810, 1500, 390))
+
+    # フォント設定
+    font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+    font = pygame.font.Font(font_path, 12)
+
+    # 評価値付きコメントの描画
+    comment_img = []
+    for move, eval_value, pred_moves, eval_values in legal_moves_evaluations:
+        comment_img.append(font.render(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}", True, (0, 0, 15)))  # 青色で描画
+        print(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}")
+    print(f"最善手: {bestmove}")
+
+    # 最善手の描画
+    comment_img.append(font.render(f"最善手: {bestmove}", True, (0, 0, 15)))  # 青色で描画
+
+    # GPT解析結果を取得
+    gpt_comment = analyze_with_gpt(position_command, comments, bestmove)
+
+    # GPTによる解説を追加
+    comment_img.append(font.render(f"GPT解析: {gpt_comment}", True, (15, 0, 0)))  # 赤色で描画
+
+    # 画面に描画
+    for i in range(len(comment_img)):
+        screen.blit(comment_img[i], (100, 810 + 30 * i))
+
+                
+    while True:
+        # 盤面マークの削除
+        if turn == 'b':
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 先手の場合 先手マークを消す
+        else:
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 6)] # 後手の場合 後手マークを消す
+        
+        # 盤面の描画
+        draw_board(board, turn, captured_pieces, move_number, mark_cells)
+        display_board(sfen)
+    
+        # 手動入力
+        user_move = input("SFEN形式で指し手を与えてください: ")
+        
+        while True:
+             if not command_queue.empty():  
+                    command = command_queue.get() 
+                    if command == 'q':
+                        print("対局を終了します。")
+                        return sfen, 'q'
+                    elif command == 'r':     # 右クリックした場合
+                        continue 
+                    
+                    user_move1 = convert_click_to_board(command)
+
+                    if user_move1 is None:    # クリックした場所の盤面情報が拾えなかった場合
+                        continue
+                    elif not can_move(legal_moves_list, user_move1): # 動かせない駒の場合
+                        print("そこの駒は動かせません。")
+                        continue
+                    else:       # 動かせる駒をタッチした場合
+                        break
+        
+        sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)
+        if not valid:
+            beep_se.play()
+            phase = 1
+            continue
+        else:
+            koma_se.play()
+            if turn == 'b':
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
+            else:
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 6)]
+            draw_board(board, turn, captured_pieces, move_number, mark_cells)
+            return sfen, None
+        
+        
+
+def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos):
+    """ 
+        自動棋譜入力モード
+        sfen: 盤面情報, 
+        moves: 棋譜, 
+        process, 
+        response_queue, 
+        command_queue, 
+        mark_cells, 
+        pop1_se, 
+        beep_se, 
+        koma_se,
+        move,
+        from_pos
+    """
+    phase = 1       # フェイズの定義(1: 駒選択，2: 動かす先選択, 3: 成るかどうか)
+
+    # 合法手取得
+    print(sfen)
+    board2 = Board()  # cshogi用のボード
+    board2.set_sfen(sfen)
+    legal_moves_list = [move_to_usi(move) for move in board2.legal_moves]
+    print(legal_moves_list)
+    if not legal_moves_list:  # 詰み判定
+        return sfen, 1
+
+    # SFENから盤面情報を解析
+    board, turn, captured_pieces, move_number = sfen_to_board(sfen)
+    
+    #利き情報の出力
+    ef = EffectBoard(board)
+    ef.print_effect()
+
+    # やねうら王にMultiPV設定を送信
+    send_command(process, "setoption name MultiPV value 10")
+    
+    # メイン処理
+    position_command = f"position startpos moves {' '.join(moves)}"
+    send_command(process, position_command)
+    print(f"やねうら王への送信: {position_command}")
+    time.sleep(0.1)
+
+   # 最善手とMultiPV情報を取得
+    # bestmove, comments = get_engine_move(process, response_queue)
+    # legal_moves_evaluations = extract_multiPV_evaluations(comments)
+    bestmoves, comments, legal_moves_evaluations = get_score(process, response_queue)
+    if bestmoves:
+        bestmove = bestmoves[0]
+    else:
+        bestmove = None
+        
+
+    pygame.draw.rect(screen, (255, 255, 255), (100, 810, 1500, 390))
+
+    # フォント設定
+    font_path = "./image/07やさしさゴシック.ttf"  # フォントファイルのパス
+    font = pygame.font.Font(font_path, 12)
+
+    # 評価値付きコメントの描画
+    comment_img = []
+    for move, eval_value, pred_moves, eval_values in legal_moves_evaluations:
+        comment_img.append(font.render(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}", True, (0, 0, 15)))  # 青色で描画
+        print(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}")
+    print(f"最善手: {bestmove}")
+
+    # 最善手の描画
+    comment_img.append(font.render(f"最善手: {bestmove}", True, (0, 0, 15)))  # 青色で描画
+
+    # GPT解析結果を取得
+    gpt_comment = analyze_with_gpt(position_command, comments, bestmove)
+
+    # GPTによる解説を追加
+    comment_img.append(font.render(f"GPT解析: {gpt_comment}", True, (15, 0, 0)))  # 赤色で描画
+
+    # 画面に描画
+    for i in range(len(comment_img)):
+        screen.blit(comment_img[i], (100, 810 + 30 * i))
+
+                
+    while True:
+        # 盤面マークの削除
+        if turn == 'b':
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 5)] # 先手の場合 先手マークを消す
+        else:
+            mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 6)] # 後手の場合 後手マークを消す
+        
+        # 盤面の描画
+        draw_board(board, turn, captured_pieces, move_number, mark_cells)
+        display_board(sfen)
+    
+        # 自動入力
+        if moves:
+            user_move = convert_to_sfen(jp_move, ef, last_to_sq=moves[-1], turn=turn, legal_moves_list=legal_moves_list, from_num=from_pos)    
+            print(f"{jp_move}を変換して{user_move}になった。")
+        else:
+            user_move = convert_to_sfen(jp_move, ef, last_to_sq="", turn=turn, legal_moves_list=legal_moves_list, from_num=from_pos)    
+            print(f"{jp_move}を変換して{user_move}になった。")
+        
+        while True:
+             if not command_queue.empty():  
+                    command = command_queue.get() 
+                    if command == 'q':
+                        print("対局を終了します。")
+                        return sfen, 'q'
+                    elif command == 'r':     # 右クリックした場合
+                        continue 
+                    
+                    user_move1 = convert_click_to_board(command)
+
+                    if user_move1 is None:    # クリックした場所の盤面情報が拾えなかった場合
+                        continue
+                    else:       # 動かせる駒をタッチした場合
+                        break
+        
+        sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)
+        if not valid:
+            beep_se.play()
+            phase = 1
+            continue
+        else:
+            koma_se.play()
+            if turn == 'b':
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (2, 4, 5)]
+            else:
+                mark_cells = [(x, y, z) for x, y, z in mark_cells if z not in (1, 3, 6)]
+            draw_board(board, turn, captured_pieces, move_number, mark_cells)
+            return sfen, None
+        
 
 
 
