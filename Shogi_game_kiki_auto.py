@@ -157,10 +157,14 @@ def play_game(executable_path, state_queue, command_queue):
                     sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos)
                     if flag == 'q':
                         break
-                    elif flag == 1:
+                    elif flag == 1 or flag == 2:
                         winner = i % 2
                         break
-
+                if flag == 'q':
+                    break
+                elif flag == 1 or flag == 2:
+                    winner = i % 2
+                    break
                     
 
                 print("\nその他のコメント:")
