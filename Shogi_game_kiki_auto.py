@@ -13,8 +13,8 @@ from openai import OpenAI, ChatCompletion
 from cshogi import *    #やねうら王の補助プログラム
 from board import *     #利き情報のクラス
 
-from kifu_parse6 import *
-from jp_record_2_sfen import *
+from kifu_parse6 import *   #棋譜情報を解析する関数
+from jp_record_2_sfen import *  #棋譜をSFENに変換する関数
 import sys  # sysモジュールをインポート
 
 """
