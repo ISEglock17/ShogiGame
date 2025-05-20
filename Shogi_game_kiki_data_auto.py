@@ -19,7 +19,7 @@ import sys  # sysモジュールをインポート
 
 import json
 import time
-
+import os
 
 
 """
@@ -159,7 +159,7 @@ def play_game(executable_path, state_queue, command_queue):
 
                     
                     # 自動入力のターン
-                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset)
+                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset, comment)
                     if flag == 'q':
                         print("対局を終了します。")
                         running = False
@@ -194,7 +194,7 @@ def play_game(executable_path, state_queue, command_queue):
                 print("やねうら王を終了しました。") 
         
         # データセットを保存
-        save_dataset(dataset, "./ShogiData2/dataset.json")
+        save_dataset(dataset, "./DataSet/dataset.json")
         
         if flag == 'q':
             return
@@ -214,7 +214,7 @@ def play_game(executable_path, state_queue, command_queue):
                 pygame.mixer.music.play(-1) #再生
                 state_queue.put("r")
 
-def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset):
+def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset, comment):
     """ 
         自動棋譜入力モード
         sfen: 盤面情報, 
@@ -228,7 +228,8 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
         koma_se,
         move,
         from_pos,
-        dataset: データセット
+        dataset: データセット,
+        comment: コメント
     """
     
     if not command_queue.empty():  
@@ -295,9 +296,9 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
         if jp_move in ["投了", "中断", "持将棋", "千日手"]:
             print(f"特殊な指し手をスキップ: {jp_move}")
             if turn == 'b':
-                return sfen, 1
+                return sfen, 2  #先手の投了
             else:
-                return sfen, 2
+                return sfen, 1  #後手の投了
     else:
         user_move = convert_to_sfen(jp_move, ef, last_to_sq="", turn=turn, legal_moves_list=legal_moves_list, from_num=from_pos)    
         print(f"{jp_move}を変換して{user_move}になった。")
@@ -319,7 +320,7 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
             }
             for move, eval_value, pred_moves, eval_values in legal_moves_evaluations
         ],
-        "comments": comments  # コメントリスト
+        "comments": comment  # コメントリスト
     })
                 
     # ユーザーの指し手を処理
