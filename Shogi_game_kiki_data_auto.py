@@ -84,6 +84,19 @@ def main():
     pygame.quit()
     sys.exit()  # プログラムを終了
 
+def load_kif_data(filepath):
+    """棋譜データを読み込む"""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        kif_data = f.readlines()
+    return parse_kif_file(kif_data)  # 既存のparse_kif_file関数を利用
+
+
+def save_dataset(dataset, output_path):
+    """データセットをJSON形式で保存"""
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(dataset, f, ensure_ascii=False, indent=4)
+        
+
 
 def play_game(executable_path, state_queue, command_queue):
     """対局のメインループ"""
@@ -107,7 +120,13 @@ def play_game(executable_path, state_queue, command_queue):
             mark_cells = [] # 駒の移動先をマークするリスト
             winner = None
             running = True
-            
+            dataset = {
+                "sente": None,
+                "gote": None,
+                "other_comments": [],
+                "moves": []  # 各手の情報を格納するリスト
+            }
+                    
             #----------------------------------------------------------------------------------------------------------------
             #  ゲーム展開
             #----------------------------------------------------------------------------------------------------------------
@@ -117,6 +136,9 @@ def play_game(executable_path, state_queue, command_queue):
                 
                 # 自動棋譜再生
                 result = parse_kif_file("./ShogiData/10001.txt")
+                dataset["sente"] = result["sente"]
+                dataset["gote"] = result["gote"]
+                dataset["other_comments"] = result["other_comments"]
 
                 print("先手:", result["sente"])
                 print("後手:", result["gote"])
@@ -137,7 +159,7 @@ def play_game(executable_path, state_queue, command_queue):
 
                     
                     # 自動入力のターン
-                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos)
+                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset)
                     if flag == 'q':
                         print("対局を終了します。")
                         running = False
@@ -154,6 +176,8 @@ def play_game(executable_path, state_queue, command_queue):
                 for i, comment in enumerate(result["other_comments"], 1):
                     print(f"{i}: {comment}")
                 
+
+                
             if winner == 1:
                 print("先手の勝ち！")
             elif winner == 0:
@@ -168,6 +192,9 @@ def play_game(executable_path, state_queue, command_queue):
                 # やねうら王のプロセスを終了
                 stop_yaneuraou(process)
                 print("やねうら王を終了しました。") 
+        
+        # データセットを保存
+        save_dataset(dataset, "./ShogiData2/dataset.json")
         
         if flag == 'q':
             return
@@ -187,7 +214,7 @@ def play_game(executable_path, state_queue, command_queue):
                 pygame.mixer.music.play(-1) #再生
                 state_queue.put("r")
 
-def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos):
+def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset):
     """ 
         自動棋譜入力モード
         sfen: 盤面情報, 
@@ -200,7 +227,8 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
         beep_se, 
         koma_se,
         move,
-        from_pos
+        from_pos,
+        dataset: データセット
     """
     
     if not command_queue.empty():  
@@ -224,6 +252,7 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
     #利き情報の出力
     ef = EffectBoard(board)
     ef.print_effect()
+    data_ef = ef.collect_effect_data()
 
     # やねうら王にMultiPV設定を送信
     send_command(process, "setoption name MultiPV value 10")
@@ -242,6 +271,7 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
         bestmove = None
         
     for move, eval_value, pred_moves, eval_values in legal_moves_evaluations:
+        eval_values = [int(value) for value in eval_values]
         print(f"手: {move}, 評価値: {eval_value}, 読み筋: {pred_moves}, 評価値変化: {eval_values}")
     print(f"最善手: {bestmove}")
 
@@ -272,8 +302,27 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
         user_move = convert_to_sfen(jp_move, ef, last_to_sq="", turn=turn, legal_moves_list=legal_moves_list, from_num=from_pos)    
         print(f"{jp_move}を変換して{user_move}になった。")
                
-
-
+    # データセットの保存
+    dataset["moves"].append({
+        "sfen": sfen,
+        "turn": turn,  # 手番 (b: 先手, w: 後手)
+        "captured_pieces": captured_pieces,  # 持ち駒
+        "move_number": move_number,  # 手数
+        "legal_moves": legal_moves_list,  # 合法手リスト
+        "effect_board": data_ef,  # 利き情報
+        "evaluations": [  # 評価値リスト
+            {
+                "move": move,
+                "eval_value": eval_value,
+                "pred_moves": pred_moves,
+                "eval_values": eval_values
+            }
+            for move, eval_value, pred_moves, eval_values in legal_moves_evaluations
+        ],
+        "comments": comments  # コメントリスト
+    })
+                
+    # ユーザーの指し手を処理
     sfen, valid = process_user_move(sfen, user_move, moves, process, response_queue)
 
     if not valid:

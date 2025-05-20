@@ -93,7 +93,35 @@ class EffectBoard:
                     effect_positions = [f"{self.coord_to_sfen(s.row, s.col)}({s.piece})" for s in square.effects]
                     print(f"{self.coord_to_sfen(square.row, square.col)}({square.piece}) -> {effect_positions}")
                 
-                
+    def collect_effect_data(self):
+        """
+        各駒の利き情報をデータセット形式で収集
+        例: 4i(G) -> ['4h(.)', '5i(K)', '3i(S)', '5h(.)', '3h(.)']
+        
+        {
+            "4i(G)": ["4h(.)", "5i(K)", "3i(S)", "5h(.)", "3h(.)"],
+            "3i(S)": ["4h(.)", "3h(.)", "2h(R)"],
+            "2i(N)": ["3g(P)", "1g(P)"],
+            "1i(L)": ["1h(.)", "1g(P)"],
+            ...
+        }
+        """
+        effect_data = {}
+        for row in self.effect_board:
+            for square in row:
+                if square.piece != '.':  # 駒がある場合のみ処理
+                    # 現在の駒の位置と種類
+                    current_position = self.coord_to_sfen(square.row, square.col)
+                    current_piece = square.piece
+                    key = f"{current_position}({current_piece})"
+
+                    # 利き先の情報を収集
+                    effect_positions = [
+                        f"{self.coord_to_sfen(s.row, s.col)}({s.piece})" for s in square.effects
+                    ]
+                    effect_data[key] = effect_positions
+        return effect_data
+
     def coord_to_sfen(self, board_row, board_col):
         """
             座標からSFEN形式に変換する
@@ -118,8 +146,25 @@ class EffectBoard:
 
 def main():
     board = [['l', 'n', 's', 'g', 'k', 'g', 's', 'n', 'l'], ['.', 'r', '.', '.', '.', '.', '.', 'b', '.'], ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'], ['.', '.', '.', '.', '.', '.', '.', '.', '.'], ['.', '.', '.', '.', '.', '.', '.', '.', '.'], ['.', '.', '.', '.', '.', '.', '.', '.', '.'], ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'], ['.', 'B', '.', '.', '.', '.', '.', 'R', '.'], ['L', 'N', 'S', 'G', 'K', 'G', 'S', 'N', 'L']]         
-    ef1 = EffectBoard(board)
-    ef1.print_effect()
+    ef = EffectBoard(board)
+    ef.print_effect()
+
+    import json
+    # 利き情報を収集
+    effect_data = ef.collect_effect_data()
+
+    # 利き情報を表示（デバッグ用）
+    print("利き情報:")
+    for key, value in effect_data.items():
+        print(f"{key} -> {value}")
+
+    # 利き情報をJSON形式で保存
+    output_path = "effect_dataset.json"
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(effect_data, f, ensure_ascii=False, indent=4)
+
+    print(f"利き情報を {output_path} に保存しました。")
+
 
 if __name__ == "__main__":
     main()
