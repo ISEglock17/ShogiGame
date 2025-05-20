@@ -100,49 +100,24 @@ def save_dataset(dataset, output_path):
 
 def play_game(executable_path, state_queue, command_queue):
     """対局のメインループ"""
-    input_dir = "./kif_clean"  # 棋譜ファイルのディレクトリ
-    output_dir = "./DataSet"  # データセットを保存するディレクトリ
-
-    # ディレクトリが存在しない場合は作成
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
-    # kif_cleanディレクトリ内のすべてのファイルを取得
-    file_list = [f for f in os.listdir(input_dir) if f.endswith(".txt")]
-    print(f"入力ファイル一覧: {file_list}")
-
-    # DataSetディレクトリ内の既存のJSONファイルを取得
-    existing_files = [f.replace(".json", ".txt") for f in os.listdir(output_dir) if f.endswith(".json")]
-    print(f"既存のデータセットファイル: {existing_files}")
-
-    # 既存ファイルを除外
-    file_list = [f for f in file_list if f not in existing_files]
-    print(f"処理対象ファイル一覧: {file_list}")
-
-    if not file_list:
-        print("新規に処理するファイルがありません。")
-        return
-
-    for filename in file_list:
-        input_path = os.path.join(input_dir, filename)
-        output_path = os.path.join(output_dir, filename.replace(".txt", ".json"))
-
-        print(f"処理中: {input_path}")
-
+    while True:
         process = None
         response_queue = []
         try:
             # やねうら王の起動と初期化
-            process = start_yaneuraou(executable_path)  # やねうら王のプロセス定義
-            yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)  # スレッドの準備
+            
+            process = start_yaneuraou(executable_path) # やねうら王のプロセス定義
+            yaneura_thread = threading.Thread(target=read_output, args=(process, response_queue), daemon=True)   # スレッドの準備
             yaneura_thread.start()
+            
+            initialize_yaneuraou(process, response_queue)   #  やねうら王の初期化
 
-            initialize_yaneuraou(process, response_queue)  # やねうら王の初期化
-
-            # 変数定義
-            sfen = initialize_board()  # 盤面の初期化
-            moves = []  # 棋譜を入れるリスト
-            mark_cells = []  # 駒の移動先をマークするリスト
+            #----------------------------------------------------------------------------------------------------------------
+            #  変数定義
+            #----------------------------------------------------------------------------------------------------------------
+            sfen = initialize_board()   # 盤面の初期化
+            moves = [] # 棋譜を入れるリスト
+            mark_cells = [] # 駒の移動先をマークするリスト
             winner = None
             running = True
             dataset = {
@@ -152,69 +127,94 @@ def play_game(executable_path, state_queue, command_queue):
                 "moves": []  # 各手の情報を格納するリスト
             }
 
-            # 棋譜データを読み込む
-            result = parse_kif_file(input_path)
-            dataset["sente"] = result["sente"]
-            dataset["gote"] = result["gote"]
-            dataset["other_comments"] = result["other_comments"]
+            
+            #----------------------------------------------------------------------------------------------------------------
+            #  ゲーム展開
+            #----------------------------------------------------------------------------------------------------------------
+            print("対局開始！指し手を入力してください (例: '7g7f')。'q' で終了。")
+            
+            while running:    
+                
+                # 自動棋譜再生
+                result = parse_kif_file("./ShogiData/10001.txt")
+                dataset["sente"] = result["sente"]
+                dataset["gote"] = result["gote"]
+                dataset["other_comments"] = result["other_comments"]
 
-            print("先手:", result["sente"])
-            print("後手:", result["gote"])
+                print("先手:", result["sente"])
+                print("後手:", result["gote"])
 
-            print("\n棋譜とコメント:")
-            for i, move_info in enumerate(result["moves"], 1):
-                jp_move = move_info["move"]
-                from_pos = move_info["from_pos"]
-                time_spent = move_info["time_spent"]
-                total_time = move_info["total_time"]
-                comment = result["move_comments"][i - 1]
+                print("\n棋譜とコメント:")
+                for i, move_info in enumerate(result["moves"], 1):
+                    jp_move = move_info["move"]
+                    from_pos = move_info["from_pos"]
+                    time_spent = move_info["time_spent"]
+                    total_time = move_info["total_time"]
+                    comment = result["move_comments"][i - 1]
 
-                print(f"{i}: {jp_move}")
-                print(f"   移動元: {from_pos}, 消費時間: {time_spent}, 累積時間: {total_time}")
-                if comment:
-                    print(f"   コメント: {comment}")
+                        
+                    print(f"{i}: {jp_move}")
+                    print(f"   移動元: {from_pos}, 消費時間: {time_spent}, 累積時間: {total_time}")
+                    if comment:
+                        print(f"   コメント: {comment}")
 
-                # 自動入力のターン
-                sfen, flag = auto_input_turn(
-                    sfen, moves, process, response_queue, command_queue, mark_cells,
-                    pop1_se, beep_se, koma_se, jp_move, from_pos, dataset, comment
-                )
-                if flag == 'q':
-                    print("対局を終了します。")
-                    running = False
+                    
+                    # 自動入力のターン
+                    sfen, flag = auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset, comment)
+                    if flag == 'q':
+                        print("対局を終了します。")
+                        running = False
+                        break
+                    elif flag == 1 or flag == 2:
+                        # 投了、中断、持将棋、千日手の処理
+                        winner = i % 2
+                        running = False
+                        break
+                if not running:
                     break
-                elif flag == 1 or flag == 2:
-                    # 投了、中断、持将棋、千日手の処理
-                    winner = i % 2
-                    running = False
-                    break
-            if not running:
-                continue  # 次のファイルに進む
 
-            print("\nその他のコメント:")
-            for i, comment in enumerate(result["other_comments"], 1):
-                print(f"{i}: {comment}")
+                print("\nその他のコメント:")
+                for i, comment in enumerate(result["other_comments"], 1):
+                    print(f"{i}: {comment}")
+                
 
+                
             if winner == 1:
                 print("先手の勝ち！")
             elif winner == 0:
                 print("後手の勝ち！")
-
+                
         except Exception as e:
             print(f"エラーが発生しました: {e}")
-            continue  # 次のファイルに進む
-
+            return
+            
         finally:
             if process:
                 # やねうら王のプロセスを終了
                 stop_yaneuraou(process)
-                print("やねうら王を終了しました。")
-
+                print("やねうら王を終了しました。") 
+        
         # データセットを保存
-        save_dataset(dataset, output_path)
-        print(f"保存完了: {output_path}")
+        save_dataset(dataset, "./DataSet/dataset.json")
+        
 
-    print("すべての棋譜ファイルの処理が完了しました。")
+        if flag == 'q':
+            return
+        else:    
+            print("もう一度やりますか。")
+            while command_queue.empty():
+                pass
+            user_move1 = command_queue.get()           
+            if user_move1 == 'q':
+                print("対局を終了します。")
+                return 
+            elif len(user_move1) < 2:
+                print("終了しました。")
+                state_queue.put("q")
+                return
+            else:    
+                pygame.mixer.music.play(-1) #再生
+                state_queue.put("r")
 
 def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_cells, pop1_se, beep_se, koma_se, jp_move, from_pos, dataset, comment):
     """ 
@@ -343,7 +343,6 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
 #-----------------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
-`
 
 
 
