@@ -204,15 +204,18 @@ def play_game(executable_path, state_queue, command_queue):
             print(f"エラーが発生しました: {e}")
             continue  # 次のファイルに進む
 
-        finally:
+        finally:    
+            # データセットを保存
+            save_dataset(dataset, output_path)
+            print(f"保存完了: {output_path}")    
+            
+            if flag == 'q':
+                return
+            
             if process:
                 # やねうら王のプロセスを終了
                 stop_yaneuraou(process)
                 print("やねうら王を終了しました。")
-
-        # データセットを保存
-        save_dataset(dataset, output_path)
-        print(f"保存完了: {output_path}")
 
     print("すべての棋譜ファイルの処理が完了しました。")
 
@@ -343,7 +346,7 @@ def auto_input_turn(sfen, moves, process, response_queue, command_queue, mark_ce
 #-----------------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
-`
+
 
 
 
