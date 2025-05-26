@@ -1,0 +1,378 @@
+{
+    "sente": "東 和男七段",
+    "gote": "有吉 道夫九段",
+    "other_comments": [
+        "有吉は２７日に７２歳の誕生日を迎える。今年度は未勝利なので早く１勝を挙げたい。",
+        "東は今年度成績１勝４敗。平成７年から長期にわたり務めてきた日本将棋連盟理事を今年５月に退任した。",
+        "過去の対戦成績は有吉１６勝、東５勝。順位戦では第５７期Ｂ２で東が、第６１期Ｃ１で有吉が勝っている。",
+        "本局の記録係は渡辺ゆん太４級（１９歳、加瀬純一六段門下）。",
+        "",
+        "ハプニングが起こった。なんと有吉が後手番なのに初手△３四歩を着手してしまい、反則負けとなった。",
+        "東は１勝１敗、有吉は２連敗となった。",
+        "",
+        "（棋譜・コメント入力＝翔）"
+    ],
+    "moves": [
+        {
+            "sfen": "lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1",
+            "turn": "b",
+            "captured_pieces": "-",
+            "move_number": 1,
+            "legal_moves": [
+                "1g1f",
+                "2g2f",
+                "3g3f",
+                "4g4f",
+                "5g5f",
+                "6g6f",
+                "7g7f",
+                "8g8f",
+                "9g9f",
+                "1i1h",
+                "9i9h",
+                "3i3h",
+                "3i4h",
+                "7i6h",
+                "7i7h",
+                "2h1h",
+                "2h3h",
+                "2h4h",
+                "2h5h",
+                "2h6h",
+                "2h7h",
+                "4i3h",
+                "4i4h",
+                "4i5h",
+                "6i5h",
+                "6i6h",
+                "6i7h",
+                "5i4h",
+                "5i5h",
+                "5i6h"
+            ],
+            "effect_board": {
+                "9a(l)": [
+                    "9b(.)",
+                    "9c(p)"
+                ],
+                "8a(n)": [
+                    "9c(p)",
+                    "7c(p)"
+                ],
+                "7a(s)": [
+                    "8b(r)",
+                    "7b(.)",
+                    "6b(.)"
+                ],
+                "6a(g)": [
+                    "7a(s)",
+                    "5a(k)",
+                    "6b(.)",
+                    "7b(.)",
+                    "5b(.)"
+                ],
+                "5a(k)": [
+                    "6a(g)",
+                    "4a(g)",
+                    "5b(.)",
+                    "6b(.)",
+                    "4b(.)"
+                ],
+                "4a(g)": [
+                    "5a(k)",
+                    "3a(s)",
+                    "4b(.)",
+                    "5b(.)",
+                    "3b(.)"
+                ],
+                "3a(s)": [
+                    "4b(.)",
+                    "3b(.)",
+                    "2b(b)"
+                ],
+                "2a(n)": [
+                    "3c(p)",
+                    "1c(p)"
+                ],
+                "1a(l)": [
+                    "1b(.)",
+                    "1c(p)"
+                ],
+                "8b(r)": [
+                    "8c(p)",
+                    "8a(n)",
+                    "7b(.)",
+                    "6b(.)",
+                    "5b(.)",
+                    "4b(.)",
+                    "3b(.)",
+                    "2b(b)",
+                    "9b(.)"
+                ],
+                "2b(b)": [
+                    "1c(p)",
+                    "3a(s)",
+                    "3c(p)",
+                    "1a(l)"
+                ],
+                "9c(p)": [
+                    "9d(.)"
+                ],
+                "8c(p)": [
+                    "8d(.)"
+                ],
+                "7c(p)": [
+                    "7d(.)"
+                ],
+                "6c(p)": [
+                    "6d(.)"
+                ],
+                "5c(p)": [
+                    "5d(.)"
+                ],
+                "4c(p)": [
+                    "4d(.)"
+                ],
+                "3c(p)": [
+                    "3d(.)"
+                ],
+                "2c(p)": [
+                    "2d(.)"
+                ],
+                "1c(p)": [
+                    "1d(.)"
+                ],
+                "9g(P)": [
+                    "9f(.)"
+                ],
+                "8g(P)": [
+                    "8f(.)"
+                ],
+                "7g(P)": [
+                    "7f(.)"
+                ],
+                "6g(P)": [
+                    "6f(.)"
+                ],
+                "5g(P)": [
+                    "5f(.)"
+                ],
+                "4g(P)": [
+                    "4f(.)"
+                ],
+                "3g(P)": [
+                    "3f(.)"
+                ],
+                "2g(P)": [
+                    "2f(.)"
+                ],
+                "1g(P)": [
+                    "1f(.)"
+                ],
+                "8h(B)": [
+                    "7i(S)",
+                    "9g(P)",
+                    "9i(L)",
+                    "7g(P)"
+                ],
+                "2h(R)": [
+                    "2i(N)",
+                    "2g(P)",
+                    "1h(.)",
+                    "3h(.)",
+                    "4h(.)",
+                    "5h(.)",
+                    "6h(.)",
+                    "7h(.)",
+                    "8h(B)"
+                ],
+                "9i(L)": [
+                    "9h(.)",
+                    "9g(P)"
+                ],
+                "8i(N)": [
+                    "9g(P)",
+                    "7g(P)"
+                ],
+                "7i(S)": [
+                    "8h(B)",
+                    "7h(.)",
+                    "6h(.)"
+                ],
+                "6i(G)": [
+                    "6h(.)",
+                    "7i(S)",
+                    "5i(K)",
+                    "7h(.)",
+                    "5h(.)"
+                ],
+                "5i(K)": [
+                    "5h(.)",
+                    "6i(G)",
+                    "4i(G)",
+                    "6h(.)",
+                    "4h(.)"
+                ],
+                "4i(G)": [
+                    "4h(.)",
+                    "5i(K)",
+                    "3i(S)",
+                    "5h(.)",
+                    "3h(.)"
+                ],
+                "3i(S)": [
+                    "4h(.)",
+                    "3h(.)",
+                    "2h(R)"
+                ],
+                "2i(N)": [
+                    "3g(P)",
+                    "1g(P)"
+                ],
+                "1i(L)": [
+                    "1h(.)",
+                    "1g(P)"
+                ]
+            },
+            "evaluations": [
+                {
+                    "move": "7g7f",
+                    "eval_value": "0",
+                    "pred_moves": "7g7f 3c3d 2g2f 2b8h+ 7i8h 3a2b 3i4h 7a6b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "2g2f",
+                    "eval_value": "0",
+                    "pred_moves": "2g2f 8c8d 2f2e 8d8e 6i7h 4a3b 2e2d 2c2d",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "5g5f",
+                    "eval_value": "0",
+                    "pred_moves": "5g5f 8c8d 7g7f 3c3d 5f5e 7a6b 2h5h 5a4b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "6i7h",
+                    "eval_value": "0",
+                    "pred_moves": "6i7h 3c3d 7g7f 8b4b 8h2b+ 3a2b 5i6h 5a6b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "3i4h",
+                    "eval_value": "0",
+                    "pred_moves": "3i4h 3c3d 2g2f 8c8d 2f2e 4a3b 6i7h 8d8e",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "6g6f",
+                    "eval_value": "0",
+                    "pred_moves": "6g6f 3c3d 7g7f 8c8d 2h7h 8d8e 8h7g 7a6b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "7i6h",
+                    "eval_value": "0",
+                    "pred_moves": "7i6h 3c3d 2h5h 2b3c 5g5f 8b2b 6h5g 5a6b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "2h6h",
+                    "eval_value": "0",
+                    "pred_moves": "2h6h 3c3d 6g6f 3d3e 3i3h 8b3b 6i5h 3e3f",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "3g3f",
+                    "eval_value": "0",
+                    "pred_moves": "3g3f 8c8d 3f3e 8d8e 6i7h 8e8f 8g8f 8b8f",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "9g9f",
+                    "eval_value": "0",
+                    "pred_moves": "9g9f 3c3d 7g7f 9c9d 7f7e 7a6b 6g6f 5a4b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "1g1f",
+                    "eval_value": "0",
+                    "pred_moves": "1g1f 3c3d 7g7f 8c8d 6g6f 7a6b 2h6h 5a4b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "3i3h",
+                    "eval_value": "0",
+                    "pred_moves": "3i3h 8c8d 2g2f 8d8e 6i7h 3a3b 2f2e 8e8f",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "2h7h",
+                    "eval_value": "0",
+                    "pred_moves": "2h7h 3c3d 5i4h 8c8d 4h3h 8d8e 7g7f 5a4b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "6i5h",
+                    "eval_value": "0",
+                    "pred_moves": "6i5h 3c3d 3i4h 8c8d 7i7h 8d8e 8h7i 4a3b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "5i6h",
+                    "eval_value": "0",
+                    "pred_moves": "5i6h 8c8d 6h7h 8d8e 7i6h 8e8f 8g8f 8b8f",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "4i5h",
+                    "eval_value": "0",
+                    "pred_moves": "4i5h 8c8d 7g7f 3c3d 6g6f 8d8e 8h7g 5a4b",
+                    "eval_values": [
+                        "0"
+                    ]
+                },
+                {
+                    "move": "4g4f",
+                    "eval_value": "0",
+                    "pred_moves": "4g4f 4c4d 7g7f 8b4b 3i4h 5a6b 4h4g 6b7b",
+                    "eval_values": [
+                        "0"
+                    ]
+                }
+            ],
+            "comments": null
+        }
+    ]
+}
