@@ -32,8 +32,8 @@ def save_to_text_file(lines, output_path):
             f.write(line + '\n')
 
 def main():
-    input_path = './DataSet/10000.json'   # ← JSONファイルのパスを指定
-    output_path = './PromptText/10000_comments.txt'       # ← 出力先テキストファイル名を指定
+    input_path = './DataSet/10006.json'   # ← JSONファイルのパスを指定
+    output_path = './PromptText/10006_comments.txt'       # ← 出力先テキストファイル名を指定
     data = load_json_file(input_path)
     lines = extract_comments(data)
     save_to_text_file(lines, output_path)

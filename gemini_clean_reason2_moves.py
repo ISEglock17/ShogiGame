@@ -16,33 +16,75 @@ import re
 
 # --- Geminiに渡すプロンプト定義 ---
 GEMINI_PROMPT_TEMPLATE = """
-次の将棋対局データに含まれる各手のコメントから、以下のルールに従って、入出力例を参考に不要な部分を最小限に削除し、文の自然さを保ちながら整形してください。
+次の将棋対局データに含まれる各手のコメントについて、以下のルールと入出力形式に従って整形してください。
 
-■ 目的：
-手数n: <コメント>で与えられるコメントを精査し、棋譜解析に不要な情報を取り除きつつ、盤面に関する解説や指し手の意味など、有用な情報は自然な文として残してください。
+【目的】
+コメント中の棋譜解析に不要な情報（メタ情報・人物紹介・時間情報など）を削除し、盤面や指し手の解説だけを自然な文として残すこと。
 
-■ 出力形式（プレーンテキスト）：
-手数<手数>: <整形されたコメント文（1文以上）>
+【手順】
+1. コメントから削除すべき情報をルールに従って判断し、削除してください。
+2. 残った内容を自然な文に整形してください。
+3. その結果として出力内容を次のように構成してください：
+   - 1行目: `手数<N>: <整形済みのコメント>`（整形後コメントがない場合は `手数<N>:` のみで可）
+   - 2行目以降: `削除理由:` に続けて、削除対象となった表現とそのルール番号を列挙
 
-※コメントが全て削除対象の情報のみで構成される場合は、その手数行は一切出力しないでください。
-※結果のみを出力すること。余計な説明や前後の文脈は不要です。
+【削除対象ルール】
+1. 対局者以外の人の名前・段位・門下情報（例:「高橋九段」「所司和晴七段」「カメラマン」「検討陣」など）
+2. 前例や過去の対局に関する記述（例:「前例は〜」「昨年の対局では〜」など）
+3. 時間情報（例:「11時9分」「43分の考慮」「ノータイム」など）
+4. 対局者プロフィールや戦績、段位、棋士番号、門下（例:「先手四段」「公式戦成績〜」「所属〜」「生年月日〜」など）
+5. 棋風や戦型の傾向（例:「居飛車党」「中座は〜戦法の創始者」など）
+6. 対局場所・天候・ホテル等の情報（例:「甲府市で」「快晴の空の下」「控室」など）
+7. 食事・休憩・再開など（例:「昼食休憩」「対局再開」など）
+8. 中継・URL・棋譜公開メタ情報（例:「中継ページでは〜」「棋譜数が〜」など）
 
-■ 削除対象：
-1.  対局者以外の棋士の実名。（例：「高橋九段」「畠山鎮七段」「所司和晴七段」など）コメント内で局面解説を行っている場合でも全て削除してください。
-2.  前例や過去の対局に関する記述（例：「前例は1局」「過去には〜」「この▲１六歩で前例がなくなっている」など）。
-3.  時間に関する情報（例：「11時9分」「消費時間43分」「残り時間〜」「11分の考慮」「33分使って休憩に入った」など）。
-4.  棋士紹介、またはその一部。対局者であっても、棋士のプロフィール、経歴、成績（公式戦成績、順位戦成績、勝敗数など）、所属、誕生日、段位、棋士番号、門下に関する記述は全て削除してください。（例：「大平 武洋六段は1977年5月11日生まれ」「先手の公式戦成績は２２７勝２４７敗」「後手の順位戦成績は１１４勝１０５敗」「先手四段」「後手は加瀬純一七段門下」など）
-5.  棋風や戦型の傾向（例：「両者とも居飛車党」など）。
-6.  対局場所や天候、対局に関わる詳細なバックグラウンド情報（例：「甲府市の会場で」、「18時から関係者による夕食会」など）もすべて削除してください。
-7.  昼食や休憩の話題、対局の再開に関する記述。（例：「そろそろ昼食休憩」「対局再開」など）
-8.  中継ページ、URL、棋譜公開に関するメタ情報（例：「本局の中継ページのURL末尾は「１００００．ｈｔｍｌ」」「名人戦棋譜速報で公開している棋譜は少なくとも9千局を超える」など）。
+【置換ルール】
+- コメントに含まれる先手・後手の実名は「先手」「後手」に置き換えてください。
+- 対局者以外の名前は削除してください（置換せずに削除）。
+- 将棋の指し手や局面に関する内容は、自然な解説文に整形してください。
 
-※文の一部が該当する場合は、該当箇所のみを削除し、残りを自然な文に整形してください。
+【出力形式】
+コメントに意味のある内容が残った場合：
 
-■ 置換ルール：
-- 対局者の名前は「先手」「後手」に置き換えてください。
-- ただし，対局者以外の名前は置き換えないでください。
-- 戦法など盤面情報に関する内容は，アドバイス・解説をする際の文体に書き換えてください。
+手数<N>: <整形後コメント>
+
+削除理由:
+- 「削除対象部分」 → ルール番号
+- 「〜」 → ルール番号
+
+整形後にコメントが空になった場合でも、次のように **必ず空行を入れて**出力してください：
+
+手数<N>:
+
+削除理由:
+- 「削除対象部分」 → ルール番号
+- 「〜」 → ルール番号
+
+【例1: 内容が残る場合】
+入力:
+手数15: 中座は△８五飛戦法の創始者として知られる。戦型は横歩取り。
+
+出力:
+手数15: 戦型は横歩取り。
+
+削除理由:
+- 「中座は△８五飛戦法の創始者として知られる。」 → ルール1, 5
+
+【例2: コメント全削除の場合】
+入力:
+手数12: 中座の通算成績は３８４勝３３６敗（０．５３３）。C級2組は連続10期、通算17期。
+
+出力:
+手数12:
+
+削除理由:
+- 「中座の通算成績は３８４勝３３６敗（０．５３３）」 → ルール4
+- 「C級2組は連続10期、通算17期」 → ルール4
+
+---
+
+以下に対象コメントを示します：
+手数{move_number}: {comment_text}
 
 ■ 入出力例: 
 ---
@@ -168,10 +210,10 @@ GEMINI_PROMPT_TEMPLATE = """
 
 ---
 入力コメント16:
-手数 28: 後手陣に金銀の浮き駒がなくなった。こうしておけば３三角が動いた後に▲３二飛成がない。後手の狙い筋のひとつには、△１五歩▲同歩△８八角成▲同銀に△５四角があるだろうか。「△３一金以外に待つ手が難しかったのかもしれません。△７二玉は玉飛接近の形になりますし、△７二銀も飛車が動いた後に８二の空間が気になりました」（所司七段）
+手数 28: 後手陣に金銀の浮き駒がなくなった。こうしておけば３三角が動いた後に▲３二飛成がない。後手の狙い筋のひとつには、△１五歩▲同歩△８八角成▲同銀に△５四角があるだろうか。「△３一金以外に待つ手が難しかったのかもしれません。△７二玉は玉飛接近の形になりますし、△７二銀も飛車が動いた後に８２の空間が気になりました」（所司七段）
 
 出力16:
-後手陣に金銀の浮き駒がなくなった。こうしておけば３三角が動いた後に▲３二飛成がない。後手の狙い筋のひとつには、△１五歩▲同歩△８八角成▲同銀に△５四角があるだろうか。△３一金以外に待つ手が難しかったのかもしれない。△７二玉は玉飛接近の形になるし、△７二銀も飛車が動いた後に８二の空間が気になる。
+後手陣に金銀の浮き駒がなくなった。こうしておけば３三角が動いた後に▲３二飛成がない。後手の狙い筋のひとつには、△１五歩▲同歩△８八角成▲同銀に△５四角があるだろうか。△３一金以外に待つ手が難しかったのかもしれない。△７二玉は玉飛接近の形になるし、△７二銀も飛車が動いた後に８２の空間が気になる。
 
 ---
 入力コメント17:
@@ -266,6 +308,16 @@ GEMINI_PROMPT_TEMPLATE = """
 理由: 対局場所や関係者の情報は不要。
 
 ---
+入力コメント29:
+手数25: １３時３０分を回り、対局再開。
+盤の前で再開を待っていた稲葉は、再開が告げられるとすぐに角を上がった。
+稲葉が指してから１分ほどして佐藤が入室。記録係から「指されました」と告げられ、「はい」と歯切れよく返事をした。
+
+出力29
+先手は角を上がった。
+理由: 「１３時３０分を回り、対局再開。」は時間に関する内容なので，不要。「盤の前で再開を待っていた」は盤面と関係ない対局状況なので不要。「再開が告げられるとすぐに角を上がった。」は角を上がった以外，盤面と関係ない情報なので，削除した。「稲葉が指してから１分ほどして佐藤が入室。記録係から「指されました」と告げられ、「はい」と歯切れよく返事をした。」は盤面状況と関係ない対局室での様子なので削除した。
+
+---
 
 以下に対象のコメントを示します：
 先手: {sente_name}
@@ -285,12 +337,15 @@ def load_json_file(file_path):
         print(f"エラー: 無効なJSONファイルです - {file_path}")
         return None
 
-def clean_comment_with_gemini(client, sente_name: str, gote_name: str, move_number: int, comment_text: str) -> str:
+def clean_comment_with_gemini(client, sente_name: str, gote_name: str, move_number: int, comment_text: str) -> tuple:
     """
     単一のコメントをGeminiを用いて整形します。
+    print内容をmemo_linesとして返すように変更
     """
-    if not comment_text.strip(): # コメントが空の場合は処理しない
-        return ""
+    memo_lines = []
+    if not comment_text.strip():
+        memo_lines.append(f"=== Gemini に送信するコメント===\n手数{move_number}: {comment_text}\n→  手数{move_number}: （空コメント）\n" + "="*60)
+        return "", memo_lines
 
     prompt_text = GEMINI_PROMPT_TEMPLATE.format(
         sente_name=sente_name,
@@ -298,8 +353,7 @@ def clean_comment_with_gemini(client, sente_name: str, gote_name: str, move_numb
         move_number=move_number,
         comment_text=comment_text
     )
-    print(f"=== Gemini に送信するコメント===")
-    print(f'手数{move_number}: {comment_text}')
+    memo_lines.append(f"=== Gemini に送信するコメント===\n手数{move_number}: {comment_text}")
 
     contents = [
         types.Content(
@@ -319,28 +373,17 @@ def clean_comment_with_gemini(client, sente_name: str, gote_name: str, move_numb
 
     try:
         full_response_text = ""
-        # ここで `chunk.text` が None になる可能性を考慮
         for chunk in client.models.generate_content_stream(
             model="gemini-2.5-flash-preview-05-20",
             contents=contents,
             config=generate_content_config,
         ):
-            if chunk.text is not None: # ★追加: chunk.text が None でないことを確認★
+            if chunk.text is not None:
                 full_response_text += chunk.text
-            # else:
-            #     print(f"警告: 手数 {move_number} の処理中に空のチャンクを受け取りました。") # デバッグ用
 
         cleaned_text = full_response_text.strip()
-        
-        # 1. LLMが返した可能性のある余計な「手数X:」プレフィックスを全て除去
-        # モデルが「手数X: 手数X:」と返したり、「手数X:」だけ返したりする場合に対応
-        # まず、LLMが意図せず付与した可能性のある「手数X:」を全て除去し、生のコメント部分だけにする
-        # r"^(?:手数\s*\d+:\s*)+" は「手数 数字: 」というパターンが先頭に1回以上続く場合にマッチ
-        # ?: は非キャプチャグループ（マッチするが結果には含まれない）
         cleaned_text = re.sub(r"^(?:手数\s*\d+:\s*)+", "", cleaned_text).strip()
 
-        # 2. 棋士紹介、戦績、メタ情報などのパターンをプログラム側でさらに確実に除去
-        # （前回のリストを再掲。必要に応じて、今回のエラーで残ったパターンを追加してください）
         patterns_to_remove_programmatically = [
             r"(\S+)(四段|五段|六段|七段|八段|九段|名人|竜王|王将|王座|棋王|叡王|王位|棋聖|本因坊|永世)\S*は\d+年\d+月\d+日生まれ", # 棋士の生年月日
             r"(\S+)(四段|五段|六段|七段|八段|九段|名人|竜王|王将|王座|棋王|叡王|王位|棋聖|本因坊|永世)?は\d+年、(四段|五段|六段|七段|八段|九段)", # 棋士の昇段情報
@@ -367,67 +410,116 @@ def clean_comment_with_gemini(client, sente_name: str, gote_name: str, move_numb
         for pattern in patterns_to_remove_programmatically:
             cleaned_text = re.sub(pattern, "", cleaned_text).strip()
 
-        print(f'→  手数{move_number}: {cleaned_text}')
-        print("=" * 60)
+        memo_lines.append(f"→  手数{move_number}: {cleaned_text}\n" + "="*60)
 
-        # 3. 最終的に空になったコメント、または意味のない短いコメントを完全に除去
-        # 全ての削除処理を行った結果、テキストが空になった場合
+        # コメントが空の場合は必ず改行を入れる
         if not cleaned_text:
-            return f"手数{move_number}:"
+            result_line = f"手数{move_number}:\n削除理由:"
+            return result_line, memo_lines
 
-        # 非常に短い（例: 数文字以下）で、かつ将棋の指し手を示唆する記号を含まないコメントも除去
-        # （「。」や「！」だけが残った場合など）
-        # ここは調整が必要です。あまり厳しくしすぎると、本当に残したい短いコメントも消してしまう可能性があります。
         shogi_move_indicators = ['▲', '△', '同', '成', '不成', '引', '寄', '直', '上', '右', '左', '打', '寄', '引', '直']
         if len(cleaned_text) < 5 and not any(c in cleaned_text for c in shogi_move_indicators):
-            # 棋譜の指し手を示す記号が含まれていない、かつ非常に短い場合は削除
-            return f"手数{move_number}:"
+            result_line = f"手数{move_number}:\n削除理由:"
+            return result_line, memo_lines
 
-        # 4. 最終的な出力フォーマット調整: 必ず「手数X: 」を先頭に付与
-        # ここまでで元のコメントから不必要な部分が除去されているはずなので、
-        # 最後に適切な「手数X: 」を付与して整形済みコメントとして返す
-        return f"手数{move_number}: {cleaned_text}"
-            
+        # 通常のコメントの場合
+        result_line = f"手数{move_number}: {cleaned_text}"
+        # 万が一「手数n:削除理由:」が連続してしまう場合の正規化
+        result_line = re.sub(r"(手数\d+:)(削除理由:)", r"\1\n\2", result_line)
+        return result_line, memo_lines
     except Exception as e:
-        print(f"Gemini API呼び出し中にエラーが発生しました (手数 {move_number}): {e}")
-        return "" # エラー時は空文字列を返す。これで 'NoneType' が返されることはないはず。
+        memo_lines.append(f"Gemini API呼び出し中にエラーが発生しました (手数 {move_number}): {e}")
+        return "", memo_lines
+
+def clean_comments_batch_with_gemini(client, sente_name, gote_name, moves_comments):
+    """
+    複数のコメントをまとめてGeminiでクリーニングする
+    moves_comments: List[Tuple[move_number, comment_text]]
+    """
+    # まとめてプロンプトを作成
+    prompt_body = ""
+    for move_number, comment_text in moves_comments:
+        prompt_body += f"手数{move_number}: {comment_text}\n"
+    prompt_text = GEMINI_PROMPT_TEMPLATE.format(
+        sente_name=sente_name,
+        gote_name=gote_name,
+        move_number="まとめ",
+        comment_text=prompt_body
+    )
+
+    # ここでプロンプト内容を表示
+    print("=== Geminiに送信するバッチプロンプト ===")
+    print(prompt_text)
+    print("="*60)
+
+    contents = [
+        types.Content(
+            role="user",
+            parts=[types.Part.from_text(text=prompt_text)],
+        ),
+    ]
+    generate_content_config = types.GenerateContentConfig(
+        thinking_config=types.ThinkingConfig(thinking_budget=0),
+        response_mime_type="text/plain",
+    )
+
+    try:
+        full_response_text = ""
+        for chunk in client.models.generate_content_stream(
+            model="gemini-2.5-flash-preview-05-20",
+            contents=contents,
+            config=generate_content_config,
+        ):
+            if chunk.text is not None:
+                full_response_text += chunk.text
+
+        # 応答を手数ごとに分割
+        cleaned_lines = []
+        memo_lines = []
+        # 手数ごとに分割（例: "手数12:" で区切る）
+        for match in re.finditer(r"(手数\d+:.*?)(?=手数\d+:|$)", full_response_text, re.DOTALL):
+            cleaned = match.group(1).strip()
+            cleaned_lines.append(cleaned)
+            memo_lines.append(f"=== Gemini batch応答 ===\n{cleaned}\n" + "="*60)
+        return cleaned_lines, memo_lines
+    except Exception as e:
+        return [], [f"Gemini batch APIエラー: {e}"]
 
 def process_shogi_json(client, json_data):
-    """
-    読み込んだJSONデータから各手のコメントを抽出し、Geminiで整形します。
-    """
     sente = json_data.get('sente', '不明')
     gote = json_data.get('gote', '不明')
-    
     processed_lines = []
+    memo_lines = []
 
+    # まとめて送信するコメントリストを作成
+    moves_comments = []
     for move in json_data.get('moves', []):
         move_number = move.get('move_number')
         comments = move.get('comments') or []
+        # コメントがstrならリスト化
+        if isinstance(comments, str):
+            comments = [comments]
+        for comment_item in comments:
+            if isinstance(comment_item, str) and comment_item.strip():
+                moves_comments.append((move_number, comment_item.strip()))
 
-        # コメントがリスト形式の場合、結合して単一の文字列にする
-        if all(isinstance(c, str) and len(c) == 1 for c in comments):
-            full_comment = ''.join(comments).strip()
-            if full_comment:
-                # client オブジェクトを渡すように変更
-                cleaned_comment = clean_comment_with_gemini(client, sente, gote, move_number, full_comment)
-                if cleaned_comment:
-                    processed_lines.append(cleaned_comment)
-        else:
-            for comment_item in comments:
-                if isinstance(comment_item, str) and comment_item.strip():
-                    # client オブジェクトを渡すように変更
-                    cleaned_comment = clean_comment_with_gemini(client, sente, gote, move_number, comment_item.strip())
-                    if cleaned_comment:
-                        processed_lines.append(cleaned_comment)
-    return processed_lines
+    # 10件ずつバッチ処理
+    batch_size = 10
+    for i in range(0, len(moves_comments), batch_size):
+        batch = moves_comments[i:i+batch_size]
+        cleaned_lines, batch_memo = clean_comments_batch_with_gemini(client, sente, gote, batch)
+        processed_lines.extend(cleaned_lines)
+        memo_lines.extend(batch_memo)
+        for line in batch_memo:
+            print(line)
+    return processed_lines, memo_lines
 
 def main():
-    input_directory = './DataSet'  # JSONファイルがあるディレクトリ
-    output_directory = './ProcessedComments' # 整形後のコメントを保存するディレクトリ
-
-    # 出力ディレクトリが存在しない場合は作成
+    input_directory = './DataSet'
+    output_directory = './ProcessedComments_reason_moves'
+    memo_directory = './ProcessedComments_reason_memo_moves'
     os.makedirs(output_directory, exist_ok=True)
+    os.makedirs(memo_directory, exist_ok=True)
 
     # genai.Client の初期化
     # APIキーは環境変数から読み込まれます。
@@ -452,6 +544,8 @@ def main():
         base_name = os.path.splitext(json_file)[0]
         output_file_name = f"{base_name}_processed.txt"
         output_path = os.path.join(output_directory, output_file_name)
+        memo_file_name = f"{base_name}_memo.txt"
+        memo_path = os.path.join(memo_directory, memo_file_name)
 
         # 既に整形済みファイルが存在するかチェック
         if os.path.exists(output_path):
@@ -464,13 +558,15 @@ def main():
         
         data = load_json_file(file_path)
         if data:
-            # client オブジェクトを渡すように変更
-            processed_comments = process_shogi_json(client, data) 
-            
+            processed_comments, memo_lines = process_shogi_json(client, data)
             with open(output_path, 'w', encoding='utf-8') as f:
                 for line in processed_comments:
                     f.write(line + '\n')
+            with open(memo_path, 'w', encoding='utf-8') as f:
+                for line in memo_lines:
+                    f.write(line + '\n')
             print(f"整形結果を保存しました: {output_path}")
+            print(f"memoログを保存しました: {memo_path}")
         print("-" * 30)
 
 if __name__ == '__main__':
