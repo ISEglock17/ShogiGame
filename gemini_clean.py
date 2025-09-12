@@ -67,7 +67,7 @@ def clean_shogi_comment_with_gemini(comment_data: dict, api_key: str) -> str:
 # 使用例
 if __name__ == "__main__":
     # 実際にはここにあなたのGemini APIキーを設定してください
-    YOUR_GEMINI_API_KEY = "AIzaSyAwlSHU7pwmpYUg7PcqxBIeCOJVutbqEDo"
+    YOUR_GEMINI_API_KEY = ""
 
     # テストデータ1: 前回の問題となったコメント
     data1 = {

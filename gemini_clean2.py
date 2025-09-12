@@ -6,7 +6,7 @@ import google.generativeai as genai
 # 実際にはここにあなたのGemini APIキーを設定してください。
 # 環境変数から読み込むことを推奨します。
 # 例: YOUR_GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-YOUR_GEMINI_API_KEY = "AIzaSyAMmyRrFWjNqHPqSfb-_kDyUij4SeGjITw"
+YOUR_GEMINI_API_KEY = ""
 genai.configure(api_key=YOUR_GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash') # または 'gemini-1.5-pro'
 #model = "gemini-2.5-flash-preview-05-20"
