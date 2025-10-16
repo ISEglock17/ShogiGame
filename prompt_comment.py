@@ -1,3 +1,6 @@
+"""
+    単一ファイルを指定して，コメントをデータセットから抽出し，テキストファイルに保存するスクリプト
+"""
 import json
 
 def load_json_file(file_path):

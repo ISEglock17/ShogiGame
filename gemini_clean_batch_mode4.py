@@ -364,11 +364,13 @@ def make_jsonl_file(sente_name: str, gote_name: str, moves_list: list, base_name
         prompt_top = GEMINI_PROMPT_TEMPLATE.format(sente_name=sente_name, gote_name=gote_name, comments_block="")
 
     # JSONL リクエスト作成
+    # NOTE: batch API and uploaded JSONL must use the same model identifier.
+    # Use the fully-qualified model resource name that the batch API expects.
     requests = [
         {
             "key": base_name,
             "request": {
-                "model": "gemini-2.5-flash",
+                "model": "models/gemini-2.5-flash",
                 "contents": [
                     {
                         "role": "user",
@@ -528,8 +530,9 @@ def process_shogi_json(client, json_data, base_name: str) -> tuple:
     
     # バッチジョブ作成
     try:
+        # Use the same fully-qualified model name as used in the uploaded JSONL
         file_batch_job = client.batches.create(
-            model="gemini-2.5-flash",
+            model="models/gemini-2.5-flash",
             src=uploaded_file.name,  # または uploaded_file で対応する場合も
             config={
                 'display_name': f"{base_name}_batch_job",

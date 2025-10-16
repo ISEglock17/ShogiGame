@@ -1,9 +1,13 @@
+"""
+    処理済みのファイルからコメントを抽出し、新しいファイルに保存するスクリプト。
+"""
+
 import os
 import re
 
 # 入出力ディレクトリの設定
-input_directory = './ProcessedComments_reason_moves'
-output_directory = './ProcessedComments_reason_comments_moves'
+input_directory = './ProcessedComments_batch'
+output_directory = './ProcessedComments_batch_comments_only'
 os.makedirs(output_directory, exist_ok=True)
 
 # 正規表現パターン

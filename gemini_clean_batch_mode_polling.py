@@ -1,5 +1,5 @@
 """
-    gemini_clean_reason2の派生版
+    gemini_clean_reason4の派生版
     バッチモードを有効にするためのバックアップ版
     全手に対して1回のAPIコールで処理する。
     これを改良し，バッチモードを追加する。
@@ -11,6 +11,8 @@ import os
 from google import genai # Changed to import genai as a module, not from google.genai
 from google.genai import types
 import re
+import time
+import json as _json
 
 # --- Gemini API設定 ---
 # APIキーは環境変数から読み込むことを推奨します。
@@ -346,7 +348,7 @@ def make_jsonl_file(sente_name: str, gote_name: str, moves_list: list, base_name
     moves_list: List[Tuple[move_number:int, comment_text:str]]
     - 1局分の全手ペアを受け取り、1回のAPIコールで処理する。
     - プロンプトを2つの parts に分けて送信（上部: 指示、下部: コメント一覧）。
-    戻り値: (processed_lines: List[str], memo_lines: List[str])
+    戻り値: List[dict] （JSONLの各行に対応）
     """
     # コメントブロックを作成（手順通りのフォーマット）
     comments_block = ""
@@ -364,22 +366,26 @@ def make_jsonl_file(sente_name: str, gote_name: str, moves_list: list, base_name
         prompt_top = GEMINI_PROMPT_TEMPLATE.format(sente_name=sente_name, gote_name=gote_name, comments_block="")
 
     # JSONL リクエスト作成
+    # Use fully-qualified model identifier for batch API compatibility
     requests = [
         {
             "key": base_name,
             "request": {
-                "model": "gemini-2.5-flash",
+                "model": "models/gemini-2.5-flash",
                 "contents": [
                     {
-                        "role": "user",
                         "parts": [
-                            {"text": prompt_top},
                             {"text": comments_block}
                         ]
                     }
                 ],
                 "generationConfig": {
                     "response_mime_type": "text/plain"
+                },
+                "systemInstruction": {
+                    "parts": [
+                        {"text": prompt_top}
+                    ]
                 }
             }
         }
@@ -453,7 +459,7 @@ def clean_comment_with_gemini(client, sente_name: str, gote_name: str, moves_lis
         # ストリーミング受信（1回で全手分の応答を期待）
         full_response_text = ""
         for chunk in client.models.generate_content_stream(
-            model="gemini-2.5-flash",
+            model="models/gemini-2.5-pro",
             contents=contents,
             config=generate_content_config,
         ):
@@ -489,9 +495,10 @@ def clean_comment_with_gemini(client, sente_name: str, gote_name: str, moves_lis
         return processed_lines, memo_lines
 
 
-def process_shogi_json(client, json_data, base_name: str) -> tuple:
+def process_shogi_json(client, json_data, base_name: str, jsonl_directory: str) -> tuple:
     """
-    1ファイル内の全手をまとめて clean_comment_with_gemini に渡し、
+    json_data: 1局分のJSONデータ
+    - 1局分のJSONデータを受け取り、全手に対して clean_comment_with_gemini を呼び出す。
     戻り値として得た手毎の processed_lines を集約して返す。
     """
     sente = json_data.get('sente', '不明')
@@ -511,31 +518,137 @@ def process_shogi_json(client, json_data, base_name: str) -> tuple:
                 moves_comments.append((move_number, comment_item.strip()))
 
     if not moves_comments:
+        # コメントが1件もない場合
+        memo_lines.append("== コメントが1件もありません ==")
         return processed_lines, memo_lines
 
-
+    # コメントが1件以上ある場合、バッチモードで一括処理
     make_jsonl_file(sente, gote, moves_comments, base_name)  # デバッグ用にJSONLファイルを作成する場合
-    write_jsonl_file(f"{base_name}_request.jsonl", make_jsonl_file(sente, gote, moves_comments, base_name))  # デバッグ用にJSONLファイルを書き込む場合
-    # Upload the file to the File API
+    write_jsonl_file(f"{jsonl_directory}/{base_name}_request.jsonl", make_jsonl_file(sente, gote, moves_comments, base_name))  # デバッグ用にJSONLファイルを書き込む場合
+    
+    # ファイルAPIでアップロード
     uploaded_file = client.files.upload(
-        file=f"{base_name}_request.jsonl",
-        config=types.UploadFileConfig(display_name=f"{base_name}_request", mime_type='jsonl')
+        file=f"{jsonl_directory}/{base_name}_request.jsonl",
+        config=types.UploadFileConfig(display_name=f"{base_name}_request", mime_type='application/jsonl')
     )
+    print(f"アップロードしたファイル: {uploaded_file.name}")
 
-    print(f"Uploaded file: {uploaded_file.name}")
+    # バッチジョブ作成
+    try:
+        # バッチAPIを使ってジョブを作成
+        file_batch_job = client.batches.create(
+            model="models/gemini-2.5-flash",
+            src=uploaded_file.name,  # または uploaded_file で対応する場合も
+            config={
+                'display_name': f"{base_name}_batch_job",
+            },
+        )
+        print(f"作成されたバッチジョブ: {file_batch_job.name}")
+        memo_lines.append(f"{base_name},{file_batch_job.name}")
+        print(f"memoに追加したもの: {base_name},{file_batch_job.name}")
+
+    except Exception as e:
+        print(f"バッチジョブの作成に失敗: {e}")
+        # 失敗したらアップロード済みファイルを削除
+        try:
+            client.files.delete(name=uploaded_file.name)
+            print(f"アップロードファイルの削除: {uploaded_file.name}")
+        except Exception as delete_err:
+            print(f"ファイルの削除失敗: {delete_err}")
     
     
-    # Assumes `uploaded_file` is the file object from the previous step
-    client = genai.Client()
-    file_batch_job = client.batches.create(
-        model="gemini-2.5-flash",
-        src=uploaded_file.name,
-        config={
-            'display_name': "file-upload-job-1",
-        },
-    )
+    """
+    # プーリングでバッチの完了を待つ
+    poll_interval = int(os.environ.get('BATCH_POLL_INTERVAL', 10))  # seconds
+    poll_timeout = int(os.environ.get('BATCH_POLL_TIMEOUT', 60 * 30))  # seconds, default 30 min
+    elapsed = 0 # 経過時間
+    batch_name = file_batch_job.name
+    print(f"バッチステータスを {poll_interval}秒ごとに調べます。 (タイムアウトは {poll_timeout}秒後)")
+    final_batch = None
+    while elapsed < poll_timeout:
+        try:
+            current = client.batches.get(name=batch_name)
+        except Exception as e:
+            print(f"警告: バッチステータスの取得に失敗 {e}")
+            current = None
 
-    print(f"Created batch job: {file_batch_job.name}")
+        if current is not None:
+            # Try common status attributes
+            state = None
+            for attr in ('state', 'status', 'done'):
+                if hasattr(current, attr):
+                    state = getattr(current, attr)
+                    break
+
+            # Normalize state to string for checking
+            state_str = str(state).lower() if state is not None else ''
+            print(f"バッチ名 {batch_name} ステータス: {state}")
+
+            if state_str in ('succeeded', 'success', 'completed', 'done', 'true') or state is True:
+                print(f"Batch {batch_name} finished successfully")
+                final_batch = current
+                break
+
+            # Some APIs may include 'error' or 'failed'
+            if 'fail' in state_str or 'error' in state_str:
+                print(f"Batch {batch_name} failed with state: {state}")
+                final_batch = current
+                break
+
+        time.sleep(poll_interval)
+        elapsed += poll_interval
+
+    if final_batch is None:
+        print(f"Batch {batch_name} did not finish within timeout ({poll_timeout}s)")
+        # Save last known status for inspection
+        try:
+            status_snapshot = client.batches.get(name=batch_name)
+            memo_lines.append("=== Batch status snapshot (timeout) ===")
+            memo_lines.append(_json.dumps(status_snapshot.__dict__, default=str, ensure_ascii=False, indent=2))
+        except Exception as e:
+            memo_lines.append(f"Failed to snapshot batch status: {e}")
+        return processed_lines, memo_lines
+
+    # Attempt to extract outputs from the final batch object
+    memo_lines.append(f"=== Batch final object: {batch_name} ===")
+    try:
+        # Try common locations for outputs
+        output_obj = None
+        for key in ('result', 'output', 'outputs'):
+            if hasattr(final_batch, key):
+                output_obj = getattr(final_batch, key)
+                break
+
+        if output_obj is None:
+            # Fallback: dump full object for manual inspection
+            memo_lines.append(_json.dumps(final_batch.__dict__, default=str, ensure_ascii=False, indent=2))
+            return processed_lines, memo_lines
+
+        memo_lines.append("=== Batch output (raw) ===")
+        memo_lines.append(_json.dumps(output_obj if not hasattr(output_obj, '__dict__') else output_obj.__dict__, default=str, ensure_ascii=False, indent=2))
+
+        # If output contains file references, try to download via client.files.get / download
+        # This is API-specific; if present, include their names in memo for manual fetch.
+        files_list = None
+        if isinstance(output_obj, dict):
+            files_list = output_obj.get('files') or output_obj.get('output_files')
+        elif hasattr(output_obj, 'files'):
+            files_list = getattr(output_obj, 'files')
+
+        if files_list:
+            memo_lines.append('=== Batch produced files ===')
+            for f in files_list:
+                try:
+                    # f may be a dict with 'name' or an object
+                    file_name = f.get('name') if isinstance(f, dict) else getattr(f, 'name', None)
+                    memo_lines.append(f"Produced file: {file_name}")
+                except Exception:
+                    memo_lines.append(f"Produced file (raw): {str(f)}")
+
+    except Exception as e:
+        memo_lines.append(f"Failed to extract batch outputs: {e}")
+    
+    """
     
     
     """
@@ -555,10 +668,12 @@ def process_shogi_json(client, json_data, base_name: str) -> tuple:
 
 def main():
     input_directory = './DataSet'
-    output_directory = './ProcessedComments_reason'
-    memo_directory = './ProcessedComments_reason_memo'
+    output_directory = './ProcessedComments_batch'
+    memo_directory = './ProcessedComments_batch_memo'
+    jsonl_directory = './JsonlFiles'
     os.makedirs(output_directory, exist_ok=True)
     os.makedirs(memo_directory, exist_ok=True)
+    os.makedirs(jsonl_directory, exist_ok=True)
 
     # genai.Client の初期化
     # APIキーは環境変数から読み込まれます。
@@ -579,6 +694,7 @@ def main():
         print(f"'{input_directory}' ディレクトリにJSONファイルが見つかりませんでした。")
         return
 
+    data_count = 0
     for json_file in json_files:
         base_name = os.path.splitext(json_file)[0]
         output_file_name = f"{base_name}_processed.txt"
@@ -587,7 +703,7 @@ def main():
         memo_path = os.path.join(memo_directory, memo_file_name)
 
         # 既に整形済みファイルが存在するかチェック
-        if os.path.exists(output_path):
+        if os.path.exists(memo_path):
             print(f"スキップ中: {json_file} - 既に整形済みファイルが存在します ({output_file_name})")
             print("-" * 30)
             continue # 次のファイルへ
@@ -597,17 +713,23 @@ def main():
         
         data = load_json_file(file_path)
         if data:
-            processed_comments, memo_lines = process_shogi_json(client, data, base_name)
+            if data_count == 30:
+                break
+            data_count = data_count + 1
+            processed_comments, memo_lines = process_shogi_json(client, data, base_name, jsonl_directory)
+            if memo_lines[0] == "== コメントが1件もありません ==": 
+                data_count = data_count - 1
             """
             with open(output_path, 'w', encoding='utf-8') as f:
                 for line in processed_comments:
                     f.write(line + '\n')
+            print(f"整形結果を保存しました: {output_path}")
+            """
             with open(memo_path, 'w', encoding='utf-8') as f:
                 for line in memo_lines:
                     f.write(line + '\n')
-            print(f"整形結果を保存しました: {output_path}")
             print(f"memoログを保存しました: {memo_path}")
-            """
+            
         print("-" * 30)
 
 if __name__ == '__main__':
