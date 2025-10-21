@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/eklqb3gohhu4anqbmecry0abk3wk85n9g2g6 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数24:\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は杉本１時間２９分、小野２８分。」 → ルール3\n- 「昼食の注文は杉本・冷やしたぬきそば。小野・冷やし中華。」 → ルール7\n\n手数45:\n\n削除理由:\n- 「進行が早い対局が多いなか、本局はまさに順位戦といった感じのペースで進んでいる。」 → ルール2\n\n手数53:\n\n削除理由:\n- 「ここで夕食休憩。」 → ルール7\n- 「消費時間は杉本３時間５０分、小野３時間７分。」 → ルール3\n- 「夕食の注文は杉本・上チラシ、小野・なし。」 → ルール7\n\n手数101: ここで終局となった。以下２七でバラバラにして▲２八飛の筋で即詰みとなる。\n\n削除理由:\n- 「消費時間は杉本５時間２４分、小野４時間１０分。」 → ルール3\n- 「勝った杉本は２連勝、敗れた小野は１勝１敗となった。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ],
+    "responseId": "qKn0aJ3iMoGgz7IPjZ7m2Qo",
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3729,
+          "modality": "TEXT"
+        }
+      ],
+      "candidatesTokenCount": 272,
+      "totalTokenCount": 5984,
+      "thoughtsTokenCount": 1983,
+      "promptTokenCount": 3729
+    }
+  },
+  "key": "2137"
+}

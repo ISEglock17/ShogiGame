@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/1jstva7fizpx89zfwxcnsiz5cwkmow10kh5r ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数25:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は中座１時間１１分。小林４３分。」 → ルール3\n- 「昼食の注文は、中座は鍋焼きうどん。小林はなし。」 → ルール7\n\n手数31: 先手は４筋の位を確保。\n\n手数44: 後手は穴熊に組み替える。\n\n手数49:\n\n削除理由:\n- 「ここまでの消費時間は中座２時間２分。小林１時間４０分。」 → ルール3\n\n手数50: 後手は手裏剣をとばす。\n\n削除理由:\n- 「４０分考えて」 → ルール3\n\n手数77: 穴熊玉に対して先手は猛攻を続ける。\n\n削除理由:\n- 「ここで夕食休憩。」 → ルール7\n- 「消費時間は中座３時間８分。小林３時間２８分。」 → ルール3\n- 「夕食の注文は、中座は親子丼。小林はなし。」 → ルール7\n\n手数118: 以下は▲６七同金△６九飛成以下の詰み。\n\n削除理由:\n- 「終了時刻は２０時２３分。」 → ルール3\n- 「消費時間は中座５時間３６分。小林３時間４４分。」 → ルール3\n- 「勝った小林は３勝４敗。負けた中座は２勝５敗となった。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "nZj0aJ6NKMTf_uMPt6_S8QQ",
+    "usageMetadata": {
+      "candidatesTokenCount": 343,
+      "promptTokenCount": 3782,
+      "thoughtsTokenCount": 4535,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3782,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 8660
+    }
+  },
+  "key": "1605"
+}

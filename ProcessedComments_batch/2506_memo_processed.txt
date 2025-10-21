@@ -1,0 +1,88 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I'm presented with a pretty straightforward task: refine these shogi commentary notes. It's clear the user, being in the field, understands the problem. The goal is to isolate the *actual* analytical meat of the commentary, the insights into the board state and the moves themselves, and strip away all the extraneous noise. This means deleting all the metadata: the introductions to players, the time stamps, any general chit-chat that isn't directly relevant to the specific moves being discussed. Essentially, it's about transforming the raw commentary into something clean and immediately useful for serious analysis.
+
+The process, as I see it, boils down to a two-step approach. First, I need to methodically identify and remove anything that doesn't fit the established criteria. Then, with the core commentary remaining, I can focus on smoothing the language, ensuring it flows naturally and reads like a well-formed analytical statement, ready to be integrated into a deeper study of the game. That is how I would approach the task.
+
+手数9: 変則的な出だしながら矢倉模様になった。
+
+削除理由:
+
+手数16: ▲２四歩の歩交換を狙う▲７九角に受けが間に合った。
+
+削除理由:
+
+手数18: 腰掛け銀を狙う。
+
+削除理由:
+
+手数19: ▲２七銀なら棒銀だったが。
+
+削除理由:
+
+手数27: 居玉だが、積極的に仕掛ける。
+
+削除理由:
+- 「▲３五歩の局面で片上が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は桜井が１７分、片上が１時間４２分。」 → ルール3
+
+手数37: 片矢倉に組み構想。先手は自由奔放な駒組みだ。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は桜井が１時間６分、片上が２時間２分。」 → ルール3
+- 「桜井、」 → ルール1
+
+手数42: 片矢倉は８筋、９筋が薄い。
+
+削除理由:
+
+手数45: 棒銀にして攻めを狙う。
+
+削除理由:
+
+手数47: 力強く金を上がる。
+
+削除理由:
+
+手数48: 後手は自然に玉を固める。
+
+削除理由:
+- 「片上は」 → ルール1
+
+手数50: 万全の態勢で仕掛けていく。狙いはどこにあるだろうか。
+
+削除理由:
+
+手数55: 「連打の歩」で香車を取りに行く。
+
+削除理由:
+
+手数56: 後手は５六の金を狙って攻めていく。▲同歩なら△５五歩▲同金△６五歩▲同金△５六歩▲３九角△４六角だ。
+
+削除理由:
+- 「１６時前の局面。」 → ルール3
+- 「消費時間は桜井が１時間２９分、片上が２時間５３分。」 → ルール3
+- 「片上は」 → ルール1
+
+手数59: 撤退は辛い。
+
+削除理由:
+
+手数62: 飛車のコビンを攻めていく。
+
+削除理由:
+
+手数66:
+
+削除理由:
+- 「１７時１５分の局面。」 → ルール3
+- 「消費時間は桜井が２時間４０分、片上が３時間１３分。」 → ルール3
+
+手数90: 駒損がひどく、先手の投了となった。
+
+削除理由:
+- 「桜井の」 → ルール1
+- 「終局時刻は１７時４９分。」 → ルール3
+- 「消費時間は桜井３時間７分、片上３時間２０分。」 → ルール3
+- 「勝った片上は５勝１敗、敗れた桜井は１勝５敗となった。」 → ルール4

@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/v1uklvuwga4ja61twbb5q7qm9hicwui4ecu3 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1668",
+  "response": {
+    "responseId": "u5n0aNGzAYiFz7IPwY_24Qk",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数36: この形では珍しい金上がり。飛車落ち下手ではよく見かけるが、囲いの名前は聞いたことがない。\n\n---\n手数39: 早くも大決戦へ。\n\n---\n手数47:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は佐々木２３分、伊藤能１時間２５分。」 → ルール3\n- 「昼食の注文は、佐々木なし。伊藤能・中華そば。」 → ルール7\n\n---\n手数59: 角と金銀の二枚換え。早い時間に大決戦になった。"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "candidatesTokenCount": 139,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3639
+        }
+      ],
+      "thoughtsTokenCount": 1456,
+      "promptTokenCount": 3639,
+      "totalTokenCount": 5234
+    },
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

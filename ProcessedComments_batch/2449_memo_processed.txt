@@ -1,0 +1,186 @@
+**Structuring These Game Comments - My Process**
+
+Okay, so I'm presented with a task: to neatly format these Shogi game comments. I understand the user wants a clean presentation, and I've got a specific set of rules and a format to follow. Here's how I'm thinking about breaking down the problem:
+
+First, I'll *read* each individual comment – no skipping allowed, gotta get the full picture. Then, I'll be on the lookout for anything that matches those pre-defined *deletion criteria*. It's like a search and destroy mission, finding the unwanted bits.
+
+Next, the *actual editing* happens. Based on the given rules, I'll either completely *remove* the offending text or *replace* it with something more appropriate. Think of it as a delicate surgical procedure. After the removal or replacement, I want to make sure the remaining parts are *readable* and sound natural in Japanese. 
+
+Finally, I'll arrange all the key information: the move number, the newly edited comment, and the reason for the edits. The output should be super organized.
+
+手数7: 相振り飛車になった。
+
+削除理由:
+- 削除対象なし
+
+---
+手数13: いきなり後手に拠点ができたが、大したことがないと見ているのだろう。
+
+削除理由:
+- 削除対象なし
+
+---
+手数25: 先手は将来的に３六歩の拠点を解消できれば矢倉に組める。
+
+削除理由:
+- 削除対象なし
+
+---
+手数26:
+
+削除理由:
+- 「１０時３０分の局面。」 → ルール3
+- 「早い進行だ。」 → ルール3
+
+---
+手数34:
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+---
+手数35:
+
+削除理由:
+- 「大内が２９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村が３３分、大内が１時間２５分。」 → ルール1, 3
+- 「１２時３０分ごろに大内は対局室へ戻り局面を考えている。」 → ルール1, 3, 6, 7
+
+---
+手数37: 若々しく、歩を突っかける。△同歩なら▲８四歩△同歩▲同飛で横から歩の交換を狙うつもりだろう。
+
+削除理由:
+- 削除対象なし
+
+---
+手数43: ▲７六飛から歩を交換するのに比べて手得している。
+
+削除理由:
+- 削除対象なし
+
+---
+手数46:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は中村が４１分、大内が１時間４４分。」 → ルール1, 3
+
+---
+手数47: 飛角の活用を図る味のいい手。
+
+削除理由:
+- 削除対象なし
+
+---
+手数50:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は中村が１時間２８分、大内が２時間１３分。」 → ルール1, 3
+
+---
+手数52:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は中村が１時間５２分、大内が２時間２３分。」 → ルール1, 3
+
+---
+手数55:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は中村が３時間５２分、大内が２時間２３分。」 → ルール1, 3
+- 「▲６五歩に３６分、▲８六飛に１１分、▲２六歩に２４分、▲２七金に５５分、▲６八角に６５分と長考を続ける中村。」 → ルール1, 3
+
+---
+手数56:
+
+削除理由:
+- 「怒涛流の攻めを狙っている。」 → ルール5
+
+---
+手数57:
+
+削除理由:
+- 「大内が１４分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村が４時間２分、大内が２時間５６分。」 → ルール1, 3
+
+---
+手数58: 角の転換を図る。
+
+削除理由:
+- 削除対象なし
+
+---
+手数69: 後手の角が死んだが。
+
+削除理由:
+- 削除対象なし
+
+---
+手数80: 後手は厚みで勝負。
+
+削除理由:
+- 削除対象なし
+
+---
+手数81:
+
+削除理由:
+- 「６４分の長考で残り２１分に。」 → ルール3
+
+---
+手数85: 味のいい引き締め。
+
+削除理由:
+- 削除対象なし
+
+---
+手数87:
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は中村が１７分、大内が２時間４分。」 → ルール1, 3
+
+---
+手数98: 頑強に受ける。
+
+削除理由:
+- 削除対象なし
+
+---
+手数111: 持ち駒を全て使い切っての攻めだが、△７四金で息切れ模様。
+
+削除理由:
+- 削除対象なし
+
+---
+手数128: と金は作らせてもかまわない。角をシャットアウト。
+
+削除理由:
+- 削除対象なし
+
+---
+手数132: 待望の反撃。△４七銀成（▲同玉は△５六角で詰み）があるので早い。
+
+削除理由:
+- 削除対象なし
+
+---
+手数137: 不屈の粘り。
+
+削除理由:
+- 削除対象なし
+
+---
+手数142: 桂馬をもう一枚もっていれば、上部に逃げられずにすむ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数152: 以下は頭金までの詰み。
+
+削除理由:
+- 「終局時間は２３時３４分、消費時間は中村５時間５９分、大内４時間３４分。」 → ルール1, 3

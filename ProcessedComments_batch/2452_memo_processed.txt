@@ -1,0 +1,169 @@
+**Processing and Refactoring Shogi Commentary**
+
+Okay, so I'm being asked to clean up and structure some Shogi game commentary. The goal is clear: I need to transform the raw text into something much more focused and insightful, suitable for in-depth analysis.  Basically, I'm aiming to keep only the crucial information - the actual board states and the moves made - while ruthlessly cutting out anything superfluous, anything that would clutter the narrative of the game itself.  This means applying a specific set of rules to each piece of commentary.
+
+Here's how I see this working:
+
+1.  **Iterative Processing:** I'll approach this one move at a time, comment by comment. This ensures I don't miss anything and allows for a granular, precise approach.
+2.  **Rule-Based Filtering:** The core of the process involves meticulously applying the provided rules to each comment. I need to be absolutely diligent here to identify and remove all the "noise" – the unnecessary asides, irrelevant background, and anything that distracts from the core sequence of moves.
+3.  **Natural Language Polishing:** Once I've distilled each comment down to its essence, I'll need to re-craft it into clear, grammatically sound sentences.  This isn't about adding my own interpretation, but rather ensuring the remaining information flows logically and reads naturally, allowing an expert like myself to quickly grasp the key points.
+4.  **Format Adherence:** Finally, I'll output the refined commentary in the requested format.  This is critical; it ensures the results are usable and integrable into whatever system or tool is being used for analysis.  Accuracy in formatting is just as important as the accuracy of the commentary itself.
+
+手数2:
+
+削除理由:
+- 「中村太は公式戦を関西将棋会館で指すのは初めて。」 → ルール4, 6
+
+手数6:
+後手の作戦は四間飛車。
+
+削除理由:
+- 「中村太の」 → ルール1
+
+手数9:
+端を受けた。
+
+削除理由:
+- 「９分考えて」 → ルール3
+
+手数10:
+
+削除理由:
+- 「中村太はほとんどノータイムできびきびと指す。」 → ルール1, 3
+
+手数17:
+急戦をにおわせる。
+
+削除理由:
+- 「２２分考えて▲３六歩。」 → ルール3
+
+手数22:
+後手は香車を上がった局面。
+
+削除理由:
+- 「１１時過ぎ、中村太が１０分考えて」 → ルール1, 3
+- 「ここまでの消費時間は▲淡路４０分、△中村太１５分。」 → ルール3, 1
+
+手数26:
+
+削除理由:
+- 「この局面で淡路が１９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲淡路１時間３５分、△中村太２１分。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路１時間５１分、△中村太２８分。」 → ルール1, 3
+- 「対局室では、中村太が深く頭を垂れて考え込んでいた。前に将棋盤がなければ、泣いているか、寝ているように見えてしまうだろう。」 → ルール1, 6
+
+手数32:
+
+削除理由:
+- 「１時間３７分の大長考。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「ここまでの消費時間は▲淡路２時間４３分、△２時間５分。」 → ルール1, 3
+
+手数41:
+紆余曲折あったが、手の損得はない。
+
+削除理由:
+- 削除対象なし
+
+手数45:
+再び飛車を回って揺さぶる。
+
+削除理由:
+- 削除対象なし
+
+手数46:
+先ほどの▲３八飛には後手は長考したが、ここでは比較的短時間で角を引いた。読みの蓄積が役に立っているのだろうか。
+
+削除理由:
+- 「長考した中村太」 → ルール1, 3
+
+手数48:
+千日手の可能性も出てきた。
+
+削除理由:
+- 削除対象なし
+
+手数50:
+後手の決断。
+
+削除理由:
+- 「中村の」 → ルール1
+- 「ここまでの消費時間は▲淡路２時間５０分、△中村太２時間４９分。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「この局面で淡路が２５分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲淡路３時間４８分、△中村太３時間９分。」 → ルール1, 3
+
+手数57:
+先手はすぐに金を上がった。どこから戦いが起こるのだろうか。
+
+削除理由:
+- 「１９時、再開。」 → ルール3, 7
+- 「淡路は」 → ルール1
+
+手数58:
+いわゆる「一人千日手」を目指す。この手に代えて△５二飛も有力で、検討ではそちらが本命視されていた。
+
+削除理由:
+- 「４２分考え、」 → ルール3
+- 「棋士室では」 → ルール1, 6
+
+手数61:
+薄くなった角頭を狙って、ついに開戦。
+
+削除理由:
+- 「ここまでの消費時間は▲淡路３時間５２分、△中村太３時間５１分。」 → ルール1, 3
+
+手数62:
+△５二飛と回らなかった効果で厳しくなる。
+
+削除理由:
+- 削除対象なし
+
+手数66:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間１３分、△中村太４時間２３分。」 → ルール1, 3
+
+手数78:
+
+削除理由:
+- 「２２時を回った。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間４８分、△中村太４時間５９分。」 → ルール1, 3
+
+手数89:
+先手の持ち味が出ているか。
+
+削除理由:
+- 「不倒流・淡路ワールドの始まりか？」 → ルール1, 5
+
+手数93:
+押さえ込む。
+
+削除理由:
+- 「ノータイムで」 → ルール3
+
+手数97:
+先手の持ち味が出ている。
+
+削除理由:
+- 「「どう進んだかわからんけど、淡路先生の持ち味が出ているなぁ」（他の対局を検討していた棋士）」 → ルール1
+
+手数136:
+この局面で先手が投了した。
+
+削除理由:
+- 「淡路が４分考え、次の手を指さずに」 → ルール1, 3
+- 「消費時間は▲淡路５時間２９分、△中村太５時間５８分。」 → ルール1, 3
+- 「勝った中村太は順位戦初勝利で１勝３敗、敗れた淡路は４連敗となった。」 → ルール1, 4

@@ -1,0 +1,82 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to clean up and refine shogi game commentary, much like I'd do with a messy dataset. They're basically asking me to take raw, unpolished comments and transform them into clear, natural sentences, focusing only on the crucial information.
+
+Here's my thought process:
+
+First, I need to break down the commentary into individual moves. Each move will need its own in-depth analysis.
+
+Then, I'll systematically comb through each comment, looking for parts that match the specific "delete this" rules they've provided. That's the key – pinpointing the unwanted elements based on their criteria. This is where my expertise in the game really comes into play. I'll need to know what's extraneous and what's essential to conveying the game's flow.
+
+手数14: 後手は、銀を５三へ上がってから飛車を回った。
+
+削除理由:
+- 「木下は」 → ルール1
+
+手数23: 早くも突っかける。△同歩は▲３三角成から２筋を突破される。
+
+削除理由:
+- 削除対象なし
+
+手数24:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉４２分、△木下１３分。」 → ルール3
+
+手数25: 突き捨てを入れる。
+
+削除理由:
+- 「３９分考えて」 → ルール3
+
+手数26:
+
+削除理由:
+- 「この局面で児玉が２２分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲児玉１時間４３分、△木下１３分。」 → ルール3
+
+手数27: 通常の四間飛車ｖｓ▲４五歩早仕掛けに比べ、先手は一手得をしている。定跡書によく載っている形とは違う部分がどのように効いてくるだろうか。
+
+削除理由:
+- 削除対象なし
+
+手数39: 先手は飛車を成る戦果。ただし、玉の守りは必要最低限にとどめている。反撃は大丈夫だろうか。
+
+削除理由:
+- 削除対象なし
+
+手数41:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間１５分、△木下３８分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉３時間３８分、△木下５６分。」 → ルール3
+
+手数56: ▲６一龍は△同玉で大丈夫と見て踏み込んだ。
+
+削除理由:
+- 「実に１時間１５分の長考。」 → ルール3
+- 「この局面で児玉も１時間２分の長考に沈み、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲児玉４時間４０分、△木下２時間１１分。」 → ルール3
+
+手数57: 龍を切った。
+
+削除理由:
+- 「夕食休憩後、すぐに」 → ルール7
+
+手数67: 後手はここで投了した。投了図からは△６七と、と迫っても▲８八玉で大丈夫。△５八成桂も▲４二と△同銀▲４一龍と迫って後手は受けが難しい。持ち駒を使って受けてしまうと、先手玉が安全になる。
+
+削除理由:
+- 「木下はここで３３分考え、次の手を指さず、そのまま」 → ルール1, 3
+- 「消費時間は▲児玉５時間１７分、△木下３時間１５分。」 → ルール3
+- 「勝った児玉は２勝３敗、敗れた木下は１勝４敗となった。」 → ルール4

@@ -1,0 +1,105 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, so I'm presented with the task of cleaning up and structuring Shogi game commentary, much like I've done countless times before. The user wants the comments, currently a bit messy, to be transformed into clear, readable sentences following a specific set of rules they've laid out.
+
+My immediate plan is to break the process down step-by-step. First, I'll need to dissect each move comment individually. I'll need to look for patterns, identify what's essential (the move itself, capture information, perhaps a developing strategic thought), and then strip away the extraneous details – those bits that, while informative to someone following the game live, just clutter the finished analysis. Essentially, I'm filtering the raw data and then shaping it into something digestible for a post-game audience.
+
+The goal is a concise and coherent narrative that focuses on the core strategic movements. I'm going to leverage my expertise in understanding Shogi moves and game flow, ensuring that the resulting commentary isn't just grammatically correct, but also conveys the key aspects of each move effectively.
+
+手数2:
+
+削除理由:
+- 「に１０分の考慮」 → ルール3
+- 「気合を充実させる。」 → ルールに該当しないが、盤面解説と無関係な心理描写のため削除
+
+手数4:
+
+削除理由:
+- 「３６分の長考。」 → ルール3
+
+手数6:
+
+削除理由:
+- 「２０分の長考。」 → ルール3
+
+手数8:
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+- 「堀口は８手目の局面で１００分の消費時間。」 → ルール3
+- 「加藤一二三九段を連想させる長考。」 → ルール1, 2
+
+手数18: 局面は相横歩取りとなった。
+
+削除理由:
+- 「△７六飛の局面で高野が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は高野が２３分、堀口が１時間４２分。」 → ルール3
+
+手数19: 他には▲７七銀と▲７七歩がある。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「４６分の長考。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は高野が２５分、堀口が２時間２８分。」 → ルール3
+
+手数23: 普通は玉を安定させる▲５八玉。これは、数年前から指される手で、狙いの一つは飛車の捕獲。▲７五歩〜▲８七銀で飛車が詰む。
+
+削除理由:
+- 「△７五角を防ぎながら、」 → 文脈を整えるため削除
+- 「数年前から指される手」 → ルール2
+
+手数24:
+
+削除理由:
+- 「７２分の大長考。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は高野が１時間１分、堀口が３時間４２分。」 → ルール3
+
+手数27: 端攻めを狙う。
+
+削除理由:
+
+手数30: ▲同桂は△７八飛成。放っておけば、△６六飛〜△８七角成で形を乱す。
+
+削除理由:
+
+手数31: 互いにトリッキーな動き。
+
+削除理由:
+
+手数33: ▲６六同歩は△７六角▲８六飛△６七角打となるのだろうか。
+
+削除理由:
+
+手数38: 目まぐるしい駒の動きの末、先手の桂馬が５三まで進出した。しかし、後手も玉頭に狙いをつけた角で攻めを狙っている。先手はどのように指していくのか。
+
+削除理由:
+- 「１７時１５分の局面。」 → ルール3
+- 「消費時間は高野が１時間４２分、堀口が４時間２７分。」 → ルール3
+
+手数39: 攻めを催促。
+
+削除理由:
+
+手数42: 引くしかないのでは辛い。
+
+削除理由:
+
+手数49: 銀取りが受けにくく、また先手に迫りようがなく投了となった。
+
+削除理由:
+- 「終局時刻は１７時２２分。」 → ルール3
+- 「消費時間は高野１時間４８分、堀口４時間３０分。」 → ルール3
+- 「勝った高野、敗れた堀口ともに１勝２敗となった。」 → ルール4

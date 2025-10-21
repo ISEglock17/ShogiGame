@@ -1,0 +1,154 @@
+**Cleaning Up Commentary for Deeper Analysis**
+
+Okay, so I've been tasked with a pretty common problem in my line of work: cleaning up the commentary from shogi game data. I need to take these often verbose and chatty comments and distill them down to their essence. The goal is to isolate the really valuable stuff – the actual analysis of the board state and the moves played – and ditch all the fluff.
+
+Think of it like sifting through a mountain of ore to find the pure gold. I'm after the nuggets of strategic insight, the explanations of why a certain move is good or bad, the identification of key positions and tactical considerations. Stuff like who's playing, how much time is left, or a little background on the players? That's just noise. My focus is the **game itself**. My ultimate aim is to have a lean, mean, **analytic machine** where I can analyze the most important parts of a game more easily.
+
+This is all about efficiency. I need to make the data much more usable for deeper analysis down the line.
+
+手数4:
+削除理由:
+- 「４１分の大長考。」 → ルール3
+- 「佐藤、気合が入っている。」 → ルール1
+
+手数12:
+手数12: 相振り飛車になった。
+
+削除理由:
+- 「△４二飛の局面で長岡が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡が４３分、佐藤が１時間２１分。」 → ルール3
+- 「居飛車党の佐藤にしては珍しい」 → ルール1, 5
+
+手数13:
+削除理由:
+- 「５１分の長考。」 → ルール3
+
+手数14:
+削除理由:
+- 「２９分の考慮。」 → ルール3
+
+手数15:
+手数15: 一手一手に神経を使う将棋になった。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は長岡が１時間１１分、佐藤が１時間５０分。」 → ルール3
+
+手数16:
+削除理由:
+- 「２８分の考慮。」 → ルール3
+
+手数18:
+削除理由:
+- 「３０分の考慮。」 → ルール3
+
+手数20:
+削除理由:
+- 「１６時前の局面。」 → ルール3
+- 「消費時間は長岡が１時間３９分、佐藤が３時間１０分。」 → ルール3
+- 「２２分の考慮。」 → ルール3
+
+手数21:
+手数21: 先手は銀を上がった。長考合戦になっている。
+
+削除理由:
+- 「５１分の長考で」 → ルール3
+- 「１７時を過ぎてもまだ２１手しか進んでいない。」 → ルール3
+- 「タイトル戦並みの」 → ルール2
+
+手数22:
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数24:
+削除理由:
+- 「△８四銀の局面で長岡が２９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡が３時間１２分、佐藤が３時間５４分。」 → ルール3
+- 「佐藤の指し手で初めてノータイムで指された。」 → ルール1, 3
+
+手数25:
+削除理由:
+- 「休憩をはさみ５３分の長考。」 → ルール3, 7
+
+手数26:
+手数26: 戦いが起こった。
+
+削除理由:
+
+手数30:
+手数30: ６六銀を攻める。
+
+削除理由:
+
+手数32:
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は長岡が３時間５７分、佐藤が４時間１９分。」 → ルール3
+
+手数33:
+手数33: △９五銀を防ぐ。
+
+削除理由:
+
+手数40:
+手数40: 「桂の高飛び歩の餌食」という格言がある。次に△６四歩を狙う。
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「残り時間は長岡が１時間４７分、佐藤が１時間１５分。」 → ルール3
+
+手数41:
+手数41: ▲４六角を狙う。
+
+削除理由:
+- 「２４分の考慮。」 → ルール3
+
+手数42:
+削除理由:
+- 「３０分の考慮で残り４５分となった。」 → ルール3
+
+手数47:
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は長岡が１時間２３分、佐藤が４４分。」 → ルール3
+
+手数48:
+手数48: 一気に激しい展開になった。
+
+削除理由:
+
+手数53:
+手数53: 飛車を切って玉頭を攻め込む。
+
+削除理由:
+
+手数54:
+手数54: 斜めから受ける。
+
+削除理由:
+
+手数55:
+手数55: 手筋。どう応じても飛車打ちのスキができる。
+
+削除理由:
+
+手数56:
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は長岡が５７分、佐藤が２０分。」 → ルール3
+
+手数62:
+手数62: 後手は△３五桂と攻め合いに出る。
+
+削除理由:
+- 「持ち時間を使い果たして、」 → ルール3
+- 「長岡は５０分残っている。」 → ルール1, 3
+
+手数121:
+手数121: 一手詰の局面。後手の投了となった。
+
+削除理由:
+- 「佐藤の」 → ルール1
+- 「終局時刻は１時２分。」 → ルール3
+- 「消費時間は長岡５時間５８分、佐藤５時間５９分。」 → ルール3
+- 「勝った長岡は４勝２敗、敗れた佐藤は１勝５敗となった。」 → ルール4

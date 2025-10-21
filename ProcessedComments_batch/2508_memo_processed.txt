@@ -1,0 +1,102 @@
+**Focusing My Efforts: Refining Game Commentary for Deeper Analysis**
+
+Okay, so I need to process these Shogi game commentaries. The user wants me to clean them up, essentially. My goal is clear: I need to isolate the truly valuable analytical nuggets hidden within these comments. I need to get rid of all the fluff – the metadata, the player introductions, the time stamps – and leave behind only the pure, clear explanations of the board state and the moves made. It's about distilling the essence of the game's unfolding strategy.
+
+My approach will be methodical. I'll need to develop a set of rules, a rubric if you will, to guide me in identifying and subsequently removing the irrelevant information. Once I have those rules defined, it'll be a matter of applying them systematically to each comment. I want to ensure the remaining text reads smoothly and naturally as a cohesive narrative of the game's critical moments. This cleaned-up data will be invaluable for further, more sophisticated Shogi analysis.
+
+手数26:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲増田２６分、△東１９分。」 → ルール3, 4
+
+手数35:
+
+削除理由:
+- 「この局面で東が４７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲増田３２分、△東１時間２０分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲増田１時間２分、△東１時間４０分。」 → ルール3, 4
+
+手数44:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲増田１時間２４分、△東２時間６分。」 → ルール3, 4
+
+手数45: 歩を突く。
+
+削除理由:
+- 「４８分考えて」 → ルール3
+
+手数46: 後手は銀を引いた。長考になったのは恐らく△１三銀との比較だろう。
+
+削除理由:
+- 「東も」 → ルール1
+- 「４９分考えて」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲増田２時間１２分、△東２時間５５分。」 → ルール3, 4
+
+手数50:
+
+削除理由:
+- 「この局面で増田が１時間８分考え、そのまま夕食休憩に入った。。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲増田３時間２０分、△東３時間３７分。」 → ルール3, 4
+
+手数51:
+
+削除理由:
+- 「夕食休憩を挟んで１時間２１分の長考。」 → ルール3, 7
+
+手数63:
+
+削除理由:
+- 「２０時半頃の局面。」 → ルール3
+- 「消費時間は▲増田３時間５０分、△東４時間。」 → ルール3, 4
+
+手数70:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲増田４時間９分、△東４時間３６分。」 → ルール3, 4
+
+手数75: 千日手模様だが、先手は打開したいようだ。
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「消費時間は▲増田４時間２０分、△東４時間３６分。」 → ルール3, 4
+- 「数分ずつ使って指されている」 → ルール3
+
+手数76: 敢然と打開。
+
+削除理由:
+- 「５４分の長考で」 → ルール3
+- 「東は残り３０分となった。」 → ルール1, 3
+
+手数106:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「消費時間は▲増田４時間３８分、△東５時間４２分。」 → ルール3, 4
+
+手数128: 見解は先手勝勢。
+
+削除理由:
+- 「２３時４０分頃の局面。」 → ルール3
+- 「消費時間は▲増田５時間７分、△東５時間５３分。」 → ルール3, 4
+- 「棋士室の」 → ルール1, 6
+
+手数133:
+
+削除理由:
+- 「この局面で東が投了した。」 → ルール1
+- 「消費時間は▲増田５時間１１分、△東５時間５３分。」 → ルール3, 4
+- 「勝った増田は４勝２敗、敗れた東は２勝４敗となった。」 → ルール1, 4

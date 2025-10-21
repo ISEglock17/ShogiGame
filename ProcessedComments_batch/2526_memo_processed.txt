@@ -1,0 +1,76 @@
+**My Approach to Reformatting Shogi Commentary**
+
+Okay, so I see the user wants me to clean up Shogi game commentary. The goal is to take messy input and transform it into clear, grammatically correct sentences based on some specific rules. Let's break down this example, focusing on the 9th move.
+
+First, I need to analyze the input: "１１時ごろの局面。ここまでの消費時間は▲佐藤紳４３分、△阪口１３分。 ▲佐藤紳はこの一手に３１分費やしている。"
+
+I can see a few things right away.  "１１時ごろの局面。" looks like a time reference, and there's a rule that I need to handle that.  Then there's time information embedded within the game progression like "ここまでの消費時間は...", and that seems important. I'll need to remember to convert the player names, like "▲佐藤紳" and "△阪口" to the more standard "先手" and "後手". Lastly, there's the statement "▲佐藤紳はこの一手に３１分費やしている.", which details how much time the player spent on this specific move, which I'll keep.
+
+So, taking all this into account, I would expect the output for this specific move to become a nice, streamlined sentence that incorporates all the crucial game data.
+
+手数9:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４３分、△阪口１３分。」 → ルール3
+- 「▲佐藤紳はこの一手に３１分費やしている。」 → ルール3
+
+手数11:
+
+削除理由:
+- 「ここでさらに３０分考えて指した。」 → ルール3
+- 「ここで△阪口が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳１時間１３分、△阪口５２分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間３８分、△阪口１時間８分。」 → ルール3
+
+手数24: △３四飛と浮き飛車に構えるのは、将来飛車が圧迫される可能性がある。
+
+削除理由:
+- 
+
+手数30:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間４８分、△阪口１時間２６分。」 → ルール3
+
+手数38: ６八の銀が立ち遅れているのを見越して機敏に動く。先手は玉がまだ囲いに入っていないのでじっくりした展開にしたい。
+
+削除理由:
+- 
+
+手数41:
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳３時間２３分、△阪口１時間３３分。」 → ルール3
+
+手数66: ▲５五角から銀を取られる手が見えるが、▲５五角△同角▲同飛には△６四角の反撃を用意している。直前の△３六歩▲同銀の効果により飛車を逃げると、△４七歩成が王手になる。
+
+削除理由:
+- 「要している」 → 自然な文章に整形
+
+手数67:
+
+削除理由:
+- 「ここで△阪口が１３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳３時間５８分、△阪口２時間４６分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間２８分、△阪口２時間５９分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「ここで△阪口の投了となった。」 → ルール4
+- 「終局時間は２１時５分。」 → ルール3
+- 「消費時間は▲佐藤紳４時間５３分、△阪口３時間４４分。」 → ルール3
+- 「勝った▲佐藤紳は２勝５敗、敗れた△阪口は５勝２敗となった。」 → ルール4

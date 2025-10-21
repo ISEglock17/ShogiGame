@@ -1,0 +1,107 @@
+**Streamlining Game Commentary for Deep Analysis**
+
+Okay, so I'm tasked with cleaning up these shogi game comments. The goal is clear: strip away all the fluff – the metadata, player intros, timestamps – and leave behind only the pure, insightful analysis of the board and the moves. Think of it like a distilled essence of the game.
+
+I've got the rules here, and I'm going to meticulously process each comment. Basically, anything that falls outside the immediate strategic analysis is out. That includes:
+
+*   **Rule #1:** Any mention of names, ranks, or affiliations that don't directly relate to the players in the current game.
+*   **Rule #2:** References to previous games, precedents, or historical context. We're focused on this specific match.
+*   **Rule #3:** Absolutely no time-related information. That's a distraction.
+*   **Rule #4:** Player profiles, records, ranks, and any identification information besides their name.
+*   **Rule #5:** (Further rules to be defined as I go along).
+
+My focus is on transforming these comments into a focused, concise stream of thought that directly informs my understanding of the game.
+
+手数21: 激しい順だが、次の一手は主に（１）△４四角と５三を守る手段、（２）△８六歩と攻めかかる手段がある。
+
+削除理由:
+- 「過去１７局の実戦例がある。」 → ルール2
+- 「平成９年７月のＡ級順位戦▲佐藤康光八段−△羽生善治四冠（肩書きは当時）では（２）△８六歩から大乱戦ながら終盤に千日手成立という熱い勝負になった。」 → ルール1, 2
+
+手数29: 次の一手は（１）△４二銀、（２）△２二玉、（３）△８四銀が考えられる。
+
+削除理由:
+- 「過去の実戦例は８例で、」 → ルール2
+- 「が４局、」 → ルール2
+- 「が３局、」 → ルール2
+- 「が１局。」 → ルール2
+- 「後手が勝ったのは（１）△４二銀を選んだ１局だけで、この戦型自体平成１４年頃からほとんど指されなくなっている。」 → ルール2
+- 「しかし、増田がこの形を練習将棋で指していたという目撃証言もあり、何か対策を用意しているのは間違いない。」 → ルール4
+
+手数32:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈２０分、△増田２４分。」 → ルール3
+- 「実戦例は４局。次の一手は（１）▲９六歩が３局、（２）▲５九飛が１局。」 → ルール2
+
+手数33: 銀を追い返した。
+
+削除理由:
+- 「３７分考えて」 → ルール3
+
+手数35:
+
+削除理由:
+- 「この局面で増田が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲伊奈５７分、△増田５３分。」 → ルール3
+
+手数37: お互いに金駒を整備する。午前中と一転して穏やかな流れになるだろうか。
+
+削除理由:
+- 「午前中と」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈５９分、△増田２時間８分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「ここまでの消費時間は▲伊奈１時間３０分、△増田３時間１６分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈２時間９分、△増田３時間３４分。」 → ルール3
+- 「棋士室に姿を見せた村田四段、平藤六段らの見解は、「先手がうまくまとめた」。」 → ルール1, 6
+
+手数55:
+
+削除理由:
+- 「この局面で増田が２１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲伊奈２時間５４分、△増田３時間５７分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈３時間２８分、△増田３時間５８分。」 → ルール3
+
+手数70: 見解は依然として先手指しやすし。ただし、具体的な手順がはっきりしないようだ。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈３時間３７分、△増田４時間２７分。」 → ルール3
+- 「棋士室の」 → ルール1, 6
+
+手数71:
+
+削除理由:
+- 「１時間１０分の長考。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈４時間５０分、△増田４時間４６分。」 → ルール3
+- 「棋士室ではだいぶ紛れたという評判だ。」 → ルール1, 6
+- 「対局室に入ると、増田はマスクをして対局、伊奈は「えーっと」「そっかー」などつぶやきながら考え込んでいた。」 → ルール6
+
+手数96:
+
+削除理由:
+- 「残り時間は伊奈４０分、増田３３分。」 → ルール3

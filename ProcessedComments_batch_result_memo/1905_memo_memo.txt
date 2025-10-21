@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/7zcsb015d42fmi966hboskk562zkl71dr4x7 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "zZ_0aN-AAvenmtkPwPr6kAs",
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数12: 矢倉模様となった。\n\n削除理由:\n- 「千日手局は相穴熊であったが、指し直し局は」 → ルール2\n\n手数28: 矢倉は含みに残して、左美濃のまま玉を囲う。\n\n削除理由:\n\n手数54:\n\n削除理由:\n- 「消費時間は長沼４時間１９分。岡崎４時間１分。」 → ルール3\n\n手数72:\n\n削除理由:\n- 「残り時間は長沼１時間２７分。岡崎１時間２４分。」 → ルール3\n\n手数78: 玉を見えなくする一手。\n\n削除理由:\n\n手数80: 後手よしと見られている。\n\n削除理由:\n- 「控え室の評判は」 → ルール1, 6\n\n手数81: 「端玉には端歩」でじっと迫る。\n\n削除理由:\n- 「残り時間は長沼１時間２２分。岡崎１時間６分。」 → ルール3\n\n手数92: 依然として後手よしと見られている。\n\n削除理由:\n- 「控え室の評判は」 → ルール1, 6\n- 「残り時間は長沼１時間５分。岡崎５２分。」 → ルール3\n\n手数110:\n\n削除理由:\n- 「終了時刻は０時１０分。」 → ルール3\n- 「消費時間は長沼５時間１１分。岡崎５時間１８分。」 → ルール3\n- 「勝った岡崎は７連勝。負けた長沼は４勝２敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "candidatesTokenCount": 362,
+      "promptTokenCount": 3778,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3778,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 6045,
+      "thoughtsTokenCount": 1905
+    },
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1905"
+}

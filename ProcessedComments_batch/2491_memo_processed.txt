@@ -1,0 +1,111 @@
+**Breaking Down This Comment Formatting Task**
+
+Okay, so the user wants me to clean up some Shogi game commentary. I get it, they've got this specific set of rules and input/output formats they want me to stick to. It's all about making the commentary more presentable and easy to follow. My game plan? Simple, really:
+
+1.  **Analyze Each Snippet:** I'll take each individual comment and really break it down. I need to understand the nuances of the language, the specific moves being discussed, and any context clues that might be buried in there.
+2.  **Process Comment:** Based on the analyzed information, I'll properly format the comments.
+3.  **Output formatted comment:** Once the comment is processed, the formatted version will be presented.
+
+手数1: いきなり、挑発の出だし。
+
+削除理由:
+- 削除対象なし
+
+手数2: △４四歩と、２手目にして異様な雰囲気が盤上に漂う。
+
+削除理由:
+- 「中村、１３分の考慮で」 → ルール1, 3
+- 「先手と同じく」 → 対局者名を含むため
+
+手数10: 後手は三間飛車。
+
+削除理由:
+- 「中村は」 → ルール1
+
+手数15: 足早に歩交換。
+
+削除理由:
+- 削除対象なし
+
+手数32:
+
+削除理由:
+- 「△１五歩の局面で真部が１２分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は真部が１時間２８分、中村が２８分。」 → ルール1, 3
+
+手数33: 先手はクラシックな金無双の形へ。後手は雁木や矢倉を目標としたカニ囲い。
+
+削除理由:
+- 「真部は」 → ルール1
+- 「中村は」 → ルール1
+
+手数37: 陣形のバランスを取る。
+
+削除理由:
+- 削除対象なし
+
+手数41: 先手の陣形は立石流に似ている。
+
+削除理由:
+- 「真部の」 → ルール1
+
+手数43:
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は真部が２時間８分、中村１時間４分。」 → ルール1, 3
+
+手数44: 攻め駒を押さえ込むつもり。
+
+削除理由:
+- 削除対象なし
+
+手数46:
+
+削除理由:
+- 「中村の指し手は力強い。」 → ルール1
+
+手数49: 先手は、玉頭から意表の打開。
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は真部が２時間４２分、中村が１時間５３分。」 → ルール1, 3
+- 「真部、」 → ルール1
+
+手数54: △８三角や△５四角のような筋が生じている。
+
+削除理由:
+- 削除対象なし
+
+手数57: 形を整える。
+
+削除理由:
+- 削除対象なし
+
+手数60: 銀をさばいて成功。
+
+削除理由:
+- 削除対象なし
+
+手数64:
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+
+手数66: ▲同銀は△５五角。厳しいたたきの歩。
+
+削除理由:
+- 削除対象なし
+
+手数68: 両取りがかかった。
+
+削除理由:
+- 削除対象なし
+
+手数76: ▲同玉は△２六飛。かといって他の手も難しく先手の投了となった。
+
+削除理由:
+- 「真部の」 → ルール1
+- 「終局時刻は１７時５８分。」 → ルール3
+- 「消費時間は真部３時間４１分、中村２時間５１分。」 → ルール1, 3
+- 「勝った中村、敗れた真部ともに２勝３敗となった。」 → ルール1, 4

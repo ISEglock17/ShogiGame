@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/fe5opzooohgfsj8aulfrv20wyvnwwjqxz093 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "thoughtsTokenCount": 2084,
+      "totalTokenCount": 6256,
+      "candidatesTokenCount": 386,
+      "promptTokenCount": 3786,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3786
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "v5n0aKOvJr2fz7IPq-XI2As",
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数23:\n\n削除理由:\n- 「ここまでの消費時間は▲島本１３分、△横山２６分。」 → ルール3\n\n手数28:\n\n削除理由:\n- 「島本が１８分考えて」 → ルール3\n- 「昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲島本４９分、△横山１時間４分。」 → ルール3\n- 「昼食の注文は両者無し。」 → ルール7\n\n手数31:\n\n削除理由:\n- 「ここまでの消費時間は▲島本１時間７分、△横山１時間１１分。」 → ルール3\n\n手数35:\n\n削除理由:\n- 「ここまでの消費時間は▲島本１時間２８分、△横山２時間４分。」 → ルール3\n\n手数42:\n\n削除理由:\n- 「ここまでの消費時間は▲島本２時間１４分、△横山３時間２分。」 → ルール3\n\n手数50:\n\n削除理由:\n- 「島本が３３分考え、」 → ルール3\n- 「夕食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲島本３時間３５分、△横山３時間１６分。」 → ルール3\n\n手数57:\n\n削除理由:\n- 「ここまでの消費時間は▲島本３時間５４分、△横山３時間３０分。」 → ルール3\n\n手数68: 後手優勢。\n\n削除理由:\n- 「棋士室の見解は」 → ルール1, 6\n- 「消費時間は▲島本４時間３８分、△横山４時間２８分。」 → ルール3"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "key": "1674"
+}

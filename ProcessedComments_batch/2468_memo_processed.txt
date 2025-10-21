@@ -1,0 +1,132 @@
+**Focusing the Lens: Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. I get it. The raw comments are often a mess – full of extraneous noise that muddies the waters when we're trying to analyze the actual game. My goal here is clear: strip away all the fluff. I'm talking about getting rid of any metadata, bios, time stamps, irrelevant background details... basically anything that doesn't directly contribute to understanding the board state or the reasoning behind a specific move. I need to distill these comments down to their essence: clear, concise explanations of the positions and the moves made. The aim is to create clean, human-readable commentary that still retains its analytical value. This will make it far easier to identify patterns, evaluate strategies, and ultimately, gain deeper insights into the game itself.
+
+手数9: 矢倉模様になった。
+
+削除理由:
+- 「居飛車党の両者。」 → ルール5
+
+手数12: 後手は左美濃の趣向。
+
+削除理由:
+- 「中尾」 → ルール1
+
+手数22: 矢倉の形に比べ、△３三銀と△３二金を省略して仕掛けられるのが、左美濃の利点。
+
+削除理由:
+- なし
+
+手数29: 飛先不突きを生かす。これで、角が追われにくくなり安定した。
+
+削除理由:
+- なし
+
+手数38: 先手陣はまだ未完成。後手はほぼ飽和状態。そのため、早速仕掛ける。
+
+削除理由:
+- 「ということで」を自然な文章にするために「そのため」に修正しました。
+
+手数41: 玉が入城していない先手はできるだけ戦いを起こしたくないところ。
+
+削除理由:
+- 「▲５五歩の局面で中尾が１３分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は桜井が５１分、中尾が１時間２分。」 → ルール1, 3
+
+手数47: この手が入れば、かなり心強い。
+
+削除理由:
+- なし
+
+手数50: あくまで激しい流れにしたい後手。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は桜井が１時間２２分、中尾が１時間１８分。」 → ルール1, 3
+- 「中尾」 → ルール1
+
+手数54: 角が追い払われたが、△２四角と使う楽しみがあるので、遊び駒ではない。
+
+削除理由:
+- なし
+
+手数55: コビンが左美濃の急所。
+
+削除理由:
+- なし
+
+手数58: 激しい攻め合いだ。
+
+削除理由:
+- なし
+
+手数60:
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は桜井が２時間１０分、中尾が１時間３９分。」 → ルール1, 3
+
+手数61: 辛抱する。
+
+削除理由:
+- 「４３分の長考で」 → ルール3
+
+手数62: 上部開拓をしながら攻めに出る狙い。
+
+削除理由:
+- 「８９分の長考。」 → ルール3
+
+手数63: △１五角の筋を消す。
+
+削除理由:
+- なし
+
+手数65:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は桜井が３時間、中尾が３時間１１分。」 → ルール1, 3
+
+手数66: △５一角のときから狙っていた角の飛び出し。
+
+削除理由:
+- なし
+
+手数71:
+
+削除理由:
+- 「▲７七角の局面で中尾が２７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は桜井が３時間７分、中尾が３時間４２分。」 → ルール1, 3
+
+手数73: 飛車を使うには端を狙うしかないところ。
+
+削除理由:
+- なし
+
+手数74: いやらしい垂れ歩。
+
+削除理由:
+- なし
+
+手数82: ガッチリ受ける。後手は楽しみが多い。
+
+削除理由:
+- なし
+
+手数84: 厳しい垂れ歩。
+
+削除理由:
+- なし
+
+手数86:
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は桜井が３時間３９分、中尾が４時間１８分。」 → ルール1, 3
+
+手数92: ▲同玉は△５六成銀、▲８六玉は△７六金▲９五玉△８三銀で受けなし。▲８八玉も一手一手の寄せとなり勝ち目なしと判断し、先手の投了となった。
+
+削除理由:
+- 「桜井の」 → ルール1
+- 「終局時刻は２０時４６分。」 → ルール3
+- 「消費時間は桜井４時間５分、中尾４時間２１分。」 → ルール1, 3

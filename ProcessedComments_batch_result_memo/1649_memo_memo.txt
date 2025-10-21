@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/v4ek2dum3sk9qo2jny8chk76hk8sscncib3s ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "Q5n0aOeWJ9fi_uMPuczakQk",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3764
+        }
+      ],
+      "totalTokenCount": 5957,
+      "promptTokenCount": 3764,
+      "candidatesTokenCount": 343,
+      "thoughtsTokenCount": 1850
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数20: 本局は角換わりとなった。\n\n削除理由:\n- 「１１時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲佐藤紳１４分、△藤原２８分。」 → ルール3\n\n手数24:\n\n削除理由:\n- 「この局面で佐藤が２２分考え、昼食休憩となった。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤紳５８分、△藤原１時間。」 → ルール3\n\n手数29:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲佐藤紳１時間２６分、△藤原１時間７分。」 → ルール3\n\n手数51:\n\n削除理由:\n- 「この局面で藤原が１３分考えて夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤紳２時間５３分、△藤原４時間１分。」 → ルール3\n\n手数57: 先手優勢と見られている。\n\n削除理由:\n- 「２０時頃の局面。」 → ルール3\n- 「棋士室では」 → ルール1, 6\n\n手数69: 後手が投了した。\n\n削除理由:\n- 「消費時間は▲佐藤紳４時間３２分、△藤原５時間５４分。」 → ルール3\n- 「勝った佐藤紳は５勝２敗、敗れた藤原は４勝３敗となった。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1649"
+}

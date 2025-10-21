@@ -1,0 +1,131 @@
+**Structuring Shogi Game Commentary**
+
+Okay, so I'm being asked to take these shogi game commentaries and clean them up, making them more concise and readable. The goal is to strip out all the extraneous information and just present the essential moves and context in a natural flow.
+
+My plan is pretty straightforward: I'll go through each comment one by one. For each sentence or phrase within a comment, I'll check if it matches any of the pre-defined deletion rules. If it does, I'll make a note of the rule number as the reason for removal. Then, I'll just keep the parts that *aren't* covered by those rules.
+
+Finally, I'll take what's left and smooth it out, making sure the remaining Japanese reads naturally. The output format is also important – it needs to be `Move <N>: <Reformatted Comment>` along with the `Deletion Reason:`, so that the information is easily accessible.
+
+手数8: 後手のゴキゲン中飛車。
+
+削除理由:
+- 「高崎の」 → ルール1
+- 「本日の対局はゴキゲン中飛車の将棋が多い。」 → ルール2
+
+---
+手数19: 角頭を狙う急戦模様。
+
+削除理由:
+
+---
+手数20: 早めに角をさばいて先手の銀を空振りにさせる狙い。
+
+削除理由:
+
+---
+手数29: 早くも激しい展開。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は桜井２１分、高崎３７分。」 → ルール3
+
+---
+手数35: 先手は元気いっぱいに攻めていく。この手が▲３五歩と仕掛けたときからの狙いだろう。
+
+削除理由:
+- 「▲３四歩の局面で高崎が２６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は桜井３５分、高崎１時間１８分。」 → ルール3, 4
+- 「桜井は」 → ルール1
+
+---
+手数45: 次に▲３五銀と取る準備。▲３五銀は△５七飛成があるので先に受けた。また、▲７七銀も上がらないと▲３五銀に△５五角がある。
+
+削除理由:
+
+---
+手数46: 軽く突き出して、逃げる。
+
+削除理由:
+
+---
+手数49:
+
+削除理由:
+- 「１４時１５分頃の局面。」 → ルール3
+- 「消費時間は桜井５４分、高崎１時間４７分。」 → ルール3, 4
+
+---
+手数50: 後手は軽快な動きだ。
+
+削除理由:
+- 「２８分の考慮。」 → ルール3
+- 「高崎は」 → ルール1
+
+---
+手数53: 攻防の角。▲４六歩は△４七角が嫌味だ。
+
+削除理由:
+
+---
+手数58: ▲同歩は△５五歩、▲同銀も△同金▲同歩△５五歩。
+
+削除理由:
+
+---
+手数59:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「消費時間は桜井１時間１５分、高崎３時間。」 → ルール3, 4
+
+---
+手数70: 後手陣は金銀が離れているが、ガンガン攻めていく。
+
+削除理由:
+
+---
+手数74: 先手陣を狙いつつ、銀取りを受けた。
+
+削除理由:
+- 「１６時４５分頃の局面。」 → ルール3
+- 「消費時間は桜井１時間３６分、高崎３時間２９分。」 → ルール3, 4
+
+---
+手数76: ３二の飛車の横利きを止めつつ、金取りも受ける。
+
+削除理由:
+
+---
+手数77: △同銀は▲４三飛成だが。
+
+削除理由:
+
+---
+手数78: これで飛車が詰んでいる。
+
+削除理由:
+
+---
+手数89: 角の利きを止めて頑張る。
+
+削除理由:
+
+---
+手数90: △４八とのと金攻めを見せる。
+
+削除理由:
+- 「見せる」を自然な形に整形
+
+---
+手数96: 竜の利きで端をピッタリ受ける。
+
+削除理由:
+
+---
+手数98: 厳しい両金取りで先手の投了となった。
+
+削除理由:
+- 「桜井の」 → ルール1
+- 「終局時刻は１７時４０分。」 → ルール3
+- 「消費時間は桜井２時間５分、高崎３時間５４分。」 → ルール3, 4
+- 「勝った高崎は８勝２敗、敗れた桜井は２勝８敗となった。」 → ルール4

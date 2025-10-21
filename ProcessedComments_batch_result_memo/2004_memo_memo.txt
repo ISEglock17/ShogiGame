@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/1bm062zdsnb20pf0ibramzfx78j0crxh74na ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数65:\n\n削除理由:\n- 「島本が１４分考えて」 → ルール3\n- 「昼食休憩に入った」 → ルール7\n- 「ここまでの消費時間は▲田村２０分、△島本１時間２７分」 → ルール3\n\n手数84: この局面で先手が投了した。\n\n削除理由:\n- 「消費時間は▲田村２５分、△島本１時間５４分」 → ルール3\n- 「勝った島本は３勝７敗、敗れた田村は５勝５敗となった」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3623,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3623,
+      "thoughtsTokenCount": 1550,
+      "candidatesTokenCount": 134,
+      "totalTokenCount": 5307
+    },
+    "responseId": "6KH0aMnSHKnT_uMP363-oAo"
+  },
+  "key": "2004"
+}

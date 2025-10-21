@@ -1,0 +1,133 @@
+**Processing Shogi Commentary for Focused Analysis**
+
+Okay, so I'm presented with a task, a familiar one actually. It seems someone needs me to refine commentary from Shogi game data. The goal, as I understand it, is to strip away all the extraneous noise – the metadata, player introductions, time stamps – leaving behind only the pure, distilled essence of the analysis: the explanations of board states and the rationale behind each move. It's about getting to the heart of the game, free from the clutter.
+
+I'll approach this systematically. I've got a set of rules, and I'll use those to guide me through each piece of commentary. The process is clear: I'll carefully examine each comment, applying the rules to identify and eliminate the irrelevant parts. The goal is to arrive at a streamlined, coherent narrative that focuses solely on the tactical and strategic insights of the game.
+
+手数12: 工夫の出だし。
+
+削除理由:
+- 「四間飛車党の中村太だが、」 → ルール1, 5
+
+手数13: ▲７八玉では居飛車の可能性もある。▲７八銀は後手に居飛車にされたときに、▲７八玉よりも一手早く玉頭の守りができるようにするのと、振り飛車にされても美濃囲いに囲う余地を作っている。
+
+削除理由:
+
+手数16: これで、振り飛車の可能性は少なくなった。
+
+削除理由:
+
+手数17: 四間飛車の可能性が減ったので、矢倉に組むつもりだ。
+
+削除理由:
+
+手数18: 後手の作戦は袖飛車。藤井システムで袖飛車に戻す構想があるが、本譜はそれよりも一手得している意味がある。
+
+削除理由:
+- 「中村太の」 → ルール1
+
+手数21:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は西尾４３分、中村太１９分。」 → ルール3
+
+手数22: 駒組みもそこそこに歩の交換。攻めの棋風らしい。
+
+削除理由:
+- 「の中村太」 → ルール1
+
+手数33: 中央からの攻めを見せる。端歩の２手を緩手にさせたい先手。
+
+削除理由:
+- 「▲４六銀の局面で中村太が９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は西尾１時間１０分、中村太４４分。」 → ルール3
+- 「西尾」 → ルール1
+
+手数39: 次に▲５五銀△５四歩▲６六銀引となれば理想的。
+
+削除理由:
+
+手数40: ▲５五銀には△６五桂や△５七歩の筋を用意。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は西尾１時間４８分、中村太１時間５９分。」 → ルール3
+
+手数48: まだ囲いが完了していないが、動いていく。
+
+削除理由:
+- 「中村太、」 → ルール1
+- 「若者らしく」 → ルール4
+
+手数50:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は西尾２時間１６分、中村太２時間２２分。」 → ルール3
+
+手数58: こうなれば、駒がさばけた後手の主張が通った形。あとは△３一玉〜△２二玉となれば完璧だ。先手はそれまでに代償を得ないといけない。
+
+削除理由:
+- 「△６四同飛の局面で西尾が１４分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は西尾３時間５５分、中村太２時間５６分。」 → ルール3
+
+手数59: ▲６五歩では△７四飛で「先の後」になってしまう。▲６五金から飛車を抑えて、中央を制圧したい。
+
+削除理由:
+
+手数78: 飛車と金桂の２枚換え。
+
+削除理由:
+
+手数79: ▲７一飛を見せつつ香取り。
+
+削除理由:
+
+手数82: 厳しい合わせ歩。先手は頭が急所。
+
+削除理由:
+
+手数83: 攻防に打って攻めを緩和しようとする。
+
+削除理由:
+- 「２２時１５分頃の局面。」 → ルール3
+- 「残り時間は西尾１時間、中村太１時間５分。」 → ルール3
+
+手数84: 強気。▲２一飛成は△３一金から竜が詰む。
+
+削除理由:
+
+手数86: 大きな取り込み。
+
+削除理由:
+
+手数89:
+
+削除理由:
+- 「２３時前の局面。」 → ルール3
+- 「残り時間は西尾４６分、中村太１時間２分。」 → ルール3
+
+手数98: もっさり迫っていく。
+
+削除理由:
+
+手数102: サッと逃げ道を開く。
+
+削除理由:
+
+手数108: 冷静な早逃げ。
+
+削除理由:
+
+手数112: 先手に適当な手段がなく投了となった。
+
+削除理由:
+- 「西尾の」 → ルール1
+- 「終局時刻は０時１８分。」 → ルール3
+- 「消費時間は西尾５時間５１分、中村太５時間５０分。」 → ルール3
+- 「勝った中村太は４勝４敗、敗れた西尾は３勝５敗となった。」 → ルール4

@@ -1,0 +1,152 @@
+**Structuring the Shogi Commentary**
+
+Okay, so I understand the task at hand: the user wants me to process shogi game commentary, making it more standardized and readable. My plan is straightforward, drawing on my expertise to handle this efficiently.
+
+First, I need to methodically go through each comment, one by one. I'll need to be precise, as each comment is potentially unique. Then, I will zero in on sections that are meant to be removed, based on the provided removal rules. 
+
+Next, I'll apply the replacement rules to transform player names – whatever those names are – into the standard "Sente" (先手) for the first player and "Gote" (後手) for the second player. This will promote clarity and avoid ambiguity.
+
+Finally, the remaining text will need some linguistic finesse. I will make sure the text flows naturally, constructing it into complete, grammatically sound Japanese sentences. This is where my understanding of the language and nuances of shogi commentary will come into play, of course. My goal is a polished and understandable final product for the user.
+
+手数4: 相振り飛車の出だし。
+
+削除理由:
+- 削除対象なし
+
+---
+手数9: 先手は居飛車に切り替える。最近流行の手法。
+
+削除理由:
+- 「阪口は」 → ルール1
+
+---
+手数20: 先手は高美濃囲い、後手は穴熊を目指す。
+
+削除理由:
+- 削除対象なし
+
+---
+手数34:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「消費時間は阪口４３分、真部２２分。」 → ルール1, 3
+
+---
+手数35: 中終盤で▲８四歩と突くのが穴熊崩しになる。また▲８六角の構想もあって損にならない手。
+
+削除理由:
+- 削除対象なし
+
+---
+手数38:
+
+削除理由:
+- 「△９四歩の局面で阪口が３５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阪口１時間２４分、真部２５分。」 → ルール1, 3
+
+---
+手数41: ▲４五桂と桂馬を跳ねるための土台作り。
+
+削除理由:
+- 削除対象なし
+
+---
+手数42: ▲８六銀などと受ければ、△５五歩と△６五歩で一気に攻めかかるつもり。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は阪口１時間４２分、真部１時間８分。」 → ルール1, 3
+
+---
+手数43: 後手陣が薄くなった瞬間を狙う。
+
+削除理由:
+- 削除対象なし
+
+---
+手数46: さすがに飛車交換はできない。
+
+削除理由:
+- 削除対象なし
+
+---
+手数50: △５一角は▲５五歩△同銀▲６五歩のような反撃が嫌。
+
+削除理由:
+- 「４３分の長考。」 → ルール3
+
+---
+手数56: 後手は銀桂交換に甘んじたのは、この攻めに期待をしたからだろう。先手の右銀が遊んでいる。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は阪口２時間１６分、真部２時間１７分。」 → ルール1, 3
+- 「阪口が長考している。」 → ルール1, 3
+- 「真部が」 → ルール1
+
+---
+手数57: 桂馬を跳ねて薄くなった端を狙っていく。
+
+削除理由:
+- 削除対象なし
+
+---
+手数61: 角を取らせても、▲同金寄の形が△６五歩と空を切らせた形になって悪くない取り引きだ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数63:
+
+削除理由:
+- 「▲７七同金寄の局面で真部が１０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阪口３時間５３分、真部２時間５４分。」 → ルール1, 3
+
+---
+手数64: 働きのない角を使う。
+
+削除理由:
+- 削除対象なし
+
+---
+手数66: 厳しく攻めていく。
+
+削除理由:
+- 削除対象なし
+
+---
+手数69: 激しい攻めあいだ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数72: 角を犠牲に自玉を楽にする。
+
+削除理由:
+- 削除対象なし
+
+---
+手数74:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は阪口４時間１３分、真部３時間３１分。」 → ルール1, 3
+
+---
+手数78:
+
+削除理由:
+- 「２０時４５分頃の局面。」 → ルール3
+- 「残り時間は阪口１時間１６分、真部２時間２０分。」 → ルール1, 3
+
+---
+手数87: ほぼ受けの利かない詰めろ飛車取りで後手の投了となった。
+
+削除理由:
+- 「真部の」 → ルール1
+- 「終局時刻は２１時２５分。」 → ルール3
+- 「消費時間は阪口５時間１分、真部４時間１分。」 → ルール1, 3
+- 「勝った阪口は６勝２敗、敗れた真部は３勝５敗となった。」 → ルール1, 4

@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/e7h6w0f2bw8r3foxd26xclbqcwza0rjgsqwt ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "2206",
+  "response": {
+    "usageMetadata": {
+      "thoughtsTokenCount": 1715,
+      "promptTokenCount": 3744,
+      "candidatesTokenCount": 340,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3744
+        }
+      ],
+      "totalTokenCount": 5799
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "F6v0aMOCLYzVz7IP_PKO2Qs",
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数32:\n\n削除理由:\n- 「ここで昼休。」 → ルール7\n- 「消費時間は先手２８分　後手５８分」 → ルール3\n\n手数55:\n\n削除理由:\n- 「ここで夕休。」 → ルール7\n- 「消費時間は▲３時間７分、△３時間１５分。」 → ルール3\n\n手数60:\n\n削除理由:\n- 「消費時間：▲３時間４６分　△４時間５分」 → ルール3\n\n手数62: 後手、顔面受け。\n\n削除理由:\n- 「消費時間：▲４時間１１分　△４時間５分」 → ルール3\n\n手数68: 気づけば後手の角得に。\n\n削除理由:\n- 「消費時間：▲５時間６分　△４時間１４分」 → ルール3\n\n手数87: 何で合駒するか・・・\n\n削除理由:\n- 削除対象なし\n\n手数107:\n\n削除理由:\n- 「０時３０分、」 → ルール3\n- 「１０７手で田中の勝ち。」 → ルール1, 4\n- 「残り時間は田中３分、青野１分。」 → ルール1, 3\n- 「勝った田中は３勝５敗、敗れた青野は０勝８敗となった。」 → ルール1, 4\n- 「８連敗の青野は降級点が確定した。」 → ルール1, 4"
+            }
+          ]
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ]
+  }
+}

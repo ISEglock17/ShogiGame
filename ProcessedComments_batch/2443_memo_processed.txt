@@ -1,0 +1,57 @@
+**Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so I'm looking at this dataset of Shogi game commentary and my goal is to really streamline it for analysis.  What I'm after is the *core* of the commentary – the actual insights into the board state and the moves, explained in a flowing, easy-to-digest way. Everything else is just noise.
+
+Basically, I need to get rid of all the fluff. I'm talking about the metadata, who's being introduced, how much time has passed, all that jazz. It's irrelevant to understanding the *strategic* thinking behind the moves.  I know I can get rid of this, I need to make sure the process that removes this is reliable and accurate.
+
+So, the plan is pretty straightforward.  I'll start by defining clear rules for identifying and removing these non-essential parts of the commentary. Then, I can filter the comments, keeping only the really insightful bits.
+
+手数33:
+
+削除理由:
+- 「この局面で藤倉が３０分考えて昼食休憩にはいった。」 → ルール3, 7
+- 「ここまでの消費時間▲島本２７分、△藤倉１時間２６分。」 → ルール3, 4
+
+手数40:
+
+削除理由:
+- 「ここまでの消費時間は▲島本４１分、△藤倉２時間。」 → ルール3, 4
+
+手数45:
+
+削除理由:
+- 「ここまでの消費時間は▲島本１時間２１分、△藤倉２時間２３分。」 → ルール3, 4
+
+手数52:
+
+削除理由:
+- 「ここまでの消費時間は▲島本１時間２３分、△藤倉３時間２０分。」 → ルール3, 4
+
+手数58:
+
+削除理由:
+- 「ここまでの消費時間は▲島本１時間３６分、△藤倉３時間３４分。」 → ルール3, 4
+
+手数59:
+
+削除理由:
+- 「１時間１１分の大長考によって指された。」 → ルール3
+- 「この局面で△藤倉が２７分考えて夕食休憩にはいった。」 → ルール3, 7
+- 「ここまでの消費時間は▲島本２時間４７分、△藤倉４時間１分。」 → ルール3, 4
+
+手数67:
+
+削除理由:
+- 「ここまでの消費時間は▲島本３時間５分、△藤倉４時間２４分。」 → ルール3, 4
+
+手数77:
+
+削除理由:
+- 「ここまでの消費時間は▲島本３時間１５分、△藤倉５時間１８分。」 → ルール3, 4
+
+手数89:
+この局面で後手の投了となった。
+
+削除理由:
+- 「藤倉の」 → 置換ルール
+- 「消費時間は▲島本３時間３２分、△藤倉５時間５９分。」 → ルール3, 4

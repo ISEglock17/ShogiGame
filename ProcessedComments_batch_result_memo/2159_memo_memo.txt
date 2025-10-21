@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/y51jl633dwpnw55a24ykcrcdv17fcfxz43yb ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "JKr0aPW3LYGgz7IPjZ7m2Qo",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数21:\n\n削除理由:\n- 「ここまでの消費時間は▲内藤１５分、△畠山３０分。」 → ルール3\n\n手数24:\n\n削除理由:\n- 「この局面で▲内藤が３０分考えて昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲内藤４５分、△畠山１時間１３分。」 → ルール3\n\n手数25: ▲２五歩△３三角の交換をいれずに仕掛ける。この違いがどう影響するのか。\n\n削除理由:\n\n手数34: 飛車を寄った。\n\n削除理由:\n- 「５６分の長考で」 → ルール3\n- 「ここまでの消費時間は▲内藤１時間１５分、△畠山２時間５５分。」 → ルール3\n\n手数43:\n\n削除理由:\n- 「１６時４０分過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲内藤１時間４３分、△畠山３時間６分。」 → ルール3\n\n手数54:\n\n削除理由:\n- 「この局面で▲内藤が１８分考えて夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲内藤２時間１９分、△畠山４時間３３分。」 → ルール3\n\n手数76: ここで先手の投了となった。\n\n削除理由:\n- 「消費時間は▲内藤２時間４３分、△畠山５時間２分。」 → ルール3"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "candidatesTokenCount": 351,
+      "thoughtsTokenCount": 1877,
+      "totalTokenCount": 6009,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3781
+        }
+      ],
+      "promptTokenCount": 3781
+    }
+  },
+  "key": "2159"
+}

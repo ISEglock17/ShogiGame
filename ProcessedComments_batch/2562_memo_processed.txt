@@ -1,0 +1,141 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm being asked to clean up Shogi game commentary, huh? My goal here is straightforward: I need to transform the raw commentary into something focused and useful for analyzing the game. I want to strip away all the extraneous fluff – the metadata about the game itself, the introductions to the players, the time information, all that noise – and leave behind only the *meat* of the analysis.  Just the explanations of the board state and the moves, presented in a clear and natural way.
+
+Essentially, I'll need to define some clear rules for what constitutes unnecessary information. Once I've got that sorted out, the process is pretty much a two-step dance: first, I filter out all the irrelevant stuff based on those rules, and then I work on polishing what remains into grammatically sound sentences. That's the core of it, really.
+
+手数6: 先後同形になった。
+
+削除理由:
+
+---
+手数12: 先後同形の相振り飛車になった。
+
+削除理由:
+
+---
+手数13: 先後同形になる手順が続いている。
+
+削除理由:
+- 「１０時４５分頃の局面。」 → ルール3
+- 「消費時間は中村亮１８分、室岡６分。」 → ルール3
+- 「中村亮」 → ルール1
+
+---
+手数14:
+
+削除理由:
+- 「３２分の考慮。」 → ルール3
+
+---
+手数28: 先後同形が続く。
+
+削除理由:
+
+---
+手数29:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「消費時間は中村２７分、室岡４０分。」 → ルール3
+
+---
+手数33: 先手は囲いを変化する。次に▲３六歩〜▲３七銀となれば理想的だが。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+---
+手数34: 後手は当然、▲３六歩を突かせない。
+
+削除理由:
+- 「室岡」 → ルール1
+
+---
+手数35:
+
+削除理由:
+- 「▲１六歩の局面で室岡が２２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村亮３１分、室岡１時間２３分。」 → ルール3
+- 「室岡」 → ルール1
+- 「中村亮」 → ルール1
+
+---
+手数37: 銀が３七に出られないのなら１七へ。壁銀を解消しつつ、▲２六銀として後手の飛車をいじめる狙いもある。
+
+削除理由:
+
+---
+手数40:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は中村亮１時間３分、室岡１時間４８分。」 → ルール3
+
+---
+手数41: 「桂の高飛び、歩の餌食」というが、桂馬は元の場所に戻れないので、囲いの側の桂馬を端に跳ねるのは勇気の要る手。
+
+削除理由:
+
+---
+手数42:
+
+削除理由:
+- 「室岡も意表を突かれたか、△２二角に３１分考えている。」 → ルール1, 3
+
+---
+手数43: 先手は積極的に指す。次に▲２五銀△２三飛▲３四銀△２四飛▲４三銀成がある。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+---
+手数44:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「消費時間は中村１時間３８分、室岡２時間４３分。」 → ルール3
+
+---
+手数49: 「王飛接近すべからず」といわれているが、先手は力強い指し回し。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+---
+手数51:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は中村亮２時間１１分、室岡３時間２４分。」 → ルール3
+
+---
+手数57: 先手は右銀をさばいた。金取りよりも▲３四銀成が狙いだ。
+
+削除理由:
+- 「▲４三銀不成の局面で室岡が４７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村亮２時間２０分、室岡４時間３４分。」 → ルール3
+- 「中村亮」 → ルール1
+
+---
+手数63: これで、後手の飛車を捕獲。
+
+削除理由:
+
+---
+手数70: 必死の手作り。歩があれば△４五歩なのだが…。
+
+削除理由:
+
+---
+手数77: 「中段玉寄せにくし」後手が駒不足もあって先手勝勢だ。
+
+削除理由:
+
+---
+手数87: 以下、△同玉に▲４三角△同玉▲４一飛△４二金▲３三金が最短手順の詰みとなる。後手の投了となった。
+
+削除理由:
+- 「室岡の投了となった。」 → ルール1
+- 「消費時間は中村亮２時間２７分、室岡４時間５６分。」 → ルール3
+- 「勝った中村は５勝３敗、敗れた室岡は３勝５敗となった。」 → ルール1, 4

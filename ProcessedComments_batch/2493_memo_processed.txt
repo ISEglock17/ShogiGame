@@ -1,0 +1,155 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm being asked to clean up some Shogi game commentary. The goal is to strip away all the fluff and extraneous details, leaving behind only the essential information: the board position descriptions and the specific moves being played. This is perfect for feeding into a more technical analysis, like a database or an AI.
+
+My plan is straightforward: I need a set of rules – a deletion protocol, if you will – that dictates precisely what's considered "unnecessary" in the commentary. Anything that falls outside of that rule set gets axed. It's all about defining the criteria upfront to ensure consistency and precision in the outcome. Once I have the rules in place, I can implement a systematic process to identify and remove all the unwanted parts.
+
+手数18: 穴熊を明示する。
+
+削除理由:
+- （削除なし）
+
+手数23: 駒組みの進展性を奪う位取り。
+
+削除理由:
+- （削除なし）
+
+手数29: 相穴熊になった。しかし、先手は押さえ込み系。後手はガッチリ固める系の穴熊なので、性格は異なる。
+
+削除理由:
+- （削除なし）
+
+手数32: 後手はガチガチの穴熊に組む予定。
+
+削除理由:
+- 「△５一銀の局面で大内が３４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内が１時間５分、上野が５０分。」 → ルール3
+- 「上野は」 → ルール1
+
+手数38: 銀冠穴熊に組み替える。
+
+削除理由:
+- （削除なし）
+
+手数39: ４段目に金銀を繰り出して攻めを抑える。
+
+削除理由:
+- （削除なし）
+
+手数40: 囲いは完成したが、攻めのきっかけを作るのが大変ではある。
+
+削除理由:
+- （削除なし）
+
+手数44: 仕掛けた。
+
+削除理由:
+- 「１時間２分の長考で」 → ルール3
+- 「消費時間は大内１時間１１分、上野２時間２分。」 → ルール3
+- 「大内の考慮中に１４時３０分を過ぎた。」 → ルール3
+
+手数45: ▲３五歩の攻めを見せる。
+
+削除理由:
+- （削除なし）
+
+手数48: 玉頭からでも攻めやすいのが銀冠穴熊の長所。△２四角の筋も見せて攻めの幅を増やす。
+
+削除理由:
+- （削除なし）
+
+手数49:
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は大内２時間４分、上野２時間１６分。」 → ルール3
+
+手数54: ▲４六銀なら千日手になる。
+
+削除理由:
+- （削除なし）
+
+手数55: 千日手を打開する。
+
+削除理由:
+- （削除なし）
+
+手数57: △３三銀の活用を抑える。
+
+削除理由:
+- （削除なし）
+
+手数61:
+
+削除理由:
+- 「１７時１５分の局面。」 → ルール3
+- 「消費時間は大内が２時間４０分、上野が３時間９分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「△５一飛の局面で大内が３８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内が３時間１８分、上野が３時間３２分。」 → ルール3
+
+手数63: 上部を厚くする。
+
+削除理由:
+- （削除なし）
+
+手数64: 押さえ込みを食い破れるか。
+
+削除理由:
+- （削除なし）
+
+手数67: 厳しい歩打ちだ。
+
+削除理由:
+- （削除なし）
+
+手数76: 後手の駒もさばけてきた。
+
+削除理由:
+- 「２１時半の局面。」 → ルール3
+- 「残り時間は大内が１時間５８分、上野が５８分。」 → ルール3
+
+手数79: 厳しい角打ち。部分的には受けがない。
+
+削除理由:
+- （削除なし）
+
+手数82: 手抜いて攻める。
+
+削除理由:
+- （削除なし）
+
+手数84:
+
+削除理由:
+- 「モニターから力強い手つきで指す上野が映った。」 → ルール8
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間は大内が１時間４５分、上野が４０分。」 → ルール3
+
+手数85: △同飛成は▲５三角成。遊び金を活用する。
+
+削除理由:
+- （削除なし）
+
+手数90: ５七の金を取っても響きが薄い。囲いの駒を攻めるのが急所だ。
+
+削除理由:
+- （削除なし）
+
+手数94: とにかく食いつく。かなりうるさい攻めだ。
+
+削除理由:
+- （削除なし）
+
+手数97:
+
+削除理由:
+- 「残り時間は大内１時間１５分、上野３１分。」 → ルール3
+
+手数99: 角を犠牲に手を稼ぐが、これなら後手も一安心というところ。
+
+削除理由:
+- （削除なし）

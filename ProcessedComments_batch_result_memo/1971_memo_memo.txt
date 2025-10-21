@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/z5rzzzpj2y08gjgv99d7m994z10gt36lckp8 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1971",
+  "response": {
+    "responseId": "W6H0aLWCKtfi_uMPuczakQk",
+    "usageMetadata": {
+      "candidatesTokenCount": 348,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3793,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 5517,
+      "totalTokenCount": 9658,
+      "promptTokenCount": 3793
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数3: 先手は居飛車。\n\n削除理由:\n- 「千日手局に続いて」 → ルール2\n\n手数10: 後手は立石流模様。\n\n削除理由:\n\n手数40: 大乱戦になった。\n\n削除理由:\n- 「手詰まりだった千日手局とはうってかわって」 → ルール2\n\n手数49: ここ数手のやり取りは先手が得した気がする。\n\n削除理由:\n- 「山崎六段「ん！？」「」」 → ルール1\n\n手数62: ここまで進むと難しく見える。進行予想は▲６七銀直△５四龍▲９一角成（もしくは▲１八香）。\n\n削除理由:\n- 「（４９手目から一気に進行を見た）」 → ルール8\n- 「山崎六段」 → ルール1\n\n手数89: 先手、必死の防戦。\n\n削除理由:\n\n手数90: それを許さない後手の追撃。\n\n削除理由:\n\n手数91:\n\n削除理由:\n- 「杉本はここから一分将棋。」 → ルール3\n- 「対する畠山成の残り時間は１０分。」 → ルール3\n\n手数104: この局面で先手が投了した。\n\n削除理由:\n- 「消費時間は▲杉本５時間５９分、△畠山成５時間５５分。」 → ルール3\n- 「勝った畠山成は４勝３敗、敗れた杉本は４勝２敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ]
+  }
+}

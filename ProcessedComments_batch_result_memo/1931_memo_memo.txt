@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/wq5zp7zbevrh8wwzeddbrcnjieyfo1sht8rr ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1931",
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数1:\n\n削除理由:\n- 「阿久津は規定により、遅刻した８分の３倍・２４分が持ち時間から引かれる。」 → ルール3\n\n手数3:\n\n削除理由:\n- 「阿久津はこの手に２１分を使って、早くも４５分の消費。」 → ルール3\n\n手数10: 角交換を拒否。\n\n削除理由:\n\n手数24:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は阿久津１時間４０分。中尾３４分。」 → ルール3\n- 「昼食の注文は阿久津、中尾、ともになし。」 → ルール7\n\n手数41: 互いに３手角。\n\n削除理由:\n\n手数43:\n\n削除理由:\n- 「ここまでの消費時間は阿久津３時間２０分。中尾１時間５４分。」 → ルール3\n\n手数51:\n\n削除理由:\n- 「ここで夕食休憩。」 → ルール7\n- 「消費時間は阿久津３時間５４分。中尾３時間１４分。」 → ルール3\n- 「夕食の注文は、両対局者ともになし。」 → ルール7\n\n手数97:\n\n削除理由:\n- 「終了時刻は２２時２０分。」 → ルール3\n- 「消費時間は阿久津５時間１７分。中尾４時間４５分。」 → ルール3\n- 「勝った阿久津は５勝２敗。負けた中尾は３勝４敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 1391,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3777,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5524,
+      "promptTokenCount": 3777,
+      "candidatesTokenCount": 356
+    },
+    "responseId": "gKD0aN_lBL2fz7IPq-XI2As",
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

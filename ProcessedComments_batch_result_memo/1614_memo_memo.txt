@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/gubucu28b0z52hk5vub0uxb0g606fzavokcg ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3687
+        }
+      ],
+      "promptTokenCount": 3687,
+      "thoughtsTokenCount": 1196,
+      "totalTokenCount": 5117,
+      "candidatesTokenCount": 234
+    },
+    "responseId": "h5j0aNWrH4zVz7IP_PKO2Qs",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数15: 角換わりになった。５筋の歩を突き合っているため、通常の角換わりとは異なる展開だ。\n\n削除理由:\n- (削除なし)\n\n手数33:\n\n削除理由:\n- 「石田が１５分考えて昼食休憩に入った」 → ルール3, 7\n- 「ここまでの消費時間は▲長沼２７分、△石田１時間２９分」 → ルール3\n\n手数40: 後手が仕掛けた。\n\n削除理由:\n- 「１４時頃」 → ルール3\n- 「石田が」 → 置換\n- 「３３分考えて」 → ルール3\n- 「ここまでの消費時間は▲長沼４４分、△石田２時間１５分」 → ルール3\n\n手数55:\n\n削除理由:\n- 「石田が１６分考え、夕食休憩に入った」 → ルール3, 7\n- 「ここまでの消費時間は▲長沼２時間４９分、△石田４時間６分」 → ルール3"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ]
+  },
+  "key": "1614"
+}

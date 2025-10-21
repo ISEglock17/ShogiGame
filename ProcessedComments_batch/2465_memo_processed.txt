@@ -1,0 +1,76 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with these Shogi game data, chock-full of comments. My task, as I understand it, is to refine these comments. I need to get rid of the fluff – the stuff that's not actually helpful for analyzing the game's evolution, the stuff that's just extraneous noise. The goal is clarity, pure and simple. I want to leave behind only the truly valuable stuff: clear descriptions of the board state and the reasoning behind each move. Think of it as distilling the essence of the commentary.
+
+So, here's how I see this process: I need a clear set of rules, a framework, to identify and then systematically remove any irrelevant information. It's about surgical precision, right? I'll be looking for specific patterns, phrases, anything that doesn't directly contribute to understanding the flow of the game and the players' strategies.
+
+手数22: 後手は得意の四間飛車穴熊。
+
+削除理由:
+- 「広瀬は」 → ルール1
+
+手数23: 先手も穴熊に潜る。
+
+削除理由:
+- 「東も」 → ルール1
+
+手数30:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東２９分、△広瀬１９分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「この局面で東が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲東１時間２８分、△広瀬２６分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「昼食休憩を挟んで５５分の長考。」 → ルール3, 7
+
+手数39:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東２時間２７分、△広瀬２９分。」 → ルール3
+- 「広瀬がよく指す形。」 → ルール5
+- 「今期Ａ級１回戦▲阿部隆八段−△藤井猛九段戦などでに同形がある。」 → ルール1, 2
+- 「▲阿部−△藤井戦ではここから△６五歩▲同歩△７七角成と戦いが起こった。」 → ルール1, 2
+
+手数54:
+
+削除理由:
+- 「６月のＡ級▲阿部−△藤井戦はここで藤井が△４六馬と引いている。」 → ルール1, 2
+- 「前例は他になく、広瀬の更なる研究の披露となるだろうか。」 → ルール1, 2
+
+手数60:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東３時間４１分、△広瀬１時間５１分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「１時間４分の長考で東が桂馬を打ったこの局面で、広瀬が１６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲東４時間４５分、△広瀬２時間７分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「ここで１６分考えた東、残り１時間を切った。」 → ルール1, 3
+
+手数70:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東５時間１３分、△広瀬２時間３２分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東５時間２９分、△広瀬２時間３２分。」 → ルール3

@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/pcf43uy5653w6ri0ly9ax0aeip9wtrf00fyn ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数4: 後手は居飛車。\n\n削除理由:\n- 「居飛車、振り飛車自在の」 → ルール5\n\n---\n手数5: 先手は四間飛車。\n\n削除理由:\n- 「得意の」 → ルール5\n\n---\n手数24: 後手は端玉の作戦。\n\n---\n手数46:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は室岡１時間２７分。田村２７分。」 → ルール3\n- 「昼食の注文は両者ともになし。」 → ルール7\n\n---\n手数54: 早くも動く。\n\n---\n手数64:\n\n削除理由:\n- 「ここまでの消費時間は室岡３時間６分。田村４５分。」 → ルール3\n\n---\n手数88:\n\n削除理由:\n- 「田村の早指しのためか、東京では最も進行が早い。」 → ルール3, 5, 6\n- 「ここまでの消費時間は室岡４時間０分。田村１時間２分。」 → ルール3\n\n---\n手数114:\n\n削除理由:\n- 「終了時刻は１７時５４分。」 → ルール3\n- 「消費時間は室岡５時間１０分。田村１時間１１分。」 → ルール3\n- 「勝った田村は３勝３敗。負けた室岡は４勝２敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3748,
+      "thoughtsTokenCount": 2311,
+      "totalTokenCount": 6393,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3748
+        }
+      ],
+      "candidatesTokenCount": 334
+    },
+    "responseId": "SaD0aL-mMMatqtsPr72i8Ao"
+  },
+  "key": "1922"
+}

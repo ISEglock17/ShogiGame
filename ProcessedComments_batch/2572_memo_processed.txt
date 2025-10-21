@@ -1,0 +1,136 @@
+**Structuring Game Commentary for Clarity**
+
+Okay, so I understand the task here: the user wants me to clean up and structure some Shogi game commentary. Essentially, they want me to transform a potentially messy stream of comments into a clear, concise, and focused analysis. My job is to act as a filter, removing the chaff and preserving the wheat.
+
+The core of the issue is this: a lot of commentary can contain things that, while interesting to a general audience perhaps, aren't critical for understanding the flow of the game, the reasoning behind moves, or the key strategic moments. Things like greetings, personal anecdotes, or overly descriptive asides need to go.
+
+So, the process becomes quite clear. First, I need to thoroughly understand the rules the user has provided. This is the bedrock of the entire operation. Once I understand what constitutes "unnecessary information," I can begin to systematically go through each comment. I'll need to identify which parts can be discarded, and which parts, the core insights about the board state and the moves, need to be retained and rephrased as needed to create coherent sentences. It's essentially an exercise in intelligent pruning and thoughtful reconstruction.
+
+手数1:
+
+削除理由:
+- 「本局は矢倉が６分遅刻したため、１０時７分に対局を開始している。」 → ルール3
+
+手数2:
+
+削除理由:
+- 「矢倉は６分遅刻×３＝１８分を持ち時間から引かれている。」 → ルール3, 4
+- 「２手目△３四歩は「２３分」と記録されているので、２３−１８＝５分、この一手に考えていることになる。」 → ルール3
+
+手数8:
+手数8: 後手は矢倉模様の出だし。しかしここから飛車を振る可能性もある。
+
+削除理由:
+- 「矢倉自身は振り飛車党なので」 → ルール1, 5
+
+手数12:
+手数12: 後手の作戦は、三間飛車。
+
+削除理由:
+- 「矢倉の」 → ルール1
+
+手数16:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾１６分、△矢倉４０分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「この局面で西尾が３８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲西尾１時間１７分、△矢倉５２分。」 → ルール3
+
+手数21:
+手数21: △４五同歩なら▲３三角成〜▲２四歩と飛車先を突破する狙いだ。
+
+削除理由:
+
+手数24:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾１時間３７分、△矢倉１時間２６分。」 → ルール3
+
+手数27:
+手数27: △３二金と固められるとすぐには攻められない。一旦自陣を整備する。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾２時間４５分、△矢倉１時間５２分。」 → ルール3
+
+手数30:
+手数30: 端を受けた。
+
+削除理由:
+- 「５４分考えて」 → ルール3
+- 「消費時間は▲西尾２時間２５分、△矢倉２時間４８分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾２時間５０分、△矢倉３時間９分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「この局面で西尾が１１分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲西尾３時間３３分、△矢倉３時間３５分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾３時間５１分、△矢倉４時間５分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾４時間３２分、△矢倉４時間１６分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾４時間５１分、△矢倉４時間４６分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「西尾はここで２３分考え、残り４６分。」 → ルール1, 3
+
+手数78:
+
+削除理由:
+- 「ここで５分考えた矢倉も、残り１時間を切った（５９分）。」 → ルール1, 3
+
+手数81:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾５時間２１分、△矢倉５時間５分。」 → ルール3
+
+手数87:
+手数87: ▲７四桂打△同歩▲同桂と攻める狙い。美濃囲い攻略の常套手段だ。
+
+削除理由:
+
+手数91:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「残り時間は西尾８分、矢倉３０分。」 → ルール3
+
+手数107:
+手数107: この局面で後手が投了した。投了図以下、△７一同玉は▲５一飛成△６一合駒（何でも）▲７一銀以下、△９二玉は▲８二金△９三金▲８五桂以下、△９三玉は▲８五桂以下の即詰み。
+
+削除理由:
+- 「矢倉が」 → ルール1
+- 「消費時間は▲西尾５時間５８分、△矢倉５時間５２分。」 → ルール3
+- 「勝った西尾は４勝５敗、敗れた矢倉は３勝６敗となった。」 → ルール1, 4

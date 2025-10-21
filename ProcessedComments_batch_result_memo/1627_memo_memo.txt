@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/81eome07hvffngjmgq4ws41vwdd0uzocjqkk ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数18: 相掛かりとなった。\n\n削除理由:\n\n\n手数21:\n\n削除理由:\n- 「ここまでの消費時間は▲塚田２８分、△神崎２３分。」 → ルール3\n\n手数27:\n\n削除理由:\n- 「神崎が２２分考えて」 → ルール1, 3\n- 「昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲塚田４１分、△神崎１時間１５分。」 → ルール3\n\n手数30:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲塚田５１分、△神崎２時間１１分。」 → ルール3\n\n手数37:\n\n削除理由:\n- 「神崎が１３分考えて」 → ルール1, 3\n- 「夕食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲塚田３時間３１分、△神崎３時間２８分。」 → ルール3\n\n手数85: 後手は投了した。\n\n削除理由:\n- 「神崎が１分考え」 → ルール1, 3\n- 「消費時間は▲塚田５時間４８分、△神崎５時間５７分。」 → ルール3\n- 「勝った塚田は４勝５敗。」 → ルール4\n- 「敗れた神崎は３勝６敗となり、降級点からの安全圏確定とはならなかった。」 → ルール4"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "totalTokenCount": 6830,
+      "candidatesTokenCount": 339,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3750
+        }
+      ],
+      "promptTokenCount": 3750,
+      "thoughtsTokenCount": 2741
+    },
+    "responseId": "0Zj0aM2UJJCI_uMPlevUsA0",
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1627"
+}

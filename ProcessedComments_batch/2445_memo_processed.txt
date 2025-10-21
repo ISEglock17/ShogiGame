@@ -1,0 +1,81 @@
+**Cleaning Up Game Annotations**
+
+Okay, so I'm presented with a task, and it's pretty straightforward: I need to clean up some commentary attached to shogi game records. My goal here is very specific. I want to take a block of text, the commentary, and transform it into something lean and focused. The point isn't to be comprehensive or to introduce the game for an audience, but rather, to strip it down to the essential information.
+
+What am I removing? Anything that doesn't directly relate to the game's unfolding: metadata, biographical details about the players, time stamps, and anything else that's tangential to the actual analysis of the moves on the board.
+
+What am I keeping? I'm only interested in the insights provided, the specific comments that highlight the game state or explain the reasoning behind a particular move or sequence. Ideally, this cleaned-up version will read as a concise, naturally flowing explanation of the gameplay, devoid of the usual fluff that accompanies public-facing commentary.
+
+手数11: 最近では珍しくなってしまった、普通の角換わり将棋になった。瞬間的に先手が手損しているが、後手も後で△３二金とするので、手損はなくなる。
+
+削除理由:
+- 「最近では珍しくなってしまった、」 → ルール2
+
+手数19: 相腰掛け銀模様に進む。
+
+削除理由:
+
+手数35: 後手が同形腰掛け銀に進めるかが焦点となる。同形を避ける方法としては、６筋の位を取る、７筋の歩を突かないなどがある。
+
+削除理由:
+- 「▲５六銀の局面で達が４８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は上野が１１分、達が１時間３８分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「昼食休憩を挟む６０分の長考。」 → ルール3, 7
+
+手数42: 後手は△７三桂を跳ねない作戦。
+
+削除理由:
+- 「達は」 → ルール1
+
+手数45: 飛先保留型（２六歩型）角換わり腰掛け銀の骨子となる仕掛け。この仕掛け方が発見されて、長い間廃れていた角換わり腰掛け銀が復活した。
+
+削除理由:
+- 「昭和６０年ごろに」 → ルール2
+
+手数46: ▲７五同歩なら△８四飛と浮いて▲６四角の筋を防ぐ。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は上野が４６分、達が１時間５７分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１１４分の大長考。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は上野が４６分、達が３時間５３分。」 → ルール3
+- 「上野の指し手は相変わらず早い。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「▲７四歩の局面で達が３９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は上野が２時間１８分、達が４時間３２分。」 → ルール3
+
+手数68: 平凡に△４七金は▲８三と〜▲９一角成でつまらない。△４二飛を見せ、▲２六桂の筋を手順に消す。
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は上野が３時間２９分、達が４時間４６分。」 → ルール3
+
+手数69: △４二飛の筋を消して好調。
+
+削除理由:
+
+手数71: 後手は投了した。攻める手がなく、不利と判断しての投了。先手に比べて、銀と桂が捌けずに残ったのが辛い。
+
+削除理由:
+- 「▲２八飛の局面で達は４分考えて投了した。」 → ルール3
+- 「終局時刻は２０時５６分、消費時間は上野３時間４５分、達４時間５１分。」 → ルール3

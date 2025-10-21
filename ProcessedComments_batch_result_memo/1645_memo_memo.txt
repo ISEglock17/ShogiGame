@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/axn3gdgc9jb9rkli9h1tm8tb1prwv1z7wey9 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1645",
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "candidatesTokenCount": 218,
+      "promptTokenCount": 3673,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3673
+        }
+      ],
+      "totalTokenCount": 5338,
+      "thoughtsTokenCount": 1447
+    },
+    "responseId": "P5n0aJvoHJPXz7IPrL3A0Qo",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数1:\n\n削除理由:\n- 「佐々木は初手に１分。」 → ルール3\n\n手数2:\n\n削除理由:\n- 「達は２手目に７分。」 → ルール3\n\n手数16:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は佐々木１時間１５分。達４７分。」 → ルール3\n- 「昼食の注文は、佐々木はなし。達は上親子丼。」 → ルール7\n\n手数50:\n\n削除理由:\n- 「ここで夕食休憩。」 → ルール7\n- 「消費時間の通計は、佐々木３時間１７分。達３時間２８分。」 → ルール3\n- 「夕食の注文は、佐々木はカレー南蛮うどん。達はなし。」 → ルール7\n\n手数89:\n\n削除理由:\n- 「残り時間は両者ともに１時間６分。」 → ルール3"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

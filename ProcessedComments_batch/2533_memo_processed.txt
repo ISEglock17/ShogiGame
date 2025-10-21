@@ -1,0 +1,155 @@
+**Initial Assessment and Problem Decomposition**
+
+Okay, so I'm being asked to take some raw Japanese commentary on a Shogi game and clean it up, making it sound natural and removing unnecessary fluff.  Basically, I need to translate these cryptic notes into coherent, flowing English sentences.  It's like a linguistic and strategic puzzle! Let's see...
+
+1.  "手 **Number** (move number) :  " This usually introduces a specific move and needs to be retained because it frames the flow of the game for the reader. "最近 (Recently)" indicates a broader context, and should be worked into the sentence, but can be removed. I'll need to figure out how to translate the verb that follows the name. And the notation itself "角交換型四間飛車になった" which is difficult. So, the player names and move descriptions, those are important for understanding the game and its evolution.
+
+手数13: 角交換型四間飛車になった。
+
+削除理由:
+- 「最近、佐藤康光棋聖が使う、」 → ルール1, 2
+
+---
+手数18:
+
+削除理由:
+- 「１１時１５分の局面。」 → ルール3
+- 「消費時間は遠山２５分、広瀬２９分。」 → ルール3
+
+---
+手数19:
+
+削除理由:
+- 「４５分の長考。」 → ルール3
+
+---
+手数20:
+
+削除理由:
+- 「昼食休憩を挟み４０分の長考。」 → ルール3, 7
+
+---
+手数24:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は遠山１時間４３分、広瀬１時間２０分。」 → ルール3
+
+---
+手数25:
+
+削除理由:
+- 「１時間６分の考慮。」 → ルール3
+
+---
+手数28: すかさず打ち込んでいく。
+
+削除理由:
+- 
+
+---
+手数34: 馬を作りあう。
+
+削除理由:
+- 「１６時半の局面。」 → ルール3
+- 「消費時間は遠山３時間２４分、広瀬２時間５分。」 → ルール3
+
+---
+手数38: ７筋は押さえたので、次は８筋。
+
+削除理由:
+- 
+
+---
+手数42: 千日手模様を打開。
+
+削除理由:
+- 
+
+---
+手数46:
+
+削除理由:
+- 「△５二金右の局面で遠山が１２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は遠山４時間１０分、広瀬２時間４８分。」 → ルール3
+
+---
+手数50: 金も使って押さえ込みにいく。
+
+削除理由:
+- 
+
+---
+手数58: と金は大きい。
+
+削除理由:
+- 
+
+---
+手数66: 厳しい追撃。
+
+削除理由:
+- 
+
+---
+手数68: ７二の歩がいないほうがいい駒になってしまっている。
+
+削除理由:
+- 
+
+---
+手数70:
+
+削除理由:
+- 「２１時前の局面。」 → ルール3
+- 「消費時間は遠山４時間３７分、広瀬３時間５０分。」 → ルール3
+
+---
+手数71: △５七桂を消す。
+
+削除理由:
+- 
+
+---
+手数72: 次に△７八銀の俗手がある。
+
+削除理由:
+- 
+
+---
+手数74: 先手の駒をさばかせない。
+
+削除理由:
+- 
+
+---
+手数79:
+
+削除理由:
+- 「残り時間は遠山５０分、広瀬１時間５６分。」 → ルール3
+
+---
+手数80: 俗手ながら厳しい。
+
+削除理由:
+- 
+
+---
+手数84: 取れば、△４九桂成でいきなり詰んでしまう。
+
+削除理由:
+- 
+
+---
+手数91: ▲同金寄は△４八馬▲同金△２八金▲４九玉△５七銀で受けなし。
+
+削除理由:
+- 
+
+---
+手数98: 以下、▲２八玉△２九金▲１七玉△２五桂で詰み。
+
+削除理由:
+- 「終局時刻は２２時３５分。」 → ルール3
+- 「消費時間は遠山５時間３９分、広瀬４時間２９分。」 → ルール3
+- 「勝った広瀬は６勝１敗、敗れた遠山は２勝５敗となった。」 → ルール4

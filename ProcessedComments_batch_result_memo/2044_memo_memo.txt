@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/4am517hmtzinu91yqjvw1nkvc1um7cz8a780 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "candidatesTokenCount": 376,
+      "promptTokenCount": 3785,
+      "thoughtsTokenCount": 1660,
+      "totalTokenCount": 5821,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3785
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数12: 後手の作戦は向かい飛車。\n\n削除理由:\n- 「堀口」 → 置換ルール\n\n手数24: 駒がぶつかる。\n\n削除理由:\n- 「開始後約３０分で」 → ルール3\n- 「残り時間は木村２時間２７分。堀口１時間３４分。」 → ルール3\n\n手数30:\n\n削除理由:\n- 「残り時間は木村２時間１１分。堀口１時間３２分。」 → ルール3\n\n手数41:\n\n削除理由:\n- 「残り時間は木村１時間５３分。堀口１時間３１分。」 → ルール3\n\n手数55:\n\n削除理由:\n- 「２２時半頃の局面。」 → ルール3\n- 「残り時間は木村１時間３５分。堀口１時間４分。」 → ルール3\n\n手数64:\n\n削除理由:\n- 「午前０時頃の局面。」 → ルール3\n- 「来期の順位をめぐって、両対局者は全力で戦っている。」 → ルール8\n- 「残り時間は木村５９分。堀口１３分。」 → ルール3\n\n手数103:\n\n削除理由:\n- 「本局の突然の終局をもって、第６４期名人戦順位戦は全日程を終えた。」 → ルール8\n- 「終了時刻は１時３分。」 → ルール3\n- 「残り時間は木村２９分。堀口１分。」 → ルール3\n- 「勝った木村は７勝５敗。負けた堀口七段は６勝６敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ],
+    "responseId": "bqL0aOjgI72fz7IPq-XI2As"
+  },
+  "key": "2044"
+}

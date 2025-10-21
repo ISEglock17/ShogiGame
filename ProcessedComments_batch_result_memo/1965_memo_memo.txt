@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/2xprlaxpubb8sha7da5wyux0wzq2ps0a3v22 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数30:\n\n削除理由:\n- 「中田宏が２８分考えて昼食休憩となった」 → ルール3, 7\n- 「ここまでの消費時間は▲中田宏５１分、△土佐１時間１分」 → ルール3\n\n手数37: 軽い後手陣に対し、先手は押さえ込みを狙う。\n\n削除理由:\n\n手数39:\n\n削除理由:\n- 「中田宏は▲４六銀に３０分、▲３五歩に６９分と連続の長考」 → ルール3\n\n手数51:\n\n削除理由:\n- 「土佐が６分考え、夕食休憩となった」 → ルール3, 7\n- 「ここまでの消費時間は▲中田宏４時間４分、土佐△３時間０分」 → ルール3\n\n手数63: 先手が一気に攻め込む。後手はどうしのぐか。\n\n削除理由:\n- 「中田宏七段」 → ルール1, 4\n- 「土佐七段」 → ルール1, 4\n\n手数69: 真正面から後手陣を突破した。\n\n削除理由:"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 1506,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3705
+        }
+      ],
+      "candidatesTokenCount": 261,
+      "promptTokenCount": 3705,
+      "totalTokenCount": 5472
+    },
+    "responseId": "O6H0aJPXK-XQz7IP9o654Qs"
+  },
+  "key": "1965"
+}

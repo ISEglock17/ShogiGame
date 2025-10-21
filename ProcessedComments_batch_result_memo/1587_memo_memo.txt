@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/jjfl9to5ngbp3q5oxxsv7fl8gjrgbaqy63qq ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1587",
+  "response": {
+    "usageMetadata": {
+      "candidatesTokenCount": 134,
+      "promptTokenCount": 3629,
+      "thoughtsTokenCount": 735,
+      "totalTokenCount": 4498,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3629
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数30:\n\n削除理由:\n- 「畠山が４４分考えて夕食休憩に入った」 → ルール3, 7\n- 「ここまでの消費時間は▲畠山成３時間４３分、△土佐２時間２８分」 → ルール3\n\n手数97: この局面で後手が投了した。\n\n削除理由:\n- 「消費時間は▲畠山成５時間３９分、△３時間４６分」 → ルール3\n- 「勝った畠山成は５勝４敗、敗れた土佐は２勝６敗となった」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "responseId": "B5j0aLzjKpmK_uMP7quLsAE",
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

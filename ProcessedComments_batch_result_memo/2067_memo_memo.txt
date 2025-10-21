@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/ybiwsmbj2n276zdk1u2bwuuzg1g621khkyd1 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数22: 不思議な出だしだったが、後手の一手損角換わり風に落ち着いたようだ。\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は森１時間１８分、野月４１分。」 → ルール3\n\n手数23: ▲６六歩。一気に激しくなるかもしれない。\n\n削除理由:\n- 「休憩を挟んで」 → ルール7\n\n手数43: ガリガリ駒をぶつけていく。互いに玉が不安定なため、早い決着がありそうだ。\n\n削除理由:\n\n手数44: じっと△６四歩。桂を取られる前に一仕事したいところだが、はたして。\n\n削除理由:\n- 「ここで森が４５分考えたところで夕食休憩に入った。」 → ルール1, 3, 7\n- 「消費時間は森３時間５７分、野月３時間２分。」 → ルール3\n\n手数88: この手を見て先手投了。\n\n削除理由:\n- 「野月は５４手目に１６分考えたあとは、すべてノータイムでまとめあげた。」 → ルール1, 3\n- 「消費時間は森４時間３８分、野月３時間３２分。」 → ルール3\n- 「勝った野月は２勝２敗、敗れた森は開幕から４連敗となった。」 → ルール1, 4"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "taL0aNTeJZmuqtsPpbehgAc",
+    "usageMetadata": {
+      "candidatesTokenCount": 320,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3763
+        }
+      ],
+      "totalTokenCount": 6210,
+      "thoughtsTokenCount": 2127,
+      "promptTokenCount": 3763
+    }
+  },
+  "key": "2067"
+}

@@ -1,0 +1,97 @@
+**Analyzing and Refactoring User Input**
+
+Okay, so the user wants me to clean up these Shogi commentary entries. They've given me a set of rules to work with, which is good. From the initial phrase "手数8: 田村得意のゴキゲン中飛車", I immediately see the challenge. They want me to refine this into more concise, professional commentary. The mention of "田村得意の" jumps out immediately. According to rule #5, this is extraneous information about the player's style or tendencies. My task here is to determine what's essential and then convert this into grammatically sound English. I'll need to use the rules provided to strip away unnecessary detail in the original text. I understand the goal: clear, focused analysis. I'm ready to begin the transformation process.
+
+手数8: ゴキゲン中飛車。
+
+削除理由:
+- 「田村得意の」 → ルール5
+
+---
+手数13: 先手は速攻を狙う。
+
+削除理由:
+- 「松本は」 → 対局者名
+
+---
+手数19: 早くも仕掛ける。後手玉は７二までいかないと安定しないのを見越している。
+
+削除理由:
+- （削除なし）
+
+---
+手数22: 角の王手の筋もあり、一回玉を寄るのは仕方がないが、先手が攻め始めたところなのでリスクも高い。
+
+削除理由:
+- （削除なし）
+
+---
+手数24: 先にあたりを避ける。
+
+削除理由:
+- （削除なし）
+
+---
+手数29: と金作りが厳しい。
+
+削除理由:
+- （削除なし）
+
+---
+手数31: 棒銀では時々出てくる手筋の銀捨て。これで飛車の視界が良くなった。
+
+削除理由:
+- （削除なし）
+
+---
+手数34: △５一金左としたいところだが、▲３三歩成を受けるために仕方がない。
+
+削除理由:
+- （削除なし）
+
+---
+手数36: 次に△２八歩が狙い。
+
+削除理由:
+- （削除なし）
+
+---
+手数38: すでに激しい戦いになっている。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は松本３５分、田村９分。」 → ルール3, 対局者名
+- 「開始一時間しか経っていないが、」 → ルール3
+
+---
+手数40: 竜を取りにいくが。
+
+削除理由:
+- （削除なし）
+
+---
+手数43: 厳しい両取り。
+
+削除理由:
+- （削除なし）
+
+---
+手数48: △２三飛から切り返すが。
+
+削除理由:
+- （削除なし）
+
+---
+手数49: 絶好手。△同銀なら▲同飛で飛車を逃げつつ金取り。また△２一歩も▲２二角成△同歩▲８五飛と逃げられる。
+
+削除理由:
+- （削除なし）
+
+---
+手数53: 先手が香得に加えと金ができたため、後手は投了となった。投了図以下△３七歩成くらいしか手がないが、▲８六香が次に▲３二と△同銀▲８三香成△同玉▲６一角や▲３一馬△５一金▲５三馬△５五竜▲８三香成△同玉▲７一馬の攻めを見せて厳しい。
+
+削除理由:
+- 「田村は戦意喪失したか、」 → 対局者名
+- 「終局時刻は１１時２３分。」 → ルール3
+- 「消費時間は松本５３分、田村１３分。」 → ルール3, 対局者名
+- 「勝った松本は３勝６敗、敗れた田村は２勝７敗となった。」 → ルール4, 対局者名

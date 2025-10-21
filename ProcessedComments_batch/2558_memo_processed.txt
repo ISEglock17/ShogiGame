@@ -1,0 +1,93 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got a user who's after some Shogi commentary cleanup.  Essentially, they want to focus the text down, removing all the extraneous fluff and leaving just the pure, insightful analysis of the game.  
+
+My job is to take each comment and, adhering to the specified rules and format, strip out anything that isn't directly related to the board position or the moves being made.  Think of it as the ultimate editing exercise:  I'm discarding the meta-commentary, the player introductions, time information – all the things that are interesting *around* the game, but not essential *to* the game itself.
+
+My process will be straightforward: I'll carefully sift through each comment, making judgments based on the defined rules about what to keep and what to excise. The goal is a distilled version of the commentary, a stream of clear, concise explanations of the moves and their immediate implications.
+
+手数3: ▲７五歩を突くと右玉には組みにくい。
+
+削除理由:
+- 「糸谷流・対振り飛車」 → ルール1, 5
+- 「糸谷」 → 置換ルール
+
+手数5: 先手は石田流を目指す。
+
+削除理由:
+- 「田村」 → 置換ルール
+
+手数14:
+
+削除理由:
+- 「記者が対局開始時の写真を撮りに本局が行なわれている芙蓉の間に入ったところ、既にこの局面だった。」 → ルール1, 6
+- 「時刻は１０時３分頃。」 → ルール3
+
+手数17:
+
+削除理由:
+- 「記者が写真を撮る数十秒の間に３手進んだ。」 → ルール1, 3
+
+手数18:
+
+削除理由:
+- 「ここで両者を通じて初の消費時間「１分」が記録された。」 → ルール3
+- 「時刻はまだ１０時５分頃。」 → ルール3
+
+手数37: 先手は仕掛ける。
+
+削除理由:
+- 「ノータイムで」 → ルール3
+- 「田村」 → 置換ルール
+
+手数39:
+
+削除理由:
+- 「ここまでノータイム指しを続けていた田村、ここで初めて１分使った。」 → ルール3
+- 「田村」 → 置換ルール
+
+手数41:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は▲田村２分、△糸谷４３分。」 → ルール3
+
+手数46: 後手は一手一手に数分ずつ考え、慎重に指している。
+
+削除理由:
+- 「糸谷はここで２３分考えた。」 → ルール3
+- 「ほとんど消費時間が記録されず、恐らくビシバシと指しているであろう田村に対し、」 → ルール3
+- 「糸谷」 → 置換ルール
+
+手数55:
+
+削除理由:
+- 「この局面で糸谷が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田村１３分、△糸谷１時間４１分。」 → ルール3
+
+手数70: 後手は長考で香車を打った。
+
+削除理由:
+- 「３６分。」 → ルール3
+- 「糸谷にしては」 → ルール1
+- 「ここまでの消費時間は▲田村２１分、△糸谷２時間２５分。」 → ルール3
+
+手数92: ▲４一竜△同銀▲同飛成は△３一金で受け切れると見切っているようだ。
+
+削除理由:
+- 削除対象なし
+
+手数101:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田村４７分、△糸谷２時間５９分。」 → ルール3
+- 「棋士室の見解は糸谷勝勢。」 → ルール1, 6
+
+手数104:
+
+削除理由:
+- 「この局面で田村は１０分考え、次の手を指さずに投了した。」 → ルール3
+- 「田村は投了図の１０分が本局再長考、無念の結果となった。」 → ルール3
+- 「消費時間は▲田村１時間５分、△糸谷３時間ちょうど。」 → ルール3
+- 「勝った糸谷は５勝３敗、敗れた田村は２勝６敗となった。」 → ルール4

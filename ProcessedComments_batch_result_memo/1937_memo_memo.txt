@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/wlzju7cxnnlaj09x4q6zkpncjs192qbrz6ao ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "haD0aIn9JuaGqtsPzq6GoAs",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3717,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3717,
+      "candidatesTokenCount": 287,
+      "thoughtsTokenCount": 2078,
+      "totalTokenCount": 6082
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数28: 後手の作戦は、いわゆる「二手損向かい飛車」。\n\n削除理由:\n- 「横山」 → ルール1\n\n手数39:\n\n削除理由:\n- 「横山が３３分を使って、ここで昼食休憩」 → ルール1, 3, 7\n- 「消費時間の通計は松本３７分。横山１時間１５分」 → ルール3\n- 「昼食の注文は、両対局者ともになし」 → ルール7\n\n手数40: 後手は手待ちで先手の動きを見る。\n\n削除理由:\n- 「横山」 → ルール1\n\n手数70:\n\n削除理由:\n- 「ここで夕食休憩」 → ルール7\n- 「消費時間は松本２時間１９分。横山４時間２８分」 → ルール3\n- 「夕食の注文は、両者ともになし」 → ルール7\n\n手数95:\n\n削除理由:\n- 「終了時刻は２０時２３分」 → ルール3\n- 「消費時間は松本２時間４８分。横山５時間１０分」 → ルール3\n- 「勝った松本、負けた横山は、ともに３勝４敗となった」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1937"
+}

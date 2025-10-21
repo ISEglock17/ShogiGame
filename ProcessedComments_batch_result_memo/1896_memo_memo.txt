@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/has3qfwumewi56qlf3areimzmqguhlnuyqwt ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "totalTokenCount": 6418,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3771
+        }
+      ],
+      "candidatesTokenCount": 342,
+      "thoughtsTokenCount": 2305,
+      "promptTokenCount": 3771
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数29:\n\n削除理由:\n- 「ここで休憩に入った。」 → ルール7\n- 「消費時間は泉１時間１分、福崎５２分。」 → ルール3\n- 「昼食の注文は、福崎・さとのランチ。泉はなし。」 → ルール7\n\n手数32:\n\n削除理由:\n- 「かつて谷川浩司をして「感覚を破壊された」と言わしめた福崎の振り飛車穴熊。」 → ルール1, 2, 5\n- 「通のファンには嬉しい作戦選択だろう。」 → ルール8\n\n手数40: ここで▲５三桂成△同銀▲１一角成の筋は、△３三角とされてたいしたことがない。\n\n削除理由:\n\n手数77:\n\n削除理由:\n- 「ここで福崎が１７分考えて夕食休憩に入った。」 → ルール3, 7\n- 「消費時間は▲３時間４２分、△２時間５７分。」 → ルール3\n- 「夕食の注文は福崎がキノコのオムレツ弁当、泉はなし。」 → ルール7\n\n手数95:\n\n削除理由:\n- 「１９時２９分、９５手で泉の勝ち。」 → ルール3, 8\n- 「持ち時間各６時間のうち残りは泉３時間５６分、福崎３時間２分。」 → ルール3\n- 「勝った泉は３勝５敗、敗れた福崎は４勝４敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "responseId": "kJ_0aJ-TDpLUz7IP4PKH4Ao"
+  },
+  "key": "1896"
+}

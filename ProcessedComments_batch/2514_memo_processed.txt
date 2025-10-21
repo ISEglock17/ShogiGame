@@ -1,0 +1,92 @@
+**My Analysis of the Shogi Comment and Proposed Transformation**
+
+Okay, so I've got a request here to process Shogi game commentary, cleaning it up and making it more readable. Essentially, I need to strip out irrelevant details and rephrase things into natural, concise sentences, following the specified rules.
+
+Let's take this example comment: "手数11: ５七銀型四間飛車は木下の得意戦法。"
+
+Right, so "木下の得意戦法" - that's the key bit to focus on. "木下" clearly refers to the player, but the rules dictate that I replace the player's name with "先手," indicating the player's position, as per the rules. That should keep it in line with the usual commentary and keep the intent.
+
+手数11: ５七銀型四間飛車は先手の得意戦法。
+
+削除理由:
+- 「木下」 → ルール1
+
+---
+手数16: 後手は左玉戦法という独自の振り飛車対策を指す。
+
+削除理由:
+- 「高田」 → ルール1
+
+---
+手数22: 玉頭位取りのような陣形。
+
+削除理由:
+
+---
+手数24: バランス重視の指し方。△５二金〜△４三金右なら普通だが、本譜は△３三角〜△２二飛として７二あたりに玉を囲う可能性もある。
+
+削除理由:
+
+---
+手数26:
+
+削除理由:
+- 「△４四角の局面で木下が２５分考えて」 → ルール3
+- 「昼食休憩に入った」 → ルール7
+- 「消費時間は木下が１時間２３分、高田が３４分」 → ルール3
+
+---
+手数27: 黙って△３三桂と位が安定するのは不満。今のうちに攻める。
+
+削除理由:
+
+---
+手数32:
+
+削除理由:
+- 「▲４六歩から△３四銀までノータイムの進展」 → ルール3
+
+---
+手数41: 穴熊は完成しているので仕掛ける。
+
+削除理由:
+
+---
+手数42: 将来の▲３四桂の筋を消す。
+
+削除理由:
+
+---
+手数43:
+
+削除理由:
+- 「１４時の局面」 → ルール3
+- 「消費時間は木下が１時間３７分、高田が１時間５分」 → ルール3
+
+---
+手数51:
+
+削除理由:
+- 「１５時３０分の局面」 → ルール3
+- 「消費時間は木下が２時間２６分、高田が１時間５３分」 → ルール3
+
+---
+手数55: すでにどちらかが倒れているといえる。読み勝っているのはどちらだろうか。
+
+削除理由:
+- 「５８分の長考」 → ルール3
+
+---
+手数56:
+
+削除理由:
+- 「１７時の局面」 → ルール3
+- 「消費時間は木下が３時間２４分、高田が２時間１４分」 → ルール3
+
+---
+手数66: 以下は▲３九銀打△３八金▲同玉△４六桂▲２九玉△３八金▲１九玉△２八金▲同玉△３七銀▲同玉△３九飛成▲４七玉△３八竜▲５七玉△５八竜▲４六玉△４八竜で詰み。
+
+削除理由:
+- 「終局時刻は１７時３９分」 → ルール3
+- 「消費時間は木下３時間２７分、高田２時間４８分」 → ルール3
+- 「勝った高田は３勝３敗、敗れた木下は１勝５敗となった」 → ルール4

@@ -1,0 +1,94 @@
+**Cleaning Up Those Pesky Shogi Commentary Strings**
+
+Alright, so I've got this user, clearly a serious shogi aficionado, asking me to tidy up the comments that come with their game data. They want these things *pruned*. The goal is clear: they want to strip out all the extraneous noise – you know, the meta-stuff, the player bios, the timestamps – and leave only the juicy bits: the actual analysis, the explanations of the board state and the moves. Just the good stuff, crafted into something that reads smoothly.
+
+It's a straightforward process, really. First, I need to identify those pesky elements that need to go. I'll need a set of rules, a kind of filtering guide, to make those judgement calls. Then, with all the junk out of the way, I can focus on making the remaining text flow naturally, like a coherent thought process rather than a jumbled collection of phrases. It's all about distilling the essence of the commentary, the meat of the discussion about the game.
+
+手数11: 先手は相掛かり２八飛型。
+
+削除理由:
+- 「上野は」 → ルール1
+
+手数16: 相掛かりの後手番は、先手の飛車の引き場所と違う場所に引くと良いとされる。▲２八飛型の場合、先手が棒銀にすることが多いので、後手は△８四飛型にして、飛車の横利きを通しておくのが良い。
+
+削除理由:
+
+手数37: 互いに堅城を築こうとする。相矢倉戦に似た雰囲気もある。
+
+削除理由:
+
+手数39: 
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「消費時間は上野４０分、松本２６分。」 → ルール3
+
+手数44: 
+
+削除理由:
+- 「△６四歩の局面で上野が１９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は上野５９分、松本５１分。」 → ルール3
+
+手数47: 後手の飛角が近い位置にいるので、左辺からの攻めが有効と見ている。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は上野１時間１０分、松本５３分。」 → ルール3
+
+手数48: 後手は△３三桂と跳ねる。角を追い払おうとする狙い。
+
+削除理由:
+- 「松本は５３分の長考で」 → ルール1, 3
+
+手数51: 追われたものの、飛車のコビンを狙う好位置。
+
+削除理由:
+
+手数52: 放っておいて、▲６五歩△同歩▲７四歩△同飛▲７五銀となるとひどいが、本譜も辛い。
+
+削除理由:
+
+手数56: １０手ほど前に比べると、７六歩・７七銀が７四歩・７五銀と盛り上がって、先手が手得した動きになっている。
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「消費時間は上野２時間６分、松本１時間５５分。」 → ルール3
+
+手数57: 単に▲７七桂では勢いがない。スピードアップの手筋。
+
+削除理由:
+
+手数60: 早逃げの手筋。
+
+削除理由:
+
+手数61: 二段ジャンプができてポイントを稼いだ。
+
+削除理由:
+
+手数64: 次に△３五歩▲２七銀となれば面白いが。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は上野２時間５７分、松本２時間２９分。」 → ルール3
+
+手数65: 一瞬の間を生かして攻める。
+
+削除理由:
+
+手数68: △同桂も▲同銀△同銀▲４四桂が厳しい。
+
+削除理由:
+
+手数72: 
+
+削除理由:
+- 「△４五同桂の局面で上野が５２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は上野４時間１９分、松本２時間２９分。」 → ルール3
+
+手数75: 以下△６四同飛は▲４三歩成△同金▲２二角成で壊滅。また、△８三飛も▲４三歩成△同飛▲５三桂成で受けきれない。▲６四銀の局面で後手の投了となった。
+
+削除理由:
+- 「３分考えて、松本の」 → ルール1, 3
+- 「終局時刻は１９時１８分。」 → ルール3
+- 「消費時間は上野４時間２０分、松本２時間３４分。」 → ルール3

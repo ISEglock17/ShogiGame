@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/2xbgilfy9artq3jxn9xseohx7pzbr4isrm3k ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1932",
+  "response": {
+    "usageMetadata": {
+      "candidatesTokenCount": 187,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3645
+        }
+      ],
+      "thoughtsTokenCount": 1706,
+      "promptTokenCount": 3645,
+      "totalTokenCount": 5538
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数6: 四間飛車。\n\n削除理由:\n- 「室岡得意の」 → ルール5\n\n手数20: 藤井システム模様。\n\n削除理由:\n\n手数21: 急戦を見せて、藤井システムをけん制。\n\n削除理由:\n\n手数29:\n\n削除理由:\n- 「室岡が４３分を使って、ここで昼食休憩となった。」 → ルール3, 7\n- 「消費時間の通計は上野４０分。室岡１時間１４分。」 → ルール3\n- 「昼食の注文は、上野はおにぎり４つ。室岡はなし。」 → ルール7\n\n手数41: 先手は▲同玉と応じる。\n\n削除理由:\n- 「上野は」 → 置換ルール\n- 「３０分考えて」 → ルール3"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "responseId": "gaD0aKaUNviez7IP9fKM0Ao"
+  }
+}

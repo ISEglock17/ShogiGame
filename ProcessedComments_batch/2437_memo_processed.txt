@@ -1,0 +1,55 @@
+**Analyzing and Filtering Shogi Commentary**
+
+Okay, so I'm presented with a collection of Shogi commentary snippets, and the user wants them cleaned up, specifically formatted. From the looks of it, this is all related to time consumption during the games. My job is to rigorously review each piece of commentary individually. I need to cross-reference them against the predetermined rules – the specific criteria for what needs to be *removed*.  Once I've identified the irrelevant time-related details, I'll then reconstruct the remaining information into something coherent, a naturally flowing sentence.  Finally, I'll output the edited commentary in the precise format the user requested. Essentially, I'm streamlining the commentary, removing the time noise, and leaving behind the core strategic insights, as dictated by the pre-set rules.
+
+手数33:
+
+削除理由:
+- 「この局面で松本が１３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間▲増田５０分、△松本１時間４分。」 → ルール3, 1
+
+手数41:
+
+削除理由:
+- 「ここまでの消費時間は▲増田１時間１１分、△松本１時間１３分。」 → ルール3, 1
+
+手数44:
+
+削除理由:
+- 「ここまでの消費時間は▲増田１時間４５分、△松本２時間３分。」 → ルール3, 1
+
+手数46:
+
+削除理由:
+- 「ここまでの消費時間は▲増田１時間５４分、△松本２時間１１分。」 → ルール3, 1
+
+手数49:
+
+削除理由:
+- 「ここまでの消費時間は▲増田３時間１５分、△松本２時間２７分。」 → ルール3, 1
+
+手数54:
+
+削除理由:
+- 「この局面で増田が１４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲増田３時間３９分、△松本３時間１３分。」 → ルール3, 1
+
+手数59:
+
+削除理由:
+- 「ここまでの消費時間は▲増田４時間１１分、△４時間２１分。」 → ルール3, 1
+
+手数76:
+
+削除理由:
+- 「ここまでの消費時間は▲増田４時間１１分、△松本４時間３５分。」 → ルール3, 1
+
+手数87:
+
+削除理由:
+- 「ここまでの消費時間は▲増田４時間５９分、△松本５時間９分。」 → ルール3, 1
+
+手数113:
+
+削除理由:
+- 「ここまでの消費時間は▲増田５時間１４分、△松本５時間５４分。」 → ルール3, 1

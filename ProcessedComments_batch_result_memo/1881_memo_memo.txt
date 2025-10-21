@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/axetzhfu1srhjfy48o9gw2i4lbb9ipgfmi5q ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1881",
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数23: 角換わり腰掛け銀に進む。\n\n削除理由:\n- (削除対象なし)\n\n手数28:\n\n削除理由:\n- 「ここまでの消費時間は▲木村１６分、△行方４０分。」 → ルール3\n\n手数31:\n\n削除理由:\n- 「行方が１４分を使って昼食休憩に入った。」 → ルール3, 7\n- 「消費時間は▲木村４９分、△野月１時間３分。」 → ルール1, 3\n- 「昼食の注文は、両者ともになし。」 → ルール7\n\n手数41:\n\n削除理由:\n- 「木村の▲６八金右に対して、行方が長考に沈んでいる。」 → ルール1, 3\n\n手数42: 後手は金を寄った。\n\n削除理由:\n- 「９４分の長考で」 → ルール3\n- 「行方」 → 置換\n\n手数43: さらに堅く、先手は穴熊囲いを目指す。\n\n削除理由:\n- 「木村」 → 置換\n- 「この局面で行方が３５分を使って夕食休憩に入った。」 → ルール3, 7\n- 「消費時間は▲木村２時間４３分、△行方４時間１４分。」 → ルール3\n- 「夕食の注文は行方はゼリー×２、木村はなし。」 → ルール7\n\n手数44: 後手は△１二香。力の入った、長い戦いになりそうだ。\n\n削除理由:\n- 「行方は６５分考えて」 → ルール3"
+            }
+          ]
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 2629,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3750,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3750,
+      "candidatesTokenCount": 359,
+      "totalTokenCount": 6738
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "VZ_0aOj4MYaaqtsPpqC_kAw"
+  }
+}

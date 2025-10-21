@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/g3o2cfnlutp17h9iiw5qmcz7t7zb072as3zj ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数1:\n\n削除理由:\n- 「本局は芙蓉の間で１局のみ行なわれる。」 → ルール6\n\n手数9: 戦型は相掛かり。\n\n削除理由:\n- 「１０時ちょうどに芙蓉の間に入った記者が写真を撮影している２分ほどの間に、ここまで進んだ。」 → ルール1, 3, 6\n\n手数51:\n\n削除理由:\n- 「両者早い指し手で１１時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲山崎２１分、△平藤２４分。」 → ルール3\n\n手数63:\n\n削除理由:\n- 「この局面で平藤が１８分考えて昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲山崎３８分、△平藤１時間５分。」 → ルール3\n\n手数92:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲山崎１時間１９分、△平藤１時間１３分。」 → ルール3"
+            }
+          ]
+        }
+      }
+    ],
+    "responseId": "zZ70aPPsN-aGqtsPzq6GoAs",
+    "usageMetadata": {
+      "promptTokenCount": 3693,
+      "candidatesTokenCount": 248,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3693,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5376,
+      "thoughtsTokenCount": 1435
+    }
+  },
+  "key": "1703"
+}

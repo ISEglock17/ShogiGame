@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/v716tl0aqkv5ulzcpf3jiaosex5wxq4pkw3b ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数30: 相矢倉に進んだ。\n\n削除理由:\n- 「両者とも時間を使わず、すらすらと」 → ルール3\n\n---\n手数42:\n\n削除理由:\n- 「この局面で佐藤秀が１８分考えて昼食休憩となった。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤秀１時間２分、△小野４８分。」 → ルール3\n\n---\n手数52: 銀をぶつければ、激しい戦いになるが。\n\n削除理由:\n- 削除対象となる表現はありませんでした。\n\n---\n手数93:\n\n削除理由:\n- 「この局面で小野が６分考え、夕食休憩となった。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤秀３時間２０分、△３時間１５分。」 → ルール3\n\n---\n手数112: ぴったりの活用。後手よしのようだ。\n\n削除理由:\n- 「「次の一手に使いたいくらいだ」と控え室の声。」 → ルール1\n- 「小野」 → 置換\n\n---\n手数115: つらいが、角道を止めるためにやむをない。\n\n削除理由:\n- 削除対象となる表現はありませんでした。"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3701,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5758,
+      "promptTokenCount": 3701,
+      "candidatesTokenCount": 283,
+      "thoughtsTokenCount": 1774
+    },
+    "responseId": "A6H0aIPgBNfi_uMPuczakQk",
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1964"
+}

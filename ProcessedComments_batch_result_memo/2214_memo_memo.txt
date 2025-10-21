@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/uulo6tuy36i4ej7ibdp4096095zfasn44h3f ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "2214",
+  "response": {
+    "usageMetadata": {
+      "promptTokenCount": 3745,
+      "thoughtsTokenCount": 2191,
+      "candidatesTokenCount": 317,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3745
+        }
+      ],
+      "totalTokenCount": 6253
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "WKv0aMqyL6XO_uMP94aeiAE",
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数46:\n\n削除理由:\n- 「ここで昼休にはいる。」 → ルール7\n- 「消費時間先手５９分　後手３３分。」 → ルール3\n---\n手数55:\n\n削除理由:\n- 「こちらは進みがはやく５５手。」 → ルール8\n- 「消費時間は中田八段が２時間３８分、渡辺竜王が１時間１７分。」 → ルール3\n---\n手数63:\n\n削除理由:\n- 「ここで夕休。」 → ルール7\n- 「消費時間は▲３時間５６分、△２時間５０分。」 → ルール3\n---\n手数69:\n\n削除理由:\n- 「消費時間：▲４時間８分　△３時間２４分」 → ルール3\n---\n手数79:\n\n削除理由:\n- 「消費時間：▲４時間３７分　△４時間２分」 → ルール3\n---\n手数83: 後手このまま上部を厚くしていけば安全か？\n---\n手数86: 馬筋が止まり後手玉のつかまる望みが薄い\n---\n手数101:\n\n削除理由:\n- 「消費時間：▲５時間３４分　△５時間１７分」 → ルール3\n---\n手数106: 後手、入玉間近？"
+            }
+          ]
+        },
+        "finishReason": "STOP"
+      }
+    ]
+  }
+}

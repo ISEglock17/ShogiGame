@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/fbomfm1sqhs8sihr9jqp1qicj0ajqwk680ry ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1998",
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数29:\n\n削除理由:\n- 「ここで休憩に入った。」 → ルール7\n- 「消費時間は達１時間１０分、小林４３分。」 → ルール3\n- 「昼食の注文は、達・肉南蛮そば。小林はなし。」 → ルール7\n\n手数33: ▲２五歩と指した。\n\n削除理由:\n- 「１時間１３分の長考の末に」 → ルール3\n\n手数34:\n\n削除理由:\n- 「この手に１時間１４分。」 → ルール3\n- 「長考の応酬になった。」 → ルール3\n\n手数46:\n\n削除理由:\n- 「ここで夕食休憩に入った。」 → ルール7\n- 「消費時間は達３時間４３分、小林３時間２１分。」 → ルール3\n- 「夕食の注文は、達・もりそば。小林なし。」 → ルール7"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3660,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 923,
+      "candidatesTokenCount": 209,
+      "totalTokenCount": 4792,
+      "promptTokenCount": 3660
+    },
+    "responseId": "sqH0aPrfEO-rqtsPh4bU0A8"
+  }
+}

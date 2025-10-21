@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/gqhfqi55jyp36k0zbsspm8agnobfsnuuwhxi ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1669",
+  "response": {
+    "usageMetadata": {
+      "promptTokenCount": 3759,
+      "candidatesTokenCount": 329,
+      "thoughtsTokenCount": 2404,
+      "totalTokenCount": 6492,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3759
+        }
+      ]
+    },
+    "responseId": "w5n0aKnoGZigz7IPwpzU6Qo",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数39:\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「消費時間は大平１１分、川上１時間４５分。」 → ルール3\n- 「昼食の注文は、大平・なし。川上・力うどん。」 → ルール7\n\n手数41: ▲３七桂から▲２五桂が狙い筋。\n\n削除理由:\n- 「この形を田中寅彦九段が得意にしていたため「トラ刺し」と言われている。」 → ルール1, 5\n\n手数61:\n\n削除理由:\n- 「ここまでの消費時間は大平５０分、川上１７５分。」 → ルール3\n\n手数91:\n\n削除理由:\n- 「ここで休憩に入った。」 → ルール7\n- 「消費時間は大平２時間２３分、川上４時間４分。」 → ルール3\n- 「夕食の注文は、大平なし。川上・鴨南そば。」 → ルール7\n\n手数119: 縦と横の攻めをうまく絡め、先手の勝ちとなった。\n\n削除理由:\n- 「２１時１分」 → ルール3\n- 「四段」 → ルール4\n- 「消費時間は大平２時間３２分、川上５時間５８分。」 → ルール3\n- 「勝った大平は５勝４敗、敗れた川上は４勝５敗となった。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

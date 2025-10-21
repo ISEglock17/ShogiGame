@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/rd1cz6zcmlw9u09huo153nmvjpj4rf21c8g6 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "pqn0aIDuLJPXz7IPrL3A0Qo",
+    "usageMetadata": {
+      "candidatesTokenCount": 309,
+      "totalTokenCount": 5275,
+      "thoughtsTokenCount": 1203,
+      "promptTokenCount": 3763,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3763,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数27: 先手が▲４五歩と仕掛けた。\n\n削除理由:\n- 「飯塚が▲４五歩と仕掛けたところで昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は飯塚４９分、田中１時間１１分。」 → ルール3\n- 「昼食の注文は飯塚・なし。田中・冷やしむじなそば大盛り。」 → ルール7\n\n手数30: 少しでも読みに穴があれば、あっという間に形勢に差がつきそうな展開だ。\n\n削除理由:\n\n\n手数31: △３五同銀なら▲２三歩成△２六歩▲３三とで先手優勢になる。\n\n削除理由:\n\n\n手数32: ▲３四歩なら△７九角成〜△２八飛成。\n\n削除理由:\n\n\n手数33: もう後戻りはできない。はたしてどちらが読み勝っているのか。\n\n削除理由:\n\n\n手数45: ▲２九飛は自陣飛車。\n\n削除理由:\n- 「田中が４３分考えたところで夕食休憩となった。」 → ルール3, 7\n- 「消費時間は、飯塚３時間３８分。田中３時間１２分。」 → ルール3\n- 「夕食の注文は飯塚・きつねうどん。田中・うな重、肝吸。」 → ルール7"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ]
+  },
+  "key": "2140"
+}

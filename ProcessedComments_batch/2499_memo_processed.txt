@@ -1,0 +1,82 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments. My job here is to extract the *meaningful* stuff – the critical insights into the board state and the moves themselves. I need to strip out all the fluff. I'm talking about the metadata, the player introductions, time stamps, all of that background noise. That stuff is fine for a casual read-through, but when I'm digging into these games for serious analysis, it's just a distraction. Basically, I'm filtering the comments to make them as lean and precise as possible, so the core strategic insights are crystal clear.
+
+手数10:
+削除理由:
+- 「矢倉は中飛車を得意にしている。」 → ルール5
+
+手数17:
+削除理由:
+- 「伊奈は」 → ルール1, 5
+- 「持久戦策。」 → ルール5
+
+手数24: △４五歩から主導権を握りに行く構想を狙う。
+
+削除理由:
+- なし
+
+手数32: あらかじめ△４五歩〜△４六歩の筋を▲２六飛で受けられているので、方向転換。飛車交換を狙う。
+
+削除理由:
+- なし
+
+手数33: あたりを避ける飛車引き。
+
+削除理由:
+- なし
+
+手数34:
+削除理由:
+- 「△２四歩の伊奈が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は伊奈が１時間１８分、矢倉が３６分。」 → ルール3
+
+手数37: ▲２八飛の意味を継承するため、当然歩を打つ。
+
+削除理由:
+- なし
+
+手数39: 中央から手を求める。
+
+削除理由:
+- なし
+
+手数41: △５五歩だと、▲同銀△同銀▲３一角成と強襲をかけるのだろうか。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は伊奈が１時間５４分、矢倉が５８分。」 → ルール3
+
+手数48:
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は伊奈が２時間２４分、矢倉が１時間５９分。」 → ルール3
+
+手数55: 先手は長考の末、角を切った。どのように攻めをつなげていくのだろうか。
+
+削除理由:
+- 「１７時の局面。」 → ルール3
+- 「消費時間は伊奈が３時間４０分、矢倉が１時間５９分。」 → ルール3
+- 「伊奈１時間９分の長考で、」 → ルール1, 3
+
+手数60:
+削除理由:
+- 「△４七角の局面で伊奈が４８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は伊奈が４時間２８分、矢倉が２時間２６分。」 → ルール3
+
+手数61:
+削除理由:
+- 「夕食休憩をはさむ５０分の長考。」 → ルール3, 7
+
+手数82:
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「残り時間は伊奈が１時間９分、矢倉が３時間１７分。」 → ルール3
+
+手数86: 攻防ともに見込みなしと見て、先手の投了となった。
+
+削除理由:
+- 「伊奈の投了となった」 → ルール1
+- 「終局時刻は２０時０分。」 → ルール3
+- 「消費時間は伊奈４時間５６分、矢倉２時間４６分。」 → ルール3
+- 「勝った矢倉は３勝３敗、敗れた伊奈は２勝４敗となった。」 → ルール4

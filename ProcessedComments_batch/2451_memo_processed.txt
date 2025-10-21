@@ -1,0 +1,69 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so I'm presented with Shogi game data, and the task at hand is to clean up and refine the comments associated with each move.  My goal is clear: I need to extract the truly valuable information from these comments - the analyses of the board state and the explanations of the moves themselves - and present them in a clean, natural-sounding narrative. Basically, I want to filter out the noise and leave the signal.
+
+My process will follow a specific set of steps. First, I'll need to define the rules of what constitutes unnecessary information and meticulously remove it. This requires a keen understanding of the conventions and common extraneous elements found in these comments. Once I've trimmed the fat, I'll focus on crafting the remaining snippets into more cohesive and readable sentences, ensuring that the essence of the analysis is preserved but articulated in a flowing, logical manner. Finally, I'll present the refined comments in the format specified, ready for further analysis and use. It's all about making the information as accessible and insightful as possible.
+
+手数26:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２３分、△島本２７分。」 → ルール3
+- 「児玉はそのまま考え続け、１時間８分考えたところで昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲児玉１時間３１分、△島本２７分。」 → ルール3
+
+手数27: 角を手放した。
+
+削除理由:
+- 「昼食休憩を挟んで１時間１４分の長考で」 → ルール3, 7
+
+手数37: ▲５五歩△同銀▲５四歩のように、８六角と絡めて玉頭を狙うのだろうか。
+
+削除理由:
+- 「ここまでの消費時間は▲児玉１時間５０分、△島本５３分。」 → ルール3
+
+手数39: 歩を突いた。
+
+削除理由:
+- 「１時間９分考えて」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉３時間１７分、△島本１時間３０分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉３時間３５分、△島本２時間２０分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「この局面で島本が８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲児玉４時間４分、△島本２時間４５分。」 → ルール3
+
+手数63: 後手優勢。先手の角の働きが悪いことがその理由だ。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉４時間４３分、△島本３時間１分。」 → ルール3
+- 「棋士室の見解は」 → ルール1
+
+手数73:
+
+削除理由:
+- 「児玉は残り１時間を切った。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「ここまでの消費時間は▲児玉５時間２５分、△島本４時間６分。」 → ルール3
+
+手数120: この局面で先手が投了した。後手玉に詰みはなく、先手玉は受けなし。
+
+削除理由:
+- 「消費時間は▲児玉５時間４４分、△島本４時間９分。」 → ルール3
+- 「勝った島本は３勝１敗、敗れた児玉は１勝３敗となった。」 → ルール4

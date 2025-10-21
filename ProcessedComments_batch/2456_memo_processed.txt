@@ -1,0 +1,102 @@
+**Breaking Down This Shogi Commentary Task**
+
+Okay, so I'm being asked to take a series of Shogi game comments and format them, presumably for easier readability or analysis. This is straightforward enough; I've dealt with similar natural language processing tasks before. My mind immediately starts breaking down the process:
+
+1.  **Iterating Through the Data:** The first step is to methodically analyze each comment associated with a specific move. Each move represents a discrete unit of information I need to process.
+2.  **Applying the Rules:** Next, and this is crucial, I need to interpret the comment according to the rules I've been given.
+3.  **Generating the output:** Based on the analysis, I need to create a new output, as described in the prompt.
+
+手数1:
+
+削除理由:
+- 「高崎は四段昇段後、初めての関西対局となる。」 → ルール4, 6
+
+手数11: 本局は相振り飛車となった。
+
+削除理由:
+- 「高崎は藤井システムが得意で、矢倉は居飛車も指すこともあるが、」 → ルール1, 5
+
+手数17: お互い美濃囲いを目指す。相手の出方によっては上部に厚い矢倉囲いに組み換えることもできる。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎７分、△矢倉５９分。」 → ルール1, 3
+
+手数20:
+
+削除理由:
+- 「この局面で高崎が２９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲高崎１時間３分、△矢倉１時間７分。」 → ルール1, 3
+
+手数21:
+
+削除理由:
+- 「昼食休憩を挟んで５４分の長考だった。」 → ルール3, 7
+
+手数28:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎１時間３９分、△矢倉１時間２６分。」 → ルール1, 3
+
+手数33: △６四同飛なら▲６五銀（飛角両取り！）の大技が飛び出しそうだ。以下、△７七角成▲同桂△３四飛に▲８四歩などが考えられる。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２時間４５分、△矢倉２時間２分。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+
+手数36: 後手指しやすいとみられている。先手は手損した勘定になっているので攻めが続かなければいけないが、すぐには見つからないようだ。２手前の△３三角をうっかりしていたのかもしれない。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２時間５９分、△矢倉３時間２分。」 → ルール1, 3
+- 「棋士室の見解は」 → ルール1
+- 「、とも言われている」 → ルール1
+
+手数43:
+
+削除理由:
+- 「この局面で矢倉が１４分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲高崎３時間２０分、△矢倉３時間４７分。」 → ルール1, 3
+
+手数52:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎３時間３８分、△矢倉４時間１３分。」 → ルール1, 3
+
+手数60:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎４時間２６分、△矢倉４時間４３分。」 → ルール1, 3
+
+手数62:
+
+削除理由:
+- 「ここまでの消費時間は▲高崎４時間２９分、△矢倉５時間６分。」 → ルール1, 3
+
+手数74:
+
+削除理由:
+- 「残り時間は高崎３２分、矢倉２２分。」 → ルール1, 3
+
+手数104:
+
+削除理由:
+- 「残り時間は高崎４分、矢倉３分。」 → ルール1, 3
+
+手数143: この局面で後手が投了した。
+
+削除理由:
+- 「消費時間は両者とも５時間５９分。」 → ルール3
+- 「勝った高崎は４連勝、敗れた矢倉は２勝２敗となった。」 → ルール1, 4

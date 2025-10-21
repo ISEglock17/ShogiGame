@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/esd0tjmn3baemv0ou0wp1fmfkvshkp57ayz8 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "gpn0aNmRMJLUz7IP4PKH4Ao",
+    "usageMetadata": {
+      "totalTokenCount": 5910,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3756
+        }
+      ],
+      "promptTokenCount": 3756,
+      "candidatesTokenCount": 355,
+      "thoughtsTokenCount": 1799
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数45:\n\n削除理由:\n- 「昨日のＡ級順位戦▲羽生善治王将−△久保利明八段と同一局面。久保はここで△６二銀と引いた。」 → ルール1, 2\n- 「川上が１時間１０分考え」 → ルール3\n- 「そのまま昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲山本２９分、△川上１時間４１分。」 → ルール3\n\n手数46: 後手は玉をひとつ上がった。\n\n削除理由:\n- 「昼食休憩を挟んで」 → ルール7\n- 「１時間１６分考えた」 → ルール3\n- 「川上」 → 置換ルール\n\n手数47: 先手も飛車を引き、間合いをはかる。戦いが起こるのはまだ先になりそうだ。\n\n削除理由:\n- 「山本」 → 置換ルール\n- 「３２分考えて」 → ルール3\n\n手数76:\n\n削除理由:\n- 「山本が１時間３分考えて」 → ルール3\n- 「夕食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲３時間４６分、△川上３時間２２分。」 → ルール3\n\n手数106: この局面で先手が投了した。\n\n削除理由:\n- 「山本」 → 置換ルール\n- 「消費時間は▲山本４時間５２分。△川上４時間２４分。」 → ルール3\n- 「両者共に４勝４敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1663"
+}

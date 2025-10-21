@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/s9xq5prcxr8z2rw6i7shruatph8l3d5diaz9 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "g6D0aJ7PCOXQz7IP9o654Qs",
+    "usageMetadata": {
+      "thoughtsTokenCount": 1499,
+      "totalTokenCount": 5493,
+      "promptTokenCount": 3710,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3710
+        }
+      ],
+      "candidatesTokenCount": 284
+    },
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数35:\n\n削除理由:\n- 「残り時間は西村２時間２分。川上５６分。」 → ルール3\n\n手数57:\n\n削除理由:\n- 「残り時間は西村１時間４０分。川上２８分。」 → ルール3\n\n手数68:\n\n削除理由:\n- 「残り時間は西村１時間２３分。川上１０分。」 → ルール3\n\n手数78:\n\n削除理由:\n- 「残り時間は西村１時間２０分。川上４分。」 → ルール3\n\n手数87: 後手勝ちではないかという見方がある。\n\n削除理由:\n- 「午前２時半を過ぎた。」 → ルール3\n- 「控え室では」 → ルール6\n- 「との声」 → ルール1\n\n手数112:\n\n削除理由:\n- 「残り時間は西村４７分。川上２分。」 → ルール3\n\n手数120:\n\n削除理由:\n- 「終了時刻は３時１５分。」 → ルール3\n- 「残り時間は西村３１分。川上２分。」 → ルール3\n- 「勝った川上は３勝４敗。負けた西村は１勝６敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ]
+  },
+  "key": "1939"
+}

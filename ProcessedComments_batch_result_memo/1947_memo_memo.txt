@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/elgg5d8vi76iki0bg3001udvo47ewki1le6b ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1947",
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数5:\n\n削除理由:\n- 「今日は四間飛車が多い。」 → ルール2\n\n手数22: 相穴熊に。\n\n手数28:\n\n削除理由:\n- 「ここまで両者ともにノータイム。」 → ルール3\n\n手数38:\n\n削除理由:\n- 「ここまでの消費時間は真部４０分。田村４分。」 → ルール3\n\n手数58:\n\n削除理由:\n- 「本日随一の早い進行。」 → ルール2, 3\n- 「ここで昼食休憩となった。」 → ルール7\n- 「消費時間は真部１時間３６分。田村１４分。」 → ルール3\n- 「昼食の注文は、真部はきつねうどん。田村は「さと」のランチ（肉）。」 → ルール7\n\n手数90: 飛車を取られてははっきりした。\n\n手数94:\n\n削除理由:\n- 「終了時刻は１５時２分。」 → ルール3\n- 「消費時間は真部２時間５３分。田村４４分。」 → ルール3\n- 「勝った田村は５勝３敗。負けた真部は２勝６敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3711,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3711,
+      "totalTokenCount": 7322,
+      "thoughtsTokenCount": 3341,
+      "candidatesTokenCount": 270
+    },
+    "responseId": "z6D0aIviCYKez7IPnb3L6Qs"
+  }
+}

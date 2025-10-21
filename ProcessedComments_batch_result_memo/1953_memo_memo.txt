@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/pgeu71gle7m0hvn5ng514e8o9krp5ve4eqmv ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1953",
+  "response": {
+    "responseId": "-aD0aNmKMvenmtkPwPr6kAs",
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数36:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は長岡３１分、藤倉１時間２２分。」 → ルール3, 4\n- 「昼食休憩は双方なし。」 → ルール7\n\n手数81: ８１手まで先手が勝利を収めた。\n\n削除理由:\n- 「１７時４９分、」 → ルール3\n- 「本日最初の終局に長岡は「前回は最後まで頑張って勝ちを逃しましたけどね」と苦笑い。」 → ルール1, 2, 8\n- 「消費時間は長岡２時間２分、藤倉４時間１９分。」 → ルール3, 4\n- 「勝った長岡は２勝７敗、敗れた藤倉は５勝４敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "totalTokenCount": 4815,
+      "thoughtsTokenCount": 972,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3653
+        }
+      ],
+      "candidatesTokenCount": 190,
+      "promptTokenCount": 3653
+    },
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

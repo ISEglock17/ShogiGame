@@ -1,0 +1,109 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm tasked with shaping up this stream of Shogi commentary. The user, who likely understands the intricacies of the game, wants me to distill it down.  Basically, I need to take this raw feed and refine it into something digestible – something that focuses solely on the board state and the moves being made, leaving out the fluff.
+
+My mental checklist is this: I need to methodically scan each comment, identifying and eliminating anything that isn't directly related to the actual game. That means the intros, the "and now we have..." pronouncements, the player introductions, and especially all that time-related information – gone.  It's all about getting to the heart of the action and presenting it cleanly, as though I were explaining it myself, right in the thick of a critical game.
+
+手数1:
+
+削除理由:
+- 「両者は有吉九段のスパーリング相手としても知られている。」 → ルール1
+- 「９月２９日（金）のＢ１・Ｂ２の際に有吉九段と指した村田は「僕の方が疲れました」と有吉の体力に感嘆していた。」 → ルール1
+
+手数2:
+
+削除理由:
+- 「増田は３分考えて」 → ルール1, 3
+- 「金を上がった。」 → ルール1, 3
+- （補足：指し手そのものであるためコメントとしては不要）
+
+手数3:
+
+削除理由:
+- 「不倒流を受け継ぐ（？）村田も意表を突かれ、９分考えている。」 → ルール1, 3, 5
+
+手数6:
+
+削除理由:
+- 「１１時半頃、増田が４２分の長考で」 → ルール1, 3
+- 「消費時間は▲村田１３分、△増田４８分。」 → ルール1, 3
+
+手数7:
+
+削除理由:
+- 「村田も３６分考えた。」 → ルール1, 3
+
+手数21:
+
+削除理由:
+- 「この局面で増田が１４分考え、昼食休憩に入った。」 → ルール1, 3, 7
+- 「序盤に両者長考があったが、村田は９手目以降ノータイム、増田も１０手目以降は２０分しか使わず、一転して早い展開になった。」 → ルール1, 3
+- 「ここまでの消費時間は▲村田４９分、△増田１時間１１分。」 → ルール1, 3
+
+手数22:
+
+削除理由:
+- 「昼食休憩を挟んで３５分で端歩を突き返した。」 → ルール3, 7
+- 「ここで村田が長考している模様。」 → ルール1, 3
+- 「ここまでの消費時間は▲村田４９分、△増田１時間３２分。」 → ルール1, 3
+
+手数25: 先手はひねり飛車の狙い。
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村田２時間２４分、△増田１時間４３分。」 → ルール1, 3
+- 「村田は」 → ルール1
+
+手数28:
+
+削除理由:
+- 「ここまでの消費時間は▲村田２時間３６分、△増田２時間１７分。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村田３時間２０分、△増田２時間５２分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「この局面で増田が８分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲村田３時間４４分、△増田３時間８分。」 → ルール1, 3
+
+手数72:
+
+削除理由:
+- 「ここまでの消費時間は▲村田４時間４７分、△増田４時間１５分。」 → ルール1, 3
+
+手数77: 手詰まり模様の中盤戦。千日手の可能性も指摘されている。
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田５時間７分、△増田４時間３０分。」 → ルール1, 3
+
+手数81: ▲７六馬と引いて千日手も指摘されていたが、先手が打開した。
+
+削除理由:
+- 「村田が」 → ルール1
+
+手数83: 見間違えそうだが、８一は桂馬ではなく、香車。
+
+削除理由:
+
+手数85: △８七香成を防ぐ。
+
+削除理由:
+
+手数88: いつか打たれるであろう▲２二歩が厳しく、先手が優勢と言われている。
+
+削除理由:
+- 「ここまでの消費時間は▲村田５時間２１分、△増田４時間５１分。」 → ルール1, 3
+- 「棋士室では」 → ルール1, 6
+
+手数97: 投了図から先手には▲３四銀〜▲２三銀成、▲５五桂〜▲４三歩などの厳しい攻めが狙いで、それらを同時に受ける術はなく、戦意喪失で投了となった。
+
+削除理由:
+- 「この局面で増田は３分考え、次の手を指さずに投了した。」 → ルール1, 3
+- 「消費時間は▲村田５時間３１分、△増田５時間５分。」 → ルール1, 3
+- 「勝った村田は４勝１敗、敗れた増田は３勝２敗となった。」 → ルール1, 4

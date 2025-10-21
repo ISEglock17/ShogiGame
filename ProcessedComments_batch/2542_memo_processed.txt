@@ -1,0 +1,96 @@
+**The Task at Hand: Polishing Shogi Commentary**
+
+Right now, I'm focusing on cleaning up Shogi game commentary. The user needs the comments formatted, and my job is to follow the provided rules and process each move's description.
+
+**The Rules of the Game**
+
+My goal is clear: I need to strip away any unnecessary information in the commentary. This includes metadata, player introductions, time stamps, and anything else that doesn't directly contribute to explaining the board state and the moves being made. I want to leave only natural-sounding sentences that focus on the actual Shogi moves and the board's condition.
+
+I'm starting by reviewing the specific elements the prompt asks me to remove...
+
+手数42:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東２４分、△所司２２分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「ここで▲東が３２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲東５７分、△所司４９分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東１時間１５分、△所司５２分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１時間２分の長考で決断の仕掛け。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲東２時間１７分、△所司１時間４分。」 → ルール3
+
+手数51: お互い手の出し方が難しそうだ。
+
+削除理由:
+- 「１時間２０分の長考で指された。」 → ルール3
+
+手数55: 駒を前進させる。玉頭方面の開拓もあるか。
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東３時間５１分、△所司１時間３３分。」 → ルール3
+
+手数61: 標的を端に定めた。
+
+削除理由:
+- 「２６分考えて」 → ルール3
+
+手数65:
+
+削除理由:
+- 「ここで△所司が１７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲東４時間２５分、△所司２時間２０分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東４時間３３分、△所司２時間４５分。」 → ルール3
+
+手数88:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「２１時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東５時間１２分、△所司３時間５３分。」 → ルール3
+
+手数108:
+
+削除理由:
+- 「２２時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東５時間１７分、△所司４時間３１分。」 → ルール3
+
+手数120:
+
+削除理由:
+- 「２３時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲東５時間４５分、△所司４時間５９分。」 → ルール3
+
+手数140: ここで先手の投了となった。
+
+削除理由:
+- 「終局時間は０時２２分。」 → ルール3
+- 「消費時間は▲東５時間５８分、△所司５時間２８分。」 → ルール3
+- 「勝った△所司は３勝４敗、敗れた▲東は２勝５敗となった。」 → ルール4

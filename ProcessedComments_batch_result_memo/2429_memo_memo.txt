@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/p9iepiyprf72dznltdrnss0pgib2vf0igx8b ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "2429",
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokenCount": 3742,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3742,
+          "modality": "TEXT"
+        }
+      ],
+      "candidatesTokenCount": 307,
+      "totalTokenCount": 5797,
+      "thoughtsTokenCount": 1748
+    },
+    "responseId": "2rH0aO66CoGgz7IPjZ7m2Qo",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数8: 序盤早々金を上がった。\n\n削除理由:\n- 「４１分長考して」 → ルール3\n\n手数37:\n\n削除理由:\n- 「ここで淡路が４１分考えて昼食休憩に入った。」 → ルール3, 7\n- 「消費時間は▲糸谷２６分、△淡路１時間３２分。」 → ルール3\n\n手数46:\n\n削除理由:\n- 「ここまでの消費時間は▲糸谷３９分、△淡路２時間１分。」 → ルール3\n\n手数52:\n\n削除理由:\n- 「ここまでの消費時間は▲糸谷１時間１１分、△淡路２時間４２分。」 → ルール3\n\n手数71:\n\n削除理由:\n- 「ここまでの消費時間は▲糸谷１時間４０分、△淡路３時間１分。」 → ルール3\n\n手数77:\n\n削除理由:\n- 「ここまでの消費時間は▲糸谷１時間４６分、△淡路３時間３９分。」 → ルール3\n\n手数109: ここで後手が投了した。先手玉は寄らず後手玉は一手一手の寄りとなる。\n\n削除理由:\n- 「淡路」 → 置換ルール\n- 「消費時間は▲糸谷１時間５１分、△淡路４時間１０分。」 → ルール3"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ]
+  }
+}

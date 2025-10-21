@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/hyxycsiot50l1wn3mij1menyo741qyq7xi77 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "thoughtsTokenCount": 804,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 4499,
+      "promptTokenCount": 3593,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3593
+        }
+      ]
+    },
+    "responseId": "R5_0aKDgL5PXz7IPrL3A0Qo",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数40:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は北浜１時間６分。木村４０分。」 → ルール3\n- 「昼食の注文は、北浜はなし。木村は梅のどあめ。」 → ルール7\n\n手数44: 先手はあえてこの角を打たせる作戦。\n\n削除理由:\n- 「北浜」 → 置換ルール"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ]
+  },
+  "key": "1883"
+}

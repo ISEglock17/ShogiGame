@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/dpouuimi2ejjjs0s81e2v1cwd3t6ek66ivbp ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "xZn0aLSeGJigz7IPwpzU6Qo",
+    "usageMetadata": {
+      "candidatesTokenCount": 279,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3704
+        }
+      ],
+      "totalTokenCount": 6969,
+      "thoughtsTokenCount": 2986,
+      "promptTokenCount": 3704
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数10: 先手の中飛車に対して、後手は飛車を三間に振った。\n\n削除理由:\n- 「阪口」 → 置換\n- 「高田」 → 置換\n\n---\n手数19: 先手は飛車を振り直す。\n\n削除理由:\n- 「阪口」 → 置換\n- 「ここまで６分しか使っていないので、予定の作戦だろう。」 → ルール3\n\n---\n手数29:\n\n削除理由:\n- 「この局面で高田が１４分考え、昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲阪口２５分、△高田１時間２９分。」 → ルール3\n\n---\n手数33:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲阪口１時間９分、△高田１時間４７分。」 → ルール3\n\n---\n手数57:\n\n削除理由:\n- 「この局面で高田が１３分考え、夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲阪口３時間３分、△高田３時間５０分。」 → ルール3"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ]
+  },
+  "key": "1664"
+}

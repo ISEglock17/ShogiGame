@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/ly2yhghoug7447sxz9f9igrch5irpckt2x26 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "2411",
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数21:\n\n削除理由:\n- 「中村が６０分考えて昼食休憩に入った」 → ルール3, 7\n- 「消費時間は佐々木が３０分、中村が１時間３０分」 → ルール3\n\n手数22:\n\n削除理由:\n- 「昼食休憩を挟む１時間の長考」 → ルール3, 7\n\n手数23:\n\n削除理由:\n- 「同じく１時間の長考」 → ルール3\n- 「前例の少ない指し方だ」 → ルール2\n\n手数24:\n\n削除理由:\n- 「１４時４０分の局面」 → ルール3\n- 「消費時間は佐々木が１時間３０分、中村が１時間３２分」 → ルール3\n\n手数26: いきなり攻める。\n\n手数33: 後手が仕掛けたために、いきなり大決戦になった。\n\n削除理由:\n- 「１６時２０分の局面」 → ルール3\n- 「消費時間は佐々木が３時間７分、中村が２時間４分」 → ルール3\n\n手数43:\n\n削除理由:\n- 「中村が６３分考えて夕食休憩に入った」 → ルール3, 7\n- 「消費時間は佐々木が３時間２８分、中村が３時間３１分」 → ルール3\n\n手数45: 絶好点の角打ち。\n\n手数53:\n\n削除理由:\n- 「消費時間は佐々木３時間３７分、中村４時間７分」 → ルール3"
+            }
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 2732,
+      "candidatesTokenCount": 351,
+      "totalTokenCount": 6860,
+      "promptTokenCount": 3777,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3777,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "responseId": "abH0aIesEYzVz7IP_PKO2Qs"
+  }
+}

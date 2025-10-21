@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/9fh4gbz57h8k4hctfh02363spxtrrk5kbewv ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1945",
+  "response": {
+    "responseId": "yqD0aJejOuXQz7IP9o654Qs",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数6: 後手の作戦は一手損角換わり。\n\n削除理由:\n- 「阿久津」 → 置換ルール\n\n---\n手数17: 先手は棒銀に出る。\n\n削除理由:\n- 「桜井」 → 置換ルール\n\n---\n手数25: 早くも駒がぶつかる。\n\n削除理由:\n- 「桜井のここまでの消費時間は２分。」 → ルール3\n\n---\n手数48: ▲６六歩と突かせて争点を作る狙い。\n\n削除理由:\n\n---\n手数51:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は桜井３６分。阿久津１時間１３分。」 → ルール3\n- 「昼食の注文は、両者ともになし。」 → ルール7\n\n---\n手数100:\n\n削除理由:\n- 「ここで夕食休憩。」 → ルール7\n- 「消費時間は桜井２時間５１分。阿久津３時間４４分。」 → ルール3\n- 「夕食の注文は、両者ともになし。」 → ルール7\n\n---\n手数112:\n\n削除理由:\n- 「終了時刻は２０時８分。」 → ルール3\n- 「消費時間は桜井３時間５３分。阿久津４時間６分。」 → ルール3\n- 「勝った阿久津は６勝２敗と星を伸ばして４番手の位置をキープ。」 → ルール4\n- 「負けた桜井は２勝６敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "totalTokenCount": 7113,
+      "promptTokenCount": 3766,
+      "candidatesTokenCount": 356,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3766,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 2991
+    }
+  }
+}

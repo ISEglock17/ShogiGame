@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/xtqymydytwy7qm60ru0yj3eonfl1swo48jng ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokenCount": 3739,
+      "candidatesTokenCount": 327,
+      "thoughtsTokenCount": 2591,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3739,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 6657
+    },
+    "responseId": "kJ_0aNzUNb2fz7IPq-XI2As",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数6: 後手は中飛車を採用した。\n\n削除理由:\n- 「北浜」 → 置換\n- 「前節の高橋戦に続き」 → ルール1, 2\n\n手数21:\n\n削除理由:\n- 「この局面で昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は行方４１分、北浜１時間１２分。」 → ルール3\n- 「昼食の注文は双方なし。」 → ルール7\n\n手数24: 後手は銀を上がった。この手では△８八角▲７七角△同角成▲同玉と形を乱す手もあったため、比較検討したのだろう。\n\n削除理由:\n- 「北浜」 → 置換\n- 「長考の末に」 → ルール3\n- 「行方が１時間２３分考えたところで定刻の１８時１０分となり、そのまま夕食休憩に入った。」 → ルール3, 7\n- 「消費時間は行方３時間２０分、北浜３時間４１分。」 → ルール3\n- 「夕食の注文は双方なし。」 → ルール7\n\n手数30: 次の△４五歩▲同銀△３五角が決まるとゲームセット。\n\n削除理由:\n- 削除対象なし\n\n手数31:\n\n削除理由:\n- 「２１時過ぎ」 → ルール3\n- 「手数は未だ３１手。」 → ルール8"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "key": "1892"
+}

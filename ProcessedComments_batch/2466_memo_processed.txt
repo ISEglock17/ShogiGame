@@ -1,0 +1,83 @@
+**Cleaning Up the Commentary for Deeper Analysis**
+
+Okay, so I'm looking at this dataset of Shogi game commentary and my goal is to really refine it.  The user wants me to strip away all the fluff – the metadata, the intros about the players, the time stamps – all that stuff that's just noise when I'm trying to analyze the actual game play. I need to get down to the essence: the descriptions of the board states and the explanations of the moves themselves, all in a natural, flowing narrative. Basically, I'm aiming for a streamlined, insightful record that's ready for some serious analytical work. Now, I just need to figure out the best approach to do this effectively...
+
+手数1:
+
+削除理由:
+- 「堀口初手に６分の考慮。」 → ルール3
+
+手数11: 横歩取りの出だしだが。
+
+削除理由:
+- 
+
+手数12: 横歩を取られるのを避けた手。
+
+削除理由:
+- 「実戦例はないようだ。」 → ルール2
+- 「田村の新手。」 → ルール2
+
+手数13: 歩のうしろにもぐりこみ、歩を狙う。▲２五飛から歩を狙うのは、△８六歩▲同歩△同飛▲３五飛に△８八角成▲同銀△４四角がある。本譜なら、△８六同飛のときに▲２二角成で先手必勝になる。
+
+削除理由:
+- 
+
+手数16:
+
+削除理由:
+- 「△２二銀の局面で堀口が３０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は堀口が１時間３７分、田村が４０分。」 → ルール3
+
+手数17: 意を決して歩を取る。
+
+削除理由:
+- 「７９分の大長考。」 → ルール3
+
+手数18: 飛車の活用を阻む桂。
+
+削除理由:
+- 
+
+手数20: 馬作りを見せて、飛車を狭くする狙い。
+
+削除理由:
+- 
+
+手数27: 飛車を逃げて、馬を作られるのを嫌った。
+
+削除理由:
+- 
+
+手数32: 歩得＋二枚角ＶＳ二枚飛車の構図になった。
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は堀口が２時間４６分、田村が１時間９分。」 → ルール3
+
+手数33: 桂先の銀で後手の動きを抑えようとする。
+
+削除理由:
+- 「６１分の長考。」 → ルール3
+
+手数35: 銀を出して、飛車を圧迫。
+
+削除理由:
+- 
+
+手数37: 遠見の角を放つ。２九の桂馬にヒモが付き、先手陣が引き締まった。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は堀口が４時間１６分、田村が１時間１６分。」 → ルール3
+
+手数41: 厳しい垂れ歩。
+
+削除理由:
+- 
+
+手数47: 後手は飛車に弱い形。対する先手は１八の「遠見の角」が攻防に良く利いていて隙がなく、攻防共に見込みなしと見て後手は投了した。△３七歩▲同桂△２九銀▲２四歩△同歩▲２五歩が一例。
+
+削除理由:
+- 「消費時間は堀口４時間４４分、田村１時間３２分。」 → ルール3
+- 「勝った堀口は２勝２敗、敗れた田村は４連敗となった。」 → ルール4

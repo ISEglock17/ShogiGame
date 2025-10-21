@@ -1,0 +1,181 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so the user wants me to clean up these shogi game commentaries. The goal is clear: strip away all the extraneous noise and leave behind only the pure, insightful analysis of the board and moves. Think of it like a distilled essence of the game.  We need to remove anything that distracts from the core strategic dialogue.
+
+I've got the rules laid out, and it's pretty straightforward. First, anyone who *isn't* a player is out. No extraneous mentions of commentators, their backgrounds, or who they studied under. That's clutter.  Then, anything referencing past games or similar scenarios gets the axe. We're interested in *this* game, *this* moment.
+
+Time stamps? Gone.  They're irrelevant to the strategic flow of the analysis.  And any biographical details, rankings, or irrelevant identifiers for the players?  Gone too.  We're only interested in their moves and the board, not their resumes. Essentially, I'm going to be surgically removing all the non-essential metadata and biographical details to hone in on the core strategic discussions and board evaluations.
+
+手数4: 相振り飛車を避け、居飛車にする。
+
+削除理由:
+- 「長岡は振り飛車党だが、遠山も振り飛車党なので、相振りになる可能性がある。」 → ルール5
+- 「長岡」 → 先手・後手の実名は「先手」「後手」に置換
+- 「遠山」 → 先手・後手の実名は「先手」「後手」に置換
+
+手数9: 先手は矢倉模様の駒組み。
+
+削除理由:
+- 「遠山、」 → 先手・後手の実名は「先手」「後手」に置換
+
+手数11: 振り飛車党の両者だが、意表を突く相矢倉戦。
+
+削除理由:
+- 「これで、振り飛車の可能性はなくなった。」 → ルール5
+
+手数33: ▲４六銀とするか作戦の岐路。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「１１時半の局面。」 → ルール3
+- 「消費時間は遠山が２０分、長岡が５１分。」 → ルール3
+
+手数37: 先手は加藤流の作戦。
+
+削除理由:
+- 「▲１五歩の局面で長岡が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は遠山が３６分、長岡が１時間１９分。」 → ルール3
+- 「遠山は」 → 先手・後手の実名は「先手」「後手」に置換
+
+手数38: 端攻めを狙う積極的な構想。△５三銀なら穏やか。
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「３８分の長考。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「４３分の長考。」 → ルール3
+
+手数42: ▲６五歩とされたときに角を８二に引けるようにする。
+
+削除理由:
+
+手数45: 現代矢倉の理想形のひとつ。
+
+削除理由:
+
+手数46:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は遠山が１時間３７分、長岡が２時間１７分。」 → ルール3
+
+手数48: △７三角は▲７五歩の筋が気になる。
+
+削除理由:
+
+手数49: ▲８四角と歩を取って、攻め駒を攻めていく構想。
+
+削除理由:
+
+手数53: ▲同香は△９六歩から香車を取られて、△８三香と打たれてしまう。▲同桂に△９六歩は▲８五桂で上部開拓を目指す。
+
+削除理由:
+
+手数54: ここの拠点も大きい。
+
+削除理由:
+
+手数55: 異筋のだが、攻め駒を押さえ込む意味。
+
+削除理由:
+
+手数57: ７三桂にヒモをつける。
+
+削除理由:
+
+手数58:
+
+削除理由:
+- 「１６時３０分ごろの局面。」 → ルール3
+- 「消費時間は遠山が２時間２８分、長岡が２時間３４分。」 → ルール3
+- 「ここまで、ほぼ同じ進行の将棋が１０年ほど前のタイトル戦であった。」 → ルール2
+
+手数59: 先手は積極的に攻める。受けるなら▲９三歩や▲９五歩。
+
+削除理由:
+- 「遠山は」 → 先手・後手の実名は「先手」「後手」に置換
+- 「▲３五歩の局面で長岡が９１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は遠山が２時間４８分、長岡が４時間５分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「休憩後すぐに指した。」 → ルール7
+
+手数65: 激しい攻め合い。
+
+削除理由:
+
+手数66: 手筋の突き出し。▲同角は△６五香。▲同金は△８三歩。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は遠山が３時間１８分、長岡が４時間２７分。」 → ルール3
+
+手数73: 一番被害の少ない取られ方。
+
+削除理由:
+
+手数79:
+
+削除理由:
+- 「２１時半ごろの局面。」 → ルール3
+- 「残り時間はともに１時間２７分。」 → ルール3
+
+手数85:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は遠山が１時間９分、長岡が５８分。」 → ルール3
+
+手数88:
+
+削除理由:
+- 「バチィと激しい音を立てて打たれた。」 → 盤面や指し手の解説ではないため削除
+
+手数90: △４六角は▲８五歩が気になるか。
+
+削除理由:
+
+手数92: 飛車と角が連動して働きそうな形になってきた。
+
+削除理由:
+
+手数96:
+
+削除理由:
+- 「０時の局面。」 → ルール3
+- 「残り時間は遠山が１６分、長岡が１２分。」 → ルール3
+
+手数97: 重たい駒をさばき、勝負。
+
+削除理由:
+
+手数104: 玉が単身飛び出したが、残している形。
+
+削除理由:
+
+手数110: 飛車の利きを通して、詰めろになっている。
+
+削除理由:
+
+手数112: 投了以下は、▲同金なら△７七歩成▲９九玉△９七香▲９八角△８七桂で、▲９九玉は△９八歩▲同玉△９七香▲８七玉△７七金で詰み。
+
+削除理由:
+- 「終局時刻は０時２４分。」 → ルール3
+- 「消費時間は遠山５時間５６分、長岡５時間５５分。」 → ルール3
+- 「勝った長岡は３勝２敗、敗れた遠山は１勝４敗となった。」 → ルール4

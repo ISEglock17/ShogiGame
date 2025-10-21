@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/mk7heehpvhybbyuajn08bsl24uhqo95gomvm ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1666",
+  "response": {
+    "responseId": "uJn0aNLcFviez7IP9fKM0Ao",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数35:\n\n削除理由:\n- 「東が２８分考え、昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲伊藤能１７分、△東１時間３３分。」 → ルール3\n\n手数39: 先手が仕掛けた。\n\n削除理由:\n- 「１４時半頃」 → ルール3\n- 「伊藤」 → 先手・後手名\n\n手数52: 先手のほうが（４五桂の分）景気がよさそう。\n\n削除理由:\n- 「棋士室の検討陣は」 → ルール1, 6\n\n手数55:\n\n削除理由:\n- 「東が２４分考え、夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲伊藤能２時間５１分、△東４時間２分。」 → ルール3\n\n手数70:\n\n削除理由:\n- 「東、残り１時間。」 → ルール3\n\n手数92: 詰むや詰まざるやの終盤戦。▲２五飛が決め手になるか！？\n\n削除理由:"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "totalTokenCount": 5227,
+      "promptTokenCount": 3701,
+      "thoughtsTokenCount": 1272,
+      "candidatesTokenCount": 254,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3701,
+          "modality": "TEXT"
+        }
+      ]
+    }
+  }
+}

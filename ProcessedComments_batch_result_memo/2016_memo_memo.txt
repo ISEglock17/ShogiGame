@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/2jf56xlnx3e9p14eekely3ot7lrxrlfx3sq3 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数14:\n\n削除理由:\n- 「１１時頃の局面」 → ルール3\n- 「平藤が２０分近く考えていた」 → ルール3\n- 「ここまでの消費時間は▲平藤１５分、△宮田２７分」 → ルール3\n\n手数20:\n\n削除理由:\n- 「平藤が６分考え」 → ルール3\n- 「昼食休憩に入った」 → ルール7\n- 「ここまでの消費時間は▲平藤５８分、△宮田１時間３分」 → ルール3\n\n手数25:\n\n削除理由:\n- 「１４時頃の局面」 → ルール3\n- 「ここまでの消費時間は▲平藤１時間１４分、△宮田１時間３７分」 → ルール3\n\n手数26:\n\n削除理由:\n- 「１時間４０分の消費時間が記録されていたが、宮田が席を外していた時間が長いようだ」 → ルール3\n\n手数32:\n\n削除理由:\n- 「平藤が１６分考えて」 → ルール3\n- 「夕食休憩に入った」 → ルール7\n- 「ここまでの消費時間は▲平藤２時間４４分、△宮田４時間２２分」 → ルール3\n\n手数106: この局面で先手が投了した。\n\n削除理由:\n- 「消費時間は▲平藤４時間３９分、△宮田５時間５９分」 → ルール3\n- 「勝った宮田は６勝３敗、敗れた平藤は４勝５敗となった」 → ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3771,
+      "thoughtsTokenCount": 2225,
+      "candidatesTokenCount": 356,
+      "totalTokenCount": 6352,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3771,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "NaL0aKftKNfi_uMPuczakQk"
+  },
+  "key": "2016"
+}

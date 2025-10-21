@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/ti4l1n60h4pzf4vijn8humrcvubybqayfx8u ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "hZj0aIn2CIzVz7IP_PKO2Qs",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "手数16:\n\n削除理由:\n- 「田丸が１１分考え」 → ルール1, 3\n- 「昼食休憩となった」 → ルール7\n- 「ここまでの消費時間は▲田丸５３分、△神崎１時間６分」 → ルール1, 3\n\n手数61:\n\n削除理由:\n- 「神崎が２８分考え」 → ルール1, 3\n- 「そのまま夕食休憩になった」 → ルール7\n- 「ここまでの消費時間は▲田丸３時間３０分、△神崎３時間１６分」 → ルール1, 3\n\n手数69: ▲４七銀・▲３七桂型を目指す選択肢もあったが、本譜は仕掛けた。\n\n削除理由:\n- 該当なし\n\n手数71:\n\n削除理由:\n- 「２０時頃の局面」 → ルール3\n- 「消費時間は▲田丸４時間１分、△神崎３時間３４分」 → ルール1, 3\n\n手数79:\n\n削除理由:\n- 「田丸はここで９分考え、残り１時間を切った（５３分）」 → ルール1, 3\n\n手数103:\n\n削除理由:\n- 「残り時間は田丸２７分、神崎４９分」 → ルール1, 3"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "candidatesTokenCount": 300,
+      "thoughtsTokenCount": 1082,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3722
+        }
+      ],
+      "totalTokenCount": 5104,
+      "promptTokenCount": 3722
+    }
+  },
+  "key": "1609"
+}

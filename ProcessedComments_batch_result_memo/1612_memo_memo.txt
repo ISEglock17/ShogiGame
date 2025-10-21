@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/56fp5oclzsw6ro81li5o03m2w20sk2hytafh ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1612",
+  "response": {
+    "responseId": "h5j0aMCwH4Kez7IPnb3L6Qs",
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3725,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5246,
+      "candidatesTokenCount": 282,
+      "thoughtsTokenCount": 1239,
+      "promptTokenCount": 3725
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数16: 相掛かりになった。\n\n削除理由:\n\n\n手数32:\n\n削除理由:\n- 「小林裕が２５分考え」 → ルール3\n- 「昼食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲小林裕５８分、△豊川５６分。」 → ルール3\n\n手数42:\n\n削除理由:\n- 「ここまでの消費時間は▲小林裕１時間３０分、△豊川１時間２９分。」 → ルール3\n\n手数44:\n\n削除理由:\n- 「１時間１８分の長考だった。」 → ルール3\n\n手数57:\n\n削除理由:\n- 「豊川が５６分考え」 → ルール3\n- 「夕食休憩に入った。」 → ルール7\n- 「ここまでの消費時間は▲小林裕２時間２８分、△豊川４時間２６分。」 → ルール3\n\n手数87: 以下は即詰み。\n\n削除理由:\n\n\n手数99: 後手が投了した。\n\n削除理由:\n- 「消費時間は▲小林裕２時間５６分、△豊川５時間１０分。」 → ルール3\n- 「両者ともに４勝４敗となった。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

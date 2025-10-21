@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/lqm3x7edk6z4caicix1wt8nbmx4kin3oafh4 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数20: 横歩取り△８五飛となった。\n\n削除理由:\n（削除なし）\n---\n手数24:\n\n削除理由:\n- 「佐藤紳、ここで２９分考えた」 → ルール3\n---\n手数26:\n\n削除理由:\n- 「４５分の長考」 → ルール3\n---\n手数30:\n\n削除理由:\n- 「この局面で有吉が５分考え、昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲有吉３１分、△佐藤紳１時間２６分。」 → ルール3"
+            }
+          ]
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokenCount": 3610,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3610,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5118,
+      "thoughtsTokenCount": 1370,
+      "candidatesTokenCount": 138
+    },
+    "responseId": "GJn0aPnxPMjxqtsP0baWgA8"
+  },
+  "key": "1641"
+}

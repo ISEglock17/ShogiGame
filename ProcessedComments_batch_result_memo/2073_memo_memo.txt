@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/vwbziukn9wjet50o97pw9p3h1isehozwws1b ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数15: 横歩取りの将棋になった。\n\n削除理由:\n- 「両者あまり時間を使わず」 → ルール3\n\n手数23:\n\n削除理由:\n- 「ここまでの消費時間は▲行方３３分、△井上９分。」 → ルール3\n\n手数31:\n\n削除理由:\n- 「この局面で△井上が１４分考えて昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲行方５１分、△井上１時間２分。」 → ルール3\n\n手数40:\n\n削除理由:\n- 「ここまでの消費時間は▲行方１時間５７分、△１時間５６分。」 → ルール3"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "totalTokenCount": 4900,
+      "promptTokenCount": 3635,
+      "thoughtsTokenCount": 1105,
+      "candidatesTokenCount": 160,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3635,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "Maj0aL-tEMjxqtsP0baWgA8"
+  },
+  "key": "2073"
+}

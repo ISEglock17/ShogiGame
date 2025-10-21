@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/rr2a6hz03wu24ochj4dt254b5y3wzz5k3ovp ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数41:\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「消費時間は松本４４分、大内１時間１５。」 → ルール1, 3\n- 「昼食の注文は双方なし。」 → ルール7\n\n手数49:\n\n削除理由:\n- 「午後３時過ぎ。」 → ルール3\n- 「消費時間は双方１時間３２分。」 → ルール3\n\n手数51: 次は▲４二角成から▲４一飛が厳しい。\n\n削除理由:\n\n手数82:\n\n削除理由:\n- 「ここで夕食休憩に。」 → ルール7\n- 「消費時間は松本２時間５４分、大内３時間５９分。」 → ルール1, 3\n- 「夕食の注文は双方なし。」 → ルール7\n\n手数103: 機敏な仕掛けから先手が優位を築いた。\n\n削除理由:\n- 「松本五段」 → 置換\n- 「１９時４５分、１０３手で勝利を収めた。」 → ルール3\n- 「消費時間は松本３時間１８分、大内４時間１３分。」 → ルール1, 3\n- 「勝った松本は４勝５敗、敗れた大内は４勝５敗になった。」 → ルール1, 4"
+            }
+          ]
+        }
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3721,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3721,
+      "totalTokenCount": 5382,
+      "candidatesTokenCount": 306,
+      "thoughtsTokenCount": 1355
+    },
+    "responseId": "_aD0aKXIO_W6_uMP9efM0AU"
+  },
+  "key": "1957"
+}

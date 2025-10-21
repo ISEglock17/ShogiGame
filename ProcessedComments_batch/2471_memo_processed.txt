@@ -1,0 +1,139 @@
+**Cleaning Up My Commentary: Streamlining Analysis**
+
+Okay, so I'm looking at these Shogi game records, and I need to refine the commentary associated with each move.  The goal is pretty straightforward: I want to strip away all the extraneous noise – you know, the meta stuff, the player introductions, the time stamps – and leave behind only the really valuable bits.  I'm talking about the pure, unadulterated analysis of the board position and the moves themselves, all presented in a clean, natural flow.
+
+My plan is simple but effective. First, I'll meticulously go through each comment, applying a set of rules to identify and remove all the irrelevant data. Think of it like a surgical extraction. Then, with the essential insights isolated, I'll work my magic to stitch them back together into coherent, readable sentences.  It's all about making the data digestible and ready for deeper analysis.
+
+手数3: 後手は△８八角成▲同飛△５七角で馬が作れるが、先手はかまわないと見ている。
+
+削除理由:
+- 「大内の得意の形。」 → ルール1, 5
+- 「大内」 → ルール1
+
+手数4: 挑発に乗らず、我が道を行く。
+
+削除理由:
+- 該当なし
+
+手数7:
+
+削除理由:
+- 「大内は振り飛車全般なんでも指す。」 → ルール1, 5
+
+手数20: 対振り右玉になりそうだ。
+
+削除理由:
+- 「糸谷流の」 → ルール1
+
+手数23:
+
+削除理由:
+- 「振り飛車穴熊が戦法をして市民権を得たのは、大内の功績によるところ大きい。」 → ルール1, 2, 5
+
+手数28: 後手はほぼ左右対称形のきれいな形。
+
+削除理由:
+- 該当なし
+
+手数34: 右玉だ。
+
+削除理由:
+- 「糸谷流」 → ルール1
+
+手数44: 玉の一番近くなので、勇気の要る手だ。
+
+削除理由:
+- 「△５四歩の局面で大内が２５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は大内が１時間２５分、糸谷が２４分。」 → ルール1, 3
+
+手数45:
+
+削除理由:
+- 「６２分の長考。」 → ルール3
+
+手数49: △２五桂からの端攻めを防ぐ意味。
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は大内が２時間４５分、糸谷が２５分。」 → ルール1, 3
+
+手数50: 歩損の打開。思い切った手段に出る。
+
+削除理由:
+- 「わずか１２分の考慮で」 → ルール3
+
+手数54: ▲５九飛は△６八銀なので、飛車の逃げ場が難しいと見ている。
+
+削除理由:
+- 該当なし
+
+手数56: 攻め駒を攻める。
+
+削除理由:
+- 該当なし
+
+手数57: 飛車切り。
+
+削除理由:
+- 「怒涛流の」 → ルール1, 5
+
+手数61: 絡みつく攻め。
+
+削除理由:
+- 該当なし
+
+手数62: 角をいじめに銀を成る。堂々たる指し方だ。
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は大内が２時間４８分、糸谷が１時間６分。」 → ルール1, 3
+- 「１９分の考慮で」 → ルール3
+
+手数68: 先手の攻めは細いと見ている。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は大内が３時間２９分、糸谷が１時間３０分。」 → ルール1, 3
+
+手数71: ▲４四角は△７三玉と早逃げされて息切れする。
+
+削除理由:
+- 該当なし
+
+手数85:
+
+削除理由:
+- 「▲６四歩の局面で糸谷が１３分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は大内が４時間２０分、糸谷が２時間２０分。」 → ルール1, 3
+
+手数90: 攻めを催促。
+
+削除理由:
+- 該当なし
+
+手数94: 駒を取り払い、さっぱりさせる意味。
+
+削除理由:
+- 該当なし
+
+手数98: ２枚角の利きが素晴らしい。先手の攻めは息切れだ。
+
+削除理由:
+- 該当なし
+
+手数106: △同竜は△７五角の王手飛車。
+
+削除理由:
+- 該当なし
+
+手数118: 指させて指す。確実にポイントを上げている。
+
+削除理由:
+- 該当なし
+
+手数126: 先手は攻防共に見込みなしと見て、投了となった。
+
+削除理由:
+- 「大内」 → ルール1
+- 「終局時刻は２０時５０分。」 → ルール3
+- 「消費時間は大内４時間５０分、糸谷３時間２５分。」 → ルール1, 3

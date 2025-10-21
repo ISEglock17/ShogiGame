@@ -1,0 +1,114 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, so I'm being asked to take raw Shogi game commentary and clean it up, making it more concise and readable, like a streamlined report for a game. The user wants the key details, not all the extra fluff.
+
+Here's how I'm thinking I'll approach this. First, I'll break down the commentary into individual moves, just one move at a time, to make the process manageable. Then, I'll use the rules provided to identify and flag the parts of each comment that need to be trimmed or replaced. Next, I'll go through the removal process, being very careful to apply the rules exactly as given. Finally, I'll stitch together what remains into proper sentences, ensuring they flow naturally. It's important the output is clear and follows the requested format, ready for a clean presentation. I'm ready to dive in.
+
+手数10: 相矢倉となった。
+
+削除理由:
+
+
+手数14:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳６分、△淡路４５分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「この局面で淡路が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳４１分、△淡路１時間１６分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間１０分、△淡路１時間３９分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間３分、△淡路２時間１０分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「この一手は３０分考えられた。」 → ルール3
+- 「１６時半頃、佐藤紳は次の手を考えて４０分ほど消費したところだ。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間３分、△淡路２時間４０分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１０年以上前に２局前例がある。」 → ルール2
+- 「次の一手はともに△５五歩だった。」 → ルール2
+
+手数44:
+
+削除理由:
+- 「わずかに前例があったものの、両者にはとっくに未知の局面かもしれない。」 → ルール2
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間５７分、△淡路２時間４７分。」 → ルール3
+
+手数45: 先手も飛車を回った。
+
+削除理由:
+- 「５９分考えて、」 → ルール3
+- 「この局面で淡路が１４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳３時間５６分、△淡路３時間１分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「夕食休憩を挟んで１時間２０分の長考。」 → ルール3, 7
+- 「長考合戦で消費時間はほとんど同じ。（▲３時間５６分、△４時間７分）」 → ルール3
+
+手数48: ２筋に利かし、壁を解消する好手と評判。
+
+削除理由:
+- 「と棋士室で」 → ルール1, 6
+
+手数51:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間３８分、△淡路４時間７分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「佐藤紳は残り１時間を切った。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳５時間１２分、△淡路４時間４８分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「３４分考え、残りは１４分。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「佐藤紳はここから一分将棋。」 → ルール3
+
+手数78:
+
+削除理由:
+- 「淡路はここで残り１時間を切った。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「残り時間は佐藤紳１分、淡路４２分。」 → ルール3

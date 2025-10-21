@@ -1,0 +1,132 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to process Shogi game commentary, cleaning it up and making it more readable. Essentially, I need to take the raw data and transform it into a more polished, concise output. I'm imagining it as taking the raw, potentially messy comments and making them flow like a professional broadcast.
+
+The approach is straightforward. I'll need to work through each move, analyzing the commentary associated with that specific move. I need to understand the underlying rules provided, which will guide me in discarding the extraneous information and keeping only what's truly essential for a clear understanding of the game's flow and strategic implications. I'll then reconstruct those pieces into a clean sentence which the user will appreciate.
+
+手数6: 後手はゴキゲン中飛車を選んだ。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数9:
+
+削除理由:
+- 「俗に言う「佐藤（康光棋聖）新手」。」 → ルール1, 2
+
+手数12:
+
+削除理由:
+- 「そして「遠山流」。」 → ルール1, 5
+- 「または「竹林（二段・関東奨励会）流」。」 → ルール1
+- 「本家本元の技が見られる。」 → ルール1, 5
+
+手数19:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原３２分、△遠山１１分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「この局面で遠山が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲藤原１時間１分、△遠山５８分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原１時間６分、△遠山１時間５３分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「玉を入りあったこの局面の消費時間は、▲藤原１時間４６分、△遠山２時間２４分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間２５分、△遠山２時間５３分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間５８分、△遠山２時間５９分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「この局面で遠山が３１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲藤原３時間３２分、△遠山３時間３０分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「夕食休憩を挟んで４３分の考慮。」 → ルール3, 7
+
+手数47:
+
+削除理由:
+- 「２０時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原３時間４７分、△遠山４時間２５分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲藤原４時間４分、△遠山４時間３８分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「消費時間は▲藤原４時間２６分、△遠山４時間４３分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「５２分の長考。」 → ルール3
+- 「消費時間は▲藤原５時間１８分、△遠山４時間４３分。」 → ルール3
+
+手数76: ここ２０手ほどの攻防は渋く、まだまだ長い勝負となりそうだ。
+
+削除理由:
+- 「２３時４０分頃の局面。」 → ルール3
+- 「消費時間は▲藤原５時間４１分、△５時間４３分。」 → ルール3
+- 「に「渋い！！」と声が何度も上がった」 → ルール1
+
+手数83:
+
+削除理由:
+- 「消費時間は▲藤原５時間４４分、△遠山５時間４７分。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「藤原はここから一分将棋。」 → ルール3
+
+手数116:
+
+削除理由:
+- 「遠山、１分使って残り２分。」 → ルール3
+
+手数128:
+
+削除理由:
+- 「遠山もここから一分将棋。」 → ルール3
+
+手数150:
+
+削除理由:
+- 「１時過ぎの局面。」 → ルール3
+- 「既に両者一分将棋。」 → ルール3
+
+手数162: この局面で先手が投了した。
+
+削除理由:
+- 「藤原が」 → ルール1
+- 「消費時間は両者とも５時間５９分。」 → ルール3
+- 「勝った遠山は２勝４敗、敗れた藤原は３勝３敗となった。」 → ルール4

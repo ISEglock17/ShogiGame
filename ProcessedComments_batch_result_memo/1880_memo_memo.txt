@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/6s0xye7fvy48qi8oiof8gqoc87rugixh3vrf ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "totalTokenCount": 6040,
+      "promptTokenCount": 3711,
+      "candidatesTokenCount": 255,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3711,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 2074
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "UJ_0aI6VDPenmtkPwPr6kAs",
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数16: 早い進行で横歩取りへ。\n\n削除理由:\n- 「深浦の消費時間はここまで０分。」 → ルール3\n\n手数24: 横歩取り中座飛車へ。\n\n削除理由:\n- 「ここまで野月の消費時間は４１分、深浦は依然０分。」 → ルール3\n\n手数39:\n\n削除理由:\n- 「深浦が２６分を使って昼食休憩に入った。」 → ルール3, 7\n- 「消費時間は▲野月１時間１２分、△深浦３６分。」 → ルール3\n- 「昼食の注文は、深浦半チャンラーメン、野月はなし。」 → ルール7\n\n手数40:\n\n削除理由:\n- 「深浦の△２五歩は再開前後で５９分を費やした。」 → ルール3, 7\n\n手数41:\n\n削除理由:\n- 「▲２九飛は１時間２分の長考。」 → ルール3\n\n手数46: 飛車を逃げる手に△４六桂▲同歩△３七歩成の筋がある。厳しく見えるが。"
+            }
+          ]
+        },
+        "finishReason": "STOP"
+      }
+    ]
+  },
+  "key": "1880"
+}

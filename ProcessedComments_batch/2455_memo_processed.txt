@@ -1,0 +1,142 @@
+**Breaking Down and Reconstructing Shogi Commentary**
+
+Okay, so I'm presented with a task: to take these Shogi game commentaries and whip them into shape. The user wants clean, readable sentences from the often-messy raw data. It's a matter of filtering out the fluff and focusing on the core moves and their implications, all while adhering to the provided rules.
+
+**Here's my thought process:**
+
+I need to meticulously go through each move, analyzing the commentary that accompanies it. My goal is to extract the essential information. Basically, I'm aiming for a straightforward, easy-to-understand narrative of the game's progression, stripped of any irrelevant details. I'm focusing on preserving the moves themselves, any significant tactical considerations, and maybe even a dash of player psychology if it's relevant and clearly present in the comment.
+
+手数10: 普通の角換わり将棋となった。
+
+削除理由:
+- 削除対象なし
+
+手数18: △８三銀からの棒銀はほとんど見なくなった。
+
+削除理由:
+- 削除対象なし
+
+手数28: 相腰掛け銀となった。
+
+削除理由:
+- 削除対象なし
+
+手数30:
+
+削除理由:
+- 「２回戦で村山が松本五段に快勝している形。」 → ルール2
+- 「西尾の研究が見所。」 → ルール1
+
+手数35:
+
+削除理由:
+- 「西尾が１３分考えて昼食休憩に入った」 → ルール3, 7
+- 「消費時間は村山が１６分、西尾が１時間３２分」 → ルール3
+- 「▲４七金の局面で」 → (文脈上不要)
+
+手数42: ▲４五歩△同歩▲同銀△同銀▲同桂が銀取りにならぬように未然に受けた手。
+
+削除理由:
+- 「１４時４５分の局面。」 → ルール3
+- 「消費時間は村山が４７分、西尾が２時間４０分。」 → ルール3
+
+手数43: 別の筋から仕掛けを探す。
+
+削除理由:
+- 削除対象なし
+
+手数44: 後手から攻める手段がないので、気を遣いながら受けに回る必要がある。
+
+削除理由:
+- 削除対象なし
+
+手数46:
+
+削除理由:
+- 「１５時４５分の局面。」 → ルール3
+- 「消費時間は村山が１時間１８分、西尾が３時間１４分。」 → ルール3
+
+手数47: ▲２九飛・▲４八金型に組み替えて仕掛けを狙うつもりだろう。
+
+削除理由:
+- 削除対象なし
+
+手数50:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は村山が１時間５６分、西尾が３時間４６分。」 → ルール3
+
+手数51: 千日手含みの手が続いたが、結局、定跡の形にもどった。
+
+削除理由:
+- 削除対象なし
+
+手数57:
+
+削除理由:
+- 「▲４六歩の局面で西尾が２４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は村山が２時間１５分、西尾が４時間３２分。」 → ルール3
+
+手数59: 矢倉や角換わりでは急所の角打ち。
+
+削除理由:
+- 削除対象なし
+
+手数60:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は村山が２時間４２分、西尾が４時間３３分。」 → ルール3
+
+手数61: △３八銀は見えているが、決めに行った手。
+
+削除理由:
+- 「６８分の長考。」 → ルール3
+
+手数64: 成銀がソッポなのが痛い。
+
+削除理由:
+- 削除対象なし
+
+手数66:
+
+削除理由:
+- 「残り時間は村山２時間４分、西尾５１分。」 → ルール3
+
+手数67: 角を切る。▲２三銀などではぬるいと見たか。
+
+削除理由:
+- 「８０分の長考で」 → ルール3
+
+手数69:
+
+削除理由:
+- 「８０分の長考。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「残り時間は村山４４分、西尾３１分。」 → ルール3
+
+手数75: ４八の金がここまでくれば、攻めは成功したといえる。
+
+削除理由:
+- 削除対象なし
+
+手数85: 先手の駒の数が多い。
+
+削除理由:
+- 削除対象なし
+
+手数90: 先手玉への利きが消えてしまった。
+
+削除理由:
+- 削除対象なし
+
+手数91: 先手に詰みはなく、受けても一手一手なので、後手は投了した。
+
+削除理由:
+- 「終局時刻は０時１２分。」 → ルール3
+- 「消費時間は村山５時間４５分、西尾５時間５５分。」 → ルール3
+- 「西尾」 → （先手・後手への置換）

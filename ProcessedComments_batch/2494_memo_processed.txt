@@ -1,0 +1,79 @@
+**Analyzing and Preparing the Shogi Commentary**
+
+Okay, so I'm presented with a task: the user wants me to clean up Shogi game commentary. I need to focus on streamlining the information, removing the fluff, and restructuring it into natural, flowing sentences. My job is to take the raw data and make it easily digestible for a Shogi enthusiast.
+
+Looking at the provided example, "手数6: 一手損角換わりとなった," I immediately recognize the structure.  The initial "手数" followed by a number indicates the move number, which isn't inherently useful in the final comment. The real nugget is "一手損角換わりとなった," which describes a specific opening variation.
+
+Therefore, my strategy is simple: I'll recognize and discard the move number. The remaining information is the key piece and will be retained. The goal is clarity and succinctness. "一手損角換わりとなった" perfectly encapsulates the situation; no further modification is needed.
+
+手数6: 一手損角換わりとなった。
+
+削除理由:
+
+
+手数15: 先手は早繰り銀の狙い。
+
+削除理由:
+- 「東は」 → ルール1
+
+手数16:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東２７分、△島本１４分。」 → ルール3, 1
+
+手数19:
+
+削除理由:
+- 「この局面で島本が１１分考え、昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲東１時間２５分、△島本３７分。」 → ルール1, 3
+
+手数21: 一旦上がった玉を引いた。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東２時間１０分、△島本３７分。」 → ルール1, 3
+
+手数23: 先手は一手損して８筋を受けたが、元々が”一手損”角換わりなので、損得がなくなった。
+
+削除理由:
+
+
+手数28:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東２時間２９分、△島本１時間３７分。」 → ルール1, 3
+
+手数29: 仕掛けた。
+
+削除理由:
+- 「５５分考えて、」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東３時間２４分、△島本１時間４６分。」 → ルール1, 3
+
+手数33: 歩を押さえる。
+
+削除理由:
+- 「４０分考え、」 → ルール3
+
+手数38:
+
+削除理由:
+- 「島本はここ数手、ノータイムで指している。」 → ルール1, 3
+
+手数39:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲東４時間２５分、△島本１時間４６分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「この局面で島本が１１分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲東４時間４８分、△島本２時間１１分。」 → ルール1, 3

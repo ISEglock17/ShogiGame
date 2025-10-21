@@ -557,18 +557,25 @@ def process_shogi_json(client, json_data, base_name: str, jsonl_directory: str) 
     return file_batch_job, moves_comments, processed_lines, memo_lines
     
     
-def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval: int = 10, timeout: int = 600,) -> list:
+def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval: int = 10, timeout: int = 30,) -> list:
     memo_lines = []
     processed_lines = []
     
     
     # プーリングでバッチの完了を待つ
-    poll_interval = int(os.environ.get('BATCH_POLL_INTERVAL', 10))  # seconds
-    poll_timeout = int(os.environ.get('BATCH_POLL_TIMEOUT', 60 * 30))  # seconds, default 30 min
+    poll_interval = int(os.environ.get('BATCH_POLL_INTERVAL', poll_interval))  # seconds
+    poll_timeout = int(os.environ.get('BATCH_POLL_TIMEOUT', timeout))  # seconds, default 30 min
     elapsed = 0 # 経過時間
     batch_name = batch_job_name
     print(f"{base_name}のバッチステータスを {poll_interval}秒ごとに調べます。 (タイムアウトは {poll_timeout}秒後)")
     final_batch = None
+    
+    # エラーが出たものを一時的にスキップするための早期リターン
+    """
+    if base_name == '10730_memo':
+        return processed_lines, memo_lines  # テスト用に早期リターン
+    """
+        
     while elapsed < poll_timeout:
         try:
             current = client.batches.get(name=batch_name)
@@ -619,8 +626,39 @@ def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval
             # Process file_content (bytes) as needed
             # 1. JSON文字列を辞書に変換
             data = json.loads(file_content.decode('utf-8'))
+            memo_lines.append("=== バッチ出力ファイル内容（JSON） ===")
+            memo_lines.append(_json.dumps(data, ensure_ascii=False, indent=2))
 
             # 2. "content.parts[].text" をすべて抽出して結合
+            # --- 構造チェック ---
+            if "response" not in data:
+                print(f"❌ 'response'キーが存在しません。data.keys() = {list(data.keys())}")
+                print(_json.dumps(data, ensure_ascii=False, indent=2))
+                
+                input_directory = './ProcessedComments_batch_memo'
+                target_file = os.path.join(input_directory, f"{base_name}.txt")
+
+                if os.path.exists(target_file):
+                    try:
+                        os.remove(target_file)
+                        print(f"🗑️ {target_file} を削除しました。")
+                    except Exception as e:
+                        print(f"⚠️ ファイル削除中にエラーが発生しました: {e}")
+                else:
+                    print(f"⚠️ 削除対象のファイルが存在しません: {target_file}")
+                
+                client.batches.delete(name=batch_name)                
+                
+                return processed_lines, memo_lines
+                
+                raise KeyError("'response'キーが存在しません")
+
+            if "candidates" not in data["response"]:
+                print(f"❌ 'response.candidates'が存在しません。")
+                print(_json.dumps(data, ensure_ascii=False, indent=2))
+                raise KeyError("'response.candidates'が存在しません")
+            
+            
             texts = []
             for candidate in data["response"]["candidates"]:
                 if "content" in candidate and "parts" in candidate["content"]:
@@ -641,18 +679,24 @@ def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval
             output_tokens = usage["candidatesTokenCount"]
 
             # --- 単価設定（USD） ---
-            price_input_per_million = 0.125
-            price_output_per_million = 0.375
+            price_input_per_million = 0.625
+            price_output_per_million = 5.0
 
             # --- コスト計算 ---
             cost_input = input_tokens / 1_000_000 * price_input_per_million
             cost_output = output_tokens / 1_000_000 * price_output_per_million
             total_cost = cost_input + cost_output
+            total_cost_yen = total_cost * 152  # 為替レート152円/USDで換算（必要に応じて調整）
 
             print(f"Input tokens: {input_tokens}")
             print(f"Output tokens: {output_tokens}")
             print(f"Total tokens: {input_tokens + output_tokens}")
             print(f"Estimated cost: ${total_cost:.6f} (USD)")
+            print(f"Estimated cost: ¥{total_cost_yen:.2f} (JPY)")
+            
+            # 使用済みのバッチジョブを削除する。
+            client.batches.delete(name=batch_name)
+            print(f"削除したバッチジョブ: {base_name}: {batch_name}")
     """
     try:
         # Try common locations for outputs
@@ -793,6 +837,10 @@ def main():
 
         processed_lines, memo_lines = pooling_batch_job(client, base_name, batch_job_name)
         
+        if not processed_lines:
+            print(f"処理結果が空です: {file_path}")
+            print("-" * 30)
+            continue
         
         with open(output_path, 'w', encoding='utf-8') as f:
             for line in processed_lines:
@@ -834,6 +882,7 @@ def main():
     #processed_lines, memo_lines = pooling_batch_job(client, base_name, "batches/khxbkvrdu2nm74der959xil7ny4cdop8vgqk")  # ここに実際のバッチジョブ名を入れてください
     #processed_lines, memo_lines = pooling_batch_job(client, "batches/fpwovy7786qfs0ipebxa8twjvt0crsk45dxy")  # ここに実際のバッチジョブ名を入れてください
     
+    """
     print("=== 処理結果 ===")
     #print(processed_lines)
     
@@ -841,6 +890,8 @@ def main():
     print(memo_lines)
             
     print("-" * 30)
+    
+    """
 
 if __name__ == '__main__':
     main()

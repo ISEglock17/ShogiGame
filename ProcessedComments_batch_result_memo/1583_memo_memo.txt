@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/9b5bnzul16aeohivl7oxl6c6aiv5pl6rusde ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "thoughtsTokenCount": 2625,
+      "totalTokenCount": 6596,
+      "candidatesTokenCount": 254,
+      "promptTokenCount": 3717,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3717,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "responseId": "FZj0aI6VErD7qtsP3aLl-Qo",
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数35:\n\n削除理由:\n- 「内藤が２分考え昼食休憩となった。」 → ルール1, 3, 7\n- 「ここまでの消費時間は▲森５１分、△内藤１時間６分。」 → ルール3\n\n手数61: どちらも一歩も引かない決戦になった。▲７四歩は痛そうだ。\n\n削除理由:\n- 「午後に入って」 → ルール3\n- 「棋士室に息抜きに訪れる他の対局者は、モニターに映し出されるこの対局に注目していた。」 → ルール1, 6\n- 「その中で「この▲７四とは痛そう」という声も聞こえてきた。」 → ルール1\n\n手数63:\n\n削除理由:\n- 「ここまでの消費時間は▲森１時間３９分、△内藤２時間２６分。」 → ルール3\n\n手数89: 後手玉に詰めろがかかった。△５一金と受けるのは▲４一銀△同金▲２一銀△３一玉▲２二金△同玉▲４一竜と送りの手筋で受けなしになる。"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "key": "1583"
+}

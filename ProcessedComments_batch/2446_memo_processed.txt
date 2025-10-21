@@ -1,0 +1,46 @@
+**Cleaning Up Those Pesky Shogi Comments**
+
+Okay, so I've got this user, and they're dealing with a bunch of Shogi game data. The problem? The comments are a mess! Full of extraneous junk that muddles the actual strategic insights. My goal here is to get these comments cleaned up and streamlined. I need to distill them down to just the pure, insightful commentary on the board state and the moves themselves.
+
+My plan is pretty straightforward. First, I'll use the defined rules to identify all the useless information and get rid of it. Think things like unnecessary asides, irrelevant statistical data, and anything that distracts from the core analysis. Then, the real magic happens: I need to take the remaining nuggets of wisdom and transform them into clear, flowing sentences. No more choppy fragments or cryptic jargon - just pure, accessible explanations of the game's unfolding drama. Finally, I'll spit the polished comments out in whatever format the user needs. It's all about delivering concise, high-quality analysis that's easy to digest and actually useful.
+
+手数25:
+
+削除理由:
+- 「この局面で藤原が４４分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間▲木下３３分、△藤原１時間２７分。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「ここまでの消費時間は▲木下３４分、△藤原１時間３３分。」 → ルール1, 3
+
+手数32:
+
+削除理由:
+- 「１時間５分の長考で指された。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「ここまでの消費時間は▲木下４６分、△藤原２時間４６分。」 → ルール1, 3
+
+手数40: ▲同金は△６九銀成、▲同飛も△同龍▲同金△６九銀成で先手の角が死んでしまう。先手が攻めるとすれば▲８二歩のような手が考えられる。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「ここまでの消費時間は▲木下１時間２２分、△藤原３時間３１分。」 → ルール1, 3
+
+手数52:
+
+削除理由:
+- 「ここまでの消費時間は▲木下１時間３４分、△藤原４時間１０分。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「この局面で▲木下が１７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲木下２時間２２分、△藤原４時間３１分。」 → ルール1, 3

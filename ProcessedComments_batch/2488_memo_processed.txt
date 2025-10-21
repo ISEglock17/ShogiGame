@@ -1,0 +1,113 @@
+**Cleaning Up These Game Commentaries**
+
+Okay, so I'm looking at these Shogi game commentaries and I need to clean them up. The user wants me to go through each comment associated with a move and get rid of all the fluff. My goal is to isolate the really valuable stuff: the actual explanations of the board state and the reasoning behind each move. Think of it like a distilled essence of the strategy!
+
+So, first I need a clear set of rules. I'll use those rules to go through the comments and identify the extraneous bits – the introductions, the player biographies, the time stamps... all that stuff that's useful contextually, but not necessary for pure strategic analysis. Once I've stripped away all that, my next task will be to refine what's left into something readable and logical. I want it to read as a seamless explanation of the game's unfolding dynamics, not just a collection of disjointed phrases. I need to synthesize the core strategic ideas into well-formed sentences.
+
+手数23: 早くも仕掛ける。
+
+削除理由:
+
+
+手数28: ３筋を交換されたときに４筋から盛り上がるのは常套手段。
+
+削除理由:
+
+
+手数32: 
+
+削除理由:
+- 「△４三金右の局面で所司が２８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は所司が１時間２７分、松本が２８分。」 → ルール1, 3
+
+手数34: 
+
+削除理由:
+- 「７４分の長考。」 → ルール3
+- 「昭和６０年代に良く現れた形だ。」 → ルール2
+
+手数36: 
+
+削除理由:
+- 「１４時半の局面。」 → ルール3
+- 「消費時間は所司が１時間３１分、松本が１時間４２分。」 → ルール1, 3
+
+手数37: どこで▲６五歩を利かすかの比較検討などを考えていたのだろう。
+
+削除理由:
+- 「９２分の長考。」 → ルール3
+
+手数41: 
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は所司が３時間４分、松本が１時間４４分。」 → ルール1, 3
+
+手数43: △５五歩の筋があるので、▲６八角のほうが手堅いが積極的だ。
+
+削除理由:
+
+
+手数44: 厳しい割り打ち。
+
+削除理由:
+
+
+手数49: ▲同角は△３六金がうるさい。
+
+削除理由:
+
+
+手数50: 
+
+削除理由:
+- 「△５五歩の局面で所司が５３分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は所司が４時間４２分、松本が２時間１６分。」 → ルール1, 3
+
+手数53: △３六歩を防ぐが、辛そうな受け方ではある。
+
+削除理由:
+
+
+手数60: この呼吸の取り方がプロの指し方。
+
+削除理由:
+- 「こういう指し手をアマチュアの方は参考にしていただきたいもの。」 → ルール1, 8
+
+手数64: ガッチリ囲ってから決めに行く。
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「残り時間は所司が５９分、松本が２時間５４分。」 → ルール1, 3
+
+手数65: 攻めの催促。
+
+削除理由:
+
+
+手数73: 勝負勝負で迫るが。
+
+削除理由:
+
+
+手数76: ▲８二飛に△３二歩を用意する。
+
+削除理由:
+
+
+手数79: 詰めろを防ぐが。
+
+削除理由:
+
+
+手数80: これが詰めろでは勝負あり。
+
+削除理由:
+
+
+手数88: 以下は▲７七玉△６七角成▲８八玉（▲８六玉は△９五角）△７八馬▲９八玉△８六桂の詰み。
+
+削除理由:
+- 「終局時刻は２１時２２分。」 → ルール3
+- 「消費時間は所司５時間４５分、松本３時間１９分。」 → ルール1, 3
+- 「勝った松本、敗れた所司ともに２勝３敗となった。」 → ルール1, 4

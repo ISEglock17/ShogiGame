@@ -1,0 +1,128 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this task of cleaning up these Shogi game comments. The user, who I assume knows a thing or two about Shogi given the request, wants me to refine the commentary. The goal is clear: I need to transform these comments into something truly useful for analyzing the game itself.
+
+My thought process is this: I need to meticulously go through each comment and ruthlessly excise anything that isn't directly related to the board position or the moves being made. That means all the extra fluff has got to go. I'm talking about the metadata, the introductions to players, the time stamps... all the stuff that's interesting for a casual read but just clutters up the signal for my purposes.
+
+Then, and this is crucial, after I strip away all the unnecessary stuff, I've got to make sure what's left reads smoothly and makes sense as a natural explanation of the game. So, I need to focus on structure and coherence. It's about getting the essence of the game's commentary to pop through. I'll make sure there's enough detail so that any relevant insights are retained, but it is free from the unnecessary extras.
+
+手数14: 角換わりになった。
+
+削除理由:
+- なし
+
+手数23: 端の位を取る。終盤で生きる損のない手。
+
+削除理由:
+- なし
+
+手数27:
+
+削除理由:
+- 「▲６八玉の局面で村中が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は西尾が４６分、村中が１時間８分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は西尾が１時間５分、村中が１時間３６分。」 → ルール3
+
+手数32: ６筋位取りは後手の流行戦法。
+
+削除理由:
+- なし
+
+手数38: 攻防に利く角打ち。
+
+削除理由:
+- なし
+
+手数43:
+
+削除理由:
+- 「丸山九段が指し始めた４七金型雀刺し。」 → ルール1, 2
+
+手数44:
+
+削除理由:
+- 「１６時前の局面。」 → ルール3
+- 「消費時間は西尾が１時間４３分、村中が２時間５３分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１時間２６分の長考。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「△４二金右の局面で西尾が１９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は西尾が３時間２８分、村中が３時間２７分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「５０分の長考。」 → ルール3
+
+手数49: 一歩持って打開を狙う。
+
+削除理由:
+- なし
+
+手数54: 後手はひたすら手待ちを繰り返す。
+
+削除理由:
+- なし
+
+手数57: 駒の繰り替えをはかる。
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「残り時間は西尾が１時間４６分、村中が１時間２９分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は西尾が１時間２３分、村中が５３分。」 → ルール3
+
+手数66: ▲７四歩は受けねばならない。
+
+削除理由:
+- なし
+
+手数69: 金を玉側に寄せる。
+
+削除理由:
+- なし
+
+手数72: 後手、攻めの理想形を作る。
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は西尾が１時間、村中が２４分。」 → ルール3
+- 「村中、」 → ルール1
+
+手数80: 角をさばいていく。
+
+削除理由:
+- なし
+
+手数81: 銀取りに飛車が出るが、△６五銀や△８五銀でかわされるのがいやなところ。
+
+削除理由:
+- 「残り時間は西尾４５分、村中１４分。」 → ルール3
+
+手数129: 先手玉に詰みはなく、後手は必至。後手の投了となった。
+
+削除理由:
+- 「村中の」 → ルール1
+- 「終局時刻は０時５３分。」 → ルール3
+- 「消費時間は西尾５時間５５分、村中５時間５９分。」 → ルール3
+- 「勝った西尾、敗れた村中ともに３勝３敗となった。」 → ルール4

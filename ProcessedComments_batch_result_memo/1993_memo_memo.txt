@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/42ntiiw19zo9k74yv5w71agp40zeff1o2g4h ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数31:\n\n削除理由:\n- 「ここで休憩に入った。」 → ルール7\n- 「消費時間は桜井３９分、佐々木１時間２１分。」 → ルール3\n- 「昼食の注文は双方ともなし。」 → ルール7\n\n手数81:\n\n削除理由:\n- 「ここで夕食休憩に入った。」 → ルール7\n- 「消費時間は桜井３時間２７分、佐々木３時間２１分。」 → ルール3\n- 「夕食の注文は佐々木・山菜そば。桜井なし。」 → ルール7\n\n手数140: 後手が勝利を収めた。\n\n削除理由:\n- 「２２時３５分、」 → ルール3\n- 「佐々木四段」 → 置換\n- 「消費時間は桜井４時間３５分、佐々木５時間２４分。」 → ルール3\n- 「勝った佐々木は７勝３敗、敗れた桜井は２勝８敗となりました。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ],
+    "responseId": "s6H0aKrHHL2fz7IPq-XI2As",
+    "usageMetadata": {
+      "thoughtsTokenCount": 1198,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3688
+        }
+      ],
+      "totalTokenCount": 5118,
+      "candidatesTokenCount": 232,
+      "promptTokenCount": 3688
+    },
+    "modelVersion": "gemini-2.5-pro"
+  },
+  "key": "1993"
+}

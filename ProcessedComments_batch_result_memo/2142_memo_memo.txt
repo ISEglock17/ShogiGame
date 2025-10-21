@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/abburybkiix9udc4ilkb58uy82z1zybm8blp ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "2142",
+  "response": {
+    "usageMetadata": {
+      "candidatesTokenCount": 335,
+      "promptTokenCount": 3763,
+      "totalTokenCount": 6005,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3763
+        }
+      ],
+      "thoughtsTokenCount": 1907
+    },
+    "responseId": "xKn0aMLaBr2fz7IPq-XI2As",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数43: 後手はこの局面で考え続けている。\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は泉３９分、中田１時間２３分。」 → ルール3\n- 「昼食の注文は双方なし。」 → ルール7\n- 「午後２時過ぎ、」 → ルール3\n\n---\n手数44: △５三銀と上がった。\n\n削除理由:\n- 「１時間３３分使って」 → ルール3\n\n---\n手数61: 一気に決めにいった。△４二飛には▲３四銀と捨てる手がある。\n\n削除理由:\n\n---\n手数69: ▲４四歩と▲８五飛の両狙い。\n\n削除理由:\n\n---\n手数70:\n\n削除理由:\n- 「この局面で夕食休憩に入った。」 → ルール7\n- 「消費時間は中田２時間、泉４時間５３分。」 → ルール3\n- 「夕食の注文は双方ともなし。」 → ルール7\n\n---\n手数101: 積極的に攻め続けた先手がそのまま押し切った。投了図からは△４三同歩▲同馬△３一玉▲２一金で即詰みとなる。\n\n削除理由:\n- 「消費時間は泉４時間２８分、中田５時間５８分。」 → ルール3\n- 「勝った泉は１勝１敗、敗れた中田は０勝２敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ]
+  }
+}

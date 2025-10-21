@@ -1,0 +1,60 @@
+**Analyzing and Refining Game Data**
+
+Okay, so I need to filter and clean up some shogi game data. The user wants me to strip out all the irrelevant information from the provided commentary - things like timestamps, time spent thinking, and details about breaks. Basically, anything that *doesn't* directly relate to the board position or the moves being played.
+
+Looking at the comment provided, I immediately see a bunch of those items. "村田が１６分考えて" (Murata thought for 16 minutes) - that's rule #3, time information.  "昼食休憩に入った" (took a lunch break) - rule #7, that's break-related.  "ここまでの消費時間▲５５分、△村田１時間５分" (Total time consumed: Black 55 minutes, White 1 hour 5 minutes) - rule #3 again for the time, and rule #1 with the player names.  All of these are definitely out.
+
+手数21:
+
+削除理由:
+- 「村田が１６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間▲５５分、△村田１時間５分。」 → ルール1, 3
+
+---
+手数27:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤１時間１６分、△村田１時間３３分。」 → ルール1, 3
+
+---
+手数38:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤１時間３９分、△村田２時間１０分。」 → ルール1, 3
+
+---
+手数39:
+
+削除理由:
+- 「３６分考えて仕掛けた。」 → ルール3
+
+---
+手数49:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤２時間４２分、△村田２時間４６分。」 → ルール1, 3
+
+---
+手数51:
+
+削除理由:
+- 「この局面で△村田が５３分考えて夕食休憩にはいった。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲佐藤２時間４７分、△村田４時間９分。」 → ルール1, 3
+
+---
+手数60:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤３時間３８分、△村田４時間１２分。」 → ルール1, 3
+
+---
+手数66:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤３時間５３分、△村田４時間４６分。」 → ルール1, 3
+
+---
+手数72:
+
+削除理由:
+- 「ここまでの消費時間は▲佐藤４時間１５分、△村田５時間１５分。」 → ルール1, 3

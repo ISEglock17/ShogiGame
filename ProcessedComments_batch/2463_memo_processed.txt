@@ -1,0 +1,79 @@
+**Refining the Shogi Commentary**
+
+Okay, so the user wants me to clean up these Shogi commentary transcripts. I understand the task; it's all about making the comments concise and focused on the *current* game. I've got the rules laid out, and they're pretty straightforward. Basically, I need to strip out anything that isn't directly related to the moves being made and the immediate state of the board.
+
+Specifically, I need to purge:
+
+*   **Irrelevant Chatter:**  Any mention of people who *aren't* the players themselves is out. That includes commentators, analysts, anyone not actively playing.
+*   **Historical Detours:** References to past games, precedents, or anything not directly related to *this* particular match are gone. The focus is on the present.
+*   **Temporal Noise:** All the clock readings, time spent thinking, and timestamps are unnecessary. The commentary should be timeless, focusing on the game itself, not the time it takes.
+*   **Background Fluff:** Player profiles, records, and statistics, while interesting, don't belong here. They distract from the flow of the game analysis.
+
+手数25:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１８分、△高野３２分。」 → ルール3, 4
+
+手数28:
+
+削除理由:
+- 「この局面で山本が２６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本４５分、△高野１時間１１分。」 → ルール3, 4
+
+手数36:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間１２分、△高野１時間５６分。」 → ルール3, 4
+
+手数41: 先手は銀冠への移行を見せた。
+
+削除理由:
+
+手数42: 後手は矢倉に組む。
+
+削除理由:
+- 「ここが１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間５６分、△高野２時間５５分。」 → ルール3, 4
+
+手数46:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間６分、△高野３時間ちょうど。」 → ルール3, 4
+
+手数49:
+
+削除理由:
+- 「この局面で高野が２９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本３時間２０分、△高野３時間３５分。」 → ルール3, 4
+
+手数59:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本３時間３７分、△高野４時間１分。」 → ルール3, 4
+
+手数77:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本４時間６分、△高野４時間３７分。」 → ルール3, 4
+
+手数89:
+
+削除理由:
+- 「ここまでの消費時間は▲山本４時間３６分、△高野４時間５５分。」 → ルール3, 4
+
+手数96:
+
+削除理由:
+- 「残り時間は山本１時間１８分、高野３１分。」 → ルール3, 4
+
+手数120: この局面で先手は投了した。
+
+削除理由:
+- 「山本が４分考え、そのまま」 → ルール3, 4
+- 「消費時間は▲山本５時間４９分、△高野５時間５８分。」 → ルール3, 4
+- 「勝った高野五段は２勝２敗、敗れた山本五段は１勝３敗となった。」 → ルール4

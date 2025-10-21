@@ -1,0 +1,102 @@
+**Refining the Comments for the Game**
+
+Okay, so I'm being asked to clean up some comments from a Shogi match. The goal is to make them easier to read and understand, probably for analysis or sharing.  I've got a set of rules to follow. Essentially, I need to strip out anything that isn't directly relevant to the moves themselves.
+
+Here's the gist: I need to get rid of unnecessary bits. I understand the task is to format the comments for the Shogi match. I will follow the provided rules to process each move's comments. So, first things first, I'll need to identify the extraneous information. The rules are pretty straightforward: anything about the players *outside* of the moves is out.  This includes things like their names, their ranks, their titles... essentially anything that sets the scene but isn't part of the direct game play description.
+
+手数2:
+
+削除理由:
+- 「増田は２手目に１７分考えている。」 → ルール3
+- 「初手を指された直後は瞑想していた。」 → ルール4, 5
+- 「じっと精神統一を図っていたのだろう。」 → ルール4, 5
+
+手数6: 飛車先の歩を突いた。
+
+削除理由:
+- 「△８八角成として一手損角換わりの選択肢もあったが、」 → ルール5
+- 「２５分考えて」 → ルール3
+
+手数7:
+
+削除理由:
+- 「大平は１４分考えて金を上がった。」 → ルール1, 3
+
+手数15: 序盤に水面下の駆け引きがあったが、横歩取りになった。
+
+削除理由:
+
+手数23:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲大平１４分、△増田４３分。」 → ルール1, 3
+- 「大平は７手目▲７八金以外ノータイム。」 → ルール1, 3
+- 「増田も２手目△３四歩と６手目△８五歩以外では１分しか使っていない。」 → ルール1, 3
+- 「気合の感じられる時間の使い方だ。」 → ルール4, 5
+
+手数27: ▲３八金や玉の移動を省略して▲３七桂と跳ねるのが「山崎流」。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「この局面で増田が２３分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲大平３６分、△増田１時間２１分。」 → ルール1, 3
+
+手数32: 先手陣は山崎流と呼ばれる、超攻撃型布陣。
+
+削除理由:
+- 「この局面は２６局の前例がある。」 → ルール2
+- 「▲３六飛と▲７七角が半々だった。」 → ルール2
+
+手数34:
+
+削除理由:
+- 「前例１１局中１０局が△３五角と飛車取りに当てる順。」 → ルール2
+- 「以下▲３六飛△３四歩▲６六角（次に▲７七桂と跳ねる）と進んでいた。」 → ルール2
+- 「残り１局は一昨年放映の銀河戦決勝▲森内俊之名人−△渡辺明竜王戦で、本譜と同じ△７七同角成だった。」 → ルール1, 2
+
+手数37:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平３８分、△増田１時間４２分。」 → ルール1, 3
+- 「前例はここで▲４六角だった。」 → ルール2
+
+手数40: 飛車を逃げていては▲３四歩と打たれて先手の攻めが続く。後手も強く反発。
+
+削除理由:
+
+手数44: ▲２二飛成〜▲３四角と飛車を抜かれる筋を防ぎながら、角取り。
+
+削除理由:
+
+手数45: 先手も飛車に当て返す、非常に激しい展開。どこかで▲３三歩が入りそうだ。
+
+削除理由:
+- 「ここまでの消費時間は▲大平４３分、△増田３時間１８分。」 → ルール1, 3
+
+手数51:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平４５分、△増田４時間２７分。」 → ルール1, 3
+
+手数54:
+
+削除理由:
+- 「４３分の長考。」 → ルール3
+- 「夕休前だが、増田は残り１時間を切った。」 → ルール1, 3, 7
+- 「大平はまだ合計４５分の消費。」 → ルール1, 3
+
+手数72: ▲３三歩成は△同金上で手が続かない。▲８七金を気にしていたようだが、実戦的にはまだ苦しいながらも戦えたのかもしれない。
+
+削除理由:
+- 「この局面で大平は１９分考え、次の手を指さずに投了した。」 → ルール1, 3
+- 「増田は▲８七金を気にしていており、」 → ルール1
+- 「検討陣も「▲８七金なら苦しいながらも実戦的にはまだまだ。投了は早い」と話していたが」 → ルール1
+- 「大平は嫌気が差したようだ。」 → ルール1, 4
+- 「消費時間は▲大平１時間１１分、△増田５時間２５分。」 → ルール1, 3
+- 「勝った増田は７勝２敗で最終局に逆転昇級を託し、敗れた大平は４勝５敗となった。」 → ルール1, 4, 8

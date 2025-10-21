@@ -1,0 +1,101 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up and format some Shogi game commentary. Basically, they've got this raw data and they need it transformed into something readable and natural-sounding. My job is to take the provided rules and strip out all the fluff, leaving only the essential information, and rephrase it into clear, concise sentences.
+
+The process is pretty straightforward. I'll need to analyze each move, identify what's important, and then use that information to build a coherent sentence. Each comment will get the once-over, and I'll carefully consider the context of the move within the game. It's really about distilling the essence of the move and presenting it in a way that makes sense to someone following the game. This should be an easy process, following the explicit instructions.
+
+手数7: 珍しい形の一手損角換わり。
+
+削除理由:
+- （なし）
+
+手数26:
+
+削除理由:
+- 「△３一玉の局面で川上が９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は川上が１時間７分、達が４８分。」 → ルール1, 3
+
+手数27:
+
+削除理由:
+- 「１時間２０分の大長考。」 → ルール3
+
+手数30: ２五歩・８四歩の形ならよく見かけるが、実戦例がほとんどない将棋になっている。
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は川上が２時間２８分、達が１時間２２分。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「１７時の局面。」 → ルール3
+- 「消費時間は川上が３時間４２分、達が１時間２２分。」 → ルール1, 3
+- 「１時間１４分の長考。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１時間１分の長考。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「▲２五歩の局面で達が３１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は川上が４時間７分、達が２時間５４分。」 → ルール1, 3
+
+手数41: なんと先後が入れ替わってしまった。
+
+削除理由:
+- （なし）
+
+手数42: 当然仕掛ける。
+
+削除理由:
+- （なし）
+
+手数44: 単に△６五同桂では攻めに腰が入っていない。７筋も絡めて攻めるのがよい。
+
+削除理由:
+- （なし）
+
+手数45:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「残り時間は川上が１時間２８分、達が２時間４５分。」 → ルール1, 3
+
+手数46: △９五歩▲同歩△３五歩▲同歩△８六歩と攻めるのも有力手段。
+
+削除理由:
+- （なし）
+
+手数53: ▲３五歩と攻めるのもある。
+
+削除理由:
+- （なし）
+
+手数59: 好点の角打ち。
+
+削除理由:
+- （なし）
+
+手数63: 端を絡めて攻める。
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「残り時間は川上が１時間、達が２時間３１分。」 → ルール1, 3
+
+手数83:
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は川上が２６分、達が２時間１１分。」 → ルール1, 3
+
+手数87: 次に▲７三香成△同角▲２二成香△同金▲同角成△同玉▲２四飛が受けにくい。受けても一手一手と見て、後手の投了となった。
+
+削除理由:
+- 「達の投了となった。」 → ルール1
+- 「終局時刻は２１時５７分。」 → ルール3
+- 「消費時間は川上５時間３９分、達３時間５５分。」 → ルール1, 3
+- 「勝った川上は６勝０敗、敗れた達は２勝４敗となった。」 → ルール1, 4

@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/yrrik2dc3jx1bk39tadzxifbmzx5gyalfmmc ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1996",
+  "response": {
+    "responseId": "s6H0aMT5H5mK_uMP7quLsAE",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数18:\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「消費時間は藤倉４３分、真部１時間１７分。」 → ルール3\n- 「昼食の注文は、藤倉なし。真部・カレーライス。」 → ルール7\n\n手数47:\n\n削除理由:\n- 「ここで夕食休憩に入った。」 → ルール7\n- 「消費時間は藤倉３時間１３分、真部３時間４３分。」 → ルール3\n- 「夕食の注文は、藤倉・うな玉丼。真部ミックスフライ定食。」 → ルール7\n\n手数88:\n\n削除理由:\n- 「ここで終局を迎えた。」 → ルール8\n- 「消費時間は藤倉５時間５４分、真部４時間５５分。」 → ルール3\n- 「勝った真部は３勝７敗、敗れた藤倉は５勝５敗となった。」 → ルール4\n- 「真部は３勝ながら順位が上だったため降級点を逃れた。」 → ルール4"
+            }
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 1070,
+      "candidatesTokenCount": 242,
+      "totalTokenCount": 5006,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3694,
+          "modality": "TEXT"
+        }
+      ],
+      "promptTokenCount": 3694
+    },
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

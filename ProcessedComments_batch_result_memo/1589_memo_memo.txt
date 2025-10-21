@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/83j42eykzdtdjjgweayt30qgc764z67njn8y ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "thoughtsTokenCount": 879,
+      "candidatesTokenCount": 201,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3668
+        }
+      ],
+      "totalTokenCount": 4748,
+      "promptTokenCount": 3668
+    },
+    "responseId": "CZj0aOiOLoGgz7IPjZ7m2Qo",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数42:\n\n削除理由:\n- 「ここで休憩に入った。」 → ルール7\n- 「消費時間は脇１時間１０分、田中４１分。」 → ルール3\n- 「昼食の注文は双方ともなし。」 → ルール7\n\n手数45: △７五歩の仕掛けに▲６五歩△同銀▲７五歩の突き違いを用意した手。この形でよく見られる常套手段だ。\n\n削除理由:\n- なし\n\n手数65: 先手が銀の土台を支えた。\n\n削除理由:\n- 「脇」 → 置換\n- 「支えたところで夕食休憩に入った。」 → ルール7\n- 「消費時間は脇３時間４０分、田中３時間１１分。」 → ルール3\n- 「夕食の注文は、田中・うな重、肝吸。脇・鍋焼きうどん。」 → ルール7"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ]
+  },
+  "key": "1589"
+}

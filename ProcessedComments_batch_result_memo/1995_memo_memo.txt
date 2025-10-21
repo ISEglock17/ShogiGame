@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/ekeck0a2jiile3tqw649o47xzmw5ydfqklnw ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "vKH0aOrwBprh_uMPj-jyiA0",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数17:\n\n削除理由:\n- 「ここで昼食休憩に入った。」 → ルール7\n- 「消費時間は横山５６分、所司１時間４分。」 → ルール3\n- 「昼食の注文は、横山なし。所司・さとのランチ（肉）。」 → ルール7\n---\n手数50:\n\n削除理由:\n- 「ここで夕食休憩に入った。」 → ルール7\n- 「消費時間は横山３時間７分、所司３時間４４分。」 → ルール3\n- 「夕食の注文は、横山なし。所司・とろろせいろ。」 → ルール7\n---\n手数111: １１１手までで先手の勝ちとなった。\n\n削除理由:\n- 「２３時５７分、」 → ルール3\n- 「消費時間は横山５時間１７分、所司５時間５９分。」 → ルール3\n- 「勝った横山は６勝４敗、敗れた所司は３勝７敗となり、順位の差で所司の降級点が決まった。」 → ルール4"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3708,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3708
+        }
+      ],
+      "candidatesTokenCount": 252,
+      "thoughtsTokenCount": 2191,
+      "totalTokenCount": 6151
+    }
+  },
+  "key": "1995"
+}

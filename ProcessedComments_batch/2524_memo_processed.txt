@@ -1,0 +1,90 @@
+**Processing Shogi Commentary: Refining for Clarity**
+
+Okay, I'm looking at this Shogi commentary data and the goal is clear: clean it up. The user needs the comments to be polished, focusing solely on board states and move explanations, essentially making them read like natural, human-written text. The initial comments often include all sorts of extraneous information, and it's my job to sift through and remove the noise.
+
+My strategy is straightforward: first, I need to methodically read through each comment. Then, I have to pinpoint the sections that fall under the removal rules they've specified. Identifying these "unwanted" elements will be key. Once those are identified, those segments get removed. This should leave me with a concise, well-formatted comment that a reader could easily follow.
+
+手数24: ▲６六銀と受けさせてから、飛車を４筋に振りなおすのが定跡の形。次に△４五歩からさばいていく狙い。
+
+削除理由:
+- 「矢倉流と呼ばれる」 → ルール1, 5
+
+手数29: ここで穴熊を明示する。
+
+削除理由:
+- 「２８手目まで両者ノータイムで指し手が続いた。」 → ルール3
+- 「ここで２２分考えて」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本４０分、△矢倉８分。」 → ルール3
+
+手数37: 桂で取ると穴熊に組めなくなるが、駒の連結を重視する。
+
+削除理由:
+
+手数43: ▲２八飛と逃げるのは、△３六飛▲３七歩△２六飛から飛車交換の展開になる。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「ここで△矢倉が２８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲島本４３分、△矢倉１時間７分。」 → ルール3
+
+手数49: 次に▲３六歩から飛車を取りにいく手があるが、後手はどう応じるのだろうか。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本１時間２分、△矢倉１時間１２分。」 → ルール3
+
+手数51: ▲５四角成などの手だと△２五飛と飛車交換を狙われる。あくまで飛車は渡さない方針。
+
+削除理由:
+
+手数57: 角の逃げ場がなくなったが。
+
+削除理由:
+
+手数60: 駒損の攻めだが、先手陣を薄くできるのも大きい。
+
+削除理由:
+
+手数64: 後手としては局面が収まる前にうまく攻めを続けたい。先手は駒得だが、右辺の駒が働いていないのでうまく活用させたいところ。
+
+削除理由:
+
+手数65:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本１時間５０分、△矢倉２時間２１分。」 → ルール3
+
+手数76: 陣形は後手の方が安定しているが、先手には豊富な持ち駒がある。後手としては豊富な持ち駒による攻めが来る前になんとかしなければならない。
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本２時間３３分、△矢倉２時間５０分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「ここで▲島本が３９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲島本３時間３１分、△矢倉３時間１５分。」 → ルール3
+
+手数96:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本３時間４９分、△矢倉３時間４２分。」 → ルール3
+
+手数121:
+
+削除理由:
+- 「ここで△矢倉の投了となった。」 → ルール1
+- 「終局時間は２１時５分。」 → ルール3
+- 「消費時間は▲島本４時間２４分、△矢倉４時間７分。」 → ルール3
+- 「勝った▲島本は４勝３敗、敗れた△矢倉は３勝４敗となった。」 → ルール4

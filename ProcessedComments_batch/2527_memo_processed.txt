@@ -1,0 +1,74 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty straightforward: they've got all this rich data from a match, but it's cluttered with irrelevant noise – the introductions, the clock readings, all that fluff that just gets in the way of a proper analytical deep dive. What I need to do is surgically remove all that, leaving behind only the pure, distilled essence: the board states and the commentary on *why* a move was played. Think of it like a scientist peeling back layers to get to the core of an experiment.
+
+The process is clear. First, I need to understand the user's specific rules for what constitutes "noise" in the commentary. Then, I can filter out the unnecessary stuff, refining it, so the essence of each move and its explanation remains. This is important to be done in an organized manner so that there is no bias towards any move.
+
+手数16:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田１９分、△堀口３６分。」 → ルール3, 1
+
+手数21:
+
+削除理由:
+- 「ここで△堀口弘が２１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲村田２７分、△堀口弘１時間３０分。」 → ルール3, 1
+
+手数22: 後手は腰掛銀に構える。先手はまだ態度を保留しているが、右玉の狙いか。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田４９分、△堀口弘２時間７分。」 → ルール3, 1
+
+手数41:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田１時間４７分、△堀口弘２時間２５分。」 → ルール3, 1
+
+手数42: 玉頭の厚みを活かして桂交換を狙う。
+
+削除理由:
+
+手数55:
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田２時間１８分、△堀口弘２時間５８分。」 → ルール3, 1
+
+手数56: 指された手は手厚く構えてチャンスをうかがう手。陣形は後手の方が堅いので先手は下手に攻められない。
+
+削除理由:
+- 「４７分の長考で」 → ルール3
+- 「ここで▲村田が４６分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲村田３時間４分、△堀口弘３時間４５分。」 → ルール1, 3
+
+手数64:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田３時間２１分、△堀口弘３時間５１分。」 → ルール1, 3
+
+手数72:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「２２時２０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村田５時間２９分、△堀口弘４時間３２分。」 → ルール1, 3
+
+手数93:
+
+削除理由:
+- 「ここで△堀口弘の投了となった。」 → ルール1
+- 「終局時間は２３時１分、消費時間は▲村田５時間４４分、△堀口弘４時間４９分。」 → ルール1, 3
+- 「勝った▲村田は６勝１敗、敗れた△堀口弘は２勝５敗となった。」 → ルール1, 4

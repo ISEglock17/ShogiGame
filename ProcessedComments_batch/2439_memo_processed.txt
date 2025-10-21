@@ -1,0 +1,67 @@
+**Structuring a Chess Game Commentary**
+
+Okay, so I need to take these chess game comments and really clean them up, make them presentable. The user wants me to format them properly, like a professional chess commentary. The goal here is to keep the really important stuff – the board state descriptions and the explanations of moves – and get rid of all the fluff that's just unnecessary for the analysis.
+
+Basically, I'm going to follow a two-step process. First, I have to go through each comment carefully, and figure out what parts of it fall under the rules for removal. Once I know what's got to go, I'll then be able to work on making the remaining parts flow naturally.
+
+手数17: 先手の得意戦法は四間飛車穴熊。
+
+削除理由:
+- 「広瀬の」 → ルール1
+
+手数22: 後手は居飛車穴熊で対抗。相穴熊戦になりそうだ。
+
+削除理由:
+- 「田村は」 → ルール1
+
+手数23: 定跡となっている銀出。振り飛車が漠然と組み合うと、居飛車の飛先だけが伸びていること、銀の活用に差が出ること、桂馬の活用度の違いなどから振り飛車が作戦負けになりやすいといわれている。
+
+削除理由:
+
+手数24: △４四歩や△５五歩▲４五銀△８四飛の受け方もある。
+
+削除理由:
+
+手数37:
+
+削除理由:
+- 「▲３六歩に３４分、▲４七銀に２４分の連続長考。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「△７四歩の局面で広瀬が１９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は広瀬が１時間４２分、田村が３７分。」 → ルール1, 3
+
+手数40: 次に△７五歩から角頭を狙うつもりか。
+
+削除理由:
+
+手数41: 俗に「パンツを脱ぐ」といわれる穴熊の桂跳ね。この桂馬を跳ねると穴熊が一気に弱体化するので決断の一手だ。
+
+削除理由:
+
+手数47: 振り飛車らしいさばき。△７六歩には▲４六角と回り込んで受けが難しいと見ている。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「１４時３０分ごろの局面。」 → ルール3
+- 「消費時間は広瀬が２時間４３分、田村が１時間５分。」 → ルール1, 3
+
+手数50: 先に△８六歩と突くべきだった。
+
+削除理由:
+
+手数54: ２四に逃げるのがまだしも。
+
+削除理由:
+
+手数57: 次に▲７四歩からの攻めがあるので、△８七歩成からの攻めが間に合わない。△７六歩が祟っている。戦意を失い投了となった。
+
+削除理由:
+- 「終局時刻は１５時２５分。」 → ルール3
+- 「消費時間は広瀬３時間８分。田村１時間２７分。」 → ルール1, 3
+- 「勝った広瀬は２勝１敗、敗れた田村は３連敗となった。」 → ルール1, 4

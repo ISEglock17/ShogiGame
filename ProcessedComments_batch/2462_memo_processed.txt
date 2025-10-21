@@ -1,0 +1,97 @@
+**Analyzing and Processing Shogi Game Commentary**
+
+Okay, so I'm being asked to clean up some shogi game commentary, making it more concise and presentable. The user wants the comments formatted according to specific rules, stripping out unnecessary details and focusing on the essential information.
+
+Let's break down this first example, move number 12. The original comment is "長岡は藤井システムが得意戦法の一つ." My first instinct is to look for the player name, "長岡," and use the provided replacement rule to turn that into "後手" – the player in the second position.
+
+Next, I see "得意戦法の一つ." This is a phrase describing a player's preferred strategy or style. The rule says to translate this into a term that denotes playing style or preference. So, I would rephrase that part to denote this concept.
+
+Putting it all together, I’d take the provided information and end up with something that says, "後手は藤井システム." I can see this provides all the necessary detail from the given comment.
+手数12: 後手は藤井システム。
+
+削除理由:
+- 「長岡は」 → 置換ルール
+- 「得意戦法の一つ」 → ルール5
+
+手数19: 先手は穴熊を目指す。
+
+削除理由:
+- 「大平は」 → 置換ルール
+
+手数25:
+
+削除理由:
+- 「▲８八玉の局面で長岡が６０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大平が５３分、長岡が１時間６分。」 → ルール3
+
+手数26: 通常の藤井システムとは異なり、△９五歩と▲７八金の交換を省略して仕掛ける工夫が見られる。
+
+削除理由:
+- 「休憩後にすぐ指した。」 → ルール7
+- 「長岡の工夫」 → 置換ルール
+
+手数28: 藤井システム特有のコビン攻め。
+
+削除理由:
+- 
+
+手数29: 大駒を近づける手筋。
+
+削除理由:
+- 
+
+手数34: 次に△６二飛の狙い。
+
+削除理由:
+- 
+
+手数35:
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は大平が１時間３１分、長岡が１時間２７分。」 → ルール3
+
+手数36: 角が３三で睨むべきか、２四で睨むべきかは微妙なところ。
+
+削除理由:
+- 「７８分の長考。」 → ルール3
+
+手数43: 先手は力強く攻める。
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は大平が１時間５０分、長岡が２時間４９分。」 → ルール3
+- 「大平らしく」 → 置換ルール
+
+手数44:
+
+削除理由:
+- 「１１６分の長考。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「▲６四同角成の局面で長岡が１８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「残り時間は大平が４時間５分、長岡が５７分。」 → ルール3
+
+手数53: 桂馬を持てば▲７三角成のような手段も生じる。
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「残り時間は大平が３時間４７分、長岡が２８分。」 → ルール3
+
+手数59: 居玉を狙い、迫力がある。
+
+削除理由:
+- 
+
+手数61: 厳しい攻め。取れない。
+
+削除理由:
+- 
+
+手数69: 後手は受けても一手一手の寄り。
+
+削除理由:
+- 「終局時刻は２０時２２分。」 → ルール3
+- 「消費時間は大平２時間２３分、長岡５時間４８分。」 → ルール3

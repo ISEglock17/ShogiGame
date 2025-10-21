@@ -1,0 +1,119 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up and rephrasing Shogi game commentary, making it more concise and readable. The user wants me to sift through the provided comments, strip out irrelevant details, and retain only the essential information in a natural, flowing sentence.  I get it - the goal is to make the commentary digestible without losing its core meaning.
+
+Here's my plan:
+1.  **Read each comment:** I'll start by taking in the raw commentary, understanding its structure and content.
+2.  **Apply ruleset:** Based on the set rules, I'll identify and eliminate information that doesn't fit the desired output.
+3.  **Construct new sentence:** I'll focus on crafting a complete and natural-sounding sentence out of the key details.
+
+手数6: 後手の趣向。
+
+削除理由:
+- 「小林」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数7: 「角交換には５筋を突くな」というわけで、先手は角交換をする。
+
+削除理由:
+- 「高田」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数28: 後手の作戦は右玉。角の打ち所のない駒組みをすれば、５筋を突いても大丈夫。むしろ、先手が手損をしている代償を求めなければならない展開だ。
+
+削除理由:
+- 「小林」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数30:
+
+削除理由:
+- 「△７二玉の局面で高田が１８分考えて昼食休憩に入った」 → ルール3, 7
+- 「消費時間は高田が１時間２分、小林が１時間」 → ルール3
+
+手数31: バランスを保つ指し方。将来的に地下鉄飛車も狙いになる。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「８２分の長考」 → ルール3
+
+手数36: 銀を４三に繰り替える狙い。
+
+削除理由:
+
+手数44: ▲８八銀〜▲７七桂〜▲９八香のように進めば、地下鉄飛車。
+
+削除理由:
+- 「１５時１５分の局面」 → ルール3
+- 「消費時間は高田が１時間３３分、小林が２時間３１分」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１６時３０分の局面」 → ルール3
+- 「消費時間は高田が１時間５９分、小林が３時間１６分」 → ルール3
+
+手数51:
+
+削除理由:
+- 「７７分の長考」 → ルール3
+
+手数53: 地下鉄飛車を狙う。
+
+削除理由:
+
+手数59: 先手は△５五桂の筋を消す。
+
+削除理由:
+- 「▲５六歩の局面で小林が９分考えて夕食休憩に入った」 → ルール3, 7
+- 「消費時間は高田が３時間２４分、小林が３時間３７分」 → ルール3
+- 「高田」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数60: 左右対称系の好形になった。
+
+削除理由:
+
+手数62: 端を受けながら、玉頭を攻める狙い。
+
+削除理由:
+
+手数65: 一人千日手の状態になっている。
+
+削除理由:
+
+手数71: ▲７五桂の筋を見越して攻める。
+
+削除理由:
+- 「２０時３０分の局面」 → ルール3
+- 「消費時間は高田が４時間１０分、小林が４時間１４分」 → ルール3
+
+手数83: 取れば、▲４四歩△同銀▲７二角△８四飛▲５四角成。
+
+削除理由:
+
+手数85: 遠見の角は受けにくい。
+
+削除理由:
+
+手数86: 仕方ない受けだが、４四銀の形はバラバラで不安のある形。
+
+削除理由:
+
+手数89: ▲７一角の筋を見せた垂れ歩。▲１七角の効果だ。
+
+削除理由:
+
+手数94:
+
+削除理由:
+- 「残り時間は高田１時間９分、小林３２分」 → ルール3
+
+手数103: ▲７一歩成から▲７六歩まで、▲６五桂打の筋を含みに攻める。
+
+削除理由:
+
+手数113: △５二桂の受けはあるが、▲２三飛成が決め手になる。
+
+削除理由:
+- 「終局時刻は２３時４１分」 → ルール3
+- 「消費時間は高田５時間４０分、小林５時間４２分」 → ルール3

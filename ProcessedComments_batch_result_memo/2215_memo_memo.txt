@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/w3gpj0kadgnu91i7x1ioo7frh4aplp4x50r4 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "responseId": "VKv0aIaVMaXO_uMP94aeiAE",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数33:\n\n削除理由:\n- 「ここで昼休。」 → ルール7\n- 「トータル消費時間は先手１時間２７分、後手１２分。」 → ルール3\n\n手数34:\n\n削除理由:\n- 「消費時間：先手１時間２７分　後手３６分」 → ルール3\n\n手数38:\n\n削除理由:\n- 「加藤九段、」 → ルール1\n- 「３５手目▲３六飛に９２分の長考。」 → ルール3\n\n手数41:\n\n削除理由:\n- 「加藤九段、」 → ルール1\n- 「▲３三歩成に１時間１９分の長考。」 → ルール3\n- 「ここまでの消費時間は先手４時間２１分、後手１時間３分と差がついている。」 → ルール3\n\n手数44: 先手玉頭が気になる。\n\n削除理由:\n- 「ここまでの消費時間は▲４時間４７分、△１時間１４分」 → ルール3\n\n手数45:\n\n削除理由:\n- 「ここで夕休。」 → ルール7\n- 「消費時間は▲５時間３５分、△１時間１４分。」 → ルール3\n\n手数90: 投了図以下▲同玉は△８五金▲６六玉△７五銀までの詰み。\n\n削除理由:\n- 「終局時間２０時２２分。」 → ルール3\n- 「消費時間は▲５時間５９分、△２時間。」 → ルール3\n- 「一敗の加藤が敗れたことにより昇級レースは混戦模様。」 → ルール1, 8"
+            }
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "thoughtsTokenCount": 1582,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3783
+        }
+      ],
+      "promptTokenCount": 3783,
+      "totalTokenCount": 5743,
+      "candidatesTokenCount": 378
+    }
+  },
+  "key": "2215"
+}

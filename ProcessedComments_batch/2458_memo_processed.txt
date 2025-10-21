@@ -1,0 +1,128 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to help them streamline those game comments, right? They've got this trove of data from shogi matches, but it's cluttered with all sorts of extraneous stuff. Their goal is clear: they want to zero in on the *actual* game commentary – the explanations of the board state and the moves themselves. Think of it like this: they're sifting through the noise to find the signal.
+
+Essentially, they're asking me to surgically remove anything that doesn't contribute directly to understanding the flow of the game. That means stripping out things like the metadata (tournament details, player bios, time stamps), because that's not what drives the *analysis*. They want the core insights, the rationale behind each move, presented in a clear and natural way. So, it's about transforming raw, possibly unstructured, comments into a concise narrative of the game's unfolding strategic choices. Let's make this data ready for deep analysis.
+
+手数19: 相矢倉となった。
+
+削除理由:
+
+手数25: 先手は森下システムを採用。△４三金右と上がったことで、雀刺しの可能性が薄くなり、森下システムがやりやすい。
+
+削除理由:
+- 「川上は」 → ルール1
+
+手数32: 後手は雀刺しではない作戦。
+
+削除理由:
+- 「△７三銀の局面で川上が５２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は川上が１時間４７分、佐藤が９分。」 → ルール3
+- 「佐藤は」 → ルール1
+
+手数33:
+
+削除理由:
+- 「５８分の長考。」 → ルール3
+
+手数38: 先手に比べると、角の動きがスムーズといえる。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は川上が１時間５３分、佐藤が１時間２１分。」 → ルール3
+
+手数45: 飛車先の歩の位置のよさを生かして主導権を握りにいくつもりだろう。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は川上が２時間４７分、佐藤が１時間３０分。」 → ルール3
+
+手数48: △同銀は▲６一角と攻められたときに、▲７二歩の筋が気になる。
+
+削除理由:
+- 「４０分の長考。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「４６分の長考。」 → ルール3
+
+手数57: 先手は馬を作りにいく。
+
+削除理由:
+- 「▲６三角の局面で佐藤が３２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は川上が３時間４８分、佐藤が３時間８分。」 → ルール3
+- 「川上、」 → ルール1
+
+手数60: 馬をいじめにいく。
+
+削除理由:
+
+手数63:
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「消費時間は川上が４時間２２分、佐藤が３時間１６分。」 → ルール3
+
+手数64: 銀の位置を悪くさせる狙い。
+
+削除理由:
+- 「５８分の長考。」 → ルール3
+
+手数71: 馬が消える前に利かせるだけ利かしておく。
+
+削除理由:
+
+手数75: 再び馬作り。
+
+削除理由:
+
+手数80: 後手も負けじと馬作りだが、右銀の位置のよさは先手に軍配。
+
+削除理由:
+- 「残り時間は川上１時間１０分、佐藤１時間１７分。」 → ルール3
+
+手数82: 右銀を活用する。
+
+削除理由:
+
+手数83: 軽妙な垂れ歩。馬の筋に入るので、△同飛とはしにくい。
+
+削除理由:
+
+手数86: 懐を広げながら、馬をいじめる。
+
+削除理由:
+
+手数89:
+
+削除理由:
+- 「残り時間は川上５６分、佐藤２９分。」 → ルール3
+
+手数93: ただの銀損のようだが…。
+
+削除理由:
+
+手数97: ▲３七馬からの一連の手順。
+
+削除理由:
+
+手数107: 駒の損得がほとんどなく、厳しく攻めている先手が好調。
+
+削除理由:
+
+手数115: と金が活用できた。
+
+削除理由:
+
+手数125: 王手馬取りで勝負あり。
+
+削除理由:

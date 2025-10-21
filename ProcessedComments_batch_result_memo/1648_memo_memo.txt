@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/499hp8hp9rsfjab1t4eolklt15ufwcpfbcmd ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "thoughtsTokenCount": 3145,
+      "candidatesTokenCount": 297,
+      "promptTokenCount": 3745,
+      "totalTokenCount": 7187,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3745,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "parts": [
+            {
+              "text": "手数24:\n\n削除理由:\n- 「ここで佐藤が２１分考え、昼食休憩となった。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤和１時間１４分、△矢倉４４分。」 → ルール3\n---\n手数27:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲佐藤和１時間４４分、△矢倉１時間７分。」 → ルール3\n---\n手数49: 強気の受け。△６七銀▲６六金△５八歩なら▲６九玉で受け切れそうだ。（△８六歩▲同歩が入っていれば△８七角で寄り）\n---\n手数50:\n\n削除理由:\n- 「この局面で佐藤が３２分考えて夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲佐藤和３時間４１分、△矢倉３時間１５分。」 → ルール3\n---\n手数72: この局面で先手が投了した。\n\n削除理由:\n- 「消費時間は▲佐藤和４時間５１分、△矢倉４時間５３分。」 → ルール3\n- 「勝った矢倉、敗れた佐藤和はともに５勝２敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0
+      }
+    ],
+    "responseId": "TJn0aJLiJcatqtsPr72i8Ao"
+  },
+  "key": "1648"
+}

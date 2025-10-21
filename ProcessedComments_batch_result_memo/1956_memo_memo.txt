@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/7gr4togg0r8dej0vzrm8bh7ci6v8nw7iv8bl ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "1956",
+  "response": {
+    "responseId": "A6H0aL3MB9fi_uMPuczakQk",
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "手数35: 互いに玉を入った。\n\n削除理由:\n- 「ところで昼食休憩」 → ルール7\n- 「消費時間は武市１時間８分、高野４１分」 → ルール3\n- 「昼食の注文は双方なし」 → ルール7\n---\n手数59:\n\n削除理由:\n- 「ここで休憩」 → ルール7\n- 「消費時間は武市３時間５４分、大内２時間３７分」 → ルール1, 3\n- 「夕食の注文は双方ともなし」 → ルール7\n---\n手数87: 引き付けて受ける。△８六飛には▲７六金△同飛▲６五角として、次の▲４三角成を狙うのだろうか。\n\n削除理由:\n---\n手数102: この手を見て先手が投了した。以下、▲８六玉△７五銀▲同玉△７四金▲８六玉△７五銀まで詰みとなる。\n\n削除理由:\n- 「終了２２時４３分」 → ルール3\n- 「消費時間は武市５時間５８分、高野４時間２分」 → ルール3\n- 「勝った高野は５勝４敗、敗れた武市が３勝６敗となった」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "candidatesTokenCount": 292,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3731,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 2076,
+      "promptTokenCount": 3731,
+      "totalTokenCount": 6099
+    }
+  }
+}

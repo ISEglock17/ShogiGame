@@ -1,0 +1,76 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up these Shogi game commentaries, right? The goal is crystal clear: I need to transform the raw comments into something useful for analyzing the game, focusing solely on descriptions of the board state and the moves being made. Essentially, I'm aiming for clean, insightful explanations, ditching all the irrelevant fluff. My plan is straightforward. First, I'll meticulously go through each comment, identifying anything that falls into the category of "delete this." I have a set of established rules to guide me, and I'll apply those consistently to make sure the end result is accurate and readable. Then, and only then, I can see what I can do with the output.
+
+手数18:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５４分、△児玉６分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「ここで▲淡路が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路１時間４６分、△児玉１５分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路２時間３７分、△児玉１５分。」 → ルール3
+- 「▲淡路が▲９六歩に４１分費やしたのに対して、△児玉はまだ消費時間の合計で１５分しか使っていない。この持ち時間の差が終盤にどう影響するか。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３時間２０分、△児玉５２分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３時間４１分、△児玉１時間１２分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「これまで快調なペースで指していた児玉がここで１時間２７分考えた。」 → ルール3, 4
+
+手数56:
+
+削除理由:
+- 「ここで▲淡路が１０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路４時間１４分、△児玉２時間３９分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間１５分、△児玉３時間２１分。」 → ルール3
+
+手数83:
+
+削除理由:
+- 「２１時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５時間２５分、△児玉４時間。」 → ルール3
+
+手数96:
+
+削除理由:
+- 「２２時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５時間４１分、△児玉４時間４４分。」 → ルール3
+
+手数105:
+
+削除理由:
+- 「２３時３０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５時間５２分、△児玉５時間１１分。」 → ルール3
+
+手数235:
+
+削除理由:
+- 「ここで△児玉の投了となった。」 → ルール4
+- 「終局時間は１時２４分、消費時間は▲淡路５時間５９分、△児玉５時間５９分。」 → ルール3
+- 「勝った▲淡路は２勝５敗、敗れた△児玉は３勝４敗になった。」 → ルール4

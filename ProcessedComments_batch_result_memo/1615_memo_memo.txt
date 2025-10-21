@@ -1,0 +1,35 @@
+=== バッチの最終結果: batches/hr055xbx04348rr6o1euy4i5164jcgec1ymm ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "jJj0aIncAe-rqtsPh4bU0A8",
+    "usageMetadata": {
+      "candidatesTokenCount": 298,
+      "thoughtsTokenCount": 1763,
+      "promptTokenCount": 3728,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3728,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5789
+    },
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "手数24:\n\n削除理由:\n- 「午前中ながら５０分の長考。」 → ルール3\n\n手数26: 先手は▲３五銀と出られない。（△１五角〜△３七歩で銀が取れる）これで後手の歩得が確定。\n\n削除理由:\n\n手数28: 後手はさらに歩得を拡大。\n\n削除理由:\n\n手数31:\n\n削除理由:\n- 「中座が２０分考えて昼食休憩に入った。」 → 置換ルール, ルール3, 7\n- 「ここまでの消費時間は▲田中魁２４分、△中座１時間３４分。」 → 置換ルール, ルール3\n\n手数39:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲田中魁１時間３分、△中座１時間５９分。」 → 置換ルール, ルール3\n\n手数68: この局面で先手が投了した。\n\n削除理由:\n- 「田中魁」 → 置換ルール\n- 「消費時間は▲田中魁１時間５７分、△中座３時間３４分。」 → 置換ルール, ルール3\n- 「勝った中座は３勝５敗、敗れた田中魁は１勝７敗となった。」 → 置換ルール, ルール4"
+            }
+          ]
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ]
+  },
+  "key": "1615"
+}

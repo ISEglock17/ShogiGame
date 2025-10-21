@@ -1,0 +1,81 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm presented with a task – taking raw Shogi game commentary and transforming it into polished, understandable prose.  Essentially, I need to sift through the noise, following a specific set of rules, and extract the crucial game-related information.  My goal isn't just to regurgitate the moves; I need to synthesize them into flowing sentences that are both informative and readable.  It's about crafting a narrative of the game as it unfolds, highlighting key strategic points and perhaps even hinting at the players' intentions.  I'm basically an editor and a translator, taking complex data and rendering it digestible for an audience. I’m ready to dive into the comments and get to work.
+
+手数23:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２０分、△高野３３分。」 → ルール3, 1
+
+手数25:
+
+削除理由:
+- 「ここで△高野が３６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲藤原２８分、△高野１時間２８分。」 → ルール1, 3
+
+手数27:
+
+削除理由:
+- 「５６分の長考で指された。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原１時間２５分、△高野１時間３０分。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間１０分、△高野２時間５分。」 → ルール1, 3
+
+手数35: 穴熊に囲った後の展開を慎重に考えていたのだろうか。
+
+削除理由:
+- 「直前の▲５七銀に３８分、この▲９八香に２２分考えている。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１６時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間５４分、△高野２時間１７分。」 → ルール1, 3
+
+手数43: 端歩を突いた。
+
+削除理由:
+- 「４６分考えての」 → ルール3
+- 「端歩突き」 → 自然な文に整形
+
+手数45:
+
+削除理由:
+- 「さらに５８分の長考。予定の変更があったのだろうか。」 → ルール3
+- 「ここで△高野が７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲藤原４時間３４分、△高野２時間２４分。」 → ルール1, 3
+
+手数58:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原５時間、△高野２時間５４分。」 → ルール1, 3
+
+手数99:
+
+削除理由:
+- 「２２時２０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原５時間５８分、△高野４時間。」 → ルール1, 3
+
+手数103:
+
+削除理由:
+- 「ここから１分将棋に入った。」 → ルール3
+
+手数158: ここで先手の投了となった。
+
+削除理由:
+- 「▲藤原の」 → 先後への置換
+- 「終局時間は２３時３５分。」 → ルール3
+- 「消費時間は▲藤原５時間５９分、△高野４時間４０分。」 → ルール1, 3
+- 「勝った△高野は４勝３敗、敗れた▲藤原は３勝４敗となった。」 → ルール1, 4

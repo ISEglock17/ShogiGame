@@ -1,0 +1,151 @@
+**Structuring Game Analysis Comments**
+
+Alright, so a user, a fellow expert, wants me to clean up the comments in their shogi game data. The goal is clear: strip away all the fluff and irrelevant stuff from those comments, leaving only the pure, insightful commentary on the board state and the moves played. Think of it as refining raw observations into digestible game analysis.
+
+Here's my thought process:
+
+1.  **Identify the Noise:** I'll need to meticulously go through those comments and apply some clear rules to identify what's crucial and what's extraneous. We're talking about removing boilerplate, irrelevant asides, maybe even some specific identifiers that the analysis software uses but the audience doesn't need to know.
+
+2.  **Natural Language Formatting:** Once I've filtered out the noise, the real work begins: reconstructing the remaining pieces into coherent, flowing sentences. This means understanding the context, ensuring the explanations of the board state and the moves make sense, and ultimately, present a clear narrative of the game's evolution. It's about preserving the *meaning* while simplifying the presentation.
+
+手数10: 矢倉模様。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数27: 脇システムといわれている形。研究量がモノをいう戦型だ。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数37:
+
+削除理由:
+- 「▲１六歩の局面で」 → ルール3
+- 「所司が１１分考えて」 → ルール1, 3
+- 「昼食休憩に入った。」 → ルール7
+- 「消費時間は達が４０分、所司が１時間１３分。」 → ルール1, 3
+
+---
+手数43: 脇システムでも多い形。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数47: 一歩をもって、▲６五歩が狙いになるため、例外的に成立する。普通は▲１五同銀。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数51:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は達が５３分、所司が１時間４６分。」 → ルール1, 3
+
+---
+手数57: △同飛なら▲８六香。ここら辺も定跡化された攻防。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数58: 香の打ち合いで、１筋の端攻めを間接的に緩和する。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数60:
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は達が１時間３分、所司が２時間２２分。」 → ルール1, 3
+
+---
+手数61:
+
+削除理由:
+- 「なんと、２時間２２分の大長考。」 → ルール3
+
+---
+手数69:
+
+削除理由:
+- 「▲５四歩の局面で」 → ルール3
+- 「所司が４８分考えて」 → ルール1, 3
+- 「夕食休憩に入った。」 → ルール7
+- 「消費時間は達が３時間２５分、所司が３時間２６分。」 → ルール1, 3
+
+---
+手数70: 形を乱す。
+
+削除理由:
+- 「５２分の長考。」 → ルール3
+
+---
+手数76:
+
+削除理由:
+- 「１９時３０分の局面。」 → ルール3
+- 「消費時間は達が３時間４８分、所司が３時間３０分。」 → ルール1, 3
+
+---
+手数82: と金捨てて、香車に打ちかえる。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数85:
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は達が４時間１０分、所司が３時間５０分。」 → ルール1, 3
+
+---
+手数86:
+
+削除理由:
+- 「５７分の長考。」 → ルール3
+
+---
+手数93: ２六の銀が頑張っているので、△１四歩は▲同飛で無効。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数95: 玉を狭くする手筋。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数101:
+
+削除理由:
+- 「残り時間は達が１時間４分、所司が５３分。」 → ルール1, 3
+
+---
+手数103: 先手玉は詰まない。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数105: 上部が抜けるかたちになった。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数113: 以下は簡単な詰み。
+
+削除理由:
+- 「終局時刻は２３時１１分。」 → ルール3
+- 「消費時間は達４時間５８分、所司５時間４３分。」 → ルール1, 3
