@@ -1,0 +1,119 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with the task of cleaning up some shogi game commentary, making it suitable for analysis and presentation. It seems straightforward enough. My goal is to transform the provided comments into a standardized format, focusing solely on the actual gameplay and the insights being shared.
+
+First, I need to internalize the rules. Basically, anything that doesn't directly relate to the *current* game state is out. That includes anything about the players *outside* of the game: their names (except "Sente" and "Gote"), their history, their styles, the location, the broadcast setup, or even what they ate for lunch! It's all extraneous noise as far as I'm concerned. 
+
+Specifically, I'll be implementing these rules:
+
+*   **Removal Targets (1-8)**. Anything that falls under the specified categories is gone. These categories are pretty comprehensive, designed to strip away the fluff and expose the core of the commentary.
+*   **Name Substitution**. I'm going to replace the actual player names with the standard "Sente" (先手) and "Gote" (後手) to keep things anonymous.
+*   **Output Format**. The comments will be formatted as "Move number: Comment." It's a clean, consistent way to represent each piece of information.
+
+The next step will be to dive into each comment and apply these rules methodically. Each deletion and substitution will be justified by a clear reference to the relevant rule. This way, I can ensure accuracy and consistency throughout the entire process.
+
+手数8: 独自の序盤戦術だ。
+
+削除理由:
+- 「田中は角換わりにはしないタイプ。」 → ルール5
+
+手数15: △４三金に▲６八角を見せて、△４二角〜△３三銀を間に合わせないようにした。
+
+削除理由:
+
+手数18: 
+
+削除理由:
+- 「１０時４５分過ぎの局面。」 → ルール3
+- 「消費時間は先崎２６分、田中６分。」 → ルール3
+
+手数30: 
+
+削除理由:
+- 「△３三桂の局面で先崎が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は先崎１時間３４分、田中２０分。」 → ルール3
+
+手数39: 先手の金矢倉対後手のしゃがみ矢倉。
+
+削除理由:
+
+手数41: 先手の狙いは単純だが、▲２五桂。攻め駒と受け駒の交換は攻め駒の方が得とされる。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は先崎２時間、田中２６分。」 → ルール3
+- 「先崎の」 → ルール1
+
+手数44: 
+
+削除理由:
+- 「１５時２０分の局面。」 → ルール3
+- 「消費時間は先崎２時間４２分、田中１時間１６分。」 → ルール3
+
+手数51: 
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は先崎３時間１３分、田中１時間３２分。」 → ルール3
+
+手数57: 
+
+削除理由:
+- 「ここで田中が５８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は先崎３時間２８分、田中３時間２２分。」 → ルール3
+
+手数61: 後手の△５五歩を逆用しようとする。
+
+削除理由:
+
+手数62: 
+
+削除理由:
+- 「２０時１０分ごろの局面。」 → ルール3
+- 「消費時間は先崎４時間５分、田中３時間３３分。」 → ルール3
+
+手数73: 先手がよいようだ。
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「消費時間は先崎４時間２６分、田中４時間１５分。」 → ルール3
+
+手数85: 
+
+削除理由:
+- 「２１時半の局面。」 → ルール3
+- 「消費時間は先崎４時間３０分、田中４時間３６分。」 → ルール3
+
+手数87: 催促して、手ごまを補充。
+
+削除理由:
+
+手数92: 
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は先崎１時間１５分、田中１時間１４分。」 → ルール3
+
+手数98: △４四銀は▲３四桂。「敵の打ちたい所に打て」だ。
+
+削除理由:
+
+手数104: 
+
+削除理由:
+- 「順位戦の指し方。」 → ルール8
+- 「負けられない想いが詰まっている。」 → ルール8
+
+手数108: 
+
+削除理由:
+- 「２２時４５分ごろの局面。」 → ルール3
+- 「残り時間は先崎１時間２分、田中５８分。」 → ルール3
+
+手数119: 左右挟撃の形になった。ここで後手の投了となった。以下△１三銀▲３二金△１二玉▲２一角△１一玉▲３一龍で受けがない。
+
+削除理由:
+- 「田中」 → ルール1
+- 「終局時刻は２２時５２分。」 → ルール3
+- 「消費時刻は先崎５時間１１分、田中５時間４分。」 → ルール3
+- 「勝った先崎は２勝０敗、敗れた田中は１勝１敗となった。」 → ルール4

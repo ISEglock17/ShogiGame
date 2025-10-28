@@ -1,0 +1,81 @@
+**Focusing on Streamlining Shogi Commentary**
+
+Okay, so the user wants me to essentially clean up the commentary accompanying their Shogi game data. The goal is clear: they need to extract the *essential* information for in-depth analysis of the game itself, removing all the fluff that gets in the way. I understand; it's a common need. Metadata, player intros, timestamps – all that context is useful, but when I'm drilling down into the moves and their implications, it becomes noise. My job, as I understand it, is to filter out the irrelevant parts, keeping only the clear explanations of the board state and the reasoning behind each move. They want the core of the commentary presented as a coherent narrative, free from distractions. I'll need to go through each comment, one by one, and apply the rules I'm given to determine what stays and what goes. Let's see what we have to work with.
+
+手数6: 後手の作戦はゴキゲン中飛車。
+
+削除理由:
+- 「佐藤和の」 → ルール1
+
+手数9:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲東１７分、△佐藤和２４分。」 → ルール3
+
+手数19:
+
+削除理由:
+- 「この局面で佐藤和が２３分考え、」 → ルール1, 3
+- 「昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲東４６分、△佐藤和８３分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲東４６分、△佐藤和１時間２６分。」 → ルール3
+- 「東がここで１時間ほど考えているようだ。」 → ルール1, 3
+
+手数21:
+
+削除理由:
+- 「１時間１２分の長考。」 → ルール3
+
+手数27: 飛車の打ち込みの隙は先手陣に多い。後手陣には打ち込みの隙がないため、飛車交換は拒否。
+
+削除理由:
+- （削除なし）
+
+手数29:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲東２時間９分、△佐藤和１時間４２分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲東２時間５１分、△佐藤和２時間４３分。」 → ルール3
+
+手数36: ▲５三桂成△同飛▲２二歩成を防いだ。
+
+削除理由:
+- （削除なし）
+
+手数37:
+
+削除理由:
+- 「この局面で佐藤和が１７分考え、」 → ルール1, 3
+- 「夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲東３時間３２分、△佐藤和３時間３５分。」 → ルール3
+
+手数39: 先ほどまで金がいたスペースに角を打ち込む。
+
+削除理由:
+- （削除なし）
+
+手数43: これが厳しい。
+
+削除理由:
+- （削除なし）
+
+手数47: 駒組みに失敗があり、一気に崩壊してしまったようだ。
+
+削除理由:
+- 「この局面で佐藤和が投了した。」 → ルール1
+- 「ちょうど記者が棋譜を取りに行ったときの投了で、」 → ルール1
+- 「佐藤和は直後に「いや…もう序盤でちょっと…」。」 → ルール1
+- 「消費時間は▲東４時間４分、△佐藤和４時間１３分。」 → ルール3
+- 「勝った東は２勝６敗、敗れた佐藤和は５勝３敗となった。」 → ルール1, 4

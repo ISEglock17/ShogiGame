@@ -1,0 +1,73 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so I understand the task. The user is essentially asking me to be a meticulous editor for Shogi commentary. My goal is to take a raw stream of comments about a game and transform it into something clean, readable, and focused on the key aspects of the match.  I need to be ruthless about removing irrelevant details, side-tracking commentary, and anything that isn't directly contributing to the flow and understanding of the game's progress.  Essentially, I'm streamlining the commentary, paring it down to the essentials, and making it sound as natural as possible.  I'll be guided by the provided rules – that's the key to maintaining consistency and quality. I'll need to develop a good intuition for identifying what's *essential* commentary, and what's merely noise.
+
+手数6: 相掛かりの出だしになった。
+
+削除理由:
+- なし
+
+---
+手数31:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は神崎１４分、豊川１３分。」 → ルール3, 1
+
+---
+手数45:
+
+削除理由:
+- 「ここで豊川が９分考えて昼食休憩に入った。」 → ルール3, 7, 置換ルール
+- 「消費時間は神崎２２分、豊川１時間２７分。」 → ルール3, 1
+
+---
+手数51:
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は神崎１時間３４分、豊川１時間３７分。」 → ルール3, 1
+
+---
+手数54:
+
+削除理由:
+- 「１５時５０分の局面。」 → ルール3
+- 「消費時間は神崎１時間３５分、豊川２時間２１分。」 → ルール3, 1
+
+---
+手数58:
+
+削除理由:
+- 「１７時１０分過ぎの局面。」 → ルール3
+- 「消費時間は神崎２時間５６分、豊川２時間５２分。」 → ルール3, 1
+
+---
+手数68:
+
+削除理由:
+- 「ここで神崎が３３分考えて夕食休憩に入った。」 → ルール3, 7, 置換ルール
+- 「消費時間は神崎３時間４４分、豊川３時間４分。」 → ルール3, 1
+
+---
+手数78:
+
+削除理由:
+- 「２０時１０分の局面。」 → ルール3
+- 「消費時間は神崎４時間７分、豊川３時間２８分。」 → ルール3, 1
+
+---
+手数90:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は神崎５時間３分、豊川３時間５６分。」 → ルール3, 1
+
+---
+手数122: 先手の投了となった。勝った後手は５勝２敗、敗れた先手は３勝４敗となった。
+
+削除理由:
+- 「ここで神崎の投了となった。」 → 置換ルール
+- 「消費時間は神崎５時間３９分、豊川４時間２４分。」 → ルール3, 1
+- 「勝った豊川は」 → 置換ルール
+- 「敗れた神崎は」 → 置換ルール

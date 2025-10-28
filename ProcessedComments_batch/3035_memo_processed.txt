@@ -1,0 +1,112 @@
+**Cleaning Up the Commentary: Focusing on the Game's Essence**
+
+Okay, so I need to refine the comments found within these Shogi game records. The user wants the comments cleaned up, stripped down, really. My goal here is to isolate the pure, distilled essence of the game commentary: the explanations of the board state and the reasoning behind each move.  Basically, I need to get rid of all the noise – the fluff. That means the meta-commentary, any biographical details about the players, the time information... all of that needs to go. I just want the *what* and the *why* of each move, expressed in clear, concise language. This will make the record much more useful for analysis. So, I need to figure out the best way to identify and extract that critical information. Let's see how I can approach this...
+
+手数1:
+
+削除理由:
+- 「児玉は福岡県北九州市出身の５６歳、岡崎史明八段門下。」 → ルール1, 4
+- 「今期２勝１敗、０．６６６７。」 → ルール4
+- 「通算成績は３７４勝４６２敗、０．４４７４。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「小林は三重県出身の４４歳、真部一男八段門下。」 → ルール1, 4
+- 「今期１勝１敗、０．５０００。」 → ルール4
+- 「通算成績は３４５勝３８１敗、０．４７５２。」 → ルール4
+
+手数6: 一手損角換わりの進展。
+
+削除理由:
+
+手数15: 角打ち。見ない筋だ。
+
+削除理由:
+- 「５４分の考慮の末の」 → ルール3
+- 「ここで小林が３９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲児玉１時間０分、△小林１時間０分。」 → ルール3
+- 「昼食の注文は両者ともになし。」 → ルール7
+
+手数16: 後手は４五の歩を受けずに金を上がった。もっとも△４二飛は▲８三角成、△４四銀は▲２四歩から２筋を交換される。
+
+削除理由:
+- 「小林は」 → ルール1
+
+手数17: 先手の１歩得対後手の持ち角という対抗形になった。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「ここまでの消費時間は▲児玉１時間２０分、△小林１時間２０分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「ここまでの消費時間は▲児玉１時間３８分、△小林１時間３７分。」 → ルール3
+- 「ほとんど同じ消費時間で推移している。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１６時ころの局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間３４分、△小林２時間７分。」 → ルール3
+
+手数38: 後手も遠見の筋違い角を打ち返した。
+
+削除理由:
+- 「小林も」 → ルール1
+
+手数40: これで歩の損得もなくなった。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「１７時を過ぎた。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間５１分、△小林２時間５９分。」 → ルール3
+
+手数45: 角筋を通すためとはいえ後手の飛車先。いかにも怖いが。
+
+削除理由:
+- 「１２分の考慮。」 → ルール3
+
+手数52: ２七角が変な形。後手がいいだろう。
+
+削除理由:
+- 「ここで児玉が１４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲児玉３時間２２分、△小林３時間３０分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+- 「」。 → その他
+
+手数60: これで後手香得の戦果。
+
+削除理由:
+
+手数62:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「残り時間は▲２時間７分、△１時間１８分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「２２時２０分ころの局面。」 → ルール3
+- 「残り時間は▲児玉４５分、△小林１時間１５分。」 → ルール3
+
+手数68: 先手は攻め駒が少ないが。
+
+削除理由:
+- 「△８四歩は１９分の考慮。」 → ルール3
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は▲児玉４４分、△小林５３分。」 → ルール3
+
+手数86:
+
+削除理由:
+- 「２３時５５分、８６手で小林六段の勝ち。」 → ルール3, 1
+- 「残り時間は▲児玉３分、△小林２６分。」 → ルール3

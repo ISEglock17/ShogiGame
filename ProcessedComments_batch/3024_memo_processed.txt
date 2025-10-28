@@ -1,0 +1,74 @@
+**Analyzing and Preparing the Shogi Commentary**
+
+Okay, so I'm presented with a request to format a Shogi game comment, which is right up my alley. The goal is to clean up and structure the provided commentary based on a set of predetermined rules. I'm seeing the raw material: "手数16: １１時の局面。消費時間は中尾１１分、横山４３分。"  My initial thought is to process this, extract the critical elements like the move number, the specific time, and the player time consumption, and reformat it for clarity and readability. I need to make sure the information is presented in a concise and easily digestible manner, adhering to any specified formatting conventions.
+
+手数16:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は中尾１１分、横山４３分。」 → ルール3, 1
+
+手数22:
+
+削除理由:
+- 「ここで中尾が１６分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「消費時間は▲中尾４３分、△横山１時間１８分。」 → ルール3, 1
+- 「昼食の注文は横山きつねうどん、中尾はなし。」 → ルール7, 1
+
+手数31:
+
+削除理由:
+- 「ここまでの消費時間は▲中尾４５分、△横山１時間５８分。」 → ルール3, 1
+
+手数37:
+
+削除理由:
+- 「１５時ころの局面。」 → ルール3
+- 「ここまでの消費時間は▲中尾１時間１２分、△横山２時間３０分。」 → ルール3, 1
+
+手数41:
+
+削除理由:
+- 「ここまでの消費時間は▲中尾１時間４７分、△横山２時間４９分。」 → ルール3, 1
+
+手数50: しゃれた垂れ歩。次の狙いは△５九歩成▲同金△１五角。
+
+削除理由:
+- 「１７時を過ぎた。」 → ルール3
+- 「ここまでの消費時間は▲中尾１時間４８分、△横山３時間４７分と差がついている。」 → ルール3, 1
+
+手数51:
+
+削除理由:
+- 「ここで横山が３２分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲中尾２時間４１分、△横山４時間１９分。」 → ルール3, 1
+- 「夕食の注文は横山がうめぞうすい。中尾はなし。」 → ルール7, 1
+
+手数53:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「残り時間は▲中尾２時間３３分、△横山１時間４１分。」 → ルール3, 1
+
+手数58:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「残り時間は▲中尾２時間１８分、△横山５３分。」 → ルール3, 1
+
+手数68:
+
+削除理由:
+- 「２２時２０分ころの局面。」 → ルール3
+- 「残り時間は▲中尾１時間２２分、△横山３９分。」 → ルール3, 1
+
+手数79:
+
+削除理由:
+- 「残り時間は▲中尾４３分、△横山３０分。」 → ルール3, 1
+
+手数94:
+
+削除理由:
+- 「２３時４４分、９４手で横山四段の勝ち。」 → ルール3, 1
+- 「残り時間は▲中尾２３分、△横山１３分。」 → ルール3, 1

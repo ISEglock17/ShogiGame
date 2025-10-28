@@ -1,0 +1,146 @@
+**Focusing the Commentary: Stripping Down to the Essence of the Game**
+
+Okay, so the user wants me to process these Shogi game commentaries, right? My objective is clear: to sculpt these sprawling narratives into something concise and useful for analysis. I need to distill the commentary down to its pure form, retaining only the crucial information about the game state and the actual moves played. The fluff – the introductions, the time checks, the biographical details, the extraneous remarks – all that has to go. It's like extracting the core argument from a complex treatise.
+
+My strategy is pretty straightforward. I'll need to define a clear set of rules for identifying and removing the unnecessary parts. Then, I'll go through the commentary methodically, applying those rules to separate the wheat from the chaff. The final product should be a smooth, coherent explanation, flowing naturally from one move to the next, just like a well-structured line of code. It's all about precision and clarity, getting to the heart of the Shogi strategy without the noise.
+
+手数2: 相矢倉模様の出だし。
+
+削除理由:
+
+---
+手数10: 左美濃の余地を残す。
+
+削除理由:
+
+---
+手数12:
+
+削除理由:
+- 「ここまでの消費時間は真田５分、勝又２３分」 → ルール3
+
+---
+手数14:
+
+削除理由:
+- 「この一手に３９分」 → ルール3
+
+---
+手数20:
+
+削除理由:
+- 「真田が２７分を使って、ここで昼食休憩。」 → ルール3, 7
+- 「消費時間の通計は、真田４８分、勝又１時間１１分。」 → ルール3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+---
+手数24:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は真田１時間０分、勝又１時間１９分。」 → ルール3
+
+---
+手数27:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は真田１時間５８分、勝又１時間３１分。」 → ルール3
+
+---
+手数28:
+
+削除理由:
+- 「この一手は１時間９分。」 → ルール3
+- 「なんとも順位戦ペースだ。」 → ルール8
+
+---
+手数29: ずっと保留していた交換。
+
+削除理由:
+
+---
+手数34:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は真田２時間４５分、勝又３時間８分。」 → ルール3
+
+---
+手数35:
+
+削除理由:
+- 「勝又が４３分使って、ここで夕食休憩。」 → ルール3, 7
+- 「消費時間の通計は、真田３時間９分、勝又３時間５１分。」 → ルール3
+- 「夕食の注文は、真田はうな玉丼と肝吸い。勝又はなし。」 → ルール7
+
+---
+手数40:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は真田３時間１２分、勝又３時間５８分。」 → ルール3
+
+---
+手数43: 切り返し。
+
+削除理由:
+
+---
+手数48: 中盤のねじり合い。
+
+削除理由:
+- 「ここまでの消費時間は真田３時間５３分、勝又４時間１８分。」 → ルール3
+
+---
+手数51: 代わりに▲４四角△同歩▲６二角という過激な順も検討されていた。やはり飛車筋が通ったままでは気持ちわるいか。
+
+削除理由:
+- 「控え室では」 → ルール6
+
+---
+手数55:
+
+削除理由:
+- 「２１時１５分頃の局面。」 → ルール3
+- 「消費時間は真田４時間２３分、勝又４時間３０分。」 → ルール3
+
+---
+手数61: あらかじめ王手飛車を避ける。
+
+削除理由:
+
+---
+手数62: 金底の歩。あらかじめ飛車打ちに備える。
+
+削除理由:
+
+---
+手数64:
+
+削除理由:
+- 「２１時５０分頃の局面。」 → ルール3
+- 「消費時間は真田４時間３９分、勝又４時間５２分。」 → ルール3
+
+---
+手数66: 矢倉崩しの手筋。囲いの金を攻めるのが、終盤のセオリー。
+
+削除理由:
+
+---
+手数67: 速度勝負。
+
+削除理由:
+
+---
+手数69:
+
+削除理由:
+- 「２１時４５分頃の局面。」 → ルール3
+- 「残り時間は真田３８分、勝又５９分。」 → ルール3
+
+---
+手数70:
+
+削除理由:
+- 「勝又はこの一手に５９分のうち、３４分を使った。」 → ルール3

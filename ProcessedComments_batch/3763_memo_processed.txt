@@ -1,0 +1,121 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this task - to clean up commentary from Shogi game data. The user, a fellow expert, wants me to distill these comments down to their essence: the actual explanations of the board state and the moves being played. It's about maximizing the analytical value and minimizing the noise.
+
+Basically, I need to go through each comment, play detective, and separate the wheat from the chaff. I'll need to identify and remove all the fluff – the metadata, player introductions, time stamps, irrelevant background information. My goal is to extract the core insights about the game's evolution, not the peripheral details. Once I've filtered out the extraneous bits, I can then reshape the remaining commentary into coherent, natural sentences. That way, the user can get to the good stuff quickly, without wading through unnecessary details.
+
+手数10: 後手は四間飛車。
+
+削除理由:
+- 「福崎」 → ルール1
+
+手数18: △７二銀などとすると、▲６八角から▲２四歩の仕掛けが受からない。
+
+削除理由:
+
+手数20: 後手は伝家の宝刀、振り飛車穴熊。
+
+削除理由:
+- 「福崎の」 → ルール1
+
+手数29: 先手は銀冠で穴熊に対抗する。
+
+削除理由:
+- 「高野は」 → ルール1
+- 「高野の師匠である中原十六世名人が得意にしている戦型だ。」 → ルール1, 5
+
+手数30: 後手は石田流を目指して３筋に飛車を転換した。
+
+削除理由:
+- 「福崎」 → ルール1
+
+手数33:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は高野１１分、福崎１５分。」 → ルール1, 3
+
+手数35: ▲１六歩は「居飛車の税金」で、端歩を突いていないと△１五角と出られてしまう。
+
+削除理由:
+
+手数41: ８筋からの玉頭攻めは穴熊の急所。
+
+削除理由:
+
+手数43: ８筋に続いて６筋も位を取る。
+
+削除理由:
+
+手数45: 非常に手厚い構え。先手は▲５五歩から飛車を５筋方面に転換させたい。
+
+削除理由:
+
+手数46: △３七桂成▲同桂△３六歩の先制攻撃を狙う。
+
+削除理由:
+
+手数47: △３七桂成▲同桂△３六歩に▲３五桂を用意している。
+
+削除理由:
+
+手数48: ▲３五桂の筋をかわす。
+
+削除理由:
+- 「△５二銀の局面で高野が２５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は高野１時間１１分、福崎３６分。」 → ルール1, 3
+
+手数52: 狙い筋を実現させた。
+
+削除理由:
+
+手数59: ▲３二歩と当たりを強くしてから歩を突き出す。△３七歩成▲２三歩成△３六飛▲同飛△同と▲３三とは先手の望むところ。穴熊側はと金で攻められてはいけない。
+
+削除理由:
+
+手数66: これで先手の手がないと見ている。
+
+削除理由:
+
+手数67: △同歩なら▲２四角でさばける。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は高野１時間４８分、福崎５０分。」 → ルール1, 3
+
+手数71:
+
+削除理由:
+- 「４８分の長考。」 → ルール3
+
+手数72: ▲３三歩をかわす。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は高野２時間３６分、福崎１時間。」 → ルール1, 3
+
+手数74: 大きなくさび。
+
+削除理由:
+
+手数80: 確実なと金攻め。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「消費時間は高野３時間１４分、福崎１時間２０分。」 → ルール1, 3
+
+手数88: ざっくりとした香打ち。▲同銀は△同桂成▲同金△６八と▲同金引△８六角が厳しい。
+
+削除理由:
+
+手数90: ここで先手の投了となった。以下▲３八角に△７八金から△６八とで一手一手の寄り。こうなると穴熊は強い。
+
+削除理由:
+- 「高野の」 → ルール1
+- 「終局時刻は１６時４４分。」 → ルール3
+- 「消費時間は高野３時間３９分、福崎１時間３３分。」 → ルール1, 3
+- 「勝った福崎、敗れた高野ともに２勝５敗となった。」 → ルール1, 4

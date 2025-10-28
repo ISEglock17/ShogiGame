@@ -1,0 +1,83 @@
+**Refining Game Commentary for Clarity**
+
+Okay, so I'm presented with a series of Japanese Shogi commentary snippets, and the goal is to clean them up and make them more concise, following some specific rules.  Essentially, the user wants me to act as a linguistic filter, removing the unnecessary fluff and focusing on the crucial tactical information.  I understand that the user is an expert, so the goal here is to make the commentary efficient and precise.
+
+For the first example, I see "手数6: 室岡は得意の四間飛車."  My thinking is, right, I've got to take this and apply my ruleset.  "室岡" is clearly the name of the player; since it's the second player in the game, it needs to be replaced with "後手" (meaning "Black" or "second player"). The phrase "得意の" ("favorite" or "strong") gives us insight into the player's style, which is off-limits according to rule 5, so that needs to go.  Therefore, I'll transform that sentence into: "後手は四間飛車。" ("Black plays the Ranging Rook").
+
+手数6: 後手は四間飛車。
+
+削除理由:
+- 「室岡は」 → 置換ルール（後手の実名を「後手」に置換）
+- 「得意の」 → ルール5
+
+手数19: 先手は急戦をにおわせる。
+
+削除理由:
+- 「佐藤は」 → 置換ルール（先手の実名を「先手」に置換）
+
+手数20:
+
+削除理由:
+- 「ここまでの消費時間は佐藤１８分、室岡４分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は佐藤１時間３３分、室岡２４分。」 → ルール3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+手数27: 先手は銀を進める。
+
+削除理由:
+- 「佐藤は」 → 置換ルール（先手の実名を「先手」に置換）
+- 「昼食休憩をはさんで５１分考え、」 → ルール3, 7
+
+手数35:
+
+削除理由:
+- 「１４時半前の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤２時間７分、室岡１時間４分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は佐藤２時間２０分、室岡１時間５４分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「室岡、１時間５分の長考。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤２時間３０分、室岡２時間３４分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「佐藤が２５分を使って、ここで夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は佐藤３時間５分、室岡３時間５４分。」 → ルール3
+- 「夕食の注文は、両対局者ともになし。」 → ルール7
+
+手数57:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は佐藤３時間１２分、室岡４時間２１分。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は佐藤３時間５０分、室岡５時間１１分。」 → ルール3
+
+手数97:
+
+削除理由:
+- 「終了時刻は２１時５５分。」 → ルール3
+- 「消費時間は佐藤４時間２分、室岡５時間３１分。」 → ルール3
+- 「勝った佐藤は２連勝。負けた室岡は２連敗となった。」 → ルール4

@@ -1,0 +1,117 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff and keep only the gold – the insightful analysis of the board and the moves themselves. Think of it like a meticulous editor, ruthlessly cutting away anything that doesn't directly contribute to understanding the flow of the game.
+
+The data's a mixed bag, and I've got a set of rules to guide me. I need to be ruthless with anything that falls under these categories:
+
+*   **Identifying the irrelevant:** First, any mention of people *not* directly involved in the current game – their names, ranks, or connections to other players – is gone. We don't need the biographical details, we need the moves.
+*   **Rejecting extraneous history:** Then, I need to eliminate anything referencing previous games or any general background information. The focus is on the present, on the specific board state and the decision-making process in this particular match.
+*   **Pruning unnecessary exposition**: Finally, I must eliminate any comments which only serve to introduce the match, or relate to the length of time for each move. This is extraneous noise that's distracting from the game's evolution.
+
+It's about distilling the essence of the game commentary, leaving behind only the pure, focused insights that are essential for deep analysis. It's a precise task, but ultimately, it's about maximizing the usefulness of this data for deeper understanding.
+
+手数3:
+削除理由:
+- 「ルーキー豊島は居飛車党。」 → ルール4, 5
+- 「新人王戦では３回戦の不戦勝が決まっており、２年連続の関西からの新人王が期待されている。」 → ルール4
+
+手数24: 着々と矢倉の駒組みが進む。ノータイムの指し手が続く。
+削除理由:
+- 「松本が１８手目△３三銀に、豊島が２１手目▲３六歩と２３手目▲６七金右に１分ずつ考えたほかは」 → ルール3
+- 「松本」 → ルール1
+- 「豊島」 → ルール1
+
+手数43: 「攻めは飛角銀桂」と呼ばれる理想の形。後手は７三の角で攻めを牽制している。
+削除理由:
+
+手数55:
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島２７分、△松本１９分。」 → ルール3, 1
+
+手数64:
+削除理由:
+- 「この局面で豊島が３８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲豊島１時間１７分、△松本２７分。」 → ルール1, 3
+
+手数65: 先手は合計４９分の考慮で角を引いた。
+削除理由:
+- 「再開後も読みをいれ、」 → ルール7
+- 「合計４９分の考慮で」 → ルール3
+
+手数73: △２五同歩は▲２四歩△１二銀に▲１七桂などが考えられる。
+削除理由:
+- 「速いテンポでまだ１４時でこの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島１時間２８分、△松本３２分。」 → ルール1, 3
+- 「豊島は６５手目▲６八角に長考したあとはノータイムで指している。」 → ルール1, 3
+- 「この局面は昨年１２月に指された王位戦▲阿部隆八段−△橋本崇載七段と同一。そのときは▲２五歩以下△３三銀▲３六桂△２五歩▲１一銀と阿部が攻め立てたが、橋本が受け切って勝っている。」 → ルール1, 2
+
+手数75: ここで実戦例を離れた。
+削除理由:
+- 「▲阿部−△橋本戦では▲３六桂だった。」 → ルール1, 2
+
+手数81: 後手を持って△２四銀▲３五歩に銀を出たことがあるが、やりすぎで▲３四銀と打たれて困ったようだ。
+削除理由:
+- 「「三段リーグで」 → ルール2
+- 「（池田将之三段）」 → ルール1
+
+手数82:
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島１時間４２分、△松本２時間２分。」 → ルール1, 3
+
+手数87: ▲２五銀も考えられた。以下、△２四歩▲同銀△同銀▲同角△３三銀が予想される。
+削除理由:
+- 「５１分の長考。」 → ルール3
+
+手数92:
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島２時間５４分、△松本２時間２２分。」 → ルール1, 3
+
+手数98:
+削除理由:
+- 「この局面で豊島が１時間２分の長考に沈み、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲豊島４時間３分、△松本２時間３３分。」 → ルール1, 3
+
+手数99:
+削除理由:
+- 「夕食休憩を挟んで１時間３分の長考。」 → ルール3, 7
+
+手数100:
+削除理由:
+- 「「△２八角成じゃないんや」（検討陣）」 → ルール1
+
+手数106: ▲４五歩で攻めが続くか検討されている。（１）△２八角成▲４四歩△３九馬は▲４三歩成△２三玉▲３二銀△１三玉▲２六銀が変化の一例。（２）△４五同金は▲２五歩（△同金は▲３四飛、△２三金は▲２四銀）、（３）△３五金右は▲４四銀がうるさいようだ。後手からは△８六桂や（銀を入手したあとの）△６九銀などが厳しい狙い。
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島４時間１３分、△松本３時間１２分。」 → ルール1, 3
+- 「「豊島ピンチか」と控え室の声。」 → ルール1, 6
+
+手数108:
+削除理由:
+- 「５７分考え、」 → ルール3
+- 「棋士室で「食いつかれるのでは」と言われていた順に飛び込む。」 → ルール1, 6
+
+手数112: この△１二桂は粘り強い一手。どうやら▲４三銀で攻めがつながりそうだ。△２四桂▲同歩△同金▲３四銀成△同金▲同飛△３三歩▲２五桂と進めば寄り筋。
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島４時間２４分、△松本４時間１４分。」 → ルール1, 3
+- 「が棋士室で軽視されていた」 → ルール1, 6
+- 「「（先手の攻めが）繋がりそうやけどなー」と言いながら検討が進められている。」 → ルール1
+
+手数123: ここで△３五桂と打てば後手有望と言われている。
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島５時間９分、△松本４時間５４分。」 → ルール1, 3
+
+手数134: この局面から▲１八歩△２八玉▲３九金△１九玉▲３二竜△２八歩の局面で後手玉に必死がかかるか検討されている。
+削除理由:
+- 「２３時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島５時間１７分、△松本５時間３６分。」 → ルール1, 3
+
+手数137: ▲３八銀で後手玉に必死がかかり、後手は投了した。先手は順位戦デビューを白星で飾った。
+削除理由:
+- 「松本は２分考えて」 → ルール1, 3
+- 「消費時間は▲豊島５時間２７分、△松本５時間３８分。」 → ルール1, 3
+- 「ルーキー豊島は」 → ルール1, 4

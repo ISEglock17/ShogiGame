@@ -1,0 +1,93 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty clear: they want me to strip out all the fluff – any metadata, player intros, time stamps – basically anything that isn't directly related to explaining the board position or the moves being made. The goal is to leave behind only the *actual* commentary on the game itself, and to ensure what's left reads smoothly as natural sentences.
+
+So, first I need to identify those elements that have to go, I'll need a set of rules, or a process, to determine what's unnecessary. Once I have those rules in place I can then systematically delete the identified components. Next, I need to focus on what remains, and work to refine the language so the flow of the remaining commentary feels cohesive. Essentially, I'm aiming for a distilled, analytical perspective on the game's key moments.
+
+手数1:
+
+削除理由:
+- 「高野秀行（たかの　ひでゆき）六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔａｋａｎｏ―ｈ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「片上大輔（かたがみ・だいすけ）六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｔａｇａｍｉ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「高野の今期成績は５勝１敗／０．８３３」 → ルール4
+- 「通算成績は２２６勝１９３敗／０．５３９」 → ルール4
+
+手数4:
+
+削除理由:
+- 「片上の今期成績は２勝４敗／０．３３３」 → ルール4
+- 「通算成績は１６５勝９７敗／０．６３０」 → ルール4
+
+手数23: ▲５八金右は最新形。代わって▲５八金右〜▲６六歩と後手のさばきを押さえる指し方が増えてきた。
+
+削除理由:
+- 「▲７七銀△５六歩▲同歩△同飛の展開も数多く指されていたが、ここ最近はやや先手が苦戦気味の印象がある。」 → ルール2
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲高野２６分、△片上１１分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「この局面で片上が２３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲高野５９分、△片上５５分。」 → ルール3
+- 「昼食の注文は片上が「冷やしスタミナうどん」（みろく庵）、高野は注文なし。」 → ルール7
+- 「対局は１３時に再開する。」 → ルール7
+
+手数26:
+
+削除理由:
+- 「１３時５０分頃の局面。」 → ルール3
+- 「消費時間は▲高野５９分、△片上１時間２２分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１４時４０分頃の局面。」 → ルール3
+- 「消費時間は▲高野１時間４５分、△片上１時間４６分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時３５分頃の局面。」 → ルール3
+- 「消費時間は▲高野２時間１分、△片上１時間５２分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１６時３０分頃の局面。」 → ルール3
+- 「消費時間は▲高野２時間１２分、△片上２時間４３分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「▲７七角は１時間５分の長考だった。」 → ルール3
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲高野３時間１７分、△片上２時間４３分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「この局面で高野が２１分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲高野３時間５１分、△片上３時間６分。」 → ルール3
+- 「夕食の注文は片上が「けんちんうどん・たらこおにぎり」（みろく庵）、高野は注文なし。」 → ルール7
+- 「対局は１９時に再開する。」 → ルール7
+
+手数55:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は▲高野３時間５７分、△片上３時間３８分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+- 「消費時間は▲高野４時間５分、△片上４時間１３分。」 → ルール3

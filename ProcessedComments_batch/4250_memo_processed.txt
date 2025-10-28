@@ -1,0 +1,174 @@
+**Cleaning Up the Commentary for Deeper Analysis**
+
+Okay, so I'm presented with a bunch of comments from shogi game records. My goal here is to refine them into something usable for my analysis. I need to get rid of all the noise: the metadata, the introductions, the clock information – all the stuff that doesn't actually contribute to understanding the board state or the moves themselves.
+
+So, the process in my mind is pretty straightforward. First, I need to define the rules clearly: what constitutes unnecessary information? Once I've got that solid, it's about systematically going through each comment and ruthlessly deleting anything that falls outside those rules. Then, the real work begins: the remaining fragments need to be stitched together into coherent, flowing sentences that actually explain the key aspects of the position and the reasoning behind the moves. This isn't just a simple filter; it's about crafting a narrative from the raw data, highlighting what truly matters to the game.
+
+手数1:
+
+削除理由:
+- 「泉の本年度の成績は５勝１６敗／勝率は０．２３８１」 → ルール4
+- 「通算成績は５３０勝４８４敗／勝率は０．５２２７」 → ルール4
+
+手数2:
+
+削除理由:
+- 「土佐の本年度の成績は１０勝１６敗／勝率は０．３８４６」 → ルール4
+- 「通算成績は５９８勝５６５敗／勝率は０．５１４２」 → ルール4
+
+手数6:
+相掛かりの出だし。
+
+削除理由:
+
+手数11:
+相掛かりは先手の得意戦法の一つ。
+
+削除理由:
+- 「１０時４０分ごろの局面。消費時間は泉２分、土佐０分。」 → ルール3
+- 「２０年ほど前に「相掛かりガイド」という本を出している。」 → ルール4, 5
+
+手数12:
+後手は９筋の歩を伸ばした。
+
+削除理由:
+- 「土佐は」 → ルールなし（置換ルール）
+- 「２２分使って」 → ルール3
+
+手数20:
+後手は浮き飛車に構えた。
+
+削除理由:
+- 「土佐は」 → ルールなし（置換ルール）
+
+手数22:
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「１１時４０分ごろの局面。消費時間は泉２２分、土佐１時間９分。」 → ルール3
+
+手数27:
+先手は腰掛け銀に構えた。
+
+削除理由:
+- 「泉は」 → ルールなし（置換ルール）
+
+手数28:
+▲４五銀なら△６五歩と飛車の横利きで受ける。
+
+削除理由:
+
+手数30:
+相腰掛け銀となった。
+
+削除理由:
+
+手数34:
+飛車の位置以外は同型になっている。
+
+削除理由:
+- 「△４二玉の局面で泉が１４分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は泉４５分、土佐１時間１１分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数35:
+引き飛車の形を生かした指し方。先手の狙いは▲４五歩〜▲４四歩の歩交換。
+
+削除理由:
+- 「１４時１５分ごろの局面。消費時間は泉４５分、土佐１時間１１分。土佐は１時間以上考えている。」 → ルール3
+- 「泉の」 → ルールなし（置換ルール）
+
+手数36:
+見たことのないような形。この後の後手の構想は注目だ。
+
+削除理由:
+- 「土佐の」 → ルールなし（置換ルール）
+- 「前例は△８八角成や△７四歩が指されていた。」 → ルール2
+
+手数37:
+先手は４筋の位を取った。▲４八飛の継続手として自然な指し方だ。
+
+削除理由:
+- 「１５時３０分の局面。消費時間は泉１時間３０分、土佐２時間３２分。」 → ルール3
+- 「泉は４５分の長考で」 → ルール3
+- 「泉は」 → ルールなし（置換ルール）
+
+手数38:
+▲３六歩〜▲３七桂を阻止している。
+
+削除理由:
+
+手数43:
+先手は陣形を組み替える。▲６七銀上とした形は駒の連結が良い。
+
+削除理由:
+- 「泉は」 → ルールなし（置換ルール）
+
+手数45:
+
+削除理由:
+- 「１６時４５分ごろの局面。消費時間は泉１時間５９分、土佐３時間２１分。」 → ルール3
+
+手数46:
+▲同歩なら△８五飛から７筋の歩を取り返す構想。
+
+削除理由:
+
+手数51:
+後手の動きに乗じて盛り上がる。
+
+削除理由:
+
+手数55:
+８八角の利きを通して伸び伸びしてきた。
+
+削除理由:
+
+手数59:
+▲３六金〜▲３七桂となれば好形だ。
+
+削除理由:
+
+手数64:
+
+削除理由:
+- 「１７時３０分の局面。消費時間は泉２時間２５分、土佐３時間４２分。」 → ルール3
+
+手数65:
+先手作戦勝ちという見方がある。先手の駒は自然に進んでいる。
+
+削除理由:
+- 「「先手作戦勝ち」の声。」 → ルール1
+- 「泉の」 → ルールなし（置換ルール）
+
+手数66:
+
+削除理由:
+- 「ここで泉が２９分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は泉３時間８分、土佐３時間４２分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数67:
+単に▲３五金は△１三角とされる恐れがある。
+
+削除理由:
+
+手数69:
+自然な進軍。
+
+削除理由:
+
+手数71:
+後手はここで投了した。△３四歩▲２四金△同金▲同飛△１三角は▲２一飛成△３一金▲３二金で詰む。ほかの手も難しい。
+
+削除理由:
+- 「土佐はここで１分考えて」 → ルール3
+- 「土佐は」 → ルールなし（置換ルール）
+- 「終局時刻は１９時１８分。」 → ルール3
+- 「消費時間は泉３時間２１分、土佐３時間４４分。」 → ルール3
+- 「勝った泉は４勝６敗、敗れた土佐は３勝７敗で今期順位戦を終えた。」 → ルール4
+- 「敗れた土佐は降級点となった。」 → ルール4

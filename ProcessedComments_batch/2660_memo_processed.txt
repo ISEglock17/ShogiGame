@@ -1,0 +1,76 @@
+**Processing Shogi Commentary: Refining for Clarity**
+
+Okay, so I'm looking at this Shogi commentary data, and the goal is clear: the user wants clean, readable explanations.  Basically, I need to take these often-cluttered comments and strip away the noise.  This means eliminating anything that doesn't directly contribute to understanding the board state or the moves being made.
+
+Let me break down my process: First, I need to methodically go through each comment. I'll identify and ruthlessly remove any information that's considered extraneous based on the established rules.  Think of it like surgically removing unnecessary tissue.  Next, with only the essential analysis remaining, I'll focus on polishing the language.  I'll restructure things where needed, ensuring that the remaining explanations flow naturally and provide a clear picture of the game's unfolding dynamics.
+
+手数1:
+
+削除理由:
+- 「桐山は「私が先手でしたよね」と記録係に確認してから着手。」 → 対局者の言動であり、盤面解説ではないためルールに該当。具体的にはルール1（対局者以外の人物）、ルール8（メタ情報）に近いが、直接的なルール番号はないものの「棋譜解析に不要な情報」という目的に合致しないため削除。
+
+手数2:
+
+削除理由:
+- 「御下段の間で行なわれていた▲中田宏−△山崎戦は本局開始直前の０時１５分、山崎勝ちで終局した。」 → ルール1, 2, 3, 6
+
+手数3:
+
+削除理由:
+- 「千日手局について、棋士室の評価は「桐山先生は勝てる将棋を千日手にした」」 → ルール1, 2, 6
+- 「再開待ちの両者、青野はにこやかに▲中田宏−△山崎戦の検討に参加していた。」 → ルール1, 2, 6
+- 「桐山も検討に加わっていたが、紙コップのアイスコーヒーに残った氷をかじっている様子が「苦虫を噛み潰す」ようにも見えた。」 → ルール1, 6
+
+手数6: 一手損角換わりとなった。
+
+削除理由:
+- 「両者は千日手局の対局中にも名人戦第６局を気にしていた。」 → ルール2
+
+手数22: 指し直し局は両者一歩も引かない、殴り合いの様相を呈している。
+
+削除理由:
+- 「指し直し局は」 → ルール2
+
+手数34:
+
+削除理由:
+- 「間髪いれず指された。」 → ルール3
+
+手数43: △４四銀は▲同銀△同歩に▲５三桂成が厳しい。後手苦しいが、△４二銀と引くしかないと見られている。
+
+削除理由:
+- 「長沼七段は」 → ルール1
+- 「見ている」 → 「見られている」（自然な文への整形）
+
+手数47:
+
+削除理由:
+- 「御下段の間の感想戦も終わり、棋士室に降りてきた山崎六段は「これはパンチが決まっているんじゃないですか？」」 → ルール1, 6
+
+手数49: 一気に大決戦。△４五桂には▲６四飛が狙い。
+
+削除理由:
+- なし
+
+手数53: 検討では△２一歩などが予想されている。
+
+削除理由:
+- 「棋士室では」 → ルール1, 6
+- 「予想されている」 → 「検討では△２一歩などが予想されている。」（自然な文への整形）
+
+手数60: 後手はここから一分将棋。
+
+削除理由:
+- 「青野は」 → 「後手は」（置換ルール）
+
+手数80: ここ１０手ほどで紛れてきたとの見解がある。
+
+削除理由:
+- 「棋士室では神崎七段と西川二段がふたりで検討を続けている。」 → ルール1, 6
+- 「との見解」 → 「との見解がある」（自然な文への整形）
+
+手数87: この局面で後手が投了した。▲７七桂は後手玉へ圧力をかけるとともに、先手玉の壁形を解消した好手。
+
+削除理由:
+- 「青野が」 → 「後手が」（置換ルール）
+- 「消費時間は▲桐山５時間３８分、△青野５時間５９分。」 → ルール3

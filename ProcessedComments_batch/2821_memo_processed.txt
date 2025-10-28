@@ -1,0 +1,85 @@
+**Working Through the Request: Comment Formatting for Shogi**
+
+Okay, so I've got a user request here to format Shogi commentary. The goal is clear: strip out all the fluff – you know, the introductory stuff, the player introductions, time checks – and leave only the crucial insights about the board state and the moves themselves. It's all about providing a clean, concise analysis, perfect for digesting the game's evolution.
+
+Essentially, it boils down to a three-step process: **delete**, **format**, and **output**. We'll be using a specific output format, which I'll be sure to adhere to. It's a nice, structured approach. Each comment will be displayed with its move number and the formatted content.  Empty comments will just show the move number and be followed by an empty line, which makes sense for readability. I'll also add a "Deletion Reason" section if I have to remove parts of the comment, which adds clarity for debugging.
+
+The key to this whole process is the deletion rules, which are yet to be defined. I'll need to go through the provided rules carefully. Understanding these rules is absolutely vital. I will get it done.
+
+手数4: 相掛かりの出だし。
+
+削除理由:
+- (削除なし)
+
+手数5: ▲２四歩は△同歩▲同飛△８六歩▲同歩△８七歩で先手が悪い。
+
+削除理由:
+- (削除なし)
+
+手数11: ▲２六飛もあるが、▲２八飛が多く指されている。
+
+削除理由:
+- 「最近は」 → ルール2
+
+手数17: ▲４八銀に比べて手広い意味合いがある。
+
+削除理由:
+- (削除なし)
+
+手数38:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は内藤２３分、土佐２１分。」 → ルール3, 1
+
+手数41: 先手からは▲６七銀上とバランスをとる駒組み、後手は△２四歩、△２三銀の銀冠にする展開が考えられる。
+
+削除理由:
+- (削除なし)
+
+手数42:
+
+削除理由:
+- 「ここで内藤が２７分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「消費時間は内藤１時間８分、土佐４５分。」 → ルール3, 1
+
+手数45: △同銀なら▲同桂と手順に攻めて、いつでも▲３三歩と打てるようになる。
+
+削除理由:
+- 「１４時を過ぎた。」 → ルール3
+- 「消費時間は内藤１時間３６分、土佐４７分。」 → ルール3, 1
+
+手数47: ▲５四銀△同歩では、攻めが収まり△３六歩の狙いが残る。
+
+削除理由:
+- (削除なし)
+
+手数50:
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は内藤１時間５４分、土佐２時間５分。」 → ルール3, 1
+
+手数56: 軽手。飛車を動かしてと金の活用を図る。
+
+削除理由:
+- (削除なし)
+
+手数58:
+
+削除理由:
+- 「１６時５０分の局面。」 → ルール3
+- 「消費時間は内藤２時間４２分、土佐２時間１９分。」 → ルール3, 1
+
+手数88:
+
+削除理由:
+- 「この局面で内藤が７分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「消費時間は内藤３時間５９分、土佐２時間４５分。」 → ルール3, 1
+
+手数104: ここで先手の投了となった。以下▲同金は△８七飛成とされ、取らずに放置すれば△５九飛成▲同玉△５八金の即詰みがある。
+
+削除理由:
+- 「内藤の」 → ルール1
+- 「消費時間は内藤３時間５９分、土佐２時間４７分。」 → ルール3, 1
+- 「勝った土佐は４勝２敗、破れた内藤は１勝５敗となった。」 → ルール4, 1

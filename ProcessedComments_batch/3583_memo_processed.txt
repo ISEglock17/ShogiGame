@@ -1,0 +1,115 @@
+**Cleaning Up My Commentary for Analysis**
+
+Right, so I'm tackling this dataset of shogi game comments. The goal is clear: I need to whip these comments into shape so they're actually useful for my analysis. It's all about extracting the *real* insights from the noise.
+
+Basically, I need to strip out all the fluff. I'm talking about the metadata that clutters things up, the intros about the players, the time stamps... all that stuff. It's distracting. I only want the gold – the actual explanations of what's happening on the board, the reasoning behind the moves, the tactical considerations.
+
+The key is to end up with a smooth, natural-sounding narrative of the game, purely focused on the strategic and tactical nuances. No more, no less. This will give me clean data I can really sink my teeth into.
+
+手数10: 相矢倉の出だしになった。
+
+削除理由:
+- 「畠山成は長らく振り飛車（特に四間飛車穴熊）を多く指していたが、最近は居飛車も指している。」 → ルール5
+
+手数18: 通常の▲７六歩△８四歩の出だしの矢倉と比べて、先手が飛車先の歩を突いており、後手が△８四歩を保留しているのが違うところ。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は野月２４分、畠山成２７分。」 → ルール3
+
+手数25: 先手は早囲い。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「この局面で野月が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲野月１時間１２分、△畠山成４６分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月１時間３３分、△畠山成１時間２６分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月１時間５４分、△畠山成２時間２分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１６時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲野月２時間１７分、△畠山成２時間４２分。」 → ルール3
+
+手数48: ▲６五歩△７三角の交換を入れることで、先手が一手得。角が６四→１九と一手で行けるところを、７三を経由している。
+
+削除理由:
+
+手数50: ８六桂は先手から▲８六歩と取ってくれれば△同歩で先手陣に脅威を与えるが、このままではお荷物になる。後手は何か駒を手に入れて７八に打ち込むような展開にしたい。
+
+削除理由:
+
+手数51: この角出があるのが、▲６五角と突いた利点。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「この局面で野月が１１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲野月３時間０分、△畠山成３時間５４分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月３時間２３分、△畠山成４時間１６分。」 → ルール3
+
+手数62: ６六角より馬の存在価値が高いとみている。
+
+削除理由:
+
+手数63: がっちりと。堅い。
+
+削除理由:
+
+手数71: 駒損になるが、歩切れの相手に歩を渡すのを嫌ったか。
+
+削除理由:
+
+手数74:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲野月４時間１４分、△畠山成４時間４２分。」 → ルール3
+
+手数77: パズルのように金が動き回る。
+
+削除理由:
+
+手数78: 竜が間接的に玉を睨んでいるので、ほどきにくい。
+
+削除理由:
+
+手数80:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月４時間４０分、△畠山成４時間４６分。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月５時間５分、△畠山成５時間２６分。」 → ルール3
+- 「この局面で野月は１８分考え、次の手を指さずに投了した。」 → ルール3
+- 「消費時間は▲野月５時間２３分、△畠山成５時間２６分。」 → ルール3
+- 「勝った畠山成は２勝２敗、敗れた野月は１勝３敗となった。」 → ルール4

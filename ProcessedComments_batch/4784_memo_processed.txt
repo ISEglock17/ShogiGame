@@ -1,0 +1,105 @@
+**Here's how I'm approaching this, leveraging my expertise in data processing and information extraction.**
+
+Okay, the user wants me to clean up and structure some Shogi game commentary. I understand the goal: to provide a streamlined, focused analysis of the moves themselves, stripping away extraneous details. This aligns with a common need in data analysis - to distill raw information into something more manageable and insightful.
+
+I've got the rules laid out clearly, and that's key. I'll need to be meticulous about applying them.  I'll immediately need to recognize and remove anything that falls under the "Deletions": personal information outside of the players, past games, time-related details, player profiles, style descriptions, location, weather, food/breaks, or anything meta about the commentary itself.  
+
+The "Replacements" are straightforward. I'll need to recognize player names and replace them with "Sente" (先手) and "Gote" (後手). Any other extraneous information needs to be ruthlessly excised, as the focus is solely on the analysis of the moves.
+
+I'll proceed systematically through the provided commentary, applying these rules diligently. The outcome will be a significantly cleaner, more focused set of comments, which will be much easier to use for further analysis or building a database of move annotations.
+
+手数1:
+
+削除理由:
+- 「屋敷伸之（やしき・のぶゆき）九段は１９７２年１月１８日生まれの３８歳。北海道札幌市出身。故・五十嵐豊一九段門下。棋士番号は１８９。」 → ルール4
+- 「８８年１０月、１６歳で四段。９０年８月に第５６期棋聖戦で史上最年少の１８歳６カ月で初タイトル棋聖位を獲得。」 → ルール4
+- 「タイトル戦登場は７回、獲得は棋聖３期。棋戦優勝は２回。順位戦は参加２２期目。Ｂ級１組は連続３期。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「鈴木大介（すずき・だいすけ）八段は１９７４年７月１１日生まれの３６歳。東京都町田市出身。大内延介九段門下。棋士番号は２１３。」 → ルール4
+- 「９４年１０月、２０歳で四段。９６年に早指し新鋭戦で棋戦初優勝。タイトル戦登場は２回。棋戦優勝はＮＨＫ杯１、早指し新鋭戦１の計２回。」 → ルール4
+- 「順位戦は１６期目。Ａ級通算４期、Ｂ級１組通算５期目。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「屋敷の本年度の成績は１１勝１２敗（０．４７８）」 → ルール4
+- 「最近１０局は６勝４敗（○●○○○●千○○●●）」 → ルール4
+- 「通算成績は６２９勝３６２敗（０．６３５）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「鈴木の本年度の成績は１０勝１３敗（０．４３５）」 → ルール4
+- 「最近１０局は４勝６敗（●○●千○●○●●○●）」 → ルール4
+- 「通算成績は３７４勝２５８敗（０．５９２）」 → ルール4
+
+手数24:
+
+削除理由:
+- 「１０時５０分頃の局面、」 → ルール3
+- 「消費時間は▲屋敷２６分、△鈴木１１分。」 → ルール3
+
+手数31: ▲３五歩ではなく▲３六歩と控えて打った。これは３五の地点に銀を進めたいということだろう。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「この局面で屋敷が２６分考えて」 → ルール3
+- 「昼食休憩に入った。」 → ルール7
+- 「消費時間は▲屋敷１時間２６分、△鈴木２８分、」 → ルール3
+- 「昼食の注文は両者とも無し。」 → ルール7
+
+手数38:
+
+削除理由:
+- 「１４時頃の局面、」 → ルール3
+- 「消費時間は▲屋敷１時間４１分、△鈴木５４分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１５時１０分頃の局面、」 → ルール3
+- 「消費時間は▲屋敷２時間７分、△鈴木１時間３１分。」 → ルール3
+
+手数47: 飛車の横利きが通ってだいぶ広くなった。しかし、同時に角を打ち込まれるスキも増えたので駒組みには気をつけなければいけない。
+
+削除理由:
+
+手数48: この歩を取ると△２七角と打ちこまれる。放っておいても△３七歩成▲同桂に△１五角▲３六飛△２七銀がある。
+
+削除理由:
+
+手数50:
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「消費時間は▲屋敷２時間３４分、△鈴木２時間１７分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲屋敷３時間２７分、△鈴木２時間１７分。」 → ルール3
+- 「この局面で鈴木が１時間１１分考えて」 → ルール3
+- 「夕食休憩に入った。」 → ルール7
+- 「消費時間は▲屋敷３時間２７分、△鈴木３時間２８分。」 → ルール3
+- 「夕食の注文は両者無し。」 → ルール7
+
+手数54:
+
+削除理由:
+- 「２０時頃の局面、」 → ルール3
+- 「消費時間は▲屋敷３時間２７分、△鈴木３時間２８分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「この局面で鈴木の投了となった。」 → ルール4
+- 「終局時刻は２１時５分、」 → ルール3
+- 「消費時間は▲屋敷４時間４４分、△鈴木４時間１２分。」 → ルール3
+- 「勝った屋敷は５勝３敗、敗れた鈴木は２勝６敗となった。」 → ルール4

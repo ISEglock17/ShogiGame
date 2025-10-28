@@ -1,0 +1,86 @@
+**Streamlining Commentary for Deep Analysis**
+
+Alright, so the user wants me to clean up these Shogi commentary transcripts. The goal is to make them suitable for in-depth analysis of the game itself.  Essentially, I need to strip out all the fluff. I'm talking about the metadata, the introductions of the players, time checks - all that stuff that's interesting in the moment but just noise when you're focusing on the moves and the board state.  My job is to extract the essence: the actual explanations of what's happening on the board, and the analysis of the moves being played. I have the specific rules and formats laid out, so I'll be going through the comments one by one, surgically removing everything that isn't directly related to the actual game and the thinking behind the moves. Let's get this done.
+
+手数7: 先手は向かい飛車を採用した。
+
+削除理由:
+- 「阪口は中飛車を得意にし、著書も出版されているが、」 → ルール1, 5
+- 「阪口」 → ルール1
+
+手数11: ▲８六歩なら△７七角成▲同銀△８六歩▲同銀△３二玉…という流れで乱戦になる。
+
+削除理由:
+
+手数13: ▲２二角成△同銀▲５三角が見えるが、△６二銀▲２六角成△４四角（飛馬両取り）で失敗。▲２六角成で▲７五角成も△８四角が王手馬取りになる。
+
+削除理由:
+
+手数20: 
+
+削除理由:
+- 「１０時３０分の局面。」 → ルール3
+- 「消費時間は阪口８分、佐藤天１４分。」 → ルール3
+
+手数22: 後手から角を交換した。
+
+削除理由:
+- 「佐藤天」 → ルール1
+- 「佐藤天はこの手に３３分考えている。」 → ルール1, 3
+
+手数24: 
+
+削除理由:
+- 「１１時４５分ごろの局面。」 → ルール3
+- 「消費時間は阪口１６分、佐藤天４７分。」 → ルール3
+- 「この局面で阪口が５４分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阪口１時間１０分、佐藤天４７分となった。」 → ルール3
+
+手数25: 「浮き駒に手あり」とばかりにダイブ。△同飛なら▲８六歩△８二飛▲８五歩とズンズン歩を伸ばしていく。
+
+削除理由:
+
+手数26: 
+
+削除理由:
+- 「３９分の長考。」 → ルール3
+
+手数28: （１）▲同歩△６四銀▲５四歩△５五銀▲７七角△８五飛▲８六歩△８四飛▲８五歩△５四飛となれば後手良し。（２）▲同角△同角▲同歩△８五飛▲８六歩△５五飛▲６六角△３三角という流れか。
+
+削除理由:
+
+手数30: 
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は阪口１時間１７分、佐藤天１時間３２分。」 → ルール3
+
+手数32: 桂を逮捕する。これで後手が良ければ話は早い。逆に言うと、先手はここで不利にならないように進めなければならない。
+
+削除理由:
+- 「阪口」 → ルール1
+
+手数41: 
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は阪口１時間５９分、佐藤天２時間３分。」 → ルール3
+
+手数51: 
+
+削除理由:
+- 「１６時３０分ごろの局面。」 → ルール3
+- 「消費時間は阪口２時間７分、佐藤天３時間２分。」 → ルール3
+
+手数54: 
+
+削除理由:
+- 「１７時４５分ごろの局面。」 → ルール3
+- 「消費時間は阪口２時間５０分、佐藤天３時間３８分。」 → ルール3
+
+手数55: 
+
+削除理由:
+- 「▲７五歩の局面で佐藤天が１８分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阪口２時間５６分、佐藤天３時間５６分。」 → ルール3
+- 「夕食の注文は阪口が五目焼きそば、佐藤天がチャーシューメン。」 → ルール7

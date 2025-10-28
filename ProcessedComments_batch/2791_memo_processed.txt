@@ -1,0 +1,164 @@
+**Refining Shogi Commentary for Data Analysis**
+
+Okay, so I'm looking at these Shogi game records, specifically the commentary attached to each move. The goal here is pretty clear: I need to clean up these comments. I'm aiming to strip out all the extraneous stuff - the metadata, the introductions, any time stamps, you know, the fluff that's not actually relevant for deep analysis of the board and the moves themselves. My thinking is, if I can isolate the *pure* commentary – the actual insights and explanations of the position – I can feed that into my data models in a much more effective way.
+
+Essentially, I'll be working in a structured two-step process. First, I need to define the rules, the criteria for what needs to go and what stays. Then, I'll systematically go through each comment, apply those rules to remove the noise. After that, I'll have a set of clean and succinct descriptions, ready to be incorporated into further data processing. It's really about ensuring the data I work with is as precise and valuable as possible.
+
+手数34:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅３３分、△南２７分。」 → ルール3, 4
+
+手数36:
+
+削除理由:
+- 「この局面で田中寅が１７分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲田中寅１時間６分、△南４７分。」 → ルール3, 4
+
+手数39:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅１時間４２分、△南４７分。」 → ルール3, 4
+
+手数40:
+
+削除理由:
+- 「３７分の考慮。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅１時間４８分、△南１時間２４分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「５３分の長考。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅２時間７分、△南２時間１８分。」 → ルール3, 4
+
+手数45:
+先手は▲２四歩を決行。
+
+削除理由:
+- 「５８分考えてついに」 → ルール3
+- 「▲２四歩」 → 指し手なので残す
+
+手数51:
+プロの将棋でこう綺麗な棒銀が見られることは少ない。
+
+削除理由:
+- 削除対象なし
+
+手数52:
+この瞬間に大技。先手もこれを警戒していたのだろう。
+
+削除理由:
+- 「田中寅も」 → 先手
+- 「長考していた」 → ルール3
+
+手数55:
+王手で両取りを受ける。
+
+削除理由:
+- 削除対象なし
+
+手数57:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅３時間２９分、△南２時間７分。」 → ルール3, 4
+- 「この局面で南が５７分考え、そのまま夕食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は▲田中寅３時間２９分、△南３時間２４分。」 → ルール3, 4
+
+手数58:
+
+削除理由:
+- 「夕食休憩を挟んで１時間１７分の長考。」 → ルール3, 7
+
+手数70:
+端攻めが炸裂か。
+
+削除理由:
+- 「夕食休憩を挟んだ長考のあと、ノータイムで南は指し続ける。」 → ルール1, 3, 7
+
+手数72:
+▲９六同歩は△８五桂で、△９七角と△７七香がある。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅３時間３８分、△南３時間５５分。」 → ルール3, 4
+
+手数73:
+逃げ場所が難しい局面。
+
+削除理由:
+- 「５０分の長考。」 → ルール3
+- 「、と検討陣」 → ルール1
+
+手数75:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅４時間３９分、△南３時間５８分。」 → ルール3, 4
+
+手数76:
+
+削除理由:
+- 「１時間７分の長考。」 → ルール3
+- 「残り１時間を切った。」 → ルール3
+
+手数78:
+後手勝勢とみられている。▲５一銀が怖いが、今のところは△３三玉で大丈夫。端攻めがきつかったのかもしれない。
+
+削除理由:
+- 「棋士室の検討陣は「南勝勢」」 → ルール1, 6
+- 「「やっぱり端攻めがきつかったと思います」と長沼七段。」 → ルール1
+- 「２２時を回った。」 → ルール3
+- 「ここまでの消費時間は▲田中寅４時間４３分、△南５時間６分。」 → ルール3, 4
+- 「田中寅はここで考えており、記録係が「残り１時間です」と告げていた。」 → ルール1, 3, 4
+
+手数84:
+先手が攻め切るのは容易ではなく、やはり後手勝勢。
+
+削除理由:
+- 「と検討陣」 → ルール1
+
+手数89:
+合駒を請求。先手玉は△７七銀以下の詰めろがかかっている。
+
+削除理由:
+- 削除対象なし
+
+手数90:
+先手は飛車取りも残っている。忙しい。
+
+削除理由:
+- 削除対象なし
+
+手数91:
+先手は首を差し出した。
+
+削除理由:
+- 「田中は長考して」 → ルール1, 3
+
+手数92:
+以下は即詰み。
+
+削除理由:
+- 削除対象なし
+
+手数98:
+この局面で先手が投了した。投了以下は▲７八合駒に△同角成▲同玉△７七金以下の即詰み。
+
+削除理由:
+- 「田中寅が」 → 先手
+- 「消費時間は▲田中寅５時間５５分、△南５時間３３分。」 → ルール3, 4
+- 「勝った南は１勝３敗、敗れた田中寅は４連敗となった。」 → ルール1, 4

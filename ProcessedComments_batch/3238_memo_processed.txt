@@ -1,0 +1,127 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. I get it - the raw data's a bit messy, filled with stuff that's interesting for the general public, but not necessarily useful for in-depth analysis. My goal here is to strip away all the fluff: the introductions, the player biographies, the time stamps... all the metadata that clutters up the real meat of the matter.
+
+What I'm after is the core of the commentary: the actual explanations of what's happening on the board, the reasoning behind each move, and the potential implications of those choices. I want the commentary to flow naturally, as if someone is walking me through the game, move by move, but without the unnecessary distractions. That way, when I'm running my algorithms or looking for patterns, I'm only dealing with the information that truly matters for understanding the game's strategy and evolution. It's about distilling the essence of the commentary, leaving behind only the pure, distilled knowledge.
+
+手数6: 後手は三間飛車に振る。
+
+削除理由:
+- 「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数16: 振り飛車党の両者の対戦は相振り飛車に。
+
+削除理由:
+- 「ここまでの消費時間は藤倉３７分、中村２０分。」 → ルール3
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数17:
+
+削除理由:
+- 「ここで中村が３２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は藤倉１時間７分、中村５２分。」 → ルール3
+- 「昼食の注文は藤倉が五目焼きそば、中村はなし。」 → ルール7
+- 「中村」「藤倉」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数18: いきなり仕掛けた。
+
+削除理由:
+- 「昼食休憩を含む３５分の考慮。」 → ルール3, 7
+
+手数20: ▲１七同香には△２五桂で、以下▲１六香には△３六飛や△３七桂不成がある。後手は香を取れば△８七香がある。▲８六歩をとがめた仕掛け。
+
+削除理由:
+- 削除対象なし
+
+手数22: △１四飛から△１八歩成が来る前に先手は手を作らなければならない。
+
+削除理由:
+- 「ここまでの消費時間は藤倉１時間２２分、中村５５分。」 → ルール3
+- 「「ずいぶん攻められてますね」と控え室。」 → ルール1, 6
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数27: 先手は必死の手作りに見える。
+
+削除理由:
+- 「と控え室」 → ルール1, 6
+
+手数28: △１八歩成が有力だったのではないか。
+
+削除理由:
+- 「と控え室」 → ルール1, 6
+
+手数29: △３四同飛なら▲６五飛が香に当たる。そこで△１八歩成の攻め合いか。
+
+削除理由:
+- 「１６時ころの局面。」 → ルール3
+- 「ここまでの消費時間は藤倉２時間３６分、中村２時間１分。」 → ルール3
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数34: △３五歩、△６二歩とおとなしく歩を受けた。後手は△１八歩成が楽しみ。
+
+削除理由:
+- 削除対象なし
+
+手数36: △７二銀では玉が狭いので、△５二金右と上がりたかった。
+
+削除理由:
+- 「と控え室の意見」 → ルール1, 6
+
+手数40:
+
+削除理由:
+- 「ここで藤倉が２７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は藤倉が４時間１分、中村が２時間５５分。」 → ルール3
+- 「夕食の注文は藤倉がチャーハン、おにぎり２個。中村がきつねうどん。」 → ルール7
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数53: お互い居玉のまま華々しい戦いになっている。後手が自信ないのではないか。
+
+削除理由:
+- 「「後手が自信ないんじゃないかな」との評判。」 → ルール1
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は藤倉４時間４１分、中村３時間５分。」 → ルール3
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数56: ▲４三角成を受けている。
+
+削除理由:
+- 削除対象なし
+
+手数58:
+
+削除理由:
+- 「消費時間は藤倉４時間４７分、中村３時間２１分。」 → ルール3
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数59: 香得を生かして４三の地点に集中砲火。
+
+削除理由:
+- 削除対象なし
+
+手数63: この一連攻めは△５二金右から△６一玉を許して変調ではないか。
+
+削除理由:
+- 「という声」 → ルール1
+
+手数76: ３六の角が遊んでいるし後手勝勢になった。
+
+削除理由:
+- 「２３時ころの局面。」 → ルール3
+- 「残り時間は藤倉１４分、中村１時間１５分。」 → ルール3
+- 「と控え室の声」 → ルール1, 6
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数90:
+
+削除理由:
+- 「藤倉は残り１分。」 → ルール3
+- 「中村は残り１時間１１分。」 → ルール3
+- 「藤倉」「中村」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数92:
+
+削除理由:
+- 「２３時３２分、９２手で中村の勝ち。」 → ルール3
+- 「勝った中村は６勝３敗、敗れた藤倉４勝４敗となった。」 → ルール4
+- 「中村」「藤倉」 → 先手・後手の実名は「先手」「後手」に置き換える

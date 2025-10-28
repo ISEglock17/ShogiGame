@@ -1,0 +1,68 @@
+**Focusing the Commentary: Stripping Down to Essentials**
+
+Alright, so the user wants me to clean up these Shogi commentary logs, right? They want something that's laser-focused on the game itself. No fluff, no extraneous chatter – just the bare bones of the analysis: the board state and the moves, explained clearly. That's the goal.
+
+My first step is going to be a granular review. I need to treat each comment as its own little unit of information. I'll have to evaluate each sentence, each phrase, on its own merits, and decide whether it's adding something significant to our understanding of the game or if it's just noise that can be discarded. I can’t be too quick to discard things, I have to be thorough.
+
+手数1:
+
+削除理由:
+- 「【野月浩貴（のづき・ひろたか）七段】」 → ルール1, 4
+- 「棋士番号２２１。１９７３年７月４日生まれ、北海道出身。勝浦修九段門下。１９８５年に奨励会入会（６級）。１９９６年１０月１日、四段。１９９８年、早指し新鋭戦優勝。２００５年４月、七段。棋戦優勝は２回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【豊川孝弘（とよかわ・たかひろ）七段】」 → ルール1, 4
+- 「棋士番号２００。１９６７年２月２０日生まれ、東京都杉並区出身。関屋喜代作七段門下。１９８２年に奨励会入会（６級）。１９９１年１０月１日、四段。２００９年３月、七段。」 → ルール4
+
+手数4: 後手は先手得意の相掛かりを受けて立った。
+
+削除理由:
+- 「豊川は」 → ルール1
+- 「野月得意の」 → ルール1, 5
+
+手数11: 引き飛車を選択。
+
+削除理由:
+
+手数22: 横歩取り△８五飛ならぬ相掛かり△８五飛。後手の有力作戦だ。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「２３時２０分頃の局面。」 → ルール3
+- 「対局開始からの消費時間は▲野月３分、△豊川０分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「２３時３５分頃の局面。」 → ルール3
+- 「対局開始からの消費時間は▲野月６分、△豊川１１分。」 → ルール3
+
+手数39: ３五から２四へ、銀の進軍を狙う。（１）△４四銀は▲２四飛、（２）△３四飛は▲５六角。３五の歩を支える手は難しそうだ。（３）△２三銀と２四の地点を受けても、▲３五銀に△３四歩とは打てない。これは先手が一本取ったか。機敏な好手だったようだ。
+
+削除理由:
+- 「※「参ったね」と豊川。」 → ルール1
+
+手数40:
+
+削除理由:
+- 「時刻はまもなく０時。」 → ルール3
+- 「対局開始からの消費時間は▲野月７分、△豊川２７分。」 → ルール3
+
+手数43: １歩得を果たして悠々引き上げる。後手はこの局面でどれだけポイントをあげられるかが勝負になりそうだ。歩損の見返りがないと、形勢を損ねることになる。急いで攻めるなら△７五歩▲同歩△７三桂が有力か。
+
+削除理由:
+
+手数46:
+
+削除理由:
+- 「０時１０分頃の局面。」 → ルール3
+- 「対局開始からの消費時間は▲野月１２分、△豊川３０分。」 → ルール3
+
+手数52: 左右両翼に利かす攻防の角。▲２三銀成に△２七歩を用意している。
+
+削除理由:

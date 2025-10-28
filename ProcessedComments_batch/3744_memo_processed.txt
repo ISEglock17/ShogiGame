@@ -1,0 +1,147 @@
+**Focusing the Analysis: Streamlining Shogi Commentary**
+
+Okay, so I need to refine these Shogi commentary snippets from game data. The goal is clear: I need to strip away all the extraneous noise – the metadata, player introductions, time stamps – and distill each comment down to its core, which is the actual analysis of the board state and the moves. Think of it like a concentrated essence of strategic insight. I'm aiming for a concise, natural sentence that captures the essence of the position and the thinking behind the move.
+
+The process is pretty straightforward. First, I’ll meticulously comb through each comment, making decisions based on a set of defined rules about what information is considered redundant. Then, I'll re-craft the remaining text into a grammatically sound, flowing sentence. Finally, I'll output it in the prescribed format: the move number followed by the re-written comment, and below it, a list explaining *why* certain parts were removed. I need to keep the audit trail so to speak, so I can explain my thinking. I'm ready to begin refining these insights.
+
+手数3: 相手の指し方によって居飛車にも振り飛車にもできる作戦。
+
+削除理由:
+- 「時おり、長沼が採用する作戦。」 → ルール1, 5
+
+手数7: ▲８八飛や▲５八飛も有力だ。
+
+削除理由:
+
+手数9: 先手は居飛車を選択。後手は２筋の歩交換が受けにくい。
+
+削除理由:
+- 「長沼は」 → ルール1
+
+手数11:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は長沼１９分、岡崎１４分。」 → ルール3, 1
+
+手数13: ▲４八銀は２八にスキができるのがマイナス点。
+
+削除理由:
+
+手数16:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は長沼２５分、岡崎４４分。」 → ルール3, 1
+
+手数17: ２筋の歩を交換するのは中央からの反撃が嫌だったか。
+
+削除理由:
+- 「▲４八銀の局面で岡崎が３１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は長沼４７分、岡崎１時間１５分。」 → ルール1, 3, 7
+
+手数22: これで２筋が受かった。
+
+削除理由:
+
+手数26: 角を持ち合った矢倉戦。いわゆる「脇システム」に似ているが、すでに角を持ち合っているので、別の将棋といえそうだ。後手はどこかで△７五歩の仕掛けを狙いたい。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は長沼１時間１２分、岡崎１時間４２分。」 → ルール1, 3
+
+手数31: こちらは受けた。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は長沼１時間５６分、岡崎２時間２７分。」 → ルール1, 3
+
+手数36: 攻めを狙った陣形。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は長沼２時間３２分、岡崎２時間３３分。」 → ルール1, 3
+- 「攻める棋風の岡崎らしく」 → ルール1, 5
+
+手数37: 先手は受け身の構え。
+
+削除理由:
+- 「長沼は」 → ルール1
+
+手数38: 後手は仕掛けた。ここで▲６五歩△同銀▲７五歩の「突き違い」の手筋は△３九角があるし、△５五歩▲同歩△同銀で△５四銀の余地を作っておけば大丈夫。そのための△４四銀だった。
+
+削除理由:
+- 「岡崎は４４分の長考で」 → ルール1, 3
+
+手数39: ▲６五歩が成立しないので、▲同歩と取った。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は長沼３時間１４分、岡崎３時間１７分。」 → ルール1, 3
+
+手数45:
+
+削除理由:
+- 「▲２四同飛の局面で岡崎が１５分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は長沼３時間２７分、岡崎３時間３５分。」 → ルール1, 3, 7
+
+手数51:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は長沼３時間５７分、岡崎３時間５５分。」 → ルール1, 3
+
+手数68:
+
+削除理由:
+- 「２０時４５分の局面。」 → ルール3
+- 「消費時間は長沼４時間１３分、岡崎４時間２４分。」 → ルール1, 3
+
+手数72: 先手は駒損して攻める展開となっている。
+
+削除理由:
+- 「駒取り坊主の長沼が」 → ルール1, 5
+
+手数81:
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「消費時間は長沼４時間４６分、岡崎４時４２分。」 → ルール1, 3
+
+手数87:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は長沼１時間７分、岡崎５３分。」 → ルール1, 3
+
+手数98:
+
+削除理由:
+- 「残り時間は長沼１時間７分、岡崎３５分。」 → ルール1, 3
+
+手数107:
+
+削除理由:
+- 「残り時間は長沼４９分、岡崎３１分。」 → ルール1, 3
+
+手数128: この局面は先手勝勢。
+
+削除理由:
+- 「と橋本七段。」 → ルール1
+
+手数129: 後手は受けが利かないため投了した。
+
+削除理由:
+- 「ここで岡崎が２分考えて投了した。」 → ルール1, 3
+- 「岡崎の投了となった。」 → ルール1
+- 「終局時刻は２３時５４分。」 → ルール3
+- 「消費時間は長沼５時間３７分、岡崎５時間４１分。」 → ルール1, 3
+- 「勝った長沼は３勝３敗、敗れた岡崎は１勝４敗となった。」 → ルール1, 4

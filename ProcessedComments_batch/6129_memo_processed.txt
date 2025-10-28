@@ -1,0 +1,108 @@
+**Processing Shogi Commentary: Focusing on the Game Itself**
+
+Alright, so the user wants me to clean up some Shogi commentary, basically stripping it down to the bare bones of the game. I get it. We want the essence, the analysis, not the fluff. I'm focusing on the rules they've given me to filter out the noise.
+
+First thing's first: anyone who isn't the player? Gone. No side discussions about commentators, no reminiscing about previous matches or historical precedents. That's clutter. Secondly, any time-related details are out. The clock is irrelevant to the flow of the moves themselves. And definitely, no background info on the players - their rank, records, anything like that. That kind of information is useful but out of scope for the current task.
+
+Basically, I'm streamlining the commentary, stripping it down to the pure mechanics of the game and the strategic thoughts behind each move.
+
+手数1:
+
+削除理由:
+- 「【金井恒太五段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｎａｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【日浦市郎八段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｈｉｕｒａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「金井の今年度成績は１１勝８敗（０．５７９）」 → ルール4
+- 「通算成績は１１０勝８０敗（０．５７９）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「日浦の今年度成績は５勝１１敗（０．３１３）」 → ルール4
+- 「通算成績は６００勝４４９敗（０．５７２）」 → ルール4
+
+手数5: 矢倉模様の立ち上がり。
+
+削除理由:
+
+手数11: 矢倉の駒組みでは金銀を斜めに上がっていく。
+
+削除理由:
+
+手数30: 右金の動きを保留したまま入城。
+
+削除理由:
+
+手数34: ここでようやく右金が動いた。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「△５一金までの消費時間は▲金井３３分、△日浦１４分。」 → ルール3
+
+手数36: 相矢倉戦では上部から攻められることが多いので、右金がこの位置にいるのは珍しい。
+
+削除理由:
+- 「この局面で金井が４５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲金井１時間３６分、△日浦１５分。」 → ルール3
+- 「対局再開は１３時。」 → ルール7
+
+手数38: １手損をして金を定位置へ。
+
+削除理由:
+
+手数45:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲４八飛までの消費時間は▲金井１時間５８分、△日浦５４分。」 → ルール3
+
+手数47: 角の利きから先に香車を逃しておく。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「▲１八香までの消費時間は▲金井２時間３９分、△日浦５６分。」 → ルール3
+
+手数60: 矢倉崩しの手筋の銀打ち。▲５七金と逃げたくなるが、△６九銀成で角が取られてしまう。
+
+削除理由:
+
+手数61: ここで△４四歩が利くかどうか。▲４八飛△６七銀成▲同金に角を逃げて、その時先手から▲３七桂〜▲４五桂といった攻めがありそうだ。単に角を逃げても▲１七桂〜▲２五桂の攻めがありそう。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「▲５五銀までの消費時間は▲金井２時間４８分、△日浦１時間３５分。」 → ルール3
+
+手数62: 後手は△８六歩と突いた。ここで▲６四銀と角を取ったりすると△８七歩成▲同金△６七銀成であっという間に必敗形だ。
+
+削除理由:
+- 「４９分の考慮で」 → ルール3
+- 「１７時ごろの局面。」 → ルール3
+- 「△８六歩までの消費時間は▲金井２時間４８分、△日浦２時間２４分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「この局面で金井が２２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「夕食休憩までの消費時間は▲金井４時間２２分、△日浦２時間２５分。」 → ルール3
+- 「対局再開は１９時。」 → ルール7
+
+手数83:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「▲６五金までの消費時間は▲金井４時間４９分、△日浦２時間５４分。」 → ルール3
+
+手数93:
+
+削除理由:
+- 「２１時３０分ごろの局面。」 → ルール3
+- 「▲５一飛成までの消費時間は▲金井５時間１５分、△日浦３時間３８分。」 → ルール3

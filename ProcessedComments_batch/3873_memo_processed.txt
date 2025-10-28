@@ -1,0 +1,173 @@
+**Focusing the Lens: Cleaning Up Shogi Commentary**
+
+Okay, so I've got a challenge here. Someone wants me to refine commentary from shogi game data. They're aiming for something very specific – they want the analytical gold, the pure tactical explanations of moves and board positions, without the extraneous noise. My task is to strip away all the fluff that's creeping in, the metadata that's clouding the core insights. Think of it like purifying a chemical compound – we're after the active ingredient, not the fillers.
+
+Essentially, I need to methodically comb through each comment. I'm focusing on getting rid of certain things:
+
+*   **Anything not directly related to the current game:** I have to weed out mentions of other players, their ranks, past games, and any related information about them that does not affect the board state.
+*   **Irrelevant data:** Time stamps are the first to go. I don't need to know how long someone took. I am only interested in their current strategy and position.
+*   **The background stuff:** Biographical information, win/loss records, or organizational details that don't help to explain each move.
+
+It's all about precision, isolating the strategic gems within the commentary, and extracting them into natural-sounding sentences for detailed game analysis.
+
+手数6: 相掛かり。
+
+削除理由:
+
+
+手数13: 受けなければ、△９五歩▲３八銀△８六歩▲同歩△同飛▲８七歩△８四飛と進む。端に２手かけていることでの駒組みの遅れが懸念されるが、後手の飛車が広く、端攻めも残っている。
+
+削除理由:
+- 「ほとんどの実戦で受けている。」 → ルール2
+
+手数17: ▲３六銀型を目指す。
+
+削除理由:
+
+
+手数22: 後手は浮き飛車に構える。
+
+削除理由:
+
+
+手数27:
+
+削除理由:
+- 「前例は１筋の端歩をお互い突いていないものも含めて１８局あり、先手の１３勝３敗２千日手と差がついている。」 → ルール2
+- 「所司も過去に２度後手を持って敗れている。」 → ルール2, 4
+
+手数28:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲稲葉１７分、△所司２７分。」 → ルール3
+
+手数30: ▲３三角成に△同銀と形よく取ることができる。
+
+削除理由:
+
+
+手数33:
+
+削除理由:
+- 「この局面で所司が２８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲稲葉４８分、△所司１時間０分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲稲葉１時間２８分、△所司１時間１４分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲稲葉２時間１３分、△所司１時間２８分。」 → ルール3
+
+手数46: 先手は▲８八玉まで囲いたい。そのつもりで▲６六角と上がったのだろう。後手は△３一玉〜△４二金右のあとに指す手が難しいようだ。△２二玉は角の利きに入ってしまう。例えば▲６九玉△３一玉▲７九玉△４二金右▲８八玉△６四歩と戦いを起こしてリードを奪えるかどうか。
+
+削除理由:
+- 「、と棋士室にいる宮本三段と大石三段」 → ルール1, 6
+
+手数47: 先手は銀を上がった。これは▲７五歩と突いていこうという意味だろう。△３一玉に▲７五歩に（１）△同歩は▲７四歩〜▲８六銀〜▲７五銀が残る。（２）△８四角に▲７四歩は、△６六角▲同銀△８六歩▲７五銀△８七歩成▲８三歩△同飛▲８四歩△７八と▲８三歩成。これは先手がやりすぎたか。△８四角に▲７六銀△７二飛…という展開も考えられるが、６六角が浮くのでやりづらいかもしれない。もちろん▲７五歩と突っかけずに玉を寄っていくのも考えられるが、本譜の形だと角が狭いので▲７七銀を保留するのも有力だった。
+
+削除理由:
+- 「稲葉は」 → （「先手は」に置換）
+- 「「これは▲７五歩と突いていこうという意味だと思います」と宮本三段・大石三段。」 → ルール1
+- 「これは「先手がやりすぎました」。」 → ルール1
+
+手数48: 後手は飛車を回った。これは先手も玉を寄っていく暇はないかもしれない。
+
+削除理由:
+- 「４１分考えて」 → ルール3
+- 「稲葉も」 → （「先手も」に置換）
+- 「１６時２０分頃の局面。」 → ルール3
+- 「消費時間は▲稲葉２時間２０分、△所司２時間２７分。」 → ルール3
+
+手数56: △同飛は▲７四銀。
+
+削除理由:
+
+
+手数58:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲稲葉２時間４３分、△所司３時間０分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「この局面で稲葉が１７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲稲葉３時間１９分、△所司３時間２６分。」 → ルール3
+
+手数69: 桂馬で取られるのを防いで逃げた。
+
+削除理由:
+
+
+手数71:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲稲葉３時間４０分、△所司３時間５７分。」 → ルール3
+
+手数73: 飛車取り。駒得だが成銀が遊び、玉が薄い先手。怖い局面だ。後手もここは慎重に指したい。
+
+削除理由:
+- 「所司もここは慎重に時間を使っている。」 → ルール3
+
+手数78: ▲６五桂を防いだ。
+
+削除理由:
+
+
+手数81: この香打ちに期待。先手は▲４六馬が切り札になればいいのだが。
+
+削除理由:
+
+
+手数86: 馬取りの「逆先」。
+
+削除理由:
+- 「２１時を回った。」 → ルール3
+- 「ここまでの消費時間は▲稲葉３時間４９分、△所司４時間４２分。」 → ルール3
+- 「隣で指されていた王座戦一次予選・有吉九段−脇八段戦は先ほど終局した。」 → ルール1, 2
+
+手数91: 歩が打てないので（６筋も７筋も二歩になる）意外と受けにくい。
+
+削除理由:
+
+
+手数93: べったりと。△６二金なら▲６四歩がある。
+
+削除理由:
+
+
+手数94: というわけで、上から。
+
+削除理由:
+
+
+手数99: これは寄ったのでは、と見られている。
+
+削除理由:
+- 「検討陣は「これは寄ったのでは」。」 → ルール1
+
+手数103: △同歩なら、▲５三金。２二香が壁形でたたっている。
+
+削除理由:
+
+
+手数105: △同金は▲６二金の一手詰。
+
+削除理由:
+
+
+手数107: 後手が投了した。以下、△同金▲６二金打△４一玉▲５二金寄△３二玉▲４二金打△同銀▲同金寄△３三玉▲４三金引まで。▲２七香△２二香の交換がものすごく利いている。
+
+削除理由:
+- 「ここで所司が投了した。」 → （「後手が投了した。」に置換）
+- 「消費時間は▲稲葉４時間１分、△所司５時間１０分。」 → ルール3
+- 「勝った稲葉は３勝２敗、敗れた所司は１勝３敗となった。」 → ルール4

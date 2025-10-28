@@ -1,0 +1,95 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up these comments that come with Shogi game data. They want me to follow specific rules and process each comment associated with a move.
+
+The goal here is pretty clear: they want to filter out all the fluff. I need to get rid of the stuff that's not actually about the game itself - the introductions, the player biographies, the timestamps, all that extraneous meta-data. Basically, I'm aiming to transform each comment into a concise, natural sentence that focuses solely on the board position and the explanation of the move being played. That's the core of what needs to be delivered.
+
+手数1:
+
+削除理由:
+- 「島本は過去の順- 位戦では出だしから２連勝の経験もなかったが、今期は４連勝。」 → ルール4
+- 「一躍台風の目になっている。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「西尾は関東奨励会の幹事。」 → ルール1, 4
+- 「島本は将棋連盟の小学生向けの教室で講師を務めている。」 → ルール1, 4
+- 「二人とも早くから後進の指導にも目を向けている。」 → ルール1, 4
+
+手数8: ２４手組をはじめとする矢倉の出だしだが、後手が変化球。
+
+削除理由:
+- 「西尾」 → ルール1
+
+手数14: 後手は右四間飛車に構えた。
+
+削除理由:
+- 「西尾」 → ルール1
+
+手数17: 雁木の形で受け止める。
+
+削除理由:
+- 削除対象なし
+
+手数20:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本３８分、△西尾２５分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「この局面で西尾が３１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は両者とも５９分。」 → ルール3
+
+手数27: ５筋で力をためる。▲６八飛と相手の攻めを全面的に受けるよりも、６筋をかわしながら徐々に争点をずらしていくほうがいいと見ている。
+
+削除理由:
+- 削除対象なし
+
+手数29: ▲８六銀や▲６八銀は△８八角成▲同金△６六歩と押し込まれる。銀桂交換の駒損にはなるが、後手の攻め駒を押し戻すことを主眼に置いた。
+
+削除理由:
+- 削除対象なし
+
+手数35:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本１時間１１分、△西尾１時間１２分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「４７分の長考で突き出した。」 → ルール3
+
+手数38: △６六歩の効果で、飛車先が軽くなっている。居飛車が戦いの前に▲２四歩△同歩と突き捨てておくのと同じような感覚だ。
+
+削除理由:
+- 削除対象なし
+
+手数39: ▲５五同金は△６七銀がある。
+
+削除理由:
+- 削除対象なし
+
+手数47: 歩切れなので力強く受けた。
+
+削除理由:
+- 削除対象なし
+
+手数52: 先手はかなり受けにくい形のようだ。
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「日は高いがのっぴきならない局面だ。」 → ルール6
+- 「消費時間は▲島本１時間１８分、△西尾２時間３５分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「この局面で島本が投了した。」 → ルール1
+- 「消費時間は▲島本１時間２０分、△西尾２時間５４分。」 → ルール3
+- 「勝った西尾は２勝３敗、敗れた島本は４勝１敗となった。」 → ルール1, 4

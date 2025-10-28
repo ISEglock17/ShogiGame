@@ -1,0 +1,141 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I'm presented with a Shogi game's commentary data, and my goal is to refine it. I need to take these often-verbose comments and strip them down to their core analytical value.  I'm basically trying to get to the heart of the game's explanation, removing all the unnecessary noise.
+
+My thought process is this: First, I have to identify the parts that aren't critical to understanding the board state or the moves themselves. That means things like introductions of the players, time elapsed, perhaps even some contextual "fluff" that's interesting but doesn't *add* to the actual game analysis. I'll need to develop a set of clear rules to define what's relevant and what's extraneous.
+
+Then, with the core commentary isolated, the next step is to make it flow smoothly. It's about taking those fragments of analysis and stitching them together into a coherent, natural-sounding explanation of the board and the moves. The goal is to create a succinct, clear narrative that a Shogi expert could quickly digest and use for their own analysis. This refined commentary becomes the foundation for deeper exploration of the game's strategy.
+
+手数1:
+
+削除理由:
+- 「上野の今期成績は１３勝１１敗（０．５４２）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「村田智の今期成績は９勝１３敗（０．４０９）。」 → ルール4
+
+手数4: 一手損角換わりを選択。
+
+削除理由:
+
+手数6:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野０分、△村田１５分。」 → ルール3
+
+手数13: 先手は腰掛け銀模様に組んでいる。
+
+削除理由:
+- 「上野」 → 置換ルール
+
+手数20:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５７分、△村田２２分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「ここで上野は９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲上野１時間２３分、△村田３５分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１３時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野１時間３９分、△村田３９分。」 → ルール3
+
+手数34: 後手は玉を６二へ持っていこうとしている。
+
+削除理由:
+- 「村田」 → 置換ルール
+- 「この指し方は村田の師匠・淡路仁茂九段が得意としていた。」 → ルール1, 2
+- 「１４時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野１時間５６分、△村田１時間１７分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野２時間５２分、△村田１時間２１分。」 → ルール3
+
+手数40: 先手が▲７七桂〜▲６五歩を狙っているので、６二へ玉を持ってこないで金を寄った。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１７時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野３時間３８分、△村田２時間９分。」 → ルール3
+
+手数46: 玉を中住まいにおさめて、バランスのいい陣形になった。
+
+削除理由:
+- 「ここで上野は８分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲上野４時間２４分、△村田２時間３７分。」 → ルール3
+
+手数50: 後手のカウンター。▲６七銀なら△７五歩▲同歩△７六歩がある。
+
+削除理由:
+
+手数53: 先手は桂損を甘受した。その代わり、後手は歩切れになった。
+
+削除理由:
+- 「上野」 → 置換ルール
+
+手数58:
+
+削除理由:
+- 「１９時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野４時間３８分、△村田２時間４８分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５時間０分、△村田３時間１８分。」 → ルール3
+
+手数66: 先手の飛車先を止めて、▲２二歩成を受けた。
+
+削除理由:
+
+手数75: ▲６七金右だと△６五歩▲５七銀と駒が下がってしまう。
+
+削除理由:
+
+手数78:
+
+削除理由:
+- 「２１時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５時間２６分、△村田３時間５９分。」 → ルール3
+
+手数82: △６五桂は▲５六桂の反撃を食う。
+
+削除理由:
+
+手数88: 次に△４七銀を狙う。
+
+削除理由:
+
+手数93:
+
+削除理由:
+- 「２２時４５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５時間５２分、△村田４時間２５分。」 → ルール3
+
+手数102: 後手は寄せに出た。▲８八玉には△４六馬、▲６九玉は△４七銀。
+
+削除理由:
+- 「村田」 → 置換ルール
+
+手数106: ここで先手は投了した。▲４六同飛は△７九角で先手玉は詰むし、放っておいても△７九角がある。
+
+削除理由:
+- 「上野」 → 置換ルール
+- 「消費時間は▲上野５時間５９分、△村田５時間６分。」 → ルール3
+- 「勝った村田は４勝５敗、敗れた上野は５勝４敗となった。」 → ルール4

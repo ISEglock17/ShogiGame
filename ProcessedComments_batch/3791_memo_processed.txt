@@ -1,0 +1,105 @@
+**Focusing the Commentary: My Approach to Cleaning Up Shogi Commentary**
+
+Okay, so the user wants me to clean up Shogi commentary, basically stripping out all the fluff and getting down to the bare bones of what's important for understanding the game.  I get it - they want the essence, the analysis, without the distractions of introductions, time checks, or irrelevant details.
+
+My process will be straightforward. I'll need to go through each comment, one by one, and apply the rules the user has outlined. This means identifying the parts that are purely about the board position and the moves, and then axing everything else.  I'll then reshape what's left into something that flows naturally, making sure the core analysis is presented clearly. Finally, I'll output the result according to whatever format they've specified.  Essentially, I'm performing a Shogi comment surgical procedure, removing the unnecessary tissue to reveal the pure analytical muscle underneath.
+
+手数2: なんと後手は、大一番にとんでもない秘策を用意していた。後手にとっては経験値が高い形。
+
+削除理由:
+- 「田村」 → ルール1
+- 「最近では２月２４日のＮＨＫ杯予選で連続で採用している。順位戦では昨年１１月の糸谷五段戦で採用。その糸谷五段は今日は隣で稲葉四段と対局している。」 → ルール1, 2, 6
+- 「データベースで見ると田村の他に豊川六段の名前が目立つ。」 → ルール1, 2
+
+手数3:
+
+削除理由:
+- 「２１分の考慮。」 → ルール3
+- 「山本も昨年８月のＣ２・佐藤（紳）六段戦で△３二金を指している。」 → ルール1, 2
+
+手数9: 先手は敢然と２手目△３二金を咎めにいった。
+
+削除理由:
+- 「居飛車党の山本だが、」 → ルール1, 5
+
+手数10: 早くも前例のない戦いになっている。
+
+削除理由:
+- 「」 →
+
+手数12:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２９分、△田村２０分。」 → ルール3
+
+手数22: 銀冠まで組めれば、２手目△３二金の面影も違和感がなくなっている。
+
+削除理由:
+- 「」 →
+
+手数23:
+
+削除理由:
+- 「この局面で田村が６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本５１分、△田村１時間６分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「昼食休憩の比較的早い時点で田村は対局室に戻っていた。記者が棋譜を返しに対局室に入ると、田村は自分の席で考えていた。入れ違いに田村の師匠・大内九段の姿。しかし大内九段は局面だけを見に来たつもりだったのか。田村が考えている様子が目に入ると、ふすまを開け切らず数センチの隙間から対局室をしばらく伺うと、室内に入ることなく立ち去った。」 → ルール1, 6, 7
+
+手数26: 藤井システムで見られるような角出。４六の歩を狙うというよりも、６四や７三に引いて使おうとしている。
+
+削除理由:
+- 「」 →
+
+手数31:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間１９分、△田村１時間３０分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間３３分、△田村２時間９分。」 → ルール3
+
+手数44: 王手銀取りがかかった。
+
+削除理由:
+- 「」 →
+
+手数45:
+
+削除理由:
+- 「１２分の考慮。」 → ルール3
+- 「まさかうっかりというわけではないだろうが…。」 →
+
+手数49: 玉側の香車を取れて、バランスが取れているということだろうか。
+
+削除理由:
+- 「」 →
+
+手数50:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間２分、△田村２時間３４分。」 → ルール3
+
+手数66: 後手勝勢と見られている。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間５２分、△田村２時間４９分。」 → ルール3
+- 「両者の指し手が早い。」 →
+- 「田村」 → ルール1
+
+手数78: 以下▲６七玉に△６九龍▲７七玉△６八龍まで。先手はここで投了した。
+
+削除理由:
+- 「山本」 → ルール1
+- 「消費時間は▲山本２時間５３分、△田村２時間５１分。」 → ルール3
+- 「勝った田村は８勝２敗、敗れた山本は３勝７敗となった。」 → ルール4
+- 「田村はＣ級１組への昇級が決定。山本は他の結果次第で降級点の可能性が残っている。」 → ルール4

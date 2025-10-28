@@ -1,0 +1,93 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff – the metadata, player intros, time stamps, you name it – and leave behind only the pure, concise explanations of the board state and the moves being made. Essentially, I'm aiming for the core strategic insights, the "why" and the "how" of each play, presented as natural, flowing sentences.
+
+My process will be straightforward: I'll go through each comment, one by one. I'll need to meticulously analyze each piece of text and apply the given rules to identify and remove all the irrelevant bits. Once the noise is gone, the signal needs to shine. I'll then massage the remaining information into grammatically sound and logically coherent sentences. This means I'll be focusing on streamlining the language, ensuring clarity, and making sure the explanations make sense on their own, even without the original context. This careful, methodical process is key to extracting meaningful insights from this data.
+
+手数1:
+
+削除理由:
+- 「◆野月　浩貴（のづき　ひろたか）七段◆」 → ルール1, 4
+- 「１９７３年７月４日生まれ、北海道出身。勝浦修九段門下。１９９６年、四段。２００５年、七段。棋士番号は２２１。」 → ルール4
+- 「棋戦優勝は２回。」 → ルール4
+手数2:
+
+削除理由:
+- 「◆豊川　孝弘（とよかわ　たかひろ）七段◆」 → ルール1, 4
+- 「１９６７年２月２０日生まれ、東京都杉並区出身。関屋喜代作八段門下。１９９１年、四段。２００９年、七段。棋士番号は２００。」 → ルール4
+手数3:
+
+削除理由:
+- 「野月の通算成績は３６５勝２７８敗（勝率０．５６８）。」 → ルール4
+- 「昨年度成績は１５勝１３敗（０．５３６）。」 → ルール4
+- 「本年度成績は１１勝１３敗（０．４５８）。」 → ルール4
+手数4:
+
+削除理由:
+- 「豊川の通算成績は４２２勝３４６敗（勝率０．５５０）。」 → ルール4
+- 「昨年度成績は１２勝１３敗（０．４８０）。」 → ルール4
+- 「本年度成績は１３勝１３敗（０．５００）。」 → ルール4
+手数11: 深く引く。またも相掛かり▲２八飛戦法となった。
+
+削除理由:
+- 「野月の得意とする戦法だ。」 → ルール5
+手数22: 後手も８五飛型へ進める。
+
+削除理由:
+- 「前回の対戦と同じ、」 → ルール2
+手数26:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「△７三桂までの消費時間は▲野月１２分、△豊川２０分。」 → ルール3
+手数29:
+
+削除理由:
+- 「１２時１０分、ここで豊川が３２分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲野月５８分、△豊川１時間１分。」 → ルール3
+- 「昼食の注文はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+- 「ここから動かず、１４時を迎えた。」 → ルール3, 7
+手数37: 手持ちの角を使う序盤の勝負手ながら、少考で放たれた。
+
+削除理由:
+- 「４分の」 → ルール3
+手数39: 一歩取りつつ、▲２三角成の先手。間接的に王も利きに入っているため、桂を持てば▲４四桂と打つ筋も残る。この角が働いていると見て、手持ちの角を使った。
+
+削除理由:
+- 「野月は」 → ルール1
+手数41: ▲１四歩△同歩▲１二歩△同香▲２四歩△同歩▲１二角成の筋が狙いとなる。
+手数42: 飛車を引き、先手が目標としている１、２筋への転換を準備した。
+手数43:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「▲７七銀までの消費時間は▲野月１時間１９分、△豊川２時間２９分。」 → ルール3
+手数46: 玉の転換。攻められている方から遠ざかる自然な手だが、三段目に上がると力強さを感じる。
+手数49:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「▲６七金右までの消費時間は▲野月１時間３５分、△豊川３時間９分。」 → ルール3
+手数50:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「△２四歩までの消費時間は▲野月１時間３５分、△豊川３時間３２分。」 → ルール3
+手数52: 時間差の△３九角。飛車当たりにはならないが、その分取られる心配も薄い。△４八角成を見せて焦らせている。
+手数55: 手を作りたい先手は端をからめた。△１四同歩には（１）▲１二歩△同香▲２二歩成△同金▲同飛成△同銀▲１二角成か、（２）▲１三歩△同香▲１二歩と垂らし、▲１一歩成〜▲２一とを狙うのか。
+手数56: この桂跳ねが△３九角の真の狙いだったのだろう。次は△５七桂成がある。
+手数71: 急所の攻め。後手玉は薄いので、攻め合いで勝つことは困難だ。受けて体を入れ替える機会をうかがうか、あるいは２八の馬で駒を拾ってから受けに回るか。
+
+削除理由:
+- 「１８時１０分、ここで豊川が１６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲野月２時間３５分、△豊川４時間１４分。」 → ルール3
+- 「夕食の注文はなし。」 → ルール7
+- 「対局再開は１９時。」 → ルール7
+手数81:
+
+削除理由:
+- 「ここで豊川が投了した。」 → ルール1
+- 「終局時刻は１９時１１分。」 → ルール3
+- 「消費時間は▲野月２時間３６分、△豊川４時間２０分。」 → ルール3
+- 「勝った野月七段は６勝４敗、敗れた豊川七段は３勝７敗になった。」 → ルール1, 4

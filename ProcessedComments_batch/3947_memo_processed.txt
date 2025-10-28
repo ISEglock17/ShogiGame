@@ -1,0 +1,99 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I understand the task here. The user, who likely understands shogi deeply, wants to refine the commentary they're working with. It seems they have data from shogi games, but it includes extra bits and pieces – the kind of commentary that *isn't* directly about the board state or the moves themselves. They want clean, fluent text.
+
+My job is to remove those extraneous pieces and give them back natural language, probably something they can incorporate into an analysis or study.
+
+The input is structured as commentary spanning multiple moves, so I'll need to break it down.
+
+**Here's my plan:**
+
+1.  **Iterate through each move's commentary individually.** This will be the foundational unit of my processing.
+2.  **For each move, I'll analyze it sentence-by-sentence.** This granular approach is important for precision.
+3.  **This is where the magic happens: the cleanup.** I'll use a set of defined "**deletion rules**" to identify and remove the unwanted parts of the commentary.
+4.  **Finally, I will do some simple name substitutions:** "金井" and "長岡" need to become "先手" and "後手" respectively. This will give them a generic feel.
+
+That should do the trick! Let's get to work and deliver that clean, concise commentary.
+
+手数30:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は金井３時間３９分、長岡３時間５９分。」 → ルール3, 4
+
+手数36:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は金井４時間９分、長岡４時間１５分。」 → ルール3, 4
+
+手数40:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は金井１時間２７分、長岡１時間３０分。」 → ルール3, 4
+
+手数51:
+
+削除理由:
+- 「２２時４５分ごろの局面。」 → ルール3
+- 「残り時間は金井１時間１分、長岡５８分。」 → ルール3, 4
+
+手数56:
+
+削除理由:
+- 「２３時２０分ごろの局面。」 → ルール3
+- 「残り時間は金井４５分、長岡３４分。」 → ルール3, 4
+
+手数67:
+
+削除理由:
+- 「０時の局面。」 → ルール3
+- 「残り時間は金井２４分、長岡３０分。」 → ルール3, 4
+
+手数75: 居飛車が優勢のようだ。△４七歩成と成り捨てるのではつらい。
+
+削除理由:
+- 「０時２０分の局面。」 → ルール3
+- 「残り時間は金井１５分、長岡２１分。」 → ルール3, 4
+
+手数85:
+
+削除理由:
+- 「０時４０分の局面。」 → ルール3
+- 「残り時間は金井４分、長岡１７分。」 → ルール3, 4
+
+手数95:
+
+削除理由:
+- 「１時の局面。」 → ルール3
+- 「残り時間は金井２分、長岡７分。」 → ルール3, 4
+
+手数120:
+
+削除理由:
+- 「１時２５分の局面。」 → ルール3
+- 「すでに両者１分将棋。」 → ルール3
+- 「長岡は「いやー」とうめき声を上げて歩を払った。」 → ルール1
+
+手数136:
+
+削除理由:
+- 「１時４０分の局面。」 → ルール3
+
+手数141: 終盤は金をはがすのが寄せのポイント。「金なし将棋に受けてなし」という格言がある。
+
+削除理由:
+
+手数146: 後手は銀を７一に打った。
+
+削除理由:
+- 「１時５０分の局面。」 → ルール3
+- 「長岡は「いやー」とうめきながら」 → ルール1
+
+手数149: 後手はここで投了した。以下、△同玉▲８五桂打で詰み筋だ。
+
+削除理由:
+- 「終局時刻は１時５１分。」 → ルール3
+- 「消費時間はともに５時間５９分。」 → ルール3
+- 「勝った金井は２勝０敗、敗れた長岡は１勝１敗となった。」 → ルール4

@@ -1,0 +1,104 @@
+**Cleaning Up Game Analysis Commentary**
+
+Okay, so I'm looking at this dataset of Shogi game records and the user wants me to do a bit of a cleanup job on the commentary associated with each move.  The goal here is pretty clear: extract the valuable stuff, the actual insights into the game, and get rid of all the noise.  This means stripping out the metadata – things like who's playing, how long each move took, general introductions, maybe even repetitive phrases that clog up the text.
+
+I need to focus on just the pure game analysis:  explanations of the board state, tactical insights, and direct commentary on the moves themselves.  I want to end up with a smooth, concise narrative that's easy to read and focused on the key strategic and tactical aspects of each position. It is crucial the resultant information reads like naturally flowing human analysis. This will make the data much more useful for future study and analysis.
+
+手数11: 近年は少なくなった▲２六飛型。
+
+削除理由:
+- 「近年は」 → ルール2
+
+手数19:
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「消費時間は松本７分、上野１７分。」 → ルール3, 1
+
+手数26: 先手の引き飛車には浮き飛車、先手の浮き飛車には引き飛車で対抗するのが相掛かりのコツ。
+
+削除理由:
+
+手数31: 相腰掛け銀となった。
+
+削除理由:
+
+手数37:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は松本１７分、上野１時間１０分。」 → ルール3, 1
+
+手数38: △４一玉▲８七銀△３一玉と穏やかに駒組みすると、作戦負けになりやすい。主張点を作りにいく。
+
+削除理由:
+- 「△３五歩の局面で松本が２６分使って昼食休憩に入った。」 → ルール7, 3, 1
+- 「消費時間は松本４３分、上野１時間１０分。」 → ルール3, 1
+
+手数44: このあたりは定跡化されている。
+
+削除理由:
+
+手数48: ３筋の歩交換はどちらが得したのだろうか。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は松本５４分、上野１時間５１分。」 → ルール3, 1
+
+手数53: ▲３七桂と跳ねられるようにして局面のバランスを取る。５六銀は攻めではなく、▲６六歩〜▲６七銀と守りに使うことも考えられる。
+
+削除理由:
+
+手数55:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は松本１時間２８分、上野２時間３分。」 → ルール3, 1
+
+手数56:
+
+削除理由:
+- 「１時間４分の長考で指された。」 → ルール3
+
+手数57:
+
+削除理由:
+- 「１５時４５分ごろの局面。」 → ルール3
+- 「消費時間は松本１時間５１分、上野３時間４分。」 → ルール3, 1
+
+手数58: 後手は角を利かした。△４六銀が見えている。ここで▲５五銀は△同銀▲同角に△８五歩▲同歩△同飛の十字飛車を食いそうだ。
+
+削除理由:
+- 「１７時３０分過ぎの局面。」 → ルール3
+- 「消費時間は松本１時間５１分、上野４時間２５分。」 → ルール3, 1
+- 「上野は１時間１８分の長考で」 → ルール1, 3
+- 「ここで松本が３８分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は松本２時間２９分、上野４時間２５分となった。」 → ルール3, 1
+
+手数63:
+
+削除理由:
+- 「２０時１５分ごろの局面。」 → ルール3
+- 「消費時間は松本３時間２６分、上野４時間３８分。」 → ルール3, 1
+
+手数81: 逃げては押さえ込まれると見て、切り飛ばした。固さを生かそうとしている。
+
+削除理由:
+- 「エイヤと」 → 自然な文章に整形
+
+手数87:
+
+削除理由:
+- 「２１時２０分の局面。」 → ルール3
+- 「消費時間は松本３時間４０分、上野５時間１７分。」 → ルール3, 1
+
+手数116: 以下▲同玉△７五桂▲同歩△７六銀と追って詰む。
+
+削除理由:
+- 「終局時刻は２２時３６分。」 → ルール3
+- 「消費時間は松本４時間１分、上野５時間５７分。」 → ルール3, 1
+- 「勝った上野は５勝３敗、敗れた松本は３勝５敗となった。」 → ルール1, 4

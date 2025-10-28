@@ -1,0 +1,39 @@
+=== バッチの最終結果: batches/ur2ilsypelqpkrsatkwol4sp31lppgrbob18 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "3115",
+  "response": {
+    "responseId": "8wP5aJePOr2wqtsPu-HSsQM",
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "promptTokensDetails": [
+        {
+          "tokenCount": 4173,
+          "modality": "TEXT"
+        }
+      ],
+      "totalTokenCount": 5179,
+      "thoughtsTokenCount": 67,
+      "promptTokenCount": 4173,
+      "candidatesTokenCount": 939
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "thought": true,
+              "text": "**Cleaning Up Game Annotations**\n\nOkay, so I'm looking at this dataset of Shogi game annotations. My goal here is to streamline them – get rid of all the noise, the extraneous bits, and leave behind only the pure, insightful commentary on the game itself.  I need to strip out all the fluff that's not directly related to the board state or the moves being made. Think things like pre-game introductions, player biographies, even the clock information. All that metadata has to go.  I'm focusing on the actual *analysis* of the moves and the positions, presenting that as natural language. That's the core of what I want to achieve here. Now, I need to figure out the best way to actually *do* this... the first step...\n"
+            },
+            {
+              "text": "手数14: 先手はまだ態度をはっきりさせていない。後手は藤井システムを含みにまだ玉を動かさない。\n\n削除理由:\n- 「１１時の局面。」 → ルール3\n- 「消費時間は淡路３０分、高崎１３分。」 → ルール3\n\n手数20:\n\n削除理由:\n- 「ここで淡路が１８分考えて昼食休憩に入った。」 → ルール3, 7\n- 「消費時間は淡路１時間３７分、高崎２０分。」 → ルール3\n\n手数28: 飛車を回った。単に△同歩▲同銀△６四歩のような展開だと居飛車にだけ歩を持たれて主張を通されることになる。\n\n削除理由:\n- 「１時間２分の長考で」 → ルール3\n\n手数30:\n\n削除理由:\n- 「１４時４０分を過ぎた。」 → ルール3\n- 「消費時間は淡路１時間５５分、高崎１時間３１分。」 → ルール3\n\n手数31: 玉頭戦になりそうな気配なので、金銀を上がって手厚く構えたい。\n\n削除理由:\n- （なし）\n\n手数36:\n\n削除理由:\n- 「１６時の局面。」 → ルール3\n- 「消費時間は淡路２時間２６分、高崎２時間２０分。」 → ルール3\n- 「この局面のまま淡路が２時間１５分考えて夕食休憩に入った。」 → ルール3, 7\n- 「消費時間は淡路４時間４１分、高崎２時間２０分。」 → ルール3\n\n手数42: 飛車を逃げず角を使う。▲６四角△同角としても意外に飛車の打ち込む場所がない。▲４一飛なら△３二銀打で飛車が捕獲され、▲２二飛でも△３二銀打から△５五角を狙われる。\n\n削除理由:\n- （なし）\n\n手数47:\n\n削除理由:\n- 「２０時２０分の局面。」 → ルール3\n- 「消費時間は淡路３時間５８分、高崎３時間１１分。」 → ルール3\n\n手数61:\n\n削除理由:\n- 「２１時３０分の局面。」 → ルール3\n- 「消費時間は淡路５時間８分、高崎４時間９分。」 → ルール3\n\n手数66:\n\n削除理由:\n- 「某棋士「形勢は別にして淡路ペースでは」」 → ルール1\n\n手数74:\n\n削除理由:\n- 「思いきり指がしなる手つきがモニターに映った。」 → ルール8\n\n手数77:\n\n削除理由:\n- 「２３時１５分の局面。」 → ルール3\n- 「消費時間は淡路５時間５１分、高崎４時間５７分。」 → ルール3\n\n手数82: 龍の捕獲完了。\n\n削除理由:\n- （なし）\n\n手数88: 派手な戦いになったがこれで駒の損得はなし。\n\n削除理由:\n- （なし）\n\n手数91:\n\n削除理由:\n- 「高崎はかなり気合を入れた手つき、淡路は軽い手つきで応じる。」 → ルール（盤面に関係ない情報）\n\n手数93: 飛車取りを受けた。△２八龍▲同金△６六飛の両取りが厳しそうだ。\n\n削除理由:\n- 「・・・」 → （整形）\n\n手数96:\n\n削除理由:\n- 「予想通り、高崎は指をしならせて飛車を打ちつけた。」 → ルール（盤面に関係ない情報）\n\n手数98:\n\n削除理由:\n- 「高崎は駒音高そうな手つきで指し続けている。」 → ルール（盤面に関係ない情報）\n\n手数110: ここで先手の投了となった。以下▲同金△３八龍以下の詰みとなる。\n\n削除理由:\n- 「淡路」 → （置換）\n- 「勝った高崎は３勝２敗、敗れた淡路は２勝３敗となった。」 → ルール4"
+            }
+          ],
+          "role": "model"
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ]
+  }
+}

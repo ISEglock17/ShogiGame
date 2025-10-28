@@ -1,0 +1,66 @@
+**Let's Get These Shogi Comments Formatted**
+
+Okay, so the user wants me to clean up these Shogi commentary snippets. Sounds like a straightforward task. They've provided a set of rules, which I'll be sure to follow meticulously.
+
+Here's what I see:
+
+1.  **Comment 1:** Seems like a biographical note on Sasaki Yuki, a fourth dan player, with a URL to the Shogi Association's page. I'll need to parse this, extract the relevant information (player name, rank, possibly a short description), and scrub the URL. I'll need to decide how best to represent this information given the format requirements.
+2.  **Comment 2:**  Same deal here, but for Nakaza Makoto, a seventh dan player.  Apply the same parsing strategy. Need to be consistent with how I handle the player name, rank, and URL.
+3.  **Missing Comment:** Hm, looks like there should be another comment, but it's empty. I'll need to account for this omission and handle it gracefully, probably by inserting a placeholder or an empty line, depending on the agreed-upon output format.
+
+I'm starting to formulate a plan in my mind to use regex and string manipulation to efficiently process these comments. Consistency and accuracy will be key. I'll make sure the final output is well-structured and easy to read. Let's get this done!
+
+手数1:
+
+削除理由:
+- 「佐々木勇気四段のプロフィール。」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓａｓａｋｉ―ｙ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「中座真七段のプロフィール。」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｙｕｕｚａ．ｈｔｍｌ」 → ルール8
+
+手数3: ▲５八金右は居飛車を明示する手。相居飛車なら矢倉、角換わりを狙っている。後手の得意とする横歩取りを避ける意味がありそうだ。
+
+削除理由:
+- 「中座」 → 置換ルール
+
+手数18: 後手は腰掛け銀から飛車を振って右四間飛車の作戦。
+
+削除理由:
+- 「中座」 → 置換ルール
+
+手数23: 先手は一度上がった銀を中央に繰り替えるようだ。後手の右四間飛車をしっかり受け止めてしまえば、手損は問題ないということのようだ。
+
+削除理由:
+- 「佐々木」 → 置換ルール
+
+手数35:
+
+削除理由:
+- 「２０時過ぎ、▲１六歩までの消費時間は▲佐々木２時間５３分、△中座４時間２０分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「２１時頃、▲８五歩までの消費時間は▲佐々木３時間１７分、△中座４時間４９分。」 → ルール3
+
+手数97: 厳しい挟撃。例えば△４二金寄と逃げようものなら、▲２二竜△同玉▲２九香以下詰みが生じる。
+
+削除理由:
+- 削除対象なし
+
+手数102: 形勢は先手勝勢と見られているようだ。
+
+削除理由:
+- 「控室には佐々木四段の師匠でもある石田和雄九段が来ている。」 → ルール1, 6
+- 「「▲９七歩△同飛成▲８八銀なんていうのも手堅い勝ち方ですけどね。佐々木君はそうは指さないでしょう。▲２五香とかね、そういう手で決めるんじゃないかな」（石田九段）」 → ルール1
+
+手数113: 先手玉は鉄壁で、後手陣は２筋が受からず望みがない。
+
+削除理由:
+- 「残り１分まで考えて中座は投了を告げた。」 → ルール3
+- 「終局時刻は２３時３分、消費時間は▲佐々木３時間４７分、△中座５時間５９分。」 → ルール3
+- 「佐々木は２連勝、中座は２連敗となっている。」 → ルール4

@@ -1,0 +1,134 @@
+**Cleaning Up Those Pesky Shogi Game Comments**
+
+Okay, so I've got this task, and it's something I've dealt with a million times in my work: I need to whip these Shogi game comments into shape. The user wants me to go through this data and make it actually useful for analysis. It's that classic problem of having all this great information, but it's buried under a pile of noise.
+
+The goal here is crystal clear: strip away all the extraneous stuff - the metadata, the introductions, the time stamps... all the fluff that just gets in the way. I need to get down to the meat and potatoes: the real insights about the board position and the specific move being made.
+
+Essentially, I see this as a two-step process. First, I have to be a bit ruthless. I'll need to develop, or apply, well-defined rules to identify what needs to go and then just *get rid of it*. The stuff that's left will be pure gold - the strategic justifications, the tactical analysis, the key observations. Then, and this is where it gets really interesting, I'll need to finesse the remaining content into coherent, naturally flowing sentences. I'll need to ensure that the comments make sense to anyone, and are useful, regardless of their skill level.
+
+手数1:
+
+削除理由:
+- 「◆土佐　浩司（とさ　こうじ）八段◆」 → ルール1, 4
+- 「１９５５年３月３０日生まれ、新潟県南魚沼市出身。（故）清野静男八段門下。１９７６年、四段。２０１４年、八段。棋士番号は１２４。」 → ルール1, 4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆井出　隼平（いで　じゅんぺい）四段◆」 → ルール1, 4
+- 「１９９１年５月３日生まれ、神奈川県横浜市出身。田丸昇九段門下。２０１６年、四段。棋士番号は３０５。」 → ルール1, 4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「土佐の今年度成績は３勝１８敗（０．１４３）」 → ルール4
+- 「通算成績は６６０勝６９１敗（０．４８９）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「井出の今年度成績は１５勝１５敗（０．５００）」 → ルール4
+- 「通算成績は１５勝１５敗（０．５００）」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「サーバートラブルのため、東西ともに手入力での中継となります。リアルタイム中継局はモバイル中継局の５局になり、他の対局は１時間ごとを目安に更新します。」 → ルール8
+- 「また、対局準備のため、東京の対局は開始時間が遅れることになりました。ご不便をおかけしますが、ご了承ください。」 → ルール6, 8
+
+手数10: 後手は角道を止めた、昔ながらの振り飛車を採用。
+
+削除理由:
+- 「井出は」 → ルール1
+
+手数29: 先手は端を受けてから穴熊を目指した。
+
+削除理由:
+- 「土佐は」 → ルール1
+
+手数50:
+
+削除理由:
+- 「現局面までの消費時間は▲土佐２４分、△井出１６分。」 → ルール3
+
+手数52: 角道クローズ型の四間飛車と穴熊の戦いは、減少傾向にある。現局面で▲４五飛は△６五歩とされ、次に△３三桂を狙われる。
+
+削除理由:
+- 「「懐かしい将棋ですね」と千葉六段。」 → ルール1
+- 「藤井システムの登場や石田流や中飛車の人気の高まりとともに、」 → ルール5
+
+手数54:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「１２時、ここで昼食休憩に入った。」 → ルール7
+- 「消費時間は▲土佐１時間１３分、△井出３７分。」 → ルール3
+- 「対局再開は１２時４０分。」 → ルール7
+
+手数63: 細かい動きで揺さぶってから、角頭を攻めた。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「現局面までの消費時間は▲土佐１時間３３分、△井出１時間１５分。」 → ルール3
+
+手数71: △２三歩は▲３三歩成が手筋だ。△３三同桂は▲２三飛成、△３三同飛は▲４四飛。
+
+削除理由:
+- 「「△２三歩は▲３三歩成がザ・手筋です」（千葉六段）」 → ルール1
+
+手数73: 居飛車穴熊が十分に見える。△６二銀と引いているので、△６五歩は突きにくい。フライング気味だが、△９五歩▲同歩△８五桂として△７三銀を見るのかもしれない。
+
+削除理由:
+- 「１３時４０分ごろの局面。」 → ルール3
+- 「「居飛車穴熊が十分に見えます。△６二銀と引いているので、△６五歩は突きにくいですね。フライング気味ですが、△９五歩▲同歩△８五桂として△７三銀を見るのかもしれません」（千葉六段）」 → ルール1
+
+手数80: 飛車交換になった。▲３三歩成からの手順はさわやかだ。先手はじっくり指すのもあっただろう。
+
+削除理由:
+- 「現局面までの消費時間は▲土佐１時間４５分、△井出１時間２７分。」 → ルール3
+- 「「▲３三歩成からの手順はさわやかですね。先手はじっくり指すのもあったと思います」（千葉六段）」 → ルール1
+
+手数87:
+
+削除理由:
+- 「１４時４５分ごろの局面。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「現局面までの消費時間は▲土佐１時間５２分、△井出２時間２２分。」 → ルール3
+
+手数92: 次に△６九とが厳しいので、先手は忙しい。後手は金銀４枚の銀冠が心強い。
+
+削除理由:
+
+手数93:
+
+削除理由:
+- 「１５時３５分ごろの局面。」 → ルール3
+
+手数96: ５一にかわす。△７一銀だと▲６一香成から▲７一成香が金取りになった。△５一銀なら、▲６一香成から銀を取られても脅威を軽減できる。
+
+削除理由:
+
+手数98: タダのところだが、▲４二同竜なら、竜ににらまれていた後手の大駒が楽になる。５二の歩も、竜の横利きを遮る邪魔駒だ。
+
+削除理由:
+
+手数104: 両取りをかけたが、▲５五角は△５八とから駒損を回復される。▲６二成香は△５四金で、やはり△５八とが楽しみ。先は長いは、形勢は後手優勢だ。
+
+削除理由:
+- 「ここで土佐が投了した。」 → ルール1
+- 「終局時刻は１６時４分。」 → ルール3
+- 「消費時間は▲土佐２時間２３分、△井出２時間５１分。」 → ルール3
+- 「勝った井出は５勝５敗、敗れた土佐は０勝１０敗でリーグ戦を終了。井出は自力で降級点回避を決めた。」 → ルール4

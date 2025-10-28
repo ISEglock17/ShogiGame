@@ -1,0 +1,159 @@
+**Focusing the Analysis: Streamlining Game Commentaries**
+
+Okay, so I'm presented with a fascinating task: cleaning up and refining the comments found within Shogi game data. I see the goal clearly - to distill these comments down to their essential core. My primary focus is on preserving insightful explanations of the board state and the player's moves, while removing the extraneous "fluff" that clutters the information.
+
+My approach will be methodical. First, I'll need to define clear rules for identifying and discarding irrelevant information. This means methodically removing things like metadata, any introductory information, player biographies or commentary that's about timings. Once I've filtered out all of that extra stuff, my next challenge will be to reorganize the remaining text, ensuring it flows naturally and maintains its explanatory value. Basically, I want to end up with a smooth, concise, and focused commentary that supports in-depth game analysis.
+
+手数8: 一手損角換わり。
+
+削除理由:
+
+---
+手数15: 先手は棒銀を選択。
+
+削除理由:
+- 「福崎」 → 先手（置換ルール）
+
+---
+手数16:
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎１２分、飯島１７分。」 → ルール3
+
+---
+手数35:
+
+削除理由:
+- 「ここで飯島は２２分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は福崎４７分、飯島１時間５分。」 → ルール3
+
+---
+手数37: △３五歩と位を取る手を防いだ。
+
+削除理由:
+- 「ここで▲脇八段−△小林裕六段戦と違う将棋になった。」 → ルール1, 2
+
+---
+手数39:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎１時間８分、飯島１時間４１分。」 → ルール3
+
+---
+手数44:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎１時間１５分、飯島２時間３４分。」 → ルール3
+
+---
+手数45:
+
+削除理由:
+- 「飯島が考慮中に１６時を迎えた。」 → ルール3
+- 「ここまでの消費時間は福崎１時間１８分、飯島２時間３４分。」 → ルール3
+
+---
+手数46: 角換わりによく出てくる角打ち。これで先手の仕掛けを封じれば、後手の作戦勝ちになる。
+
+削除理由:
+
+---
+手数48:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎１時間２９分、飯島３時間４６分。」 → ルール3
+
+---
+手数50: 上部に手厚く組んだ。
+
+削除理由:
+
+---
+手数52: 後手から仕掛けたが、先手も備えているところだけにうまくいくのだろうか？
+
+削除理由:
+
+---
+手数53: 決戦に備えて入城。
+
+削除理由:
+
+---
+手数54:
+
+削除理由:
+- 「福崎はここで１９分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は福崎２時間３６分、飯島４時間１６分。」 → ルール3
+
+---
+手数59:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎２時間５９分、飯島４時間３７分。」 → ルール3
+
+---
+手数60: △５一玉の角の詰めろ。最悪、４三の金との交換か。
+
+削除理由:
+
+---
+手数65: 角を犠牲にして端から攻める。以下△６一玉▲９三歩成△４二飛で後手の駒得が大きく、良さそうだ。
+
+削除理由:
+
+---
+手数69: こう受けるしかない。
+
+削除理由:
+
+---
+手数71:
+
+削除理由:
+- 「２０時４５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は福崎３時間１１分、飯島５時間６分。」 → ルール3
+
+---
+手数80: 香を釣り上げて端を弱体させる。
+
+削除理由:
+
+---
+手数83: ８五の桂を取ろうとするが、ここで後手が決めに出るだろう。
+
+削除理由:
+- 「飯島」 → 後手（置換ルール）
+
+---
+手数84: 決めに出た。
+
+削除理由:
+
+---
+手数87: 飛車を見捨てた。
+
+削除理由:
+
+---
+手数90: 一気の寄せを目指す。
+
+削除理由:
+
+---
+手数94: ▲同玉に△９九飛で寄り。
+
+削除理由:
+
+---
+手数96: ▲８九香は△８八歩で受けにならないし、▲８九銀も△９八金で受けが利かない形になる。
+
+削除理由:
+- 「福崎はここで１１分考えたが、何も指さず投了した。」 → ルール3, 7
+- 「終局時刻は２１時５０分。」 → ルール3
+- 「消費時間は福崎３時間３０分、飯島５時間５２分。」 → ルール3
+- 「勝った飯島は６勝３敗、敗れた福崎は３勝６敗となった。」 → ルール4

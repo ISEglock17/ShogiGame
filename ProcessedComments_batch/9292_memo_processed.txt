@@ -1,0 +1,150 @@
+**My Approach to Refining Shogi Game Commentaries**
+
+Okay, so I'm tasked with cleaning up these comments associated with shogi game data. The goal is clear: I need to transform these messy ramblings into clear, concise, and focused analyses of the board and the moves themselves. My expert eye will be essential here. I see the potential for valuable insights hidden within the noise, and it's my job to bring them to light.
+
+Essentially, I'll be working through the comments, discarding anything that doesn't directly contribute to understanding the position or the reasoning behind a particular move. That means all the extra fluff – the meta-commentary, biographical details, timestamps – those are the first things to go. I'm after the core strategic and tactical explanations.
+
+Once I've stripped away the unnecessary bits, the real work begins. I'll need to smooth out the language, ensuring the remaining analysis reads like a coherent and insightful explanation. This will take experience, and a deep understanding of the game's subtleties. My goal is that, after my work, any shogi expert could pick up the refined comments and instantly grasp the key points of the game.
+
+手数1:
+
+削除理由:
+- 「◆阿部　光瑠（あべ　こうる）六段◆」 → ルール1, 4
+- 「１９９４年１０月２５日生まれ、青森県弘前市出身。」 → ルール4
+- 「中村修九段門下。」 → ルール1, 4
+- 「２０１１年、四段。２０１５年、六段。」 → ルール4
+- 「棋士番号は２８３。」 → ルール4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆大平　武洋（おおひら　たけひろ）六段◆」 → ルール1, 4
+- 「１９７７年５月１１日生まれ、東京都北区出身。」 → ルール4
+- 「桐谷広人七段門下。」 → ルール1, 4
+- 「２００２年、四段。２０１６年、六段。」 → ルール4
+- 「棋士番号は２４３。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「阿部の通算成績は１６９勝９８敗（勝率０．６３３）。」 → ルール4
+- 「本年度成績は２１勝１５敗（０．５８３）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「大平の通算成績は２１３勝２３３敗（勝率０．４７８）。」 → ルール4
+- 「本年度成績は５勝１８敗（０．２１７）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「サーバートラブルのため、東西ともに手入力での中継となります。リアルタイム中継局はモバイル中継局の５局になり、他の対局は１時間ごとを目安に更新します。」 → ルール8
+- 「また、対局準備のため、東京の対局は開始時間が遅れることになりました。ご不便をおかけしますが、ご了承ください。」 → ルール6, 8
+
+手数15: 相掛かりになった。
+
+削除理由:
+
+手数25: 先手はひねり飛車模様。
+
+削除理由:
+
+手数30:
+
+削除理由:
+- 「△３三玉までの消費時間は▲阿部１２分、△大平３５分。」 → ルール3
+
+手数32: 後手は玉を２二まで囲った。
+
+削除理由:
+
+手数37: ２度目の▲２四歩から、横歩を取った。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+
+手数41: 飛車が動き回る。
+
+削除理由:
+
+手数44: 後手は穴熊を目指した。
+
+削除理由:
+
+手数53: 次は▲４一角が両取りになる。
+
+削除理由:
+
+手数54: 先手は手を作れそうな局面かもしれない。
+
+削除理由:
+- 「１２時、ここで昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲阿部３４分、△大平１時間１５分。」 → ルール3
+- 「昼食注文は両者ともなし。」 → ルール7
+- 「対局は１２時４０分に再開される。」 → ルール3, 7
+- 「と、対局立会人の千葉幸生六段。」 → ルール1
+
+手数62: 裏を取る形で、戦いが始まった。
+
+削除理由:
+
+手数66: ガンガン攻める。
+
+削除理由:
+
+手数69: △７八角成▲同飛△６七飛成を食らってはいけない。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「△８四飛までの消費時間は▲阿部５８分、△大平１時間３１分。」 → ルール3
+
+手数74: 意外とバランスが取れているのかもしれない。
+
+削除理由:
+- 「１３時４０分頃の局面。」 → ルール3
+- 「と千葉六段。」 → ルール1
+
+手数90:
+
+削除理由:
+- 「△８八角までの消費時間は▲阿部１時間４０分、△大平１時間５９分。」 → ルール3
+
+手数91: 急所のライン。穴熊の３三金を狙っている。
+
+削除理由:
+
+手数92:
+
+削除理由:
+- 「１４時３０分頃の局面。」 → ルール3
+
+手数93: この一手で竜と角が利いてくる。
+
+削除理由:
+
+手数97: 端攻めを敢行。
+
+削除理由:
+
+手数102: 角のにらみを止めた。
+
+削除理由:
+
+手数118: 後手がよさそうだ。後手玉の攻略が大変なためだ。
+
+削除理由:
+- 「という中継室の評判。」 → ルール1, 6
+
+手数126:
+
+削除理由:
+- 「ここで阿部が投了した。」 → ルール4
+- 「終局時刻は１５時２５分。」 → ルール3
+- 「消費時間は▲阿部２時間１５分、△大平２時間１８分。」 → ルール3
+- 「勝った大平、敗れた阿部はともに３勝７敗で今期の順位戦を終えた。」 → ルール4

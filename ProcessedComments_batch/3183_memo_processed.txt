@@ -1,0 +1,95 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up these Shogi game comments. The goal is clear: strip away all the fluff and keep only the insightful bits that actually relate to the board and the moves. Think of it like a highly-focused data cleanse, where I'm leaving the rich analytical insights while tossing out anything that won't help us with our game analysis.
+
+Here's the plan I've come up with. First, I need to understand what's considered "noise" based on clear rules. This will involve pinpointing and eliminating comments that don't add value to the understanding of the game.
+
+手数11: 相振り飛車を思わせる出だしだったが、先手は居飛車へ。
+
+削除理由:
+- 「木下」 → ルール1
+
+手数17:
+
+削除理由:
+- 「１０時５５分ごろの局面。」 → ルール3
+- 「消費時間は木下７分、高崎２３分。」 → ルール3
+
+手数18: 後手は三間飛車から穴熊へ。
+
+削除理由:
+- 「高崎」 → ルール1
+
+手数19: 先手は７筋位取り。
+
+削除理由:
+- 「木下」 → ルール1
+
+手数31: 先手は銀立ち矢倉といわれる陣形。
+
+削除理由:
+
+手数34: 穴熊を完成させた後手は積極的に動いていく。
+
+削除理由:
+- 「高崎」 → ルール1
+
+手数38:
+
+削除理由:
+- 「△２二角の局面で木下が２８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は木下５７分、高崎５６分。」 → ルール3
+
+手数39: 「振り飛車には角交換」。本局の場合、振り飛車陣が穴熊で偏った駒組みなので、なおさら角交換は居飛車有利。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は木下１時間６分、高崎１時間３４分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１５時半ごろの局面。」 → ルール3
+- 「消費時間は木下１時間３２分、高崎２時間。」 → ルール3
+
+手数51: するすると銀を活用していく。
+
+削除理由:
+
+手数55: ４つも位を取る。
+
+削除理由:
+
+手数56: 固めるだけ固めていよいよ決戦。
+
+削除理由:
+
+手数62: 振り飛車党なら覚えておきたい手筋の一手。この突き捨てをいれておけば、△３六飛▲３七歩に△４六飛と横にさばける。
+
+削除理由:
+
+手数65:
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は木下２時間３分、高崎３時間１１分。」 → ルール3
+
+手数70: 穴熊でさらに駒得になった。
+
+削除理由:
+
+手数71: △８六香を消すが、これではつらい。
+
+削除理由:
+
+手数74: △５五歩は攻めの筋で、▲同歩なら△５六歩▲同金△２九馬のような攻め筋が厳しい。
+
+削除理由:
+- 「木下はこの局面で７分考えて投了した。」 → ルール1, 3
+- 「終局時刻は１７時４分。」 → ルール3
+- 「消費時間は木下２時間１０分、高崎３時間２４分。」 → ルール3
+- 「勝った高崎は５勝４敗、敗れた木下は３勝６敗となった。」 → ルール4

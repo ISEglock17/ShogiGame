@@ -1,0 +1,99 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: a user wants me to clean up comments from Shogi game data. The goal is to strip away all the fluff and irrelevant information, leaving only the essential, insightful commentary about the board state and the moves being made. Essentially, I need to distill the essence of the commentary into a coherent, helpful narrative for someone analyzing the game.
+
+My plan of attack is pretty straightforward. First, I'll need to define clear rules for what constitutes "unnecessary information." This is critical. Once I've got that criteria locked down, the second step, the actual implementation, will be a breeze, just follow the rules in removing what's not needed. It's all about precision and focus, separating the wheat from the chaff.
+
+手数10: △３２銀と指した。
+
+削除理由:
+- 「６分考えての」 → ルール3
+
+手数13: ▲７八金ではなく▲６七金だと先手は早囲いにする余地がある。
+
+削除理由:
+- なし
+
+手数18: 早囲いを目指す一手。
+
+削除理由:
+- なし
+
+手数23: 先手は後手の早囲いをすんなり組ませてしまうのはつまらないので、何か動きを見せるだろう。
+
+削除理由:
+- 「ここまでの消費時間は▲畠山３２分、△飯塚２４分。」 → ルール3, 4
+
+手数26:
+
+削除理由:
+- 「ここで昼食休憩となった。」 → ルール7
+- 「ここまでの消費時間は▲畠山３７分、△４３分。」 → ルール3, 4
+
+手数27: 後手の早囲いが完成する前に良さを求めに行く。
+
+削除理由:
+- なし
+
+手数30: 何もせずに囲っていると先手に▲４六角〜▲３六銀と駒を据えられ作戦負けになってしまう。
+
+削除理由:
+- なし
+
+手数35: 角の逃げ道を聞く。ただ後に△６四歩から反発されるマイナスもある。
+
+削除理由:
+- なし
+
+手数40: 先手に攻めの好形を作られているが、後手にも△６四歩からの争点があり攻め合いが望める形である。
+
+削除理由:
+- なし
+
+手数44: 後手が狙っていた反発をついに決行。
+
+削除理由:
+- 「控え室では糸谷五段ー今泉三段の練習将棋を指し盛り上がっている。」 → ルール1, 6
+
+手数45: ▲同歩と取ってしまうと△同角と取られ後手の駒をさばかせてしまう。なので先手からはこの歩を取らないで指す。
+
+削除理由:
+- なし
+
+手数52: そっぽに行くようだが、銀を前に出さないと後手の桂馬がさばけない。
+
+削除理由:
+- なし
+
+手数55: 先受け。ここで金を引いておかないと後手に△６五桂と跳ねられ７七の銀が取られてしまう。
+
+削除理由:
+- なし
+
+手数57: ６五の位は取られているが、先手も１筋の位を取り２五桂からの攻めが見せられる。ただ後手に駒を渡し６六の地点に打ち込まれ、殺到される順を気をつけて攻めなければならない。
+
+削除理由:
+- 「ここで夕食休憩となった。」 → ルール7
+- 「ここまでの消費時間は▲畠山成３時間４９分、△飯塚３時間２分。」 → ルール3, 4
+
+手数63:
+
+削除理由:
+- 「２０時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成４時間１６分、△飯塚３時間５６分。」 → ルール3, 4
+
+手数70: 悩ましい歩。先手の応手はどちらがいいのだろうか。▲同歩だと△５四角と打ち▲３八飛に△７五銀とでて勝負か。
+
+削除理由:
+- 「控え室の検討では」 → ルール1, 6
+- 「とのこと」 → ルール1
+
+手数80: 歩ではなく金を打ちプレッシャーをかける。
+
+削除理由:
+- なし
+
+手数82: 自陣には手をかけず攻め合いに行く。
+
+削除理由:
+- なし

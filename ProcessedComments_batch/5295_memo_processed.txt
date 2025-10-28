@@ -1,0 +1,141 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to clean up these comments that come with Shogi game records. They're looking for a streamlined version, basically focusing just on the board state and the moves themselves. My job is to weed out all the extraneous fluff that gets in the way of a proper analytical session. I get it - we want the meat, not the garnish.
+
+Here's the approach: I'm going to systematically remove anything that isn't directly relevant to the game's evolution. That means:
+
+*   **No Personal Details:** I'm ditching any mention of players beyond their moves - no names, ranks, or which dojo they belong to. That stuff's nice for context, but it's not crucial to the moves themselves.
+*   **No History Lessons:** Any comments about previous games or general precedent? Out. We're interested in *this* game, right now. No need for historical tangents.
+*   **Time Is Irrelevant:** All time-related information, be it clock readings or thought durations, is gone. It's interesting, sure, but it's not essential for understanding the actual positions and moves. I'm focusing on the *what* and the *why*, not the *when*.
+*   **(Pending Final Rule):** I'll be keeping an eye out for any further cleaning rules that come my way, I will be sure to action those too.
+
+Essentially, I'm transforming the comments into pure, digestible commentary on the chess positions and the moves made, ensuring the focus remains squarely on the game's strategic and tactical elements.
+
+手数1:
+
+削除理由:
+- 「田中寅彦（たなか・とらひこ）九段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔａｎａｋａ―ｔ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「窪田義行（くぼた・よしゆき）六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｕｂｏｔａ．ｈｔｍｌ」 → ルール4, 8
+
+手数4:
+手数4: 出た、４手目△３三角戦法。後手の得意戦法のひとつ。
+
+削除理由:
+- 「窪田」 → 置換ルール
+
+手数5:
+
+削除理由:
+- 「田中の今期成績は１勝２敗（０．３３３）。」 → ルール4
+- 「通算成績は７２２勝５８９敗（０．５５１）。」 → ルール4
+
+手数6:
+
+削除理由:
+- 「窪田の今期成績は２勝７敗（０．２２２）。」 → ルール4
+- 「通算成績は３１１勝２７２敗（０．５３３）。」 → ルール4
+
+手数9:
+手数9: △３三角にわれ関せず、飄々と駒組みを進めていく。プロは△３三角に▲同角成と取る実戦が圧倒的に多いため、珍しい進行になった。
+
+削除理由:
+
+手数14:
+
+削除理由:
+- 「１１時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中１３分、△窪田１９分。」 → ルール3
+
+手数21:
+手数21: 居飛車穴熊へ。
+
+削除理由:
+- 「田中がこの戦法を指したことで、居飛車穴熊はプロ棋界に定着していったと言われる。」 → ルール2, 5
+
+手数26:
+手数26: 後手は淡々と駒組みを進め、すんなり穴熊に組ませた。穴熊に組まれてしまうと作戦負け、とよく言われるが、本局の後手は角道を止めていないのがポイント。このラインを生かして、うまく作戦を立てていきたい。
+
+削除理由:
+
+手数27:
+
+削除理由:
+- 「１２時１０分、この局面で窪田が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田中１時間６分、△窪田４６分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中１時間８分、△窪田１時間９分。」 → ルール3
+
+手数34:
+手数34: 左銀の理想的な活用。６筋に位を張り、駒の偏った穴熊を中央から押さえ込む。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中２時間１９分、△窪田１時間２１分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中２時間３０分、△窪田２時間１５分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中３時間１４分、△窪田２時間３２分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１８時１０分、この局面で窪田が１３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田中３時間３６分、△窪田３時間１３分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１９時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中３時間３６分、△窪田３時間１７分。」 → ルール3
+- 「１９時５０分頃、控室に半袖のワイシャツ姿で窪田がヌッと現れ、部屋をひと通り見回して去っていった。」 → ルール1, 3, 6
+
+手数68:
+
+削除理由:
+- 「２０時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中４時間２８分、△窪田３時間２７分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「２１時５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中５時間８分、△窪田３時間３３分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２１時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中５時間１８分、△窪田３時間４８分。」 → ルール3
+
+手数106:
+
+削除理由:
+- 「２２時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中５時間４８分、△窪田４時間０分。」 → ルール3
+
+手数122:
+手数122: 後手玉に詰みはなく、先手玉は受けなし。
+
+削除理由:
+- 「ここで田中が投了を告げた。」 → ルール8
+- 「終局時刻は２２時５２分、消費時間は▲田中５時間５８分、△窪田４時間７分。」 → ルール3

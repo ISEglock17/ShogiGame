@@ -1,0 +1,121 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got a user who wants me to clean up shogi match commentary. They want to strip away all the fluff – the metadata, player introductions, time stamps – you know, the stuff that's not directly related to the actual game analysis. The goal here is to get down to the bare bones: the board positions, the moves, and the essential explanations behind those moves. That's the real meat of the analysis, and that's what needs to be preserved in a coherent, flowing narrative. This makes perfect sense; as an expert, I know how distracting all that extraneous information can be when you're trying to really dive deep into the strategic nuances of a game. I need to make sure I understand the precise rules for this, so I can provide the output they expect.
+
+手数4: 後手は端を受けた。
+
+削除理由:
+- 「中田は」 → 置換ルール
+- 「１２分の考慮で」 → ルール3
+
+手数5: 先手は左の端歩を突く。微妙な駆け引き。
+
+削除理由:
+- 「窪田は」 → 置換ルール
+- 「１４分考えて」 → ルール3
+
+手数6: あくまで受ける。
+
+削除理由:
+- 該当なし
+
+手数8: 攻撃力の高い指し方。２筋や１筋を狙っている。
+
+削除理由:
+- 該当なし
+
+手数11:
+
+削除理由:
+- 「この局面で中田が４６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は窪田４７分、中田１時間１５分。」 → ルール3
+
+手数12: 指されたのは△５二金右。後手は居飛車になりそうだ。
+
+削除理由:
+- 「昼食休憩後に」 → ルール7
+
+手数13:
+
+削除理由:
+- 「４９分の長考で指された。」 → ルール3
+
+手数14: 序盤早々から三段目に金が出るのは珍形。異様な雰囲気の局面になった。
+
+削除理由:
+- 該当なし
+
+手数15:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は窪田１時間３７分、中田１時間１８分。」 → ルール3
+
+手数23: 先手は変則的な立石流の構えになった。
+
+削除理由:
+- 該当なし
+
+手数29: △８五歩を阻止する。
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は窪田２時間１分、中田１時間４７分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「３８分の長考。」 → ルール3
+
+手数34: 後手は銀冠に組む。
+
+削除理由:
+- 「中田は」 → 置換ルール
+
+手数37: ▲８六歩とした効果で、後手は△８四飛と７筋交換を防げない。
+
+削除理由:
+- 該当なし
+
+手数44: 終盤で効果を発揮する位取り。
+
+削除理由:
+- 該当なし
+
+手数48:
+
+削除理由:
+- 「１６時半の局面。」 → ルール3
+- 「消費時間は窪田２時間２０分、中田２時間４７分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「３３分の長考。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は窪田２時間４３分、中田３時間２７分。」 → ルール3
+- 「ここで中田が４３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は窪田２時間４３分、中田４時間１０分。」 → ルール3
+
+手数61: 先手は千日手模様を打開。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は窪田３時間３分、中田４時間３６分。」 → ルール3
+- 「窪田は」 → 置換ルール
+
+手数70:
+
+削除理由:
+- 「２１時１０分ごろの局面。」 → ルール3
+- 「消費時間は窪田３時間１７分、中田５時間２５分。」 → ルール3
+
+手数89:
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は窪田２時間２２分、中田１４分。」 → ルール3

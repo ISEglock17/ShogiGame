@@ -1,0 +1,67 @@
+**Structuring Shogi Game Commentary**
+
+Okay, so I understand the task. The user wants me to process shogi game commentaries and format them according to their specifications. Seems straightforward. I'll need to parse each comment based on the provided rules. Let's see...  Here's what I've got to work with:
+
+*   **Comment 1:**  "手数1: 【小-林の公式戦成績】 通算＝６７０勝６８３敗（０．４９５） 昨年度＝１２勝１９敗（０．３８７） 本年度＝２勝８敗（０．２００）"
+
+I'll need to break this down. It starts with "手数1," which presumably indicates the move number. Then we have a title or description: "【小-林の公式戦成績】" (Official game record of Ko-Bayashi). After that, we have various statistics:  total record, last year's record, and this year's record, each presented with wins, losses, and win percentages. I'll need to figure out the best way to present this information according to the desired format, perhaps by creating distinct fields for each statistic. I'll make sure to extract each data element effectively.
+
+手数1:
+
+削除理由:
+- 「【小-林の公式戦成績】 通算＝６７０勝６８３敗（０．４９５） 昨年度＝１２勝１９敗（０．３８７） 本年度＝２勝８敗（０．２００）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【吉田の公式戦成績】 通算＝１０３勝９６敗（０．５１８） 昨年度＝１４勝１７敗（０．４５２） 本年度＝３勝５敗（０．３７５）」 → ルール4
+
+手数25:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「▲３五歩までの消費時間は▲小林２分、△吉田４６分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１２時１０分。」 → ルール3
+- 「この局面で吉田が３５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「▲６五歩までの消費時間は▲小林９分、△吉田１時間４８分。」 → ルール3
+- 「対局は１３時に再開される。」 → ルール3, 7
+
+手数36:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「△３四銀までの消費時間は▲小林３１分、△吉田２時間１７分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「△７四歩までの消費時間は▲小林５７分、△吉田２時間５２分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「△３五歩までの消費時間は▲小林１時間１８分、△吉田３時間２５分。」 → ルール3
+
+手数62: 飛車を取り合う激しい順になった。先手が勝勢とみられている。▲４七歩もしくは▲７九玉で後手に手段がなさそうだ。▲７九玉に△５九飛▲８八玉△５五飛成は、▲５三歩と垂らして後手に適当な受けはない。
+
+削除理由:
+- 「１７時の局面。」 → ルール3
+- 「△３六角までの消費時間は▲小林１時間３１分、△吉田４時間７分。」 → ルール3
+- 「中継室では」 → ルール6
+
+手数69: 後手が投了した。
+
+削除理由:
+- 「この局面で吉田が１分使って投了した。」 → ルール3
+- 「終局時刻は１７時３０分。」 → ルール3
+- 「消費時間は▲小林２時間２分、△吉田４時間９分。」 → ルール3
+- 「勝った小林は１勝３敗、敗れた吉田は１勝２敗となった。」 → ルール4
+- 「※局後の感想※」 → ルール8
+- 「「序盤の組み合わせがまずく、△３四銀（３６手目）と立ったのも意味がなかったですね」と吉田。」 → ルール1
+- 「「今日は快勝でした。ようやく初白星です」と小林。」 → ルール1

@@ -1,0 +1,151 @@
+**Cleaning Up Commentary for Deep Analysis**
+
+Okay, so I'm tackling this dataset of Shogi game comments. The goal, as I understand it, is to get down to the bare bones – the *essential* elements. We're talking pure, distilled commentary about the board and the moves themselves. Think of it like stripping away all the noise to reveal the signal.
+
+The project is all about streamlining these comments for deeper analysis, and the process is pretty straightforward, at least in theory. I'll need to go through each comment, one by one, and make a decision: "Is this information about the game, or is it just fluff?"  Anything that's not directly related to the *current* state of the board or the specific move being discussed? Gone. I'm talking metadata, player introductions, time stamps...all non-essential to the actual *tactics* and *strategy*.
+
+Once I've purged the comments of all that clutter, the remaining text needs a bit of polishing. My understanding is that the goal is to have the remaining pieces of commentary form natural sentences that a human could still read, even if not the original author. So, some basic grammar cleaning and perhaps rephrasing will be necessary to ensure smooth reading and comprehension. The aim is to make the insights easily accessible.
+
+手数10: 矢倉模様の駒組み。
+
+削除理由:
+- 「両者居飛車党。」 → ルール5
+
+---
+手数25: ▲６八角なら森下システムとなるところ。
+
+削除理由:
+
+---
+手数26: ▲３五歩△同歩▲同角に△３六歩の反撃を用意した定跡手。
+
+削除理由:
+
+---
+手数33: △４五歩▲３七銀△５三銀には▲４八飛△４四銀右▲４六歩や単に▲４六歩で先手十分。
+
+削除理由:
+- 「今から１５〜１６年くらい前から増えてきた指し方。」 → ルール2
+
+---
+手数35: 現在主流の形。
+
+削除理由:
+
+---
+手数43: 
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は村田智２１分、所司１５分。」 → ルール3, 1
+
+---
+手数44: 作戦の分岐点で、ほかに△９五歩と突く形も有力だ。
+
+削除理由:
+- 「ここで村田智１時間３分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は村田智１時間２４分、所司２４分。」 → ルール1, 3
+- 「昼食の注文は村田智が五目焼きそば。所司が冷やしたぬきうどん。」 → ルール1, 7
+
+---
+手数45: △８五歩には▲９八香と穴熊を目指すのが定跡。△９三桂〜△８五桂と端攻めを狙えないからだ。ちなみに、前手△８五歩で△９五歩とした場合は、▲６五歩とする「宮田新手」が有力だ。
+
+削除理由:
+
+---
+手数46: △７三桂の活用を狙う。
+
+削除理由:
+
+---
+手数47: 
+
+削除理由:
+- 「５５分の長考。」 → ルール3
+
+---
+手数49: △６四歩が見えているのでゆっくりできない。このタイミングで攻勢を目指す。
+
+削除理由:
+
+---
+手数50: △４五歩は▲同銀△１九角成▲５七角で▲６六角を狙われて後手不利。△４五歩は▲６五歩の形になっていると成立しない。そこで後手は△４二銀と引いて攻めに備えた。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は村田智２時間１９分、所司３４分。」 → ルール1, 3
+- 「所司は」 → ルール1
+
+---
+手数51: 
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間村田智３時間１１分、所司３４分。」 → ルール1, 3
+
+---
+手数52: 
+
+削除理由:
+- 「１時間２５分の長考で指された。」 → ルール3
+
+---
+手数59: 
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は村田智３時間３２分、所司２時間４分。」 → ルール1, 3
+
+---
+手数61: 矢倉戦で生じる手筋。７三角の利きを変えて、あとに▲４六角と飛車取りに出る手が狙える。
+
+削除理由:
+
+---
+手数65: 
+
+削除理由:
+- 「ここで所司が２６分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は村田智３時間５１分、所司２時間５４分。」 → ルール1, 3
+
+---
+手数68: 
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は村田智４時間２３分、所司３時間１４分。」 → ルール1, 3
+
+---
+手数71: 
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「残り時間は村田智４２分、所司２時間４３分。」 → ルール1, 3
+
+---
+手数75: 穴熊らしい強手。
+
+削除理由:
+
+---
+手数87: 攻めが厳しそうだ。先手玉はかなり余裕がある。
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は村田智３４分、所司２時間９分。」 → ルール1, 3
+
+---
+手数89: 
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は村田智３４分、所司１時間３８分。」 → ルール1, 3
+
+---
+手数101: △２四玉▲３三角成△同玉▲２二馬△２四玉▲２五金までの詰み。後手の投了となった。
+
+削除理由:
+- 「所司の投了となった。」 → ルール1
+- 「終局時刻は２２時５５分。」 → ルール3
+- 「消費時間は村田智５時間３１分、所司４時間５４分。」 → ルール1, 3
+- 「勝った村田智、敗れた所司ともに２勝３敗となった。」 → ルール1, 4

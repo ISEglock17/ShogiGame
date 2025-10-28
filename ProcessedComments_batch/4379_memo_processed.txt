@@ -1,0 +1,136 @@
+**Focusing My Efforts: Refining Game Commentary for Sharper Analysis**
+
+Okay, so the goal is clear: I need to process these Shogi game commentaries. The user, a fellow expert, wants me to surgically remove the noise – all the extraneous stuff like metadata, player introductions, and timestamps. My task is to leave behind only the pure essence of the game: the board positions and the insightful explanations of each move.
+
+This isn't just about deleting text; it's about curating information. I'll need to meticulously follow the given rules, thinking critically about what adds value and what detracts from the analysis. The process is straightforward, in theory:
+
+1.  **Sift and Delete:** I'll analyze each comment, judging what needs to go based on the defined criteria. Anything that doesn't directly illuminate the tactical or strategic nuances gets the ax.
+2.  **Polish and Refine:** The surviving commentary needs to flow naturally. I'll restructure and reword the remaining sentences, ensuring they read as clear and compelling explanations of the moves.
+3.  **Format and Deliver:** Finally, I'll package the refined comments in the requested output format, ensuring the user has precisely what they need for deep analysis.
+
+Ultimately, I'm aiming to transform these raw commentaries into a focused, potent resource for advanced Shogi study.
+
+手数1:
+
+削除理由:
+- 「佐藤慎の本年度成績は１４勝１７敗（勝率０．４５２）／通算成績は２０勝２０敗（勝率０．５００）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「糸谷の本年度成績は３３勝１５敗（勝率０．６８８）／通算成績は１１８勝５２敗（勝率０．６９４）」 → ルール4
+- 「現時点で全棋士中、対局数６位、勝数４位、勝率７位につける好成績。」 → ルール4
+
+手数8: 後手得意の一手損角換わり。
+
+削除理由:
+- 「糸谷」 → ルール1
+
+手数12: △１四歩も良く指されており、１局の将棋。
+
+手数13: 受けなければ突き越すのが形。先手は手得しているので端に２手かけてもあまり先攻される心配がない。
+
+手数31: 先手の作戦は右玉。端歩の突き越しを生かす有力な作戦の一つだ。
+
+削除理由:
+- 「佐藤慎の」 → ルール1
+
+手数36: 最近のこの形では後手が穴熊に潜る事が多い。手詰まりになりやすいので、玉を固めてじっと戦機を待つ指し方だ。
+
+削除理由:
+- 「最近のこの形では」 → ルール2
+
+手数40:
+
+削除理由:
+- 「１０時４０分頃の局面。ここまでの消費時間は▲佐藤慎４分△糸谷３分。」 → ルール3
+- 「糸谷は元々早指しだが、佐藤慎もここまで早指しであっという間に陣形が組みあがった。」 → ルール3, 5
+- 「なお、この局面は手順の違いはあるが、２００８年７月に指された▲豊島−△糸谷戦と同一。」 → ルール1, 2
+
+手数42:
+
+削除理由:
+- 「前述の▲豊島−△糸谷戦は△６三銀▲４五歩△４三金直の進行だったが、ここで別れを告げた。」 → ルール1, 2
+- 「関西からの情報では、糸谷はこの将棋を研究会でも指した経験があるようだ。」 → ルール1, 2, 6
+
+手数43: 気合よく仕掛けていった。この形は右玉から仕掛けないと手詰まりになりやすい。
+
+削除理由:
+- 「１４分の考慮で」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１１時２５分頃の局面。ここまでの消費時間は▲佐藤慎２６分△糸谷９分。」 → ルール3
+
+手数47: ▲７四歩もあるが、▲６三角や▲６四銀がすぐに利かないので低く歩を打った。
+
+削除理由:
+- 「３９分。」 → ルール3
+
+手数48: 遠見の角打ち。相当考えないと指せそうにない手だ。次に△３五歩や△４五歩を狙う。
+
+削除理由:
+- 「この手の消費時間も糸谷は３分。」 → ルール1, 3
+- 「この局面で佐藤慎が３２分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲佐藤慎１時間３７分△糸谷１２分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「昼食休憩を挟んで３５分の長考。」 → ルール3, 7
+
+手数50:
+
+削除理由:
+- 「１３時４５分頃の局面。ここまでの消費時間は▲佐藤慎１時間４０分△糸谷２５分。」 → ルール3
+
+手数51: 角を狙う自然な一着。
+
+手数52: 手筋。何かの時に△８八歩や△８七歩を用意する。
+
+手数54: 戦線拡大。９筋は破られても、△４七角成から刺し違える筋がある。
+
+手数55:
+
+削除理由:
+- 「１４時４０分頃の局面。ここまでの消費時間は▲佐藤慎２時間２８分△糸谷５７分。」 → ルール3
+
+手数59: ▲９四歩も考えられるが、足が遅いと見たか。
+
+手数63: この戦型の急所。単に▲２四桂と打ち込む筋もあるが、この場合△同歩▲同歩△同銀▲同飛△２三香がある。
+
+手数64: 後手は実戦的に守り駒をはがしにかかる。
+
+削除理由:
+- 「糸谷は」 → ルール1
+
+手数65: 当たらず触らず。後手の切り札は△７五飛。
+
+手数66: 後手陣の玉頭も迫られている状況だが、先手玉も玉頭が急所。どちらの攻めが先に届くか。
+
+手数67: 本局は既に終盤戦に突入している。
+
+削除理由:
+- 「１５時３０分過ぎの局面。ここまでの消費時間は▲２時間４９分△糸谷１時間２５分。」 → ルール3
+- 「他の対局は中盤戦たけなわといった所だが、」 → ルール8
+
+手数69: 先手は駒得を生かして一気に寄せ切りたい。
+
+削除理由:
+- 「５５分の長考だった。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「１６時３０分過ぎの局面。ここまでの消費時間は▲佐藤慎３時間４４分△糸谷１時間３１分。」 → ルール3
+- 「持ち時間では２時間以上の差がついている。」 → ルール3
+
+手数72: △２六香を見せつつ、△４六桂の筋も残す。
+
+手数73: 分かっているが全ての狙いは防ぎにくい。▲２四歩には△２八歩の連打もある。
+
+手数76: 飛車を取れたのは、後手にとって大きな戦果。
+
+削除理由:
+- 「糸谷に」 → ルール1

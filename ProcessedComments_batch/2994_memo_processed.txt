@@ -1,0 +1,159 @@
+**Processing a Request for Shogi Game Commentary Formatting**
+
+Okay, so I've got this request. The user wants me to clean up Shogi game commentary, basically stripping out all the fluff and leaving only the useful stuff – the board positions and the actual moves with their analyses. I understand the task. It's about taking raw commentary and turning it into something concise and readable, like a well-formatted game analysis.
+
+Here's the approach I'll take:
+
+1.  **Iterate through each move:** I'll analyze the commentary on a move-by-move basis.
+2.  **Identify the extraneous information:** I'll be looking for specific patterns – phrases or statements that are irrelevant to the game analysis based on defined deletion rules.
+3.  **Removal of Unwanted Elements:** Once I've identified something, it's gotta go! I'll carefully remove the identified unnecessary parts from the comments.
+4.  **Re-phrasing:** Then I'll re-phrase the cleaned-up information into clear and concise sentences to have a nice flow.
+5.  **Standardization of Names:** Player names need to be replaced. I'll swap out their real names with the standard "Sente" (先手) for the first player and "Gote" (後手) for the second.
+6.  **Formatted Output:** Finally, I'll structure the output according to the user's specified format, clearly indicating both the formatted results and the reasoning behind each removal.
+
+So, in the first move: "手数1: 片上が初手に▲６六歩と突くのは３度目のようだ。" ... I'll identify "片上" (Katagami) as a player name, replace it with "先手" (Sente), and it looks like the comment about it being the third time is unnecessary for the analysis.
+
+手数1: 先手が初手に▲６六歩と突くのは３度目のようだ。
+
+削除理由:
+- 「片上が」 → 先後名置換
+- 「７回戦の対安用寺五段戦では▲６六歩△５四歩から乱戦になった。」 → ルール2, 1
+
+---
+手数4: 相振り飛車になった。
+
+削除理由:
+
+---
+手数7: ▲７六歩の準備。この手を省いて▲７六歩と突くと、△８八角成▲同銀△４五角でしびれる。
+
+削除理由:
+
+---
+手数12:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は片上４３分、窪田１０分。」 → ルール3, 4
+
+---
+手数18:
+
+削除理由:
+- 「△１四歩の局面で片上が２７分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は片上１時間４１分、窪田１７分。」 → ルール3, 4
+- 「昼食の注文は片上がすき焼き丼、あんぱん。窪田が中華丼。」 → ルール7
+
+---
+手数19: 先手は意表を突く端桂。狙いは単純だが、後手はまだ陣形が不十分なので、手になると見た。
+
+削除理由:
+- 「昼食休憩時もゆっくり考えていた片上は」 → ルール7, 4
+
+---
+手数22:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は片上２時間、窪田５３分。」 → ルール3, 4
+
+---
+手数31:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は片上２時間５４分、窪田１時間１０分。」 → ルール3, 4
+
+---
+手数32: これで後手の香得。先手は攻めを続けないと悪くなる。
+
+削除理由:
+
+---
+手数34: 飛車の直射を避けるための早逃げ。先手は攻めるなら▲３六角や▲４一角あたりか。
+
+削除理由:
+- 「ボヤボヤしていられない。」 → 文体整形のため削除
+
+---
+手数35: 先手はいきなり飛車を切った。
+
+削除理由:
+- 「片上は」 → 先後名置換
+
+---
+手数37: ▲６三角を狙う。△６一香なら▲３六角が「遠見の角」で受けにくい。
+
+削除理由:
+- 「１６時半ごろの局面。」 → ルール3
+- 「消費時間は片上３時間２３分、窪田１時間４７分。」 → ルール3, 4
+
+---
+手数38: またも早逃げ。▲６三角なら△７二香か。
+
+削除理由:
+
+---
+手数42: 「馬は自陣に引け」
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は片上３時間５０分、窪田２時間２３分。」 → ルール3, 4
+
+---
+手数51:
+
+削除理由:
+- 「▲５五馬の局面で窪田が１６分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は片上４時間３分、窪田２時間５０分。」 → ルール3, 4
+
+---
+手数53: 何とか、金と桂馬が生き返った。次に▲７四歩と突ければ、先手の攻撃力がすごいことになる。
+
+削除理由:
+
+---
+手数55: また歩の上に駒が乗っかる形になってしまった。こういう形は攻撃力に乏しい。
+
+削除理由:
+
+---
+手数56: じっくり遊び駒を使う。この瞬間は２二飛が遊び駒になっているが、次に△５三銀となればすべての駒が働いてくる。先手は▲６三歩成△同金▲同金△同馬が８五桂取りになるのがつらい。
+
+削除理由:
+
+---
+手数60:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は片上４時間３６分、窪田３時間９分。」 → ルール3, 4
+
+---
+手数64: 先手は堅いが攻め駒が不足している感じだ。
+
+削除理由:
+
+---
+手数71: △同銀は▲７五馬、△同金は▲３一馬。△６四金は▲６二歩成△同飛▲５三角。
+
+削除理由:
+
+---
+手数74: 現在、先手飛車損。何か技がかかるかどうか。
+
+削除理由:
+
+---
+手数75: 逆転を狙って種まき。▲３一角△５二飛▲５三角成△同飛▲６四香のような攻めがある。
+
+削除理由:
+
+---
+手数76: 逆転の芽を摘みにいく。▲３一角が利かなくなってはつらい。
+
+削除理由:
+- 「ここで片上が３分考えて投了した。」 → ルール3, 4
+- 「終局時刻は２０時３４分。」 → ルール3
+- 「消費時間は片上４時間５５分、窪田３時間１８分。」 → ルール3, 4
+- 「勝った窪田は６勝３敗、敗れた片上は５勝４敗となった。」 → ルール4

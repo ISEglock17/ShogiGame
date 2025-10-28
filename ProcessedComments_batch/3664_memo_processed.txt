@@ -1,0 +1,137 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this Shogi game data with all these comments attached. The goal is to refine these comments, right? I need to get them ready for proper analysis, make them actually useful.  My mind is immediately sifting through the noise... all that extra stuff, the meta data, introductions, time stamps... that's just clutter, it gets in the way. I need to get rid of all the distracting elements.
+
+What I really want are the core insights.  I'm after the stuff that illuminates the actual positions on the board, the reasoning behind the moves, the strategic thinking.  I want the comments that provide context for the player's choices and insights into the game flow.  Essentially, I need these comments to be complete, clear sentences that truly explain the game from move to move.  It's about distilling the essence of the analysis into a form that's easy to digest and use.
+
+手数8: ここで△５五歩▲２四歩△同歩▲同飛△５六歩なら超急戦の大決戦になるところだった。
+
+削除理由:
+- 「鈴木大介八段が何度か用いたことのある手法で、９月に指されたＡ級順- 戦▲丸山−△鈴木戦もこう指されている。」 → ルール1, 2
+
+手数10: 早めに端を突き越す。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野２４分、△阿久津８分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「この局面で浦野が１９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲浦野５５分、△阿久津１時間２分。」 → ルール3
+
+手数23: 穴熊も考えられたが、先手は美濃囲いに囲った。後手があまり動かなければ、右銀を５九〜６八〜７九〜８八と動かす穴熊を目指す可能性もある。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野１時間１８分、△阿久津１時間２７分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野１時間５４分、△阿久津１時間４５分。」 → ルール3
+
+手数30: お互い銀冠に組み替える。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野１時間５８分、△阿久津２時間５２分。」 → ルール3
+
+手数45: 遊んでいた銀をじわじわ働かせる。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野２時間２６分、△阿久津３時間２８分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「この局面で浦野が３１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲浦野３時間１５分、△阿久津３時間３２分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野３時間２６分、△阿久津４時間２８分。」 → ルール3
+
+手数61: 銀を捌いて先手も満足な展開。
+
+削除理由:
+
+手数69:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野３時間４６分、△阿久津４時間３４分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２１時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４時間９分、△阿久津４時間５５分。」 → ルール3
+
+手数77: 工夫して銀を埋めた。
+
+削除理由:
+
+手数82: 後手が少し指しやすいと見られている。
+
+削除理由:
+- 「２２時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４時間２４分、△阿久津５時間１１分。」 → ルール3
+
+手数85: 交換を拒否されると戻るよりない。
+
+削除理由:
+
+手数87: 突き越されている端を逆襲。
+
+削除理由:
+
+手数95: △６四同飛には▲５五角。
+
+削除理由:
+
+手数96: あくまでも大駒を捌かせない。５五が急所と見ている。
+
+削除理由:
+- 「２２時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４時間３７分、△阿久津５時間１７分。」 → ルール3
+
+手数106: 依然として後手の駒が手厚い。
+
+削除理由:
+- 「２３時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野５時間３分、△阿久津５時間３４分。」 → ルール3
+
+手数114: 飛車を逃げると金を取られてしまう。
+
+削除理由:
+- 「２３時４５分頃の局面。」 → ルール3
+- 「残り時間は浦野５２分、阿久津２５分。」 → ルール3
+
+手数138: 以下▲同金は△同龍左で受けなし。先手は投了した。
+
+削除理由:
+- 「消費時間は▲浦野５時間３２分、△阿久津５時間４３分。」 → ルール3
+- 「勝った阿久津は３勝２敗、敗れた浦野は１勝４敗となった。」 → ルール4

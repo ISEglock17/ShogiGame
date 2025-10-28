@@ -1,0 +1,39 @@
+=== バッチの最終結果: batches/8nd2igzvbujn48hj812ujn4hrqs8mtggqxe5 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "4321",
+  "response": {
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "HKD5aPmnHrKcqtsP98f3-Ao",
+    "usageMetadata": {
+      "promptTokenCount": 4143,
+      "totalTokenCount": 5096,
+      "candidatesTokenCount": 899,
+      "thoughtsTokenCount": 54,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 4143,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "**Structuring Shogi Commentary: My Approach**\n\nOkay, so I'm tasked with formatting shogi commentary, basically cleaning it up and making it presentable. I've got the rules in front of me, and my process is pretty straightforward. First, I need to go through each comment and meticulously identify the parts that need to be removed based on those rules. Once I've pinpointed the unnecessary information, I'll just trim it out, leaving the core commentary intact and ready for display. Simple, clean, and adhering to the established guidelines - that's the goal here.\n",
+              "thought": true
+            },
+            {
+              "text": "手数1:\n\n削除理由:\n- 「近藤といえば中飛車。中飛車といえば近藤。」 → ルール5\n\n手数6: 乱戦必至の相中飛車だ。\n\n削除理由:\n- 「「中飛車だったら俺もうるさいよ」とばかりに、田村も飛車を中央へ。」 → ルール1, 5\n\n手数14: 申し合わせたような先後同型。\n\n削除理由:\n- 削除対象なし\n\n手数15: このタイミングで金を上がるのは珍しい。よくあるのは▲２八玉から美濃囲いを目指す指し方だが…。\n\n削除理由:\n- 削除対象なし\n\n手数16: ここで両者が道を違えた。\n\n削除理由:\n- 「１０時４５分頃、消費時間は近藤１５分、田村３分。」 → ルール3\n\n手数17: 中飛車から三間に。先手はどのような構図を描いているのだろう。\n\n削除理由:\n- 「５３分考え、」 → ルール3\n- 「近藤」 → 置換ルール\n\n手数20:\n\n削除理由:\n- 「ここで昼食休憩。」 → ルール7\n- 「消費時間は近藤１時間１３分、田村２１分分。」 → ルール3\n- 「昼食時の注文は近藤が中華そば。田村はカレーライス。」 → ルール7\n\n手数24: なんともシンプルな後手の構想。相振り飛車でのスズメ刺しは、なかなかお目にかかれない。\n\n削除理由:\n- 「田村」 → 置換ルール\n\n手数25: 急所の筋。次に▲７四歩となれば早くも先手優勢。\n\n削除理由:\n- 削除対象なし\n\n手数26: とにかく玉のコビンを守らなければいけない。\n\n削除理由:\n- 削除対象なし\n\n手数29: ６四の歩が浮いたので、この角打ちが成立した。先手がうまく立ち回ったか。\n\n削除理由:\n- 「近藤」 → 置換ルール\n\n手数36: 馬と持ち角の勝負。馬を安定させることが出来れば先手が局面をリードできそうだ。\n\n削除理由:\n- 「１４時半過ぎ、消費時間は近藤２時間３３分。田村４１分。」 → ルール3\n- 「近藤」 → 置換ルール\n\n手数38: ゆっくりした戦いにしては、馬の威力が倍増してしまう。後手は中央から動いていった。\n\n削除理由:\n- 「田村は気風良く」 → ルール1, 5\n\n手数41: 瞬間的には心許ない形だが、次に▲４八馬と引き付ければ勇気凛々だ。\n\n削除理由:\n- 削除対象なし\n\n手数47: 使えていなかった銀も働き出した。\n\n削除理由:\n- 削除対象なし\n\n手数49: ついに▲４八馬が実現。なんと心強いことか。\n\n削除理由:\n- 削除対象なし\n\n手数55: 銀冠を目指す。当たりが強くなる意味もあるが、壁銀のまま戦うより数倍良さそうだ。\n\n削除理由:\n- 削除対象なし\n\n手数58: 先手の主張は馬の存在。後手の主張は持ち角と持ち歩。\n\n削除理由:\n- 「近藤」 → 置換ルール\n- 「田村」 → 置換ルール\n- 「１６時過ぎ、消費時間は近藤３時間４３分、田村１時間１５分。」 → ルール3\n\n手数67: 歩がもう一枚あれば▲９三歩なのだが、あいにく一枚しかなく迫力不足か。\n\n削除理由:\n- 削除対象なし\n\n手数88: 全軍躍動。支えきれないと判断した先手は、ここで駒を投じた。\n\n削除理由:\n- 「近藤」 → 置換ルール\n- 「消費時間は近藤４時間４９分、田村１時間３４分。」 → ルール3"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

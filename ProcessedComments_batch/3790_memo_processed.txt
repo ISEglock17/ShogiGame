@@ -1,0 +1,61 @@
+**Structuring Shogi Game Commentary**
+
+Okay, so I understand the task. The user needs their shogi commentary cleaned up and formatted. Essentially, they've given me a set of rules and a format to follow. My job is to take each comment and run it through this process. 
+
+Here's how I see it playing out:
+
+1.  **Read and Understand:** First things first, I'll read through each individual comment. I need to fully grasp what's being said.
+2.  **Rule Identification:**  Next, I'll scan the comment for anything that matches the deletion rules.  I'll need to pinpoint the exact parts that are flagged for removal or replacement.
+3.  **Apply the Rules:**  Based on the rules provided, I'll either delete the problematic phrases or substitute them with the specified alternatives. I need to be precise here, ensuring I don't accidentally remove or alter something important.
+4.  **Polish and Refine:** Finally, I'll focus on smoothing out the remaining text. I'll make sure it reads like natural, flowing Japanese. This is where I'll apply my expertise to ensure the final output is both grammatically correct and stylistically appropriate for a shogi context.
+
+手数21:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は田村１８分、田丸１７分。」 → ルール3, 1
+
+手数31:
+
+削除理由:
+- 「▲５八金の局面で田丸が１８分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「消費時間は田村３３分、田丸１時間２５分。」 → ルール3, 1
+- 「昼食の注文は田村が中華そば、田丸は注文なし。」 → ルール7, 1
+
+手数32: 伸び伸び位を張っていく。
+
+削除理由:
+
+手数33: 先手は積極的に動く。８八角は壁形だが、どこかで▲９七角と使う含みがある。
+
+削除理由:
+- 「田村」 → ルール1
+
+手数38:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は田村３７分、田丸２時間２２分。」 → ルール3, 1
+
+手数43: 銀が横に動いた格好。２五に銀を置いておけば、▲２八飛（△３五角と銀が取られない）から▲２四歩で２筋を攻めることができる。
+
+削除理由:
+
+手数59:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は田村１時間１９分、田丸２時間３７分。」 → ルール3, 1
+
+手数79: これで手がないと先手は見ている。次に▲６五金が楽しみ。
+
+削除理由:
+- 「田村」 → ルール1
+
+手数85: 後手は投了した。以下△８三飛に▲７二成桂で角が助からない。しかも、▲８二成桂△同飛▲５五角打の筋が残っている。
+
+削除理由:
+- 「ここで田丸は２分考えた後に」 → ルール1, 3
+- 「終局時刻は１６時１９分。」 → ルール3
+- 「消費時間は田村１時間２７分、田丸３時間２５分。」 → ルール1, 3
+- 「勝った田村は７勝２敗、敗れた田丸は０勝９敗となった。」 → ルール1, 4

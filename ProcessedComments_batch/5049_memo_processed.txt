@@ -1,0 +1,98 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments. They're asking for a more focused, streamlined version – basically, they want to cut out all the noise and keep only the *relevant* commentary. I understand completely. My goal is to get to the heart of the analysis, to see what the commentators actually thought about the *board* and the *moves*.
+
+Here's how I see it: first, I need to identify the irrelevant parts. I'll need to use some rules to determine what's cluttering up the commentary - things like metadata, introductions, time information, you know the drill. Once I have identified these, I'll excise those sections.
+
+Then, and this is key, I'll need to rearrange what is left so it is smooth and natural.
+
+手数1:
+
+削除理由:
+- 「村田顕の本年度の成績は１５勝９敗。」 → ルール4
+- 「通算成績は７２勝４０敗（０．６４３）」 → ルール4
+- 「夏頃までは調子の出ていなかった村田顕だが、１０月に入って好転。直近１０局の成績は９勝１敗となっている。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「田中悠の本年度の成績は１２勝１３敗。」 → ルール4
+- 「通算成績は４４勝４５敗（０．４９４）」 → ルール4
+
+手数7:
+先手は丸山ワクチンを採用。
+
+削除理由:
+- 「村田顕」 → ルール1
+
+手数15:
+△５五歩に▲６七銀を用意している。
+
+削除理由:
+- 削除対象なし
+
+手数18:
+美濃囲いではなく△６二銀と構える。
+
+削除理由:
+- 「１１時１０分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕２７分、△田中悠２３分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「ここで田中悠が９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田顕１時間５分。△田中悠５０分。」 → ルール3
+- 「昼食の注文は村田顕がやまかけそば、田中悠が玉子とじうどん。」 → ルール7
+
+手数27:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲村田顕２時間０分、△田中悠５４分。」 → ルール3
+- 「１５時をまわったが、田中悠は考え続けている。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１時間１６分の長考で指された。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１６時１０分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕２時間４５分、△田中悠２時間１２分。」 → ルール3
+
+手数37:
+先手陣は非常に堅くなった。次に▲７六銀右として、（１）▲８六歩〜▲８五歩と突く手、（２）▲６五歩△同歩▲同銀と歩を交換する手等がある。
+
+削除理由:
+- 「１７時１５分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕３時間０分、△田中悠２時間５４分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「ここで村田顕が３３分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田顕３時間３３分、△田中悠３時間２５分。」 → ルール3
+- 「夕食の注文は村田顕が鍋焼きうどん、田中悠がカツ丼セット（そば）。」 → ルール7
+
+手数47:
+
+削除理由:
+- 「２０時１０分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕３時間４１分、△田中悠４時間２７分。」 → ルール3
+
+手数51:
+これで銀が詰んでいる。
+
+削除理由:
+- 削除対象なし
+
+手数61:
+飛車を成り捨てて▲３二角を狙う。もともと銀得の上に自玉が堅陣なので先手は激しくいった。▲６四歩でいつでも後手の金銀の連結が外れてしまうため、後手陣は非常に薄い。
+
+削除理由:
+- 「２１時１０分ごろの局面。」 → ルール3
+- 「消費時間は▲村田顕４時間２５分、△田中悠４時間４４分。」 → ルール3
+- 「村田顕」 → ルール1

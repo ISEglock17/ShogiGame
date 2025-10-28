@@ -1,0 +1,65 @@
+**The Challenge of Polishing Game Commentary**
+
+Okay, so I'm being asked to take raw commentary from a Shogi match and whip it into shape. The goal is to make it clean, readable, and focused. I need to follow the provided rules to filter out the noise and retain only the essential information, presenting it all in a smooth, natural flow.
+
+My process will be straightforward: I'll tackle this step-by-step. I'll need to dissect each individual move's commentary, breaking it down and understanding what's truly significant within that context. From there, I'll figure out what needs to stay and what can be trimmed, all while keeping that end goal of a polished, insightful commentary in mind.
+
+手数1:
+
+削除理由:
+- 「最も近い対戦は今月７日に行なわれた竜王戦５組昇級決定戦で、淡路の時間切れ負けで決着がついている。」 → ルール2
+- 「これは淡路が隣の対局の秒読みの声と混同してしまったそうだ。」 → ルール2
+
+手数20:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３１分、△大内２１分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「この局面で淡路が３４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路１時間２７分、△大内３２分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路１時間３０分、△大内５４分。」 → ルール3
+- 「１５時過ぎ、まだ大内は次の一手を考えている。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「なんと２時間１７分の長考。」 → ルール3
+- 「ここまでの消費時間は▲淡路１時間３０分、△大内３時間１１分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「こちらも１時間１１分の長考。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「ここで淡路が５２分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路３時間４２分、△大内３時間２０分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間０分、△大内３時間５３分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間３１分、△大内４時間３６分。」 → ルール3
+
+手数95: 投了以下はどの変化も簡単な即詰み。
+
+削除理由:
+- 「この局面で大内が投了した。」 → ルールなし（整形して残す）
+- 「消費時間は▲淡路５時間７分、△大内４時間５８分。」 → ルール3

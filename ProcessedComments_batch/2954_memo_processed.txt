@@ -1,0 +1,121 @@
+**Focusing the Commentary: Cleaning Up Shogi Analysis**
+
+Okay, so I've got this Shogi data with all these comments, and it's a bit of a mess. My task, as I understand it, is to refine these comments, making them laser-focused on the actual game analysis. I need to strip away all the extraneous stuff - the metadata, the bios of the players, the time stamps - anything that isn't directly contributing to understanding the board state or the reasoning behind specific moves.
+
+Essentially, I'll be sifting through the commentary, applying a set of rules to identify and eliminate the irrelevant information. Once I've got the core analysis remaining, I'll need to smooth out the language, ensuring it reads like natural, coherent explanations of the game's unfolding dynamics. It's about getting to the heart of the Shogi strategy, not getting bogged down in the noise. This is all about enhancing the analytical value of the data, and I'm ready to dive in.
+
+手数21:
+
+削除理由:
+- 「片上は相掛かり▲２八飛型でこれまで５戦全勝。」 → ルール2, 4
+- 「何でも指す片上だが、特に得意な作戦のようだ。」 → ルール5
+- 「しかし、それらは▲２七銀からの棒銀に出る指し方だった。」 → ルール2
+- 「本局のような腰掛け銀は初採用。」 → ルール2
+
+手数27:
+
+削除理由:
+- 「本局のような▲２八飛型からの腰掛け銀は飯島五段が得意にしている。」 → ルール1, 2
+
+手数32: 後手は先手の動きに追随する。
+
+削除理由:
+- 「真田は」 → 置換ルール
+- 「片上の」 → 置換ルール
+
+手数33:
+
+削除理由:
+- 「１１時１５分ごろの局面。消費時間は片上３９分、真田１８分。」 → ルール3
+- 「真田はここで５７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は片上３３分、真田１時間１５分となった。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「昼食休憩を挟んで１時間１７分の長考。」 → ルール3, 7
+- 「片上が４０分以上の長考をしているようだ。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「４９分の長考。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は片上１時間５５分、真田１時間４６分。」 → ルール3
+
+手数41: グイッと銀を上げた。▲５五銀左のガッチャン銀が狙いだ。
+
+削除理由:
+- 「４０分の長考で」 → ルール3
+- 「真田が長考しているようだ。」 → ルール3
+
+手数42: △８四飛型は▲５五銀左から先手が攻めたとき、▲７五角や▲６六角の筋が生じていて危険。
+
+削除理由:
+- 「１時間２２分の長考。」 → ルール3
+
+手数43: 初志貫徹のガッチャン銀。
+
+削除理由:
+
+手数46:
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は片上２時間５１分、真田３時間２２分。」 → ルール3
+- 「ここで片上が４４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は片上３時間３５分、真田３時間２２分。」 → ルール3
+
+手数47: 先手は軽い受けで桂馬を助けた。
+
+削除理由:
+- 「片上は」 → 置換ルール
+
+手数51: 先手は手筋の一着を放つ。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は片上３時間４８分、真田３時間３３分。」 → ルール3
+- 「片上は」 → 置換ルール
+
+手数55:
+
+削除理由:
+- 「２０時４０分の局面。」 → ルール3
+- 「消費時間は片上３時間５６分、真田４時間１３分。」 → ルール3
+
+手数56: 逃げた。△８八龍は▲６六角△７九銀▲６九玉で攻め切れないか。
+
+削除理由:
+- 「３４分の長考で」 → ルール3
+- 「２１時１０分ごろの局面。」 → ルール3
+- 「消費時間は片上３時間５６分、真田４時間４７分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は片上１時間２５分、真田１時間２分。」 → ルール3
+
+手数68: △４七銀不成とすれば大きな駒得だが、▲５六角成△同銀成▲８二飛で寄り筋。
+
+削除理由:
+
+手数73:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は片上５６分、真田２５分。」 → ルール3
+
+手数75: 「玉の腹に銀を打て」という格言通りの寄せ。受けがないと判断して投了した。
+
+削除理由:
+- 「真田は」 → 置換ルール
+- 「７分考えた末に」 → ルール3
+- 「終局時刻は２３時１８分。」 → ルール3
+- 「消費時間は片上５時間５分、真田５時間５４分。」 → ルール3
+- 「勝った片上は４勝２敗、敗れた真田は３勝３敗となった。」 → ルール4

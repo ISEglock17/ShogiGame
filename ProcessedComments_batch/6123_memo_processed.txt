@@ -1,0 +1,130 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: I need to transform these raw comments into something useful for analysis. Right now, there's a lot of noise in there – metadata, player introductions, timestamps... all that stuff that's important for the *human* experience of following a game, but it's just cluttering things up when I'm trying to get at the *strategic* heart of the moves.
+
+My approach is straightforward: I'll use a set of rules to identify and ruthlessly eliminate the unnecessary information. I'm after the core of the comment: the actual explanations of the board state and the reasoning behind each move. Stripping away the fluff and leaving the insightful nuggets of analysis – that's the key. This is about making the data work for me, not the other way around. I'm looking for clear, concise, and strategically relevant explanations.
+
+手数1:
+
+削除理由:
+- 「【増田裕司（ますだ・ゆうじ）六段プロフィール】」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｍａｓｕｄａ―ｙ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【及川拓馬（おいかわ・たくま）四段プロフィール】」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｉｋａｗａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「増田の今年度成績は０勝４敗（０．０００）。」 → ルール4
+- 「通算成績は２４９勝２１６敗（０．５３６）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「及川の今年度成績は８勝４敗（０．６６７）。」 → ルール4
+- 「通算成績は８７勝６８敗（０．５６１）。」 → ルール4
+- 「今期の記録ランキングでは、現在対局数１１位タイ、勝数１０位タイ。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「増田は居飛車党の力戦派。」 → ルール5
+- 「時に相振り飛車などの振り飛車の将棋も指す。」 → ルール5
+
+手数6:
+
+削除理由:
+- 「及川は居飛車党。」 → ルール5
+- 「後手番では横歩取りの将棋が得意。」 → ルール5
+
+手数15: 横歩取りの将棋へと進んだ。
+
+削除理由:
+
+手数16: 角を上がり横歩取り△３三角戦法となった。
+
+削除理由:
+
+手数19: 先手は穏やかに８筋に歩を謝る。
+
+削除理由:
+- 「増田は」 → ルール1
+
+手数20: ８五に飛車を引いた。
+
+削除理由:
+
+手数21: ２筋に飛車を戻す。△２五飛を防ぎながら、将来▲３六歩の突き出しを狙った手。（すぐに突くのは△８八角成▲同銀△１五角の準王手飛車）
+
+削除理由:
+- 「（すぐに突くのは△８八角成▲同銀△１五角の準王手飛車）」 → 自然な文に整形
+
+手数22: 代えて△５二玉の中住まいもよく指されている形。この辺りの選択は好みと言えるかもしれない。
+
+削除理由:
+
+手数23: 先手は中住まいに構えた。代えて▲４八銀〜▲３六歩なら『新山崎流』と呼ばれる構えで、４一玉型を激減させた対策である。
+
+削除理由:
+- 「しかし増田はあまり人真似を好まないタイプの棋士だ。」 → ルール5
+
+手数25: 早々と角交換に出た。
+
+削除理由:
+
+手数27: 角をさばいてから▲７七桂と飛車取りに跳ねる。
+
+削除理由:
+
+手数28: 代えて△２五飛のぶっつけは▲同飛△同桂▲８五飛で桂の両取りが掛かる。
+
+削除理由:
+
+手数29: ７筋の歩を突き出す。飛車の横利きを通しながら、機を見て▲７四歩を狙っている。対して△同歩は▲５五角や▲６六角と駒取りに打つ手が生じ、△同飛は▲８二角や▲８三角が生じる。
+
+削除理由:
+
+手数30: 中原囲いを完成。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「この局面で及川が３３分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲増田１時間１５分、△及川４３分。」 → ルール1, 3
+- 「対局は１３時から再開される。」 → ルール3, 7
+
+手数32: 後手は先手の飛車の横利きを止めに掛かる。対して▲３六同飛は△２七角で馬を作られる。▲３六同歩で飛車の横利きを消してから△７四歩と攻めようという狙いだろう。
+
+削除理由:
+- 「対局再開後、」 → ルール7
+- 「及川は」 → ルール1
+
+手数34: 飛車を追う。▲３五歩で飛車の自由度が上がる前に撤収を命じた。
+
+削除理由:
+
+手数36: 飛車を追い払ってから△７四歩と７筋から攻撃に出た。
+
+削除理由:
+
+手数38:
+
+削除理由:
+- 「１４時１０分頃、△８二飛までの消費時間は、▲増田１時間２７分、△及川１時間１７分。」 → ルール1, 3
+
+手数39: この手は新手のようだ。
+
+削除理由:
+- 「▲７四歩と取り込んだあと、増田が棋士室におりてきた。」 → ルール1, 6
+- 「どうやら」 → 自然な文に整形
+- 「２局指されていた前例では、この手では▲３五歩と指されていた。」 → ルール2
+
+手数40: 飛車取りに角を打つ。▲１八飛には△２六歩や△７二飛で、大駒の働きの差で勝負しようというもの。
+
+削除理由:

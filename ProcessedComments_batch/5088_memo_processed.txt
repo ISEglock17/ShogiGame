@@ -1,0 +1,76 @@
+**Processing a Request for Shogi Commentary Formatting**
+
+Okay, I've got it. The user wants me to clean up and reformat shogi game commentaries. They're giving me rules, likely concerning what information to keep and what to discard. Basically, I need to take the raw commentary, strip out the irrelevant bits, and rewrite it into clean, natural sentences.
+
+For instance, looking at "Move 15: Around 10:55, the position is...". I understand. I should just extract the move number, and keep the time of the game. That makes sense. I can do that. I'll translate that into my own standard phraseology.
+
+手数15: 先手は流行の超速▲４六銀戦法を採用した。４六の銀で後手の５筋の位と角頭の両方を狙っている。
+
+削除理由:
+- 「１０時５５分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕１７分、△遠山７分。」 → ルール3
+- 「村田は」 → 先手・後手の名前に置換
+
+手数27:
+
+削除理由:
+- 「ここで遠山が１７分使って」 → ルール3
+- 「昼食休憩に入った。」 → ルール7
+- 「消費時間は▲村田顕５８分、△遠山５７分。」 → ルール3
+- 「昼食の注文は遠山が親子丼セット（うどん）、村田顕は鍋焼きうどん。」 → ルール7
+- 「遠山」 → 先手・後手の名前に置換
+- 「村田顕」 → 先手・後手の名前に置換
+
+手数30:
+
+削除理由:
+- 「１４時５分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕１時間１分、△遠山５７分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田顕２時間１７分、△遠山１時間２０分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田顕２時間３６分、△遠山２時間９分。」 → ルール3
+
+手数45: 後手は目標になっている２二の角をうまいタイミングで５五や４四に飛び出したい。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田顕３時間２１分、△遠山２時間１１分。」 → ルール3
+- 「ここで遠山が１時間２６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田顕３時間２１分、△遠山３時間３７分。」 → ルール3
+- 「夕食の注文は村田顕がにゅう麺、遠山はなし。」 → ルール7
+- 「遠山」 → 先手・後手の名前に置換
+- 「村田顕」 → 先手・後手の名前に置換
+
+手数59: 歩を回収していく。
+
+削除理由:
+- なし
+
+手数61:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田顕３時間４０分、△遠山４時間６分。」 → ルール3
+
+手数86:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田顕」 → ルール3
+
+手数138:
+
+削除理由:
+- 「ここで村田顕が投了した。」 → 先手・後手の名前に置換
+- 「終了時刻は２２時４９分。」 → ルール3
+- 「消費時間は▲村田顕４時間４０分、△遠山５時間３２分。」 → ルール3
+- 「勝った遠山雄亮四段は７勝２敗、敗れた村田顕弘四段は３勝６敗となりました。」 → ルール4

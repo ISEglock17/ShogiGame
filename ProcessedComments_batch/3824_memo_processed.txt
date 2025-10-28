@@ -1,0 +1,117 @@
+**Focusing the Commentary: A Concise Transformation**
+
+Okay, I've got it. The user wants me to clean up these Shogi commentary files. Essentially, they're cluttered with a bunch of stuff that's irrelevant for proper analysis. They want to focus on the core insights – the explanations of the board state and the reasoning behind each move. 
+
+My task is to take this raw commentary data and, following the specified rules, get rid of all the noise. This means stripping out the metadata, the introductions, any time-related details, and anything else that doesn't directly contribute to the analysis of the game itself.
+
+Once I've filtered out the extraneous content, I need to smooth out the remaining text. Make sure it reads like natural, coherent explanations. Finally, I have to ensure the cleaned-up commentary is outputted in the correct format, as specified by the user. It's all about making this commentary data as clean and useful as possible for serious Shogi analysis.
+
+手数4:
+削除理由:
+- 「ここまでの消費時間は両者ともに９分。」 → ルール3
+- 「ここで村田の手が止まっている。」 → ルール3
+
+手数5:
+削除理由:
+- 「村田はこの手に３１分を使った。」 → ルール3
+
+手数6:
+削除理由:
+- 「川上はノータイムで角道を止める。」 → ルール3
+
+手数11:
+削除理由:
+- 「この手は４２分。」 → ルール3
+
+手数16:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は村田１時間４２分、川上１８分。」 → ルール3
+- 「昼食の注文は、川上は味噌煮込みうどん。村田はなし。」 → ルール7
+
+手数21: 右四間飛車。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１３時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は村田２時間３分、川上３５分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「川上はこの一手に４９分。」 → ルール3
+- 「消費時間の通計は村田２時間９分、川上１時間２８分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は村田２時間２２分、川上１時間５６分。」 → ルール3
+
+手数37: なかなか▲４五歩とはいかない。
+
+削除理由:
+- 「この一手は３６分。」 → ルール3
+
+手数45: 意表の玉上がり。
+
+削除理由:
+
+手数51: 先手は右玉に組み替える。
+
+削除理由:
+- 「村田は」 → 置換ルール
+
+手数54:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は村田３時間２４分、川上２時間３０分。」 → ルール3
+
+手数56: ようやくにして駒がぶつかる。
+
+削除理由:
+
+手数59: 収まる。
+
+削除理由:
+
+手数61:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は村田３時間５０分、川上３時間０分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は村田４時間３分、川上３時間２５分。」 → ルール3
+
+手数75: ガツンとぶつける。非常手段のようだが。
+
+削除理由:
+
+手数82:
+
+削除理由:
+- 「２０時４０分頃の局面。」 → ルール3
+- 「消費時間は村田４時間２７分、川上３時間４６分。」 → ルール3
+
+手数113:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「残り時間は村田４９分、川上１時間３９分。」 → ルール3
+
+手数126: 先手は次の手を指さずに投了した。
+
+削除理由:
+- 「村田はここで８分考えて、」 → ルール3, 置換ルール
+- 「終了時刻は２３時６分。」 → ルール3
+- 「消費時間は村田５時間３７分、川上４時間５３分。」 → ルール3
+- 「勝った川上は２勝２敗、敗れた村田は３勝１敗となった。」 → ルール4

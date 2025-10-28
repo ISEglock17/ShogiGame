@@ -1,0 +1,77 @@
+**Focusing My Efforts: Refining Shogi Game Commentaries**
+
+Okay, so I've got this task. The user wants me to clean up and reshape the comments within Shogi game data. The real goal here is to transform these comments into concise, natural explanations of the board state and specific moves, removing anything that isn't directly relevant to the actual analysis of the game.
+
+My plan? First, I'll need to establish clear rules for what constitutes "unnecessary information." Then, I'll go through the comments, following these rules to selectively delete anything that distracts from the core insights about the game. Finally, I'll focus on smoothing out the remaining text, ensuring it flows naturally and effectively explains the situation on the board and why each move was played. I'm aiming for something that's both accurate and easy for another expert to follow.
+
+手数6: 後手はゴキゲン中飛車に構える。角交換は恐れない。
+
+削除理由:
+- 「」 → 
+
+手数9: この形ですっかり定着した端歩突き。△６二玉▲７八銀△５五歩なら▲６五角と打ち、△８八角に▲９七香を用意している。
+
+削除理由:
+- 「」 → 
+
+手数22: いつでも△２四歩の仕掛けを用意する。▲５三角には△４四角があるので大丈夫。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は藤原１１分、藤倉２５分。」 → ルール3, 1
+
+手数29: 
+
+削除理由:
+- 「ここで藤倉が１６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は藤原４５分、藤倉１時間１０分。」 → ルール1, 3
+
+手数40: 
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は藤原２時間１８分、藤倉２時間２０分。」 → ルール1, 3
+
+手数41: 
+
+削除理由:
+- 「１７時２０分を過ぎた。」 → ルール3
+- 「消費時間は藤原２時間４０分、藤倉２時間２０分。」 → ルール1, 3
+
+手数42: ▲同銀と取られても△同銀で次に先手の角が取れるので、駒損にはならない。
+
+削除理由:
+- 「１時間６分の長考で指された。」 → ルール3
+- 「この局面で藤原が５２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は藤原３時間３２分、藤倉３時間２６分。」 → ルール1, 3
+
+手数47: 
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「消費時間は藤原３時間５３分、藤倉３時間２６分。」 → ルール1, 3
+
+手数54: 
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は藤原４時間１５分、藤倉４時間３６分。」 → ルール1, 3
+
+手数57: 
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「消費時間は藤原５時間１３分、藤倉４時間３６分。」 → ルール1, 3
+
+手数69: 
+
+削除理由:
+- 「２３時１５分の局面。」 → ルール3
+- 「消費時間は藤原５時間３６分、藤倉５時間７分。」 → ルール1, 3
+
+手数92: 
+
+削除理由:
+- 「ここで藤原の投了となった。」 → ルール1
+- 「消費時間は藤原５時間５９分、藤倉５時間５１分。」 → ルール1, 3
+- 「勝った藤倉は３勝２敗、敗れた藤原は４勝１敗となった。」 → ルール1, 4

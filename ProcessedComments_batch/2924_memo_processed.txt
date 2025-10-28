@@ -1,0 +1,165 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, so I'm presented with Shogi game commentary and my goal is clear: I need to transform these raw comments into something more refined and readable, adhering to a specific set of rules. It's a process of distilling the essence of each move, removing the noise, and presenting the vital information in a natural, logical flow.
+
+Here's how I see it unfolding:
+
+1.  **Iterating Through Each Move:** My first task is to break down the commentary into individual move analyses. Each turn requires individual processing.
+2.  **(Continued Steps:**)  I would then need to define a series of filters. The provided initial step, "各手数ごとにコメントを分析する," which translates to "analyze the comment for each move," tells me to break it down. I would also consider aspects of removing information that may not be desired. I'd then begin the step of rephrasing any remaining elements to form proper sentences. The goal will be to create a logical progression with minimal verbosity.
+
+Essentially, I'm aiming for concise, accurate, and easily digestible summaries of each move, suitable for an expert to quickly grasp the game's unfolding strategic narrative.
+
+手数10: 後手は角換わりを避けた。
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は岡崎７分、真田２８分。」 → ルール3
+- 「真田は」 → 先手・後手への置換
+
+手数12: △３三角と受けるか作戦の岐路。
+
+削除理由:
+- 削除対象なし
+
+手数24: 後手は雁木模様。
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は岡崎４３分、真田３４分。」 → ルール3
+- 「この局面で岡崎が４０分考えて昼食休憩になった。」 → ルール3, 7
+- 「消費時間は岡崎１時間２３分、真田３４分となった。」 → ルール3
+- 「真田は」 → 先手・後手への置換
+
+手数28: △７三桂の活用だけではなく、△７五歩▲同歩△６四銀のように角頭を狙う構想もある。
+
+削除理由:
+- 「１４時１０分の局面。」 → ルール3
+- 「消費時間は岡崎１時間４７分、真田１時間１５分。」 → ルール3
+- 「真田、△７四歩に２９分の考慮。」 → ルール3
+- 「真田」 → 先手・後手への置換
+
+手数29: 桂馬を跳ねて、△４五歩をけん制する。
+
+削除理由:
+- 「２６分の考慮で」 → ルール3
+
+手数30: 銀を繰り出して角頭を狙う。
+
+削除理由:
+- 「２２分考えて」 → ルール3
+- 「角頭を狙うべく、銀を繰り出す。」 → 自然な文に整形
+
+手数31:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は岡崎２時間１６分、真田１時間３７分。」 → ルール3
+
+手数33: 壁銀を直す。
+
+削除理由:
+- 削除対象なし
+
+手数34: 中央が手薄なので攻めていく。
+
+削除理由:
+- 削除対象なし
+
+手数36:
+
+削除理由:
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「消費時間は岡崎２時間２９分、真田２時間２５分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は岡崎２時間４４分、真田２時間４９分。」 → ルール3
+
+手数43: 銀を打たせたことに満足する。
+
+削除理由:
+- 削除対象なし
+
+手数45:
+
+削除理由:
+- 「▲６五銀の局面で真田が１３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は岡崎３時間３０分、真田３時間２５分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１９時４５分の局面。」 → ルール3
+- 「消費時間は岡崎３時間４７分、真田３時間３３分。」 → ルール3
+
+手数49: 銀を追い払う。
+
+削除理由:
+- 削除対象なし
+
+手数55: ▲５六歩と催促したため、ここ数手は指し手の流れが急になっている。
+
+削除理由:
+- 削除対象なし
+
+手数58:
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は岡崎４時間１７分、真田３時間４６分。」 → ルール3
+
+手数63: ３一玉型では頻出の手筋。歩切れになるが、それ以上の効果があると見ている。
+
+削除理由:
+- 削除対象なし
+
+手数66:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「残り時間は岡崎１時間７分。真田１時間４２分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間は岡崎４９分、真田１時間１９分。」 → ルール3
+
+手数81:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は岡崎２７分、真田１時間。」 → ルール3
+
+手数83:
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「残り時間は岡崎２７分、真田５３分。」 → ルール3
+- 「真田が考えている。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「４３分の長考で残り１０分になった。」 → ルール3
+
+手数89: 玉の早逃げで安全地帯へ。△７六角成は▲２三銀成△同玉▲２四飛△同玉▲１六桂以下の詰み筋がある。
+
+削除理由:
+- 「０時５分の局面。」 → ルール3
+- 「残り時間は岡崎１６分、真田９分。」 → ルール3
+
+手数108: ２七の桂馬を消す。詰将棋のような華麗な手順だ。
+
+削除理由:
+- 削除対象なし
+
+手数110: 桂馬が消えたので、ここに駒が打てる。以下▲同玉△３八銀▲２六玉△１五銀までの詰み。
+
+削除理由:
+- 「岡崎の投了となった。」 → 先手・後手への置換
+- 「終局時刻は０時２４分。」 → ルール3
+- 「消費時間は岡崎５時間４８分、真田５時間５９分。」 → ルール3
+- 「勝った真田は２勝２敗、敗れた岡崎は１勝３敗となった。」 → ルール4

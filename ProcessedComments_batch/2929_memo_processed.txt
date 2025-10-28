@@ -1,0 +1,86 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm presented with Shogi game commentary, likely embedded within game data. My task is to refine this commentary, following specific rules, to make it much more useful for analysis. I need to get rid of the extraneous stuff - the metadata, player introductions, time stamps, all that noise that distracts from the *actual* analysis of the moves. My goal is clear: I want the commentary to focus solely on the board position and the explanation of the moves themselves, presented as natural, coherent sentences.
+
+My process will be straightforward. First, I'll scrutinize each comment, applying the provided rules to determine what needs to go. This will involve identifying and removing any non-essential information. Once the commentary is "cleaned up," the next step is to rearrange what remains into grammatically correct and flowing sentences. Finally, I'll format the output to match the desired format specifications, ready for the next level of my analysis.
+
+手数31:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤４２分、△小林健３分。」 → ルール3, 4
+
+手数43:
+
+削除理由:
+- 「ここで後手が３１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲平藤５３分、△小林健５８分。」 → ルール3, 4
+
+手数44: 振り飛車側だけ交換した駒を打たされるのでは、先手の作戦は成功といえそうだ。
+
+削除理由:
+- 「５５分の長考で」 → ルール3
+- 「歩を受けた。」 → （削除ではなく、意味が通るように文脈に含めて整形）
+
+手数47:
+
+削除理由:
+- 「１４時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤１時間３０分、△小林健１時間２４分。」 → ルール3, 4
+
+手数49: 次に▲３二金△同銀▲同歩成△同飛▲４三銀の狙い。
+
+削除理由:
+- （削除なし）
+
+手数56: 端攻めできるようにしておくのが対穴熊の常套手段。
+
+削除理由:
+- （削除なし）
+
+手数67: 後手は横からの攻めに強い形なので、すぐに飛車を取ってもつまらない。
+
+削除理由:
+- 「１５時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤１時間５８分、△小林健２時間２５分。」 → ルール3, 4
+
+手数88:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤２時間１４分、△小林健３時間１５分。」 → ルール3, 4
+
+手数93:
+
+削除理由:
+- 「この局面で後手が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲平藤２時間３６分、△小林健３時間５９分。」 → ルール3, 4
+
+手数100:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤２時間５０分、△小林健４時間２７分。」 → ルール3, 4
+
+手数106:
+
+削除理由:
+- 「２１時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤３時間４７分、△小林健５時間６分。」 → ルール3, 4
+
+手数107: 自陣は弱体化するが、先手玉はまだまだ寄らないのでここで攻めきろうというつもりだろう。
+
+削除理由:
+- （削除なし）
+
+手数115:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲平藤４時間２５分、△小林健５時間３０分。」 → ルール3, 4
+
+手数129: ここで後手の投了となった。以下△同桂なら▲８二馬以下の即詰みとなる。
+
+削除理由:
+- 「消費時間は▲平藤４時間４２分、△小林健５時間４８分。」 → ルール3, 4
+- 「勝った平藤は３勝２敗、敗れた小林健は２勝３敗となった。」 → ルール4

@@ -1,0 +1,89 @@
+**Structuring the Game Commentary**
+
+Okay, so the task at hand is to meticulously clean up these shogi game comments. I need to make them as streamlined and focused on the actual moves as possible. Essentially, I'm removing all the extraneous information and adhering to these specific rules.
+
+Firstly, I'm wiping out any mention of individuals *not* directly involved in the game, so that's the first sweep. Secondly, anything about previous encounters or historical context gets the axe – that's irrelevant to this current play. Time markers are gone, profiles and stats are deleted, no mention of playing styles or openings. Location details, any talk of food or breaks, and even the broadcast aspects are completely removed.
+
+Then, there's the substitution process: replace the actual player names with "先手" (Sente, the player who moves first) or "後手" (Gote, the player who moves second) to maintain clarity. All other names disappear.
+
+The output will be formatted clearly: each move number followed by the cleaned-up comment. I have to make sure to note why each deletion happened, linking it back to the specific rule that justifies it. This will make the process easier to follow and also explain what content was removed.
+
+手数9: 先手の作戦は四間飛車。
+
+削除理由:
+- 「がけっぷちの立場の石川、」 → ルール4
+
+手数17: 早めに端歩を伸ばす藤井システム。完全に穴熊を警戒している。
+
+削除理由:
+- 該当なし
+
+手数29:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲石川３７分、△平藤１３分。」 → ルール3
+
+手数31: 後手玉の守りは離れ駒がないので、このままでも強い戦いが可能。△７四歩で急戦の恐れも出てきたので居玉を回避した。
+
+削除理由:
+- 該当なし
+
+手数39:
+
+削除理由:
+- 「この局面で平藤が１１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲石川１時間１６分、△平藤３６分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲石川１時間４４分、△平藤５０分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１時間３分の長考。」 → ルール3
+- 「１５時頃の局面。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲石川３時間２３分、△平藤１時間２８分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲石川４時間１２分、△平藤２時間１分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「この局面で平藤が３１分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲石川４時間２１分、△平藤２時間３２分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲石川４時間４１分、△平藤２時間４１分。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「２０時すぎ、御下段の間で指されていた▲広瀬−△西川戦が西川勝ちで終局。」 → ルール1, 2, 6
+- 「その瞬間、石川の降級点が決まった。」 → ルール4
+
+手数76: 次に△３七角がある。
+
+削除理由:
+- 該当なし
+
+手数77:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲石川５時間４４分、△平藤３時間１６分。」 → ルール3

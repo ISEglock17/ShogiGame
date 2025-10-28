@@ -1,0 +1,89 @@
+**Cleaning Up Commentary for Deep Dive Analysis**
+
+Okay, so I'm looking at this data set, a collection of comments that accompany shogi game records. My goal here is laser-focused: I need to strip away all the extraneous noise and distill the commentary down to its purest essence – the actual explanation of the board state and the reasoning behind each move. Think of it like a rigorous pruning of a tree; we're removing everything that doesn't contribute directly to understanding the game's unfolding dynamics.
+
+The task is pretty straightforward in principle. First, I need to methodically identify and eliminate anything that falls outside the core realm of tactical or strategic explanation. That includes the usual suspects: metadata about the game itself, biographical details about the players, any time-related information (unless it directly impacts the analysis), and anything else that's tangential. Then, and this is crucial, I need to take the remaining fragments of commentary and weave them back together into coherent, natural sentences. The aim isn't just to have a collection of disembodied phrases, but a flowing, logical narrative that encapsulates the core insights of the commentator. This will create a powerful dataset for further analysis.
+
+手数1:
+
+削除理由:
+- 「横山の本年度の成績は１８勝４敗。」 → ルール4
+- 「通算成績は１７４勝１０８敗（０．６１７）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「村田智の本年度の成績は１２勝６敗。」 → ルール4
+- 「通算成績は１５５勝１２９敗（０．５４６）」 → ルール4
+
+手数25:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲横山２４分、△村田智１５分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「ここで横山が１２分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲横山５０分、△村田智１時間４分。」 → ルール3
+- 「昼食の注文は横山が親子なんばうどん、村田智がカレー定食（うどん）。」 → ルール7
+- 「１４時過ぎの局面。」 → ルール3
+- 「横山が考え続けている。」 → ルール3
+- 「３１手目▲７五歩の局面は過去に実戦例が１４局あり、先手の１０勝４敗だったが、ここで実戦例が１局に減った。」 → ルール2
+
+手数33:
+
+削除理由:
+- 「横山はこの手に１時間３９分使った。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲横山２時間３４分、△村田智１時間８分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１６時１０分頃の局面。」 → ルール3
+- 「消費時間は▲横山３時間１９分、△村田智１時間３１分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲横山３時間４６分、△村田智２時間６分。」 → ルール3
+
+手数48: ▲４六角を防ぎつつ先手陣への攻めを見せる。
+
+削除理由:
+- 「ここで横山が１５分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲横山４時間１７分、△村田智２時間４０分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数64:
+
+削除理由:
+- 「２０時１０分頃の局面。」 → ルール3
+- 「消費時間は▲横山４時間４８分、△村田智３時間９分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲横山５時間１分、△村田智３時間４５分。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「消費時間は▲横山５時間１４分、△村田智４時間２１分。」 → ルール3
+
+手数93: この手は△５七竜からの自玉の詰めろを防ぎながら、▲２三銀△同玉▲４五馬△１四玉▲２四金以下の詰めろを見せた詰めろ逃れの詰めろとなっている。
+
+削除理由:
+- 「ここで村田智の投了となった。」 → ルール8
+- 「終局時刻は２２時４９分。」 → ルール3
+- 「消費時間は▲横山５時間４１分、△村田智４時間３９分。」 → ルール3
+- 「勝った横山は５勝１敗、敗れた村田智は３勝３敗となった。」 → ルール4

@@ -1,0 +1,92 @@
+**Structuring & Filtering Game Commentary**
+
+Okay, so I'm presented with a task: a user wants me to process shogi game commentary, cleaning it up and making it more presentable. They've given me specific rules to follow, which is great. I need to take each individual comment and apply these rules.  The immediate goal is to remove irrelevant information. Specifically, I need to strip out any details about people other than the players themselves. That means names, ranks, affiliations – anything that doesn't directly pertain to the game's progress or the players' actions. I need to be precise, ensuring I don't accidentally remove crucial game-related information in the process. I'll need to double check the rules to make sure I don't miss anything.
+
+手数16: ここで△８八角成▲同銀△４四角は、▲２一飛成。以下△８八角成▲同金△同飛成は▲３一竜〜▲３三角の王手龍取りがある。
+
+削除理由:
+- (削除なし)
+
+---
+手数18: お互い角頭を受け、相掛かり戦となった。
+
+削除理由:
+- (削除なし)
+
+---
+手数22:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は▲小林健３０分、△飯島３５分。」 → ルール3, 4
+
+---
+手数23:
+
+削除理由:
+- 「この局面で飯島が２８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林健５６分、△飯島１時間３分。」 → ルール3, 4
+
+---
+手数27: △１九角成には▲３九金で凌げているだろうか。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林１時間１５分、△飯島１時間１４分。」 → ルール3, 4
+
+---
+手数29: 部分的には定跡化されている手段。▲３八銀型で▲３六飛と歩を狙った瞬間に△８八角成▲同銀△２八角と打ち込む順で表れる。
+
+削除理由:
+- 「３０年くらい前によく指されていた形だそうだ。」 → ルール2
+- 「近年では０２年Ｃ２▲山本真也四段−△宮田敦史四段（肩書きは当時）で似た形になっている。」 → ルール1, 2
+
+---
+手数35:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健１時間３７分、△飯島２時間２２分。」 → ルール3, 4
+
+---
+手数39:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健１時間４８分、△飯島２時間５８分。」 → ルール3, 4
+
+---
+手数51:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲小林健２時間２６分、△飯島３時間３２分。」 → ルール3, 4
+
+---
+手数54:
+
+削除理由:
+- 「この局面で小林健が１６分考え、夕食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲小林健２時間４４分、△飯島４時間９分。」 → ルール3, 4
+
+---
+手数66: 先手は３筋の壁形が辛い。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲小林健３時間１３分、△飯島４時間３０分。」 → ルール3, 4
+
+---
+手数72: ▲５七同銀は△３五馬なので、▲５七同玉しかない。そこで△６五桂と打つのが厳しそうだ。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲小林健３時間５１分、△飯島４時間４９分。」 → ルール3, 4
+
+---
+手数80: 銀取りと△６五桂、△５九飛などの攻めが残り、後手玉は４一桂の存在も大きく、寄せがない。先手はここで投了した。
+
+削除理由:
+- 「小林健はここで２分考え、次の手を指さずに投了した。」 → ルール3, 4
+- 「消費時間は▲小林健４時間６分、△飯島４時間５４分。」 → ルール3, 4
+- 「勝った飯島は６勝２敗で昇級争い３番手キープ、敗れた小林健は２勝６敗となった。」 → ルール4

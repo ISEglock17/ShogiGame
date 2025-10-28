@@ -1,0 +1,116 @@
+**Structuring Game Commentary for Clarity**
+
+Okay, so I'm presented with a block of Japanese commentary on a Shogi game, and my task is to refine it.  The goal is to distill the essence of the game for an expert audience, stripping away all the fluff that's not strictly related to the board position or the moves themselves.  Think of it like curating a museum exhibit – only the most relevant pieces are on display.
+
+My process will be methodical.  I need to go through each comment, line by line, and judge it against a set of established rules.  Anything that doesn't directly contribute to understanding the state of the game at any given moment, or the *reasoning* behind a specific move, is out.  This includes things like player introductions, biographical information, speculative predictions, or anything that veers into unnecessary tangential discussions.  Essentially, I'm aiming for a lean, insightful narrative that a Shogi master would appreciate.
+
+手数17: 藤井システムは先手の得意戦法。
+
+削除理由:
+- 「室岡の」 → ルール1
+
+手数24: 定跡化された急戦。
+
+削除理由:
+- なし
+
+手数31: 金の力で反発する。
+
+削除理由:
+- なし
+
+手数32:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は室岡１９分、伊奈９分。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「△４四同角の局面で室岡が１２分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は室岡１時間２分、伊奈４８分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「ここまで６月に行われたＡ級順位戦の▲藤井猛九段―△谷川浩司九段戦と同じ進行（谷川勝ち）。」 → ルール1, 2
+- 「研究家として知られる室岡はどのような新手を用意しているのだろうか。」 → ルール1, 5
+
+手数44: 先に手を変えたのは後手の方だった。△３五角と攻める前例があった。
+
+削除理由:
+- 「伊奈」 → ルール1
+- 「谷川九段は」 → ルール1, 2
+- 「以前の対局で勝っていた側が相手の研究を警戒したり、これまで以上に良い手を用意して手を変えるのはプロの将棋ではよくあることだ。」 → ルール2
+
+手数45:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は室岡１時間３４分、伊奈１時間９分。」 → ルール1, 3
+
+手数47:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は室岡１時間５９分、伊奈１時間５５分。」 → ルール1, 3
+
+手数48: ▲５四金の当たりを避ける角引き。
+
+削除理由:
+- なし
+
+手数50:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は室岡２時間１３分、伊奈２時間２８分。」 → ルール1, 3
+
+手数52:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は室岡３時間１５分、伊奈２時間３１分。」 → ルール1, 3
+
+手数57:
+
+削除理由:
+- 「▲７四金の局面で伊奈が１１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は室岡４時間１２分、伊奈２時間４２分。」 → ルール1, 3
+
+手数58: ▲７五飛と取られるよりも、１手かけても金で取らせた方が先手の駒が重くなっている。
+
+削除理由:
+- なし
+
+手数68:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は室岡４時間３９分、伊奈３時間２１分。」 → ルール1, 3
+
+手数80:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は室岡５時間２分、伊奈３時間４０分。」 → ルール1, 3
+
+手数94: バッサリ行った。
+
+削除理由:
+- なし
+
+手数96:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は室岡１７分、伊奈２時間１５分。」 → ルール1, 3
+
+手数104: ここで先手の投了となった。以下▲同桂△１七銀で詰む。
+
+削除理由:
+- 「室岡の」 → ルール1
+- 「終局時刻は２２時１０分。」 → ルール3
+- 「消費時間は室岡５時間４８分、伊奈３時間４９分。」 → ルール1, 3
+- 「勝った伊奈は１勝１敗、敗れた室岡は０勝２敗となった。」 → ルール1, 4

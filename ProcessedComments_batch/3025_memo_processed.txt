@@ -1,0 +1,75 @@
+**Streamlining Shogi Commentary for Analysis**
+
+Okay, so I'm being asked to whip some Shogi game commentary into shape. The goal here is pretty clear: I need to focus the commentary down to the core – the actual board state and the moves being made.  Anything that's just fluff, like introductions to the players, how long they've been thinking, or any other metadata, needs to go. My expertise lies in precisely this area, separating signal from noise in game analysis. My plan will be to rigorously apply the provided rules to each comment. I'll need to develop a systematic approach to identify and filter the necessary information from the data.
+
+手数18:
+
+削除理由:
+- 「中村亮は後手番のときは藤井システムではない四間飛車が多い」 → ルール5
+
+手数27: 先手は穴熊を目指す。
+
+削除理由:
+- 「１１時の局面」 → ルール3
+- 「消費時間は川上７分、中村亮３１分」 → ルール3
+
+手数34:
+
+削除理由:
+- 「ここで川上が４０分考えて昼食休憩に入った」 → ルール3, 7
+- 「消費時間は▲川上５５分、△中村１時間０分」 → ルール3
+- 「昼食の注文は川上が鴨南蛮そば、中村はなし」 → ルール7
+
+手数35: ▲７八金は長考の一手。
+
+削除理由:
+- 「昼食休憩をはさんで５２分」 → ルール3, 7
+
+手数43: ▲４六歩は▲６八角と引いたときからの狙い。銀と桂を使っていく。
+
+削除理由:
+- 「１５時ころの局面」 → ルール3
+- 「ここまでの消費時間は▲川上１時間４１分、△中村１時間４７分」 → ルール3
+
+手数51: 後手は龍を作ったものの角損のわかれ。従来は先手よしと言われている。
+
+削除理由:
+- 「従来は先手よしと言われている」 → ルール2
+
+手数53: △６六歩▲同金△６四香に▲２二角という展開が予想される。
+
+削除理由:
+- 「１６時ころの局面」 → ルール3
+- 「ここまでの消費時間は▲川上１時間５１分、△中村２時間１６分」 → ルール3
+
+手数54:
+
+削除理由:
+- 「△３九龍は１時間１分の長考」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１７時を過ぎた」 → ルール3
+- 「ここまでの消費時間は▲川上２時間１９分、△中村３時間１７分」 → ルール3
+
+手数59:
+
+削除理由:
+- 「ここで中村が２６分考えて夕食休憩に入った」 → ルール3, 7
+- 「ここまでの消費時間は▲川上が２時間５２分、△中村が３時間３５分」 → ルール3
+- 「夕食の注文は川上がカレー南蛮うどん。中村はなし」 → ルール7
+- 「「さすがに乱暴だったんじゃないかな。先手持ちです」と先崎八段。」 → ルール1
+
+手数63: 先手に固めさせずにいかにまとわりつけるかが問われている。
+
+削除理由:
+- 「２０時過ぎの局面」 → ルール3
+- 「残り時間は▲川上２時間４４分、△中村１時間４２分」 → ルール3
+- 「と控え室」 → ルール1
+
+手数73: 依然、居飛車側の駒得。
+
+削除理由:
+- 「２１時過ぎの局面」 → ルール3
+- 「残り時間は▲川上２時間２５分、△中村５３分」 → ルール3

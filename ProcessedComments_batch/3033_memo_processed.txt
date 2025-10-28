@@ -1,0 +1,107 @@
+**Cleaning Up the Commentary: Focusing on the Game Itself**
+
+Alright, so I'm tackling this dataset of Shogi game records, and I need to clean up the commentary accompanying each move. The goal is laser-focused: strip away all the fluff and keep only the gold. That means anything that's not directly related to the actual game analysis is gone. No more introductions, no more time stamps, no extraneous information about the players – I'm only interested in the strategic insights. My goal is to extract the pure essence of the board position and the rationale behind each move, presented in a natural, coherent style. Think of it as distilling the game commentary down to its most potent form, ready for further analysis. This is about making the data as clear and usable as possible for someone who understands the nuances of the game.
+
+手数1:
+
+削除理由:
+- 「田村は富山県魚津市出身の３１歳、大内延介九段門下。」 → ルール1, 4
+- 「今期は４勝０敗、１．０００。」 → ルール4
+- 「通算成績は２５９勝１７７敗、０．５９４０。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「武市は徳島市出身の５３歳、丸田祐三九段門下。」 → ルール1, 4
+- 「今期は２勝１敗、０．６６６７。」 → ルール4
+- 「通算成績は３１１勝４４４敗、０．４１１９。」 → ルール4
+
+手数6:
+後手はゴキゲン中飛車へ。
+
+削除理由:
+- 「武市は」 → ルール1
+
+手数29:
+
+削除理由:
+- 「ここで武市が３１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲田村２４分、△武市１時間３５分。」 → ルール3
+- 「昼食の注文は田村が冷やしむじなそば、武市はなし。」 → ルール7
+
+手数32:
+
+削除理由:
+- 「ここまでの消費時間は▲田村３３分、△武市２時間１分。」 → ルール3
+
+手数34:
+振り飛車から先攻した。
+
+削除理由:
+
+手数37:
+
+削除理由:
+- 「ここまでの消費時間は▲田村１時間１８分、△武市２時間３４分。」 → ルール3
+
+手数40:
+馬ができる形に。先手はどう応じるか。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１６時ころの局面。」 → ルール3
+- 「消費時間は▲田村１時間２３分、△武市３時間１３分。」 → ルール3
+
+手数44:
+△３六角成は馬が狭く、▲５七金から狙われて危険とみたか。
+
+削除理由:
+
+手数48:
+▲１五同香は△１九角がある。
+
+削除理由:
+
+手数49:
+▲１八歩は辛抱強い手だ。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田村１時間３６分、△武市４時間６分。」 → ルール3
+- 「「仕方ないとはいえ、」 → ルール1
+- 「すごい辛抱です」。」 → ルール1
+
+手数58:
+
+削除理由:
+- 「ここで田村が１０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田村１時間４９分、△武市５時間３分と差がついている。」 → ルール3
+- 「夕食の注文は田村が親子丼。武市はなし。」 → ルール7
+- 「「先手が苦しそうだったが、意外にやれそう」と控え室。」 → ルール1, 6
+
+手数64:
+角香と金銀の交換となった。
+
+削除理由:
+
+手数78:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「残り時間は▲田村３時間５０分、△武市２９分。」 → ルール3
+
+手数95:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「武市の考慮中に「武市先生残り１分です」の声が聞こえた。」 → ルール1, 3
+- 「田村は３時間２８分残している。」 → ルール3
+
+手数109:
+
+削除理由:
+- 「２１時８分、１０９手で田村六段の勝ち。」 → ルール1, 3
+- 「残り時間は▲田村３時間２７分、△武市１分。」 → ルール3

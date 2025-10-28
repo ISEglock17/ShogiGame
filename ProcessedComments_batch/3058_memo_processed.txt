@@ -1,0 +1,116 @@
+**Focusing My Efforts: Refining Shogi Commentary for Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentary datasets. The goal here is pretty clear: get rid of all the fluff – any metadata, player intros, timestamps, anything that won't help with analyzing the moves – and keep only the insightful commentary about the board state and the moves themselves. Essentially, I need to extract the essence of the analysis and present it in a clean, readable form.
+
+My plan is straightforward:
+
+1.  I'll go through each comment, applying a set of rules to identify and remove all the unnecessary information.
+2.  Then, I'll work on smoothing out the remaining text, making it flow naturally as a coherent explanation of the game's progression.
+3.  Finally, I'll format the cleaned-up commentary according to the specific output format the user needs.
+
+I'll be paying close attention to the rules I've been given to pinpoint exactly what needs to be removed.
+
+手数23:
+
+削除理由:
+- 「ここまでの消費時間は中村１０分、佐藤１２分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は中村４４分、佐藤１時間７分。」 → ルール3
+- 「昼食の注文は、佐藤は鴨せいろうどん。中村はなし。」 → ルール7
+
+手数34:
+後手は飛車先を伸ばした。
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「佐藤は３５分考えて、」 → ルール1, 3
+- 「消費時間の通計は中村５１分、佐藤１時間４２分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は中村１時間２５分、佐藤１時間５０分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「佐藤、この１手に５７分を使った。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は中村１時間５８分、佐藤２時間４７分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「中村はこの１手に１時間１９分考えた。」 → ルール1, 3
+- 「対して佐藤が１１分使ったところで夕食休憩。」 → ルール1, 3, 7
+- 「消費時間の通計は、中村３時間１７分、佐藤３時間２７分。」 → ルール3
+- 「夕食の注文は、中村はなし。佐藤はうな重と赤だし。」 → ルール7
+
+手数49:
+いよいよ本格的な戦いに。
+
+削除理由:
+- 「１９時半頃の局面。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は中村３時間４５分、佐藤３時間５１分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「この一手に３９分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「２０時４０分頃の局面。」 → ルール3
+- 「消費時間は中村３時間５０分、佐藤４時間３０分。」 → ルール3
+
+手数57:
+先手は、じっと端を突く。
+
+削除理由:
+- 「中村は３５分考えて、」 → ルール1, 3
+- 「消費時間の通計は、中村４時間３７分、佐藤４時間５５分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は中村１時間９分、佐藤２６分。」 → ルール3
+
+手数82:
+
+削除理由:
+- 「２３時半過ぎの局面。」 → ルール3
+- 「残り時間は中村５１分、佐藤２分。」 → ルール3
+
+手数88:
+
+削除理由:
+- 「佐藤は最後の１分を使って、後は一分将棋。」 → ルール1, 3
+- 「対して中村は残り３８分。」 → ルール1, 3
+
+手数94:
+
+削除理由:
+- 「残り時間は中村２４分、佐藤１分。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「終了時刻は０時２５分。」 → ルール3
+- 「消費時間は中村５時間４５分、佐藤５時間５９分。」 → ルール3
+- 「勝った中村、負けた佐藤は、ともに１勝１敗となった。」 → ルール1, 4

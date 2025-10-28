@@ -1,0 +1,123 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I've got this task: someone wants me to take raw Shogi game commentary and make it nice and presentable. Essentially, they want me to apply some specific cleaning rules to the comments. 
+
+Here's how I'm going to approach this:
+
+1.  **Read Each Comment:** I'll start by taking each individual comment and analyzing it.
+2.  **Rule Check:** I'll meticulously go through each comment, checking if any part of it matches the pre-defined deletion rules that were provided.
+3.  **Target and Erase:** If I find a match, I'll identify the specific part of the comment that breaks the rules. Then, *poof* – I'll delete it.
+4.  **Polish the Remains:** Now, for whatever's left after the cleanup, I need to make it sound natural and well-structured, as if a human had written it. Essentially, I'm refactoring the sentences to be grammatically correct.
+5.  **Standardize Player Names:** Finally, I'll replace any mention of the players' names with "Sente" (先手) for the first player and "Gote" (後手) for the second player. This adds consistency to the format.
+
+手数2: 現在では奇策とは見なされない、２手目△３二飛戦法。
+
+削除理由:
+- 「現在では」 → ルール2
+
+手数3:
+
+削除理由:
+- 「大平は」 → ルール1
+- 「この手に５分」 → ルール3
+
+手数5: 素早く端を突きこす。
+
+削除理由:
+- 「素早く」 → ルール3
+
+手数6: 後手はここまで歩を突いていない。
+
+削除理由:
+- 
+
+手数14: 端を突き越されているので、穴熊は自然。
+
+削除理由:
+- 
+
+手数16:
+
+削除理由:
+- 「ここまでの消費時間は大平１２分、遠山１６分」 → ルール3
+
+手数21:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は大平４７分、遠山５６分。」 → ルール3
+- 「昼食の注文は、大平はなし。遠山はスタミナ焼定食。」 → ルール7
+
+手数27: ６筋位取り。
+
+削除理由:
+- 
+
+手数33:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は大平１時間５分、遠山１時間４８分。」 → ルール3
+
+手数34: 位に向かって反発。
+
+削除理由:
+- 
+
+手数40: 手順に銀を寄せた。
+
+削除理由:
+- 
+
+手数42:
+
+削除理由:
+- 「１５時１５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は大平１時間３０分、遠山２時間２８分。」 → ルール3
+
+手数50: 一歩損となるが、勢いをつけた。
+
+削除理由:
+- 
+
+手数60:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は大平２時間１９分、遠山３時間１２分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は大平２時間５９分、遠山３時間４９分。」 → ルール7
+- 「夕食の注文は両者ともになし。」 → ルール7
+
+手数83:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は大平３時間２３分、遠山４時間２４分。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は大平３時間２６分、遠山４時間５２分。」 → ルール3
+- 「控え室の評判は遠山勝勢。」 → ルール1
+
+手数98:
+
+削除理由:
+- 「控え室では代わりに△６四金が推奨されていたが。」 → ルール1
+
+手数103: 鬼手。（△７一同金と）取ったら（▲８三香成で）必死なのか？！必死どころか詰めろなのか？
+
+削除理由:
+- 「消費時間は大平３時間５９分、遠山４時間５８分。」 → ルール3
+
+手数117:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は４時間２分、遠山５時間１３分。」 → ルール3

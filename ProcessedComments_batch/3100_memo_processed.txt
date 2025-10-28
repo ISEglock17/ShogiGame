@@ -1,0 +1,98 @@
+**Structuring Shogi Commentary: My Approach**
+
+Okay, so I'm tackling this shogi commentary formatting task. The user wants clean, standardized output, and they've given me specific rules and a desired format.  My thought process is essentially this:
+
+1.  **Analyze Each Comment Individually:** I'll break down each hand's commentary into its components. That's the foundation – understanding what's being said in each instance.
+
+2.  **Identify the "Kill Zones":**  I'll need to go through my rule set, and figure out what parts of the comment need to be removed or adjusted.  This is about precision, and avoiding unintended deletions.
+
+3.  **Apply the Rules:** Based on the user's specific guidelines, I'll delete or replace those identified sections. This is the core of the transformation; adhering to the format while retaining the essential meaning.
+
+4.  **Polish the Remainder:** I need to make the output sound like actual, well-written Japanese. I'll smooth out any remaining rough edges, ensuring the final result reads naturally and is easily understandable.
+
+手数32:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲木下１６分、△島本１０分。」 → ルール3, 4
+
+手数36:
+
+削除理由:
+- 「この局面で木下が１５分考え、」 → ルール3, 4
+- 「昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲木下１時間５分、△島本１９分。」 → ルール3, 4
+
+手数45:
+
+削除理由:
+- 「１４時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲木下１時間２２分、△島本２時間８分。」 → ルール3, 4
+
+手数47: 角を右に引くためには必要な一手。追われてから▲９七角では△９五歩の端攻めがある。
+
+削除理由:
+
+手数49:
+
+削除理由:
+- 「４３分考えて」 → ルール3
+- 「取り込んだ。」 → この部分だけでは意味が通じないため削除
+
+手数53:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲木下２時間５分、△島本２時間２９分。」 → ルール3, 4
+
+手数60:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲木下２時間１４分、△島本３時間３１分。」 → ルール3, 4
+
+手数62:
+
+削除理由:
+- 「この局面で木下が３６分考えて」 → ルール3, 4
+- 「夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲木下３時間８分、△島本３時間４１分。」 → ルール3, 4
+
+手数76: 後手は１手１手慎重に考えている。入玉を目指しているのだろうか。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲木下３時間１２分、△島本４時間２８分。」 → ルール3, 4
+- 「木下は６３手目▲１五歩に夕食休憩を挟んで４０分考えたあと、ノータイムで飛ばしている。」 → ルール1, 3, 4, 7
+- 「島本は」 → ルール1
+- 「入玉という名のパラダイスを」 → 自然な文章に整形
+
+手数77:
+
+削除理由:
+- 「１時間の長考。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲木下４時間１８分、△島本４時間５４分。」 → ルール3, 4
+
+手数104:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「消費時間は▲木下４時間５１分、△島本５時間２分。」 → ルール3, 4
+
+手数136:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は４８分ずつ。」 → ルール3
+
+手数159:
+
+削除理由:
+- 「この局面で島本は投了した。」 → ルール1
+- 「消費時間は▲木下５時間２３分、△島本５時間２３分。」 → ルール3, 4
+- 「勝った木下は３勝１敗、敗れた島本は１勝３敗となった。」 → ルール1, 4

@@ -1,0 +1,111 @@
+**Focusing the Lens: Cleaning Up the Commentary**
+
+Alright, so the user wants me to whip some chess commentary into shape, specifically for Shogi. I understand the task – it's all about streamlining the analysis and making it digestible for the reader. They've laid out the ground rules, and I'm ready to dive in.
+
+First things first, I've got to be a ruthless editor. I need to systematically excise all the extraneous fluff that distracts from the game itself. That means any mention of people *not* involved in the current match is gone – no names, no ranks, nothing. It's just the two players duking it out on the board, period.
+
+Next, anything that leans on history or precedent needs the axe. We're in the present moment, analyzing the current state of affairs, not dwelling on past encounters. What happened *before* this game, or even *in* this game prior to the current move? Out it goes!
+
+And finally, time is irrelevant right now. All references to the clock, time spent, or anyone running short on time need to be zapped. We are not concerned with the clock, the analysis is what's important. This also covers any references to whether someone ran out of time.
+
+I've got the tools and the framework, and I'm ready to start honing in on the crucial analysis. Let's make this Shogi commentary shine!
+
+手数17: 先手流の駒組み。玉は４九〜３八と構える。５七が強いことが長所。
+
+削除理由:
+- 「室岡」 → ルール1
+
+手数20:
+
+削除理由:
+- 「１１時１０分ごろの局面。」 → ルール3
+- 「消費時間は室岡１５分、佐藤紳５２分。」 → ルール3, 1
+
+手数22:
+
+削除理由:
+- 「室岡が５２分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は室岡１時間７分、佐藤紳５２分。」 → ルール1, 3
+
+手数29:
+
+削除理由:
+- 「１４時１５分ごろの局面。」 → ルール3
+- 「消費時間は室岡１時間２０分、佐藤紳１時間２７分。」 → ルール1, 3
+
+手数30: 後手は飛車を浮いた。ほかに△７一飛や△７四歩が部分的に見られる。
+
+削除理由:
+- 「１時間１４分の長考で」 → ルール3
+
+手数31: △６六銀なら▲同銀△同角▲７五銀（飛角両取り）の狙いがある。激しい変化なら１筋の位が生きてくる。
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は室岡１時間２３分、佐藤紳２時間４１分。」 → ルール1, 3
+
+手数35: 激しい変化に突入した。
+
+削除理由:
+- なし
+
+手数38: ２枚換えで角を成り込む。▲７七角は△８九馬が飛車取りになる。ほかには▲７四歩や▲８二飛くらいか。
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は室岡１時間２３分、佐藤紳２時間４６分。」 → ルール1, 3
+
+手数39:
+
+削除理由:
+- 「５９分の長考。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は室岡２時間２５分、佐藤紳３時間３２分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「佐藤紳が３１分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は室岡２時間５５分、佐藤紳４時間３分。」 → ルール1, 3
+
+手数48: 角の捕獲を狙うが、僻地へ投資した損もありそう。
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は室岡３時間１７分、佐藤紳４時間２７分。」 → ルール1, 3
+- 「控え室では意外そうな声が上がった。」 → ルール6, 1
+
+手数56: 後手は有利と見て千日手を打開。
+
+削除理由:
+- 「佐藤紳は」 → ルール1
+
+手数59:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は室岡３時間５９分、佐藤紳４時間５６分。」 → ルール1, 3
+
+手数70:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は室岡１時間３２分、佐藤紳２６分。」 → ルール1, 3
+
+手数80: △６八と〜△５八とでアウトの状況。しかし、後手玉を寄せるのも大変だ。上に逃げられそうだし、５五馬の利きも強い。
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「残り時間は室岡４９分、佐藤紳１１分。」 → ルール1, 3
+
+手数96: 以下▲同歩△４七金▲同金△同馬▲同玉△３五桂▲３六玉△２五銀▲４五玉△５五金までの詰み。先手の投了となった。
+
+削除理由:
+- 「室岡の」 → ルール1
+- 「終局時刻は０時５分。」 → ルール3
+- 「消費時間は室岡５時間４９分、佐藤紳５時間５０分。」 → ルール1, 3
+- 「勝った佐藤紳は５勝４敗、敗れた室岡は３勝６敗となった。」 → ルール1, 4

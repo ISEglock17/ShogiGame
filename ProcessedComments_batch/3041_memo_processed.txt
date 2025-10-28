@@ -1,0 +1,74 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tackling this task of refining shogi commentary data. The user, who's likely another shogi expert like me, wants to clean up the comments embedded within the game data.  The goal is crystal clear: extract the pure, valuable analysis – the explanations of the board state and the moves made – and get rid of all the noise. This includes extraneous stuff like metadata, player introductions, timing details, or anything that doesn't directly contribute to understanding the *why* and *how* of the moves.
+
+My plan to accomplish this is straightforward. First, I need to define the rules of what's *in* and what's *out*.  This is crucial – I'll need a robust set of criteria to systematically identify and discard the irrelevant information within each comment.  Then, once I have the "core" analysis left, I'll focus on making it flow naturally.  I need to ensure the remaining explanations read like proper, coherent sentences, just as if a human commentator was explaining the game in real-time. This final step is key to making the refined data truly useful for serious study.
+
+手数14:
+
+削除理由:
+- 「ここまでの消費時間は武市４０分、田丸１３分」 → ルール3
+
+手数24:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は武市１時間３２分、田丸２８分。」 → ルール3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+手数29:
+
+削除理由:
+- 「１４時半前の局面。」 → ルール3
+- 「ここまでの消費時間は武市２時間３２分、田丸３３分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「田丸、１時間４分の長考。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は武市２時間３９分、田丸１時間４１分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は武市４時間１分、田丸２時間３分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は武市４時間１５分、田丸２時間４０分。」 → ルール7
+- 「夕食の注文は、両者ともになし。」 → ルール7
+
+手数64:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は佐藤４時間２６分、田丸３時間３分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は武市４時間４８分、田丸３時間５９分。」 → ルール3
+
+手数108:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は武市１６分、田丸１時間２１分。」 → ルール3
+
+手数124:
+後手は作戦勝ちから完勝を収めた。
+
+削除理由:
+- 「終局後武市は、「組んだところではもう終わっていましたね」と語っていた。」 → ルール1
+- 「終了時刻は２３時２５分。」 → ルール3
+- 「消費時間は武市５時間５８分、田丸４時間４８分。」 → ルール3
+- 「勝った田丸は１勝０敗。負けた武市は２連敗となった。」 → ルール4

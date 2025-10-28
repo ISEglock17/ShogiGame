@@ -1,0 +1,73 @@
+**Structuring User Comments for Clarity**
+
+Okay, so I understand the user needs help formatting Shogi game comments. They've got specific rules and formats they want me to follow. My goal is to take their raw comments and transform them into something clean and easy to understand.
+
+Here's my thought process:
+
+1.  **Reading and Analyzing:** First, I'll read through each comment carefully.
+2.  **Identifying the "Noise":** I need to pinpoint the parts that need to be removed, based on their pre-defined "delete" rules.
+3.  **Extracting the Good Stuff:**  The real meat of the comment, the explanations of the board state and the moves, that's what I want to keep.
+4.  **Polish and Refine:** I'll work on making the extracted parts flow naturally in Japanese. Clear, grammatically correct language is key.
+
+手数10: 角換わりになった。
+
+削除理由:
+
+手数27: 相腰掛け銀に進む。
+
+削除理由:
+
+手数38: 早い進行で先後同型の形に進んだ。
+
+削除理由:
+- 「早い進行で」 → ルール3
+
+手数47: ３四で歩が入れば▲７四歩があるので、△６五歩と反撃しにくい。
+
+削除理由:
+- 「最近、多くなった仕掛け方。」 → ルール2
+
+手数51: 現代将棋のテーマの局面。新研究を出すのはどちらだろうか。
+
+削除理由:
+- 「川上が５８分考えて昼食休憩に入った」 → ルール3, 7
+- 「消費時間は西尾３７分、川上１時間６分」 → ルール3, 4
+- 「昼食の注文は西尾が鴨南そば、川上が冷やし中華」 → ルール7
+
+手数53: 右金を遊ばせるためのたたき。
+
+削除理由:
+
+手数58: ７四金を攻めに使う発想。この戦型の後手は、右金が遊びやすいのがネックになっていた。
+
+削除理由:
+- 「渡辺明竜王が最初に指した攻め筋で、」 → ルール1, 2
+- 「西尾が長考している。」 → ルール4
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は西尾４１分、川上１時間１３分。」 → ルール3, 4
+
+手数59: 先手は▲３三歩成と軽快に成り捨てた。（１）△同桂は▲３四歩、（２）△同銀は▲７一角△５二飛▲４五銀（または▲４五桂）。となると、（３）△同金が自然か。
+
+削除理由:
+- 「西尾は１時間２６分の長考で」 → ルール1, 3, 4
+
+手数60:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は西尾２時間７分、川上１時間２６分。」 → ルール3, 4
+
+手数61: 先手はこのタイミングで歩を取った。
+
+削除理由:
+- 「西尾は」 → ルール1
+
+手数62: 形を乱すたたき。
+
+削除理由:
+
+手数66: ５八金・７六銀を狙う角打ち。
+
+削除理由:
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「消費時間は西尾２時間１８分、川上１時間５４分。」 → ルール3, 4

@@ -1,0 +1,107 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so the user wants me to process these Shogi game comments, right? They've given me a set of rules to follow. Essentially, I need to strip away all the extraneous fluff and distill each comment down to its core meaning, presenting it in a clear and natural way.  Think of it as cleaning up the noise and getting to the signal.  My goal is to provide a concise and understandable narrative of the game's progress.
+
+Let's start with this first example: "手数1: 村中は気息を整え、初手に４分。"  Alright, first move, 村中 player, four minutes elapsed.  I need to rephrase it.  I'd present it something like: "Move 1: 村中 spent four minutes." or perhaps even "村中 started her turn, spending four minutes."
+
+手数1:
+
+削除理由:
+- 「村中は気息を整え」 → ルール1（対局者の様子）
+- 「初手に４分」 → ルール3
+
+手数2:
+
+削除理由:
+- 「対して田村は７分」 → ルール1, 3
+
+手数12:
+
+削除理由:
+- 「１０時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は村中１８分、田村１４分。」 → ルール1, 3
+
+手数27:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は村中４６分、田村１時間９分。」 → ルール1, 3
+- 「昼食の注文は、村中はなし。田村は中華そば。」 → ルール1, 7
+
+手数28:
+
+削除理由:
+- 「再開直後の一手。」 → ルール7
+- 「村中の長考中に、時刻は１４時を過ぎた。」 → ルール1, 3
+
+手数34: 菊水矢倉に。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「１５時１５分頃の局面。」 → ルール3
+- 「消費時間は村中２時間１５分、田村１時間５２分。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は村中３時間１３分、田村２時間３７分。」 → ルール1, 3
+
+手数45:
+
+削除理由:
+- 「田村が４６分使って、ここで夕食休憩。」 → ルール1, 3, 7
+- 「消費時間の通計は村中３時間３３分、田村３時間２４分。」 → ルール1, 3
+- 「夕食の注文は、田村はカレーライス。村中はうな重（梅）。」 → ルール1, 7
+
+手数46:
+
+削除理由:
+- 「１９時、対局再開。」 → ルール3, 7
+- 「田村、決断の一手。」 → ルール1
+
+手数48:
+
+削除理由:
+- 「ここまでの消費時間は村中３時間４９分、田村３時間２４分。」 → ルール1, 3
+
+手数49: いったん▲６五歩と角を追う手もあるかと言われていたが。
+
+削除理由:
+
+手数52:
+
+削除理由:
+- 「控え室の評判は村中よし。」 → ルール1, 6
+
+手数56:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は村中３時間４３分、田村３時間３０分。」 → ルール1, 3
+
+手数81: 一気に進んだ。先手勝勢。
+
+削除理由:
+- 「村中」 → ルール1
+
+手数86: 矢倉崩しの手筋。
+
+削除理由:
+
+手数88: 先手玉に詰めろがかかった。
+
+削除理由:
+- 「村中」 → ルール1
+- 「残り時間は村中５７分、田村１時間５９分。」 → ルール1, 3
+
+手数89: しかし冷静に受けてよい。後手はここで駒を投じた。
+
+削除理由:
+- 「田村は８分考えて」 → ルール1, 3
+- 「終了時刻は２１時３８分。」 → ルール3
+- 「消費時間は村中５時間７分、田村４時間９分。」 → ルール1, 3
+- 「勝った村中は６勝１敗、敗れた田村は５勝２敗となった。」 → ルール1, 4

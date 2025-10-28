@@ -1,0 +1,92 @@
+**Focusing on the Core of the Game**
+
+Okay, I'm tasked with cleaning up these shogi commentary snippets. The user wants them streamlined, focused, and ready for analysis.  My primary goal is to strip away anything irrelevant to the *current* game. That means I need to excise all the fluff: names of commentators (besides the players themselves, of course), any references to previous matches or historical context, the passage of time (whether it's "early game" or "late endgame"), biographical details, stylistic pronouncements, atmospheric descriptions, breaktime talk, and any talk about the broadcast itself. My aim is to extract the pure essence of the game from each comment. The key to this is a rigorous adherence to the provided replacement rule – always swap player names for "先手" (Sente, the player moving first) or "後手" (Gote, the player moving second). By applying these removals and replacements consistently, I'll ensure the information is concise and centered on the critical aspects of the ongoing duel.
+
+手数27:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上１５分、△伊奈２９分。」 → ルール3, 4
+
+手数33:
+
+削除理由:
+- 「この局面で伊奈が３１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲川上３０分、△伊奈１時間２７分。」 → ルール3, 4
+
+手数41:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上５６分、△伊奈２時間３分。」 → ルール3, 4
+
+手数44:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲川上１時間１５分、△伊奈２時間３７分。」 → ルール3, 4
+
+手数48:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上１時間４４分、△伊奈３時間４８分。」 → ルール3, 4
+
+手数50:
+
+削除理由:
+- 「この局面で川上が２５分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲川上３時間８分、△伊奈３時間４８分。」 → ルール3, 4
+
+手数51:
+
+削除理由:
+- 「夕食休憩をはさんで１時間５分の長考だった。」 → ルール3, 7
+
+手数57:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上３時間５３分、△伊奈４時間０分。」 → ルール3, 4
+
+手数58:
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上４時間３分、△伊奈４時間５４分。」 → ルール3, 4
+
+手数68: ズバッと切った。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数70: 飛車も角も切って、攻めが続くのだろうか。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数73: ▲６七同銀は△５七銀があるので、玉で取る一手。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数74:
+
+削除理由:
+- 「手順を伝えられると、検討陣から悲鳴に近い声があがる。」 → ルール1
+
+手数79: △３八銀▲３七金△４九銀不成が予想されている。後手は飛車も角も渡しているので、攻め続けなければいけない。
+
+削除理由:
+- 「２２時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上４時間４７分、△伊奈５時間１２分。」 → ルール3, 4
+
+手数83: ▲５九金と切らしに行く順が予想されていた。
+
+削除理由:
+- 「検討では」 → ルール1

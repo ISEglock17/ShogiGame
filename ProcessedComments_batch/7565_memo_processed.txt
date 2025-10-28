@@ -1,0 +1,113 @@
+**Refining the Shogi Commentary**
+
+Okay, so the user wants me to clean up these Shogi commentary lines. I get it, they're probably looking for something more concise and structured. My process is pretty straightforward:
+
+First, I'll go through each move, analyzing the comment associated with it. I'm looking for specific phrases or patterns that the user has identified as needing removal. It's like finding the weeds in a garden.
+
+Next, I'll apply those deletion rules. Anything that's a match gets zapped. I'll be careful, though, to maintain the original intent as much as possible, just trimming the fat. 
+
+After removing the unnecessary bits, I'll smooth out the remaining text. Make sure it flows naturally, like a well-executed endgame. The goal is clarity.
+
+Finally, I'll organize everything neatly.  I'll give the move number, the cleaned-up comment, and the reason I made any deletions. It's all about providing a clear, audit-able report, so they can see what I did and why.
+
+手数1:
+
+削除理由:
+- 「◆真田　圭一（さなだ　けいいち）七段◆」 → ルール1, 4
+- 「１９７２年１０月６日生まれ、千葉県八千代市出身。（故）松田茂役九段門下。１９９２年、四段。２００５年、七段。棋士番号は２０２。」 → ルール4
+- 「タイトル戦登場は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆大平　武洋（おおひら　たけひろ）五段◆」 → ルール1, 4
+- 「１９７７年５月１１日生まれ、東京都北区出身。桐谷広人七段門下。２００２年、四段。２００６年、五段。棋士番号は２４３。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「真田の通算成績は４２９勝３３３敗（勝率０．５６３）。」 → ルール4
+- 「昨年度成績は１５勝１２敗（０．５５６）。」 → ルール4
+- 「本年度成績は４勝６敗（０．４００）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「大平の通算成績は１８７勝１８５敗（勝率０．５０３）。」 → ルール4
+- 「昨年度成績は１４勝１７敗（０．４８５）。」 → ルール4
+- 「本年度成績は５勝３敗（０．６２５）。」 → ルール4
+
+手数12: 矢倉模様に進んでいる。
+
+削除理由:
+
+手数25: ３七銀戦法を選択。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「ここでようやく真田の持ち時間が消費された。」 → ルール3
+- 「３分の考慮だった。」 → ルール3
+
+手数45: 矢倉の最新形で、今現在最も研究されている形の一つだ。早い進行といえる。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲２五桂までの消費時間は▲真田９分、△大平２２分。」 → ルール3
+- 「とはいえ順位戦で１１時に４５手まで進んでいるというのは」 → ルール3
+
+手数87:
+
+削除理由:
+- 「１２時１０分、ここで大平が１６分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲真田９分、△大平１時間９分。」 → ルール3
+- 「昼食の注文は真田が力うどん（ほそ島や）。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+手数88: 後手は銀を打った。ここでは▲６八金引と▲６八金寄が指されている。
+
+削除理由:
+- 「対局再開直後に」 → ルール7
+- 「そこで真田が止まり、そのまま１４時を過ぎた。」 → ルール1, 3
+
+手数91: 銀を打った。ここで前例と手が変わった。前例では▲６四金と打っている。前例の解説では、金と銀の比較について「△９三飛▲４三成桂△同飛の時に▲５四金と寄れるという意味」があるという。本譜は銀なのでその変化はない。
+
+削除理由:
+- 「ここまで今月４日に行われた第６２期王座戦五番勝負第１局▲羽生善治王座−△豊島将之七段戦を踏襲していたが、」 → ルール1, 2
+- 「王座戦では」 → ルール2
+- 「真田はその将棋の動画サイトでの解説を担当しており、その将棋を解説する際、」 → ルール1, 8
+
+手数92:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△８三飛寄までの消費時間は▲真田１時間３３分、△大平１時間３９分。」 → ルール3
+
+手数98:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△９六歩までの消費時間は▲真田２時間２分、△大平１時間４６分。」 → ルール3
+
+手数100:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「△２二玉までの消費時間は▲真田２時間３７分、△大平１時間５５分。」 → ルール3
+
+手数112:
+
+削除理由:
+- 「１８時１０分、ここで真田が９分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲真田４時間１５分、△大平２時間５分。」 → ルール3
+- 「両者ともに夕食の注文はなし。」 → ルール7
+- 「対局再開は１９時。」 → ルール7
+
+手数124: ここで先手が投了した。
+
+削除理由:
+- 「終局時刻は１９時２２分。」 → ルール3
+- 「消費時間は▲真田４時間２８分、△大平２時間１０分。」 → ルール3
+- 「勝った大平は３勝１敗、敗れた真田は２勝２敗になった。」 → ルール4

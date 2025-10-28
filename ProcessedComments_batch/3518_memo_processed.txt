@@ -1,0 +1,103 @@
+**Focusing My Edit: Streamlining Chess Commentary**
+
+Alright, so I've got this task at hand. The user wants me to clean up these comments that come bundled with Shogi game data. The goal is clear: strip out all the noise and keep only the gold – the insightful explanations of board positions and move choices. I need to make the text flow naturally after pruning, so it reads less like a data dump and more like a human-readable analysis. The key here is adherence to a set of pre-defined rules for identifying and eliminating the irrelevant parts. Time to get my editorial hat on and start shaping this data!
+
+手数5: 先手の作戦は三間飛車。
+
+削除理由:
+- 「安用寺の」 → ルール1
+
+---
+手数19:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２５分、△長沼１４分。」 → ルール3, 1
+
+---
+手数22: 相穴熊になった。
+
+削除理由:
+（削除なし）
+
+---
+手数26:
+
+削除理由:
+- 「この局面で安用寺が２１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲安用寺１時間１１分、△長沼４３分。」 → ルール1, 3
+
+---
+手数31:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間３分、△長沼５１分。」 → ルール1, 3
+
+---
+手数33:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間４分、△長沼１時間７分。」 → ルール1, 3
+
+---
+手数36: 飛車は走っており、角も引いているので取る駒がない。▲７七桂に△８六飛と走って８筋突破はできるが、８八歩が邪魔にもなりそうだ。
+
+削除理由:
+（削除なし）
+
+---
+手数38:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間１５分、△長沼２時間３５分。」 → ルール1, 3
+
+---
+手数42:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲安用寺２時間３３分、△長沼２時間５２分。」 → ルール1, 3
+
+---
+手数43: 歩を垂らした。
+
+削除理由:
+- 「１時間２分の長考で」 → ルール3
+- 「ここで長沼も２８分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲安用寺３時間３５分、△長沼３時間２０分。」 → ルール1, 3
+
+---
+手数45: 先手は▲７二歩成としたいが、△６三銀と立たれる手がある。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間５分、△長沼３時間３１分。」 → ルール1, 3
+
+---
+手数49: 陰になっていた角の利きが通り、飛車取りになっている。
+
+削除理由:
+（削除なし）
+
+---
+手数51: 角に続いて飛車も働かせる。
+
+削除理由:
+（削除なし）
+
+---
+手数60:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間２５分、△長沼４時間２１分。」 → ルール1, 3
+
+---
+手数66:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間５２分、△長沼４時間５９分。」 → ルール1, 3

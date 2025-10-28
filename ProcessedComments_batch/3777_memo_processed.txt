@@ -1,0 +1,55 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I'm looking at this chess game commentary data and I need to refine it. My goal here is to strip away all the extraneous noise – anything that won't help me dig into the strategic insights of the game itself – and be left with a streamlined, readable explanation of the board states and the moves that led to them. This is about isolating the core analytical commentary.
+
+手数15:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は矢倉１７分、室岡２５分。」 → ルール3, 1
+
+手数27:
+
+削除理由:
+- 「▲５六銀の局面で室岡が４９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は矢倉２５分、室岡１時間３５分。」 → ルール1, 3
+- 「昼食の注文は矢倉がすき焼き丼、室岡は注文なし。」 → ルール1, 7
+
+手数35:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は矢倉４４分、室岡２時間１１分。」 → ルール1, 3
+
+手数40:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は矢倉１時間１１分、室岡２時間５３分。」 → ルール1, 3
+
+手数44:
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は矢倉１時間４１分、室岡３時間２９分。」 → ルール1, 3
+
+手数45:
+
+削除理由:
+- 「４５分の長考。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は矢倉２時間２６分、室岡３時間４７分。」 → ルール1, 3
+
+手数55: △同桂は▲９五角がある。数手前の▲９六香の狙い筋だ。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「△８八歩成の局面で矢倉が１５分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は矢倉２時間５７分、室岡３時間５４分。」 → ルール1, 3

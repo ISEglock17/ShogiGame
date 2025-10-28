@@ -1,0 +1,166 @@
+**Focusing the Lens: Cleaning Up Shogi Commentary**
+
+Okay, so I've got a challenge here. Someone wants me to refine a shogi game's commentary, and that's right up my alley! The goal is to strip away all the extraneous noise – you know, the meta stuff, the player intros, the time stamps – and leave behind only the pure, insightful analysis of the board and the moves. Think of it like distilling the essence of the game.
+
+I need to process each comment based on a specific set of rules. I'm imagining it as a set of filters, really.
+
+**The Filter List:**
+
+*   **First, I'll axe any mention of anyone other than the players involved.** That includes their ranks, their teachers, anything like that. Pure game analysis, please.
+*   **Next, anything about previous games or precedents gets cut.** We're focused on *this* game, in *this* moment.
+*   **Time is irrelevant to the analysis itself, so that's gone.**
+*   **Player bios, stats, ranks, identification numbers, and all that non-game related stuff is out.**
+*   **We're also removing commentary about their playing styles or usual opening formations.** Let's get to the specifics of *this* game.
+*   **Finally, details about the venue, weather, or hotel are totally irrelevant to the analysis. Bye bye!**
+
+Basically, I want to create a clean, elegant stream of commentary that stays directly focused on the shogi strategy itself. This will make the analysis far more concise and useful for deeper study. It's about bringing the core of the game into sharp focus.
+
+手数1:
+
+削除理由:
+- 「◆高橋　道雄（たかはし　みちお）九段◆」 → ルール4
+- 「１９６０年４月２３日生まれ、東京都出身。（故）佐瀬勇次名誉九段門下。１９８０年、四段、１９９０年、九段。棋士番号は１４２。」 → ルール4
+- 「タイトル戦登場は１０回。獲得は十段１期、王位３期、棋王１期の計５期。棋戦優勝は３回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆村田　顕弘（むらた　あきひろ）五段◆」 → ルール4
+- 「１９８６年７月１４日生まれ、富山県魚津市出身。中田章道七段門下。２００７年、四段。２０１２年、五段。棋士番号は２６７。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「高橋の通算成績は８２４勝６６１敗（勝率０．５５５）。」 → ルール4
+- 「本年度成績は６勝１６敗（０．２７３）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「村田の通算成績は２０５勝１３２敗（勝率０．６０８）。」 → ルール4
+- 「本年度成績は１３勝１３敗（０．５００）。」 → ルール4
+
+手数14:
+
+削除理由:
+- 「１１時ちょうどの着手。」 → ルール3
+- 「△７二飛までの消費時間は、▲高橋１９分、△村田４０分。」 → ルール3
+
+手数16: 袖飛車にしてから歩を突いた。序盤に飛車を振ったとはいえ、相居飛車に近い戦型になりそうだ。
+
+削除理由:
+
+手数21: 先手は矢倉に組む。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「１２時、この局面で村田が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲高橋５３分、△村田１時間６分。」 → ルール3
+- 「対局は１２時４０分から再開される。」 → ルール7
+
+手数30:
+
+削除理由:
+- 「対局再開。」 → ルール7
+- 「昼食休憩後の指し手。」 → ルール7
+
+手数34: 後手は雁木囲い。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「１３時０４分の着手。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１４時７分の着手。」 → ルール3
+- 「△４五歩までの消費時間は、▲高橋１時間１４分、△村田２時間１２分。」 → ルール3
+
+手数45: 次に▲４六銀が間に合うと先手が作戦勝ちだろう。△３五歩とかわしにいくか。
+
+削除理由:
+
+手数46:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△３五歩までの消費時間は▲高橋１時間５５分、△村田２時間２０分。」 → ルール3
+
+手数51: 先手は流れを急にして、７二飛、７三銀を置き去りにしたまま戦いを進めたい。
+
+削除理由:
+
+手数54: 歩を引く手筋。この局面は、切って（▲４五飛△同歩に）▲６一銀で勝ちのようだが、気軽に指せる手ではない。
+
+削除理由:
+- 「対局立会人の大平武洋六段は、」 → ルール1
+- 「この局面をひと目見て、「切って（▲４五飛△同歩に）▲６一銀で勝ちそうですけどね」。とはいえ、」 → ルール1
+
+手数55:
+
+削除理由:
+- 「１０分弱の少考でいった。」 → ルール3
+
+手数57: 先手は必勝とは言えないが、だいぶ分かりやすい。飛車を追って▲７一角成を実現できれば、先手の攻めが分かりやすい。
+
+削除理由:
+- 「「先手が必勝は言い過ぎですが、だいぶ分かりやすいです」と大平六段。」 → ルール1
+
+手数58: 飛車角交換に甘んじる。
+
+削除理由:
+- 「２８分の考慮で６二に逃げた。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△６二銀までの消費時間は▲高橋２時間１４分、△村田３時間５分。」 → ルール3
+
+手数63: △４七角などから３六歩を取れば後手も長く戦えるが、なかなか勝ちにはならないだろう。
+
+削除理由:
+- 「大平六段「」 → ルール1
+
+手数64: ここは悩みどころだ。普通は▲６八金上だが、少しひねって▲７九金から▲６八銀右も耐久力がある。
+
+削除理由:
+- 「大平六段「これは悩みますね。」 → ルール1
+- 「ちょっと」 → ルール1
+
+手数65: 切ってこいという手。金が逃げるなら利かし。△６九角成▲同玉△３九飛は勝ちと見切ったか。
+
+削除理由:
+
+手数67:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「▲７二竜までの消費時間は▲高橋２時間４２分、△村田３時間２８分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「１８時、ここで高橋が３１分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲高橋３時間１４分、△村田４時間４分。」 → ルール3
+- 「対局は１８時４０分から再開される。」 → ルール7
+
+手数71:
+
+削除理由:
+- 「対局再開。」 → ルール7
+- 「夕食休憩後の指し手。」 → ルール7
+
+手数73: ▲２二歩成△同金▲３四桂△同金▲４三桂成の狙いがある。ここで後手が投了した。
+
+削除理由:
+- 「ここで村田が投了した。」 → 削除対象ルールに該当なし（コメント整形）
+- 「終局時刻は１９時３１分。」 → ルール3
+- 「消費時間は、▲高橋３時間１６分、△村田４時間５４分。」 → ルール3
+- 「勝った高橋、敗れた村田はともに４勝５敗になった。」 → ルール4

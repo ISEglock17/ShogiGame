@@ -1,0 +1,118 @@
+**Cleaning Up the Commentary: Focusing on the Game Itself**
+
+Alright, so the user wants me to clean up these comments from Shogi game data. I understand the goal: they want to strip away all the fluff – the metadata, player introductions, time stamps – and just leave the pure, distilled analysis of the board state and the moves themselves. Essentially, they want the commentary reduced to a coherent, flowing narrative about the game's evolution. It's about preserving the *insight*, not the surrounding noise.
+
+I see the need for this. When I'm deep in an analysis, that extraneous information is just a distraction. Getting to the core of the strategic ideas and tactical battles requires focus, and this process is a huge step in helping me achieve that. So, I need to figure out the best way to extract the crucial information and discard the rest, leaving behind only the truly valuable commentary.
+
+手数1:
+
+削除理由:
+- 「◆日浦　市郎（ひうら　いちろう）八段◆」 → ルール1, 4
+- 「１９６６年３月４日生まれ、北海道新ひだか町出身。安恵照剛八段門下。１９８４年、四段。２０１０年、八段。棋士番号は１６４。」 → ルール4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆永瀬　拓矢（ながせ　たくや）六段◆」 → ルール1, 4
+- 「１９９２年９月５日生まれ、神奈川県横浜市出身。安恵照剛八段門下。２００９年、四段。２０１３年、六段。棋士番号は２７６。」 → ルール4
+- 「タイトル戦登場は１回。棋戦優勝は２回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「日浦の今年度成績は４勝６敗（０．４００）。」 → ルール4
+- 「通算成績は６４３勝５０８敗（０．５５９）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「永瀬の今年度成績は１３勝８敗（０．６１９）。」 → ルール4
+- 「通算成績は２１５勝９１敗（０．７０３）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「対戦成績は永瀬の５勝０敗。」 → ルール2
+
+手数15: 本局の戦型は横歩取りになった。
+
+削除理由:
+
+手数28: △２三銀や、△９四歩と反対の端歩を突く将棋もあるところ。１筋を突き越す作戦は、近年で一番多く指されており、最新形ともいえる。
+
+削除理由:
+- 「公式戦では」 → ルール2
+- 「も指されている」 → ルール2
+
+手数30: 部分的な定跡で、▲３六歩と２六の飛車の横利きが止まった瞬間に動く。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「▲８八同金は今年の８月に行われた上州ＹＡＭＡＤＡチャレンジ杯準決勝、▲船江恒平五段−△高見泰地五段戦で船江五段が最初に指した一手。」 → ルール1, 2
+- 「それまでは全て▲８八同銀と応じていた。」 → ルール2
+
+手数38:
+
+削除理由:
+- 「前例は△８七歩▲同金△１九角成という進行だった。」 → ルール2
+- 「これで後手がよくなれば話は早い。」 → ルール2
+
+手数41:
+
+削除理由:
+- 「１０時５６分の着手。」 → ルール3
+- 「１２時、この局面で永瀬が１時間３分使って昼食休憩に入った。」 → ルール3, 7
+- 「▲８二歩までの消費時間は、▲日浦４７分、△永瀬１時間１１分。」 → ルール3
+- 「昼食の注文は日浦が冷たぬきそば（ほそ島や）、永瀬は特上握り・サビ抜き、納豆巻（千寿司）。」 → ルール7
+- 「対局は１２時４０分から再開される。」 → ルール3, 7
+
+手数42: 後手は△２五歩と着手した。
+
+削除理由:
+- 「１２時４０分、対局が再開された。」 → ルール3, 7
+- 「永瀬は１時間４９分の大長考で」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１４時２８分の着手。」 → ルール3
+- 「▲２七飛までの消費時間は、▲日浦１時間４４分、△永瀬２時間３分。」 → ルール3
+
+手数46: △６七馬からの詰めろになっている。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「１４時５６分の着手。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１６時２分の着手。」 → ルール3
+
+手数67: まだ後手玉に詰めろはかかっていないが、▲５三桂成〜▲６五桂を見せてプレッシャーをかけておく。
+
+削除理由:
+
+手数70: △２八飛以下の詰めろがかかった。
+
+削除理由:
+
+手数71: 受けも難しかったようだ。先手は後手玉に詰めろをかけ、形を作った。
+
+削除理由:
+- 「日浦は」 → ルール1
+
+手数78: この局面で先手が投了した。投了以下は、▲３七同桂△同桂成▲３九玉△２八歩成までの詰み。
+
+削除理由:
+- 「日浦が」 → ルール1
+- 「終局時刻は１７時４４分。」 → ルール3
+- 「消費時間は、▲日浦３時間１３分、△永瀬３時間５０分。」 → ルール3
+- 「勝った永瀬は３勝１敗、敗れた日浦は２勝２敗。」 → ルール4

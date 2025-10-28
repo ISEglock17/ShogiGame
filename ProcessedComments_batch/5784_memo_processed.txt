@@ -1,0 +1,89 @@
+**Cleaning Up Game Annotations**
+
+Okay, so I'm tackling this messy dataset of Shogi game annotations. The user wants me to whip these comments into shape, which is totally understandable. My goal here is to get rid of all the fluff – the metadata, the introductions, the time stamps – and just leave behind the juicy analysis: the board states and the explanations of the moves. That's the core of what's useful.
+
+Essentially, I need to methodically go through each comment and, based on a predefined set of rules, decide what gets to stay and what has to go. It's about distilling the essence of the analysis, so it can be integrated cleanly into whatever downstream analysis is planned. It's a bit tedious, but the payoff will be a much cleaner and more valuable dataset for understanding the games.
+
+手数1:
+
+削除理由:
+- 「勝又は２０分遅刻。持ち時間から２０分がそのまま差し引かれているので、電車遅延など交通機関の乱れによる遅刻のようだ。本人都合の遅刻の場合は遅刻した時間の３倍が持ち時間から差し引かれる。」 → ルール3
+- 「勝又清和六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｔｕｍａｔａ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「川上猛六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｗａｋａｍｉ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「勝又の今期成績は９勝６敗／０．６００」 → ルール4
+- 「通算成績は２６１勝２５８敗／０．５０３」 → ルール4
+
+手数4:
+
+削除理由:
+- 「川上の今期成績は１勝１２敗／０．０７７」 → ルール4
+- 「通算成績は３０８勝２９１敗／０．５１４」 → ルール4
+
+手数15: 戦型は横歩取りへ。
+
+削除理由:
+
+手数20: 後手は△８四飛型を選択した。
+
+削除理由:
+- 「川上は」 → ルール1
+
+手数22:
+
+削除理由:
+- 「１１時過ぎ、△５二玉までの消費時間は▲勝又３９分、△川上４分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「この局面で勝又が３８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲勝又１時間３７分、△川上２０分。」 → ルール3
+- 「対局は１３時再開する。」 → ルール7
+
+手数29:
+
+削除理由:
+- 「１４時過ぎ▲９六歩までの消費時間は▲勝又２時間０分、△川上４１分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１５時過ぎ▲３八金までの消費時間は▲勝又２時間１８分、△川上１時間２８分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１７時過ぎ△４二玉までの消費時間は▲勝又３時間７分、△川上２時間４２分。」 → ルール3
+- 「棋譜を取りに対局室に入ると「うーん？なんじゃこりゃ」と勝又のボヤキが聞こえた。」 → ルール1, 6
+
+手数47:
+
+削除理由:
+- 「この局面で川上が１９分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲勝又３時間４８分、△川上３時間８分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数53:
+
+削除理由:
+- 「２０時過ぎ▲１五同歩までの消費時間は▲勝又４時間２３分、△川上３時間２８分。」 → ルール3
+
+手数107:
+
+削除理由:
+- 「０時１０分過ぎ、残り時間は▲勝又５分、△川上２７分。」 → ルール3
+
+手数134: ここで先手が投了した。以下▲１六玉△３八角成▲２七歩△１七金▲１五玉△１四歩▲２六玉△２七馬までの詰み。
+
+削除理由:
+- 「勝又が投了を告げた」 → ルール1
+- 「終局時刻は０時３２分、消費時間は▲勝又５時間５９分、△川上５時間４７分。」 → ルール3
+- 「勝った川上はこれが今期初白星、勝又は４勝２敗で昇級レースから一歩後退。」 → ルール4

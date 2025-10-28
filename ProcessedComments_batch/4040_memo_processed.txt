@@ -1,0 +1,124 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so I'm tasked with taking raw Shogi game commentary and cleaning it up, making it easier for someone to follow the flow of the match. The goal is clarity and conciseness, stripping away the clutter.
+
+My thought process is going to be pretty systematic. First, I'll dive into each move's commentary, dissecting it bit by bit. I'll need to define what's considered "noise" – things to be removed – based on the given rules. As I identify those elements, I'll jot down the reason for removal and the rule number that justifies it.
+
+Once the extraneous parts are marked for deletion, I'll then carefully reconstruct the remaining pieces into a smooth, readable sentence. I need to make sure the core information remains intact, while simultaneously making sure that the final product is easy to understand in the context of the game.
+
+手数15: 相矢倉となった。
+
+削除理由:
+
+
+手数22:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は土佐１分、佐藤８分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「第６７期名人戦第１局の▲郷田−△羽生戦と同じ将棋。」 → ルール2
+- 「▲３五歩以下△同歩▲同角△５三銀と進んでいる。」 → ルール2
+
+手数24: 後手は飛車取りに角をさばく。
+
+削除理由:
+- 「佐藤」 → 先手・後手の実名は「後手」に置換
+
+手数29: △４五歩〜△５三銀と盛り上がってくる作戦を警戒している。
+
+削除理由:
+
+
+手数35: 端飛車を生かすために端歩を伸ばしていく。
+
+削除理由:
+
+
+手数36:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は土佐３５分、佐藤３３分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「▲３七銀の局面で佐藤が２２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間はともに５５分。」 → ルール3
+- 「昼食の注文は佐藤が冷やしたぬきそば、土佐は注文なし。」 → ルール7
+
+手数39: 先手も矢倉に入城させる。
+
+削除理由:
+
+
+手数42: ▲３五歩と位を取られるのを防いだ。
+
+削除理由:
+
+
+手数46:
+
+削除理由:
+- 「１４時過ぎ、」 → ルール3
+- 「消費時間は土佐１時間２８分、佐藤１時間２０分。」 → ルール3
+
+手数48: ここに角を引くために先に△６二飛と回ったようだ。△７三桂〜△８五桂と使える。△７三角型だと、▲８六銀〜▲７五歩と角を攻める手段が生じる。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は土佐１時間４０分、佐藤１時間５１分。」 → ルール3
+
+手数49: クラッシュ。銀交換になれば、▲８三銀と角を攻める筋も魅力的。▲８三銀のような手は「Ｂ面攻撃」と呼ばれる。
+
+削除理由:
+
+
+手数50:
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は土佐２時間１４分、佐藤２時間１０分。」 → ルール3
+- 「対局室に入ると、土佐は「そうか」などとぼやいていた。」 → ルール6
+
+手数51: 形が乱れるが、△４六角を阻止した。
+
+削除理由:
+- 「１時間２分の長考。」 → ルール3
+
+手数52: 次に△３三銀と固めるつもり。
+
+削除理由:
+- 「佐藤は△４二銀に４９分の長考。」 → ルール3
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は土佐３時間１６分、佐藤２時間５９分。」 → ルール3
+
+手数57:
+
+削除理由:
+- 「ここで佐藤が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は土佐３時間２９分、佐藤３時間２１分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は土佐３時間４８分、佐藤３時間４７分。」 → ルール3
+
+手数99:
+
+削除理由:
+- 「２１時前の局面。」 → ルール3
+- 「消費時間は土佐４時間５分、佐藤４時間１４分。」 → ルール3
+
+手数115: 後手は投了となった。以下△１七銀成も▲３四金△２八成銀▲４三歩成で後手は受けが難しい。
+
+削除理由:
+- 「ここで佐藤が６分考えて」 → ルール3
+- 「終局時刻は２１時１８分。」 → ルール3
+- 「消費時間は土佐４時間８分、佐藤４時間２７分。」 → ルール3
+- 「勝った土佐は１勝０敗、敗れた佐藤は０勝１敗となった。」 → ルール4

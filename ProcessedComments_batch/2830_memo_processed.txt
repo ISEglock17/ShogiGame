@@ -1,0 +1,175 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up and format some Shogi game commentary. Basically, they've got this raw data dump of commentary and it needs to be made readable and presentable. I get it. We're talking about taking those raw thoughts and turning them into something elegant.
+
+My process will be straightforward. I'll approach this systematically:
+
+1.  **Read and Understand:** I need to ingest each comment, piece by piece. I have to grasp the meaning of each statement.
+2.  **Identify the Unnecessary:** I'll leverage the specified rules to recognize the redundant phrases, repetitive statements, or irrelevant details that are cluttering up the commentary. It's like finding the weeds in a garden - they have to go!
+3.  **Removal, The Cull:** Once identified, those sections will be removed using the rules. This ensures a streamlined narrative.
+4.  **Polish and Refine:** With the unwanted parts gone, I'll then smooth out the remaining text. This will involve ensuring proper grammar, ensuring continuity, and making sure the comments flow logically, transforming the raw data into coherent and engaging commentary.
+
+手数4: 後手は三間に飛車を振った。
+
+削除理由:
+- 「内藤は」 → ルール1
+
+---
+手数16: 石田流に組み換える。
+
+削除理由:
+
+---
+手数19: 大きく位を張る。
+
+削除理由:
+
+---
+手数24:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲南２２分、△内藤２１分。」 → ルール3
+
+---
+手数28:
+
+削除理由:
+- 「この局面で南が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲南１時間１４分、△内藤４２分。」 → ルール3
+
+---
+手数33: これで６五の位が確保された。
+
+削除理由:
+
+---
+手数34: 両者３枚で美濃囲いを作り、堅い形。
+
+削除理由:
+
+---
+手数36:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲南１時間５１分、△内藤１時間８分。」 → ルール3
+
+---
+手数42: 強気にぶつける。
+
+削除理由:
+
+---
+手数45: 先手はすぐに換えた角を打った。
+
+削除理由:
+- 「南は」 → ルール1
+
+---
+手数46:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲南２時間１９分、△内藤１時間３４分。」 → ルール3
+
+---
+手数47: しっかりと飛車を押さえる。これで４八銀も動きやすい。
+
+削除理由:
+
+---
+手数49:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲南３時間０分、△内藤１時間５３分。」 → ルール3
+
+---
+手数50: 端歩突き。
+
+削除理由:
+- 「５８分。」 → ルール3
+- 「深謀遠慮の」 → 文脈整形のため削除
+
+---
+手数52: ▲４八飛と回れば、打った角がすぐに取られてしまうが、△６七角成▲同金△２六金と打てば、今度は銀が助からない。
+
+削除理由:
+- 「あら不思議、」 → 文脈整形のため削除
+- 「南はこの局面で１時間２分考え、そのまま夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲南４時間５分、△内藤２時間５１分。」 → ルール3
+
+---
+手数59: 角を切られる手を避け、次に▲４八飛と回る。
+
+削除理由:
+
+---
+手数62: やわらかく銀取りに浮いた。
+
+削除理由:
+
+---
+手数70:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲南４時間３７分、△内藤３時間１０分。」 → ルール3
+
+---
+手数75: ▲１四飛とぶつける手や、▲２三成香〜▲１一飛成を狙う。少し先手が良さそうだ。
+
+削除理由:
+- 「棋士室では」 → ルール1
+- 「と思われている」 → 文脈整形のため削除
+
+---
+手数76: ▲９八香打から端を狙われる順を嫌ったのだろうか。
+
+削除理由:
+
+---
+手数77: 打った銀が待ち構える端を狙う。
+
+削除理由:
+- 「１５分考え、」 → ルール3
+- 「ここで南の残り時間は１時間を切った。」 → ルール1, 3
+
+---
+手数83: △６二同金は▲７一角〜▲６二角成。基本的な囲いの破り方の手筋。
+
+削除理由:
+- 「囲い方を覚えると次に習う、」 → 文脈整形のため削除
+
+---
+手数86:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲南５時間４分、△内藤３時間４２分。」 → ルール3
+
+---
+手数103: 先手優勢と見られている。大駒３枚が好所。
+
+削除理由:
+- 「南」 → ルール1
+
+---
+手数104:
+
+削除理由:
+- 「内藤の指し手は早い。」 → ルール1, 3
+
+---
+手数108: 先手は自玉が絶対詰まない「ゼット」の瞬間に▲６二馬としたい。
+
+削除理由:
+
+---
+手数113: この局面で後手が投了した。以下△９三玉に▲７五馬と引き、△８四飛は▲同馬△同歩▲８三飛まで、△８四銀は▲８三金△同玉▲８四馬以下の即詰み。
+
+削除理由:
+- 「内藤が」 → ルール1
+- 「消費時間は▲南５時間２３分、△内藤３時間５１分。」 → ルール3
+- 「勝った南は２勝５敗、敗れた内藤は１勝６敗となった。」 → ルール4

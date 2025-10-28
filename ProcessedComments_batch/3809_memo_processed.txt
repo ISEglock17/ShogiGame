@@ -1,0 +1,110 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so the user wants me to clean up Shogi game commentary, getting it ready for serious analysis.  They've given me some rules and the specific input/output format, which is great.  My goal is clear: I need to transform these chatty commentary snippets into something truly useful for deep dive analysis.
+
+Specifically, I need to strip out all the fluff. I'm talking about the stuff that doesn't advance my understanding of the board state or the moves themselves. That means getting rid of all the meta information, like who's speaking, the time elapsed, general introductions, etc.  I need to distill each comment down to its core: a clear, natural-sounding explanation of what's happening on the board and why each move is being played. That way, when I'm reviewing the game later, I can quickly grasp the key strategic ideas without wading through unnecessary noise.
+
+手数1:
+
+削除理由:
+- 「本局は一旦１０時０分に開始された。」 → ルール3
+- 「しかし記録係がストップウォッチを押すと「ピッ」。電子音がしてしまった。隣の対局の記録係も一緒にピッピッピッピッと操作するが、なぜか電子音は消えない。結局予備のストップウォッチを取りにいくことになった。」 → ルール1
+- 「そのため、本局は１０時６分に開始している。」 → ルール3
+
+手数2:
+
+削除理由:
+- 「この両者、６月に竜王戦４組決勝でも対戦した。」 → ルール2
+- 「後輩ながら段位が上である伊奈が上座に座ったことで、対局前に微妙な空気が流れたそうだ。」 → ルール1
+- 「本局は先に対局室に入った伊奈が下座についている。」 → ルール1, 6
+
+手数3:
+
+削除理由:
+- 「記録係の畠山４級、初めての記録だそうだ。」 → ルール1
+
+手数6: 一手損角換わりになった。
+
+削除理由:
+
+手数13: 先手の得と後手から一手損してきた手得を生かして、端を詰める。こうなると先手は右玉に構えることが多い。手得という不確定な得を、玉の広さというはっきりした得に変えられるのでよく指されている。
+
+削除理由:
+
+手数26:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈６分、△増田１６分。」 → ルール3, 1
+
+手数29: 引き飛車。これも右玉とはセット。
+
+削除理由:
+
+手数32: 後手は着々と自陣を整備する。
+
+削除理由:
+- 「増田は」 → ルール1
+
+手数33: やはり右玉だった。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「この局面で増田が２１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲伊奈３５分、△増田１時間９分。」 → ルール3, 1
+
+手数38: 出た銀をすぐに引いた。
+
+削除理由:
+- 「しかも１分の考慮で」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈１時間１３分、△増田１時間３２分。」 → ルール3, 1
+
+手数44: ▲６四角で歩を損するが、▲９七角をうっかりしてしまったのだろうか。
+
+削除理由:
+- 「１時間１分の長考だった。」 → ルール3
+- 「１５時を回ったところ。」 → ルール3
+- 「消費時間は▲伊奈１時間１３分、△増田２時間３３分。」 → ルール3, 1
+
+手数45: 一歩得。▲９一角成を受けないといけないこともあり、先手がリードを奪ったようだ。
+
+削除理由:
+
+手数52:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲伊奈１時間３４分、△増田３時間３分。」 → ルール3, 1
+
+手数55:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲伊奈２時間１７分、△増田３時間７分。」 → ルール3, 1
+
+手数62:
+
+削除理由:
+- 「この局面で伊奈が１４分考え、夕食休憩になった。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲伊奈２時間４３分、△増田３時間５４分。」 → ルール3, 1
+
+手数70: △８五同飛は▲８七馬△６五飛と進んだ局面が駒損で飛車が働いていない。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈３時間１６分、△増田４時間１分。」 → ルール3, 1
+
+手数93:
+
+削除理由:
+- 「この局面で増田が投了した。」 → ルール1
+- 「消費時間は▲伊奈３時間４９分、△増田４時間３７分。」 → ルール3, 1
+- 「勝った伊奈は２勝１敗、敗れた増田は３連敗となった。」 → ルール1, 4

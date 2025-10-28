@@ -1,0 +1,131 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tackling this Shogi commentary cleaning task.  Here's how I'm thinking about it. The user has given me a dataset of moves, each with commentary attached. My goal is to transform this raw commentary into something clean and focused.  Essentially, I need to get rid of all the noise and keep only the meaningful analysis of the board state and the move itself.
+
+I've got a set of rules, and my first step is to apply them rigorously.  I'll go through each comment and use the rules to identify and eliminate anything that's irrelevant to the actual strategic discussion.  Things like who the commentator is, their background, the time the move was made - all that has to go.  I'm looking for the "meat" of the analysis, the understanding of why a certain move was chosen.
+
+Once I've stripped away all the extraneous stuff, I'll be left with the core ideas.  Then, I'll need to rephrase what's left into natural, coherent sentences. My objective is to produce commentary that reads smoothly, like a well-structured piece of Shogi analysis, not just a collection of disjointed phrases. I need to make sure that the essential meaning is preserved.
+
+手数5: 先手は三間飛車に構えた。
+
+削除理由:
+- 「中村亮は」 → ルール1
+- 「１０分考えて」 → ルール3
+
+手数14: △３三角は左美濃や居飛車穴熊を目指した手。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮１６分、西尾１５分。」 → ルール1, 3
+
+手数21: 先手は向かい飛車に転じた。▲７八金から▲８六歩と仕掛ける含みがある。
+
+削除理由:
+- 「中村亮は」 → ルール1
+
+手数22: 離れ駒をなくして慎重。△１二香〜△１一玉は離れ駒が多く、リスクが高い。
+
+削除理由:
+
+手数24:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮２７分、西尾５３分。」 → ルール1, 3
+
+手数25:
+
+削除理由:
+- 「ここで西尾が１８分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村亮４６分、西尾１時間１１分。」 → ルール1, 3
+
+手数29:
+
+削除理由:
+- 「１４時１５分ごろの局面。」 → ルール3
+- 「消費時間は中村亮１時間２７分、西尾１時間３３分。」 → ルール1, 3
+
+手数30: 端歩を突いた。何気ないようだが、▲６五銀△８四飛▲９五角の筋を受けている。▲６五銀は警戒を要する筋だ。
+
+削除理由:
+- 「４８分の長考で」 → ルール3
+
+手数31: 飛車交換は美濃囲いの堅さが生きそうだ。後手は５二金が浮いている。
+
+削除理由:
+- 「５７分の長考。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間２５分、西尾２時間４１分。」 → ルール1, 3
+
+手数34: 後手は強く飛車交換に応じた。△８五歩は弱気と見たようだ。
+
+削除理由:
+- 「西尾は」 → ルール1
+- 「と見た」 → （自然な文に整形）
+
+手数39: 飛車が向かい合っているときは間に駒がある方が不利とされている。この場合、先手は角を動かすと飛車を、飛車を横に動かすと角を取られてしまう。先手は▲６四角が狙い筋だが、いったん桂の当たりを避けた。
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間４１分、西尾２時間４８分。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間４１分、西尾３時間３２分。」 → ルール1, 3
+
+手数47:
+
+削除理由:
+- 「ここで西尾が１５分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村亮３時間、西尾３時間５５分。」 → ルール1, 3
+
+手数49:
+
+削除理由:
+- 「１時間６分の長考で指された。」 → ルール3
+
+手数51: ここで△８八龍は▲７三歩成△同銀に▲３一角成が利く。
+
+削除理由:
+
+手数56:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は中村亮４時間７分、西尾４時間４４分。」 → ルール1, 3
+
+手数67:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は中村亮１時間１９分、西尾１時間６分。」 → ルール1, 3
+
+手数75:
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「残り時間は中村亮２３分、西尾３８分。」 → ルール1, 3
+
+手数89:
+
+削除理由:
+- 「０時１５分ごろの局面。」 → ルール3
+- 「残り時間は中村亮１５分、西尾１分。」 → ルール1, 3
+
+手数99: 以下（１）△同香は▲４二角成で詰み。（２）△２四玉も▲４二龍で寄り。後手の投了となった。
+
+削除理由:
+- 「西尾の」 → ルール1
+- 「終局時刻は０時１８分。」 → ルール3
+- 「消費時間は中村亮５時間４６分、西尾５時間５９分。」 → ルール1, 3
+- 「勝った中村亮は６勝３敗、敗れた西尾は４勝５敗となった。」 → ルール1, 4

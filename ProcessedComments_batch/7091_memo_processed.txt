@@ -1,0 +1,77 @@
+**Cleaning Up Those Messy Shogi Comments**
+
+Okay, so I've got this user, and they're dealing with a mountain of Shogi game data. Apparently, the comments attached to these games are a bit of a mess – all sorts of extraneous information cluttering up the actual analysis. My mission, should I choose to accept it (and I do!), is to whip these comments into shape. The goal is to isolate the *good stuff* – the insightful explanations of the board state and the moves made – and ditch all the noise. Think biographical tidbits about the players, the time stamps, anything that doesn't contribute directly to our understanding of the game.
+
+Essentially, I need to craft these comments into polished, readable explanations that a fellow Shogi enthusiast would find helpful. This is going to involve some careful filtering and restructuring, but I'm ready to dive in and get those comments looking sharp and providing value.
+
+手数1:
+
+削除理由:
+- 「八代は３分遅刻したため、持ち時間から９分（３分×３倍引き）引かれた。」 → ルール3
+- 「◆八代　弥（やしろ　わたる）四段◆」 → ルール1, 4
+- 「１９９４年３月３日生まれ、静岡県賀茂郡出身。青野照市九段門下。２０１２年、四段。棋士番号は２８７。」 → ルール1, 4
+
+手数2:
+
+削除理由:
+- 「◆小倉　久史（おぐら　ひさし）七段◆」 → ルール1, 4
+- 「１９６８年５月１５日生まれ、東京都出身。中原誠十六世名人門下。１９８８年、四段。２００５年、七段。棋士番号は１８８。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「八代の今年度成績は１２勝５敗（０．７０６）。」 → ルール4
+- 「昨年度成績は２８勝１３敗（０．６８３）。」 → ルール4
+- 「通算成績は４０勝１８敗（０．６９０）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「小倉の今年度成績は６勝７敗（０．４６２）。」 → ルール4
+- 「昨年度成績は１９勝１６敗（０．５４３）。」 → ルール4
+- 「通算成績は４８６勝４０４敗（０．５４６）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数26:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「△５四歩までの消費時間は▲八代２９分、△小倉２６分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１２時１０分、この局面で小倉が４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲八代５６分、△小倉１時間１分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数43:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲７五同角までの消費時間は▲八代１時間３５分、△小倉１時間１９分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「△３二飛までの消費時間は▲八代２時間７分、△小倉１時間３６分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「▲３二馬までの消費時間は▲八代２時間４８分、△小倉２時間１分。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「▲７九金打を見て小倉が投了した。」 → ルール3
+- 「終局時刻は１７時６分。」 → ルール3
+- 「消費時間は▲八代３時間２２分、△小倉２時間２１分。」 → ルール3
+- 「勝った八代は３勝１敗、敗れた小倉は２勝２敗となった。」 → ルール4

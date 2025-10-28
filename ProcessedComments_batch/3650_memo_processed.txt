@@ -1,0 +1,131 @@
+**Cleaning Up These Game Comments**
+
+Okay, so I'm tackling this task of refining these Shogi game comments. The goal, as I understand it, is to take these raw comments from game data and turn them into concise, focused explanations of the board state and moves, free of all the clutter. I need to strip out anything that isn't directly related to the actual game analysis.
+
+Here's how I see this unfolding:
+
+1.  **Filtering the Noise:** First, I'll need to define some concrete rules to identify and eliminate the irrelevant stuff. That means getting rid of any mentions of people who *aren't* the players, references to previous games or related background, and any other commentary that's not about the board position or the reasoning behind a specific move. My expertise with Shogi should come in handy here.
+2.  **Smoothing the Narrative:** Once the junk is gone, I can work on making what's left flow better. This is where I'll apply my knowledge of Shogi strategy and common commentary phrasing to make the remaining explanations into clear, natural sentences.
+3.  **Outputting the Goods:** Finally, I'll package up the cleaned-up comments in the requested format. It's a fairly straightforward step, but a crucial one to ensure the output is usable and properly integrated.
+
+手数19: 腰掛銀に。
+
+削除理由:
+
+---
+手数28: クラシカルな戦形となった。
+
+削除理由:
+
+---
+手数31:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は中座３８分、金井６分。」 → ルール3
+
+---
+手数35:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は中座１時間１７分、金井３１分。」 → ルール3, 4
+- 「昼食の注文は両者ともになし。」 → ルール7
+
+---
+手数48: ▲同飛は先手陣に角の打ち込みが生じる。
+
+削除理由:
+
+---
+手数50:
+
+削除理由:
+- 「ここまでの消費時間は中座１時間５２分、金井１時間０分。」 → ルール3, 4
+
+---
+手数52:
+
+削除理由:
+- 「金井、この手に１時間２８分を使った。」 → ルール3, 4
+- 「消費時間の通計は中座２時間１０分、金井２時間２８分。」 → ルール3, 4
+
+---
+手数54: ここから本格的な戦いに。
+
+削除理由:
+
+---
+手数57: 嫌味をつける。
+
+削除理由:
+
+---
+手数59:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は中座２時間５５分、金井２時間５６分。」 → ルール3, 4
+- 「夕食の注文は、両者ともになし。」 → ルール7
+
+---
+手数63: 後手からはいくつも有力な攻め筋がある。
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は中座３時間３５分、金井３時間４７分。」 → ルール3, 4
+- 「控え室の評判は金井よし。」 → ルール1, 6
+
+---
+手数66: 痛打。▲同香は△８六飛▲８七金に△８五飛と引いて、次に△９九角と△２五飛が見合い。
+
+削除理由:
+
+---
+手数69: 形勢ははっきり後手よし。
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は中座３時間５１分、金井４時間１分。」 → ルール3, 4
+
+---
+手数74:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は中座４時間４分、金井４時間３０分。」 → ルール3, 4
+
+---
+手数76:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「残り時間は中座１時間４１分、金井５５分。」 → ルール3, 4
+
+---
+手数78:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「残り時間は中座１時間２２分、金井３５分。」 → ルール3, 4
+
+---
+手数86:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は中座１時間３分、金井１４分。」 → ルール3, 4
+
+---
+手数103:
+
+削除理由:
+- 「残り時間は中座５４分、金井５分。」 → ルール3, 4
+
+---
+手数112:
+
+削除理由:
+- 「終了時刻は２３時５６分。」 → ルール3
+- 「消費時間は中座５時間１２分、金井５時間５７分。」 → ルール3, 4
+- 「勝った金井は５勝２敗。敗れた中座は４勝３敗となった。」 → ルール4

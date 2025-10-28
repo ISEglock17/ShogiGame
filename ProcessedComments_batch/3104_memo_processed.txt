@@ -1,0 +1,145 @@
+**Cleaning Up Those Pesky Shogi Commentary Strings**
+
+Alright, so the user wants me to whip these shogi commentary strings into shape. Essentially, they've got this messy data, a bunch of comments attached to moves in a game, and they need a clean, readable version. The goal? To strip away all the fluff – the metadata, the introductions, the timing information, all that – and leave behind only the actual explanations of the board state and the moves themselves. Think of it as pruning a tree: we want the core branches, not all the leaves.
+
+The process is pretty straightforward. First, I need to identify what needs to go based on a set of rules. I'll look for specific patterns and phrases that scream "DELETE ME!" Then, once I've deleted all the junk, I'll work on smoothing out what's left, making sure the remaining commentary reads like a natural sentence.
+
+Finally, the output needs to be structured in a specific way: I'll start each line with the move number, followed by the cleaned-up comment. Below that, I'll include a "Deletion Reason:" section to explain why certain phrases were removed. For instance, if I remove someone's name, I'll note that it's because it's irrelevant to the actual analysis.
+
+手数3: 先手、工夫した出だし。
+
+削除理由:
+- 「長岡」 → 先手
+
+手数5: これが先手の作戦。△７七角成▲同桂△４五角は▲６五桂△６二銀▲５五角で先手良し。後手は１一の香車を助けられない。
+
+削除理由:
+- 「長岡の」 → 先手
+
+手数6: 仮に▲１六歩ならそこで△７七角成▲同桂△４五角を決行する含みがある。▲６五桂△６二銀▲５五角の反撃は△１三香▲１一角成△３二銀で受かっている。１三に香を上がれるようにしたのがこの△１四歩の意味。
+
+削除理由:
+- 「３０分の長考。」 → ルール3
+
+手数7: △７七角成▲同桂△４五角の筋を受ける。
+
+削除理由:
+
+手数8: 受けないならと端歩を突き越す。しかし、後手で端に２手かけるリスクも大きい。序盤の勝負手に近い。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は長岡１１分、村中３４分。」 → ルール3
+
+手数17: 先手は穴熊を目指す。端を詰められているので妥当なところ。
+
+削除理由:
+- 「長岡は」 → 先手
+
+手数21:
+
+削除理由:
+- 「▲２８銀の局面で村中が３３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡１６分、村中１時間４２分。」 → ルール3
+
+手数22: ▲８六歩と突かれると、▲２二角成から▲７七桂とされて▲８五歩の決戦が生じるのを嫌った。
+
+削除理由:
+- 「昼食休憩を挟む４１分の長考。」 → ルール3, 7
+
+手数27: 角道をとめた。
+
+削除理由:
+- 「２８分の考慮で」 → ルール3
+
+手数28: 後手は天守閣美濃に組んだ。
+
+削除理由:
+- 「村中は」 → 後手
+
+手数29:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は長岡５４分、村中１時間５７分。」 → ルール3
+
+手数32: ▲６七銀と角頭を守れないので、７筋を狙う。
+
+削除理由:
+
+手数33:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は長岡１時間３４分、村中２時間１８分。」 → ルール3
+- 「長岡は▲３六歩に４０分の長考。」 → ルール3
+
+手数39: 焦土戦術。駒を右辺に集結させていく。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１６時２０分の局面。」 → ルール3
+- 「消費時間は長岡１時間５９分、村中３時間６分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「５階の香雲の間は応接室のようになっていて、ソファーがある。」 → ルール6
+- 「村中はそのソファーで休んでいたが、長岡が気合鋭く着手すると村中は起き上がって席に戻った。」 → ルール6
+
+手数45:
+
+削除理由:
+- 「１７時２５分の局面。」 → ルール3
+- 「消費時間は長岡２時間５０分、村中３時間９分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「△５一角の局面で長岡が２２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡３時間１２分、村中３時間４３分。」 → ルール3, 7
+
+手数51: 大きな拠点ができた。
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は長岡３時間４９分、村中３時間５９分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「消費時間は長岡３時間４９分、村中４時間６分。」 → ルール3
+- 「長岡が考えているようだ。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「２２時１０分ごろの局面。」 → ルール3
+- 「残り時間は長岡５１分、村中１時間２９分。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「２２時５５分の局面。」 → ルール3
+- 「残り時間は長岡４１分、村中４４分。」 → ルール3
+
+手数86: 以下▲同香△同香▲１八歩△１七歩▲同歩△同香成▲同金△４八飛成で必至。先手の投了となった。
+
+削除理由:
+- 「長岡の」 → 先手
+- 「終局時刻は２３時９分。」 → ルール3
+- 「消費時間はともに５時間２３分。」 → ルール3
+- 「勝った村中、敗れた長岡ともに２勝２敗となった。」 → ルール4

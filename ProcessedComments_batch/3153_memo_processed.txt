@@ -1,0 +1,70 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I've got this user, likely a fellow shogi enthusiast or someone working with game data, who needs help formatting their commentary. They want me to methodically clean up and structure each comment to make it more readable and useful.
+
+My approach is straightforward, really. First, I need to understand and apply the given rules meticulously. This is key. The user has explicitly stated that some parts of the original comments are extraneous and need to be removed. So, I will carefully sift through each comment and identify those elements that fit the deletion criteria. My expertise will allow me to quickly and accurately do this.
+
+Once I've stripped away the unwanted noise, the core task is to refine the remaining information into a clear and natural sentence. I'll need to use my shogi knowledge to interpret the comment, and my language skills to craft a succinct and easy-to-understand description of the move and its context. This is the heart of what I'm bringing to the table.
+
+Finally, the output format is crucial. I must present the cleaned-up comment in the specified form: `<move number>: <refined comment>`, followed by a clear and specific "deletion reason". Accuracy and precision are my watchwords. The user needs to see the improvements, and also the rationale behind the alterations.
+
+手数6: 後手の作戦は中飛車。
+
+削除理由:
+- 「阪口の」 → ルール5
+- 「得意の」 → ルール5
+
+手数14:
+
+削除理由:
+- 「隣で対局している▲佐藤天−△豊島戦も中飛車。」 → ルール2
+
+手数23:
+
+削除理由:
+- 「大平はここまでノータイム。」 → ルール3
+- 「ここで初めての時間消費で、いきなり１９分使った。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「１７分考えて」 → ルール3
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平２０分、△阪口２２分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「この局面で阪口が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲大平５７分、△阪口５６分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平１時間２４分、△阪口１時間１２分。」 → ルール3
+
+手数53: 突き捨ててから銀を成ることで、先手は後々に歩を自由に使え、後手の歩が残っている。
+
+削除理由:
+
+手数57: ▲４四歩△同歩の効果で、▲４四飛が生じている。
+
+削除理由:
+
+手数67:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平２時間８分、△阪口１時間４６分。」 → ルール3
+
+手数77: △５八銀不成と△７八金を防ぐにはこれしかない。
+
+削除理由:
+
+手数88: ここで先手は投了した。投了以下▲８六同銀は竜の利きが通って△７六桂が厳しく、放っておいても△７七竜以下の即詰みがある。
+
+削除理由:
+- 「大平が１２分考え、次の手を指さずに」 → ルール3
+- 「消費時間は大平２時間３９分、△阪口２時間４２分。」 → ルール3
+- 「勝った阪口は５勝１敗、敗れた大平は３勝３敗となった。」 → ルール4

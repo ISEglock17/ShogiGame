@@ -1,0 +1,144 @@
+**Processing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to process shogi game commentary, cleaning it up and making it more readable. It's a pretty straightforward task, really. I need to take each move's comment, dissect it, and apply a set of pre-defined rules to remove irrelevant information. Essentially, I'm aiming for a concise, natural-sounding sentence that accurately describes the move and its implications.
+
+Here's my thought process:
+
+1.  **Iterate and Isolate:** I'll begin by analyzing each move's commentary individually. This isolates the unit of work and allows me to focus on that particular piece of information.
+2.  **Rule-Based Targeting:** Now, I'll need to identify the specific parts of the comment that fall under the "to be removed" category. I have a set of pre-defined removal rules, and I'll need to apply them to each comment to find those targets.
+3.  **Removal Execution:** Once I've pinpointed the parts that need to go, I'll execute the removal step. Think of it as surgically extracting the extraneous information, leaving behind the core essence of the move's meaning.
+4.  **Natural Language Polishing:** Finally, and this is where the expertise comes in, I need to take the remaining information and transform it into a grammatically correct and naturally flowing sentence. This step is about refining the language to ensure clarity and improve the overall reading experience.
+5.  **Continual Refinement:** The process will continue iteratively until I process all the moves in the commentary.
+
+手数6: 後手は得意の中飛車を選んだ。
+
+削除理由:
+- 「阪口は」 → ルール1
+
+手数20: これで両者ともに美濃囲い。
+
+削除理由:
+- 削除対象なし
+
+手数22:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾１４分、△阪口３３分。」 → ルール3, 1
+
+手数26:
+
+削除理由:
+- 「この局面で西尾が２１分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲西尾１時間５分、△阪口５３分。」 → ルール3, 1
+
+手数31: 先手は後手の動きに乗じて陣形を盛り上げていく。
+
+削除理由:
+- 「西尾は」 → ルール1
+- 「阪口の」 → ルール1
+
+手数32: 後手は一歩得だが、手放した角をどう使っていくのか。
+
+削除理由:
+- 削除対象なし
+
+手数34:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾１時間５０分、△阪口１時間５分。」 → ルール3, 1
+
+手数37: 前の手を生かしてどんどん前に出ていく。
+
+削除理由:
+- 削除対象なし
+
+手数38:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾２時間２６分、△阪口１時間１６分。」 → ルール3, 1
+
+手数43:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾３時間３分、△阪口１時間５２分。」 → ルール3, 1
+
+手数52:
+
+削除理由:
+- 「１７時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西尾３時間２７分、△阪口２時間３１分。」 → ルール3, 1
+- 「この局面で西尾が５６分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲西尾４時間４３分、△阪口２時間３１分。」 → ルール3, 1
+
+手数54: ▲３六角と相手に捌かれるのを防ぎながら、△４六金と自らが捌く手を目指す。
+
+削除理由:
+- 削除対象なし
+
+手数55:
+
+削除理由:
+- 「３６分考え、残り１時間を切った。」 → ルール3
+- 「消費時間は▲西尾５時間１分、△阪口２時間５７分。」 → ルール3, 1
+
+手数59: ▲４六同銀は△同角が飛香両取りになっている。
+
+削除理由:
+- 削除対象なし
+
+手数61: ４六金を支えている角を攻める。
+
+削除理由:
+- 削除対象なし
+
+手数62: ▲３五銀と角を渡しても、銀が遊ぶので十分と見た。
+
+削除理由:
+- 削除対象なし
+
+手数65: △５六飛を受ける。
+
+削除理由:
+- 削除対象なし
+
+手数70:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲西尾５時間１９分、△阪口３時間３１分。」 → ルール3, 1
+
+手数71: ▲５七同飛は△６八金と貼り付けれるといきなり受けにくい。
+
+削除理由:
+- 削除対象なし
+
+手数72: 攻め駒が少ないので、飛車を活用しようとする。今日はこういった制空権を握る金打ちが何度か出ている。
+
+削除理由:
+- 削除対象なし
+
+手数77: ▲５八同飛は△４七金。
+
+削除理由:
+- 削除対象なし
+
+手数78: それでも△４七金。
+
+削除理由:
+- 削除対象なし
+
+手数86: ついに飛車が世に出てきた。
+
+削除理由:
+- 削除対象なし
+
+手数92: 固まった大駒が責められる展開になってしまった。後手玉も手つかずで、この局面で先手が投了した。
+
+削除理由:
+- 「西尾が」 → ルール1
+- 「消費時間は▲西尾５時間５１分、△阪口３時間５１分。」 → ルール3, 1
+- 「勝った阪口は２勝１敗、敗れた西尾は１勝２敗となった。」 → ルール4, 1

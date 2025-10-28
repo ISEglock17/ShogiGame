@@ -1,0 +1,134 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff and extraneous details, leaving only the pure, distilled essence of the board state and the move explanations. Think of it like a good editing pass on a research paper - we're cutting out the introductions, acknowledgments, and irrelevant historical context. We just need the core arguments, the crucial moves, and the resulting positions. 
+
+We're talking about removing things like introductions of the players, time stamps, and any meta-commentary that doesn't directly relate to the game's unfolding dynamics. This is all about refining the data for effective analysis. We want to be left with natural-sounding sentences that describe what's happening on the board and why, allowing us to dive deep into the strategic reasoning behind each move without getting bogged down in noise. The result should be a streamlined, focused narrative of the game's key moments.
+
+手数1:
+
+削除理由:
+- 「両者が同時にＣ２に在籍するのは連続５期目。」 → ルール4
+- 「Ｃ２は人数が多いため、Ｂ２・Ｃ１にある「過去２期で対戦していない者とは必ず対戦する」というルールがない。」 → ルール2, 8
+- 「それにしても４期連続で対戦しない確率は高くないだろう。」 → ルール2, 8
+
+手数2:
+
+削除理由:
+- 「小林宏は初手に１分、藤原は２手目に２分考えている。」 → ルール3
+
+手数5: 相矢倉の出だしで、▲６六歩では▲７七銀もある。どちらがいいというわけではないが、▲６六歩なら右四間飛車、▲７七銀なら急戦に注意する必要がある。
+
+削除理由:
+
+手数8: これは純正な相矢倉になりそうだ。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲小林宏２４分、△藤原２５分。」 → ルール3
+
+手数28: 相矢倉では右銀の動きに注目。７三（３七）に動けば攻め重視、５三（５七）に動けば受け重視。
+
+削除理由:
+
+手数33:
+
+削除理由:
+- 「この局面で藤原が１０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林宏４１分、△藤原１時間１２分。」 → ルール3
+
+手数36: 次に△３六歩▲４六銀△４五歩がある。
+
+削除理由:
+
+手数42: △３八歩からの継続手。飛車の位置をずらすことで、角の打ち込みの隙を作った。
+
+削除理由:
+
+手数44: このままでは角が成る場所はない。歩を打って馬を作りに行く。
+
+削除理由:
+
+手数50: 銀取りに滑り込む。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林宏５９分、△藤原１時間４０分。」 → ルール3
+
+手数52: 攻めの幅を広げる。また、▲５五同歩ならば馬の可動域が広がる。
+
+削除理由:
+
+手数53:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林宏１時間５９分、△藤原１時間４８分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林宏２時間２分、△藤原２時間２８分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲小林宏２時間４４分、△藤原３時間４分。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「この局面で藤原が８分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林宏３時間６分、△藤原３時間４１分。」 → ルール3
+
+手数72:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林宏３時間１９分、△藤原３時間５４分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「５５分の長考。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲小林宏４時間２５分、△藤原４時間２０分。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林宏４時間４７分、△藤原４時間２４分。」 → ルール3
+- 「藤原はここで４０分ほど考えている。」 → ルール3
+
+手数83:
+
+削除理由:
+- 「２２時５０分頃の局面。」 → ルール3
+- 「消費時間は▲小林宏５時間６分、△藤原５時間１４分。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「２３時４０分頃の局面。」 → ルール3
+- 「この一手は４４分の考慮。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「ここから一分将棋。」 → ルール3
+
+手数95: この局面で後手が投了した。以下は即詰み。
+
+削除理由:
+- 「消費時間は▲小林宏５時間２２分、△藤原５時間５９分。」 → ルール3
+- 「勝った小林宏は１勝２敗、敗れた藤原は３連敗となった。」 → ルール4

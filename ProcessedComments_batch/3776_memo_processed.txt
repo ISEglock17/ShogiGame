@@ -1,0 +1,165 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with this Shogi game data, and the user wants me to clean up the commentary. It's all jumbled with metadata, introductions, timestamps – all the stuff that's not actually the *chess* analysis.  My goal is clear: I need to extract the core, the essence of the game's explanation, and present it in a flowing, natural way.
+
+Here's how I see this process:
+
+First, I'll need to define some hard and fast rules.  I'll look at the data and identify the "noise" – the stuff that's not relevant to understanding the moves. This includes things like the game's setup, player introductions, the exact time each move was made, and any extraneous remarks. I'll flag these elements for removal based on a pre-defined set of criteria.
+
+Next, I'll focus on the actual chess analysis.  I'll scan for descriptions of the board state after a move, reasoning behind a move, and tactical or strategic considerations. I'll need to recognize these elements within the text, even if they are embedded amongst other information. My aim is to be left with the distilled game analysis, without any fluff.
+
+Then comes the final step. I need to take the remaining information and form it into sentences which make sense and read fluently. After all, the cleaned-up comments are meant to support understanding of the analysis and the game. I may need to re-order the comments to provide a coherent flow. It's a bit like taking a complex equation and writing it out in plain English.
+
+手数7: ▲８八飛や▲８八銀も考えられる。
+
+削除理由:
+
+手数14: 細心の一着。４二玉型で△５三銀とすることで、▲２二角成△同銀▲５五歩△同歩▲同飛△４四角▲５九飛△９九角成に▲５三飛成とできなくなっている。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「消費時間は佐々木１０分、高野１９分。」 → ルール3, 1
+
+手数18: ５筋の歩交換を受ける。
+
+削除理由:
+
+手数19: 先手は美濃囲い。
+
+削除理由:
+- 「佐々木」 → ルール1
+
+手数21: 一段飛車は中飛車での形。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は佐々木２８分、高野４４分。」 → ルール3, 1
+- 「ここで高野が４５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐々木２８分、高野１時間２９分となった。」 → ルール3, 1
+- 「昼食の注文はともになし。」 → ルール7
+
+手数26:
+
+削除理由:
+- 「昼食休憩を挟む５０分の長考。」 → ルール3, 7
+
+手数27:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は佐々木５１分、高野１時間３４分。」 → ルール3, 1
+
+手数28: 後手は自陣角を据えた。▲６五歩の筋を警戒しつつ、△７五歩▲同歩△同銀の攻めに厚みを加えている。
+
+削除理由:
+- 「１５時２０分の局面。」 → ルール3
+- 「消費時間は佐々木５１分、高野２時間１９分。」 → ルール3, 1
+- 「高野は４５分の長考で」 → ルール1, 3
+
+手数29:
+
+削除理由:
+- 「１時間２８分の長考でジッと香を浮いた。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１６時２０分の局面。」 → ルール3
+- 「消費時間は佐々木２時間２７分、高野２時間３７分。」 → ルール3, 1
+
+手数34: △７五歩の仕掛けを見せる。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「２９分の長考で金を上がった。」 → ルール3
+
+手数36: ▲２七銀なら仕掛けやすい。
+
+削除理由:
+
+手数37: 先手は自陣角で受けた。▲６五歩（飛銀両取り）の狙いもある。
+
+削除理由:
+- 「佐々木は」 → ルール1
+
+手数41: 銀冠に組めたのは大きい。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は佐々木３時間２２分、高野２時間５３分。」 → ルール3, 1
+
+手数43: 互いに金銀を玉に近づける。
+
+削除理由:
+- 「▲５七金の局面で、高野が３８分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐々木３時間２７分、高野３時間３１分。」 → ルール3, 1
+
+手数47: 先手は穴熊を目指す。
+
+削除理由:
+- 「佐々木は」 → ルール1
+
+手数50: 後手も堅くなってきた。
+
+削除理由:
+
+手数51: もしかすると、△１二香から相穴熊戦になるのだろうか？
+
+削除理由:
+- 「２０時１０分ごろの局面。」 → ルール3
+- 「消費時間は佐々木３時間４８分、高野３時間５１分。」 → ルール3, 1
+
+手数52: 相穴熊となった。超持久戦。
+
+削除理由:
+- 「３５分の長考。」 → ルール3
+
+手数58: 後手も銀冠穴熊を目指そうとする。
+
+削除理由:
+- 「高野も」 → ルール1
+
+手数60:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「残り時間は佐々木２時間９分、高野５８分。」 → ルール3, 1
+
+手数62:
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は佐々木１時間３１分、高野４９分。」 → ルール3, 1
+
+手数66: 軽妙手。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「２２時１０分の局面。」 → ルール3
+- 「残り時間は佐々木１時間３１分、高野３２分。」 → ルール3, 1
+
+手数107: 次に金取りと▲６四角が激痛。後手の投了となった。
+
+削除理由:
+- 「高野の」 → ルール1
+- 「終局時刻は２３時４７分。」 → ルール3
+- 「消費時間は佐々木５時間２１分、高野５時間５３分。」 → ルール3, 1
+- 「勝った佐々木は５勝４敗、敗れた高野は３勝６敗となった。」 → ルール4, 1

@@ -1,0 +1,180 @@
+**Cleaning Up the Commentary: Streamlining Analysis**
+
+Okay, so I'm presented with a task, a familiar one: I need to clean up and refine commentary from shogi game data. The goal here is pretty straightforward – I want to isolate the truly insightful, analytical portions of the text and discard all the noise. Think of it like a meticulous sort. I'm after the core strategic gems, the actual board explanations and move-by-move analysis, not the extraneous fluff.
+
+Essentially, I'm going to follow a two-step process. First, I'll comb through the comments, applying my expert knowledge to identify and ruthlessly eliminate anything that's not directly relevant to the board state or the moves themselves. That includes things like player introductions, time stamps, meta-commentary, or anything else that doesn't contribute to understanding the positional analysis. I'll need to develop a solid set of rules to guide this filtering process. Then, after I've removed all the irrelevant bits, I'll need to go through the remaining text and mold it into a coherent, natural flow of explanation. This is where the real nuance comes in, ensuring that the remaining commentary is understandable, well-structured, and preserves the original analytical intent. It's about distilling the core ideas and presenting them in the most effective way.
+
+手数11: 先手得意の相掛かり▲２八飛型。
+
+削除理由:
+- 「飯島」 → ルール1
+
+手数21: 先手は▲２七銀からの棒銀よりも腰掛け銀を好む。
+
+削除理由:
+- 「飯島は」 → ルール1
+- 「（棋風や戦型の傾向）」 → ルール5
+
+手数22:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は飯島１３分、豊川２７分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は飯島４１分、豊川３７分。」 → ルール3
+- 「引き飛車を生かす構想。２回戦の対岡崎戦でも同じような作戦を採用し快勝している。」 → ルール2
+- 「この局面で豊川が４２分考えて昼食休憩になった。」 → ルール3, 7
+- 「消費時間は飯島４１分、豊川１時間１９分となった。」 → ルール3
+
+手数34: 先手の桂馬の活用を阻む。相掛かりや角換わりでは時折見られる指し方。
+
+削除理由:
+
+手数39:
+
+削除理由:
+- 「１４時１０分の局面。」 → ルール3
+- 「消費時間は飯島１時間２２分、豊川１時間３５分。」 → ルール3
+
+手数40: 互いに壁銀を直す。
+
+削除理由:
+
+手数41: 桂馬の活用を目指すために、３筋から動く。
+
+削除理由:
+
+手数43: ▲３六金から▲３七桂となれば、理想的な形といえそうだ。
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は飯島１時間５２分、豊川１時間４８分。」 → ルール3
+
+手数44: 玉頭を狙うだけではなく、銀が動いたときに△２四飛のように飛車の横利きが通る意味がある。
+
+削除理由:
+- 「３０分の長考。」 → ルール3
+
+手数46: 軽妙な反撃。
+
+削除理由:
+
+手数47: △同銀は▲３五歩。大きなくさびが入った。
+
+削除理由:
+
+手数48: 立て直しのきかない壁銀になったが、３八歩の威力に期待する。
+
+削除理由:
+
+手数49: 次に△３九歩成▲３七桂△３八と▲同飛△２七角のようになるとまずい。垂れ歩を払った。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「消費時間は飯島２時間２１分、豊川２時間３８分。」 → ルール3
+
+手数56: 後手は軽妙な垂れ歩。▲同桂は△５七馬。後手が指せると見られている。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は飯島２時間４４分、豊川３時間４分。」 → ルール3
+- 「豊川、」 → ルール1
+- 「この局面のまま、飯島が１時間１３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は飯島３時間５７分、豊川３時間４分。」 → ルール3
+
+手数57: 対局再開直後に打たれた。△５七馬を手順に消す。後手が長考している。
+
+削除理由:
+- 「豊川が長考している。」 → ルール1, 3
+
+手数58:
+
+削除理由:
+- 「１時間４分の長考。」 → ルール3
+
+手数62: 狙いの王手銀取り。
+
+削除理由:
+
+手数66:
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は飯島４時間２分、豊川４時間２６分。」 → ルール3
+
+手数67: 飛車を渡せないと見て、受けに利かして辛抱する。
+
+削除理由:
+
+手数68: 急所を突く。▲同歩は△６六歩や△７六歩▲同銀△４四馬のような筋が狙える。
+
+削除理由:
+
+手数69: 働きの弱い駒を使う。２七の飛車を引いたので浮き駒がない。
+
+削除理由:
+
+手数73: 金が９一の馬の力でフワフワと浮上していく。
+
+削除理由:
+
+手数75: 玉頭を狙う香打ち。△３六銀は▲４四歩△同歩▲５四歩△同歩▲４四金のような攻めが生じる。
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「残り時間は飯島１時間１９分、豊川１時間２５分。」 → ルール3
+
+手数79: この局面は先手が良いと見られている。
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間は飯島１時間５分、豊川１時間１８分。」 → ルール3
+- 「豊川が長考している。」 → ルール1, 3
+- 「検討陣」 → ルール1
+
+手数80:
+
+削除理由:
+- 「１時間１０分の長考で、豊川の残り時間はわずかに８分。」 → ルール1, 3
+
+手数82: 攻めを催促。それと、玉が２一まで逃げられるルートを作った。
+
+削除理由:
+
+手数86: ▲６四馬が自然だが、△８四飛と受けられると大変か？
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「残り時間は飯島４７分、豊川６分。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「豊川はここから１分将棋。」 → ルール1, 3
+
+手数98:
+
+削除理由:
+- 「飯島は残り２０分。」 → ルール1, 3
+- 「日付が変わった。」 → ルール3
+
+手数122:
+
+削除理由:
+- 「飯島残り３分。」 → ルール1, 3
+
+手数131: 斜め駒が渡せない（▲２一角または銀で詰んでしまう）ため指す手がない。後手の投了となった。
+
+削除理由:
+- 「豊川の投了となった。」 → ルール1
+- 「終局時刻は０時４５分。」 → ルール3
+- 「消費時間は飯島５時間５８分、豊川５時間５９分。」 → ルール3
+- 「勝った飯島は４勝０敗、敗れた豊川は３勝１敗となった。」 → ルール4

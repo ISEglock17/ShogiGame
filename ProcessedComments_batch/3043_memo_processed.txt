@@ -1,0 +1,75 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm presented with a task: to refine Shogi game commentary. The user, understanding the intricacies of the game, wants me to distill the raw information into clear, focused statements. It's a matter of interpreting the provided rules and applying them effectively.
+
+Essentially, I need to read each comment, analyze its content, and identify the core message.  My goal is to discard the extraneous details, the noise, and preserve only the essential elements – the key moves, the strategic implications, the impactful moments of the game – all framed in a way that feels natural, flowing, and directly relevant to the expert reader. The emphasis is on streamlining the commentary, making it concise and instantly insightful.
+
+手数7:
+削除理由:
+- 「相振り飛車模様の出だしに、」 → ルール5
+- 「遠山が１５分考えた」 → ルール1, 3
+
+手数8:
+削除理由:
+- 「若手には数少ない純粋な居飛車党の村田だが、」 → ルール1, 5
+- 「本局は相振り飛車に。」 → ルール5
+
+手数15:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲遠山３６分、△村田２１分。」 → ルール1, 3
+
+手数20:
+
+削除理由:
+- 「この局面で遠山が３７分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲遠山１時間２１分、△村田３９分。」 → ルール1, 3
+
+手数21:
+
+削除理由:
+- 「昼食休憩を挟んで４６分考えた。」 → ルール3, 7
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲遠山２時間２８分、△村田１時間８分。」 → ルール1, 3
+
+手数36:
+
+削除理由:
+- 「１時間７分の長考。」 → ルール3
+- 「今度は遠山が考えている。」 → ルール1
+
+手数37: 中盤戦の勝負所で、お互い狙いがはっきりしない感じだ。
+
+削除理由:
+- 「３８分の考慮。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「この局面で遠山が２５分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲遠山３時間４８分、△村田３時間１分。」 → ルール1, 3
+
+手数45: この手の代わりに▲４六歩と動く手も検討されていたようだ。
+
+削除理由:
+- 「（※）感想戦では」 → ルール8
+
+手数57:
+
+削除理由:
+- 「遠山は残り１時間をきった。」 → ルール1, 3
+
+手数58: 先手の大駒を圧迫するべく右の金で取る。自玉から守りの金が遠のくので勇気が必要な一手だ。
+
+削除理由:
+- 「２９分考えて、」 → ルール3
+- 「村田の残り時間は２時間を切ったところ。」 → ルール1, 3
+
+手数67: 強引に手を作りに行く。
+
+削除理由:

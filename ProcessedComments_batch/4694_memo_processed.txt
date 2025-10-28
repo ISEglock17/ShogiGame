@@ -1,0 +1,114 @@
+**Cleaning Up Those Messy Shogi Comments**
+
+Okay, so I've got this user, probably a fellow shogi enthusiast like myself, who wants to clean up the comments from their game data. You know, those comments that come with the game records, filled with all sorts of extra stuff - introductions, who's thinking what, time stamps, and so on. They want me to sift through all that noise and extract only the good stuff: the actual *analysis* of the board positions and the specific moves that led to those positions. My goal is to transform those scattered fragments of information into a coherent, flowing narrative, making it easier to follow the game's evolution. It's about distilling the essence of the comment into a natural, understandable sentence that will help them learn. The user is asking me to go through them and only leave behind the analysis of the board states and the details of the moves, which must then be formed into natural sentences that make sense to the user.
+
+手数1:
+
+削除理由:
+- 「小倉久史（おぐら・ひさし）七段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｇｕｒａ．ｈｔｍｌ」 → ルール8
+- 「順位戦は２２期目。Ｃ級１組は１２期。Ｃ級２組は１０期目。」 → ルール4
+- 「小倉は三間飛車を多用する振り飛車党。」 → ルール1, 5
+
+手数2:
+
+削除理由:
+- 「佐藤和俊（さとう・かずとし）五段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓａｔｏｕ―ｋａｚｕｔｏｓｉ．ｈｔｍｌ」 → ルール8
+- 「順位戦は７期目。」 → ルール4
+- 「佐藤和は振り飛車党。中飛車が多い。」 → ルール1, 5
+
+手数3:
+
+削除理由:
+- 「小倉の今期成績は４勝４敗、０．５０００。通算成績は４３８勝３５２敗、０．５５４４。」 → ルール1, 4
+
+手数4:
+
+削除理由:
+- 「佐藤和の今期成績は３勝５敗、０．３７５０。通算成績は１６２勝８９敗、０．６４５４。」 → ルール1, 4
+
+手数11: 向かい飛車ｖｓ三間飛車の相振り飛車となった。
+
+削除理由:
+
+手数13:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉２６分、△佐藤１３分。」 → ルール1, 3
+
+手数19: すぐの▲３七歩は見送る。どうせ打つなら▲４六歩〜▲４七金の形から▲３六歩と打ちたい。
+
+削除理由:
+- 「１１時４０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉３０分、△佐藤３８分。」 → ルール1, 3
+
+手数20:
+
+削除理由:
+- 「３２分の考慮で指された。」 → ルール3
+- 「ここで小倉が２０分使って昼食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は▲小倉５０分、△佐藤１時間１０分。」 → ルール1, 3
+- 「昼食の注文は、小倉が「冷やしたぬきそば大盛り（ほそ島や）」、佐藤は注文無し。」 → ルール1, 7
+
+手数22:
+
+削除理由:
+- 「１３時４０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉５０分、△佐藤１時間５２分。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「１４時５０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉１時間３３分、△佐藤２時間３分。」 → ルール1, 3
+
+手数41:
+
+削除理由:
+- 「１５時５０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉１時間５６分、△佐藤２時間２９分。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「５５分の考慮。」 → ルール3
+- 「１６時４０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉１時間５６分、△佐藤３時間２４分。」 → ルール1, 3
+
+手数47: 先手は一気の捌きに出た。△同金なら▲８四飛△８三歩▲４四飛から清算してしまうつもりだろうか。
+
+削除理由:
+- 「小倉は」 → ルール1
+- 「だろう」 → 表現の変更
+- 「１７時３０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉２時間１７分、△佐藤３時間２７分。」 → ルール1, 3
+
+手数57: ▲７四桂を見ている。
+
+削除理由:
+- 「お馴染みの」 → 表現の変更
+
+手数69: 一気に終盤戦へ。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「ここで小倉が７分使って夕食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は▲小倉２時間３５分、△佐藤４時間１０分。」 → ルール1, 3
+- 「夕食の注文は、小倉が「親子丼（ほそ島や）」、佐藤は注文無し。」 → ルール1, 7
+
+手数73:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉２時間３６分、△佐藤４時間１０分。」 → ルール1, 3
+
+手数83:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+- 「消費時間は▲小倉２時間５１分、△佐藤５時間１７分。」 → ルール1, 3

@@ -1,0 +1,155 @@
+**Refining Commentary for Deeper Game Analysis**
+
+Okay, so I'm tasked with cleaning up these comments attached to Shogi game data. The goal, as I understand it, is to strip away all the extraneous noise – things like the background introductions, the time stamps, and any general, non-game-specific details.  Essentially, I need to isolate the core tactical and strategic insights related directly to the board and the moves being made. The value here is undeniable; this refined commentary will make my subsequent analysis far more efficient and focused.
+
+My approach will be straightforward, but hopefully, effective:
+
+1.  I'll implement a set of rules – a very deliberate process – to systematically identify and remove the irrelevant information. I need to be meticulous here.
+2.  Once I've purged the comments of the fluff, I'll then focus on refining what's left.  I want to ensure the remaining text flows naturally, making it easy to understand the tactical context of each move without the disruptions of the original commentary.
+3. Finally, I'll need to... (This is where the instructions end, so I'll need to figure out the best next step. Potentially testing and validation. I will need to iterate on my rules and the formating process until it is perfect.)
+
+手数1:
+
+削除理由:
+- 「◆阿部　健治郎（あべ　けんじろう）五段◆ １９８９年２月２５日生まれ、山形県酒田市出身。西村一義九段門下。２００９年、四段。２０１１年、五段。棋士番号は２７７。」 → ルール4
+- 「２０１０年、第４１期新人王戦で優勝」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆宮田　敦史（みやた　あつし）六段◆ １９８１年６月５日生まれ、埼玉県吉川市出身。所司和晴七段門下。２００１年、四段。２０１０年、六段。棋士番号は２４１。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「阿部の今年度成績は１４勝１０敗（０．５８３）」 → ルール4
+- 「通算成績は１２１勝６８敗（０．６４０）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「宮田の今年度成績は９勝１２敗（０．４２９）」 → ルール4
+- 「通算成績は２５７勝１７１敗（０．６００）」 → ルール4
+
+手数6:
+
+削除理由:
+- 「対戦成績は宮田の０勝１敗。」 → ルール2, 4
+- 「本局は２０１２年の第６１期王座戦一次予選以来の対局となる。」 → ルール2
+
+手数8:
+
+削除理由:
+- 「佐藤康光王将（当時）がＡ級で深浦康市九段が指した新手だ。」 → ルール1, 2
+- 「【第７１期順位戦Ａ級▲深浦九段−△佐藤康王将】 ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１３／０３／０１／Ａ１／６０９２．ｈｔｍｌ」 → ルール2, 8
+
+手数9:
+
+削除理由:
+- 「９分の考慮で」 → ルール3
+
+手数11:
+
+削除理由:
+- 「２分で」 → ルール3
+
+手数13: シンプルに▲２四同飛と取った。△３三角▲２一飛成△８八角成▲７七角が予想される進行である。後手は▲３三桂、先手は４筋の壁をカバーして攻められるかがポイントだ。
+
+削除理由:
+- 「ちなみに前述の第７１期順位戦Ａ級▲深浦九段―△佐藤康王将は、▲２四飛に代えて▲２三角△２五角！▲４一角成△同玉▲２三金！△４五角！と大乱戦に進んでいた。」 → ルール2
+
+手数17: 馬を消す。△８九馬は▲３三桂が痛打だ。
+
+削除理由:
+- 「１１時ごろの局面。現局面までの消費時間は▲阿部１１分、△宮田１８分。」 → ルール3
+
+手数20: 急所のラインに先着。▲３三桂や▲３三角を受けている。
+
+削除理由:
+- 
+
+手数21: 手順に桂を活用した。
+
+削除理由:
+- 
+
+手数22: ▲５三桂打には△３一金で耐えることになりそうだ。
+
+削除理由:
+- 「１２時１０分、ここで阿部が８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲阿部５９分、△宮田５９分。」 → ルール3
+- 「昼食の注文は、ともになし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+手数23: 角の利きを遮って香を取れるようにした。△６四歩は▲６三桂がある。
+
+削除理由:
+- 
+
+手数24:
+
+削除理由:
+- 「１時間０分の考慮で着手。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１４時ごろの局面。現局面までの消費時間は▲阿部５９分、△宮田１時間５９分。」 → ルール3
+
+手数27: 飛車角交換に応じた。
+
+削除理由:
+- 
+
+手数29:
+
+削除理由:
+- 「１５時１５分ごろの局面。現局面までの消費時間は▲阿部１時間４６分、△宮田２時間５分。」 → ルール3
+
+手数33: 俗手で攻める。６五桂がいきているうちに食いつきたいのだろう。
+
+削除理由:
+- 「１６時３０分ごろの局面。現局面までの消費時間は▲阿部２時間３分、△宮田２時間３５分。」 → ルール3
+
+手数36: 先手有利かもしれない。▲５三角△６二銀▲３二桂成△５三銀右▲同桂成△３三銀▲３一成桂が予想される。
+
+削除理由:
+- 「「先手有利かな」と窪田義行六段。」 → ルール1
+- 「１８時１０分、ここで阿部が１時間３２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲阿部３時間３５分、△宮田３時間２４分。」 → ルール3
+- 「夕食の注文は阿部が里芋煮定食（みろく庵）、宮田がなし。」 → ルール7
+- 「対局再開は１９時。」 → ルール7
+
+手数37: ▲５三角は危なかったようだ。
+
+削除理由:
+- 
+
+手数41: じっくりと馬を使う。
+
+削除理由:
+- 
+
+手数43:
+
+削除理由:
+- 「２０時ごろの局面。現局面までの消費時間は▲阿部３時間５９分、△宮田３時間３６分。」 → ルール3
+
+手数45: 後手の飛車が詰んだ。
+
+削除理由:
+- 
+
+手数47: 先手優勢に見える。馬が急所にいて、飛車が８二にいるからだ。
+
+削除理由:
+- 「（遠山雄亮五段）」 → ルール1
+
+手数49:
+
+削除理由:
+- 「ここで宮田が投了。」 → ルール4
+- 「駒の働きが大差でやむなしと判断した。」 → ルール4
+- 「終局時刻は２０時３２分。」 → ルール3
+- 「消費時間は▲阿部４時間２１分、△宮田４時間０分。」 → ルール3
+- 「勝った阿部は４勝３敗、敗れた宮田は２勝５敗。」 → ルール4

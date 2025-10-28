@@ -1,0 +1,110 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: take a shogi game's commentary data and clean it up. The goal here is pretty clear - distill the commentary down to its essence: the *meaningful* insights about the game's state and moves. We need to ditch all the extraneous stuff that's clogging up the analysis - the introductions, time checks, and any other meta information. We want pure, focused, game analysis.
+
+The process is straightforward: first, I'll meticulously go through the commentary, applying a set of rules to identify and remove all the unnecessary fluff. Then, I'll take what's left and smooth it into a cohesive, naturally flowing sentence. Finally, I'll format the output precisely as required: line one will have the move number followed by the refined comment, and subsequent lines will clearly state the reason for each deletion, along with the specific rule that dictated it.
+
+So, in essence, I'm streamlining the commentary, pulling out the gold nuggets of strategic thinking and leaving behind the distracting noise.
+
+手数1:
+
+削除理由:
+- 「【小倉六段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｇｕｒａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【田中四段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔａｎａｋａ―ｙｕ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「小倉の通算成績は４４７勝３６３敗（０．５５１９）」 → ルール4
+- 「今年度成績は１３勝１５敗（０．４６４３）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「田中の通算成績は４６勝４５敗（０．５０５５）」 → ルール4
+- 「今年度成績は１４勝１３敗（０．５１８５）」 → ルール4
+
+手数10:
+
+削除理由:
+- 「１０時５０分頃の局面、消費時間は▲小倉２２分、△田中１０分。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「この局面で▲小倉が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲小倉１時間１１分、△田中４７分。」 → ルール3
+- 「昼食の注文は、小倉が天ぷらそば、田中はなし。」 → ルール7
+
+手数24: 三枚の歩が先手の玉頭を圧迫する。
+
+削除理由:
+
+手数28: △３六歩と３筋の歩を交換しに行くのは▲同歩△同飛▲３七銀と縦からの攻めに強い矢倉に組まれてしまう。よって飛車を転回し２筋に狙いをつける。次に△２六歩▲同歩△同飛に▲２七銀と銀冠を目指すのは４二の銀で玉頭を狙われたときにあたりが強くなって危険。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１４時４０分頃の局面、消費時間は▲小倉１時間４９分、△田中１時間４２分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時２０分頃の局面、消費時間は▲小倉２時間３３分、△田中１時間５２分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１７時１０分頃の局面、消費時間は▲小倉２時間４４分、△田中３時間１４分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「この局面で▲小倉が２１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲小倉３時間１５分、△田中３時間３５分。」 → ルール3
+- 「夕食の注文は、小倉が親子南ばんそば、半ライス（ほそ島や）、田中がカツ丼（ほそ島や）。」 → ルール7
+
+手数65:
+
+削除理由:
+- 「２０時１５分頃の局面。消費時間は▲小倉３時間４８分、△田中４時間８分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「２１時頃の局面、消費時間は▲小倉３時間５８分、△田中４時間１８分。」 → ルール3
+
+手数81: ４五桂の働きが抜群なので、攻めて粘りに出た。後手は△５七桂成▲同金△４八金と食い付いて、▲３九桂に△２四飛と回収する筋が味良い。
+
+削除理由:
+- 「２２時１０分頃の局面、消費時間は▲小倉４時間５５分、△田中４時間５０分。」 → ルール3
+- 「責めて」 → 「攻めて」に整形
+
+手数82: 筋は△５七桂成▲同金△４八金だが、あとで▲４九歩と催促される手を気にしたものか。盤上の駒を足して堅実だが、▲３五銀や非常手段の▲４五角成の筋も気になる。
+
+削除理由:
+
+手数95:
+
+削除理由:
+- 「２３時頃の局面、残り時間は▲小倉５０分、△田中４４分。」 → ルール3
+
+手数117:
+
+削除理由:
+- 「２３時３５分頃の局面、残り時間はともに３２分。」 → ルール3
+
+手数135:
+
+削除理由:
+- 「この局面で△田中は投了を告げた。」 → ルール8
+- 「終局時刻は０時１２分、消費時間は▲小倉５時間３８分、△田中５時間４７分。」 → ルール3
+- 「勝った小倉、敗れた田中はともに４勝５敗となった。」 → ルール4

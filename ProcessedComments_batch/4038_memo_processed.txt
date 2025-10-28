@@ -1,0 +1,139 @@
+**Streamlining Shogi Commentary: My Approach**
+
+Okay, so I'm tasked with taking raw Shogi game commentary and whipping it into shape. The goal here is crystal clear: I need to transform verbose, information-laden ramblings into concise, insightful analysis of the game's pivotal moments. I see the commentary, and my mission begins!
+
+Essentially, I'm taking the messy and turning it into something clean and focused. My process is pretty straightforward, thanks to the provided rules. First, I meticulously scan the text, identifying and eliminating all the noise - the metadata, player introductions, and extraneous time stamps. The rules will guide this process perfectly. Then, I focus on the good stuff: the board positions and, most importantly, the actual moves being made.
+
+Finally, with the core of the commentary revealed, I work my linguistic magic. I'll transform those fragmented pieces of information into clear, natural-sounding sentences that an expert would find informative and easily digestible. Lastly, it is outputted in the requested format. It's a satisfying process, turning raw data into something elegant and useful.
+
+手数5:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は先崎８分、飯塚１２分。」 → ルール3, 1
+
+手数7:
+先手の作戦はゴキゲン中飛車。
+
+削除理由:
+- 「先崎の」 → ルール1
+
+手数10:
+穴熊に囲う含みを残している。
+
+削除理由:
+
+手数12:
+△２二角は▲５五歩と止められると、後で△３三角と上がるハメになる。
+
+削除理由:
+
+手数21:
+力戦居飛車となった。
+
+削除理由:
+
+手数24:
+サッと左美濃に囲う。手数をかけずに堅い構え。
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は先崎２３分、飯塚５４分。」 → ルール3, 1
+
+手数25:
+位を取ったら位の確保。確保しにいく駒は銀の場合が多い。
+
+削除理由:
+
+手数30:
+
+削除理由:
+- 「△７四歩の局面で先崎が９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は先崎４３分、飯塚１時間９分。」 → ルール3, 1
+- 「昼食の注文は先崎がつけとろろそば、飯塚は注文なし。」 → ルール1, 7
+
+手数32:
+後手は桂を跳ねた。
+
+削除理由:
+- 「１４時過ぎ、」 → ルール3
+- 「消費時間は先崎４４分、飯塚２時間１分。」 → ルール3, 1
+- 「飯塚は５２分の長考で」 → ルール1, 3
+
+手数34:
+自玉はこれ以上はあまり堅くできないため、先手陣がまだ組み上がっていないのを見越して先攻するのは理に適っている。先手は４九金が立ち遅れ気味。
+
+削除理由:
+
+手数39:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は先崎１時間４５分、飯塚２時間２２分。」 → ルール3, 1
+
+手数41:
+△５六歩なら▲７三角成が飛銀取りで勝負。
+
+削除理由:
+
+手数42:
+力をためる。
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は先崎２時間２２分、飯塚２時間５４分。」 → ルール3, 1
+
+手数49:
+後手の攻め、先手の受けという展開が続く。
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は先崎２時間５４分、飯塚３時間２１分。」 → ルール3, 1
+- 「飯塚の攻め、先崎の受け」 → ルール1
+- 「ここで飯塚が４０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は先崎２時間５４分、飯塚４時間１分となった。」 → ルール3, 1
+
+手数71:
+先手は攻めを余すしかない。後手からは△５八歩が厳しそう。後手優勢といわれている。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は先崎３時間８分、飯塚４時間４０分。」 → ルール3, 1
+- 「先崎は」 → ルール1
+- 「控え室でも」 → ルール1, 6
+
+手数74:
+目の覚める大技が出た。▲同馬は△８七歩で受けが利かない。
+
+削除理由:
+
+手数75:
+銀冠を作って頑張る。
+
+削除理由:
+
+手数84:
+自玉は大丈夫と見てガンガンいく。
+
+削除理由:
+- 「２１時前の局面。」 → ルール3
+- 「消費時間は先崎３時間２１分、飯塚５時間８分。」 → ルール3, 1
+
+手数85:
+香がいなくなると２七龍が利いてくる。
+
+削除理由:
+- 「３５分の長考。しかし、」 → ルール3
+
+手数89:
+首を差し出した。
+
+削除理由:
+
+手数92:
+以下、▲同玉は△６八成銀、▲９六玉も△９五金▲同玉△９四金▲９六玉△９五香までの詰み。
+
+削除理由:
+- 「終局時刻は２１時３４分。」 → ルール3
+- 「消費時間は先崎３時間５７分、飯塚５時間１２分。」 → ルール3, 1
+- 「勝った飯塚は１勝０敗、敗れた先崎は０勝１敗となった。」 → ルール1, 4

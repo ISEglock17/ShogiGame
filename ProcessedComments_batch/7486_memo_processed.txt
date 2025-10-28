@@ -1,0 +1,145 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the goal here is to refine these Shogi game commentaries, right? I need to strip away all the extraneous noise and leave behind the pure essence of the game's unfolding. Think of it like a meticulous archaeologist brushing away the dust to reveal the artifact underneath. I'm focusing on the *what* and the *why* of each move, the strategic reasoning laid bare.
+
+Essentially, I need to filter out the stuff that clouds the analysis. Anything that doesn't directly contribute to understanding the board state or the player's intentions has to go. This means I'm immediately eliminating:
+
+*   **Personality Profiles:** Any mention of players, their ranks, their teachers – it's irrelevant to the board's dynamic.
+*   **Historical Echoes:** References to past games, precedents, anything that's a historical distraction from the current situation.
+*   **Temporal Ticks:** Time stamps and clock readings. These don't inform the moves; they simply document their pace.
+
+The goal is a clear, concise narrative of the game, free from distractions, ready for deep structural analysis. I'm building a streamlined, focused dataset, a tool for dissecting the strategic heart of the game.
+
+手数1:
+
+削除理由:
+- 「◆安用寺　孝功（あんようじ　たかのり）六段◆」 → ルール4
+- 「１９７４年８月３０日生まれの４０歳。京都府宇治市出身。森信雄七段門下。」 → ルール4
+- 「１９８８年、６級で奨励会入会。１９９９年１０月、四段昇段（プロ入り）。２００９年２月、六段昇段。棋士番号は２３４。」 → ルール4
+---
+手数2:
+
+削除理由:
+- 「◆青野　照市（あおの　てるいち）九段◆」 → ルール4
+- 「１９５３年１月３１日生まれの６１歳。静岡県焼津市出身。（故）廣津久雄九段門下。」 → ルール4
+- 「１９６８年、４級で奨励会入会。１９７４年、四段昇段（プロ入り）。１９９４年、九段昇段。棋士番号は１１４。」 → ルール4
+- 「タイトル戦登場は計１回。棋戦優勝は計４回。」 → ルール4
+---
+手数3:
+
+削除理由:
+- 「安用寺の今年度成績は１０勝８敗（０．５５６）。」 → ルール4
+- 「通算成績は２５０勝２２０敗（０．５３２）。」 → ルール4
+---
+手数4:
+
+削除理由:
+- 「青野の今年度成績は５勝１２敗（０．２９４）。」 → ルール4
+- 「通算成績は７２９勝７２１敗（０．５０３）。」 → ルール4
+---
+手数5:
+
+削除理由:
+- 「安用寺の直近１０局の成績は３勝７敗（右が最新、千日手２：●千千○○○●●●●●●）。」 → ルール4
+---
+手数6:
+
+削除理由:
+- 「青野の直近１０局の成績は４勝６敗（右が最新、持将棋１：持○○○●●○●●●●）。」 → ルール4
+---
+手数7: 先手は先手中飛車を採用。
+
+削除理由:
+- 「安用寺は」 → ルール1
+---
+手数8: 後手は角筋を閉じたまま駒組みを進める。対先手中飛車の指し回しとして定跡化されている進行だ。
+
+削除理由:
+- 「青野は」 → ルール1
+---
+手数20:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺１７分、△青野２４分。」 → ルール3
+---
+手数24: 後手はしばし考えてから△５五同歩と応じる。
+
+削除理由:
+- 「青野は」 → ルール1
+---
+手数25: 対する先手は歩を取り払った。
+
+削除理由:
+- 「安用寺は」 → ルール1
+- 「ノータイムでパッと」 → ルール3
+---
+手数26:
+
+削除理由:
+- 「２２分の考慮。」 → ルール3
+---
+手数31:
+
+削除理由:
+- 「この局面で青野が８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲安用寺４０分、△青野１時間１４分。」 → ルール3
+---
+手数35: 左辺の守りに金を設置する。バランス型の戦法では常套手段だ。
+
+削除理由:
+- 「１９分の少考。」 → ルール3
+---
+手数36:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺５９分、△青野１時間４０分。」 → ルール3
+---
+手数37:
+
+削除理由:
+- 「１７分の少考。」 → ルール3
+---
+手数38: 自陣整備として指したい手は多い局面だったが、このタイミングで後手は仕掛けを選んだ。
+
+削除理由:
+- 「３３分の考慮。」 → ルール3
+- 「青野は」 → ルール1
+---
+手数40:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺１時間１６分、△青野２時間１３分。」 → ルール3
+- 「安用寺が長考に沈んでいる。その間に青野は棋士室に姿を見せた。また３階事務局にも入室しているようだった。」 → ルール1, 3, 6
+---
+手数41: ８筋を受けずに▲５二角と攻め合った。△８九角が気になるところだが、先手は大丈夫と見ているようだ。△８九角には▲６八金△８八飛成に▲４三角成△同銀引▲７九金がありそうだ。先手は次に▲６一角成で馬を作れるので、後手は少し焦されている。ここは手が広い。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間３３分、△青野２時間１３分。」 → ルール3
+- 「１時間１７分の長考だった。」 → ルール3
+- 「安用寺は」 → ルール1
+- 「（Ａ奨励会員）」 → ルール1
+---
+手数42: ８筋で飛車を前進させたことではなく、そこで１歩を手にしたことを主張として逆サイドから攻めに出た。
+
+削除理由:
+- 「５７分の長考。」 → ルール3
+---
+手数44:
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間３３分、△青野３時間１０分。」 → ルール3
+---
+手数45: 後手もここまできたら△１六歩▲同香△３四角とするだろうか。（１）▲５四飛と切る手を考えないといけない。取ると３四角が取られてしまうが、△８九飛成と成れるようになるのは主張だ。（２）▲１七玉のような受け方には△６六飛がある。
+
+削除理由:
+- 「と棋士室では言われている。」 → ルール1, 6
+---
+手数46:
+
+削除理由:
+- 「１９分の少考。」 → ルール3

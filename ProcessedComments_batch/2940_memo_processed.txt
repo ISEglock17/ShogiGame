@@ -1,0 +1,106 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up and format some Shogi game commentary. Basically, I'm going to take this messy text and make it shine. Here's my plan:
+
+First, I'll go through each move, one by one. I'll need to carefully analyze the commentary for each specific move. I'll need to identify any parts that match the "delete this" rules that the user has provided. Once I've found those bits, I'll use those rules to get rid of them. Then, I'll smooth out whatever's left, making it sound more natural and flowing. Finally, I'll replace any actual player names with "Sente" or "Gote" to keep things consistent. It's a pretty straightforward process, just requires careful attention to detail for each step.
+
+手数32:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼１４分、△広瀬３０分。」 → ルール3, 1
+
+手数37:
+
+削除理由:
+- 「ここで△広瀬が２７分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲長沼４７分、△広瀬１時間０分。」 → ルール3, 1
+
+手数43: 角道を避けて▲６五歩からの仕掛けを用意する。
+
+削除理由:
+- 該当なし
+
+手数45:
+
+削除理由:
+- 「１４時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼１時間３３分、△広瀬１時間１３分。」 → ルール3, 1
+
+手数46: ▲３六飛を防ぐ。
+
+削除理由:
+- 該当なし
+
+手数48: 飛車角を自由に転回できる状態にして駒のさばきを狙う。
+
+削除理由:
+- 該当なし
+
+手数49:
+
+削除理由:
+- 「１５時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼２時間６分、△広瀬１時間５６分。」 → ルール3, 1
+
+手数64: 後手としては先手の角を使わせない展開にしたい。
+
+削除理由:
+- 該当なし
+
+手数66: ▲同歩でも▲同角でも△６四銀で調子が良い。
+
+削除理由:
+- 該当なし
+
+手数67:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼２時間２６分、△広瀬３時間１０分。」 → ルール3, 1
+
+手数75:
+
+削除理由:
+- 「この局面で△広瀬が１１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲長沼２時間５２分、△広瀬３時間４７分。」 → ルール3, 1
+- 「夕食休憩後１時間３０分ほどたってもまだ△広瀬は次の手を指していない。」 → ルール1, 3, 7
+
+手数76:
+
+削除理由:
+- 「１時間５２分の大長考でついに着手。」 → ルール3
+
+手数79: ▲８六銀は△４五桂とタダで桂を取られる。
+
+削除理由:
+- 該当なし
+
+手数81: ここで▲８六銀は△７四桂が嫌か。▲７四歩に△同金なら▲２四飛が味の良い手になる。
+
+削除理由:
+- 該当なし
+
+手数88: 金は取られたが、代わりに飛車を働かせて勝負する。
+
+削除理由:
+- 該当なし
+
+手数90:
+
+削除理由:
+- 「２１時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼３時間３３分、△広瀬５時間３０分。」 → ルール3, 1
+
+手数104:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼４時間１０分、△広瀬５時間４３分。」 → ルール3, 1
+
+手数118: ここで先手の投了となった。以下先手玉は一手一手の寄せで後手玉はまだ詰まない。
+
+削除理由:
+- 「▲長沼の」 → ルール1
+- 「消費時間は▲長沼４時間１８分、△広瀬５時間４３分。」 → ルール1, 3
+- 「勝った△広瀬は４勝１敗、敗れた▲長沼は１勝４敗となった。」 → ルール1, 4

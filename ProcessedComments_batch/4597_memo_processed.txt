@@ -1,0 +1,110 @@
+**Processing Shogi Game Comments**
+
+Okay, so I understand the task. The user wants me to clean up and format comments found within Shogi game data. They've given me a set of rules to follow – a sort of filtering and restructuring guideline. Essentially, I need to strip away the noise and present the essential information in a clear, natural-sounding way.
+
+First things first, it's clear I need to tackle each comment individually. It's the most logical way to break down the problem. This means I'll need to develop a processing loop to get through the entire collection of comments one by one. I can't be looking at the whole set at once, it would be overwhelming. I'll need to define some specific steps for that individual processing step.
+
+手数2: 後手は△３二飛戦法を採用。
+
+削除理由:
+- 「今泉健司さんが発案して「升田幸三賞」を受賞した」 → ルール1
+- 「久保は」 → 置換ルール（実名を「後手」に置換）
+
+---
+手数12:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部３時間４８分、久保４時間１８分。」 → ルール3
+
+---
+手数14:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部３時間５２分、久保４時間２３分。」 → ルール3
+
+---
+手数22:
+
+削除理由:
+- 「２１時５５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部４時間４分、久保４時間４６分。」 → ルール3
+
+---
+手数30:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部４時間２３分、久保５時間１分。」 → ルール3
+
+---
+手数32: ▲７八歩△８六飛▲同飛△同角▲７九金で先手良しといわれている。
+
+削除理由:
+- （なし）
+
+---
+手数35:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部４時間４３分、久保５時間７分。」 → ルール3
+
+---
+手数39: △８四同歩なら▲２四飛が痛打になる。
+
+削除理由:
+- （なし）
+
+---
+手数41: △２二歩▲３五飛△４八角成▲同玉△３二歩ぐらいだが、後手苦しい。
+
+削除理由:
+- （なし）
+
+---
+手数42: ここは▲２二飛成か▲３五飛か迷いそうだ。
+
+削除理由:
+- 「２３時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部４時間５６分、久保５時間２５分。」 → ルール3
+
+---
+手数49: 駒得の先手は局面をおさめにいく。
+
+削除理由:
+- （なし）
+
+---
+手数50: ▲８五飛を防ぐ銀上がり。逆転を信じ、必死に粘る。
+
+削除理由:
+- 「０時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部５時間１３分、久保５時間３２分。」 → ルール3
+
+---
+手数55: △同金なら▲３一角が狙い。
+
+削除理由:
+- 「０時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部５時間２６分、久保５時間３４分。」 → ルール3
+
+---
+手数63:
+
+削除理由:
+- 「０時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は阿部５時間３７分、久保５時間４９分。」 → ルール3
+
+---
+手数68:
+
+削除理由:
+- 「阿部は正座に座り直し、体を揺らして考えている。」 → 盤面や指し手の解説ではないため
+
+---
+手数69:
+
+削除理由:
+- 「阿部はこの手を指し、席を立った。」 → 盤面や指し手の解説ではないため

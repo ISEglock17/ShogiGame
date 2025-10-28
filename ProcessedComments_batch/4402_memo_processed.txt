@@ -1,0 +1,70 @@
+**Cleaning Up the Commentary**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal here is pretty clear: they want to strip out all the fluff that's not directly relevant to the actual game analysis and leave behind only the stuff that's useful, the explanations of positions and moves, all formatted as normal, readable sentences.  
+
+Basically, I need to be a digital editor for Shogi commentary.  The process seems straightforward: first, I need a set of rules – a kind of filter – to identify and remove all the "noise." That could be things like irrelevant banter, pre-game introductions, or post-game reflections that don't directly explain a move or a board state. Then, after removing all that, I need to smooth out what's left into something that flows like natural language, making sure it still correctly describes the relevant chess moves and board states. So, it is a two-step process: First to find and delete the useless parts and second to rewrite the remaining text into smooth readable sentences.
+
+手数16:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村田顕３４分、△山本２分。」 → ルール3
+- 「昨年１１月のＣ１▲千葉−△神崎戦などと同じ展開。」 → ルール2, 1
+
+手数17:
+
+削除理由:
+- 「１時間５分の長考。」 → ルール3
+- 「昼食休憩前に飛車を切る派手な展開になった。」 → ルール7
+
+手数18: この局面で△３二同玉と取れるのが８手目△４二玉と指した意味。△３二同銀と取ると▲２二角が残るので△３三銀と上がらなければいけない。銀に使う２手を６一金の活用に回そうとしている。
+
+削除理由:
+
+手数19: 角の働きが悪いのが先手の主張点。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「この局面で村田顕が１０分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲村田顕１時間４９分、△山本９分。」 → ルール3, 4
+
+手数21: △３六同角は▲３五金から角を押さえ込まれる。
+
+削除理由:
+- 「昨年の▲千葉−△神崎戦は▲７七銀だった。」 → ルール2, 1
+- 「１手前△４四歩の局面で前例は９局あり、先手の７勝２敗。」 → ルール2
+- 「他に▲６八玉や▲３五金などが指されている。」 → ルール2
+
+手数22:
+
+削除理由:
+- 「この一手は４４分の考慮。」 → ルール3
+- 「１４時を回っている。」 → ルール3
+- 「消費時間は▲村田顕１時間５２分、△山本５３分。」 → ルール3, 4
+
+手数25:
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「消費時間は▲村田顕３時間０分、△山本５８分。」 → ルール3, 4
+- 「隣の▲島本−△西尾戦はもう終盤だが、こちらは長くなりそうだ。」 → ルール1
+
+手数27:
+
+削除理由:
+- 「隣の▲島本−△西尾戦が終局した。」 → ルール1
+
+手数33:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村田顕３時間３８分、△山本２時間４分。」 → ルール3, 4
+
+手数41: △３三歩と打つ一歩があればいいのだが、あいにくどこにも落ちていない。先手からは、▲６六角〜▲２四歩△同歩▲２三歩の狙いがある。
+
+削除理由:
+- 「この局面で山本が１３分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲村田顕３時間５６分、△山本３時間１分。」 → ルール3, 4

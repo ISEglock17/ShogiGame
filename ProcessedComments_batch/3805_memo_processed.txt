@@ -1,0 +1,77 @@
+**Cleaning Up My Game Analysis**
+
+Okay, so I'm looking at this mountain of Shogi game data, specifically the comments attached to each move. What a mess! My goal here is to whip these comments into shape. I need to strip out all the extraneous stuff – you know, the stuff the computer spits out that's just noise for my analysis. I want to keep only the gold: the insightful explanations of the board state and the reasoning behind each move. I want those to read like actual, coherent English.
+
+So, I see this in two steps: first, I'm going to set up some rules to guide the culling process. I'll need to identify precisely what information to ditch and how to best delete it from each comment. Then, once I've got the essentials left, I'll go through and smooth out the language, making sure it flows and reads naturally. It's about preserving the valuable analysis and making it accessible and easy to digest. That will give me the raw material to gain great insights.
+
+手数2:
+削除理由:
+- 「村田」 → ルール1
+- 「この手に５分」 → ルール3
+
+手数3:
+削除理由:
+- 「対して高田も５分で」 → ルール1, 3
+
+手数7: ５筋位取り。
+削除理由:
+
+手数11: 態度を決めて中飛車に。
+削除理由:
+- 「ここまでの消費時間は高田１１分、村田３６分。」 → ルール1, 3
+
+手数26:
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は高田３９分、村田１時間１５分。」 → ルール1, 3
+- 「昼食の注文は、高田はなし。村田は五目焼きそば。」 → ルール1, 7
+
+手数32:
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は高田５４分、村田１時間４２分。」 → ルール1, 3
+
+手数33:
+削除理由:
+- 「高田、１時間ちょうど考えた。」 → ルール1, 3
+
+手数34: 勢いをつける突っかけ。
+削除理由:
+
+手数41:
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は両者ともに２時間２０分。」 → ルール3
+
+手数45:
+削除理由:
+- 「高田はこの一手に１時間４分を使った。」 → ルール1, 3
+- 「対して村田が４０分を使って、夕食休憩に。」 → ルール1, 3, 7
+- 「消費時間は高田３時間２４分、村田３時間３０分。」 → ルール1, 3
+- 「夕食の注文は、両者ともになし。」 → ルール7
+
+手数49:
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「消費時間は高田３時間３８分、村田３時間４２分。」 → ルール1, 3
+
+手数54:
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は高田３時間５５分、村田４時間２分。」 → ルール1, 3
+
+手数78:
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「残り時間は高田４３分、村田１時間２８分。」 → ルール1, 3
+
+手数86:
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は高田１４分、村田１時間１３分。」 → ルール1, 3
+
+手数94:
+削除理由:
+- 「終了時刻は２２時５７分。」 → ルール3
+- 「消費時間は高田５時間５１分、村田４時間３７分。」 → ルール1, 3
+- 「勝った村田は３勝４敗、敗れた高田は１勝７敗となった。」 → ルール1, 4

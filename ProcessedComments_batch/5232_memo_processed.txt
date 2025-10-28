@@ -1,0 +1,167 @@
+**Focusing the Lens: Cleaning Up Shogi Commentary**
+
+Okay, so I've got a task here. Someone wants me to refine commentary found within Shogi game records. The goal is clear: strip away all the extraneous noise – the metadata, player introductions, time stamps, and anything irrelevant to the actual analysis of the game. I need to get down to the pure essence of the commentary: the explanations of the board positions and the reasoning behind each move, presented in a fluid, natural way.
+
+Essentially, I'm being asked to apply a very specific filter. I've been given a set of rules, and I need to process each comment in the game record, meticulously checking it against those rules.
+
+My processing will follow a very deliberate methodology, as I am tasked to filter out anything along the following guidelines. I will be sure to remove the following:
+
+*   Any mention of individuals *not* directly involved in the game – no side commentary about third parties, their ranks, or their affiliations.
+*   References to precedents, previous games, or any historical context beyond the current board state. It is crucial to remove any commentary related to the history of the game.
+*   Any details on time spent, game clocks, or time management tactics.
+*   Biographical information about the players – their records, titles, affiliations, etc. are not key to understanding the move being made.
+*   General descriptions of the players' styles or tendencies.
+*   Environmental details – where the game's being played, the weather, the hotel, and any other irrelevant external circumstances.
+
+Essentially, I'm going to distill the commentary down to its essential, game-focused components, making it more digestible and useful for focused analysis. It's all about improving the signal-to-noise ratio.
+
+手数2:
+
+削除理由:
+- 「棋譜用紙の１手目・２手目には千日手局の消費時間が記入される。本局では「２５０」「２１６」の数字が並ぶ。」 → ルール2, 8
+- 「ある奨励会員は「小学生の頃に将棋年鑑の棋譜を並べていて数字の意味がわからなかったんです。それで道場の手合い係のお兄ちゃんに聞いたら『消費時間だ』って言う。それで『プロって初手に何百分も考えるや。すごいなぁ』って思っていたら、それが千日手局の消費時間だってだいぶ経ってから気づきました」と話していた。」 → ルール1
+
+手数11: 先手は四間飛車を採用。
+
+削除理由:
+- 「窪田はまたしても」 → ルール2, 5
+
+手数16: 千日手局と同じく四間飛車対居飛車の戦いになっている。後手の作戦が注目される。
+
+削除理由:
+- 「２１時頃の局面。ここまでの消費時間は▲窪田４時間１６分、△阿部隆３時間４２分。」 → ルール3
+- 「今度の阿部の作戦は何だろうか。」 → 「後手の作戦が注目される。」に整形
+
+手数25: 先手は藤井システムの構え。
+
+削除理由:
+- 「窪田は」 → 「先手は」に置換
+
+手数26: ここで△１二香と一目散に穴熊を目指すのは▲２五桂〜▲４五歩があって危ない。
+
+削除理由:
+
+手数28: 仕掛けを見せることで振り飛車側の玉の移動を強要している。
+
+削除理由:
+- 「千日手局と形は違うが、」 → ルール2
+
+手数32: ▲６六角△８二飛▲７七角△７二飛▲６六角…の千日手が考えられる。
+
+削除理由:
+- 「２２時頃の局面。ここまでの消費時間は▲窪田４時間３３分、△阿部４時間１８分。」 → ルール3
+- 「また「これは千日手が（最善という）結論だったような…」と久保二冠。」 → ルール1
+
+手数33: 独創的な金上がり。
+
+削除理由:
+- 「窪田の将棋はだれにもまねができない。」 → ルール5
+
+手数36: 後手は▲２五桂を消してから穴熊を目指す。
+
+削除理由:
+
+手数43: 右玉のような形になった。△２四歩を待って、争点を作ったということだろうか。
+
+削除理由:
+- 「ということだろう。」 → 「ということだろうか。」に整形
+
+手数45: かつての美濃囲いが、すごいことになってきた。
+
+削除理由:
+
+手数46: 後手は順調に陣形を固めていく。
+
+削除理由:
+
+手数49: 玉側からの棒金戦法。
+
+削除理由:
+
+手数54: 銀冠穴熊のようだが、２一桂がいないので固くない。
+
+削除理由:
+- 「「２一桂がいないので固くないんですよね」と検討陣。」 → ルール1
+
+手数57: 俗に「控えの桂」と呼ばれる手筋。いきなり２五には打てないので、次に▲２五桂とする準備。
+
+削除理由:
+
+手数58: 遊び駒の活用。
+
+削除理由:
+
+手数62: ２一桂がいない穴熊はあまり堅くない。息苦しいので広さを求めていく。
+
+削除理由:
+
+手数64: ずっと両取りで打てた桂馬だが、▲６八金と指させてから打った。
+
+削除理由:
+
+手数67: 取ったばかりの桂馬を使っていく。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「０時頃の局面。消費時間は▲窪田５時間７分、△阿部５時間２２分。」 → ルール3
+
+手数72: △５七歩成と△９九角成を見ている。
+
+削除理由:
+
+手数76: ２四の地点を間接的に受けている。
+
+削除理由:
+
+手数86: 大駒が押し込まれる形。しかし３七銀は玉でしかヒモがついていないので不安定な形だ。
+
+削除理由:
+
+手数87: 馬の利きを止めながら攻めていく。
+
+削除理由:
+- 「というわけで、」 → 削除し自然な文に整形
+
+手数95:
+
+削除理由:
+- 「０時４０分頃の局面。ここまでの消費時間は▲窪田５時間２６分、△阿部５時間４７分。」 → ルール3
+
+手数99: ▲５四馬と▲３三金の狙い。
+
+削除理由:
+
+手数106: 攻めるだけ攻めて、受ける。
+
+削除理由:
+- 「残りは２分になった。」 → ルール3
+
+手数107:
+
+削除理由:
+- 「１時頃の局面。ここまでの消費時間は▲窪田５時間３８分、△阿部５時間５８分。」 → ルール3
+
+手数111: 王手馬取り。穴熊だった玉の周りは駒が少なくなっている。
+
+削除理由:
+- 「今、周りはさみしい。」 → 「周りは駒が少なくなっている。」に整形
+
+手数124: 龍取りになっている。
+
+削除理由:
+- 「阿部はここから一分将棋。窪田は残り２２分。」 → ルール3
+
+手数131: 空き王手。△２八歩は▲２七香がある。
+
+削除理由:
+
+手数137: この局面で後手が投了した。△１二同玉に▲２二金△同角▲同飛成△同銀▲１三香△同玉▲１四金△１二玉▲１三金△２一玉▲２二金の詰みがある。
+
+削除理由:
+- 「阿部」 → 「後手」に置換
+- 「消費時間は▲窪田５時間３８分、△阿部５時間５９分。」 → ルール3
+- 「両者１勝２敗となった。」 → ルール4
+- 「詰み。」 → 「詰みがある。」に整形

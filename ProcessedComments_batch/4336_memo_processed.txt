@@ -1,0 +1,117 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Deeper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. They're looking for a streamlined, focused dataset. My goal is clear: I need to strip out all the fluff – any metadata, intros, player biographies, timestamps, all that noise – and leave behind only the actual, insightful commentary on the board state and the moves themselves. Essentially, I'm aiming to transform these raw comments into concise, flowing sentences that are truly useful for deeper game analysis.
+
+Here's my approach: First, I'll go through the comments with a fine-toothed comb, applying a set of rules to identify and ruthlessly remove all the extraneous information. Then, with the essential commentary salvaged, I'll reshape the remaining text into grammatically sound and naturally flowing sentences. The ultimate goal is to generate a dataset that is easy to analyze.
+
+手数15: 横歩取りになった。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田１０分、△神崎１０分。」 → ルール3
+- 「この消費時間の状況を見ると、真田が３０分ほど考えていることになるようだ。」 → ルール3, 1
+
+手数29:
+
+削除理由:
+- 「この手に代えて▲３六歩なら、先週指されたＢ２▲神谷−△畠山成戦と同じ局面だった。」 → ルール2, 1
+
+手数37:
+
+削除理由:
+- 「過去の実戦例は３局あったが、全て▲２六歩と受けていた。」 → ルール2
+
+手数38:
+
+削除理由:
+- 「この局面で真田が１９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲真田１時間２８分、△神崎２４分。」 → ルール1, 3
+
+手数39:
+
+削除理由:
+- 「再開後すぐに指され、神崎がここで考えている。」 → ルール1, 3, 7
+- 「１３時５０分頃の局面。」 → ルール3
+- 「消費時間は▲真田１時間２９分、△神崎２４分。」 → ルール1, 3
+
+手数40:
+
+削除理由:
+- 「１時間１分の長考。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田１時間５０分、△神崎１時間３３分。」 → ルール1, 3
+
+手数44:
+
+削除理由:
+- 「１時間１分の長考。」 → ルール3
+
+手数45: この数手の応酬は３７手目に▲２六歩と打った将棋なら似たものがあるが、２六と２七ではどういう違いがあるのか、もう少し見ないとわからない。
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田２時間３分、△神崎２時間３４分。」 → ルール1, 3
+
+手数54: 先手の持ち歩が多い分、手段が多いと見られている。
+
+削除理由:
+- 「この局面で真田が２２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲真田２時間５４分、△神崎４時間０分。」 → ルール1, 3
+- 「まだ深く検討されていないが、」 → ルール1
+
+手数60: △４四歩は自玉も薄くなると見た。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田３時間１４分、△神崎４時間２４分。」 → ルール1, 3
+
+手数68:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田４時間４分、△神崎４時間３５分。」 → ルール1, 3
+
+手数70: 角成を防ぐ。
+
+削除理由:
+
+手数75: 銀を取るのは急所から外れるし、△５六角〜△４六桂が残る。
+
+削除理由:
+
+手数76:
+
+削除理由:
+- 「神崎は残り１時間。」 → ルール1, 3
+
+手数77: ▲５一飛成までの詰めろ。
+
+削除理由:
+
+手数78: これでしのげているか。
+
+削除理由:
+- 「神崎、」 → ルール1
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田４時間２９分、△神崎５時間１分。」 → ルール1, 3
+
+手数87: 後手優勢と見られている。
+
+削除理由:
+- 「２２時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲真田４時間５４分、△神崎５時間１４分。」 → ルール1, 3
+
+手数101: 投了後の変化として、（１）△３一同玉は▲５一龍△４二合▲２二金△同銀▲４二桂成まで。（２）△５二玉は▲５三歩成△同玉▲５一龍△５二歩▲５四歩△６四玉▲７六桂以下の即詰み。
+
+削除理由:
+- 「神崎はここで６分考えて投了した。」 → ルール1, 3
+- 「消費時間は▲真田５時間１０分、△神崎５時間４２分。」 → ルール1, 3
+- 「勝った真田は６勝２敗、敗れた神崎は１勝７敗となった。」 → ルール1, 4

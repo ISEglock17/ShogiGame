@@ -1,0 +1,119 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up and formatting these Shogi commentary snippets. Essentially, the goal is to take what's probably a raw feed and refine it into something elegant and readable, suitable for an expert audience. I need to strip away the irrelevant noise, the unnecessary verbiage, and leave only the core strategic insights, presented in natural, flowing Japanese.
+
+Here's my thought process: I'll read through each comment carefully, looking for patterns. I'll mentally flag phrases or segments that fall under the "deletion targets" – things that, based on my understanding of the rules, are superfluous or redundant in this context. Once I've identified these areas, I'll excise them, leaving behind the truly critical strategic information. The challenge will be maintaining the original meaning and intent, while transforming it into a concise, easily digestible format.
+
+手数2:
+
+削除理由:
+- 「糸谷は２０歳。昨日成人式を迎えたことになる。」 → ルール4
+
+手数8: 一手損角換わりになった。
+
+削除理由:
+
+手数19: 早繰り銀になった。▲３五歩△同歩▲同銀の仕掛けがある。
+
+削除理由:
+
+手数24:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２４分、△糸谷５分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「この局面で糸谷が３４分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤１時間１６分、△糸谷４０分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間２０分、△糸谷１時間２４分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間３０分、△糸谷２時間１６分。」 → ルール3
+
+手数41: ▲６五同歩とは取れなかった。△６五同飛〜△８五飛を気にしたか。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間５７分、△糸谷２時間５３分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１時間１２分の長考。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳３時間９分、△糸谷２時間５６分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「この局面で佐藤紳が３０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳３時間３９分、△糸谷３時間１７分。」 → ルール3
+
+手数49: 後手は壁銀で、先手の銀桂がのびのびしており、先手優勢と見られている。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間１６分、△糸谷３時間１７分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間３３分、△糸谷４時間１０分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間５８分、△糸谷４時間３２分。」 → ルール3
+
+手数62: 苦しいと見られていた後手は、銀を自陣にじっと引き寄せた。
+
+削除理由:
+- 「糸谷」 → 置換ルール
+
+手数74: 龍と馬ができた。
+
+削除理由:
+
+手数77: 後手が少しいいかもしれない。龍と馬が大きい。しかしどちらかの玉が寄るまでにはまだまだ時間がかかりそうだ。
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳５時間４４分、△糸谷４時間４９分。」 → ルール3
+- 「対局を終えた戸辺四段は」 → ルール1
+- 「「後手が少しいいと思います」」 → 整形
+
+手数87:
+
+削除理由:
+- 「佐藤紳はここから一分将棋。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳５時間５９分、△糸谷５時間４分。」 → ルール3
+
+手数99: ▲４五歩は△２六角が王手飛車取り。
+
+削除理由:

@@ -1,0 +1,142 @@
+**Breaking Down This Shogi Commentary Task**
+
+Okay, so I'm looking at this request, and it's clear the user wants me to clean up Shogi game commentary. I get it – Shogi commentary can be a bit messy, with various phrases and annotations. They want me to process each move comment based on a specific set of rules (which I don't see yet, but will be provided).
+
+It seems the primary goal here is to transform raw commentary into a more standardized, easily readable format. I understand the importance of clear communication in this context, especially for a complex game like Shogi.  So, I need to methodically go through each comment, one move at a time, and apply whatever editing or formatting rules are given. I'm assuming that the rules provided will guide me on what to keep, what to discard, and how to restructure the information. This will likely involve recognizing key phrases, player names, piece movements, and strategic considerations.
+
+手数9: 相手の態度を打診する。△３三角なら矢倉に組めないので振り飛車が予想される。
+
+削除理由:
+
+---
+手数10: これは矢倉になりそうだ。
+
+削除理由:
+
+---
+手数13: わずか１３手目にして歩がぶつかった。△３三銀として薄くなった中央を狙う。
+
+削除理由:
+
+---
+手数17:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は上野３８分、矢倉１１分。」 → ルール3
+
+---
+手数19: 互いに５筋へ飛車を転換させる。
+
+削除理由:
+
+---
+手数20: ポイントとなる手。▲３六歩〜▲３七桂（▲３七角）を消す。先手に右桂を使わせなければ駒組みがしやすい。
+
+削除理由:
+- 「△３五歩の局面で上野が５８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は上野１時間４２分、矢倉１５分。」 → ルール3
+
+---
+手数22: 銀立ち矢倉を目指す。通常の矢倉と違って、２二角がそのままでも使いやすい。
+
+削除理由:
+
+---
+手数24:
+
+削除理由:
+- 「１４時１５分ごろの局面。」 → ルール3
+- 「消費時間は上野２時間２６分、矢倉２５分。」 → ルール3
+
+---
+手数31: 臨機応変の構え。後手は８筋を攻める形ではないので、▲７八玉型でも問題はない。
+
+削除理由:
+
+---
+手数32: ▲同歩なら△２八歩だ。後手は入玉を視野にいれて指している。
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「消費時間は上野２時間５２分、矢倉５８分。」 → ルール3
+- 「矢倉は入玉を視野にいれて指している。」 → ルール5
+
+---
+手数33: ２筋が間に合う前に動く。
+
+削除理由:
+
+---
+手数45:
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は上野４時間１４分、矢倉１時間４分。」 → ルール3
+
+---
+手数46: △同銀は▲６二馬で飛車を取られてしまう。
+
+削除理由:
+
+---
+手数47: 調子のいい進軍。
+
+削除理由:
+
+---
+手数50: こうなってみると、先手がうまく立ち回ったか。
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は上野４時間２４分、矢倉１時間２４分。」 → ルール3
+
+---
+手数51: ６二馬を軸に攻める。
+
+削除理由:
+
+---
+手数53:
+
+削除理由:
+- 「▲４七金の局面で矢倉が１５分使って夕食休憩に入った。」 → ルール3, 7
+- 「残り時間は上野５３分、矢倉４時間２１分。」 → ルール3
+
+---
+手数57: 後手陣は５筋や４筋が壁なので、それに触らないように攻めようとしている。
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「残り時間は上野４２分、矢倉３時間４９分。」 → ルール3
+- 「矢倉は１時間ほど考えているようだ。」 → ルール3
+
+---
+手数58:
+
+削除理由:
+- 「１時間４分の長考で指された。」 → ルール3
+
+---
+手数71: 後手は１四〜２六の裏口から玉が逃げ出すことも考えておきたい。
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「残り時間は上野２１分、矢倉２時間２９分。」 → ルール3
+- 「上野は残り時間が少ないが、ずっと駒が前に伸びており、好調を思わせる。」 → ルール3
+
+---
+手数97:
+
+削除理由:
+- 「上野はここから１分将棋。」 → ルール3
+- 「この手を見て、矢倉はチラッと上野を見た。」 → ルール1
+
+---
+手数117: 後手の投了となった。以下△３五玉に▲４五金△同玉▲５六金△３五玉▲５七角△４六香▲２七桂△同と▲４六金までの詰み。
+
+削除理由:
+- 「ここで矢倉の投了となった。」 → ルール1
+- 「終局時刻は２３時２７分。」 → ルール3
+- 「消費時間は上野５時間５９分、矢倉４時間２９分。」 → ルール3
+- 「勝った上野は４勝３敗、敗れた矢倉は３勝４敗となった。」 → ルール4

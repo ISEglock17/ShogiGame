@@ -1,0 +1,110 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so the user wants me to essentially clean up Shogi game commentary, much like you would format a Kifu (game record). The task is clear: I need to take the provided rules and use them to parse each comment, getting rid of any unnecessary information. My goal is to distill the core message down to a natural, fluid sentence.
+
+Let's break down my approach:
+
+1.  **Rule Adherence is Key:** First, I'll need to carefully examine each comment against the given rules. This is the crucial step – identifying what needs to go and what stays.  I'll need to develop a very precise understanding of the ruleset to make sure my processing is accurate.
+2.  *[This step has no details provided.]*  (I'll need to fill this in once I know what actions I need to take.)  Presumably, this will involve the actual implementation of the processing logic itself.
+
+手数8: 一手損角換わり。
+
+削除理由:
+- （削除なし）
+
+---
+手数10: 自分から角交換をした上に端歩を突き越す。なんとも大胆な一手。
+
+削除理由:
+- （削除なし）
+
+---
+手数14:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲阿部１７分、△行方１３分。」 → ルール3
+
+---
+手数17:
+
+削除理由:
+- 「４５分の考慮。」 → ルール3
+
+---
+手数21:
+
+削除理由:
+- 「この局面で行方が３７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲阿部１時間５分、△行方５５分。」 → ルール3
+
+---
+手数23: 先手はすくすくと棒銀で攻める。
+
+削除理由:
+- 「阿部」 → 置換ルール
+
+---
+手数27: 銀を立て直しながら、飛車先を通す。
+
+削除理由:
+- （削除なし）
+
+---
+手数35:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阿部１時間３３分、△行方１時間３０分。」 → ルール3
+
+---
+手数41:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阿部１時間４２分、△行方２時間１０分。」 → ルール3
+
+---
+手数44:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阿部１時間４７分、△行方３時間４分。」 → ルール3
+
+---
+手数46: △６三銀は▲１八角の筋を気にしなければいけない。
+
+削除理由:
+- （削除なし）
+
+---
+手数47: 次に▲４六歩△３六歩▲３七歩△２五銀引▲２六歩と銀を取る手がある。
+
+削除理由:
+- （削除なし）
+
+---
+手数48: これは▲４六歩なら△３七歩成▲同桂△３六銀と滑り込む狙い。
+
+削除理由:
+- （削除なし）
+
+---
+手数54:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「消費時間は▲阿部２時間１７分、△行方３時間３０分。」 → ルール3
+
+---
+手数58: 次の▲４四歩△同金▲５三角成をあらかじめ受けた。
+
+削除理由:
+- （削除なし）
+
+---
+手数62:
+
+削除理由:
+- 「この局面で阿部が２２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲阿部３時間１５分、△行方３時間３６分。」 → ルール3

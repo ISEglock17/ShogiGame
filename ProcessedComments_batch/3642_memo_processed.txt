@@ -1,0 +1,115 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so I understand the task here. It's essentially about cleaning up and refining shogi game commentary, making it more digestible for, well, *me*, or at least other experts.  I'm given a bunch of comments, and I need to hone in on the core of each move, the board state, and the player's intentions. I've got a set of rules, clearly defining what's considered extraneous noise that needs to be removed.
+
+Here's my thought process: I'll go through each move, each commentary block, step-by-step.  I'll dissect it, searching for the fluff – the stuff that's tangential, maybe opinionated, or just redundant.  Once I've identified the irrelevant parts based on those provided guidelines, I'll excise them, cleaning it up. Finally, I’ll reassemble what's left into a more streamlined, natural-sounding explanation of the board and the move itself, alongside the reason for the original editing. This will all be presented in the requested output format. It's about getting to the heart of the shogi strategy, leaving behind all the unnecessary distractions.
+
+手数2:
+
+削除理由:
+- 「大内は２分の遅刻により、持ち時間から６分引かれている。」 → ルール3
+
+手数10:
+
+削除理由:
+- 「大内は振り飛車党だが、」 → ルール1, 5
+- 「居飛車の雰囲気。」 → ルール5
+
+手数11:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は中座１２分、大内８分。」 → ルール3
+
+手数14:
+後手の作戦は陽動振り飛車だった。
+
+削除理由:
+- 「大内の」 → ルール1
+
+手数15:
+
+削除理由:
+- 「ここで大内が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は中座５０分、大内１時間１６分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+- 「大内は早めに対局室へ戻り、タバコをくゆらせながら考えていた。」 → ルール1, 6
+
+手数16:
+
+削除理由:
+- 「１３時４５分の局面。」 → ルール3
+- 「消費時間は中座５０分、大内１時間１６分。」 → ルール3
+
+手数17:
+
+削除理由:
+- 「１時間６分の長考。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「中座１時間５９分、大内１時間２９分。」 → ルール3
+
+手数25:
+先手は高美濃に組み替えた。
+
+削除理由:
+- 「中座は」 → ルール1
+
+手数29:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は中座２時間４７分、大内２時間１３分。」 → ルール3
+
+手数30:
+後手は居玉のまま指し手を進める。
+
+削除理由:
+- 「大内は」 → ルール1
+
+手数35:
+先手は手順に銀を繰り替えた。
+
+削除理由:
+- 「中座は」 → ルール1
+
+手数38:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は中座３時間１７分、大内２時間５２分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「▲８八玉の局面で大内が３２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中座３時間３２分、大内３時間３２分。」 → ルール3
+
+手数48:
+先手の端が弱くなった瞬間に仕掛ける。現局面は序盤が終わり、中盤に入ったところ。まだまだこれからだ。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は中座３時間４５分、大内４時間１分。」 → ルール3
+- 「大内が控え室に来て検討を見ていたので、検討していた棋士が「終局したのかな」と心配そうに言っていたが、」 → ルール1, 6
+
+手数60:
+△９二飛と転換する筋が見えてきた。
+
+削除理由:
+
+手数63:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は中座４時間３６分、大内４時間１０分。」 → ルール3
+
+手数88:
+互いに玉形が薄い。激しい攻防が予想される。
+
+削除理由:
+- 「２２時２０分ごろの局面。」 → ルール3
+- 「残り時間は中座４３分、大内１時間１０分。」 → ルール3

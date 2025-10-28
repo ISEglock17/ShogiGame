@@ -1,0 +1,67 @@
+**Structuring Game Commentary - A Step-by-Step Approach**
+
+Okay, so I'm presented with a list of Shogi game commentary and my task is to format it according to a set of pre-defined rules. The goal is to make it clean, understandable, and informative, especially for someone well-versed in the game, like myself.
+
+First, I'll examine each comment individually. It looks like the goal is to extract player biographical information. For the first comment, I need to break down the information about Sato Shuji, a 7-dan professional. I'll need to clearly delineate his birthdate, origin, mentor, entry into the Shogi community (both as a shodan and as a professional), and his current rank in the ranking match. I'll make sure to note that the comment starts with "手数1", indicating the number of moves played in the match.
+
+Next, I move on to the second comment, which focuses on Tanaka Kaiyu, a 9-dan professional. I'll process it exactly as I did with the first comment - ensuring to cover his birthdate, his origin, his late mentor, his Shogi career milestones, and current rank. I'll need to pay close attention to any minor inconsistencies in the given data, and try to organize it in the most logical and structured way. The "手数2" at the start of the comment is equally important.
+
+手数1:
+
+削除理由:
+- 「【佐藤秀司七段】」 → ルール1, 4
+- 「１９６７年６月８日生まれ、宮城県出身。」 → ルール4
+- 「中原誠十六世名人門下。」 → ルール1, 4
+- 「１９８０年６級で奨励会入会。」 → ルール4
+- 「１９９０年１０月１日四段。」 → ルール4
+- 「２００７年１２月１０日七段。」 → ルール4
+- 「順位戦は２１期目。」 → ルール4
+手数2:
+
+削除理由:
+- 「【田中魁秀九段】」 → ルール1, 4
+- 「１９４７年３月２日生まれ、大阪府出身。」 → ルール4
+- 「（故）本間爽悦八段門下。」 → ルール1, 4
+- 「１９６０年７級で奨励会入会。」 → ルール4
+- 「１９６９年１０月１日四段。」 → ルール4
+- 「２０００年２月２４日九段。」 → ルール4
+- 「順位戦は４１期目。」 → ルール4
+手数3:
+
+削除理由:
+- 「佐藤秀の今期成績は５勝２敗（勝率０．７１４）。」 → ルール4
+- 「通算成績は４２０勝３０６敗（勝率０．５７９）。」 → ルール4
+手数4:
+
+削除理由:
+- 「田中魁の今期成績は２勝３敗（勝率０．４００）。」 → ルール4
+- 「通算成績は６３８勝６９５敗（勝率０．４７９）。」 → ルール4
+手数18: ここで手得を目指して△８六歩と突くのは、以下▲同歩△同角▲同角△同飛と交換した後に▲５三角から馬を作られる筋がある。
+
+削除理由:
+（削除なし）
+手数27:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤秀２８分、△田中魁１５分。」 → ルール3
+手数30:
+
+削除理由:
+- 「この局面で昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲佐藤秀１時間２９分、△田中魁２２分。」 → ルール3
+手数37:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤秀１時間５２分、△田中魁４６分。」 → ルール3
+手数54:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤秀２時間２６分、△田中魁１時間１６分。」 → ルール3
+手数55:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤秀３時間１０分、△田中魁１時間１６分。」 → ルール3

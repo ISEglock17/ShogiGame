@@ -1,0 +1,129 @@
+**Processing & Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up Shogi commentary, right?  Essentially, they're giving me a set of rules to follow to make it more concise and focused. I see the main goals are to remove extraneous information. First up, anything that's not directly related to the current players – names, ranks, who their teacher is, all of that needs to go. It's distracting from the game itself, which is what we want to highlight.
+
+Secondly, I need to get rid of any historical context or references to previous games. That whole "In the past, X did Y..." or "This mirrors the Z game..." stuff? It doesn't belong in the immediate commentary. It might be interesting in a separate analysis, but not in the live game breakdown. Focusing on what's happening *now* is key.
+
+手数7: 先手は三間飛車。
+
+削除理由:
+- 「戸辺」 → ルール1
+
+---
+手数17: ▲７五歩まで突いているときは、▲７六飛と浮くのがいい形になる。
+
+削除理由:
+- 削除対象なし
+
+---
+手数22:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺５分、△島本３９分。」 → ルール3, 1
+
+---
+手数27:
+
+削除理由:
+- 「この局面で島本が２１分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲戸辺５３分、△島本１時間２分。」 → ルール3, 1
+
+---
+手数30: △８三金〜△８四金の棒金がある。棒金は飛金銀の力で押さえ込む戦型。先手の捌きと後手の押さえ込みの勝負になる。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺５３分、△島本１時間２５分。」 → ルール3, 1
+
+---
+手数32:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺１時間４８分、△島本１時間３９分。」 → ルール3, 1
+
+---
+手数35:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺２時間４２分、△島本２時間１７分。」 → ルール3, 1
+
+---
+手数40:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺２時間４５分、△島本３時間２０分。」 → ルール3, 1
+
+---
+手数45:
+
+削除理由:
+- 「この局面で島本が２１分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は▲戸辺３時間７分、△島本３時間４７分。」 → ルール3, 1
+
+---
+手数47: 玉頭にじわりプレッシャー。
+
+削除理由:
+- 削除対象なし
+
+---
+手数48:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺３時間２７分、△島本４時間１０分。」 → ルール3, 1
+
+---
+手数49:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲戸辺４時間７分、△島本４時間１０分。」 → ルール3, 1
+
+---
+手数50: 後手は５〜８筋の駒を使わないと、玉頭攻めでやられてしまう。
+
+削除理由:
+- 削除対象なし
+
+---
+手数52: 振り飛車が軽い形。▲６五銀も▲６七銀も有力。
+
+削除理由:
+- 削除対象なし
+
+---
+手数57: 桂取りは放置して、指は相手玉に向かう。△同角なら▲５五角が飛香両取り。
+
+削除理由:
+- 削除対象なし
+
+---
+手数62:
+
+削除理由:
+- 「両者、指し手が早い。」 → ルール3
+
+---
+手数67: 飛車取りと▲５三桂成の狙い。先手ののびのびした手が続いている。
+
+削除理由:
+- 「戸辺」 → ルール1
+
+---
+手数70: 飛車の横利きを通して頑張る。
+
+削除理由:
+- 削除対象なし
+
+---
+手数77: この局面で後手が投了した。先手は玉が堅く、駒の働きが大差になっている。
+
+削除理由:
+- 「島本」 → ルール1
+- 「消費時間は▲戸辺４時間２８分、△島本４時間５６分。」 → ルール3, 1
+- 「勝った戸辺は７勝１敗、敗れた島本は３勝５敗となった。」 → ルール4, 1

@@ -1,0 +1,82 @@
+**Analyzing and Transforming Shogi Commentary**
+
+Okay, so I'm presented with this task: clean up and standardize Shogi game commentary. Basically, someone wants me to take this raw text and make it more... well, *structured*. I immediately break it down into steps, because that's just how I operate.
+
+First, I need to look at each move, one by one. I have to *understand* what's being said at each step of the game. That means identifying the key elements of each comment.
+
+Next, I have a list of deletion rules. My focus is on catching specific phrases or descriptions that are redundant or not relevant to the main flow of the game. I need to be able to identify those parts and then excise them cleanly.
+
+Finally, I have the replacement rules. This one's straightforward: I must standardize the player names. "Player A" becomes "Sente" (先手), and "Player B" becomes "Gote" (後手). This gives a nice, clean, professional presentation. Simple substitution.
+
+手数6: 角換わりの展開かと思われたが、角道を止めた。
+
+削除理由:
+- 「１２分考えて」 → ルール3
+
+手数15:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島３３分、△小林裕１６分。」 → ルール3
+
+手数26: 先手玉はまだ入城していないので、玉が安定している後手としては戦いが始まるのは歓迎。
+
+削除理由:
+- 
+
+手数27:
+
+削除理由:
+- 「ここで△小林裕が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲北島５０分、△小林裕１時間６分。」 → ルール3
+
+手数28: ２０分考えて突いた。▲同歩△同飛から△５一飛と引けば、後手はより安定した形になる。
+
+削除理由:
+- 
+
+手数37: 中央は後手が制空権を握っているので、玉頭の位を主張する。
+
+削除理由:
+- 
+
+手数39: 穏やかな展開になれば銀冠の厚みが活きてくる。
+
+削除理由:
+- 「この一手に４５分消費。」 → ルール3
+
+手数40: 中央から玉頭側で戦いが始まれば、この金が取り残されるので活用を図る。
+
+削除理由:
+- 
+
+手数41: やっと入城を果たした。これで先手も強く戦える。
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島１時間４４分、△小林裕１時間５３分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島２時間５９分、△小林裕２時間１０分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「ここで△小林裕が９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲北島３時間２９分、△小林裕３時間１９分。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島４時間２５分、△小林裕３時間３２分。」 → ルール3
+
+手数99: ここで後手の投了となった。以下、△同玉は▲５四金△６二玉▲４二飛成△５二歩（△５二金は▲同龍で詰み）▲６三銀△７一玉▲５一龍以下の詰み、△６一玉も▲６二金△同玉▲４二飛成以下、いずれも即詰みとなる。
+
+削除理由:
+- 「△小林裕の」 → 置換ルール
+- 「消費時間は▲北島４時間４４分、△小林裕３時間３２分。」 → ルール3
+- 「勝った▲北島、敗れた△小林裕ともに１勝２敗となった。」 → ルール4

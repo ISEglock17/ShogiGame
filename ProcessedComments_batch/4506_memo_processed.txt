@@ -1,0 +1,97 @@
+**Cleaning Up Commentary: A Deep Dive**
+
+Okay, so I'm presented with a pretty straightforward, but crucial, task: I need to clean up these comments associated with shogi game data. The goal is laser-focused – I need to strip away anything extraneous, anything that doesn't directly contribute to understanding the board state or the moves being made. Think of it like a highly specific linguistic scalpel, carefully excising the unnecessary fluff.
+
+My plan of attack is methodical, as always. Step one is clear: I'll be reviewing each comment individually. I'll need to examine each line, each sentence, with a discerning eye. It's a process of elimination; determining what's essential and what's expendable is paramount. From there, I'll need to develop the strategy for streamlining the text.
+
+手数17:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石８分、松本３分。」 → ルール3, 1
+
+手数24: △７四銀〜△８五銀の棒銀が狙い。攻めるとみせかけて、先手の駒組みをけん制している。
+
+削除理由:
+- なし
+
+手数32:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石３０分、松本４７分。」 → ルール3, 1
+
+手数33:
+
+削除理由:
+- 「ここで松本は３６分考えて、昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は大石３４分、松本１時間２３分。」 → ルール3, 1
+
+手数40: 次に△８五桂とぶつける狙い。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石３４分、松本２時間１１分。」 → ルール3, 1
+
+手数43: ▲８五同桂△同銀の桂交換は先手が損。次に▲７三桂成を狙って手番を握る。
+
+削除理由:
+- 「１４時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石１時間２５分、松本２時間１１分。」 → ルール3, 1
+
+手数48: △３四同銀は▲６六角が痛打。
+
+削除理由:
+- なし
+
+手数49:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石１時間５７分、松本２時間３３分。」 → ルール3, 1
+
+手数54:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石２時間３０分、松本３時間４８分。」 → ルール3, 1
+
+手数56: ▲７三桂成は△７七歩から後手が攻勢に出てくる。
+
+削除理由:
+- なし
+
+手数57: 意を決しての桂成り。
+
+削除理由:
+- なし
+
+手数59:
+
+削除理由:
+- 「１９時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石３時間１０分、松本４時間２１分。」 → ルール3, 1
+
+手数60: 攻め続けるならこの一手。
+
+削除理由:
+- なし
+
+手数66: ３四の歩を払いたい。
+
+削除理由:
+- なし
+
+手数67:
+
+削除理由:
+- 「２０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は大石３時間２２分、松本４時間５９分。」 → ルール3, 1
+
+手数87: この手をみて後手は投了した。以下△２六玉は▲３七金、△２四玉は▲２三金までの詰み。
+
+削除理由:
+- 「松本」 → ルール1
+- 「終局時刻は２０時５８分。」 → ルール3
+- 「消費時間は大石３時間３６分、松本５時間３分。」 → ルール3, 1
+- 「勝った大石は１勝０敗、松本は０勝１敗となった。」 → ルール4, 1

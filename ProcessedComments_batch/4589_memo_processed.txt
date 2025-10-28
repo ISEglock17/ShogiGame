@@ -1,0 +1,130 @@
+**Structuring Shogi Game Commentary**
+
+Okay, so I'm presented with a task: format shogi commentary for a user. It seems straightforward, but it requires a bit of parsing and refinement.  My primary objective is to take these raw comments and transform them into clear, concise, and natural language statements.  Essentially, I need to strip away the "noise" and highlight the important strategic points.
+
+My process will be methodical: I'll read each individual comment, dissecting it bit by bit. I'll need to be hyper-attuned to the removal rules that have been provided.  Identifying and excising those irrelevant segments is key. 
+
+Crucially, I also need to replace the actual player names. This is an important step to generalize the commentary; instead of specific names, the commentary will indicate "Sente" and "Gote" - as in "First Player" and "Second Player." This is to make it much more widely useful and understandable to an audience who are not familiar with the specific players involved. Essentially, I'm aiming for a clean and generalized presentation.
+
+手数6: 後手得意の四間飛車。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+手数20: 積極的に動くのが後手の振り飛車の特徴。
+
+削除理由:
+- 「中村亮」 → ルール1
+- 「中村亮振り飛車の特徴」 → ルール5
+
+手数21: ▲６六歩は気合が悪いとみて、先手は角交換をした。
+
+削除理由:
+- 「澤田」 → ルール1
+
+手数24:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田５分、中村亮２１分。」 → ルール3, 1
+
+手数25: 先手は穴熊を諦めた。
+
+削除理由:
+- 「澤田」 → ルール1
+
+手数28: 後手の方が穴熊を目指す。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+手数36:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田２０分、中村亮４３分。」 → ルール3, 1
+
+手数38:
+
+削除理由:
+- 「ここで澤田は１４分考えて、昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は澤田４９分、中村亮５９分。」 → ルール3, 1
+
+手数39:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田１時間７分、中村亮５９分。」 → ルール3, 1
+
+手数40: △４六同歩▲同銀の形は後手の模様が悪そうだ。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田１時間１３分、中村亮２時間１３分。」 → ルール3, 1
+
+手数44: ５八の金を狙いながら手を作ろうという勝負手。
+
+削除理由:
+- 「中村亮はこの一手に４９分考えた。」 → ルール1, 3
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田１時間３９分、中村亮３時間２分。」 → ルール3, 1
+
+手数45: 先手は５八の金にひもをつけた。
+
+削除理由:
+- 「澤田はこの一手に１時間２０分考えて、」 → ルール1, 3
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田２時間５９分、中村亮３時間２分。」 → ルール3, 1
+
+手数47:
+
+削除理由:
+- 「中村亮はここで３１分考えて、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は澤田３時間７分、中村亮３時間４７分。」 → ルール3, 1
+
+手数48:
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田３時間７分、中村亮４時間１分。」 → ルール3, 1
+
+手数52: △２四歩から２筋の歩を伸ばしていくのは間に合いそうもないので、飛の転回させてさばこうという意味。
+
+削除理由:
+
+手数53: 先手は玉頭方面から戦いたい。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「２０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田４時間３分、中村亮４時間１４分。」 → ルール3, 1
+
+手数63:
+
+削除理由:
+- 「２１時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田４時間２５分、中村亮４時間２１分。」 → ルール3, 1
+
+手数71:
+
+削除理由:
+- 「控室では先手良しという評判。」 → ルール1, 6
+- 「２２時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田４時間５６分、中村亮５時間５分。」 → ルール3, 1
+
+手数80:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は澤田５時間１分、中村亮５時間２７分。」 → ルール3, 1
+
+手数81: ▲５六金は△８七角成▲同飛△７九銀がある。
+
+削除理由:

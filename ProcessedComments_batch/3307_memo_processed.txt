@@ -1,0 +1,105 @@
+**Focusing the Lens: Refining Shogi Commentary for Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is clear: I need to transform these sprawling narratives into lean, mean analysis machines. Think of it like stripping away the excess fat from a research paper, leaving only the core arguments.
+
+The goal is precision. We need to eliminate all the fluff – the metadata, the bios, the clock readings – anything that doesn't directly contribute to understanding the board state or the moves themselves. My expert eye will be focused on identifying and removing those extraneous elements.
+
+Essentially, I'm surgically extracting the important stuff, the meat of the commentary that directly impacts the game's evolution. Then, I'll go back and refine what remains, ensuring the surviving insights are presented in a coherent and easily digestible format. This is all about preparing the raw data for deeper, more meaningful analysis down the line. It's a purification process, a distillation of the commentary's true analytical value.
+
+手数41:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「消費時間は北島４時間３３分、石川４時間４６分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は北島５９分、石川５６分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「残り時間は北島５４分、石川３５分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「残り時間は北島３５分、石川２５分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「０時１５分ごろの局面。」 → ルール3
+- 「残り時間は北島３３分、石川１９分。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「「ペタン」という駒音を立てて指された。」 → 盤面解説に無関係
+- 「０時３０分ごろの局面。」 → ルール3
+- 「残り時間は北島２５分、石川９分。」 → ルール3
+
+手数70: ５筋は対抗形の急所の筋。▲同歩は△５六歩▲同銀△４四桂や△１九馬〜△５五馬が生じ、▲３三龍は△５六歩の取り込みが厳しい。
+
+削除理由:
+- (削除なし)
+
+手数75: △６四桂が厳しそうだ。▲６五銀は△５五馬、▲５七歩は△７六桂。ひねって、△５七歩▲同金直△６四桂として、▲５七歩の余地をなくす攻めもあるかもしれない。居飛車は端攻めをうまく絡めて攻めたいが、その余裕があるかどうか。
+
+削除理由:
+- 「０時５０分の局面。」 → ルール3
+- 「残り時間は北島１７分、石川７分。」 → ルール3
+
+手数78: 後手は厳しく迫った。▲同歩に△５六角成▲６七金右△５五馬引のような攻めが厳しいそうだ。３三の龍が目標になっている。
+
+削除理由:
+- 「石川は」 → ルール1
+
+手数81: 駒の損得は金桂交換で後手が駒得。しかし、３八の角取りをどう受けるか。後手は▲８六桂が厳しいため、駒得といえども楽観できる局面ではない。
+
+削除理由:
+- 「１時を過ぎた。」 → ルール3
+
+手数82: 角を逃がしたが、これで手番が先手に移った。
+
+削除理由:
+- (削除なし)
+
+手数83: 美濃囲いの急所の一つである端攻め。次に▲９四歩△９二歩となれば、先手玉のふところもグッと広がる。
+
+削除理由:
+- (削除なし)
+
+手数84:
+
+削除理由:
+- 「石川はここから１分将棋。」 → ルール1, 3
+
+手数86: ▲同金は△５六馬▲同金△４七馬が狙いだろうか。
+
+削除理由:
+- (削除なし)
+
+手数95: △同桂は▲９四歩や▲９四桂、△同玉は▲６二銀（取れば▲７一角）のような攻めがありそうだ。
+
+削除理由:
+- (削除なし)
+
+手数96: 後手は成香を取らずに逃げた。右辺は先手の駒がないため安全と判断した。また、次にワンテンポ遅らせて△９三桂とすれば、▲９四歩や▲９四桂が厳しくない。
+
+削除理由:
+- 「１分将棋の石川は」 → ルール1, 3
+
+手数104: ▲同桂なら△９九飛▲８九香△９七桂と攻めるつもりだろう。
+
+削除理由:
+- (削除なし)
+
+手数106:
+
+削除理由:
+- 「１時半を過ぎた。」 → ルール3

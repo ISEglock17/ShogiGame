@@ -1,0 +1,105 @@
+**Streamlining Commentary in Shogi Data**
+
+Okay, so I understand the task here: the user is giving me shogi match data, specifically the comments accompanying each move, and they want me to clean them up. My job is to take those often-disorganized thoughts and restructure them into something that's readable and makes sense, following their specific rules.
+
+Essentially, I'm going to need to dissect each comment, figure out what's important, and what's just noise. Then, I'll need to rephrase the core information into concise, natural-sounding sentences. It's all about extracting the meaningful insights from those raw comments and presenting them in a polished format. I'm going to approach this one comment at a time, assessing them individually for clarity and relevance.
+
+手数8: 相矢倉の出だし。
+
+削除理由:
+
+---
+手数25: 森下システムになった。▲６八角の代わりに▲３七銀なら、矢倉の花形戦法である▲３七銀戦法になる。森下システムは、わざと一手待って相手の指し手を見て、どう駒組みを進めるか考えようというものだ。
+
+削除理由:
+
+---
+手数28: 森下システムには雀刺しが有効とされている。
+
+削除理由:
+- 「、一時期激減していた。また最近復活の兆しがあるようだ。」 → ルール2
+
+---
+手数30:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「消費時間は▲長沼３２分、△小林裕２７分。」 → ルール3
+
+---
+手数34:
+
+削除理由:
+- 「この局面で長沼が１４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲長沼１時間１３分、△小林裕４０分。」 → ルール3
+
+---
+手数38: 端攻めを敢行。
+
+削除理由:
+
+---
+手数40:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲長沼１時間４３分、△小林裕１時間４分。」 → ルール3
+
+---
+手数51: 玉が下の形を生かして、反撃に出る。
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲長沼２時間２３分、△小林裕１時間２２分。」 → ルール3
+
+---
+手数58: 飛車を見捨てる驚きの一手。△９四歩▲６二金△３二玉が考えられた。
+
+削除理由:
+
+---
+手数64: 突破はさせない。
+
+削除理由:
+
+---
+手数68:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲長沼３時間４３分、△小林裕１時間５２分。」 → ルール3
+
+---
+手数82:
+
+削除理由:
+- 「この局面で長沼が３分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲長沼４時間３５分、△小林裕２時間２分。」 → ルール3
+
+---
+手数85:
+
+削除理由:
+- 「長沼の棋風がにじみ出る。」 → ルール5
+
+---
+手数87: ▲８六歩のほうがより安全だったようだが、本譜でも残している。
+
+削除理由:
+
+---
+手数91: 丁寧に丁寧に。
+
+削除理由:
+
+---
+手数98: （１）△３七角成▲同桂△７九銀▲９八玉△８八金▲同飛△同銀成▲同玉△６八飛は、▲７八金打△６三飛成のときに▲３五桂で攻め合い勝ち。（２）△７九成桂は▲８六歩で大丈夫のようだ。
+
+削除理由:
+
+---
+手数101: この局面で後手が投了した。
+
+削除理由:
+- 「消費時間は▲長沼５時間９分、△小林裕２時間２２分。」 → ルール3
+- 「両者とも１勝１敗になった。」 → ルール4

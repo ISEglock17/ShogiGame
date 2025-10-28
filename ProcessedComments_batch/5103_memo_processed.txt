@@ -1,0 +1,82 @@
+**Cleaning Up These Game Comments**
+
+Okay, so I'm looking at this data from Shogi matches, and it's full of these comments attached to each move. The goal is to clean them up, to sift through all the noise and get to the good stuff.  I need to focus on the core: the actual *analysis* of the board and the moves.  I want to get rid of all that extraneous fluff.
+
+Basically, I want to strip out everything that doesn't contribute to understanding the game's flow and strategy. That means getting rid of all the meta information, like who's playing, time stamps, and any unnecessary introductions.  I'm aiming for concise, natural explanations of the moves themselves, focusing on the board state and the reasoning behind each choice.
+
+手数1:
+
+削除理由:
+- 「【矢倉六段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｙａｇｕｒａ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「【岡崎六段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｋａｚａｋｉ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「矢倉の通算成績は３０１勝２４４敗（０．５５２３）」 → ルール4
+- 「今年度成績は１４勝１５敗（０．４８２８）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「岡崎の通算成績は２９４勝２８４敗（０．５０８７）」 → ルール4
+- 「今年度成績は１０勝１３敗（０．４３４８）」 → ルール4
+
+手数17:
+
+削除理由:
+- 「１０時５０分頃の局面、消費時間は▲矢倉１２分、△岡崎２４分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「この局面で△岡崎が３３分考え昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲矢倉５３分、△岡崎１時間４分。」 → ルール3
+- 「昼食の注文は、岡崎が鍋焼きうどん、矢倉はなし。」 → ルール7
+- 「このタイミングで角を上がった将棋は初。前例では▲１六歩や▲９六歩が指されていた。」 → ルール2
+- 「再開後１時間が過ぎたが岡崎はまだ考えている。」 → ルール3
+- 「２時間が経過したが岡崎はまだ指さない。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「この手は２時間２１分の長考だった。」 → ルール3
+
+手数26: この形では次に▲５六銀と上がるのが筋。７七にいるのが桂ではなく角なので弱くなっている６五の地点を補強する。
+
+削除理由:
+- 「１５時３０分頃の局面、消費時間は▲矢倉１時間１２分、△３時間１分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１６時２０分頃の局面、消費時間は▲矢倉１時間５３分、△岡崎３時間１７分。」 → ルール3
+
+手数35: 飛車を右辺に展開する。先手は右辺で飛車角をさばいて棒金を相手にせずに戦いたい。
+
+削除理由:
+- 「矢倉」 → 先手（置換）
+
+手数38:
+
+削除理由:
+- 「１７時１０分頃の局面、消費時間は▲矢倉２時間５分、△岡崎２時間５４分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「ここで▲矢倉が２６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲矢倉２時間５２分、△岡崎４時間２分。」 → ルール3
+- 「夕食の注文は両者うな重（梅）肝吸い（ふじもと）。」 → ルール7
+
+手数69:
+
+削除理由:
+- 「この手をみてすぐに岡崎は投了を告げた。」 → ルールなし（盤面解説ではないため削除）
+- 「終局時刻は１９時５８分。」 → ルール3
+- 「消費時間は、▲矢倉３時間１５分、△岡崎４時間２５分だった。」 → ルール3
+- 「勝った矢倉、敗れた岡崎ともに３勝６敗となった。」 → ルール4

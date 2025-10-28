@@ -1,0 +1,125 @@
+**Focusing the Lens: Refining Shogi Commentary for Deep Analysis**
+
+Okay, so the goal is to refine Shogi commentary, stripping away the noise to get to the heart of the game. I understand. My expertise lies in precisely this kind of distillation. My task is to transform these cluttered commentaries into clean, insightful analyses focusing solely on the board and the moves.
+
+Here's how I'm approaching it:
+
+1.  **Individual Focus:** I'll process each comment independently. This prevents extraneous context from creeping in and allows for precise application of the filtering rules.
+
+2.  **The Filtering Framework:** This is where my understanding of Shogi really shines. I've broken the filtering down into a set of well-defined rules, almost like a meticulously crafted algorithm:
+
+    *   **Rule 1 (Irrelevant Identities):** Anything mentioning names, ranks, or titles that aren't the players actively in this game is out. Focus.
+
+    *   **Rule 2 (Historical Noise):** References to past games, precedents, or similar situations are distractions. Gone. The immediate board is the only relevant context here.
+
+    *   **Rule 3 (Clockwork Irrelevance):** Time stamps, thinking times, and any other time-related data are unnecessary. We're interested in *what* happened, not *when*.
+
+    *   **Rule 4 (Backstory Be Gone):** Profiles, records, and any information about the players beyond *this* game, are not critical to this commentary.
+
+    *   **Rule 5 (Stylistic Speculation):** Commentary on the players' overall styles or preferred openings is, for now, irrelevant to this analysis.
+
+    *   **Rule 6 (Contextual Trimmings):** The venue, the weather, any external conditions are clutter. Delete.
+
+    *   **Rule 7 (The Breaker):** Commentary on meals, breaks, or the game's resumption? Off.
+
+    *   **Rule 8 (Transmission Cleanup):** Remove all the streaming details, URLs, and communication aspects.
+
+The goal is a clear narrative of the unfolding tactical drama - nothing more. This process ensures the commentary remains precise, focused and suitable for deep Shogi analysis.
+
+手数22: 後手の横歩取り△８五飛戦法となった。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は松本１５分、増田２９分。」 → ルール3
+- 「増田の」 → ルール1
+
+手数29: ▲５六飛と回る手もある。
+
+削除理由:
+- 該当なし
+
+手数30:
+
+削除理由:
+- 「ここまでは同日に指された▲佐藤紳−△中座戦と同じ進行だ。」 → ルール1, 2
+
+手数32: ５筋に狙いをつける。
+
+削除理由:
+- 該当なし
+
+手数33:
+
+削除理由:
+- 「▲６八銀の局面で増田が１８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は松本３６分、増田１時間２２分。」 → ルール3
+- 「昼食の注文は増田が冷やしきつねうどん、松本は注文なし。」 → ルール7
+
+手数35: 積極的にぶつける。前手▲６八銀で先手の玉頭は堅い。
+
+削除理由:
+- 該当なし
+
+手数38: ▲６一飛の王手や▲６五桂に備える。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は松本５３分、増田１時間４２分。」 → ルール3
+
+手数39: 天王山の角。
+
+削除理由:
+- 「１時間１１分の長考で指された。」 → ルール3
+
+手数42: 後手も玉頭を厚くする。
+
+削除理由:
+- 該当なし
+
+手数43: △８九飛は▲７九飛で効果が薄い。８筋に歩が打てれば、△８六歩▲同歩△８九飛が筋なのだが…。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は松本２時間１９分、増田２時間１７分。」 → ルール3
+- 「増田が３０分以上考えている。」 → ルール3
+
+手数44: 金を引いた。飛車打ちに強くするとともに、５二玉が７二まで逃げられるようにしている。
+
+削除理由:
+- 「１時間７分の長考で」 → ルール3
+
+手数45: 渋い応酬。互いに飛車打ちに気を遣っている。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は松本２時間２９分、増田３時間２４分。」 → ルール3
+
+手数46: 自玉頭を突くだけに指しにくいが、角を追う。
+
+削除理由:
+- 「５８分の長考で」 → ルール3
+- 「ここで松本が１２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は松本２時間４１分、増田４時間２２分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は松本３時間３分、増田４時間４７分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「消費時間は松本３時間１１分、増田４時間５１分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２２時１０分ごろの局面。」 → ルール3
+- 「残り時間は松本１時間２３分、増田４１分。」 → ルール3
+
+手数75: ２回目の▲４六飛。
+
+削除理由:
+- 該当なし

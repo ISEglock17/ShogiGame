@@ -1,0 +1,143 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, so I'm presented with Shogi game commentary and my task is clear: I need to transform this raw data into clean, readable prose, adhering to the standard conventions for Shogi commentary.  The key here is understanding the essence of the game as it unfolds and filtering out the noise.
+
+First, I'll need to meticulously analyze each move and its corresponding commentary. I'll be looking for the crucial elements: the piece moved, its origin and destination, any promotions, captures, or notable tactical implications.  I'll immediately discard extraneous details, repetition, or irrelevant asides.  My goal is to distill the core information of the move into a concise and understandable statement.  I'll pay close attention to the flow of the game, ensuring that the transitions between moves are smooth and logical for a reader well-versed in Shogi. Ultimately, the finished commentary should read as though a skilled commentator were describing the game to a knowledgeable audience, highlighting only what's truly essential to the narrative of the match.
+
+手数1:
+
+削除理由:
+- 「【近藤正和六段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｏｎｄｏｕ．ｈｔｍｌ」 → ルール8
+- 「近藤の前期成績は６勝４敗で、今期順位は１３位。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【北島忠雄六段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｉｔａｚｉｍａ．ｈｔｍｌ」 → ルール8
+- 「北島の前期成績は４勝６敗で、今期順位は２６位。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「近藤の通算成績は２９０勝２３５敗（０．５５２）」 → ルール4
+- 「北島の通算成績は３２５勝２６３敗（０．５５３）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「近藤の今年度成績は６勝１敗（０．８５７）」 → ルール4
+- 「北島の今年度成績は１勝５敗（０．１６７）」 → ルール4
+
+手数11: 浮き飛車に構える。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「▲９六歩までの消費時間は▲近藤１３分、△北島１８分。」 → ルール3
+
+手数17: 先手はひねり飛車にするようだ。
+
+削除理由:
+- 「近藤は」 → ルール1 (置換)
+- 「隣で対局している▲大平武洋五段−△高野秀行六段戦もひねり飛車になっている。」 → ルール2
+- 「【第７１期順位戦Ｃ級１組３回戦▲大平−△高野戦】」 → ルール2
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１２／０８／０７／Ｃ１／６００９．ｈｔｍｌ」 → ルール8
+
+手数26:
+
+削除理由:
+- 「この局面で近藤が２３分使って昼食休憩に入った。」 → ルール3, 7
+- 「昼食休憩までの消費時間は▲近藤５５分、△北島１時間４分。」 → ルール3, 7
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数32: 昭和の終わりによく指された将棋で、△６三銀や△３一玉を指す代わりに△９四歩型も当時よく指されていた。▲９七角には△３四歩として、▲８六飛には△８五歩と一手得を狙う。先手に▲８五歩を強要する指し方だが、後手は本譜のように玉を安全にする方を優先したようだ。
+
+削除理由:
+- 「本日の東京・対局立会人の室岡克彦七段が中継室を訪れた。」 → ルール1, 6
+- 「室岡七段「」」 → ルール1
+- 「でも北島さんは」 → ルール1 (置換)
+- 「ですね」 → 文体整形
+- 「隣の▲大平−△高野戦では△６三銀を保留して△９四歩型にし、先手に▲８五歩を打たせている。」 → ルール2
+
+手数33:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲１六歩までの消費時間は▲近藤１時間２１分、△北島１時間３９分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「▲３九玉までの消費時間は▲近藤１時間５４分、△北島１時間５３分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「△９三桂までの消費時間は▲近藤２時間８分、△北島２時間２２分。」 → ルール3
+
+手数43: 先手は考慮の末、飛車を引いた。
+
+削除理由:
+- 「近藤は４０分の考慮で」 → ルール1, 3 (整形)
+- 「時刻は１７時を過ぎたところ。」 → ルール3
+- 「▲８九飛までの消費時間は▲近藤２時間４５分、△北島２時間２２分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「北島は１時間２８分の長考で△４四歩。」 → ルール1, 3
+- 「この局面で近藤が２１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「夕食休憩までの消費時間は▲近藤３時間９分、△北島３時間５０分。」 → ルール3, 7
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数56:
+
+削除理由:
+- 「△８四飛までの消費時間は▲近藤３時間１９分、△北島４時間４８分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「▲５四歩までの消費時間は▲近藤３時間５０分、△北島４時間５１分。」 → ルール3
+
+手数66: 壁になっていた角が一手で馬に。
+
+削除理由:
+
+手数67: 馬を封じこめる。
+
+削除理由:
+
+手数72: 攻め駒の角を攻められて、少し先手が忙しくなってきた印象。
+
+削除理由:
+
+手数77:
+
+削除理由:
+- 「▲６四角までの消費時間は▲近藤４時間２７分、△北島５時間８分。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「△５二金までの消費時間は▲近藤４時間３０分、△北島５時間３９分。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「△３一飛までの消費時間は▲近藤４時間５１分、△北島５時間５１分。」 → ルール3
+- 「北島は残り９分。」 → ルール1, 3
+- 「ここで近藤は３０分以上考えている。」 → ルール1, 3
+
+手数93: 考慮の末、▲６八桂と打った。
+
+削除理由:
+- 「３９分の考慮で▲６八桂。」 → ルール3 (整形)

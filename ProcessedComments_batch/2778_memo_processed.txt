@@ -1,0 +1,108 @@
+**Focusing the Lens: Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. They're looking for me to take a messy collection of notes and turn them into something really focused and useful for analyzing the actual gameplay. The goal is clear: strip away all the fluff and keep only the gold – the explanations of board states and the rationale behind each move.
+
+This means I need a very specific set of rules to guide the removal process. The plan is straightforward: I'll go through the comments and, using a set of clearly defined criteria, systematically delete anything that isn't directly related to the strategic thinking behind the moves themselves. That means getting rid of all the meta-stuff, introductions to players, time stamps – anything that doesn't contribute directly to understanding the "why" and "how" of the game at a given moment. Basically, I'm aiming to distill the comments into their purest, most insightful form for serious Shogi analysis.
+
+手数5: 先手は三間飛車に構えた。
+
+削除理由:
+- 「畠山成は四間飛車が多いが、本局は」 → ルール1, 5
+- 「に構えた」 → (整形による調整)
+
+---
+手数21: 先手は振り飛車穴熊。
+
+削除理由:
+- 「畠山成は」 → ルール1
+- 「党」 → ルール5
+- 「順位戦では２回戦（中田宏樹八段戦）の千日手局を含め、５局連続の振り穴」 → ルール2, 4
+
+---
+手数22: 後手も穴熊で追随。
+
+削除理由:
+- 「野月」 → ルール1
+
+---
+手数28: ▲４五銀と出られるのを防ぐ。また、将来的に△３三銀引として４枚穴熊を目指すのも魅力的だ。
+
+削除理由:
+- (削除なし)
+
+---
+手数37:
+
+削除理由:
+- 「この局面で野月が８分考え、」 → ルール1, 3
+- 「昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲畠山成５５分、△野月５８分。」 → ルール1, 3
+
+---
+手数41:
+
+削除理由:
+- 「４１分考えた。」 → ルール3
+
+---
+手数47: 捌きが命の石田流へ。
+
+削除理由:
+- (削除なし)
+
+---
+手数50: これでかなり堅くなった。
+
+削除理由:
+- (削除なし)
+
+---
+手数53: 先手も４枚穴熊の堅陣。
+
+削除理由:
+- (削除なし)
+
+---
+手数56: ４六歩型と４七歩型では、４七歩型のほうが堅い。手損でも先手陣を薄くしたプラスが大きいとみている。しかし超のつく持久戦なので手損はあまり関係なさそうだ。
+
+削除理由:
+- (削除なし)
+
+---
+手数61:
+
+削除理由:
+- 「この局面で野月が５９分考え、」 → ルール1, 3
+- 「夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲畠山成４時間２４分、△野月２時間２７分。」 → ルール1, 3
+
+---
+手数62:
+
+削除理由:
+- 「夕食休憩を挟んで１時間４分の長考。」 → ルール3, 7
+
+---
+手数102: ▲３三金に△同桂は▲２三銀がある。△同飛は▲４五桂が気になるが、△３八飛成▲同金△５六角で後手玉に迫る手が難しく、後手がやれるのではないかと見られている。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成５時間１９分、△野月３時間２４分。」 → ルール1, 3
+- 「（１）」 → (整形による調整)
+- 「（２）」 → (整形による調整)
+
+---
+手数110: △２九金を打たずに△５六角は、▲２九金と打たれる。「敵の打ちたいところへ打て」の格言を地で行った豪快な手順で詰めろをかけた。
+
+削除理由:
+- (削除なし)
+
+---
+手数114: 先手は投了した。投了図以下、▲３九同銀は△１九金まで。▲３九同玉は△４八金以下（▲２九玉は△３八角成▲同飛△同金▲同玉△４八飛▲２九玉△２八角成まで、▲４八同金は△同と▲同玉△４七金▲５九玉△５八銀▲６八玉△４六角まで）の即詰みがある。
+
+削除理由:
+- 「この局面で畠山成は」 → ルール1
+- 「（１）」 → (整形による調整)
+- 「（２）」 → (整形による調整)
+- 「消費時間は▲畠山成５時間３６分、△野月３時間３５分。」 → ルール1, 3
+- 「勝った野月は３勝１敗、敗れた畠山成は２勝２敗となった。」 → ルール1, 4

@@ -1,0 +1,59 @@
+**Refining Shogi Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up and standardizing these comments from a Shogi game dataset. My process is pretty straightforward: I'll go through each comment, one by one. First, I'll scan for any phrases that match the "delete" criteria we've established. Anything that gets flagged there gets tossed. Next, I'll look for any instances of player names and replace them universally with "Sente" (first player) or "Gote" (second player), maintaining that clear and concise language we strive for. Once that's done, I'll take what's left and really *craft* a natural, flowing Japanese sentence from it. I aim for clarity and insight here. Finally, I'll present the processed comment, nicely formatted with the move number, like `手数<N>: <the refined comment>`.  Plus, I'll include a line that states the reason for deleting the comment.
+
+手数14: 珍しい後手の振り飛車。
+
+削除理由:
+- 「淡路の」 → ルール1
+- 「昨年８月のＣ２順位戦（糸谷哲郎四段戦）以来の振り飛車のようだ。」 → ルール2
+
+手数21:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平１０分、△淡路４１分。」 → ルール3
+
+手数23: 先手は穴熊ではなく、左美濃の作戦。
+
+削除理由:
+- 「大平は」 → ルール1
+
+手数25:
+
+削除理由:
+- 「この局面で淡路が７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲大平１７分、△淡路１時間４７分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平３８分、△淡路２時間２７分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲大平４８分、△淡路３時間１６分。」 → ルール3
+
+手数59: 次に▲５四歩と突くと飛車取り。
+
+削除理由:
+
+手数63: △３六同歩は▲３五歩。△４五歩とは取れない（▲２二角成がある）。
+
+削除理由:
+
+手数73:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲大平１時間１１分、△淡路４時間４５分。」 → ルール3
+
+手数93: この局面で後手が投了した。
+
+削除理由:
+- 「淡路が」 → ルール1
+- 「消費時間は▲大平１時間１４分、△淡路４時間４３分。」 → ルール3
+- 「両者ともに２勝１敗になった。」 → ルール4

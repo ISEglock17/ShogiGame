@@ -1,0 +1,102 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm presented with Shogi game commentary data, and my goal is to wrangle it into a clean, focused format.  Basically, I need to strip out all the extraneous noise – you know, the meta-commentary, player introductions, time stamps – the stuff that's useful contextually but doesn't actually contribute to the *analysis* of the game itself. It's about preserving the *core* explanatory content: the actual board positions and the rationale behind each move.
+
+My plan is straightforward: I'll use the defined rules to identify and ruthlessly eliminate the irrelevant bits from the commentary.  Then, I'll take what's left and smooth it out, making sure the remaining explanations flow naturally and cohesively.  It's about distilling the essence of the game's unfolding narrative, the "why" and "how" of each strategic decision, without all the fluff.
+
+手数1:
+
+削除理由:
+- 「窪田　義行（くぼта　よしゆき）六段は東京都足立区出身、１９７２年５月１８日生まれ。（故）花村元司九段門下。棋士番号は２１０。８４年、６級で奨励会入会。９４年、四段。２００７年、六段。」 → ルール1, 4
+---
+手数2:
+
+削除理由:
+- 「泉　正樹（いずみ　まさき）七段は東京都練馬区出身、１９６１年１月１１日生まれ。関根茂九段門下。棋士番号は１４４。７３年、６級で奨励会入会。８０年、四段。９７年、七段。」 → ルール1, 4
+---
+手数3:
+
+削除理由:
+- 「窪田の通算成績は３３１勝２９１敗（０．５３２）。」 → ルール4
+- 「本年度成績は８勝６敗（０．５７１）。」 → ルール4
+---
+手数4:
+
+削除理由:
+- 「泉の通算成績は５５５勝５２６敗（０．５１３）。」 → ルール4
+- 「本年度成績は７勝８敗（０．４６７）。」 → ルール4
+- 「あと５勝で八段に昇段する。」 → ルール4
+---
+手数5:
+
+削除理由:
+- 「窪田は振り飛車党。居飛車を指すことはまずない。」 → ルール5
+- 「得意戦法は藤井システムと４手目△３三角戦法。後者に関しては『変幻自在！！窪田流３三角戦法』という著書もある。」 → ルール5
+- 「趣味は書道、太極拳など。」 → ルール4
+---
+手数6:
+
+削除理由:
+- 「泉は攻めを得意とするオールラウンダー。「野獣流」と呼ばれている。」 → ルール5
+- 「著書も相掛かりや右四間といった激しい戦型に関する物が多い。」 → ルール5
+---
+手数7: 指し直し局は相振り飛車。その中でも珍しい相四間飛車になった。
+
+削除理由:
+---
+手数28:
+
+削除理由:
+- 「２１時４０分ごろの局面。」 → ルール3
+- 「△５五銀までの消費時間は▲窪田２時間１７分、△泉５時間１９分。」 → ルール3
+---
+手数56:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「△９三銀までの消費時間は▲窪田２時間３０分、△泉５時間４５分。」 → ルール3
+---
+手数64: 先手は駒得だが歩切れ。△４六歩以下の攻めが来る前にポイントを挙げたい。
+
+削除理由:
+---
+手数69: 自陣に駒を配置する指し方だ。▲６六角も▲２八角も敵陣の急所に利いている。
+
+削除理由:
+- 「窪田流」 → ルール1, 5
+---
+手数85: この角が深い。後手に▲７五歩を上回る手が見えない。
+
+削除理由:
+---
+手数86:
+
+削除理由:
+- 「２３時１５分ごろの局面。」 → ルール3
+- 「△５五歩までの消費時間は▲窪田２時間４７分、△泉５時間５３分。」 → ルール3
+---
+手数90: 角を取らないと△７五歩に▲同角が飛車に当たる。
+
+削除理由:
+---
+手数99: 金打ちで、後手に何もさせない。
+
+削除理由:
+- 「大山康晴十五世名人のような」 → ルール1, 2
+---
+手数105: 先手はビシビシと指し進めている。形勢に自信があるのだろう。
+
+削除理由:
+- 「窪田は３時間近く残しているが、」 → ルール1, 3
+---
+手数106: ▲６七玉で後手から有効な王手がかからない。
+
+削除理由:
+---
+手数107: ここで後手は投了した。感想戦では後手の２６手目△４四銀から△５五銀の構想に問題があったとされた。
+
+削除理由:
+- 「泉は」 → ルール1
+- 「終局時刻は２３時３８分。」 → ルール3
+- 「消費時間は▲窪田３時間１分、△泉５時間５６分。」 → ルール3
+- 「勝った窪田は５勝１敗、泉は１勝５敗となった。」 → ルール4

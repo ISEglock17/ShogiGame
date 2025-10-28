@@ -1,0 +1,119 @@
+**Streamlining Game Commentary for Clarity**
+
+Okay, so the user wants me to clean up these Shogi commentary transcripts. Seems straightforward enough – they're looking for a refined, readable output. My approach will be methodical, just like a good game plan.
+
+First, I need to understand the rules of the game commentary formatting. Once I grasp those, I can go through each comment, identifying anything that's extraneous or doesn't fit the desired style. It's like finding the weak pieces in a complex board position.
+
+Then, I'll excise those irrelevant parts, focusing on the core meaning of each comment. I'll smooth out any awkward phrasing or grammatical errors, making sure the text flows naturally and maintains its clarity. This is crucial for conveying the strategic nuances to the audience.
+
+Finally, I'll output the processed commentary in the specified format. The goal is to provide a concise, insightful, and well-structured analysis of the match. With this framework, the user should receive a polished representation of the game’s progress, ready for consumption.
+
+手数17:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一４２分、△井上９分。」 → ルール3, 1
+
+手数19: 早繰り銀で攻めの姿勢を見せる。
+
+削除理由:
+
+手数26: △同歩は▲同銀で相手の攻めが早くなる。
+
+削除理由:
+
+手数27: ▲３四歩は△同銀で大したことがないと見て、自陣の整備に手をかける。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「ここで△井上が１６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲堀口一５９分、△井上５８分。」 → ルール3, 1
+
+手数32: 展開によっては△６二玉と上がる可能性もあったが、これで玉の囲う方針がはっきりした。
+
+削除理由:
+
+手数35: 先手は相手からの有効な攻めがないと見て穴熊に囲う。３筋の歩は一番良いタイミングで取れば良い。
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一１時間３分、△井上１時間４７分。」 → ルール3, 1
+
+手数36: 仕掛けた。
+
+削除理由:
+- 「１時間２５分の大長考で」 → ルール3
+
+手数38: ▲同歩ならそこで△３五歩か。△３五歩に▲同銀なら△５五角の王手飛車取りが決まる。そのため▲６五歩△３五歩に先に▲５五角と打つ手もありそう。また、▲３四歩△同銀右に▲６五歩もあるか。
+
+削除理由:
+- 「１６時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一１時間３０分、△井上３時間１２分。」 → ルール3, 1
+- 「この局面のまま▲堀口一が２時間２２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲堀口一３時間５２分、△井上３時間１２分。」 → ルール3, 1
+
+手数43: 次に▲７八金右となれば鉄壁になる。後手はこの瞬間にうまい攻めがあるか。
+
+削除理由:
+
+手数45: 軽く受ける。△同飛には▲５五角がある。
+
+削除理由:
+
+手数48: 手筋。▲同飛には△４九角がある。
+
+削除理由:
+
+手数49:
+
+削除理由:
+- 「２０時３０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一４時間１５分、△井上３時間５５分。」 → ルール3, 1
+
+手数50: ３八の歩で飛車の効きがとまっているので、金取りの先手になる。
+
+削除理由:
+
+手数56:
+
+削除理由:
+- 「２０時４０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一５時間１分、△井上４時間３８分。」 → ルール3, 1
+
+手数59: 先手は飛車を渡しても王手がかからないのが心強い。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「２２時４５分の局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一５時間１６分、△井上５時間１９分。」 → ルール3, 1
+
+手数69: 大きな利かし。△３二金には単純ながら▲２二角が厳しいか。
+
+削除理由:
+
+手数71: 急所に利いている馬を狙う。馬が逃げれば、▲３三歩成△同桂▲３四歩が厳しい。
+
+削除理由:
+
+手数81: 先手から厳しい攻めが続く。
+
+削除理由:
+
+手数90:
+
+削除理由:
+- 「０時の局面。」 → ルール3
+- 「ここまでの消費時間は▲堀口一５時間４４分、△井上５時間４９分。」 → ルール3, 1
+
+手数115: 後手の投了となった。以下は△同金▲同銀成△同玉▲６三金以下の詰みとなる。
+
+削除理由:
+- 「ここで△井上の」 → ルール1
+- 「消費時間は▲堀口一５時間５４分、△井上５時間５９分。」 → ルール3, 1
+- 「勝った▲堀口一は１勝２敗、敗れた△井上は２勝１敗となった。」 → ルール1, 4

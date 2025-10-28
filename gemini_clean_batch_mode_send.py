@@ -527,7 +527,6 @@ def process_shogi_json(client, json_data, base_name: str, jsonl_directory: str) 
         return processed_lines, memo_lines
 
     # コメントが1件以上ある場合、バッチモードで一括処理
-    make_jsonl_file(sente, gote, moves_comments, base_name)  # デバッグ用にJSONLファイルを作成する場合
     write_jsonl_file(f"{jsonl_directory}/{base_name}_request.jsonl", make_jsonl_file(sente, gote, moves_comments, base_name))  # デバッグ用にJSONLファイルを書き込む場合
     
     # ファイルAPIでアップロード
@@ -717,7 +716,7 @@ def main():
         
         data = load_json_file(file_path)
         if data:
-            if data_count == 200:
+            if data_count == 500:
                 break
             data_count = data_count + 1
             processed_comments, memo_lines = process_shogi_json(client, data, base_name, jsonl_directory)

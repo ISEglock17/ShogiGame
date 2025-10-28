@@ -1,0 +1,86 @@
+**Breaking Down the User's Request**
+
+Okay, so I'm getting a request here. The user wants me to format some comments related to a Shogi game. The key is they've provided specific rules and a desired format for these comments. My job, then, is to take each comment, interpret it according to the given specifications, and output it in the prescribed structure.  It seems pretty straightforward – read the comment, apply the formatting rules, repeat for each comment. I'll need to make sure I understand the rules thoroughly to get this right.  Let's see what the rules are.
+
+手数4:
+
+削除理由:
+- 「長岡は元々振り飛車が多かったが、最近は居飛車もよく指している。」 → ルール5
+
+手数8: 横歩取りになりそうだ。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「２７分の考慮。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５６分、△長岡０分。」 → ルール3, 4
+
+手数30:
+
+削除理由:
+- 「この局面で淡路が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路２時間１分、△長岡はなんと０分。」 → ルール3, 4
+
+手数31:
+
+削除理由:
+- 「休憩をはさんで１時間１７分の長考。」 → ルール3, 7
+
+手数32:
+
+削除理由:
+- 「長岡の着手はまたもノータイム。」 → ルール3
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲淡路３時間３分、△長岡０分。」 → ルール3, 4
+
+手数40:
+
+削除理由:
+- 「長岡はここで初めて時間を消費した。」 → ルール3
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間２５分、△長岡３分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「１６時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間５７分、△長岡３２分。」 → ルール3, 4
+- 「淡路はここで考え、残り５０分を切った模様。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「ここで長岡が４５分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路５時間１１分、△長岡１時間５２分。」 → ルール3, 4
+
+手数48: △７七角！と打ちこむ手もあると言われていた。
+
+削除理由:
+
+手数52: この角取りが受けにくいようだ。
+
+削除理由:
+
+手数55:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路５時間４９分、△長岡２時間１５分。」 → ルール3, 4
+
+手数58: ▲同銀は△４六飛。厳しい一手。
+
+削除理由:
+
+手数66: △６八金以下の詰めろ。▲７九銀は△７七桂不成以下の即詰み。先手はここで投了した。
+
+削除理由:
+- 「淡路は」 → 置換ルール
+- 「消費時間は▲淡路５時間５１分、△長岡２時間２４分。」 → ルール3, 4
+- 「勝った長岡は７勝３敗、敗れた淡路は６勝４敗で全日程を終えた。」 → ルール4

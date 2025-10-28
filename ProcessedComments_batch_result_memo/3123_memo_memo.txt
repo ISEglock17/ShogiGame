@@ -1,0 +1,46 @@
+=== バッチの最終結果: batches/769dcxdj2cbatgl45677m84xk0rlxdgipa88 ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "3123",
+  "response": {
+    "usageMetadata": {
+      "totalTokenCount": 4945,
+      "candidatesTokenCount": 813,
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4060
+        }
+      ],
+      "cachedContentTokenCount": 4060,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 4065,
+          "modality": "TEXT"
+        }
+      ],
+      "thoughtsTokenCount": 67,
+      "promptTokenCount": 4065
+    },
+    "responseId": "TQT5aKy_KIbe_uMPzs75qAw",
+    "modelVersion": "gemini-2.5-pro",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "**Cleaning Up Game Annotations**\n\nOkay, so I'm looking at a bunch of comments associated with a Shogi game record, and the goal is pretty straightforward: I need to whip these annotations into shape.  My aim is to isolate the *core* game analysis – the explanations of the board state, the thought process behind moves, the potential variations – and get rid of the noise.  This means stripping out all the irrelevant stuff: any introductory fluff about the players, any time stamps, metadata about the game, or biographical details.  Basically, anything that doesn't directly relate to the specific board position or the reasoning behind a specific move is getting the chop. I'm after a lean, mean, annotated game record, ready for deeper analysis.\n",
+              "thought": true
+            },
+            {
+              "text": "手数16: 後手はウソ矢倉と言われる、角道を止めてから矢倉に組み換える手法を用いた。飛車先不突矢倉が主流の現代将棋で▲２五歩を決めさせている。\n\n削除理由:\n- 「田丸は」 → ルール1\n\n手数22:\n\n削除理由:\n- 「１１時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲糸谷３３分、△田丸１５分。」 → ルール3\n\n手数28:\n\n削除理由:\n- 「この局面で糸谷が２９分考え、昼食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲糸谷１時間１３分、△田丸４６分。」 → ルール3\n\n手数32: △４五歩〜△４四銀右の好形を目指す。\n\n削除理由:\n\n手数34:\n\n削除理由:\n- 「１４時２０分頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲糸谷１時間４１分、△田丸１時間２８分。」 → ルール3\n\n手数53:\n\n削除理由:\n- 「１５時半頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲糸谷２時間４４分、△田丸１時間３３分。」 → ルール3\n\n手数59:\n\n削除理由:\n- 「１６時半頃の局面。」 → ルール3\n- 「消費時間は▲糸谷２時間５０分、△田丸２時間２６分。」 → ルール3\n\n手数67:\n\n削除理由:\n- 「この局面で田丸が１９分考え、夕食休憩に入った。」 → ルール3, 7\n- 「ここまでの消費時間は▲糸谷３時間９分、△田丸３時間４４分。」 → ルール3\n\n手数72:\n\n削除理由:\n- 「１９時５０分頃の局面。」 → ルール3\n- 「消費時間は▲糸谷３時間２８分、△田丸４時間５分。」 → ルール3\n\n手数73: 継ぎ歩で攻めの銀を捌きにいった。\n\n削除理由:\n\n手数81: 休憩前後の局面と比べて、先手にとって夢のような展開と評された。\n\n削除理由:\n- 「夕食」 → ルール7\n- 「山崎七段は」 → ルール1\n- 「「（先手にとって）夢のような展開」と評した」 → ルールなし（自然な文章に整形）\n\n手数87:\n\n削除理由:\n- 「２１時頃の局面。」 → ルール3\n- 「消費時間は▲糸谷３時間４３分、△田丸４時間４３分。」 → ルール3\n\n手数105: 後手玉が安全で攻めに専念できる形なので、後手が指しやすいと見られている。\n\n削除理由:\n- 「２１時４０分頃の局面。」 → ルール3\n- 「消費時間は▲糸谷４時間０分、△田丸５時間１５分。」 → ルール3\n\n手数121:\n\n削除理由:\n- 「この局面で田丸が投了した。」 → ルールなし（投了は対局結果であり、盤面解説ではないため削除）\n- 「消費時間は▲糸谷４時間４分、△田丸５時間５２分。」 → ルール3\n- 「勝った糸谷は６勝４敗。」 → ルール4\n- 「敗れた田丸は２勝８敗で降級点が決まった。」 → ルール4"
+            }
+          ]
+        },
+        "index": 0
+      }
+    ]
+  }
+}

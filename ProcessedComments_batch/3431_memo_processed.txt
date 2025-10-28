@@ -1,0 +1,84 @@
+**My Approach to Transforming Shogi Commentary**
+
+Okay, so I'm looking at this Shogi commentary, and the user wants me to clean it up based on their defined rules. This is pretty straightforward. I've got to focus on eliminating the noise and presenting the key details in a clean, readable format.
+
+For this example, with **move 8**, I see the initial phrase "１１時頃の局面。" and I recognize that fits rule number three – it's time information. So that part, "１１時頃の局面。" I'll keep that. The remaining information "ここまでの消費時間は森下１６分、阿部２１分。" is also clearly important. It gives the player's time consumption up until this point, so this will also be retained.
+
+手数8:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は森下１６分、阿部２１分。」 → ルール3
+
+手数16:
+
+削除理由:
+- 「この局面で森下が１２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲森下１時間２６分、△阿部３５分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森下１時間４２分、△阿部１時間１４分。」 → ルール3
+- 「１５時現在も阿部が考え続けていた。」 → ルール3
+
+手数27: 銀を立て直しつつ、２筋の歩の交換を目指す。
+
+削除理由:
+
+手数36: △６四角が狙いの１つ。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１６時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲森下２時間２８分、△阿部２時間４３分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「この局面で森下が４１分考え、そのまま夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲森下３時間３２分、△阿部３時間１９分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森下３時間４７分、△阿部３時間５２分。」 → ルール3
+
+手数61: 露骨に打ち込む。
+
+削除理由:
+
+手数63: 大きなと金。
+
+削除理由:
+
+手数64:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲森下４時間２８分、△阿部４時間２７分。」 → ルール3
+
+手数71: 端を謝り、と金は取られないように角で守り、玉頭の桂馬を取りに行く。
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森下４時間３８分、△阿部４時間３２分。」 → ルール3
+- 「なんとも森下調の展開である。」 → ルール5
+
+手数88:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「消費時間は▲森下５時間２分、△阿部５時間２８分。」 → ルール3
+
+手数94: 先手は次の手を指さずに投了した。以下▲８七歩に△同香成▲同玉△６二飛▲同と△７六角▲９六玉△９四歩で寄り。
+
+削除理由:
+- 「この局面で森下が１分考え、」 → ルール3
+- 「消費時間は▲森下５時間２９分、△阿部５時間４０分。」 → ルール3
+- 「勝った阿部は４勝２敗、敗れた森下は２勝３敗となった。」 → ルール4

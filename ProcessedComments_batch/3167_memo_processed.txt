@@ -1,0 +1,129 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments. They're basically asking me to take the raw text that comes with the game data and transform it into something much more useful for analysis. The goal is to isolate the *actual* analysis of the moves and board positions. Get rid of all the fluff – the metadata, the introductions, the time stamps... all that stuff. It's distracting noise when I'm trying to get to the heart of the strategic insights.
+
+The process is pretty straightforward. First, I need to define the rules of engagement. What exactly *is* considered "unnecessary information"? Once I have those rules in place, I can systematically go through each comment, identify the irrelevant bits, and just delete them. The objective is a streamlined narrative focused solely on explaining the moves and the evolving board state. Ultimately, it’s about making sure the core analysis is easy to understand and readily accessible for deeper study.
+
+手数1:
+
+削除理由:
+- 「遠山は」 → ルール1
+- 「初手に１分使った」 → ルール3
+
+手数5: 先手は三間飛車。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数18:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は遠山４４分、木下７分。」 → ルール3, 1
+
+手数22: 相振り飛車を思わせる出だしだったが、結局後手は位取りの作戦。
+
+削除理由:
+- 「木下は」 → ルール1
+
+手数23:
+
+削除理由:
+- 「▲３八銀の局面で木下が２２分考えて」 → ルール1, 3
+- 「昼食休憩に入った。」 → ルール7
+- 「消費時間は遠山１時間２０分、木下３９分。」 → ルール3, 1
+
+手数37: 角交換は△８八角のキズがあって不利になる。
+
+削除理由:
+
+手数39: 先手はダイヤモンド美濃に組み替える。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数44:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は遠山１時間５９分、木下５３分。」 → ルール3, 1
+
+手数45:
+
+削除理由:
+- 「３６分の長考。」 → ルール3
+
+手数52: ７九の角が９七へ動いたので、△４五歩▲同歩△同銀に▲３五角の変化がなくなった。
+
+削除理由:
+
+手数61: 先手は▲３八金と締まった後、▲１八香からの穴熊を予定しているのだろうか。位の圧力から遠ざかるために穴熊に組み替えるのは多く見られる手法。後手からすれば、今のうちに戦いになれば、△３六香や△３六桂が楽しみになるのだが。
+
+削除理由:
+- 「１５時半の局面。」 → ルール3
+- 「消費時間は遠山２時間５６分、木下１時間４分。」 → ルール3, 1
+- 「遠山は」 → ルール1
+- 「木下からすれば」 → ルール1
+
+手数64: 陣形がほぼ飽和状態の後手は、のんびりしていると先手陣だけ形が良くなると見て動く。
+
+削除理由:
+- 「木下は」 → ルール1
+
+手数65: ▲７五歩などと受けていては何をしているのか分からない。
+
+削除理由:
+
+手数67:
+
+削除理由:
+- 「１６時半の局面。」 → ルール3
+- 「消費時間は遠山３時間１５分、木下１時間３１分。」 → ルール3, 1
+
+手数68: 角を打った。後手は桂香を拾って、３六に打ち込むつもりだろう。
+
+削除理由:
+- 「１時間１１分の長考で」 → ルール3
+- 「木下は」 → ルール1
+
+手数70:
+
+削除理由:
+- 「△９九角成の局面で遠山が４２分考えて」 → ルール1, 3
+- 「夕食休憩に入った。」 → ルール7
+- 「消費時間は遠山４時間９分、木下２時間４１分。」 → ルール3, 1
+
+手数71: 攻防の角打ちで攻める。
+
+削除理由:
+
+手数75: 先手の駒損ながら、後手の８・９筋の桂香の働きが悪すぎる。
+
+削除理由:
+
+手数81: △３三金とかわすなら、▲８一飛成でよい。
+
+削除理由:
+
+手数84:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は遠山４時間２０分、木下３時間１６分。」 → ルール3, 1
+
+手数85: ▲２二金は△２四玉▲４四龍△６七成香でおかしくなる。先手は冷静に成香を払った。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数89: 自陣は鉄壁なので、この垂れ歩で間に合う。
+
+削除理由:
+
+手数95: 以下は一手一手の寄せと判断し、後手の投了となった。
+
+削除理由:
+- 「木下の」 → ルール1
+- 「終局時刻は２０時２５分。」 → ルール3
+- 「消費時間は遠山４時間４６分、木下３時間１９分。」 → ルール3, 1
+- 「勝った遠山は５勝１敗、敗れた木下は３勝３敗となった。」 → ルール4, 1

@@ -1,0 +1,90 @@
+**Cleaning Up the Commentary: Focusing on the Game's Essence**
+
+Okay, so I need to refine the comments found within these Shogi game datasets. The goal here is to get rid of all the noise – the metadata, player introductions, time stamps, and any other irrelevant fluff – and extract the *core* of the commentary.  Essentially, I want to isolate the strategic explanations, the analyses of the board positions, and the reasoning behind each move, presenting them as a cohesive and understandable narrative.  This will make the datasets much more valuable for detailed analysis and research.  It's about distilling the essence of the game from the surrounding text, leaving behind only the insights that truly matter. I'm thinking of how I can approach this... it requires a strategic filter.
+
+手数4: 最近は少なくなった４手目△３三角戦法。
+
+削除理由:
+- 「最近は」 → ルール2
+
+手数9:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は富岡１５分、浦野２３分。」 → ルール3
+
+手数11: ▲７七桂は△７四歩〜△７二飛から桂頭を狙われてしまう。▲８八角以外には▲６六角も考えられた。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「▲５六歩の局面で」 → ルール3
+- 「浦野が１７分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は富岡１時間、浦野１時間６分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数19: 力戦居飛車となった。
+
+削除理由:
+
+手数22:
+
+削除理由:
+- 「１４時２０分ごろの局面。」 → ルール3
+- 「消費時間は富岡１時間３４分、浦野１時間４３分。」 → ルール3
+
+手数23: 力強い金出。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は富岡１時間５６分、浦野１時間５０分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「４１分の長考で指された。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１６時３０分ごろの局面。」 → ルール3
+- 「消費時間は富岡２時間５５分、浦野２時間２０分。」 → ルール3
+
+手数41: ▲８七歩と受けるのは軟弱と見て、先手は強く踏み込む。８筋は▲８三歩△同飛▲８四歩と受けるつもりだろう。
+
+削除理由:
+- 「富岡」 → ルール1
+
+手数43:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は富岡３時間２７分、浦野２時間４１分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「ここで富岡が３４分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は富岡４時間１分、浦野３時間４分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数58:
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「消費時間は富岡４時間２８分、浦野３時間１０分。」 → ルール3
+
+手数79: 後手は投了した。以下△５五玉▲５七飛△５六金▲４七飛△同金▲６六角△５六玉▲６八桂まで。
+
+削除理由:
+- 「ここで浦野は１分使って投了した。」 → ルール1, 3
+- 「終局時刻は２０時４８分。」 → ルール3
+- 「消費時間は富岡５時間１４分、浦野３時間２８分。」 → ルール3
+- 「勝った富岡は５勝４敗、敗れた浦野は２勝７敗となった。」 → ルール1, 4
+- 「富岡は２期連続指し分け以上が確定したことにより、降級点を消去した。」 → ルール1, 4

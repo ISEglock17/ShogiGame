@@ -1,0 +1,113 @@
+**Processing and Refining Chess Commentary**
+
+Okay, so I understand the task at hand. The user wants me to clean up and refine the comments associated with a Shogi game dataset. Essentially, they want me to take the raw commentary, which likely contains a lot of extraneous information, and transform it into concise, natural-sounding explanations focused solely on the board state and the moves being made.
+
+It sounds straightforward in principle, but I know from experience that the devil is in the details, especially when dealing with the nuances of Shogi commentary. I need to be careful to retain the critical information while removing the fluff. My plan is to methodically go through each comment, one by one. I'll need to define the specific "rules" they mentioned. What exactly constitutes "unnecessary information"? What stylistic preferences do they have? This information is key to ensuring the output reflects the user's specific goals. I anticipate needing to develop some clever strategies to efficiently identify and filter out the irrelevant parts while preserving the insightful analysis of the game. I am curious to get started, this sounds like a fun challenge.
+
+手数10: ▲８五歩に△７三銀を用意。
+
+削除理由:
+
+---
+手数16:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２０分、△富岡１９分。」 → ルール3, 4
+
+---
+手数17: 美濃を提示、場合によっては矢倉に発展する含みもある。▲１六歩とするのはいずれ△１五歩と端攻めされる展開になりやすい。
+
+削除理由:
+
+---
+手数24: ▲１六歩と受けなければ後手から端の位をとって損はない。
+
+削除理由:
+
+---
+手数27:
+
+削除理由:
+- 「ここで△富岡が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲安用寺５０分、△富岡１時間５分。」 → ルール3, 4
+
+---
+手数28: 先手から角を取ってくれば△同飛から手順に２筋の歩を伸ばせる。
+
+削除理由:
+
+---
+手数29: 自分から角を取るのは手損なのですぐには取らない。
+
+削除理由:
+
+---
+手数31: 先手も矢倉への組み換えを狙う。
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺１時間５３分、△富岡１時間３７分。」 → ルール3, 4
+
+---
+手数37:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間３５分、△富岡２時間４６分。」 → ルール3, 4
+
+---
+手数49:
+
+削除理由:
+- 「ここで△富岡が３４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲安用寺２時間４３分、△富岡４時間９分。」 → ルール3, 4
+
+---
+手数58:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺３時間１８分、△富岡４時間１８分。」 → ルール3, 4
+
+---
+手数59: 飛車を回った。
+
+削除理由:
+- 「５２分の長考で」 → ルール3
+- 「２１時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間１０分、△富岡４時間１８分。」 → ルール3, 4
+
+---
+手数60:
+
+削除理由:
+- 「５２分の長考を上回る５８分の長考で対抗。」 → ルール3
+
+---
+手数64:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間１０分、△富岡５時間２８分。」 → ルール3, 4
+
+---
+手数68:
+
+削除理由:
+- 「この手を考慮中に持ち時間が残り１０分を切った。」 → ルール3
+
+---
+手数71:
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺５時間６分、△富岡５時間５６分。」 → ルール3, 4
+
+---
+手数95: 後手玉は詰めろで受けても一手一手の寄せとなる。
+
+削除理由:
+- 「ここで△富岡の投了となった。」 → ルール4
+- 「消費時間は▲安用寺５時間１３分、△富岡５時間５９分。」 → ルール3, 4
+- 「勝った▲安用寺は３勝０敗、敗れた△富岡は０勝３敗となった。」 → ルール4

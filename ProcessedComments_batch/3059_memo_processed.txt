@@ -1,0 +1,85 @@
+**Cleaning Up Game Analysis**
+
+Okay, so I'm being asked to tidy up some comments from Shogi game data. The goal is clear: I need to transform these comments, which are probably a bit messy, and isolate only the useful stuff. Basically, anything that's *not* directly about the board state or the moves being made has to go. Think of it as stripping away the fluff – the metadata, introductions of the players, time stamps... all the irrelevant bits. I just want the core analysis, presented in a smooth, readable format. Now, let's figure out how I'm going to do this.
+
+手数22: 後手番で後手のみが指す形。
+
+削除理由:
+- 「児玉」 → ルール1
+
+手数29:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲所司４７分、△児玉０分。」 → ルール3, 1
+
+手数36:
+
+削除理由:
+- 「この局面で所司が２８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲所司１時間１７分、△児玉３３分。」 → ルール3, 1
+
+手数37: 先手は歩を突いた。
+
+削除理由:
+- 「再開後、３０分ほど考えて」 → ルール3, 7
+- 「合計１時間４分の長考。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司２時間１分、△児玉４５分。」 → ルール3, 1
+
+手数44:
+
+削除理由:
+- 「１時間１９分の長考。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司２時間７分、△児玉２時間２２分。」 → ルール3, 1
+
+手数54:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲所司２時間３９分、△児玉３時間１分。」 → ルール3, 1
+
+手数58:
+
+削除理由:
+- 「この局面で所司が４０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲所司３時間２７分、△児玉３時間２５分。」 → ルール3, 1
+
+手数62: 後手は歩を垂らした。
+
+削除理由:
+- 「３７分考え、」 → ルール3
+
+手数65: △２二同金は▲３四飛（王手）〜▲４四飛△同歩▲５五角がある。
+
+削除理由:
+- 「ここまでの消費時間は▲所司３時間３９分、△児玉４時間２分。」 → ルール3, 1
+
+手数66: 先手は金で取った。
+
+削除理由:
+- 「３４分考えて」 → ルール3
+
+手数68: 力強く受ける。▲４四飛は△同金と頑張る意思表示。
+
+削除理由:
+
+手数71:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲所司４時間４分、△児玉４時間３６分。」 → ルール3, 1
+
+手数72:
+
+削除理由:
+- 「２４分考えた児玉、残り１時間ちょうどになった。」 → ルール1, 3

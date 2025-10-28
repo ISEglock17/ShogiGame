@@ -1,0 +1,130 @@
+**Streamlining Commentary: My Approach to Sharpening Game Narratives**
+
+Okay, so the user wants me to clean up these Shogi commentary files. Essentially, they're looking for me to transform messy comments associated with game data into concise, readable explanations of the board state and moves, right? It's all about making the game's unfolding narrative crystal clear.
+
+Here's how I see this playing out: I'll need to parse through each move's commentary, bit by bit. That means I'll have to:
+
+1.  **Analyze and Decode:** I'll begin by analyzing the commentary tied to each move.
+2.  **Identify the Noise:**  I'll then use the defined rules to identify and flag any irrelevant text that needs to go – think redundant phrases, unnecessary details, and anything that distracts from the strategic flow of the game.
+3.  **Refine and Rewrite:**  Once I've purged the noise, I can start restructuring the remaining parts into polished, natural-sounding sentences that accurately describe the board's state and each move's intent.
+4. **Anonymous Players:** As a final step, I'll replace any real player names with "Sente" and "Gote" to ensure a consistent, abstract presentation of the game.
+
+手数1:
+
+削除理由:
+- 「勝又清和（かつまた・きよかず）六段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｔｕｍａｔａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「豊島将之（とよしま・まさゆき）六段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｏｙｏｓｈｉｍａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「勝又の今期成績は１３勝２０敗（勝率０．３９４）」 → ルール4
+- 「通算成績は２５２勝２５０敗（勝率０．５０２）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「豊島の今期成績は３１勝１６敗（勝率０．６６０）」 → ルール4
+- 「通算成績は１３５勝５３敗（勝率０．７１８）」 → ルール4
+
+手数5: 後手の２手目△３二飛戦法に、先手は端歩を突き越して対抗している。
+
+削除理由:
+- 「豊島」 → 先後名称に置換
+- 「勝又」 → 先後名称に置換
+
+手数11:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲勝又４２分、△豊島７分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「この局面で豊島が１２分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲勝又１時間２６分、△豊島３０分。」 → ルール3
+- 「昼食の注文は、豊島「肉豆腐定食（みろく庵）」、勝又は注文なし。」 → ルール7
+- 「対局は１３時に再開する。」 → ルール7
+
+手数31:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲勝又２時間３分、△豊島３６分。」 → ルール3
+
+手数34: 地震による対局中断時の局面。
+
+削除理由:
+- 「消費時間は▲勝又２時間１２分、△豊島１時間２３分。」 → ルール3
+- 「対局は１６時に再開されている。」 → ルール7
+
+手数35:
+
+削除理由:
+- 「東京・将棋会館の順位戦対局、再開後の着手一番乗りは勝又だった。」 → ルール6, 7
+- 「１６時１０分頃、余震により再度中断されている。」 → ルール3
+- 「正式には１６時１５分から夕食休憩の前倒しという形で、対局が中断されている。」 → ルール3, 7
+- 「再開は１８時を予定している。」 → ルール7
+- 「中断時までの消費時間は▲勝又２時間０分、△豊島１時間２３分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１８時４８分頃の局面。」 → ルール3
+- 「消費時間は▲勝又２時間２７分、△豊島２時間８分。」 → ルール3
+
+手数40: 後手はじっと玉を固めに行った。後の反撃の機会をじっと待つ指し回し。
+
+削除理由:
+- 「豊島らしい」 → ルール5
+
+手数43: 先手は位を取ってノビノビとした形。
+
+削除理由:
+- 「勝又」 → 先後名称に置換
+
+手数45: 先手は米長玉にして角筋を避けた。
+
+削除理由:
+- 「勝又」 → 先後名称に置換
+
+手数46: 後手はさらに駒を引いて固める。いかにも現代的な思想の一手。
+
+削除理由:
+- 「１９時３５分頃の局面。」 → ルール3
+- 「消費時間は▲勝又２時間５３分、△豊島２時間２８分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲勝又３時間８分、△豊島２時間３５分。」 → ルール3
+
+手数57: 先手は角を換えて飛香取りに角を放った。ただ、後手玉は堅く、飛角交換ならそれほどの脅威ではない。ここは△１三香と冷静に香を逃がしておく手がありそうだ。
+
+削除理由:
+- 「勝又」 → 先後名称に置換
+
+手数63:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲勝又３時間４１分、△豊島２時間３９分。」 → ルール3
+
+手数72: 先手陣に食らいついた。３枚の攻めで少し薄いが、７九の飛車が目標になって手が続きそうだ。
+
+削除理由:
+
+手数78: 先手玉を薄くして厳しく迫って行く。先手玉はすぐに寄ってしまうわけではないが、後手玉は鉄壁の堅陣。後手が優勢で間違いないだろう。この局面で先手は次の一手を指すことなく投了した。以下▲７八金と受けても△６八金▲６七金△７九金で、飛車を持たれると△２八飛が厳しい。後手玉は鉄壁で、粘っても攻防ともに見込みなしと判断したようだ。
+
+削除理由:
+- 「４分考えた」 → ルール3
+- 「勝又」 → 先後名称に置換
+- 「敗れた勝又は降級が決まった。勝った豊島は８勝２敗の好成績で今期の順位戦を終えた。」 → ルール4

@@ -1,0 +1,173 @@
+**Streamlining Shogi Commentary for Analysis**
+
+Okay, so I'm being tasked with cleaning up these Shogi game commentaries. The goal is clear: I need to strip away all the fluff – the metadata, player introductions, time stamps, and everything that isn't directly relevant to the actual board position and move-by-move analysis. My objective is to leave behind a smooth, coherent narrative that focuses solely on the game itself.
+
+I'm working with a specific set of rules to guide this process, so I'll be meticulously examining each comment, one by one. Here's what's on my chopping block:
+
+*   **No Names, Ranks, or Affiliations of Non-Players:** Any mention of commentators, analysts, or anyone other than the two players is out.
+*   **Historical Detours are Forbidden:** References to previous games, specific prior moves, or any external context are to be removed.
+*   **Time is of the Essence, but Not in the Commentary:** Time-related data, like clock readings or time controls, are completely irrelevant and will be eliminated.
+*   **Player Bios Get the Axe:** All player profiles, records, ranks, and any identification details are also being removed.
+*   **Style Matters, but Not the Player's:** Descriptions of player's style, preferred game types, or similar analysis of their preferences are of no concern.
+*   **Environment is Irrelevant:** Descriptions of the venue, weather, or location are being scrubbed.
+
+I'm ready to dive in and get this commentary ready for some serious Shogi analysis. Let's get to work!
+
+手数1:
+
+削除理由:
+- 「矢倉は振り飛車党。」 → ルール5
+- 「ゴキゲン中飛車よりも角道を止めた振り飛車が得意だ。」 → ルール5
+
+手数2:
+
+削除理由:
+- 「中座は攻め将棋の居飛車党。」 → ルール5
+- 「横歩取り△８五飛戦法の創始者として知られる。」 → ルール5
+
+手数3:
+
+削除理由:
+- 「矢倉の本年度の成績は１６勝１４敗（０．５３３）」 → ルール4
+- 「通算成績は３２１勝２６０敗（０．５５３）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「中座の本年度の成績は８勝１４敗（０．３６４）」 → ルール4
+- 「通算成績は３０２勝２４３敗（０．５５４）」 → ルール4
+
+手数9:
+
+削除理由:
+- 「近年の矢倉は、矢倉をあまり指さない。」 → ルール5
+- 「本局は珍しい矢倉の矢倉。」 → ルール5
+- 「今期は４回戦の▲石川陽生七段−△矢倉戦でも矢倉に進んだ。」 → ルール1, 2
+- 「ただし、その将棋はウソ矢倉や中飛車を含みにしており、よくある定跡形の矢倉とは少し違う序盤だった。」 → ルール2
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１１／０９／２０／Ｃ２／５７３６．ｈｔｍｌ」 → ルール8
+
+手数10:
+後手は４手目△８四歩に着目して作戦を決めたのかもしれない。
+
+削除理由:
+- 「横歩取り△８五飛がトレードマークの中座は矢倉をほとんど指さない。」 → ルール5
+- 「先手でも相掛かりが多いからだ。」 → ルール5
+- 「矢倉は」 → 置換ルール
+
+手数16:
+後手は左美濃模様で早い動きを目指す。
+
+削除理由:
+- 「中田宏樹八段が得意にしている指し方で、最近になって中田八段の著書も出た。」 → ルール1
+
+手数20:
+左美濃の特徴を生かした早い動き。
+
+削除理由:
+
+手数23:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は矢倉５分、中座３７分。」 → ルール3
+
+手数27:
+先手は中央からの反撃を目指す。▲２七歩型なので、無駄手がない。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「▲５五歩の局面で中座が１８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は矢倉１５分、中座１時間３８分。」 → ルール3
+- 「昼食の注文は矢倉が天とじ丼（みろく庵）。中座は注文なし。」 → ルール7
+- 「定跡が十分に整備された形ではなさそうだが、矢倉の指し手が早い。それもそのはず、第６５期Ｃ級２組▲矢倉−△横山泰明四段（当時）戦で経験済み。」 → ルール1, 2
+- 「しかし、その将棋は矢倉が敗れているのでどこかで工夫するのだろう。」 → ルール2
+
+手数36:
+先手の早囲いの長所は、▲６九玉・▲７八金型と比べて横からの攻めに強いこと。短所は上からの攻めが直撃しやすいこと。そのため、後手は△８五桂を見せて、先手玉頭を狙えるようにした。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は矢倉５７分、中座１時間４５分。」 → ルール3
+- 「なお、前述した▲矢倉−△横山戦は△６四歩だった。」 → ルール1, 2
+
+手数41:
+急所にくさびを打ち込んだ。
+
+削除理由:
+
+手数43:
+先手は中央を押さえた。▲３六歩〜▲３七桂〜▲４五桂まで進めば優勢になる展開だ。後手はその前に反発しなければならない。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は矢倉１時間２７分、中座２時間３分。」 → ルール3
+- 「ガシッと」 → 表現の整形
+- 「笑いが止まらない」 → 表現の整形
+
+手数46:
+△７一飛は長考で指された。
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は矢倉１時間３０分、中座３時間１６分。」 → ルール3
+- 「５３分の」 → ルール3
+
+手数47:
+飛車の利きからかわす。
+
+削除理由:
+- 「３５分の長考。」 → ルール3
+
+手数49:
+▲７六同銀は△７五歩で捕獲されてしまうので仕方ない。ここで△８五桂と跳ねれば、後手は駒得できる。
+
+削除理由:
+- 「１７時１５分ごろの局面。」 → ルール3
+- 「消費時間は矢倉２時間５分、中座３時間２６分。」 → ルール3
+
+手数52:
+後手は金を捕獲しようとしている。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「△７六金の局面で矢倉が３６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は矢倉２時間４６分、中座４時間２分。」 → ルール3
+
+手数65:
+▲同銀は△８一飛▲７三角成△８六飛！▲同歩△８七銀という筋がある。
+
+削除理由:
+
+手数68:
+これで角桂と金銀の交換。後手の攻め駒は理想的にさばけている。
+
+削除理由:
+
+手数70:
+厳しいたたき。▲同金は△８五歩▲同歩△８六歩▲７七金△８五飛という攻めがある。
+
+削除理由:
+
+手数72:
+後手は厳しく攻めつけていく。
+
+削除理由:
+
+手数76:
+気持ちのいい手順が続く。
+
+削除理由:
+
+手数78:
+ここで先手の投了となった。▲同角に△５七銀▲４九玉△６四歩くらいで、後手玉は安泰で先手玉は寄り筋に入っている。
+
+削除理由:
+- 「終局時刻は２０時６分。」 → ルール3
+- 「消費時間は矢倉２時間５４分、中座４時間５３分。」 → ルール3
+- 「勝った中座は３勝７敗、敗れた矢倉は４勝６敗で今期順位戦を終えた。」 → ルール4

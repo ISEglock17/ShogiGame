@@ -1,0 +1,113 @@
+**Cleaning Up Those Game Comments**
+
+Okay, so I'm tackling this task of refining those comments attached to the shogi game data. The goal here is pretty straightforward: get rid of the noise and leave behind the pure, distilled insights about the board state and the moves themselves.
+
+My process will involve a few key steps. First, I'll meticulously apply the established rules to identify and ruthlessly eliminate any irrelevant information. Then, with the essential content now isolated, I'll focus on crafting the remaining pieces into natural, flowing sentences. Finally, I'll output the results in the exact format the request specifies. It's all about precision and clarity – the stuff I live for!
+
+手数18:
+
+削除理由:
+- 「ここまでの消費時間は佐々木９分、豊島１０分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数24: 定跡通りの仕掛け。
+
+削除理由:
+- なし
+
+手数27: 先手は飛車を寄った。
+
+削除理由:
+- 「佐々木は４５分考えて」 → ルール1, 3
+
+手数29:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は佐々木１時間２６分、豊島２７分。」 → ルール3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数39:
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「ここまでの消費時間は佐々木１時間４５分、豊島５０分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数40: 後手は歩を打った。
+
+削除理由:
+- 「豊島は１時間１６分の長考で」 → ルール1, 3
+
+手数44:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は佐々木２時間２５分、豊島２時間２０分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数53:
+
+削除理由:
+- 「豊島が３９分を使って、ここで夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間の通計は、佐々木３時間２９分、豊島３時間２２分。」 → ルール3
+- 「夕食の注文は、佐々木はカレーライス。豊島はなし。」 → ルール7
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数54: 後手は馬を寄った。
+
+削除理由:
+- 「豊島は夕食休憩をはさんで１時間６分考え、」 → ルール1, 3, 7
+
+手数59:
+
+削除理由:
+- 「ここからはノータイムの応酬。」 → ルール3
+
+手数61: 一気に終盤戦に。
+
+削除理由:
+- なし
+
+手数65:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は佐々木３時間５１分、豊島３時間５０分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数81:
+
+削除理由:
+- 「２０時４０分頃の局面。」 → ルール3
+- 「消費時間は佐々木４時間５分、豊島４時間９分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数82: 金銀を入れ替える。
+
+削除理由:
+- なし
+
+手数90:
+
+削除理由:
+- 「２１時３０分頃の局面。」 → ルール3
+- 「消費時間は佐々木４時間４９分、豊島４時間４３分。」 → ルール3
+- 「佐々木」 → ルール1
+- 「豊島」 → ルール1
+
+手数115: 以下後手玉は容易な即詰み。
+
+削除理由:
+- 「佐々木が完勝で大器豊島を降した。」 → ルール1, 4
+- 「終了時刻は２２時１５分。」 → ルール3
+- 「消費時間は佐々木４時間５６分、豊島４時間４４分。」 → ルール3
+- 「勝った佐々木は２連勝。負けた豊島は１勝１敗となった。」 → ルール1, 4

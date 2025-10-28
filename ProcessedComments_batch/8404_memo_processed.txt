@@ -1,0 +1,166 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I'm presented with a bit of a data cleaning exercise. Someone wants me to sift through these Shogi game records, specifically the commentary attached to each move. The goal, as I understand it, is to distill the commentary down to its purest form for analysis. Essentially, they want me to strip away all the extraneous noise – you know, the meta-commentary, player introductions, time stamps, all that stuff. It's really just the *explanation* of the board state and the move itself that matters.
+
+I get it. When you're running complex algorithms or even just doing some manual deep-dive analysis, that extra information becomes a real distraction. It's like having a beautiful piece of art and then someone's written a grocery list all over the canvas.  So the task is to surgically remove anything that doesn't contribute to a clear, concise explanation of the game's unfolding. Leaving only the essential elements of the board position and the rationale behind each player's decisions.  This seems straightforward enough - let's see what we can do.
+
+手数1:
+
+削除理由:
+- 「◆梶浦　宏孝（かじうら　ひろたか）四段◆
+１９９５年７月６日生まれ、東京都新宿区出身。鈴木大介八段門下。２０１５年、四段。棋士番号は３０１。」 → ルール1, 4
+
+手数2:
+
+削除理由:
+- 「◆岡崎　洋（おかざき　ひろし）六段◆
+１９６７年５月４日生まれ、千葉県出身。（故）平野広吉七段門下。１９９３年、四段。２００４年、六段。棋士番号は２０９。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「梶浦の今年度成績は２勝２敗（０．５００）
+通算成績は今年度成績と同じ」 → ルール4
+
+手数4:
+
+削除理由:
+- 「岡崎の今年度成績は０勝４敗
+通算成績は３４７勝３５２敗（０．４９６）」 → ルール4
+
+手数5: 戦型は先手の中飛車へ。
+
+削除理由:
+
+手数9: 先手は▲５五歩をしばらく保留していたが、ここで位を取った。
+
+削除理由:
+
+手数12:
+
+削除理由:
+- 「１１時２０分、」 → ルール3
+- 「△５二金右までの消費時間は▲梶浦１０分、△岡崎４５分。」 → ルール3
+
+手数17:
+
+削除理由:
+- 「１２時１０分、」 → ルール3
+- 「この局面で岡崎が３４分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲梶浦３４分、△岡崎１時間３１分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール3, 7
+
+手数22: 角頭を狙う。
+
+削除理由:
+
+手数23: ７五の地点はあえて受けずにこちらへ。互いに我が道を行く展開だ。
+
+削除理由:
+
+手数26: 後手は首尾よく７筋の歩交換に成功した。先手はその代償をどこに求めるか。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１４時過ぎ、」 → ルール3
+- 「消費時間は▲梶浦１時間４分、△岡崎２時間１分。」 → ルール3
+
+手数29: 先手は穴熊を目指した。
+
+削除理由:
+
+手数32: 後手も玉を固めていく。
+
+削除理由:
+
+手数34: 端歩を突いて角を１三に使う狙いか。
+
+削除理由:
+- 「１５時過ぎ、△１四歩までの消費時間は▲梶浦１時間４４分、△岡崎２時間１１分。」 → ルール3
+
+手数35: 後手玉を直撃する攻めを狙った。▲３八飛の応援が利く形だ。
+
+削除理由:
+
+手数36: 突き違いの手筋で銀を３筋の攻めからそらす。
+
+削除理由:
+
+手数38: これが銀挟みで次に銀を取る狙いがあれば先手が忙しいのだが、残念ながら▲５六銀と引けるので先手の銀は安泰だ。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「１６時過ぎ、」 → ルール3
+- 「△７四飛までの消費時間は▲梶浦２時間１６分、△岡崎２時間３９分。」 → ルール3
+
+手数43: 中央からガツンと開戦した。華々しい戦いになりそうだ。
+
+削除理由:
+
+手数47: 金にヒモをつけて５八の飛車が自由になった。
+
+削除理由:
+
+手数48: 角を打ち込んで手を作りにいった。
+
+削除理由:
+
+手数50: 一転して５筋を支えた。
+
+削除理由:
+- 「１７時過ぎ、△５三銀までの消費時間は▲梶浦２時間５９分、△岡崎２時間５６分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「１８時１０分、」 → ルール3
+- 「この局面で梶浦が５４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲梶浦４時間４分、△岡崎３時間０分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール3, 7
+
+手数57: 銀を捨てて飛車金両取りが掛かった。
+
+削除理由:
+
+手数58: 非常手段で切り返す。
+
+削除理由:
+
+手数59: さらに角取りに当たって後手は非常に忙しい。収拾がつくかどうかギリギリのところだ。
+
+削除理由:
+
+手数60: 後手も勝負をかける。
+
+削除理由:
+
+手数62: 次に△７七馬と桂を取れば飛車取りで受けにもよく利くが、この瞬間がやや甘いか。
+
+削除理由:
+
+手数63: 決めにいった雰囲気だ。
+
+削除理由:
+
+手数67: 飛車を逃げずに一気に寄せに出た。穴熊の強みを生かしている。
+
+削除理由:
+
+手数72: △３六桂は詰めろではない。これは寄せがありそうだ。
+
+削除理由:
+
+手数73: ここで後手が投了した。
+以下△３一玉は▲３三金、△３二玉は▲３三金打、△５一玉は▲５三歩成で受けの利かない形。先手玉は△２八桂成に▲同金で絶対詰まない形で望みがない。
+
+削除理由:
+- 「岡崎」 → ルール1
+- 「終局時刻は１９時４０分、」 → ルール3
+- 「消費時間は▲梶浦４時間２９分、△岡崎３時間１０分。」 → ルール3
+- 「勝った梶浦は開幕から２連勝、岡崎は２連敗に。」 → ルール4

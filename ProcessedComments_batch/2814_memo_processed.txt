@@ -1,0 +1,204 @@
+**Cleaning Up Game Analysis Commentary**
+
+Okay, so I'm looking at this dataset of Shogi game comments and, frankly, it's a bit of a mess. My task, as I understand it, is to take these raw comments and refine them into something useful for analysis.  Think of it like sifting for gold, right?  The goal here is to isolate the pure, distilled insights about the game's evolution - the meaty bits of board position analysis and the strategic justifications behind each move.
+
+This means getting rid of all the noise.  I'm talking about the stuff that's important for the *presentation* of the commentary, but not the actual *understanding* of the game.  Think personal introductions, time stamps, tournament details, and anything that's purely descriptive rather than analytical.  My focus is on stripping away anything that doesn't contribute directly to understanding the strengths and weaknesses of each move and its impact on the board.
+
+The process is fairly straightforward: first, I have to meticulously apply the rules I've defined to identify all the unnecessary information.  Think of this as the "delete" phase. Then, and this is crucial, I need to take what's left and smooth it out into coherent, naturally flowing sentences.  It's not just about removing; it's about crafting.  I want to create a narrative flow that clearly articulates the evolving strategic landscape of the game.
+
+手数2:
+
+削除理由:
+- 「佐藤は２手目に３分使った。」 → ルール1, 3
+
+手数7: 中飛車を選択した。ここでは▲８八飛の向かい飛車や▲８八銀なども指されている。
+
+削除理由:
+- 「神谷はどの戦法でも指しこなす棋士。」 → ルール1, 5
+- 「本局では」 → ルール8
+
+手数13: 先手は乱戦辞さずの構え。ここで△３四歩なら▲５四飛として△７七角成▲同桂△４五角▲５五飛△２七角成▲２五飛まで進めば先手良し。
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「消費時間は神谷２５分、佐藤１２分。」 → ルール1, 3
+- 「神谷は」 → ルール1
+
+手数20:
+
+削除理由:
+- 「腰の重い棋風の佐藤は持久戦を目指す。」 → ルール1, 5
+
+手数24:
+
+削除理由:
+- 「１１時半ごろの局面。」 → ルール3
+- 「消費時間は神谷３８分、佐藤３７分。」 → ルール1, 3
+
+手数26: 中央が手厚い形だ。
+
+削除理由:
+- (削除なし)
+
+手数31:
+
+削除理由:
+- 「▲１六歩の局面で佐藤が６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は神谷１時間１分、佐藤５３分。」 → ルール1, 3
+
+手数33: 後手は持久戦なら△１二香、攻めを狙うなら△７四歩だろうか。
+
+削除理由:
+- 「１３時４０分ごろの局面。」 → ルール3
+- 「消費時間は神谷１時間１３分、佐藤１時間５分。」 → ルール1, 3
+
+手数34: 穴熊を目指す。
+
+削除理由:
+- 「３１分の長考で」 → ルール3
+
+手数39: 先手は銀冠に組み替えた。
+
+削除理由:
+- 「神谷は」 → ルール1
+
+手数42: △７四歩を先にすると、▲６五銀△８四飛▲５四歩△４二銀▲５五角のような攻めを食ってまずい。
+
+削除理由:
+- (削除なし)
+
+手数45: ゆったりとした駒組みが続く。
+
+削除理由:
+- 「１４時半の局面。」 → ルール3
+- 「消費時間はともに１時間３６分。」 → ルール3
+
+手数46: 歩を受けた。▲４五歩△同歩▲５五銀△５四歩▲４四歩△同銀▲５四銀といった手順を警戒したか。
+
+削除理由:
+- 「３０分の長考で」 → ルール3
+
+手数47: ４筋に戦力を足した。７八の金が取り残されているので、うまくさばきたいところ。
+
+削除理由:
+- 「神谷も３０分の長考で」 → ルール1, 3
+
+手数48:
+
+削除理由:
+- 「１５時３５分ごろの局面。」 → ルール3
+- 「消費時間は神谷２時間６分、佐藤２時間１３分。」 → ルール1, 3
+
+手数52: 先手から▲４五歩を狙っていたところを後手からドカンといく。△６六角から△６五桂のさばきを狙う。
+
+削除理由:
+- 「１６時３０分ごろの局面。」 → ルール3
+- 「消費時間は神谷２時間１９分、佐藤２時間４４分。」 → ルール1, 3
+- 「佐藤は２４分の考慮で決断。」 → ルール1, 3
+
+手数53: 先手からすれば、両取りをかけて何が悪い、というところだろう。
+
+削除理由:
+- 「神谷は▲４五同桂に５７分の長考。」 → ルール1, 3
+
+手数57:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は神谷３時間１６分、佐藤２時間４４分。」 → ルール1, 3
+
+手数63:
+
+削除理由:
+- 「▲５九飛の局面で佐藤が２０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は神谷３時間２４分、佐藤３時間２５分。」 → ルール1, 3
+
+手数65: 押さえ込まれてしまう前にさばく。
+
+削除理由:
+- (削除なし)
+
+手数72: 後手は押さえ込み作戦。先手は左側の金銀をうまく活用したい。
+
+削除理由:
+- 「１９時４５分過ぎの局面。」 → ルール3
+- 「消費時間は神谷３時間４１分、佐藤３時間４０分。」 → ルール1, 3
+- 「佐藤は」 → ルール1
+- 「神谷は」 → ルール1
+
+手数73: △５三金は▲４五角成で手厚くなる。
+
+削除理由:
+- (削除なし)
+
+手数75: ガッチリ。
+
+削除理由:
+- (削除なし)
+
+手数79: これで銀得の形。
+
+削除理由:
+- (削除なし)
+
+手数85: 銀得でも、駒の効率を考えるとまだまだ大変か。
+
+削除理由:
+- (削除なし)
+
+手数86:
+
+削除理由:
+- 「２０時４０分ごろの局面。」 → ルール3
+- 「消費時間は神谷４時間８分、佐藤４時間７分。」 → ルール1, 3
+
+手数90: 馬を使って攻める。
+
+削除理由:
+- (削除なし)
+
+手数94: 次に△６六歩を見せる。
+
+削除理由:
+- (削除なし)
+
+手数99: 端が穴熊の弱点。
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は神谷４時間３６分、佐藤４時間１３分。」 → ルール1, 3
+
+手数104: 後手の指し手は手厚い。
+
+削除理由:
+- (削除なし)
+
+手数112: 後手は△２五歩としても▲１二歩△同玉▲２四桂で逆に危険になってしまう。▲１三桂成△同銀とサッパリする方が楽な形だ。
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は神谷１時間１０分、佐藤１時間２７分。」 → ルール1, 3
+
+手数117: 馬が２四を守っているので、このタイミングで取らないと桂馬がただになってしまう。
+
+削除理由:
+- (削除なし)
+
+手数128:
+
+削除理由:
+- 「２２時３５分の局面。」 → ルール3
+
+手数138:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は神谷４２分、佐藤１時間５分。」 → ルール1, 3
+
+手数139:
+
+削除理由:
+- 「ここで勝ち目がないと見て、１４分考えた末に佐藤の投了となった。」 → ルール1, 3
+- 「終局時刻は２３時２８分。」 → ルール3
+- 「消費時間は神谷５時間２９分、佐藤５時間９分。」 → ルール1, 3
+- 「勝った神谷は５勝１敗、敗れた佐藤は４勝２敗となった。」 → ルール1, 4

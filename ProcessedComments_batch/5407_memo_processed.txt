@@ -1,0 +1,97 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm being asked to clean up some Shogi game commentary, getting it ready for serious analysis. The goal is clear: strip away all the fluff and keep only the real meat – the board positions and the actual moves. I've got to be meticulous, following a set of rules to separate the signal from the noise.
+
+Here's how I'm thinking I'll tackle this: First, I'll go through each move, each comment line by line. Then, I'll use the rules I have to identify the parts that can be cut out, all the unnecessary stuff. After that, I'll stitch together what's left, making sure it all flows logically and reads smoothly. Finally, I'll put it all together in the exact format they've specified. This requires some careful consideration for optimal output.
+
+手数1:
+
+削除理由:
+- 「【小林健二九段】」 → ルール1
+- 「１９５７年３月３１日生まれ、香川県出身。（故）板谷進九段門下。」 → ルール4, 1
+- 「１９７２年６級で奨励会入会。１９７５年１２月２０日四段。２００２年３月１日九段。」 → ルール4
+- 「順位戦は３５期目。Ａ級在籍４期。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【佐々木慎五段】」 → ルール1
+- 「１９８０年１月２１日生まれ、東京都出身。関根茂九段門下。」 → ルール4, 1
+- 「１９９３年６級で奨励会入会。２００１年４月１日四段。２００６年４月１９日五段。」 → ルール4
+- 「順位戦は１１期目。Ｃ級１組は４期目。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「小林健の今期成績は１勝５敗（勝率０．１６７）。」 → ルール4
+- 「通算成績は６２５勝６１１敗（勝率０．５０６）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「佐々木慎の今期成績は２勝３敗（勝率０．４００）。」 → ルール4
+- 「通算成績は２１０勝１４５敗（勝率０．５９２）。」 → ルール4
+
+手数5: 戦型は相振り飛車となった。
+
+削除理由:
+
+手数23:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健６分、△佐々木慎３８分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「この局面で昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲小林健１０分、△佐々木慎１時間４３分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健２８分、△佐々木慎２時間０分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健５１分、△佐々木慎２時間２３分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健１時間２分、△佐々木慎３時間３分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健１時間１７分、△佐々木慎４時間１１分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「この局面で夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲小林健１時間３７分、△佐々木慎４時間５８分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健２時間８分、△佐々木慎５時間１２分。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健２時間５１分、△佐々木慎５時間２０分。」 → ルール3
+
+手数109:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健３時間２３分、△佐々木慎５時間４９分。」 → ルール3

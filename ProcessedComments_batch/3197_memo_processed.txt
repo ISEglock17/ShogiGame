@@ -1,0 +1,89 @@
+**Streamlining Shogi Commentary**
+
+Okay, so I need to take these Shogi game commentaries and clean them up. The user, who I assume knows a thing or two about this, wants me to focus on the core analysis of the game, not all the extraneous fluff.  I get it, I would too. My task is to go through each comment, identify the parts that are directly related to the board state or the moves being made, and filter out everything else.  Things like player introductions, time stamps, and any meta-commentary that isn't directly related to the actual play need to go.  It's all about extracting the pure essence of the game analysis and presenting it in a coherent, readable format. I have a set of rules and input/output formats to guide me, and I'll need to meticulously apply them to each piece of commentary. Essentially, I'm aiming to provide a distilled, insightful perspective on the game, stripped of any distracting elements.
+
+手数15:
+
+削除理由:
+- 「１０時５５分ごろの局面。」 → ルール3
+- 「消費時間は村中１７分、武市１２分。」 → ルール3
+
+手数22: 後手は陽動振り飛車。
+
+削除理由:
+- 「武市」 → ルール1
+
+手数29: 先手は矢倉から穴熊に組み替える。堅い玉形を目指すのが現代感覚。
+
+削除理由:
+- 「村中」 → ルール1
+
+手数34:
+
+削除理由:
+- 「△６四歩の局面で村中が１６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は村中５５分、武市５７分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は村中１時間９分、武市１時間２７分。」 → ルール3
+
+手数45: ４枚穴熊で守りは理想的。問題は攻め。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１５時半ごろの局面。」 → ルール3
+- 「消費時間は村中１時間５６分、武市２時間１分。」 → ルール3
+
+手数53: 先手は長考でジッと引いた。先手は右桂がうまく使えれば、堅陣が生きる。押さえ込まれないようにしたいところ。
+
+削除理由:
+- 「村中」 → ルール1
+- 「は５６分の長考」 → ルール3
+- 「１６時４５分ごろの局面。消費時間は村中２時間５２分、武市２時間９分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「１７時半過ぎの局面。」 → ルール3
+- 「消費時間は村中３時間２分、武市３時間９分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「▲２四歩の局面で武市が１７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は村中３時間１１分、武市３時間３７分。」 → ルール3
+
+手数64: 嫌みをつけるが、▲同飛の形は中央に飛車が利いてくる。
+
+削除理由:
+
+手数67: 前進流。
+
+削除理由:
+
+手数69: 先手の金がズンズン進出してきた。
+
+削除理由:
+- 「村中」 → ルール1
+
+手数72: 嫌み嫌みで攻める。
+
+削除理由:
+- 「２０時１０分ごろの局面。消費時間は村中３時間２９分、武市４時間。」 → ルール3
+
+手数76: 激しく打ち込む。
+
+削除理由:
+
+手数80: このあたりまでに△７五歩と突き捨てるのが良かったのかもしれない。
+
+削除理由:
+- 「２１時２０分の局面。消費時間は村中３時間５４分、武市４時間５４分。」 → ルール3
+- 「控え室では、」 → ルール1, 6
+- 「といわれていた」 → 整形

@@ -1,0 +1,104 @@
+**My Approach to Refining Shogi Game Commentaries**
+
+Okay, so I've got this task, which, frankly, I find quite fascinating.  The user wants me to clean up and structure the comments that accompany Shogi game data.  My goal is to distill these comments into their purest form: the insightful analysis of the board state and the moves being made.
+
+Essentially, I need to act as an editor, or perhaps a digital filter.  I'll be going through each comment and applying a specific set of rules to identify and discard anything irrelevant to the core strategic discussion.  Think metadata, player introductions, time-related details – all gone!
+
+Then, once I've stripped away the fluff, I need to polish the remaining text. I'll focus on crafting these fragments into clear, flowing sentences. It's about ensuring the commentary reads well, even after the extraneous information is removed.
+
+Finally, I'll need to package the refined comments into a predefined output format.  This probably means structuring the data in a particular way that integrates seamlessly with the rest of the game data.  It's a matter of ensuring everything lines up properly for seamless analysis.
+
+手数1:
+
+削除理由:
+- 「藤原は初手に３分考えている。」 → ルール1, 3
+
+手数2:
+
+削除理由:
+- 「高田も２手目に２分消費。」 → ルール1, 3
+
+手数19:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２５分、△高田２２分。」 → ルール1, 3
+
+手数24:
+
+削除理由:
+- 「この局面で藤原が３６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲藤原１時間７分、△高田５２分。」 → ルール1, 3
+
+手数29:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原１時間４７分、△高田１時間２分。」 → ルール1, 3
+
+手数31: １６手目からぶつかっていた歩だが、ようやく先手が取り込んだ。
+
+削除理由:
+- 「藤原が」 → ルール1
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間１３分、△高田１時間２６分。」 → ルール1, 3
+
+手数38:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲藤原２時間２７分、△高田２時間２７分。」 → ルール1, 3
+
+手数41: ▲７五同歩は△同銀▲７六歩△８六歩以下、銀交換になる。「攻めの銀と守りの銀の交換は攻める側が得」という、典型的な棒銀の捌きだ。
+
+削除理由:
+
+手数46: 一歩得している後手がポイントをあげたと見られている。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原３時間２分、△高田２時間５２分。」 → ルール1, 3
+
+手数50:
+
+削除理由:
+- 「この局面で藤原が２０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲藤原３時間４４分、△高田３時間１２分。」 → ルール1, 3
+
+手数54:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原３時間４分、△高田３時間５９分。」 → ルール1, 3
+
+手数63:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲藤原４時間２８分、△高田４時間１１分。」 → ルール1, 3
+
+手数69:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原４時間３７分、△高田４時間３８分。」 → ルール1, 3
+
+手数80: 次に△７六桂などがあり、後手勝勢のようだ。
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「消費時間は▲藤原５時間７分、△高田４時間５９分。」 → ルール1, 3
+
+手数84: まさしく一歩千金。飛車を捨てて手に入れた歩で、先手玉を寄せにきた。
+
+削除理由:
+
+手数88: この局面で先手が投了した。投了以下、▲６九玉は△５九金まで。▲８九玉は△７九金に玉を逃げて（▲同飛は△同桂成以下詰み）△７八金と飛車を取って必至がかかる。
+
+削除理由:
+- 「藤原が」 → ルール1
+- 「消費時間は▲藤原５時間２３分、△高田５時間８分。」 → ルール1, 3

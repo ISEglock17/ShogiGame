@@ -1,0 +1,101 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I'm presented with this set of comments from a Shogi game, and my task is to refine them. The goal here is pretty clear: I need to transform these raw comments into a clean, concise narrative that's truly useful for my analytical work. That means stripping away all the fluff – the metadata, the introductions, the time stamps... all the stuff that's essentially noise in this context. 
+
+I'm thinking, this is a pretty straightforward process, albeit potentially tedious. I'll need to develop a set of clear rules to identify the parts of the commentary that are irrelevant to the actual game analysis. Basically, it’s a matter of meticulous filtering, isolating only the bits that offer insightful commentary on the board state and the player's moves. I need a process to take all the noise and extract the gems of analysis from it.
+
+手数1:
+
+削除理由:
+- 「【福崎文吾九段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｈｕｋｕｓａｋｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【田中寅彦九段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔａｎａｋａ―ｔ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「福崎の今年度成績は４勝１１敗（０．２６７）」 → ルール4
+- 「通算成績は６０４勝６１７敗（０．４９５）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「田中の今年度成績は４勝１１敗（０．２６７）」 → ルール4
+- 「通算成績は７３７勝６１３敗（０．５４６）」 → ルール4
+
+手数5: 先手の作戦は５筋位取り中飛車。現代の中飛車は５筋の位を取る形が多い。
+
+削除理由:
+- 「福崎の」 → ルール1
+
+手数7:
+
+削除理由:
+- 「今期のＡ級順位戦１回戦▲谷川浩司九段−△渡辺明竜王戦がこの形になっていた。」 → ルール2
+- 「【第７１期Ａ級順位戦１回戦▲谷川−△渡辺明戦】」 → ルール2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１２／０６／１８／Ａ１／５９１６．ｈｔｍｌ」 → ルール8
+
+手数13: 先手は美濃囲いと穴熊のどちらもあるところ。
+
+削除理由:
+
+手数14: 玉の潜るスペースを作る。
+
+削除理由:
+
+手数15: 角を上がって、左銀を上がる準備をする。
+
+削除理由:
+
+手数23: 先手は穴熊を目指す。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「△２四歩までの消費時間は▲福崎３１分、△田中１２分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「この局面で田中が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「昼食休憩までの消費時間は▲福崎５２分、△田中５２分。」 → ルール3, 7
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数59:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲５四歩までの消費時間は▲福崎１時間３３分、△田中１時間１分。」 → ルール3
+
+手数68: 先手の穴熊が堅すぎるので攻めが途切れなさそうだ。次に▲３三歩成で後手はどうするのか、後手がつぶれていそうだ。
+
+削除理由:
+- 「飯島栄治七段が中継室を訪れた。」 → ルール1
+- 「飯島七段「」」 → ルール1
+- 「……。うーん、」 → 整形
+- 「これは」 → 整形
+- 「ですねぇ」 → 整形
+- 「１５時ごろの局面。」 → ルール3
+- 「△４二金引までの消費時間は▲福崎１時間４１分、△田中１時間５５分。」 → ルール3
+
+手数86:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「△４四銀直までの消費時間は▲福崎２時間２分、△田中２時間２１分。」 → ルール3
+
+手数101: ▲４五銀を見て後手が投了した。投了以下、△４五同銀は▲同金△３三玉▲３四銀までの詰み。△３三玉と逃げても▲４四銀△同銀▲３四歩△同玉▲４五銀△同銀▲同金△３三玉▲３四銀までの詰みがある。
+
+削除理由:
+- 「田中が」 → ルール1
+- 「終局時刻は１６時９分。」 → ルール3
+- 「消費時間は▲福崎２時間５分、△田中２時間２１分。」 → ルール3
+- 「勝った福崎は２勝５敗、敗れた田中は３勝４敗となった。」 → ルール4

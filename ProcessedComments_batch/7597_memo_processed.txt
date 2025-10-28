@@ -1,0 +1,77 @@
+**Initial Assessment of the Request**
+
+Okay, so I understand the task here. The user, likely a fellow expert in this domain, wants me to clean up and reformat some Shogi game commentary. They've likely got a specific set of rules in mind, but I need to make some educated guesses about the conventions here. The goal is to take what's probably a raw, technical description of a move and turn it into something readable and natural, focusing only on the key information. Let's see...
+
+**Breaking Down the Example**
+
+The example given, "手数4: 佐々木も飛車を振り、相振り飛車へ," indicates the 4th move ("手数4") was a Ranging Rook ("飛車を振り") by Sasaki ("佐々木").  This move, combined with the opponent's Ranging Rook strategy, sets up a Double Ranging Rook game ("相振り飛車へ"). I'll need to remember that "手数" means "move number."
+
+手数4: 後手も飛車を振り、相振り飛車へ。
+
+削除理由:
+- 「佐々木」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+
+---
+手数9: ▲６八玉から穴熊を目指す作戦が最近流行りだしているが、本局では左銀を攻めに使うつもりだ。
+
+削除理由:
+- 「最近流行りだしているが」 → ルール2
+
+---
+手数17: ピョコンと。▲２七銀から銀冠を目指している。
+
+削除理由:
+- 「ピョコンと。」 → 盤面や指し手の解説ではない擬態語のため削除
+
+---
+手数19:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲１六歩までの消費時間は▲阪口２６分、△佐々木９分。」 → ルール3
+
+---
+手数32:
+
+削除理由:
+- 「１２時１０分、」 → ルール3
+- 「ここで阪口が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲阪口１時間１３分、△佐々木４１分。」 → ルール3
+- 「両者ともに昼食の注文はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+---
+手数42:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△１三角までの消費時間は▲阪口２時間０分、△佐々木５２分。」 → ルール3
+
+---
+手数46: バッサリと切っていった。
+
+削除理由:
+- 「バッサリと」 → 盤面や指し手の解説ではない擬態語のため削除
+
+---
+手数48: この金が継続の狙いだ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数50:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△６八同角成までの消費時間は▲阪口２時間３２分、△佐々木１時間１７分。」 → ルール3
+
+---
+手数54: 先手は投了した。▲６八飛には△同飛成▲同金△５九飛などの攻めがあり、受け切れないという判断だ。後手玉に迫る手がない。
+
+削除理由:
+- 「ここで５分使い、」 → ルール3
+- 「阪口が」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+- 「終局時刻は１５時１６分。」 → ルール3
+- 「消費時間は▲阪口２時間３７分、△佐々木１時間２４分。」 → ルール3
+- 「勝った佐々木は３勝２敗、敗れた阪口は１勝４敗になった。」 → ルール4

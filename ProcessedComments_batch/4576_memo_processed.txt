@@ -1,0 +1,132 @@
+**Streamlining Game Commentary for Deep Analysis**
+
+Okay, so I'm presented with a task: to take a jumbled mass of Shogi commentary and transform it into something usable for in-depth analysis.  The user wants clean, focused information – just the bare bones of the game's evolution.  My expertise immediately kicks in; I know exactly what needs to be done.
+
+Essentially, I need to methodically dissect each move's commentary, removing all the extraneous fluff that clutters the data.  This means adhering strictly to the predefined rules, identifying the crucial pieces – the board state descriptions and the actual move details – and discarding everything else.
+
+My approach is clear: I'll treat each commentary section as an individual puzzle.  I'll filter out the noise based on the established rules, then I'll synthesize what remains into a readable, concise statement.  Finally, I'll package the refined information into the requested output format.  This is a process of disciplined distillation, ensuring only the essential strategic elements survive.
+
+手数3: 後手のごきげん中飛車をけん制した手。△５四歩なら▲２二角成△同飛▲５三角がある。
+
+削除理由:
+- 「佐藤和の」 → ルール1
+
+手数4: 振り飛車党の後手が居飛車にして、▲６八玉をとがめにいく。
+
+削除理由:
+- 「佐藤和が」 → ルール1
+- 「振り飛車党の」 → ルール5
+
+手数8:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈６分、佐藤和２７分。」 → ルール3
+
+手数12:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈１９分、佐藤和４１分。」 → ルール3
+- 「ここで伊奈１時間３分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は伊奈１時間２２分、佐藤和４１分。」 → ルール3
+
+手数15:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈１時間３８分、佐藤和４１分。」 → ルール3
+- 「１５時を迎えたが、まだ佐藤和は指していない。」 → ルール1, 3
+
+手数16:
+
+削除理由:
+- 「佐藤和はこの一手に２時間７分考えた。」 → ルール1, 3
+
+手数19: 相掛かりになったが、▲６八玉は形を決め過ぎの意味がある。
+
+削除理由:
+- 削除対象なし
+
+手数24:
+
+削除理由:
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈１時間５２分、佐藤和３時間１０分。」 → ルール3
+
+手数28: 積極的に動いていく。
+
+削除理由:
+- 削除対象なし
+
+手数37: 端の位を取りながらの手渡し。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈２時間１３分、佐藤和３時間５２分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「伊奈はここで３７分考えて、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は伊奈２時間５０分、佐藤和４時間９分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈３時間１３分、佐藤和４時間２９分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「２０時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈３時間１７分、佐藤和４時間４６分。」 → ルール3
+
+手数45: ▲２五桂と跳ねたときに△３七角のキズを消しているし、後手の攻撃からも逃げやすい形になった。
+
+削除理由:
+- 「２１時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈４時間１６分、佐藤和４時間４６分。」 → ルール3
+
+手数55: 先手が指せそうという評判。
+
+削除理由:
+- 「控室では」 → ルール1, 6
+- 「２２時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈４時間４０分、佐藤和５時間２５分。」 → ルール3
+
+手数56: △４六歩から先手玉へ迫るのが狙い。
+
+削除理由:
+- 削除対象なし
+
+手数62: 手筋。▲同玉は△６九角、▲同飛なら△３六角がある。
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈４時間４６分、佐藤和５時間４９分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「２３時３５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は伊奈５時間９分、佐藤和５時間５２分。」 → ルール3
+
+手数69: ▲４八金と逃げるのは△４七角▲同金△同歩成▲同玉△４六金で後手の勝ち筋。
+
+削除理由:
+- 削除対象なし
+
+手数72: この手も厳しい。後手優勢。
+
+削除理由:
+- 削除対象なし
+
+手数82: 先手は投了した。投了以下は▲４七同玉は△２七竜で、▲４七同歩は△５六桂で一手一手の寄り。
+
+削除理由:
+- 「伊奈は残り１分になるまで考えてから」 → ルール1, 3
+- 「終局時刻は０時２５分。」 → ルール3
+- 「消費時間は伊奈５時間５９分、佐藤和５時間５８分。」 → ルール3
+- 「勝った佐藤和は１勝１敗、敗れた伊奈は０勝２敗となった。」 → ルール4

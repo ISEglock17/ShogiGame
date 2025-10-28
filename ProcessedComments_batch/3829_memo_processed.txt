@@ -1,0 +1,87 @@
+**Structuring the Commentary**
+
+Okay, so I need to take these Japanese chess match comments and reformat them according to specific rules, stripping out the excess and streamlining the information. It sounds like a straightforward process.
+
+Essentially, I need to:
+
+1.  Read each comment.
+2.  Identify the parts that fit the pre-defined "delete" rules.
+3.  Apply those rules and remove the unwanted information.
+4.  Finally, replace the specific player names with the standard labels "先手" (Sente - First Player/Black) and "後手" (Gote - Second Player/White).
+
+Easy enough. Should be a quick and clean operation once I've got the rules internalized.
+
+手数13:
+
+削除理由:
+- 「消費時間は中村１２分、佐藤１８分。」 → ルール3
+
+手数15:
+
+削除理由:
+- 「消費時間は中村２７分、佐藤３１分。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「この局面で中村が２４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村５１分、佐藤１時間８分。」 → ルール3
+- 「昼食の注文は佐藤がたぬきそば。中村はなし。」 → ルール7
+
+手数19:
+
+削除理由:
+- 「昼食休憩をはさんで１時間２分の着手。」 → ルール3, 7
+
+手数21:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は中村１時間３０分、佐藤１時間１２分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は中村１時間５６分、佐藤２時間４５分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は中村２時間１７分、佐藤３時間１６分。」 → ルール3
+- 「そのまま中村が１時間２５分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村が３時間４２分、佐藤が３時間１６分。」 → ルール3
+- 「夕食の注文は中村はきつねうどん。佐藤はなし。」 → ルール7
+
+手数37:
+
+削除理由:
+- 「▲３六歩は夕食休憩をはさんで２時間１３分の長考だった。」 → ルール3, 7
+- 「佐藤が考えている。」 → ルール3
+- 「と控え室の声」 → ルール1, 6
+- 「力が入ってますね」 → ルール1
+- 「２０時を過ぎた。」 → ルール3
+- 「残り時間は中村１時間３０分。佐藤２時間４４分。」 → ルール3
+- 「２１時を過ぎても佐藤は考えている。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「△５五角は１時間３８分の大長考。」 → ルール3
+
+手数47: 飛車を捨てて迫る。
+
+削除理由:
+- 「時刻は２３時になろうとしている。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２３時３０分ころの局面。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２３時５５分、６３手で中村の勝ち。」 → ルール3
+- 「残り時間は中村２３分、佐藤１分。」 → ルール3

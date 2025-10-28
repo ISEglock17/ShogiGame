@@ -1,0 +1,63 @@
+**Focusing the Lens: Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. They're looking for me to streamline them, you know, get rid of all the fluff. I get it. The goal is to isolate the real meat – the stuff that actually helps with *棋譜解析* (game analysis).  
+
+Right now, the comments are bloated. There's so much unnecessary baggage: biographical details, time stamps, irrelevant introductions... all noise.  My task is to surgically remove all of that. What I need to do is keep the essence: the explanations of the board state and the individual moves, expressed in a way that reads smoothly and logically. I want the final product to be a concise and pure distillation of the game's unfolding strategy. This will be a much cleaner input for analysis and let me focus on the interesting parts of each game!
+
+手数1:
+
+削除理由:
+- 「◆井上　慶太（いのうえ　けいた）九段◆」 → ルール1, 4
+- 「１９６４年１月１７日生まれの５０歳。兵庫県芦屋市出身。若松政和七段門下。」 → ルール4
+- 「１９７９年、６級で奨励会入会。１９８３年２月、四段昇段（プロ入り）。２０１１年３月、九段昇段。棋士番号は１５７。」 → ルール4
+- 「棋戦優勝は計２回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆安用寺　孝功（あんようじ　たかのり）六段◆」 → ルール1, 4
+- 「１９７４年８月３０日生まれの３９歳。京都府宇治市出身。森信雄七段門下。」 → ルール4
+- 「１９８８年、６級で奨励会入会。１９９９年１０月、四段昇段（プロ入り）。２００９年２月、六段昇段。棋士番号は２３４。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「井上の今年度成績は６勝１６敗（０．２７３）。」 → ルール4
+- 「通算成績は６６１勝５１０敗（０．５６５）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「安用寺の今年度成績は９勝１６敗（０．３６０）。」 → ルール4
+- 「通算成績は２３８勝２０８敗（０．５３４）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「井上の直近１０局の成績は１勝９敗。」 → ルール4
+
+手数6:
+
+削除理由:
+- 「安用寺の直近１０局の成績は１勝９敗。」 → ルール4
+
+手数29:
+
+削除理由:
+- 「２１時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲井上４時間２２分、△安用寺４時間２５分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「残り時間は▲井上１時間１８分、△安用寺１時間８分。」 → ルール3
+
+手数81: 後手が投了した。２一の飛車を助けるには△２三飛▲３四角△２二歩ぐらいだが、▲４一飛成でいつでも２三の飛車を補充する指し回しで攻めが繋がっている。また先手玉に対する攻めもしばらくない。
+
+削除理由:
+- 「ここで安用寺が投了した。」 → ルール1
+- 「終局時刻は０時３７分。」 → ルール3
+- 「消費時間は▲井上５時間３８分、△安用寺５時間４２分。」 → ルール3
+- 「勝った井上は４勝５敗、敗れた安用寺は２勝７敗となった。」 → ルール4
+- 「投了以下、」 → 冗長な表現のため整形

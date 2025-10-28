@@ -1,0 +1,122 @@
+**Processing Shogi Commentary: Streamlining the Analysis**
+
+Okay, so I've got this request to take Shogi game commentary and make it more concise and readable. Essentially, I'm being asked to apply my expertise to clean up the language. My process is pretty straightforward.
+
+First, I'm going to go through the commentary move by move. As I read each comment, I'll be referencing a set of pre-defined rules that identify redundant or irrelevant information. Anything that falls under those rules gets marked for deletion.
+
+Then, I'll move on to a second set of rules that governs replacement. The key one here is to standardize the player names. Instead of specific names, I'll swap them out for "Sente" (先手) for the first player and "Gote" (後手) for the second. This helps remove the specifics and focus on the flow of the game for wider analysis, making each commentary digestible by a more general audience.
+
+手数3: 矢倉の出だし。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数12: ともに矢倉は得意戦法。淀みなく進んでいく。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数25: 本家本元の森下システム。真っ向から受けて立つ後手の男気も素晴らしい。
+
+削除理由:
+- 「森下」 → ルール1
+- 「畠山」 → ルール1
+- 「１１時過ぎ、ここまでの消費時間は森下１７分、畠山９分。」 → ルール3
+
+---
+手数29: この局面で休憩に入った。
+
+削除理由:
+- 「昼食」 → ルール7
+- 「消費時間は森下３６分、畠山１時間２１分。」 → ルール3
+
+---
+手数30: 一風変わった位置に香を上がった。△９二飛とスズメ刺しにしたとき、▲８三銀などで飛車が死なないための工夫だろうか？
+
+削除理由:
+- 「１４時頃、消費時間は森下３６分、畠山１時間２７分。」 → ルール3
+- 「過去の実戦例は８７局あり、先手４９勝、後手３６勝、１千日手、１持将棋。△９四香も８局指されていて、結果は後手が５勝３敗で勝ち越している。」 → ルール2
+
+---
+手数35: 先手は中央、後手は端。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数39:
+
+削除理由:
+- 「１６時過ぎ、消費時間は森下２時間３４分、畠山１時間４８分。」 → ルール3
+- 「１７時過ぎ、畠山が考え続けている。」 → ルール3, 1
+
+---
+手数42:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は森下２時間３４分、畠山４時間１１分。」 → ルール3
+
+---
+手数43: 控えの歩。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数44: 合わせの歩。渋い応酬だ。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数49: 駒得を地でいく指し手。取りきれれば大きいが、どこかで△５四歩と角筋を通す手が銀に当たる。
+
+削除理由:
+- 「森下語録「駒得は裏切らない」」 → ルール1
+
+---
+手数54: 柔らかく。大駒は近づけて受けよ。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数59: 一瞬の隙をついて利かしにいく。△同飛が入れば▲５九飛のあとの▲５二金が厳しくなる。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数66: ここで銀を使うのでは戦力不足は否めないか。ゆっくり▲８二とが間に合いそうだ。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数69: △９九歩成の筋は、▲同玉△９七桂成▲９八歩でしのいでいる。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数75: 指をしならせて金打ち。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数85: 磐石。
+
+削除理由:
+- （削除対象なし）
+
+---
+手数87:
+
+削除理由:
+- 「ここで畠山が投了。」 → ルール1
+- 「消費時間は森下５時間４３分、畠山５時間５９分。」 → ルール3
+- 「勝った森下は３勝３敗、敗れた畠山は４勝１敗となった。」 → ルール4, 1

@@ -1,0 +1,131 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to whip this commentary data into shape for some serious analysis – no problem. They're basically asking me to be a digital editor, ruthlessly trimming the fat from the text. The goal is clear: to strip away all the fluff – you know, the meta-commentary, the player intros, the time stamps – and leave behind only the pure essence of the game: the board positions and the insightful move explanations. That's where the real meat is for my analysis.
+
+The user's given me a framework, a set of rules, and I'm ready to roll up my sleeves and get to work. I'm going to meticulously go through each comment, applying the rules like a scalpel, ensuring I'm only keeping the crucial details.
+
+First, anything related to people who aren't currently playing – gone. That includes all the ranks, the affiliations, the background stories of anyone not directly involved in this specific game. Second, any mention of past games, of pre-existing knowledge – out. We're interested in *this* game, in its unique narrative. Third, time is the enemy of concise analysis, so that goes too. And finally, player profiles, bios, records – all gone. Keep it sharp and focused, my specialty.
+
+手数1:
+
+削除理由:
+- 「北浜にとって初の持将棋。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「渡辺は持将棋をこれまでに２度経験し、指し直し局は２局とも制している。」 → ルール2, 4
+
+手数8:
+
+削除理由:
+- 「持ち時間がないということもあって、互いに指し手が早い。」 → ルール3
+
+手数11:
+
+削除理由:
+- 「前期のＢ級１組順位戦の対戦と同様の戦形になった。」 → ルール2
+
+手数15: ちょっとしたワナ。△８六歩▲同歩△同飛で横歩を狙えるように見えるが、▲９六歩△４六飛▲９七角△４二銀▲８二歩でしびれる。
+
+削除理由:
+
+手数17:
+
+削除理由:
+- 「北浜は棒銀よりも腰掛け銀にすることが多い。」 → ルール5
+
+手数26: 細かいところだが、後手の工夫。▲２八飛型の相掛かりには棒銀を受けるために、△８四飛型が良いといわれている。しかし、腰掛け銀になると▲６六角の筋でねらわやすく良い位置とはいえないところもある。△８四飛は攻撃に強く、△８二飛型は受けに強いといえる。後手はしばらく歩の交換を保留して、腰掛け銀が確定したタイミングで歩を交換したことで△８二飛型を得た。互いに引き飛車の相掛かり腰掛け銀の実戦例は少ない。早くも構想力が試される将棋になった。
+
+削除理由:
+- 「渡辺」 → ルール1
+
+手数30: まったくの先後同型。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「２時１０分の局面。」 → ルール3
+- 「残り時間は北浜５０分、渡辺５９分。」 → ルール3
+- 「渡辺は２手目以外は時間を使っていない。」 → ルール3
+
+手数35: 先手の利を生かそうとする位取り。
+
+削除理由:
+
+手数38: バランスを取る将棋になった。
+
+削除理由:
+- 「堅い玉形の将棋が得意と言われている渡辺だが、このようにバランスを取る将棋も苦手ではない。」 → ルール1, 5
+- 「過去の実戦ではここから▲４四歩△同歩▲同角△同角▲同飛△４三歩▲４八飛と角交換になっている。」 → ルール2
+
+手数46: △３三銀と形を整える狙い。
+
+削除理由:
+
+手数49: 互いに好形。
+
+削除理由:
+
+手数50:
+
+削除理由:
+- 「渡辺は部分的に似た形を指したことがある。」 → ルール1, 2
+
+手数51: 次に▲５五銀左の２枚ガッチャン銀を狙っている。反撃を狙うなら（１）△７三桂は考えられるが、△８二飛とのバランスが悪いか。（２）△８五飛で▲５五銀左を受けながら△２五飛を狙うのはどうか。
+
+削除理由:
+- 「２時半の局面。」 → ルール3
+- 「残り時間は北浜３８分、渡辺５８分。」 → ルール3
+
+手数53: 機敏な仕掛けか。△同歩に▲１三歩△同香▲１四歩△同香▲３六角が狙い筋だ。▲１三歩に対して、部分的には△２四銀が手筋の受け（▲１五香を防いでいる）だが、４筋が薄くなるので、▲５五銀左△同銀▲同銀で先手は▲４四歩から４筋突破を目指せそうだ。
+
+削除理由:
+
+手数55: △９五歩は▲１五香と無視されるという。
+
+削除理由:
+- 「「うるさいですね」と飯島五段。」 → ルール1
+- 「浦野七段も同調。」 → ルール1
+
+手数56: 後手は香で歩を取った。
+
+削除理由:
+- 「しばらく考えていた渡辺、３時９分に１５分の「長考」でスーッと滑らせるように」 → ルール1, 3
+- 「残り時間は北浜３１分、渡辺２９分。」 → ルール3
+
+手数59: 狙い筋が実現した。この角は６三金にも狙いをつけている。
+
+削除理由:
+
+手数60: 手筋の歩で反撃。本格的な中盤戦に移行した。
+
+削除理由:
+
+手数63: 後手の継続手段はいかに。
+
+削除理由:
+- 「渡辺」 → ルール1
+
+手数64: △８五歩▲同歩△８六歩の継ぎ歩では物足りないと見たか。
+
+削除理由:
+- 「控え室の棋士から「えー」の声が上がった。」 → ルール1, 6
+
+手数66: ▲同歩にどう攻めを続けるのだろうか。
+
+削除理由:
+
+手数67:
+
+削除理由:
+- 「控え室の棋士は渡辺の狙いを分かりかねている。」 → ルール1, 6
+
+手数68: ▲同角は△８五飛で十字飛車が実現するが、▲２七角と引くとどうするか。△１六歩と伸ばす手が検討されている。
+
+削除理由:
+- 「控え室ではマンガのような手といわれていた。」 → ルール1, 6
+- 「「こんな時間にこんな角を打たれたら動揺しますね」と飯島五段。」 → ルール1
+- 「時刻はまもなく３時３０分。」 → ルール3

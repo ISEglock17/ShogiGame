@@ -1,0 +1,84 @@
+**Processing the Request: Reshaping Shogi Game Commentary**
+
+Okay, so the user wants me to clean up and reformat some Shogi game commentary. I get it, they probably have a huge dataset or something and need it to be consistent. Essentially, they've given me a rule set, and my job is to filter out the noise and present the core information in a readable, natural way. This specific example seems simple enough.
+
+The input is "手数3: 浦野は指し直し局も四間飛車を採用した。" So, step one, identify the core elements: the move number, who's making the move, and what move they are making. Then, I need to strip away any extraneous phrases and structure it properly.
+
+手数3: 先手は指し直し局も四間飛車を採用した。
+
+削除理由:
+- 「浦野」 → ルール1
+
+手数26: 先ほどと同じく相穴熊の将棋になった。
+
+削除理由:
+- 「２３時１５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は浦野５時間２分、桐山３時間４３分。」 → ルール3, 1
+
+手数37: 千日手局と似ている展開。
+
+削除理由:
+- 「千日手局と」 → ルール2
+
+手数52: 飛車のさばきを押さえる。
+
+削除理由:
+- （削除なし）
+
+手数56:
+
+削除理由:
+- 「０時２５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は浦野５時間２分、桐山４時間１３分。」 → ルール3, 1
+
+手数58: 後手の桂香得。
+
+削除理由:
+- （削除なし）
+
+手数62: 先手の飛車を狙う。後手優勢。
+
+削除理由:
+- （削除なし）
+
+手数64: 先に駒得しているので、銀を渡しやすい。その代償で飛がさばける。
+
+削除理由:
+- （削除なし）
+
+手数76: △３三同金は▲６四馬△７九飛成▲４二銀不成で、守りの金が１枚はがされてしまう。
+
+削除理由:
+- （削除なし）
+
+手数83: 非常手段。
+
+削除理由:
+- （削除なし）
+
+手数85: ▲３三成銀が狙い。
+
+削除理由:
+- （削除なし）
+
+手数86: 次に△３九飛成▲同銀△２七桂不成が狙い。
+
+削除理由:
+- （削除なし）
+
+手数87:
+
+削除理由:
+- 「浦野はここで１分将棋になった。」 → ルール1, 3
+
+手数92: 手堅い受け。
+
+削除理由:
+- （削除なし）
+
+手数104: 先手に有効な手がない。
+
+削除理由:
+- 「ここで浦野が投了した。」 → ルール8
+- 「消費時間は浦野５時間５９分、桐山５時間１７分。」 → ルール3, 1
+- 「勝った桐山は２勝５敗、敗れた浦野は１勝６敗となった。」 → ルール4, 1

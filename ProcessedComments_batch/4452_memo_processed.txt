@@ -1,0 +1,127 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff and irrelevant details so I'm left with pure, concise explanations of the board positions and moves. Think of it like a distilled essence of the game's strategic narrative.
+
+My primary task will be to identify and remove all the noise – the metadata, player introductions, time stamps, and anything else that doesn't directly contribute to understanding the *why* and *how* of each move. I'll need a set of clear rules to guide me in this process, ensuring I only keep the parts that are vital for proper Kifu analysis. It's about getting to the heart of the game, free from extraneous clutter.
+
+手数1:
+
+削除理由:
+- 「有吉の本年度の成績は３勝９敗／勝率は０．２５０」 → ルール4
+- 「通算成績は１０８２勝９９２敗／勝率は０．５２２」 → ルール4
+
+手数2:
+
+削除理由:
+- 「上野の本年度の成績は８勝８敗／勝率は０．５００」 → ルール4
+- 「通算成績は１１０勝１３９敗／勝率は０．４４２」 → ルール4
+
+手数19:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は有吉９分、上野１７分。」 → ルール3
+- 「ここで上野が１時間３３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は有吉９分、上野１時間５０分。」 → ルール3
+- 「昼食の注文は有吉がきつねそば。上野が納豆雑炊。」 → ルール7
+
+手数21:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は有吉３５分、上野１時間５４分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は有吉１時間５分、上野２時間５０分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「４０分の長考で指された。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は有吉１時間２４分、上野３時間４５分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「（３２手目以後の棋譜入力・コメント＝朱雀）」 → ルール1, 8
+
+手数33:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は有吉１時間２４分、上野３時間５６分。」 → ルール3
+
+手数38: 後手は玉を深く囲った。
+
+削除理由:
+
+手数41: 先手の指し手は早い。間合いを計っている。
+
+削除理由:
+- 「有吉の」 → ルール1
+- 「▲９六歩はノータイム、▲１六歩も１分での着手。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「ここで有吉が２４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は有吉１時間５７分、上野５時間。」 → ルール3
+
+手数43: 角をのぞいた。
+
+削除理由:
+- 「５６分考えて」 → ルール3
+
+手数44: 後手は△６二飛と指した。読み筋だったのかもしれない。
+
+削除理由:
+- 「上野は」 → ルール1
+- 「１分で」 → ルール3
+- 「だったか」 → 自然な文章への整形
+
+手数45:
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「消費時間は有吉２時間３１分、上野５時間１分。」 → ルール3
+
+手数53: 敵陣の形を乱す。取ればもちろん▲６四角。
+
+削除理由:
+
+手数61: 先手は１〜４筋全ての歩を突き捨てた。
+
+削除理由:
+
+手数66:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「残り時間は有吉３時間４分、上野１９分。」 → ルール3
+
+手数74: どちらで取っても△９五歩から端を破られる。
+
+削除理由:
+
+手数80: 後手陣は堅いので思い切った攻めができる。
+
+削除理由:
+
+手数89:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「残り時間は有吉２時間４４分、上野１０分。」 → ルール3
+- 「有吉は時間を残しているが、進行は速い。」 → ルール3
+
+手数92: ８八に何か合駒をしても、△９六香がある。
+
+削除理由:

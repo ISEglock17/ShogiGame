@@ -1,0 +1,87 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff – the metadata, the bios, the time stamps – and leave behind only the meaty stuff, the actual insights into the board state and the moves. Think of it like a chef meticulously trimming away excess fat to reveal the delicious, essential flavors underneath. We want pure, unadulterated commentary that a keen analyzer like me can actually *use*.
+
+My task is to process these comments according to the given rules. It's about precision and efficiency. We need to be surgical in our edits, ensuring that what remains is not only accurate but also flows naturally as an explanation of the game's unfolding drama. This is a task I'm ready for. It's a fundamental step in making this data truly valuable for deeper analysis. Let's see how well I can execute it.
+
+手数24:
+
+削除理由:
+- 「２３時３０分頃の局面。」 → ルール3
+- 「残り時間は▲泉４９分、△阿久津１時間。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「２３時５５分頃の局面、」 → ルール3
+- 「残り時間は▲泉３８分、△阿久津５４分。」 → ルール3
+
+手数53: △同香▲同飛△９三歩と局面を収めて、△１六歩からの突破を狙う筋が有力。
+
+削除理由:
+- 「０時１０分頃の局面。」 → ルール3
+- 「残り時間は▲泉３４分、△阿久津４６分。」 → ルール3
+
+手数54: △同香▲同飛を入れずに局面を収めた。
+
+削除理由:
+
+手数55: あくまでも端の一点突破を狙う。
+
+削除理由:
+
+手数62: これで先手の端の突破が確定した。しかし、後手玉の右辺には広い安全地帯があり、駒得も大きい。
+
+削除理由:
+
+手数65: ここで△６四角と打つ手があるようだ。４六の銀取りの先手であり、▲８四香からの攻めも狙っている。
+
+削除理由:
+
+手数66: この歩を取ると△６四角がさらに厳しくなる。
+
+削除理由:
+- 「次の手の考慮中に▲泉の持ち時間は１０分を切った。」 → ルール3
+
+手数69: ６四でいばっている角をどかすことが最優先との判断。後手は▲６五歩と取り込まれる前に攻めなければいけない。
+
+削除理由:
+- 「この手はかなり力のこもった手つきで指された。」 → ルールなし（盤面解説と直接関係ないため削除）
+- 「残り時間は▲泉７分、△阿久津３０分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「この手に３分使って▲泉の残り時間はあと４分。」 → ルール3
+
+手数76: ▲６四香△同金▲８二角を受けた早逃げ。
+
+削除理由:
+- 「△８七香成▲同歩として△６六歩の取り込みや△９八銀の打ち込みが厳しい。」 → ルールなし（指し手と直接関係ない、可能性の解説のため削除）
+
+手数78:
+
+削除理由:
+- 「「阿久津が良さそうだが勝つまではまだまだ長い」と対局後に控え室を訪れた野月七段。」 → ルール1, 6
+
+手数83: 次に後手から△６七歩成▲同金△６九角（または銀）の攻めがある。この手は悪いと見た先手の勝負手。後手が間違えなければ勝ちと言われている。
+
+削除理由:
+
+手数89:
+
+削除理由:
+- 「この手に１分考えて▲泉は１分将棋となった。」 → ルール3
+- 「△阿久津は残り１７分。」 → ルール3
+
+手数95: 取って詰まない。
+
+削除理由:
+- 「控え室では後手がしっかりと逃げれば詰まないと言われている。」 → ルール1, 6
+
+手数102:
+
+削除理由:
+- 「この局面で▲泉が投了した。」 → ルールなし（投了という結果は盤面解説ではないため削除）
+- 「消費時間は▲泉５時間５９分、△阿久津５時間４８分。」 → ルール3
+- 「勝った阿久津は７勝２敗で３番手をキープ、敗れた泉は４勝５敗となった。」 → ルール4

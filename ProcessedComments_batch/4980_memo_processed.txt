@@ -1,0 +1,98 @@
+**Cleaning Up Game Analysis**
+
+Okay, so I need to clean up these comments from Shogi game data. It looks like the user wants me to focus specifically on the game's actual analysis, not all the extra fluff that tends to come along with it.
+
+My goal here is to get rid of anything that's not directly related to the board position or the moves being played. That means ditching all the metadata, like player introductions or time stamps, which are important in their own context but irrelevant for pure game analysis. I'm going to follow the rules the user has laid out for what constitutes "unnecessary" information.
+
+Once I've identified and deleted the irrelevant bits, the real work begins. I'll need to restructure the remaining pieces of commentary into natural-sounding sentences. It's about taking these disjointed fragments of analysis and stitching them together so they read smoothly and make sense as a coherent explanation of the game's progress.
+
+手数1:
+
+削除理由:
+- 「藤原の本年度の成績は９勝１０敗。」 → ルール4
+- 「通算成績は３４５勝３５６敗（０．４９２）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「佐藤和の本年度の成績は７勝８敗。」 → ルール4
+- 「通算成績は１６６勝９２敗（０．６４３）」 → ルール4
+
+手数14:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は▲藤原２５分、△佐藤和２８分。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「ここで藤原が４１分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲藤原１時間２４分、△佐藤和３８分。」 → ルール3
+- 「昼食の注文は両者なし。」 → ルール7
+
+手数21:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲藤原１時間３９分、△佐藤和５４分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲藤原２時間６分、△佐藤和２時間０分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は▲藤原２時間３５分、△佐藤和２時間２分。」 → ルール3
+
+手数35: 飛車をばっさり切って両取りを掛けた。
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲藤原２時間４１分、△佐藤和２時間５１分。」 → ルール3
+- 「ここで佐藤和が１時間３２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲藤原２時間４１分、△佐藤和４時間２３分。」 → ルール3
+- 「夕食の注文は両者なし。」 → ルール7
+
+手数40:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲藤原２時間５８分、△佐藤和４時間３７分。」 → ルール3
+- 「２１時を回ったが、藤原はまだ考えている。」 → ルール3, 1
+
+手数42:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「消費時間は▲藤原４時間５３分、△佐藤和５時間７分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「２３時１５分頃の局面。」 → ルール3
+- 「残り時間は▲藤原３６分、△佐藤和３０分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「２３時４５分頃の局面。」 → ルール3
+- 「残り時間は▲藤原６分、△佐藤和２１分。」 → ルール3
+
+手数73: △６八銀不成が詰めろで後手勝ちと言われている。
+
+削除理由:
+- 「０時１５分頃の局面。」 → ルール3
+- 「残り時間は▲藤原２分、△佐藤和８分。」 → ルール3
+
+手数81: 後手が投了した。先手玉に詰みはなく、後手玉には必至が掛かっている。７４手目△６八銀不成は詰めろと言われていたが、詰めろになっていなかったようだ。
+
+削除理由:
+- 「ここで佐藤和が投了した。」 → 置換
+- 「終了時刻は０時２３分。」 → ルール3
+- 「消費時間は▲藤原５時間５８分、△佐藤和５時間５９分。」 → ルール3
+- 「勝った藤原、敗れた佐藤和ともに４勝３敗となった。」 → ルール4

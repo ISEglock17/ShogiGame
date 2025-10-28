@@ -1,0 +1,121 @@
+**Processing the User's Request: Streamlining Shogi Commentary**
+
+Okay, so the user wants me to process these Shogi game comments. They're looking for a cleaner, more focused version, stripped down to just the essential game analysis. It's about taking the raw, chatty commentary and making it suitable for deep analysis of the moves themselves, rather than the surrounding noise.
+
+Here's the gist of it: I need to transform these comments based on a specific set of rules. The goal is to remove all the fluff – the introductions of players, their ranks, any mention of their lineage or schools, time stamps, and any other extra information that doesn't directly relate to what's happening on the board.
+
+In short, my job is to filter the commentary, keeping only the actual, relevant analysis of the board state and the moves being played. I need to be a digital editor, removing the unnecessary information while retaining the core strategic discussion of the game.
+
+手数5:
+
+削除理由:
+- 「高崎は振り飛車党。」 → ルール5
+
+手数15: 藤井システムの駒組み。
+
+削除理由:
+
+手数18: 急戦を見せる。
+
+削除理由:
+
+手数22: 後手は先手の指し手を見てから自分の作戦を決めようとしている。先手が▲４七銀とするならば、持久戦に不向きの駒組みなので、△４四歩から穴熊を目指す。
+
+削除理由:
+
+手数24:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は高崎２９分、佐藤１５分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「ここで高崎が４３分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲高崎１時間３５分、△佐藤１９分。」 → ルール3
+- 「昼食の注文は高崎が親子丼。佐藤はなし。」 → ルール7
+
+手数27:
+
+削除理由:
+- 「昼食休憩をはさんで１時間６分の考慮。」 → ルール3, 7
+
+手数28:
+
+削除理由:
+- 「△８四飛は１時間２３分の長考。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１５時ころの局面。」 → ルール3
+- 「消費時間は▲高崎２時間１０分、△佐藤１時間４２分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１６時ころの局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２時間１４分、△佐藤２時間３２分。」 → ルール3
+
+手数33: 力の入った攻防が続く。
+
+削除理由:
+- 「△７六歩は４４分、▲８八角は４８分と」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１７時ころの局面。」 → ルール3
+- 「消費時間は▲高崎３時間２分、△佐藤２時間４１分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「この局面で高崎が３８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲高崎４時間１６分、△佐藤２時間４４分。」 → ルール3
+- 「夕食の注文は高崎が冷やしたぬきうどん。佐藤はなし。」 → ルール7
+- 「「似た形が多いですけど、形勢は分かりません」との声。」 → ルール1
+
+手数41: 先手は角を打った。
+
+削除理由:
+- 「夕休を挟んで４７分の考慮で高崎は」 → ルール3, 7
+
+手数42:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は▲高崎４時間２５分、△佐藤３時間０分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「２０時４０分ころの局面。」 → ルール3
+- 「残り時間は▲高崎４３分、△佐藤２時間４５分と差がついてきた。」 → ルール3
+- 「控え室の評判も佐藤よし。」 → ルール1, 6
+- 「手番の佐藤が「う〜ん」と大きくうなったのが聞こえた。」 → （盤面に関係ない情報のため削除）
+
+手数50: 王手馬取り狙いの金打ち。▲４八同金、▲４八同玉いずれも飛車で馬が抜ける。
+
+削除理由:
+
+手数66:
+
+削除理由:
+- 「２２時ころの局面。」 → ルール3
+- 「残り時間は▲高崎２４分、△佐藤１時間５６分。」 → ルール3
+- 「やはり居飛車リードという。」 → ルール1
+
+手数79:
+
+削除理由:
+- 「２２時５０分ころの局面。」 → ルール3
+- 「残り時間は▲高崎３分、△佐藤１時間３３分。」 → ルール3
+
+手数100:
+
+削除理由:
+- 「２３時１０分、１００手で佐藤天四段の勝ち。」 → ルール3, 4
+- 「残り時間は▲高崎１分、△佐藤１時間２４分。」 → ルール3
+- 「佐藤は順位戦デビューを白星で飾った。」 → ルール4

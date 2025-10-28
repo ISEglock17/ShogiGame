@@ -1,0 +1,163 @@
+**Cleaning Up Game Analysis Commentary**
+
+Okay, so I'm looking at a dataset of Shogi game records, and specifically, the comments that accompany each move.  The goal here is pretty clear: I want to streamline those comments.  They're packed with potentially valuable insights, but they're also cluttered with a lot of noise.  Think introductions, time stamps, and background fluff - all the stuff that's useful contextually, perhaps, but ultimately distracts from the core analytical content.
+
+My job is to extract the pure, unadulterated explanation of the board state and the reasoning behind each move. I want those concise, direct interpretations, the stuff that really gets to the heart of what's happening on the board.  Essentially, I need to clean up these comments to focus on the essential tactical and strategic considerations.  Let's get to work...
+
+手数1:
+
+削除理由:
+- 「泉は初手に２分。」 → ルール3
+
+手数8: 後手番は一手損角換わりの作戦。
+
+削除理由:
+- 「青野」 → ルール1
+
+手数22:
+
+削除理由:
+- 「ここまでの消費時間は泉１１分、青野１２分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「泉が４８分を使って、ここで昼食休憩。」 → ルール3, 7
+- 「消費時間は泉１時間８分、青野４８分。」 → ルール3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+手数35:
+
+削除理由:
+- 「午後最初の一手。」 → ルール7
+- 「昼食休憩をはさんで１時間１３分を使った。」 → ルール7, 3
+
+手数43:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は泉２時間２３分、青野２時間２４分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は泉２時間４１分、青野３時間７分。」 → ルール3
+
+手数50: 後手桂得。先手はこの一瞬で手が作れるかどうか。
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は泉３時間３７分、青野３時間１７分。」 → ルール3
+- 「夕食の注文は、青野はうな重（梅）と肝吸い。」 → ルール7
+
+手数51: 先手は攻撃を決断。
+
+削除理由:
+- 「１９時、対局再開。」 → ルール3, 7
+- 「泉は」 → ルール1
+
+手数60:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は泉３時間４１分、青野３時間５９分。」 → ルール3
+
+手数65: 駒損を回復しにゆく。
+
+削除理由:
+
+手数75:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+- 「消費時間は泉３時間５１分、青野４時間２７分。」 → ルール3
+
+手数78: 後手玉は上部が開けている。
+
+削除理由:
+- 「青野」 → ルール1
+
+手数80:
+
+削除理由:
+- 「２０時４５分頃の局面。」 → ルール3
+
+手数83:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は泉４時間１分、青野４時間４１分。」 → ルール3
+
+手数86: この玉は捕まらない。後手勝勢と言われている。
+
+削除理由:
+- 「青野」 → ルール1
+
+手数91: 角が取れた。△４四同飛は▲３三角が王手飛車。
+
+削除理由:
+
+手数96:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は泉４時間７分、青野４時間５２分。」 → ルール3
+
+手数100: ムードは怪しいが。
+
+削除理由:
+
+手数102: 駒をすべて取られては、先手にも入玉のルートが開けてくる。
+
+削除理由:
+
+手数105: やはり後手よしか。
+
+削除理由:
+- 「青野」 → ルール1
+
+手数106:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は泉１時間２９分、青野５４分。」 → ルール3
+
+手数113:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「残り時間は泉１時間１２分、青野４５分。」 → ルール3
+
+手数114: 気持ちのよい活用。
+
+削除理由:
+
+手数120:
+
+削除理由:
+- 「時刻は２３時を過ぎた。」 → ルール3
+
+手数123: 両者ともに手が早い。
+
+削除理由:
+
+手数124: 後手勝勢。
+
+削除理由:
+- 「青野」 → ルール1
+
+手数129: △７二龍と引けば先手玉は△８八銀以下の詰めろ。
+
+削除理由:
+
+手数130:
+
+削除理由:
+- 「残り時間は泉５０分、青野３１分。」 → ルール3
+
+手数142:
+
+削除理由:
+- 「控え室では「点数勝負か？」の声も聞かれ始めた。」 → ルール1, 6
+- 「残り時間は泉４０分、青野１８分。」 → ルール3

@@ -1,0 +1,176 @@
+**Cleaning Up Game Analysis Commentary**
+
+Okay, so I need to refine these Shogi commentary snippets. Essentially, I'm being asked to transform raw commentary, which often includes a lot of noise, into concise, focused analysis. My goal is to extract the core insights about the board position and moves themselves, while stripping away all the fluff. I'm talking about things like the speaker's introduction, any time stamps, or references to past games that don't directly impact the current analysis.
+
+Here's my plan: First, I'll systematically go through each comment and identify anything that falls under the specified deletion rules. I'll make sure to get rid of anything that doesn't actually contribute to the explanation of the current state of the game or the strategic reasoning behind a move. Then, I'll work on smoothing out what remains into a clear and understandable sentence.
+
+Finally, I'll output the results in a very specific format. It'll start with the move number, followed by the cleaned-up comment. Immediately following, I will then clearly list the reasoning for any deletions that I had to make. That way, the user can immediately understand the output in the context of the raw text and quickly identify exactly what I've done. This is critical for transparency and accuracy.
+
+手数18: △５三銀右は急戦の意思表示。
+
+削除理由:
+
+手数22: 一時的に先手陣はかなりの悪形。その瞬間をとらえて△５五歩と動くのは棋理にかなっている。
+
+削除理由:
+
+手数33:
+
+削除理由:
+- 「ここまでの消費時間は島３８分、泉１７分。」 → ルール3
+- 「昨年末の竜王戦第６局▲羽生善治名人−△渡辺明竜王でも現れた局面。」 → ルール1, 2
+- 「後手の渡辺竜王は△３一玉と寄っている。」 → ルール1, 2
+
+手数34: 後手は玉を寄った。▲６五歩が成立するかどうかが焦点のひとつ。以下△６五同銀▲６六歩△５四銀▲７三角成△同桂▲８三角と進めば純粋な飛車金両取りだ。
+
+削除理由:
+- 「竜王戦と同じく」 → ルール2
+- 「ここで島が３３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は島１時間１１分、泉４３分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数35: 先手の一手は▲７九玉だった。早めに玉を囲うべきだったのかもしれない。▲７九玉の局面は実戦例がない。
+
+削除理由:
+- 「昼休あけの」 → ルール7
+- 「竜王戦で羽生名人は▲２五歩と指し７０手の短手数で敗れている。」 → ルール1, 2
+- 「「早めに玉を囲うべきでした」との感想を残している。」 → ルール1, 2
+
+手数36: 離れ駒をなくし後手は戦いが可能になった。
+
+削除理由:
+
+手数42: 角を追いかける。▲３五同歩なら△３六歩とし、角が逃げたら△７五銀が飛車取りになる。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は島１時間２２分、泉１時間９分。」 → ルール3
+
+手数43: 角を引くスペースを作った。
+
+削除理由:
+- 「５７分考えて」 → ルール3
+
+手数45: この局面は後手の１歩得。△７七飛成から△２七銀も見えるので先手も怖い。▲７九玉とひとつ寄ってあるのが頼りだ。
+
+削除理由:
+- 「１５時ころの局面。」 → ルール3
+- 「消費時間は島２時間１９分、泉１時間１３分。」 → ルール3
+
+手数46: 角交換を挑む。
+
+削除理由:
+
+手数49: 意を決して▲８二角。無条件に▲９一角成〜▲９二馬まで進めば先手よしだが、この局面は後手に手段が多い。一例として△４九角▲３六飛△６七角成▲同金△８一金とすれば角が死んでいるが、▲７三角成△同飛▲５五角の打ち返しがある。
+
+削除理由:
+- 「泉が考えている。」 → ルール3
+
+手数50: 歩をたたいた。▲７六同銀は△同飛▲同金△４九角の筋がある。
+
+削除理由:
+- 「２９分の考慮で」 → ルール3
+- 「消費時間は島２時間４５分、泉２時間４分。」 → ルール3
+- 「１６時を過ぎた。」 → ルール3
+
+手数51: 力強く▲７六同銀。△７六同飛▲同金△４九角はのちに▲７三角成が生じるので大丈夫とみたのだろう。
+
+削除理由:
+
+手数52: 歩で銀を取りにいく。▲６五銀と出るか、▲９一角成か。
+
+削除理由:
+
+手数56: 手筋の突き捨て。△４九角の筋があるので放置はできないだろう。
+
+削除理由:
+
+手数57: ▲８六同歩と応じた。
+
+削除理由:
+- 「ノータイムで」 → ルール3
+
+手数58: 飛車取りと同時に６七金に狙いをつけた急所の角打ち。飛車の逃げ場が難しい。▲３六飛は横利きが消えて猛攻を浴びそうだ。
+
+削除理由:
+
+手数59: 受けに利かせて２八へ。△３七歩成は角が利いているので大丈夫。
+
+削除理由:
+
+手数60: じわりと歩を伸ばした。
+
+削除理由:
+
+手数61:
+
+削除理由:
+- 「この局面で泉が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は島３時間５９分、泉３時間１分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数62: 銀を打った。飛車を取りにいく。
+
+削除理由:
+- 「夕休が終わってすぐに」 → ルール7
+
+手数64: △３八銀成▲４九飛△同成銀は成銀が重い。▲３八同飛△同銀不成なら△４九飛の王手桂取りが残る。
+
+削除理由:
+
+手数68: 味のよい活用。△５七成銀▲同金△５九飛が厳しい。
+
+削除理由:
+
+手数69: 攻防に利かす角打ち。
+
+削除理由:
+
+手数70: 流れるように後手の攻めが続いている。
+
+削除理由:
+
+手数71:
+
+削除理由:
+- 「２０時２０分ころの局面。」 → ルール3
+- 「消費時間は島４時間２６分、泉３時間６分。」 → ルール3
+
+手数73: 歩の裏側から香を打つ。
+
+削除理由:
+
+手数79: △７六歩▲１一角成△７七桂と攻めて後手があませそうだといわれている。後手玉は▲１一角成のあと▲２二銀△４一玉▲３二香成のように攻めたときに５二玉の形が詰ましにくいという。
+
+削除理由:
+- 「泉は慎重に時間を使っている。」 → ルール3
+- 「読み切ろうとしているのだろうか。」 → ルール3
+
+手数80: 角道を止めて受けに回った。
+
+削除理由:
+
+手数85: △４四同飛に▲５五馬と使う意味か。
+
+削除理由:
+- 「２２時を過ぎた。」 → ルール3
+- 「消費時間は島５時間１５分、泉４時間２４分。」 → ルール3
+
+手数88: この△３五角は痛い。中盤からずっと先手が苦しそうだ。
+
+削除理由:
+- 「「〜ですね。」と片上五段」 → ルール1
+
+手数93: こちらから角取りに。
+
+削除理由:
+- 「２２時５０分ころの局面。」 → ルール3
+
+手数94: 一回逃げた。▲２六同金ならそこで△５五歩の狙いだろう。単に△５五歩▲３五金よりはるかに得だ。馬を取ってから△７七歩が厳しい。
+
+削除理由:
+- 「ここで島が投了した。」 → ルール4
+- 「終局時刻は２３時７分。」 → ルール3
+- 「残り時間は泉２６分、島５９分。」 → ルール3
+- 「勝った泉は４勝４敗、敗れた島は５勝３敗となった。」 → ルール4
+- 「３番手だった島は大きく順位を下げた。」 → ルール4

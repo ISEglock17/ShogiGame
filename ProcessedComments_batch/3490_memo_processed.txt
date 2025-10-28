@@ -1,0 +1,96 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I understand the task. I need to take shogi commentary and clean it up, making it more focused and streamlined. It's essentially about removing the noise and keeping the core analysis of the game itself. My goal is to make the commentary a more useful source for someone focusing on the moves.
+
+I've got a set of rules to guide me, which is great. It essentially boils down to removing anything that isn't directly related to the current move or the state of the board. I need to scrub out any references to people *besides* the players themselves, any historical context about previous games, or any time-related details like time stamps or thinking periods.
+
+I also need to ignore any background information, like the players' biographical details, their records, their typical styles or preferred openings, and the context of the environment, such as the location, weather, or information about food breaks. Anything related to the broadcast, like links, or extra meta information must be removed.
+
+My focus has to be exclusively on the game itself, the specific moves, and the immediate implications of those moves. By filtering out all the extraneous details, I can provide a concise and focused analysis that's much more valuable to a serious player.
+
+手数1:
+
+削除理由:
+- 「記録係は西村尚通１級（２０歳、窪田義行六段門下）」 → ルール1
+
+手数19:
+
+削除理由:
+- 「ここで昼食休憩に入った。」 → ルール7
+- 「消費時間は佐藤１時間１０分、青野４８分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「すでに青野は前傾姿勢。」 → ルール1
+- 「モニターには、ゆらゆらと揺れる青野のネクタイが映し出されている。」 → ルール1
+
+手数34: 手筋の突き捨て。▲同歩なら△８五歩から十字飛車狙い。▲同銀は△６五歩がより厳しくなる。
+
+削除理由:
+
+手数36: ▲同歩はもちろん△５五角で、飛車香両取りが掛かる。
+
+削除理由:
+
+手数38: 手をぶつけた。先手は６六の地点、後手は３三の地点が薄いため、ここからは激しい攻め合いになりそうだ。
+
+削除理由:
+- 「ガキンと」 → 擬音語であり解説に不要なため削除
+
+手数41: 天王山に銀。６六の地点をカバーしながら▲４四銀の進出を見せている。
+
+削除理由:
+- 「ここで夕食休憩。消費時間は佐藤３時間２３分、青野３時間３３分。」 → ルール7, 3
+
+手数44: 一発空打ちを入れてから△２七銀と放り込んだ。▲同飛なら問答無用の王手飛車取りがある。
+
+削除理由:
+
+手数48: なんと顔面ブロック。上部に玉が行けば２七銀の顔が立つという大局観だろうか。それにしてもすごい手だ。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「２０時過ぎ、消費時間は佐藤３時間４１分。青野４時間２４分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「２１時半頃、消費時間は佐藤４時間２０分、青野４時間４７分。」 → ルール3
+
+手数69: 飛車の押さえ込みに成功。
+
+削除理由:
+
+手数71: 互いに自玉頭を開拓していく展開。これはひょっとすると…。
+
+削除理由:
+
+手数76: ただ捨ての桂。金の利きを弱めて、一気に寄せ切る手を狙っている。
+
+削除理由:
+
+手数78: ▲同金なら△７六銀。
+
+削除理由:
+
+手数80: △８七飛成と△６五銀の両狙い。さすがに前者を許すわけにはいかない。
+
+削除理由:
+
+手数84: 一本筋。▲同桂なら△３四銀と出て、次の△５九馬を狙う。
+
+削除理由:
+
+手数88: △４四同玉は▲６六角が痛打。
+
+削除理由:
+
+手数124: ここで先手投了。４五でバラバラにすれば△４七飛成で。▲５七玉も△４七飛成で即詰みとなる。
+
+削除理由:
+- 「佐藤」 → 先手（置換ルール）
+- 「消費時間は佐藤５時間５０分、青野５時間５９分。」 → ルール3

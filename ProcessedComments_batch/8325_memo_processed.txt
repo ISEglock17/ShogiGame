@@ -1,0 +1,99 @@
+**Cleaning Up the Commentary: My Approach**
+
+Okay, so I've been tasked with cleaning up these comments from Shogi game data. The goal is clear: I need to transform the raw commentary into something useful for analyzing the game, stripping away all the fluff – the metadata, player introductions, time stamps – and leaving behind only the pure, insightful analysis of the board position and moves.
+
+My plan is straightforward: first, I'll go through the comments and systematically remove anything that falls under the "delete" category. Then, and this is crucial, I'll work on smoothing out the remaining text. My aim is to create natural-sounding sentences that accurately convey the tactical and strategic nuances of the game as they unfolded. I want to retain the core meaning without the noise. This involves some intelligent parsing and potentially some rephrasing to maintain clarity and flow. This should result in a streamlined, expert-level commentary ready for further computational analysis.
+
+手数1:
+
+削除理由:
+- 「◆大平　武洋（おおひら　たけひろ）五段◆」 → ルール1, 4
+- 「１９７７年５月１１日生まれ、東京都北区出身。」 → ルール4
+- 「桐谷広人七段門下。」 → ルール1, 4
+- 「２００２年、四段。２００６年、五段。」 → ルール4
+- 「棋士番号は２４３。」 → ルール4
+手数2:
+
+削除理由:
+- 「◆佐々木　勇気（ささき　ゆうき）五段◆」 → ルール1, 4
+- 「１９９４年８月５日生まれ、埼玉県三郷市出身。」 → ルール4
+- 「石田和雄九段門下。」 → ルール1, 4
+- 「２０１０年、四段。２０１４年、五段。」 → ルール4
+- 「棋士番号は２８０。」 → ルール4
+- 「２０１３年、第３期加古川青流戦で優勝。」 → ルール4
+手数5:
+
+削除理由:
+- 「【大平の公式戦成績】」 → ルール4
+- 「通　算＝２０２勝２０９敗（０．４９２）」 → ルール4
+- 「本年度＝８勝９敗（０．４７１）」 → ルール4
+- 「昨年度＝１２勝１８敗（０．４００）」 → ルール4
+手数6:
+
+削除理由:
+- 「【佐々木の公式戦成績】」 → ルール4
+- 「通　算＝１４２勝７２敗（０．６６４）」 → ルール4
+- 「本年度＝２１勝８敗（０．７２４）」 → ルール4
+- 「昨年度＝２９勝１８敗（０．６１７）」 → ルール4
+手数11:
+
+削除理由:
+- 「大平の順位戦成績は６７勝６９敗（０．４９３）。」 → ルール4
+- 「第６１期から参加し、第６７期Ｃ級２組で昇級した。」 → ルール4
+- 「Ｃ級１組は今期が７期目となる。」 → ルール4
+手数12:
+
+削除理由:
+- 「佐々木の順位戦成績は３１勝１５敗（０．６７４）。」 → ルール4
+- 「第７０期から参加し、２期後に昇級した。」 → ルール4
+- 「Ｃ級１組は今期が２期目となる。」 → ルール4
+手数17:
+
+削除理由:
+- 「▲６八玉の局面は将棋連盟のデータベースに４局あり、２勝２敗。」 → ルール2
+- 「候補手は△８二飛と△２二銀が２局ずつある。」 → ルール2
+- 「▲６八玉を最初に指したのが佐々木で、２連勝したが、その後の２局は後手が勝っている。」 → ルール2
+- 「本局は先手の大平が逆用した格好だ。」 → ルール2
+手数19:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は▲大平１４分、△佐々木２４分。」 → ルール3
+手数21: この局面までは前例が１局ある。△２三銀と上がり、飛車を目標にした後手が勝った。
+
+削除理由:
+- 「その将棋は先月の王位戦予選・▲金井−△及川戦と同一。」 → ルール1, 2
+手数34:
+
+削除理由:
+- 「１２時１０分、この局面で大平が２０分使って昼食休憩に入った。」 → ルール3, 7
+- 「△５四歩までの消費時間は▲大平５２分、佐々木５９分。」 → ルール3
+- 「昼食の注文は両者ともになし。」 → ルール7
+- 「対局は１３時に再開される。」 → ルール7
+手数35:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は▲大平５３分、△佐々木５９分。」 → ルール3
+手数45:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は▲大平１時間１６分、△佐々木２時間３７分。」 → ルール3
+手数57:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「消費時間は▲大平１時間３２分、△佐々木３時間７分。」 → ルール3
+手数69: △８九飛成〜△６五桂の王手角取りが厳しいと見られている。
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は▲大平１時間４０分、△佐々木３時間５３分。」 → ルール3
+- 「中継室では」 → ルール6
+手数72: この局面で投了。投了以下、後手は次の△６五桂が厳しい。後手玉に対する速い攻めがない。
+
+削除理由:
+- 「大平が」 → ルール1
+- 「終局時刻は１７時２５分。」 → ルール3
+- 「消費時間は▲大平１時間４２分、△佐々木４時間１７分。」 → ルール3

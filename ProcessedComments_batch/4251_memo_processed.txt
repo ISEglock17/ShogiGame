@@ -1,0 +1,144 @@
+**My Approach to Refining Shogi Game Commentary**
+
+Okay, so I'm tackling this task of cleaning up Shogi game commentary, and my goal is clear: I need to transform the existing text into something concise and useful for my analysis. I'm dealing with a lot of data, and it's full of fluff that just gets in the way of understanding the actual moves and strategy.
+
+Essentially, I want to strip away all the extraneous information – the metadata about the game, the player introductions, and the time stamps. All that really matters for my purposes are the descriptions of the board states and the rationale behind each move. So, my plan is simple:
+
+1.  **Deletion based on Rules:** I'll first analyze the comments and identify the sections that need to go, based on clearly defined rules. This will be the initial pruning.
+2.  **Natural Language Polishing:** After removing the irrelevant parts, I'll focus on what's left. I'll transform these remnants into naturally flowing sentences. The goal is to make sure that the descriptions of the board and moves make sense when read independently, even without context.
+
+手数10:
+後手はウソ矢倉を目指す。穏やかに進めば、後手が飛先不突矢倉に組める。
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は片上１６分、千葉１０分。」 → ルール3
+- 「千葉」 → ルール1
+
+手数11:
+▲２五歩△３三銀▲５五歩のタイミングを考えていたのだろうか。
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数12:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は片上４８分、千葉４１分。」 → ルール3
+- 「千葉は△６二銀に３１分の長考。」 → ルール1, 3
+
+手数13:
+相手の態度を見る。△３三角なら後手は堅い囲いに組みにくい。△３三銀が自然だが、その瞬間に中央から動こうとしている。
+
+削除理由:
+- （なし）
+
+手数16:
+
+削除理由:
+- 「△５三銀の局面で片上が２０分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は片上１時間１３分、千葉４１分。」 → ルール3
+- 「昼食の注文は片上が冷やしスタミナうどん、あんパン。千葉は注文なし。」 → ルール7
+
+手数19:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は片上１時間２２分、千葉１時間３７分。」 → ルール3
+
+手数20:
+▲３六歩〜▲３七角（▲３七桂）を防ぐ一着。▲４六角は△３四銀▲２四歩△同歩▲同飛△４三金で受かっているようだ。
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は片上１時間２２分、千葉１時間５７分。」 → ルール3
+- 「片上が長考していた。」 → ルール1, 3
+
+手数21:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は片上２時間３２分、千葉１時間５７分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「５５分の長考。」 → ルール3
+
+手数31:
+先手はどのようにして後手の陣形を崩していくのだろうか。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は片上３時間２分、千葉３時間２６分。」 → ルール3
+- 「片上」 → ルール1
+
+手数33:
+
+削除理由:
+- 「▲１六歩の局面で千葉が１３分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は片上３時間９分、千葉３時間５５分。」 → ルール3
+- 「夕食の注文は片上がけんちんうどん、おにぎり（たらこ、こんぶ）。千葉がうな玉丼、赤だし。」 → ルール7
+
+手数35:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は片上３時間３４分、千葉４時間４分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「残り時間は片上２時間１０分、千葉１時間３分。」 → ルール3
+
+手数43:
+引いているようでは勝負にならないと見て突進！
+
+削除理由:
+- （なし）
+
+手数46:
+
+削除理由:
+- 「２１時４５分ごろの局面。」 → ルール3
+- 「残り時間は片上１時間４７分、千葉４３分。」 → ルール3
+
+手数49:
+△５四銀は▲５三歩△同飛▲４四金の攻めがある。そこで、▲５六飛に△５五歩が有力視されている。
+
+削除理由:
+- 「２２時３０分過ぎの局面。」 → ルール3
+- 「残り時間は片上１時間１１分、千葉４３分。」 → ルール3
+- 「千葉は考慮中に残り２０分を切った。」 → ルール1, 3
+
+手数54:
+先手良しといわれている。（１）▲５四金か（２）▲５三金か。（１）は以下△５七銀▲６八金と面倒を見るコース。（２）は決めにいくコース。
+
+削除理由:
+- 「２３時２０分の局面。」 → ルール3
+- 「残り時間は片上１時間６分、千葉５分。」 → ルール3
+
+手数55:
+飛車の方を取った。
+
+削除理由:
+- 「３９分考えて」 → ルール3
+
+手数62:
+
+削除理由:
+- 「０時前の局面。」 → ルール3
+- 「残り時間は片上１３分、千葉４分。」 → ルール3
+
+手数87:
+ここで後手は投了した。後手は動かす駒が難しい。７六飛が遠く１六馬を狙っている。
+
+削除理由:
+- 「０時３５分の局面。」 → ルール3
+- 「残り時間は両者１分。」 → ルール3
+- 「千葉」 → ルール1
+- 「終局時刻は０時３５分。」 → ルール3
+- 「消費時間はともに５時間５９分。」 → ルール3
+- 「勝った片上は２勝１敗、敗れた千葉は０勝２敗となった。」 → ルール4

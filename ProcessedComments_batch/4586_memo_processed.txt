@@ -1,0 +1,142 @@
+**Focusing the Signal, Sharpening the Analysis**
+
+Okay, so I'm presented with a task of cleaning up these comments within Shogi game datasets. I understand the goal: we need to transform this raw commentary into something useful for deeper game analysis. The noise needs to be stripped away, leaving only the essential insights into the board state and the moves being played.
+
+Specifically, I need to focus on this:
+
+1.  **Filtering:** I'll have to carefully identify and remove the irrelevant fluff.  This includes things like meta-commentary, biographical details about the players, any time-related information that doesn't contribute to understanding the game's evolution, and anything else that's not directly tied to a specific board position or move.  I'll need a clear rule set to determine what gets the axe.
+
+2.  **Refining:**  Once the extraneous material is gone, the remaining text needs to be polished. It needs to flow naturally and make intuitive sense as an explanation of the board or a specific move. I'll need to transform these fragments into coherent, insightful statements.
+
+Effectively, I'm taking unstructured human observation and refining it into a clean signal that I can use in a more formalized and quantitative way.  That's where the real power of these comments lies, and it's my job to help unlock it.
+
+手数1:
+
+削除理由:
+- 「大内は３分遅刻したため、消費時間から３分の３倍の９分が引かれた。」 → ルール3, 4
+
+手数7: 先手は得意戦法の中飛車を採用。
+
+削除理由:
+- 「大内は」 → 置換ルール
+
+手数26: 後手は角筋を止めて持久戦を目指す。
+
+削除理由:
+- 「後手番の増田は」 → 置換ルール
+
+手数28:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は大内２７分、増田３１分。」 → ルール3
+
+手数29: 先手は▲１八香と上がり穴熊に。
+
+削除理由:
+- 「大内は」 → 置換ルール
+
+手数32: 後手も△１二香と上がり相穴熊に。
+
+削除理由:
+- 「増田も」 → 置換ルール
+
+手数38:
+
+削除理由:
+- 「午後１２時１０分、昼食休憩に入る。」 → ルール3, 7
+- 「消費時間は大内１時間２分、増田５８分。」 → ルール3
+- 「大内は３９手目を３４分の考慮中。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は大内１時間９分、増田１時間４２分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「後手の増田が長考中。」 → ルール3
+- 「消費時間は大内１時間３７分、増田１時間４６分。」 → ルール3
+
+手数52: 馬を取る一手の局面だが、先手は長考に沈んでいる。何か誤算があったのだろうか…。
+
+削除理由:
+- 「大内は煙草をくゆらし」 → ルール4
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は大内１時間５８分、増田２時間５４分。」 → ルール3
+
+手数54: 後手の狙いは△６七歩成▲同金△５八角。
+
+削除理由:
+
+手数55: 先手は△６七歩成〜△５八角の筋を防いで▲６九飛。しかし、△４六歩と取り込まれ先手が苦しそうに見えるが…。
+
+削除理由:
+- 「大内は」 → 置換ルール
+
+手数57:
+
+削除理由:
+- 「１７時３０分過ぎの局面。」 → ルール3
+- 「消費時間は大内２時間４８分、増田３時間４２分。」 → ルール3
+- 「結局この局面で夕食休憩に入った。」 → ルール7
+- 「消費時間は大内２時間４８分、増田４時間１６分。」 → ルール3
+
+手数86:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は大内３時間１分、増田４時間３９分。」 → ルール3
+
+手数97:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「消費時間は大内３時間３５分、増田４時間４２分。」 → ルール3
+
+手数102:
+
+削除理由:
+- 「考慮中に残り１時間を切る。」 → ルール3
+
+手数120: 振り飛車優勢との評判。両者の指し手が速い。
+
+削除理由:
+- 「記録係が追いつかないほど」 → ルール1
+- 「しばらくして大変との声も聞こえ始めてきた。」 → ルール6
+
+手数134: 振り飛車の攻めがなくなってしまったようだ。先手は誤算があったのだろうか。先手は▲４四歩のような細かい技が利かないのが痛い。
+
+削除理由:
+- 「と阿久津七段。」 → ルール1
+- 「大内は」 → 置換ルール
+- 「（阿久津七段）」 → ルール1
+- 「２２時過ぎの局面。」 → ルール3
+- 「残りは大内１時間５６分、増田２８分。」 → ルール3
+
+手数136: 勝ちを読み切った手に見える。
+
+削除理由:
+- 「「ひえー」とどよめく控室。」 → ルール1, 6
+- 「「ホントに後手勝ちなの」との声も。」 → ルール1, 6
+
+手数141:
+
+削除理由:
+- 「残り時間は大内１時間３分、増田６分。」 → ルール3
+
+手数146:
+
+削除理由:
+- 「増田は残り２分。」 → ルール3
+
+手数154: 桂合以外はトン死する。投了図から▲４四銀は△同玉▲２二角成に△４五玉（△３三合は▲３六桂で要の２四飛を抜かれる筋がある）で処置なしとなる。
+
+削除理由:
+- 「ここで大内は３分考えて投了した。」 → ルール3, 4
+- 「▲大内九段−△増田五段戦は２３時１２分、１５４手で増田五段の勝ちとなった。」 → ルール1, 3, 8
+- 「消費時間は▲大内４時間３７分、△増田５時間５９分。」 → ルール3
+- 「勝った増田五段は１勝１敗、敗れた大内九段は０勝２敗となった。」 → ルール4

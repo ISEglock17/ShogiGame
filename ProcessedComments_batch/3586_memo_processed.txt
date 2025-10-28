@@ -1,0 +1,117 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants to refine the commentary within shogi game data. My goal here is to strip away all the extraneous noise – you know, the meta fluff, the introductions of players, the time stamps – and leave behind only the pure, distilled essence: the explanations of the board state and the moves themselves. Essentially, I'm aiming to produce a narrative flow that seamlessly explains the strategic nuances without any distractions.
+
+Essentially, I'm working with a clear set of guidelines. This means I'm going to excise all the references to individuals *not* directly involved in the game, including their ranks and affiliations. Anything mentioning previous games, past examples, or historical connections is also out. Any information related to time, whether it's the specific clock readings or thinking time is irrelevant.
+
+手数6: １手損角換わりとなった。
+
+削除理由:
+- 「長沼の」 → ルール1
+
+手数12: △２二飛とするか作戦の岐路。▲６五角と打たれる恐れのある△２二飛よりも△４二飛の方が穏やかな展開になりやすい。
+
+削除理由:
+
+手数15: △４四歩に▲６五角がある。すぐに△４四歩と突けないなら、次に▲４七銀と上がって▲５六銀の用意をしておけば４筋の歩を交換されない。
+
+削除理由:
+
+手数17:
+
+削除理由:
+- 「▲４七銀の局面で長沼が１１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は広瀬１時間５分、長沼５７分。」 → ルール3
+- 「昼食の注文はざるそば、お茶、ミネラルウオーター。広瀬は注文なし。」 → ルール7
+
+手数21:
+
+削除理由:
+- 「１３時５０分の局面。」 → ルール3
+- 「消費時間は広瀬１時間２６分、長沼１時間３分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数24: △４四歩は▲５六銀。４筋を攻める形にならないので、２筋に飛車を回る。△２四歩だけでなく、△４四銀から△３三桂と駒をさばく狙いもある。
+
+削除理由:
+
+手数29: これで先手は一安心。
+
+削除理由:
+
+手数30: 後手は銀冠に組み替える。
+
+削除理由:
+- 「長沼は」 → ルール1
+
+手数31:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「消費時間は広瀬１時間５４分、長沼１時間４２分。」 → ルール3
+
+手数33: 先手は銀冠に対抗するために穴熊へ組み替える。矢倉で満足していると、手詰まりになってまずい。
+
+削除理由:
+- 「広瀬は」 → ルール1
+
+手数43: 互いに十分な駒組み。
+
+削除理由:
+- 「１６時１５分の局面。」 → ルール3
+- 「消費時間は広瀬２時間３１分、長沼２時間２１分。」 → ルール3
+
+手数46: 角の捕獲だが、３二角を活用するのは難しそうだ。
+
+削除理由:
+- 「「駒取り坊主」らしい」 → ルール5
+
+手数49: △３三銀なら▲３一金か。
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は広瀬３時間８分、長沼２時間５９分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「△７二銀の局面で広瀬が９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は広瀬３時間１７分、長沼３時間３４分。」 → ルール3
+- 「夕食の注文は長沼が刺し身定食、お茶５００ｍｌ、ミネラルウオーター、広瀬は注文なし。」 → ルール7
+
+手数53: ▲４五桂△４四銀▲２四歩△同歩▲３二金△同飛▲２四飛のさばきを見せる。
+
+削除理由:
+
+手数54: ▲４五桂を防ぎつつ、▲３二金を催促している。
+
+削除理由:
+
+手数64:
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「消費時間は広瀬３時間４２分、長沼３時間５６分。」 → ルール3
+
+手数70: 丁寧に駒を拾っていく。しかし、２一桂、３七金は遊び駒なので、駒の効率は先手の方が良い。
+
+削除理由:
+- 「２０時５０分の局面。」 → ルール3
+- 「消費時間はともに４時間１６分。」 → ルール3
+- 「長沼は」 → ルール1
+- 「「駒取り坊主」らしく」 → ルール5
+
+手数73:
+
+削除理由:
+- 「２１時４０分の局面。」 → ルール3
+- 「消費時間は広瀬４時間３９分、長沼４時間３３分。」 → ルール3

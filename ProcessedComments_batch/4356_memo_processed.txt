@@ -1,0 +1,113 @@
+**Cleaning Up the Commentary: Focusing on the Game Itself**
+
+Alright, so the task at hand is to clean up these comments that come with Shogi game data. The goal here is pretty straightforward: I need to transform the existing text into a format that's laser-focused on the actual game analysis. What I mean is, I want to strip out all the extraneous stuff. This includes all those introductory remarks about the players, any time-stamps, and all the meta-commentary that isn't directly related to what's happening on the board.
+
+Essentially, I want to distill these comments down to their core: the explanations of the board positions, the reasoning behind each move, and any insights into the strategic implications. Anything that contributes to a deeper understanding of the game itself is what I'm keeping.  I need the final output to read smoothly and naturally, as if someone is walking me through the key moments and decisions of the match, without all the fluff.
+
+手数20: 相矢倉となった。
+
+削除理由:
+- 「居飛車党の両者。」 → ルール5
+
+手数25: 攻撃力の高い▲３七銀型。飛先不突矢倉との相性も良い。▲３五歩の速攻を狙っている。
+
+削除理由:
+
+手数26: ほかに△４三金右や△８五歩も指されている。△６四角は主流の手。
+
+削除理由:
+
+手数33: ▲４六銀も多く指されている。
+
+削除理由:
+
+手数35: 「加藤流」と呼ばれている形。
+
+削除理由:
+- 「将棋世界３月号の木村一基八段の講座で、この戦型を取り上げていた。」 → ルール1, 2, 8
+
+手数36: △７三銀も考えられた。
+
+削除理由:
+
+手数39: 比較的珍しい手。すぐに▲３八飛や▲１七香が多い。
+
+削除理由:
+
+手数40: 何気ないようでいて、△６四銀〜△７五歩▲同歩△同銀▲７六歩△８四銀の転換を含みにしている。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は大平５分、勝又２４分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「２８分の長考。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「ここで勝又が５１分使って昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は大平９分、勝又１時間４３分。」 → ルール3, 4
+
+手数44:
+
+削除理由:
+- 「昼食休憩を挟んで５２分の長考。」 → ルール3, 7
+
+手数47: ▲同歩△同銀は棒銀の攻め足が早い。先手は手抜いて攻め合いに出た。
+
+削除理由:
+- 「大平」 → ルール4
+
+手数53: ▲７四銀を狙っている。
+
+削除理由:
+
+手数56: 手厚い一着。▲７四銀を防ぎながら、△７五歩を狙っている。
+
+削除理由:
+- 「似た形で森内俊之九段が同様の手を指している。」 → ルール1, 2
+
+手数57: ６七にスペースを作った△７五歩対策。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「１４時２０分ごろの局面。」 → ルール3
+- 「消費時間は大平３０分、勝又２時間２８分。」 → ルール3, 4
+
+手数61: ▲同香は△９五香からドンドン攻められる。
+
+削除理由:
+
+手数73: 先手の受け、後手の攻めという展開が続く。△９六歩や△８六歩が有力か。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は大平５６分、勝又３時間４分。」 → ルール3, 4
+- 「大平」「勝又」 → ルール4
+
+手数74: 後手は、強手で攻めをつなげる。
+
+削除理由:
+- 「勝又」 → ルール4
+
+手数80: 味のいい活用。すぐに飛車を逃げるのではなく、このような手があることを頭の片隅に入れておくことが実戦の役に立つ。
+
+削除理由:
+
+手数86: 「玉は下段に落とせ。
+
+削除理由:
+
+手数88: ▲８六玉は△８七成桂▲同玉△７八角が厳しい。
+
+削除理由:

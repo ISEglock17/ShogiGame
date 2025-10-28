@@ -1,0 +1,111 @@
+**Refining Commentary for Deeper Strategic Insights**
+
+Okay, so I'm presented with a fascinating challenge: a treasure trove of Shogi game commentary, rich with potential, but cluttered with noise. My goal is clear - to refine this raw data into pure, strategic gold. I'm not just looking for a superficial edit; I want to extract the essence of the game's evolution, focusing solely on the board's state and the rationale behind each move.
+
+This means a meticulous process. I have to be incredibly discerning. I need to sift through the comments, identifying and systematically removing all the extraneous fluff: the introductions of the players, the time stamps that don't contribute to understanding the game's flow, any meta-commentary that steps outside the immediate tactical or strategic considerations.
+
+It's a process of distillation, really.  I'm taking what's potentially a narrative of a match and transforming it into a precise, focused record of thought. I'm focusing in on what *actually* contributes to insightful analysis of the position.
+
+手数6: 最近はすっかり後手番一手損角換わりの陰に隠れてしまった横歩取りだが、ここまで来れば登板間違いなしだろう。
+
+削除理由:
+- 「最近はすっかり後手番一手損角換わりの陰に隠れてしまった横歩取りだが」 → ルール2
+- 「ここまで来れば登板間違いなしだろう」 → ルール5
+
+手数15: 横歩を取って悪くなるはずがないという風潮になってきている。
+
+削除理由:
+- 「大昔は「横歩三年のわずらい」と言われたが」 → ルール2
+- 「現在は〜という風潮になってきている」 → ルール2
+
+手数16: 横歩取りの中で最もポピュラーな△３三角戦法。△３三角のところで△７六飛は、▲２二角成△同銀▲３二飛成で非常に残念なことになる。
+
+削除理由:
+- 「蛇足だが」 → 不要な接続詞
+- 「「俺も俺も」と」 → 口語表現
+
+手数17:
+
+削除理由:
+- 「この局面での先後の勝率は、先手１２５４勝、後手１１７７勝。」 → ルール2, 4
+
+手数18:
+
+削除理由:
+- 「しかし一手進むと、先手４１０勝、後手３１８勝と先手の勝率が格段に跳ね上がる。」 → ルール2, 4
+
+手数22: 最近では△５二玉の中住まいは少なくなった。バランスより堅さの風潮は、どの戦型にも共通する現代感覚といえる。
+
+削除理由:
+- 「最近では〜は少なくなった」 → ルール2
+- 「どの戦型にも共通する現代感覚といえる」 → ルール2
+
+手数25:
+
+削除理由:
+- 「ここまでの消費時間は、堀口３分、島１２分。」 → ルール3
+
+手数32: 勢いをつける突き捨て。先に△７三桂だと、▲５五銀△７五歩のときに▲同歩と取ってくれるとは限らない。
+
+削除理由:
+- なし
+
+手数34: この形で▲５五銀なら△８六歩▲同歩△同飛としておいて、次に△７七歩や△８八飛成を狙うことができる。
+
+削除理由:
+- なし
+
+手数35: じっと駒を活用した。
+
+削除理由:
+- 「ところで昼食休憩に入った。」 → ルール7
+- 「消費時間は堀口６分、島１時間５１分。」 → ルール3
+
+手数36: △７七歩。一歩損の後手が歩を更に捨てるのだから、もう局面を収めるつもりはないのだろう。
+
+削除理由:
+- 「昼食休憩後すぐに」 → ルール7
+- 「昼食休憩後」 → ルール7
+
+手数37: この手で▲７七同桂なら△７六歩で後手優勢になる。
+
+削除理由:
+- なし
+
+手数38: △７七歩と打ったからには、足を止めるわけにはいかない。
+
+削除理由:
+- なし
+
+手数42:
+
+削除理由:
+- 「１４時過ぎ。」 → ルール3
+- 「消費時間は堀口１１分、島１時間５２分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「この手に堀口は２時間２分費やした。」 → ルール1, 3
+
+手数44: 後手は飛車を切り飛ばした。▲同歩に△１五角狙いだろう。
+
+削除理由:
+- 「島は１２分で」 → ルール1, 3
+
+手数48: 桂が入れば△７六桂。後手陣は飛車打ちに強い一段金。
+
+削除理由:
+- なし
+
+手数49: ▲２九飛は△３七銀成▲５五角△２七歩が厳しい。先手は飛車を逃げていては勝てないと見た。
+
+削除理由:
+- 「堀口は」 → ルール1
+
+手数54: 先手はここで投了を告げた。純粋な銀損に加え、陣形の差も大きく勝機なしと見たのだろう。一瞬の隙をついた後手の強襲が見事に決まった。
+
+削除理由:
+- 「堀口はここで７分考えて」 → ルール1, 3
+- 「島の」 → ルール1
+- 「消費時間は堀口２時間２８分、島２時間２８分。」 → ルール3

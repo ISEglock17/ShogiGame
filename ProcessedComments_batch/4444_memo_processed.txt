@@ -1,0 +1,128 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, I've got a task here that's right up my alley. Someone wants me to take raw shogi commentary, the kind you get after a match, and *clean it up*. They're looking for something that just focuses on the critical stuff: the state of the board and the specific moves made. No extraneous fluff, just pure analysis.
+
+So, here's how I see this working:
+
+1.  **Iterate through each move.** That's the baseline. I'll read the commentary one move at a time.
+2.  **Identify the chaff.** There's a clear list of things to remove: anything that falls under that umbrella of "unnecessary information." I'll need to define that meticulously, but that's my starting point.
+3.  **Delete the noise.** Once the unwanted segments are flagged, it's straight to the editing. Remove the irrelevant comments.
+4.  **Polish the prose.** What remains has to flow, has to make sense. I'll need to rephrase things if necessary to make it read smoothly and naturally. It's about preserving the *analysis*, not just the raw data.
+
+手数3: 石田流模様の出だし。
+
+削除理由:
+- 「隣の▲高崎−△村中戦も同じ出だしだった。」 → ルール1, 2
+
+手数14: 互いに美濃囲いに構えた。コンパクトで堅い囲いだ。
+
+削除理由:
+- 該当なし
+
+手数17:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は遠山１７分、増田１３分。」 → ルール1, 3
+
+手数19: △７四歩▲同歩△同銀に▲６五歩と突くつもりだろう。８八角のままだと、▲６五歩△８八角成▲同飛となって、飛車が使いにくくなる。
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は遠山５１分、増田２９分。」 → ルール1, 3
+
+手数25:
+
+削除理由:
+- 「▲５八金右の局面で増田が１７分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は遠山１時間９分、増田４６分。」 → ルール1, 3
+
+手数26: 後手は腰掛け銀に構えた。
+
+削除理由:
+- 「１４時１５分ごろの局面。」 → ルール3
+- 「消費時間は遠山１時間９分、増田１時間３１分。」 → ルール1, 3
+- 「増田は昼食休憩を挟んで１時間２分考えて」 → ルール1, 3, 7
+
+手数27:
+
+削除理由:
+- 「４８分の長考。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は遠山２時間１３分、増田１時間４８分。」 → ルール1, 3
+
+手数30: 大きく位を取ったが、▲３四香や▲３四桂のリスクもある。先手が長考している。
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は増田２時間１３分、増田２時間１５分。」 → ルール1, 3
+- 「遠山が長考している。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「４８分の長考。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は遠山３時間２８分、増田２時間２２分。」 → ルール1, 3
+
+手数36: 「位を取ったら位の確保」。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は遠山３時間３４分、増田２時間３５分。」 → ルール1, 3
+
+手数38:
+
+削除理由:
+- 「△４二金寄で遠山が１４分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は遠山３時間５９分、増田２時間５９分。」 → ルール1, 3
+
+手数43: 後手は長考している。△６四歩は▲７三桂成△同桂▲７四歩か。△５二金上も検討されている。
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は遠山３時間５９分、増田３時間４分。」 → ルール1, 3
+- 「増田が４０分以上考えている。」 → ルール1, 3
+- 「松尾七段、伊藤四段は」 → ルール1
+- 「検討している。」 → ルール1
+
+手数58: 後手は銀損だが、角香取りをかけている。▲５九角△９八龍▲６五飛くらいか。後手は△２三香と打ってからの玉頭攻めも楽しみにしたい。
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は遠山４時間３０分、増田４時間２２分。」 → ルール1, 3
+- 「増田は」 → ルール1
+- 「増田は」 → ルール1
+
+手数74:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は遠山４８分、増田１時間１５分。」 → ルール1, 3
+
+手数83:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は遠山２２分、増田１時間１１分。」 → ルール1, 3
+
+手数93: ここで後手の投了となった。△同金に▲４二桂成から１手１手の寄せ。
+
+削除理由:
+- 「増田の」 → ルール1
+- 「終局時刻は２３時３分。」 → ルール3
+- 「消費時間は遠山５時間４３分、増田４時間５２分。」 → ルール1, 3
+- 「勝った遠山は５勝４敗、敗れた増田は４勝５敗となった。」 → ルール1, 4

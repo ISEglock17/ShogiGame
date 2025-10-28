@@ -1,0 +1,115 @@
+**Cleaning Up the Commentary: Focusing on the Game Itself**
+
+Alright, so a user, presumably another expert in this fascinating game of Shogi, wants to clean up commentary from Shogi game data. I understand completely. We've all seen those transcripts, a chaotic mix of insightful analysis, biographical details, timestamps, and seemingly random asides. It's a goldmine of information, but the raw form isn't always helpful for focused study.
+
+My goal here is clear: strip away all the fluff, the metadata, the introductions, the clock updates, and even the "personality" bits, and leave behind only the pure, unadulterated essence of the game analysis.  I need to distill each comment down to its core: the explanation of the board state and the reasoning behind each move. Think of it as extracting the essential nutrients from a complex dish.
+
+The strategy, as I see it, is methodical. First, define the rules.  Identify the types of information we *definitely* want to remove. It's about establishing clear criteria for what constitutes noise. Then, with a solid set of rules in place, I can start the meticulous process of filtering out the extraneous details, leaving only the commentary that truly advances our understanding of the game.  This should give us a clean, concise, and eminently usable dataset for further analysis or study.
+
+手数1:
+
+削除理由:
+- 「◆鈴木　大介（すずき　だいすけ）八段◆」 → ルール1, 4
+- 「１９７４年７月１１日生まれ、東京都出身。大内延介九段門下。１９９４年、四段。２００３年、八段。棋士番号は２１３。」 → ルール4
+- 「タイトル戦登場は２回。棋戦優勝は２回。」 → ルール4
+---
+手数2:
+
+削除理由:
+- 「◆中田　宏樹（なかた　ひろき）八段◆」 → ルール1, 4
+- 「１９６４年１０月２０日生まれ、東京都武蔵野市出身。桜井昇八段門下。１９８５年、四段。２００６年、八段。棋士番号は１７３。」 → ルール4
+- 「タイトル戦登場は１回。棋戦優勝は２回。」 → ルール4
+---
+手数3:
+
+削除理由:
+- 「鈴木の通算成績は４４２勝３３７敗（勝率０．５６７）。」 → ルール4
+- 「昨年度成績は１４勝１５敗（０．４８３）。」 → ルール4
+- 「本年度成績は３勝６敗（０．３３３）。」 → ルール4
+---
+手数4:
+
+削除理由:
+- 「中田の通算成績は６９９勝４６９敗（勝率０．５９９）。」 → ルール4
+- 「昨年度成績は１２勝１６敗（０．４２９）。」 → ルール4
+- 「本年度成績は４勝７敗（０．３６４）。」 → ルール4
+- 「勝てば通算７００勝目となる。」 → ルール4
+---
+手数9: 手損してでも角交換。５三へ打ちこむ隙がある。
+
+削除理由:
+---
+手数12: 後手も同じように馬を作りにいく。
+
+削除理由:
+---
+手数17: 馬を作りあう。
+
+削除理由:
+---
+手数18:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「△７四歩までの消費時間は▲鈴木０分、△中田４５分。」 → ルール3
+---
+手数20:
+
+削除理由:
+- 「１２時１０分、ここで鈴木が５０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲鈴木１時間１３分、△中田４９分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+---
+手数21:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「▲８六歩までの消費時間は▲鈴木１時間１５分、△中田４９分。」 → ルール3
+---
+手数22:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△７三桂までの消費時間は▲鈴木１時間１５分、△中田１時間５６分。」 → ルール3
+---
+手数24: この馬が８筋の制圧に役立つか、目標にされてしまうか。
+
+削除理由:
+---
+手数25:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「▲７七桂までの消費時間は▲鈴木２時間３９分、△中田１時間５６分。」 → ルール3
+- 「そのまま１７時を過ぎた。」 → ルール3
+---
+手数26: 飛車交換を挑む、思い切った手だ。
+
+削除理由:
+- 「１時間５６分使っての着手。」 → ルール3
+---
+手数30:
+
+削除理由:
+- 「１８時１０分、ここで鈴木が１４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲鈴木３時間１分、△中田４時間７分。」 → ルール3
+- 「対局再開は１９時。」 → ルール3, 7
+---
+手数44:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「△９九馬までの消費時間は▲鈴木３時間７分、△中田５時間０分。」 → ルール3
+---
+手数59: 強烈なキック。一気に終局も見えてきた。
+
+削除理由:
+- 「序盤から長考の続く将棋だったが、」 → ルール3
+---
+手数65:
+
+削除理由:
+- 「ここで中田が６分使い、投了した。」 → ルール3
+- 「終局時刻は２０時４６分。」 → ルール3
+- 「消費時間は▲鈴木３時間１７分、△中田５時間２４分。」 → ルール3
+- 「勝った鈴木は１勝２敗、敗れた中田は３連敗になった。」 → ルール4

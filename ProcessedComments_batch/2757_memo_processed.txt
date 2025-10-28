@@ -1,0 +1,164 @@
+**Processing Shogi Commentary: Focusing on the Game's Narrative**
+
+Okay, so I'm dealing with a request to clean up and structure Shogi game commentary. The core of this task is to distill the narrative, focusing on the strategic aspects of the game, while shedding the extraneous bits that are irrelevant to the actual analysis of moves and board positions. Essentially, I need to extract the "story" of the game from the clutter.
+
+My process will be straightforward:
+
+1.  **Iterate through each move:** I'll analyze the commentary for each individual move.
+2.  **Apply the pruning rules:** Based on the predefined rules regarding what's considered extraneous, I'll identify and isolate those unwanted parts of the commentary.
+3.  **Refine the remaining content:** The remaining text will be rephrased for clarity and flow, ensuring it reads like a coherent explanation of the move and its impact on the board.
+4.  **Structure the Output:**  The output will need to be in a consistent format: move number, the cleaned-up comment, and importantly, the *reason* for the deletions. This ensures transparency and traceability in the process.
+
+For example, when I look at "*手数8: △５四歩なら相矢倉に進むことが予想されたが、浦野は変化する。*", I immediately see the strategic discussion of the move and the expectation of 相矢倉 is what this request is all about, and what the user is most interested in. My focus will be on the strategic aspect of the game. I am expecting this is what is most relevant in this context.
+
+手数8: △５四歩なら相矢倉に進むことが予想されたが、後手は変化する。
+
+削除理由:
+- 「浦野」 → ルール1
+
+手数11: 後手は右四間、右玉、陽動振り飛車などの作戦の可能性がある。また、同じようでも▲５八金を先に上がると△６五歩といきなり仕掛けられる手がある（▲６五同歩は△８八角成▲同金△６六角）ので要注意。
+
+削除理由:
+- 「１０時４０分の局面。」 → ルール3
+- 「消費時間は神谷２１分、浦野１２分。」 → ルール3, 1
+
+手数14: 後手は右四間飛車を選択した。
+
+削除理由:
+- 「浦野は」 → ルール1
+
+手数17: 雁木で受ける。
+
+削除理由:
+- 削除対象なし
+
+手数20:
+
+削除理由:
+- 「１１時４０分の局面。」 → ルール3
+- 「消費時間は神谷３３分、浦野４７分。」 → ルール3, 1
+
+手数23: 桂馬の活用を押さえる。
+
+削除理由:
+- 「▲７五歩の局面で浦野が２５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は神谷４８分、浦野１時間１２分。」 → ルール3, 1
+
+手数24: 先手は長考している。いつでも△４五桂▲６八銀△６六歩を狙っている。
+
+削除理由:
+- 「１３時半の局面。」 → ルール3
+- 「消費時間は神谷４８分、浦野１時間２８分。」 → ルール3, 1
+- 「神谷は」 → ルール1
+
+手数25: ６筋を厚くする。
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「４１分の長考。」 → ルール3
+
+手数27: 自陣角を据える。
+
+削除理由:
+- 「１５時半の局面。」 → ルール3
+- 「消費時間は神谷２時間７分、浦野２時間９分。」 → ルール3, 1
+- 「２５分の熟慮で」 → ルール3
+
+手数28:
+
+削除理由:
+- 「３３分の長考。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１６時半の局面。」 → ルール3
+- 「消費時間は神谷２時間４６分、浦野２時間４２分。」 → ルール3, 1
+- 「神谷は▲７六銀に３９分の長考。」 → ルール1, 3
+- 「午後に入って互いに長考を繰り返している。」 → ルール3
+
+手数30: 後手も角を据えた。
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+- 「浦野も」 → ルール1
+
+手数37:
+
+削除理由:
+- 「▲７七同桂の局面で浦野が１９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は神谷が２時間５９分、浦野が４時間５分。」 → ルール3, 1
+
+手数38: △９四角は▲５八角の一手。こう指すのもあった。
+
+削除理由:
+- 削除対象なし
+
+手数41: 先手の駒に勢いが出てきたか。
+
+削除理由:
+- 「１９時４５分の局面。」 → ルール3
+- 「消費時間は神谷３時間２７分、浦野４時間１０分。」 → ルール3, 1
+- 「２０時半を過ぎても浦野の長考は続いている。」 → ルール1, 3
+
+手数42: このタイミングで角打ち。
+
+削除理由:
+- 「５２分の長考。」 → ルール3
+
+手数45: 手厚く。後手は歩切れが痛い。
+
+削除理由:
+- 削除対象なし
+
+手数48:
+
+削除理由:
+- 「２１時２０分ごろの局面。」 → ルール3
+- 「消費時間は神谷３時間５４分、浦野５時間２２分。」 → ルール3, 1
+
+手数52: 飛車の頭だけに盲点の桂打ち。
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は神谷１時間５７分、浦野２５分。」 → ルール3, 1
+- 「神谷は何度か舌打ちした。」 → ルール1
+
+手数53:
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数55: △７五桂と跳ばれると、飛車が働いてしまうので厳しくなる。桂跳ねは絶対阻止。
+
+削除理由:
+- 削除対象なし
+
+手数59:
+
+削除理由:
+- 「２２時４０分の局面。」 → ルール3
+- 「残り時間は神谷１時間１１分、浦野２１分。」 → ルール3, 1
+
+手数60:
+
+削除理由:
+- 「浦野残り８分。」 → ルール1, 3
+
+手数84:
+
+削除理由:
+- 「０時前の局面。」 → ルール3
+- 「残り時間は神谷２３分、浦野２分。」 → ルール3, 1
+
+手数105:
+
+削除理由:
+- 「浦野は１分考えた後、攻防ともに見込みなしと見て投了した。」 → ルール1, 3
+- 「終局時刻は０時１５分。」 → ルール3
+- 「消費時間は神谷５時間４６分、浦野５時間５９分。」 → ルール3, 1
+- 「勝った神谷は２勝０敗、敗れた浦野は０勝２敗となった。」 → ルール1, 4

@@ -1,0 +1,133 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with shogi game commentary, and the goal is clear: I need to whip it into shape. My task is to take these raw notes, probably riddled with redundant information about the board state and individual moves, and sculpt them into something smooth, flowing, and readable. It's all about elegance and clarity for the expert audience.
+
+My process will involve a meticulous step-by-step approach. First, I'll systematically dissect each move's commentary. I'll need to identify the core elements - the move itself, the most critical tactical implications, any significant positional changes. Then, I'll filter out the noise. All the extra details, the repetition, anything that doesn't advance the understanding of the game needs to go. I'm aiming for concise and insightful prose that keeps the reader engaged. Essentially, I'm curating an expert-level narrative of the game.
+
+手数15: 横歩取り。
+
+削除理由:
+- 
+
+手数20: 最近ではあまり見られなくなった、△８五飛戦法。
+
+削除理由:
+- 
+
+手数23: 対策の一つの形。
+
+削除理由:
+- 「山崎隆之七段が指し始めたところから、山崎流と呼ばれる」 → ルール1
+- 「横歩取りではいくつもの山崎流がある。」 → ルール1
+
+手数30:
+
+削除理由:
+- 「６０局以上の実戦例がある形。」 → ルール2
+
+手数31:
+
+削除理由:
+- 「代わりに▲３五歩が多く、現在指されている王将戦リーグ▲佐藤康光棋王−△高橋道雄九段戦はそちらのコースに。」 → ルール1, 2
+- 「ここまでの消費時間は長岡１０分、稲葉２分。」 → ルール3, 4
+
+手数33: 早くも決戦。
+
+削除理由:
+- 「実戦例は今年度Ｃ級２組２回戦▲山本五段−△中座七段戦など５局。」 → ルール1, 2
+
+手数39: 過去の実戦例では▲２八飛。次に▲１五歩で銀を取ることができるが、先手の２枚の桂もまた狙われる。ここからは激しい戦いとなりそうだ。
+
+削除理由:
+- 「稲葉が１時間１８分考えて、そのまま昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間の通計は長岡１３分、稲葉１時間３９分。」 → ルール3, 4
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+手数40: 再開後、後手はこちらの桂頭を攻めた。先手は３七の地点を執拗に攻められることになる。そのとき飛車が２八ではなく２九なのが、先手の工夫。
+
+削除理由:
+- 「再開直後、稲葉は」 → ルール4, 7
+- 「長岡の工夫。」 → ルール4
+- 「今度は長岡が長考に沈み、１４時を過ぎた。」 → ルール3, 4
+
+手数41:
+
+削除理由:
+- 「長岡、１時間５６分の長考。」 → ルール3, 4
+
+手数46:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は長岡２時間１６分、稲葉１時間３９分。」 → ルール3, 4
+- 「長岡再びの長考で、時刻は１６時を過ぎた。」 → ルール3, 4
+
+手数47:
+
+削除理由:
+- 「この一手は１時間３２分。」 → ルール3
+
+手数48: 追撃。
+
+削除理由:
+- 
+
+手数49: 加速。早くも終盤の様相。
+
+削除理由:
+- 
+
+手数52:
+
+削除理由:
+- 「この局面で長岡が１時間１６分考えて、そのまま夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は長岡５時間１０分、稲葉１時間４７分。」 → ルール3, 4
+- 「夕食の注文は、長岡は鮭おにぎり。稲葉はなし。」 → ルール4, 7
+
+手数53: 角を打つ。
+
+削除理由:
+- 「１９時、再開。」 → ルール3, 7
+- 「休憩中も盤を離れずに読みふけった長岡は、すぐに」 → ルール4, 7
+
+手数55: ▲３二銀△５二玉▲４三馬までの詰めろ。
+
+削除理由:
+- 
+
+手数57:
+
+削除理由:
+- 「１９時半頃の局面。」 → ルール3
+- 「残り時間は長岡３７分、稲葉４時間１分。」 → ルール3, 4
+
+手数59:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「残り時間は長岡２６分、稲葉３時間５９分。」 → ルール3, 4
+
+手数61:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「残り時間は長岡２３分、稲葉３時間４６分。」 → ルール3, 4
+
+手数64:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「残り時間は長岡２１分、稲葉２時間５８分。」 → ルール3, 4
+- 「控え室の評判は、若干先手よしか、とのこと。」 → ルール1, 6
+
+手数82: ▲５五飛でも、▲５三桂不成△同銀▲５五飛でも先手勝ちか。
+
+削除理由:
+- 「残り時間は長岡５分、稲葉２時間２４分。」 → ルール3, 4
+
+手数99:
+
+削除理由:
+- 「終了時刻は２２時２５分。」 → ルール3
+- 「消費時間は長岡５時間５９分、稲葉３時間５３分。」 → ルール3, 4
+- 「勝った長岡は５勝２敗、敗れた稲葉は４勝３敗となった。」 → ルール4

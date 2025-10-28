@@ -1,0 +1,201 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this user who's asking me to clean up Shogi game commentary data.  Essentially, they want me to filter out the noise and leave only the crucial bits for analysis.  Think of it like sifting through the gold dust – they want the pure gold, not the surrounding dirt.  
+
+My goal here is clear: strip away all the extraneous stuff – the metadata, the introductions to players, the time stamps... anything that isn't directly contributing to understanding the board state or the reasoning behind the moves.  I'm aiming for concise, natural language explanations of the plays themselves.
+
+My plan is straightforward:
+
+1.  I need to develop a solid set of rules to identify and eliminate the irrelevant information.  This will be the foundation of the cleaning process.
+2.  Once I've got the essentials, I need to restructure the remaining text into grammatically correct and flowing sentences.  It's about making the analysis readable and comprehensible.
+
+手数11: 先手の作戦は相掛かり▲２八飛型。
+
+削除理由:
+- 「日浦の」 → ルール1
+
+---
+手数16: 後手は浮き飛車に構えた。
+
+削除理由:
+- 「真田は」 → ルール1
+
+---
+手数21: 互いに端を突き越し合う珍しい形。
+
+削除理由:
+- なし
+
+---
+手数25: 近年流行している相掛かり棒銀。狙いは、この棒銀で後手の駒組みをけん制すること。
+
+削除理由:
+- なし
+
+---
+手数27:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は日浦７分、真田２２分。」 → ルール1, 3
+
+---
+手数28: 後手は中住居に構えた。
+
+削除理由:
+- 「真田は」 → ルール1
+
+---
+手数30: ▲７六歩と角道を開けさせない作戦。半面、８一桂が使いにくくなっている。
+
+削除理由:
+- なし
+
+---
+手数32:
+
+削除理由:
+- 「△４二銀の局面で日浦が２４分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は日浦５６分、真田１時間１分。」 → ルール1, 3
+
+---
+手数35: ▲７六歩をけん制した△７四飛にも先手は強く▲７六歩と突き出した。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は日浦１時間４４分、真田１時間７分。」 → ルール1, 3
+- 「日浦は」 → ルール1
+
+---
+手数37: 陣形を盛り上げていくのが先手の狙い。
+
+削除理由:
+- 「日浦の」 → ルール1
+
+---
+手数39:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は日浦２時間１５分、真田１時間３４分。」 → ルール1, 3
+
+---
+手数44: 銀に角をぶつける強手。今が決戦のチャンスと見ている。
+
+削除理由:
+- なし
+
+---
+手数47: ４筋を大将自ら守りにいく。
+
+削除理由:
+- なし
+
+---
+手数48:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「消費時間は日浦２時間５４分、真田１時間５９分。」 → ルール1, 3
+
+---
+手数52: ものすごい銀打ち。角損になるが、おつりは返ってくると見ている。
+
+削除理由:
+- なし
+
+---
+手数59: 自陣の駒を遊ばせてはいけない。
+
+削除理由:
+- なし
+
+---
+手数62: 駒を補充しにいく。
+
+削除理由:
+- なし
+
+---
+手数63: こじ開けにいく。△同歩は▲５五角。
+
+削除理由:
+- なし
+
+---
+手数71: 角がさばけたのが大きい。
+
+削除理由:
+- なし
+
+---
+手数72: 成香の活用を目指す。
+
+削除理由:
+- 「１７時２０分の局面。」 → ルール3
+- 「消費時間は日浦３時間２５分、真田２時間３３分。」 → ルール1, 3
+
+---
+手数79: 先手は大駒を活用していく。
+
+削除理由:
+- 「日浦は」 → ルール1
+
+---
+手数81: 激しい攻め合いとなりそうだ。
+
+削除理由:
+- 「▲６六桂の局面で真田が４分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は日浦４時間２分、真田２時間４６分。」 → ルール1, 3
+
+---
+手数95: 中住居の急所は４筋や６筋といった玉のコビン攻め。
+
+削除理由:
+- なし
+
+---
+手数96: 玉を早逃げするが。
+
+削除理由:
+- なし
+
+---
+手数99: これで金の逃げ場所が難しい。△６二金は▲７四馬がある。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は日浦４時間３６分、真田２時間５９分。」 → ルール1, 3
+
+---
+手数102: 受けが利かないので攻め合う。
+
+削除理由:
+- なし
+
+---
+手数108: 先手が勝っているといわれている。
+
+削除理由:
+- なし
+
+---
+手数113: 冷静に受ける。玉が広くなり、さらに飛車の利きが通っている。
+
+削除理由:
+- なし
+
+---
+手数119: 自玉は詰めろではないと見切った。後手玉は受けなしだ。
+
+削除理由:
+- なし
+
+---
+手数125: 先手玉は△５八龍と迫っても▲６八金で不詰、後手玉は受けなし。後手の投了となった。
+
+削除理由:
+- 「真田の投了となった。」 → ルール1
+- 「終局時刻は２０時３９分。」 → ルール3
+- 「消費時間は日浦４時間４７分、真田３時間２０分。」 → ルール1, 3
+- 「勝った日浦は５勝２敗、敗れた真田は４勝３敗となった。」 → ルール1, 4

@@ -1,0 +1,108 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so I've got this request. They want me to clean up Shogi game commentary, basically refactoring it.  The goal is clear: strip out all the fluff, the irrelevant stuff, the things that aren't actually contributing to the strategic understanding of the game.  I need to focus laser-like on the *meat* of the commentary – the board positions, the actual moves being played, and the strategic rationale behind those moves.
+
+So, here's my plan of attack. First, I need to thoroughly understand the rules of what's *in* and what's *out* of bounds, what's crucial for analysis and what's just noise. Once I've got that straight, I can sift through each comment, one by one. I'll be meticulously hunting down the parts that need to go, those non-essential segments that obscure the core information. Finally, I'll take the remaining, worthwhile fragments and stitch them together into coherent, fluent Japanese explanations. This is about making the analysis crisp and accessible, removing anything that distracts from the pure essence of the game. It's about clarity and conciseness, really streamlining the insight.
+
+手数1:
+
+削除理由:
+- 「児玉七段の今期成績は５勝１６敗（勝率０．２３８）。」 → ルール4
+- 「通算成績は３８８勝５１６敗（勝率０．４２９）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「室岡七段の今期成績は９勝１６敗（勝率０．３６０）。」 → ルール4
+- 「通算成績は４１７勝４７５敗（勝率０．４６７）。」 → ルール4
+
+手数6: 後手は得意の四間飛車へ。
+
+削除理由:
+- 「室岡は」 → ルール1
+- 「この両者の過去３局の対戦でも、いずれも室岡が四間に飛車を振っている。」 → ルール2
+
+手数21: 先手も得意の急戦へ。
+
+削除理由:
+- 「児玉も」 → ルール1
+
+手数23: ▲２五歩を決めずに出るのは多少違和感があるが、△３三角なら飛車先は保留して、３五の地点を攻める狙いなのかもしれない。
+
+削除理由:
+
+手数24:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉１１分、△室岡３０分。」 → ルール3
+
+手数25: 先手はすぐに飛車先を突いた。この辺り、水面下での駆け引きが始まっているようだ。
+
+削除理由:
+- 「児玉は」 → ルール1
+
+手数26: なかなか△５二金左と上がらないのは、先手の棒銀に対して△３二飛〜△４二金の形で受ける余地を残している為だろう。その形は将来３三の地点で角交換になった時に△同金と取って２筋の突破を防ぐことができる。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「この局面で室岡が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲児玉４９分、△１時間７分。」 → ルール3
+
+手数31: 先手は▲４六銀右急戦にでる。ただ通常は６八銀、６九金型で用いられることが多く、この局面では▲４六歩や▲２六銀と指される方が普通だ。
+
+削除理由:
+- 「児玉は」 → ルール1
+
+手数32: 後手は△３二金と仕掛けに備えた。ここで先手からは▲３五歩、▲５五歩、▲３七桂、▲６六歩といった手が考えられる。
+
+削除理由:
+- 「室岡は３１分考え」 → ルール1, 3
+- 「１４時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉１時間１３分、△室岡１時間３８分。」 → ルール3
+- 「この局面で児玉は１時間以上考えている。」 → ルール1, 3
+
+手数33: 先手はシンプルに３筋から仕掛けていった。自然な応対なら△４五歩の反発が見えるが、▲同銀△３五歩の時どう指す予定だろうか。
+
+削除理由:
+- 「児玉は１時間半近く考え」 → ルール1, 3
+
+手数34: 後手はじっくり読みを入れ△４五歩と突き違えた。
+
+削除理由:
+- 「室岡も３０分」 → ルール1, 3
+
+手数35: 先手は歩をとらず先に角交換をした。△同金は▲３一角や▲５三角が生じるので△同桂であろう。
+
+削除理由:
+- 「児玉は」 → ルール1
+
+手数38: ３二に金が上がっているのでこの取り込みが利く。但し先手からは前述の角打ちの筋があるので局面の均衡は保たれているのかもしれない。
+
+削除理由:
+
+手数41: ▲４六歩と手を戻すのは駒損でもあり不満と見たか、先手は更に攻め合いに打って出た。
+
+削除理由:
+- 「児玉は」 → ルール1
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間４９分、△室岡２時間１０分。」 → ルール3
+- 「室岡はこの局面で長考に沈んでいる。」 → ルール1, 3
+
+手数42: 後手は５二に飛車を逃げた。ここはほぼ逃げる一手だったので、この後の構想を練っていたのだろう。
+
+削除理由:
+- 「室岡は１時間１７分の長考の末、」 → ルール1, 3
+
+手数46: ▲７四桂が見えているが、すぐに打ってくるのは大丈夫とみて歩を突き出した。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「この局面で児玉が１３分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲児玉３時間１０分、△室岡３時間４７分。」 → ルール3

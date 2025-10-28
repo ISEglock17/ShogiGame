@@ -1,0 +1,80 @@
+**My Refined Processing of Shogi Game Commentary**
+
+Okay, so I've received a request to format some Shogi game commentary. I'm focusing on cleaning it up based on the provided rules, removing unnecessary details, and presenting the essential information in a natural Japanese style.
+
+Let's look at the first example. It seems the user provided the details of the player:
+
+1.  **Move 1:** This segment contains a complete profile of player "Makino Mitsunori", including birthdate, hometown, mentor, progression through the Shogi ranks, and professional identification number. According to rule 4, this is all biographical information. I'll need to discard all of this information. The output for this section will be empty.
+
+手数1:
+
+削除理由:
+- 「◆牧野　光則（まきの　みつのり）五段◆ １９８８年４月１６日生まれの２７歳。和歌山県和歌山市出身。（故）木下晃七段門下。 １９９９年、６級で奨励会入会。２０１０年、四段昇段（プロ入り）。２０１５年、五段昇段。棋士番号は２７９。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆小林　健二（こばやし　けんじ）九段◆ １９５７年３月３１日生まれの５８歳。香川県高松市出身。（故）板谷進九段門下。 １９７２年、６級で奨励会入会。１９７５年、四段昇段（プロ入り）。２００２年、九段昇段。棋士番号は１２３。 棋戦優勝は２回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「牧野の今年度成績は２０勝１４敗（０．５８８）。」 → ルール4
+- 「通算成績は１２２勝９７敗（０．５５７）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「小林の今年度成績は９勝１５敗（０．３７５）。」 → ルール4
+- 「通算成績は６７７勝６９０敗（０．４９５）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「牧野の直近１０局の成績は４勝６敗（右が最新：○○○●●●●○●●）。」 → ルール4
+
+手数6:
+
+削除理由:
+- 「小林の直近１０局の成績は５勝５敗（右が最新：○○●●●○●○●○）。」 → ルール4
+
+手数10: 後手はダイレクト向かい飛車を採用した。
+
+削除理由:
+- 「小林」 → 置換ルール
+
+手数29:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲牧野２３分、△小林１９分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「この局面で牧野が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲牧野１時間１６分、△小林３８分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲牧野１時間３０分、△小林４８分。」 → ルール3
+
+手数53: 狙いは▲２四角成と▲４二角成だろう。先手陣は堅いため、攻めがつながる展開になればよい。
+
+削除理由:
+
+手数54: ひと目は先手がよさそうだ。囲いが堅く、後手陣は横からの攻めに弱いのだが飛車交換になりそうだ。後手としては７三桂をどう跳ぶかが問われている。一例は▲２九飛△４六角成に、（１）▲２四角成△２八歩▲２三馬△２九歩成▲２二飛。ほかには（２）▲４二角成△６二金（△６三銀だと▲５三桂成が生じる）の交換を入れてから▲２四馬△２八歩▲２三馬△２九歩成も考えられるが、▲２二飛と打ったときに５二銀にヒモがつくため、この場合は単に▲２九飛△４六角成から（１）▲２四角成とするのがまさる。
+
+削除理由:
+- 「（大石直嗣六段）」 → ルール1
+- 「そうです」 → 自然な文章への整形
+- 「のですが」 → 自然な文章への整形
+- 「どう跳ぶか」 → 自然な文章への整形
+
+手数59: 終局が早そうな展開だ。
+
+削除理由:
+- 「ですね」 → 自然な文章への整形
+- 「（大石六段）」 → ルール1

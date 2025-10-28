@@ -1,0 +1,88 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, I'm working with a user request here – they want me to clean up and format Shogi game commentary. I understand the task: they've given me a set of rules and some initial examples to learn from. My job is to take each comment and filter it, removing any unnecessary details while restructuring the remaining information into a smooth, readable sentence. 
+
+Let's look at this specific example: "手数6: 一手損角換わりになった。"
+
+*   **Deconstructing the comment:** I can see that "手数6" indicates the move number, and the phrase "一手損角換わりになった" describes the evolving game position.
+*   **Rule-based filtering:** According to my internal logic, none of this needs to be discarded. This comment provides a key strategic insight into the game state, specifically a "one-move-loss" exchange of Bishop.
+*   **Reconstructing the comment:** I can just present it as it is. 
+
+*   **Final Output**: "手数6: 一手損角換わりになった。"
+
+This comment is perfect as it is, as it directly explains the position at move 6.
+
+手数6: 一手損角換わりになった。
+
+削除理由:
+- なし
+
+手数15: 先手は▲３七銀〜▲４六銀の早繰り銀を目指す。
+
+削除理由:
+- 「金井は」 → ルール1
+
+手数16: 後手は△６三銀〜△５四銀の腰掛け銀コース。
+
+削除理由:
+- 「後手の糸谷は」 → ルール1
+
+手数20: △６四角と打ち、２八飛を狙うための歩突き。
+
+削除理由:
+- なし
+
+手数30:
+
+削除理由:
+- 「この局面で金井が１時間９分の長考に沈み、そのまま昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲金井１時間２７分、△糸谷２１分。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「昼食休憩を挟んで１時間４４分の長考だった。」 → ルール3, 7
+- 「１４時を回り、糸谷も３０分以上の長考をしているようだ。」 → ルール1, 3
+- 「消費時間は▲金井２時間２分、△糸谷２１分。」 → ルール1, 3
+
+手数32: 大駒が前線にいると当たりがきついので、引いて決戦に備えた。
+
+削除理由:
+- 「糸谷も５１分考えた。」 → ルール1, 3
+
+手数41:
+
+削除理由:
+- 「１５時１０分頃の局面。」 → ルール3
+- 「消費時間は▲金井２時間２７分、△糸谷１時間３３分。」 → ルール1, 3
+
+手数45: 次に▲６六金と取れれば、△６五歩と位を取られていた形から盛り返せる。振り飛車対左美濃などの左美濃側でも見られる手段。
+
+削除理由:
+- なし
+
+手数47:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲金井２時間５４分、△糸谷２時間２分。」 → ルール1, 3
+
+手数58:
+
+削除理由:
+- 「この局面で金井が１２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲金井３時間４２分、△糸谷３時間３分。」 → ルール1, 3
+
+手数66: △４七歩成が受からない形なので、先手はここで攻め切らないといけない。
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は▲金井４時間３分、△糸谷３時間１１分。」 → ルール1, 3
+- 「金井は」 → ルール1
+
+手数93: この局面で後手は投了した。
+
+削除理由:
+- 「糸谷は」 → ルール1
+- 「消費時間は▲金井４時間４１分、△糸谷３時間２０分。」 → ルール1, 3
+- 「両者とも４勝３敗となった。」 → ルール4

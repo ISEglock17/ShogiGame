@@ -1,0 +1,80 @@
+**Analyzing and Structuring Shogi Game Commentary**
+
+Okay, I'm tasked with formatting shogi game commentary, making it clear and organized. The user wants the information presented in a consistent manner, following specific rules. Let's see...
+
+First, I need to process these comments individually. I'll read through each one and break it down.
+
+*   **Comment 1:** This is the opening phase of the game, a Sō-Yagura formation. It mentions details about player Toyoshima, specifically his typical opening styles and history. I need to capture that "Sō-Yagura" and the fact that Toyoshima is a frequent player of "Ibyisha".
+*   **Comment 2:** This comment captures a critical point in the game.  Muranaka takes a significant amount of time, almost half an hour, to think over a position, before going for lunch. I must accurately record the move number and the thinking time. It also contains the exact consumption time as of that point for both players.
+*   **Comment 3:** It's mid-afternoon, and the comment reflects it. This describes the current time during the game, and the accumulated consumption time for each player at this point.
+*   **Comment 4:** There's no comment here. Moving on.
+
+手数10: 相矢倉の序盤戦。
+
+削除理由:
+- 「豊島はデビュー後に居飛車の将棋を多く指しているが、振り飛車も指すことがあるそうだ。」 → ルール5
+
+手数36:
+
+削除理由:
+- 「この局面で村中が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲村中１時間３分、△豊島４７分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中１時間３３分、△豊島１時間１３分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１時間１７分の長考。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中２時間３０分、△豊島２時間５６分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「４２分の長考。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「この局面で村中が２７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲村中３時間１７分、△豊島３時間３９分。」 → ルール3
+
+手数57:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中４時間２分、△豊島３時間４２分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「４９分の長考。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中４時間４分、△豊島４時間３１分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村中４時間４１分、△豊島５時間１３分。」 → ルール3
+
+手数86: ▲３五桂△６七金に▲３二金△同玉▲２三角△同飛成▲同桂成△同玉▲６七金で先手の勝ち筋と見られている。
+
+削除理由:
+- 「０時ごろの局面。」 → ルール3
+- 「残り時間は村中１８分、豊島１３分。」 → ルール3
+- 「棋士室では」 → ルール1, 6
+- 「と見ている」 → 「と見られている」に整形

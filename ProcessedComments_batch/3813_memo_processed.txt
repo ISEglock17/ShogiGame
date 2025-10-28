@@ -1,0 +1,131 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so I need to take this raw Shogi game commentary and refine it. The user wants a clean, focused analysis, stripped of all the fluff. My goal is to extract only the critical information: the board state evolution and the rationale behind each move.
+
+Here's my thought process: I'll tackle this piece by piece, dissecting each comment. I have a predefined set of rules – a checklist of elements to *remove*. Things like general commentary, expressions of emotion, or anything unrelated to the tangible board position or the immediate tactical implications of a move. Anything that doesn't contribute directly to the understanding of the game's unfolding will be purged.
+
+Once I've identified the elements that need to go based on those rules, I'll delete them. Then, and this is crucial, I'll go through the remaining fragments and stitch them back together into coherent Japanese sentences. It's about preserving the *meaning*, not just the raw data. I want to convey a clear narrative of the game's progress, emphasizing the strategic reasoning behind each significant decision. This ensures the user gets a concise, insightful, and expert-level analysis of the match.
+
+手数4:
+削除理由:
+- 「この４手の組み合わせの出だしは珍しく、データベース上では約７万局中４１局（▲１１勝△２９勝・千日手１）しか指されていない。」 → ルール2
+
+手数5:
+手数5: 先手は三間飛車。
+削除理由:
+- 「高崎」 → ルール1
+
+手数6:
+手数6: 後手も三間飛車。
+削除理由:
+- 「増田」 → ルール1
+
+手数14:
+手数14: ここまで先手と同じ動きをしていた後手だが、初めて手を変えた。
+
+削除理由:
+
+手数20:
+手数20: 相振り飛車の先後同型という、珍しい形になっている。
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２１分、△増田２０分。」 → ルール3
+
+手数28:
+手数28:
+
+削除理由:
+- 「この局面で高崎が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲高崎１時間１９分、△増田３６分。」 → ルール3
+
+手数31:
+手数31: 後手の銀を重い形にしようとしている。
+
+削除理由:
+
+手数32:
+手数32: 引かずにいると、▲２六歩〜▲３七歩で銀が捕まってしまう。
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎１時間５４分、△増田４７分。」 → ルール3
+
+手数33:
+手数33: 先手は歩を打つ。後手は長考している。
+削除理由:
+- 「３分で」 → ルール3
+- 「増田が４０分以上」 → ルール1, 3
+- 「１５時を回った。」 → ルール3
+
+手数40:
+手数40:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２時間９分、△増田２時間３１分。」 → ルール3
+
+手数45:
+手数45:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎２時間５５分、△増田３時間５分。」 → ルール3
+
+手数46:
+手数46: 次に△５四歩と突く狙い。
+
+削除理由:
+
+手数49:
+手数49: ▲７六角が厳しいのではないかと言われている。△５四歩に▲同銀と取れるようにしている。
+削除理由:
+- 「この局面で増田が１１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲高崎３時間１１分、△増田３時間４４分。」 → ルール3
+
+手数50:
+手数50: 後手は４三を補強して、辛抱。先手がかなりリードしていると見られている。ここで▲４五歩が検討されている。△同銀なら▲４四歩や、▲６六飛〜▲２六飛がある。
+削除理由:
+- 「検討している奨励会有段者勢は」 → ルール1
+
+手数56:
+手数56:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎４時間１分、△増田３時間５２分。」 → ルール3
+
+手数57:
+手数57:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎４時間１６分、△増田３時間５２分。」 → ルール3
+
+手数61:
+手数61: △７三同桂は▲同桂成△同銀▲７八飛がある。
+
+削除理由:
+
+手数70:
+手数70:
+
+削除理由:
+- 「２１時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高崎４時間１９分、△増田４時間５１分。」 → ルール3
+
+手数76:
+手数76: ▲７三香△６一玉▲６四金が厳しい。５三角が動くと▲７一龍の１手詰がある。
+
+削除理由:
+
+手数79:
+手数79: かねてからの狙いの▲６四金が実現。眠っていた６八飛も働いてきた。
+
+削除理由:
+
+手数83:
+手数83: ８二に合駒をするのは、▲８一角△７三玉▲６三飛成△同金▲８二龍△同玉▲６三角成で受けなし。ここで後手が投了した。
+削除理由:
+- 「増田が１分考え、次の手を指さずに」 → ルール1, 3
+- 「消費時間は▲高崎４時間４９分、△増田５時間１３分。」 → ルール3
+- 「勝った高崎は７勝２敗、敗れた増田は１勝８敗。」 → ルール4
+- 「増田は降級点（１度目）が決まった。」 → ルール4

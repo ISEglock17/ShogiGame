@@ -1,0 +1,100 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so I'm presented with Shogi game commentary and my task is clear: I need to whip it into shape, removing the fluff and leaving only the insightful analysis of moves and the board state. Essentially, I'm streamlining the commentary for a focused, expert audience, who won't need the extraneous details.
+
+Here's how I'll approach this:
+
+1.  **Iterate through each move's commentary block.**
+2.  **Employ the removal rules.** I'll zero in on phrases and information that are off-topic or irrelevant to the core analysis.
+3.  **Synthesize into clear prose.**  I'll connect the remaining elements, the board positions and the move explanations, to form coherent sentences. It's about distilling the meaning and impact of each move.
+4.  **Format the output.**  I'll deliver the refined analysis exactly as requested. My job is to transform the input based on pre-defined specifications and make the result clear and focused.
+
+手数1:
+
+削除理由:
+- 「◆吉田　正和（よしだ　まさかず）五段◆１９８６年１月２３日生まれ、埼玉県ふじみ野市出身。神吉宏充七段門下。２００８年、四段。２０１２年、五段。棋士番号は２７３。」 → ルール4
+手数2:
+
+削除理由:
+- 「◆西川　慶二（にしかわ　けいじ）七段◆１９６１年１２月６日生まれ、東京都品川区出身。賀集正三七段門下。１９８１年、四段。１９９７年、七段。棋士番号は１５１。」 → ルール4
+手数3:
+
+削除理由:
+- 「吉田の通算成績は９５勝８６敗（勝率０．５２５）。昨年度成績は１３勝１４敗（０．４８１）。本年度成績は９勝１２敗（０．４２９）。」 → ルール4
+手数4:
+
+削除理由:
+- 「西川の通算成績は４８７勝５６３敗（勝率０．４６４）。昨年度成績は６勝１８敗（０．２５０）。本年度成績は４勝１２敗（０．２５０）。」 → ルール4
+手数8: 初形の位置のまま角交換。一手損角換わりに進みそうだ。
+
+削除理由:
+手数17: ▲３七銀と上がり急戦を見せた。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲３七銀までの消費時間は▲吉田２２分、△西川２６分。」 → ルール3
+手数19: ４筋からの起用は早繰り銀と呼ばれる戦法だ。
+
+削除理由:
+手数20: 歩越し銀には歩で対処。
+
+削除理由:
+手数22: △４五歩と突いて銀を追えるようにしている。
+
+削除理由:
+手数25: ２筋の歩も交換。
+
+削除理由:
+手数33: 引きさがり、駒組みに戻るつもりだろう。後手の陣形がまとめにくいと見ている。
+
+削除理由:
+手数34: 後手は２三金、３四銀を受けに使いたい。の裏を取られてはいけない。
+
+削除理由:
+手数35:
+
+削除理由:
+- 「１２時１０分、ここで西川が１７分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲吉田１７分、△西川１時間１８分。」 → ルール3
+- 「昼食の注文はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+手数39: 壁銀を解消し、あとは８八へ玉が移動すれば矢倉城入城となる。
+
+削除理由:
+手数40: 堅いとはいえないものの、後手もバランスのいい陣形だ。
+
+削除理由:
+手数42:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△９四歩までの消費時間は▲吉田１時間０分、△西川１時間４１分。」 → ルール3
+手数43: 脇を引き締める。６八金型の矢倉はへこみ矢倉などと呼ばれる。堅さだけなら通常の金矢倉よりも上だが、斜め、上部からの攻めが急所で、決められてしまうと一気に寄ってしまう。
+
+削除理由:
+手数45:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「▲２六銀までの消費時間は▲吉田１時間２７分、△西川１時間４９分。」 → ルール3
+手数46: 好点の角で▲３五銀をけん制。
+
+削除理由:
+手数47: 構わずぶつけていった。駒の交換は堅さにまさる先手に利があるか。
+
+削除理由:
+手数49:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「▲３五同歩までの消費時間は▲吉田１時間３４分、△西川２時間５５分。」 → ルール3
+手数67: ▲５八金は玉を固める勝負手で、対して後手も玉を囲ったのは良くなかったようだ。△６五歩〜△６四角など、何かけん制すべきだったのかもしれない。玉を固めて▲２六銀と上がったところ（４５手目）は後手が大変なようだ。
+
+削除理由:
+- 「ここで西川が投了した。」 → ルール8
+- 「終局時刻は１７時０分。」 → ルール3
+- 「消費時間は▲吉田１時間４８分、△西川３時間４９分。」 → ルール3
+- 「勝った吉田は３勝５敗、敗れた西川は１勝７敗になった。」 → ルール4
+- 「感想戦終了後、吉田が中継室へ来訪。本局の流れについて聞いた。」 → ルール1, 6, 8
+- 「という結論でした」 → ルール1
+- 「と思います」 → ルール1

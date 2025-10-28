@@ -1,0 +1,109 @@
+**Structuring My Approach to Cleaning Up Shogi Game Commentary**
+
+Okay, so I've got a user request here to essentially clean up and format some Shogi game commentary. I understand the task – it's all about making the commentary more accessible and easier to digest. My approach is pretty straightforward: I'll be meticulously processing the commentary, hand in hand with the provided rules.
+
+It looks like the core of the problem involves removing extraneous information to leave the core game narrative. The rules are crucial here; these are my guidelines. I have to make sure that the final result only focuses on the game itself. No distracting information. I need to be precise, or I'm not doing my job!
+
+手数1:
+
+削除理由:
+- 「豊島は１７日現在、全棋士中勝率がトップ。」 → ルール4
+
+手数11: 相矢倉の出だし。
+
+削除理由:
+- なし
+
+手数17: 先手は▲６八玉〜▲７八玉の早囲いの狙いもある。
+
+削除理由:
+- なし
+
+手数20:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島３９分、△伊奈２３分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「この局面で伊奈が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲豊島１時間４分、△伊奈５３分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島１時間９分、△伊奈１時間３８分。」 → ルール3
+
+手数40: ここで△４五歩と突くのは、▲６五歩がある。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島２時間４分、△伊奈２時間６分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島３時間１３分、△伊奈２時間３４分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「この局面で伊奈が１１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲豊島３時間４２分、△伊奈３時間１２分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島４時間１３分、△伊奈３時間３７分。」 → ルール3
+
+手数67: △３五同銀は▲４五歩△同金▲４六飛！がある。
+
+削除理由:
+- なし
+
+手数69:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島４時間４３分、△伊奈３時間５６分。」 → ルール3
+
+手数81: ７三銀が攻めに働いていないので、先手が優勢のようだ。
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊島５時間２４分、△伊奈４時間２６分。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「終盤で４１分の長考。」 → ルール3
+
+手数86: ８０手目の局面に比べて、６七の金が４七に移動したことになっている。
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「消費時間は▲豊島５時間２６分、△伊奈５時間１１分。」 → ルール3
+
+手数103:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「消費時間は▲豊島５時間４０分、△伊奈５時間２６分。」 → ルール3
+
+手数126:
+
+削除理由:
+- 「０時２０分頃の局面。」 → ルール3
+- 「残り時間は豊島１３分、伊奈１１分。」 → ルール3
+
+手数165: この局面で後手が投了した。後手玉は▲２二香成以下の詰みが受からず、先手玉に詰みはない。
+
+削除理由:
+- 「伊奈」 → 置換ルール
+- 「消費時間は▲豊島５時間５４分、△伊奈５時間５９分。」 → ルール3
+- 「勝った豊島は６勝１敗、敗れた伊奈は２勝５敗となった。」 → ルール4

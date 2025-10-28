@@ -1,0 +1,102 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm tasked with taking raw commentary from Shogi game data and turning it into something clean and useful. Essentially, I need to sift through these comments and retain only the insightful bits related to the board position and moves themselves, while ditching anything that's just noise for my analysis.
+
+Here's how I'm thinking of tackling this:
+
+1.  **Iterate through Each Move:** I'll process the commentary step-by-step, move by move, so I don't miss anything.
+2.  **Apply the Rules:** I'll meticulously check each comment against the pre-defined rules. I need to be *very* precise here, as the accuracy of my analysis depends on this. Based on the rules, I'll identify and excise the redundant parts.
+3.  **Refine the Language:** Once the irrelevant parts are gone, I'll need to polish the remaining text. Make sure the remaining phrases are coherent, and sound natural.
+4.  **Organize the Output:** Lastly, I'll need to format everything properly. I'll need to clearly show which move I'm referencing, the cleaned-up commentary, and the specific reason why I eliminated certain parts. This is vital for maintaining transparency and understanding what was changed and why.
+
+手数4: ４手目△３三角戦法が飛び出した。
+
+削除理由:
+- 「増田が４手目△３三角を指すのは２回目、佐藤紳が４手目△３三角と指されるのは４回目。」 → ルール2, 4
+
+手数9: お互い角を打ちあった。手の損得はない。
+
+削除理由:
+
+手数14: ４手目△３三角は振り飛車になることが多いが、本局は相居飛車。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１１時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４６分、増田△１０分。」 → ルール3
+
+手数18: 早くも２回目の角交換が行われた。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「この局面で佐藤紳が１０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳１時間１４分、△増田４２分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間２７分、△増田１時間３５分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤慎１時間５９分、△増田２時間７分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間１６分、△増田２時間３５分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１７時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間３３分、△増田３時間１９分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「この局面で２５分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳３時間２分、△増田３時間５０分。」 → ルール3
+
+手数58: ▲８五同歩△同桂▲６八銀△８六歩という展開では先手陣はひとたまりもない。
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳３時間３分、△増田４時間１２分。」 → ルール3
+
+手数59: 後手に４五桂を取られる前に強襲をかける。
+
+削除理由:
+
+手数60: もし△５三同金なら、▲同桂成△同角▲６三飛成がある。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間１１分、△増田４時間３７分。」 → ルール3
+
+手数82:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間４０分、△増田４時間５４分。」 → ルール3
+
+手数95: △３一同玉に▲３二銀△同玉▲４一角以下の即詰み。後手はここで投了した。
+
+削除理由:
+- 「増田」 → ルール1
+- 「消費時間は▲佐藤紳４時間５６分、△増田５時間９分。」 → ルール3
+- 「両者とも４勝４敗になった。」 → ルール4

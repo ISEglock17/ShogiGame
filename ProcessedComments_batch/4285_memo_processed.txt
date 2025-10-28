@@ -1,0 +1,122 @@
+**Focusing the Analysis: Cutting Through the Noise in Shogi Game Comments**
+
+Okay, so I need to get this straight.  Someone wants me to take this mountain of Shogi game data – all these comments that go along with the moves – and boil it down to the essential, analytical bits.  Think of it like this: I'm sifting through a gold rush, but I only want the nuggets, not the dirt.
+
+My mission is clear: clean up the comments. Get rid of all the extraneous fluff.  Things like the background noise: the introductions, the player profiles, the time stamps... all that stuff doesn't help me understand the game itself.  I need the core of the analysis, the strategic insights.
+
+The goal? To be left with clean, flowing sentences that explain the board positions and the reasoning behind each move. I want to be able to *think* about the game through these comments, not wade through a bunch of irrelevant information.  I want pure, insightful commentary.
+
+手数1:
+
+削除理由:
+- 「千葉の本年度の成績は３勝８敗／０．２７３」 → ルール4
+- 「通算成績は１６４勝１３４敗０．５５０」 → ルール4
+- 「脇の通算成績は５５３勝５０４敗／０．５２３」 → ルール4
+- 「本年度の成績は７勝７敗／０．５００」 → ルール4
+
+手数4: 後手は１手損角換わりとなった。
+
+削除理由:
+- 「脇」 → ルール1
+
+手数10:
+
+削除理由:
+- 「脇は後手番ではこの角交換振り飛車を多用している。」 → ルール5
+
+手数15: 大きな位取り。
+
+削除理由:
+
+手数16: 先手が▲２五歩とくれば、△２二飛▲２四歩△同銀と自動的に棒銀にできるし、△同歩▲同飛に△２二飛とぶつけたり、△２四歩▲２八飛△２二飛と逆襲を狙うことができる。
+
+削除理由:
+- 「１１時ごろの局面。消費時間は千葉１８分、脇２０分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「１１時３０分ごろの局面。消費時間は千葉４４分、脇２９分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「▲３六歩の局面で脇が２５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は千葉１時間５分、脇５４分。」 → ルール3
+- 「昼食の注文は千葉がけんちんうどん、おにぎり（サケ） 。」 → ルール7
+- 「脇が一口カツ定食。」 → ルール7
+
+手数25:
+
+削除理由:
+- 「３０分の長考。」 → ルール3
+
+手数27: 先手は長考して構想を練った。▲６六角は四方に利く駒で▲２五歩や▲７七桂〜▲８五桂〜▲９三桂成が狙いになっている。
+
+削除理由:
+- 「１４時過ぎの局面。消費時間は千葉２時間２分、脇５５分。」 → ルール3
+- 「千葉は２３手目▲３六歩に２１分、２５手目▲３七桂に３０分、２７手目▲６六角に２７分と」 → ルール3
+
+手数29: 先手は４四角を負担にさせようとしている。次に▲４五歩で角を捕獲できる。
+
+削除理由:
+- 「千葉」 → ルール1
+
+手数30: 角を追う。
+
+削除理由:
+- 「３７分の長考で」 → ルール3
+
+手数32: 後手の角は７三に引ければ安定する。
+
+削除理由:
+- 「１５時２０分ごろの局面。消費時間は千葉２時間７分、脇２時間２分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「５１分の長考。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１６時３０分ごろの局面。消費時間は千葉２時間５８分、脇２時間２分。」 → ルール3
+
+手数38: 飛車交換で流れが激しくなった。こういう展開なら後手が穴熊に入る前に戦いを起こせた先手の主張が通ったといえる。
+
+削除理由:
+- 「千葉」 → ルール1
+
+手数42: 先手は銀桂交換の駒得だが、８六角があまり働いていないのがネックだ。３三桂は△２五桂〜△３七桂成となれば十分働く。
+
+削除理由:
+- 「１７時３０分ごろの局面。消費時間は千葉３時間２６分、脇２時間２３分。」 → ルール3
+- 「千葉」 → ルール1
+
+手数43: ▲３一飛は△２五桂でお手伝い。△２五桂や△１九飛成とされたら▲２一飛と打つのが筋だ。
+
+削除理由:
+
+手数45:
+
+削除理由:
+- 「▲２一飛の局面で脇が２１分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は千葉４時間１分、脇２時間５７分。」 → ルール3
+- 「夕食の注文は千葉が味噌煮込みうどん。」 → ルール7
+- 「脇が五目焼きそば。」 → ルール7
+
+手数53: ▲６六桂や端攻めが楽しみ。
+
+削除理由:
+
+手数59: 絶好の馬引き。
+
+削除理由:
+
+手数61: 以下△同香は▲９三銀△同桂▲同馬△８一玉▲７三桂打で寄り。後手の投了となった。
+
+削除理由:
+- 「脇」 → ルール1
+- 「終局時刻は２０時１２分。」 → ルール3
+- 「消費時間は千葉４時間５０分、脇３時間１３分。」 → ルール3
+- 「勝った千葉は１勝４敗、敗れた脇は４勝２敗となった。」 → ルール4

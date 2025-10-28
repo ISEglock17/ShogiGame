@@ -1,0 +1,39 @@
+=== バッチの最終結果: batches/i7qt76j0c353rxh1bwx4k323eo36o9q6ec2b ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "3306",
+  "response": {
+    "responseId": "ogf5aNTNLsfQz7IPusHnoAI",
+    "candidates": [
+      {
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "**Processing and Cleaning up Shogi Commentary**\n\nOkay, so I'm looking at this Shogi data. It seems the user wants me to process the comments within the game records. They're asking me to clean things up – essentially, to extract the valuable information and remove all the fluff. I get it. We need to get rid of the meta stuff, like introductions, time stamps, player bios, you know, all the noise. What we *want* are the insightful explanations of the board state and the moves themselves, presented in a clear and readable way. That's the core of what needs to be done. We need to follow their defined rules and format precisely, ensuring the output is perfectly structured.\n",
+              "thought": true
+            },
+            {
+              "text": "手数20:\n削除理由:\n- 「武市は陽動振り飛車。」 → ルール5\n\n手数24:\n削除理由:\n- 「２０時１５分の局面。」 → ルール3\n- 「消費時間は西尾２時間５３分、武市４時間３６分。」 → ルール3\n\n手数33: ▲９七角の筋も狙っている。\n削除理由:\n\n手数37: 手薄な３筋を狙う。\n削除理由:\n- 「２１時１５分の局面。」 → ルール3\n- 「消費時間は西尾３時間１６分、武市５時間１１分。」 → ルール3\n\n手数45: 後手が居玉なので、強気に指す。\n削除理由:\n\n手数48: ▲５四歩△同金▲６三銀の筋を受ける。\n削除理由:\n\n手数50:\n削除理由:\n- 「２２時１５分の局面。」 → ルール3\n- 「残り時間は西尾２時間１９分、武市１３分。」 → ルール3\n\n手数51: 先手の攻めを受け切れないと見て、後手の投了となった。\n削除理由:\n- 「西尾の」 → 先手・後手の実名は置換\n- 「武市の」 → 先手・後手の実名は置換\n- 「終局時刻は２２時２３分。」 → ルール3\n- 「消費時間は西尾３時間５０分、武市５時間４７分。」 → ルール3\n- 「勝った西尾は４勝１敗、武市は１勝４敗となった。」 → ルール4"
+            }
+          ]
+        },
+        "index": 0,
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3764,
+      "totalTokenCount": 4222,
+      "thoughtsTokenCount": 89,
+      "candidatesTokenCount": 369,
+      "promptTokensDetails": [
+        {
+          "tokenCount": 3764,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    "modelVersion": "gemini-2.5-pro"
+  }
+}

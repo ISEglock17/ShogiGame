@@ -1,0 +1,125 @@
+**My Approach to Refining Shogi Game Commentary**
+
+Okay, so I'm tasked with cleaning up these comments within Shogi game datasets. The goal here is pretty straightforward: I need to transform raw commentary into coherent, insightful analyses of the game itself. No fluff, no extraneous details. Think of it as distilling the essence of the game's evolution into something that *I*, an expert, would find valuable for deeper analysis.
+
+My plan of attack is clear. First, I'll meticulously go through the comments, following a set of rules I'll define. Those rules will dictate what to throw out. That means all the meta-stuff - player introductions, timing, and commentary that doesn't directly relate to what's happening on the board or the significance of a move - it's got to go.
+
+Once that initial sweep is done, I'll focus on polishing what remains. I want to ensure the commentary reads smoothly and naturally. It's not just about eliminating the noise; it's about making sure the core insights, the crucial explanations of the positions and moves, are presented in the most accessible and logical way possible. It's about crafting the narrative of the game, move by move.
+
+手数1:
+
+削除理由:
+- 「◆中村　太地（なかむら　たいち）六段◆」 → ルール1, 4
+- 「１９８８年６月１日生まれ、東京都府中市出身。（故）米長邦雄永世棋聖門下。２００６年、四段。２０１２年、六段。棋士番号は２６１。」 → ルール4
+- 「タイトル戦登場は１回（第８３期棋聖戦）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆神谷　広志（かみや　ひろし）七段◆」 → ルール1, 4
+- 「１９６１年４月２１日生まれ、静岡県浜松市出身。（故）廣津久雄九段門下。１９８１年、四段。１９９７年、七段。棋士番号は１４９。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「中村の今年度成績は５勝１敗（０．８３３）」 → ルール4
+- 「通算成績は１７８勝１０１敗（０．６３８）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「神谷の今年度成績は１勝１敗（０．５００）」 → ルール4
+- 「通算成績は５２６勝５３１敗（０．４９８）」 → ルール4
+
+手数6: 一手損角換わりへ。
+
+削除理由:
+
+手数7:
+
+削除理由:
+- 「順位戦は８期目の参加。Ｃ級１組は通算２期目。」 → ルール4
+
+手数8:
+
+削除理由:
+- 「順位戦は３３期目の参加。Ｂ級１組は通算６期。Ｃ級１組は通算８期目。」 → ルール4
+
+手数9:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数19: 先手は早繰り銀を採用した。
+
+削除理由:
+- 「中村」 → 置換ルール
+
+手数32: △３九角は▲３八飛△８四角成▲２六銀で先手が攻勢を取れる。そこで△４四金には▲６六角で馬を消せる。
+
+削除理由:
+- 「（糸谷六段）」 → ルール1
+- 「２２時頃の局面。現局面までの消費時間は▲中村４時間４３分、△神谷４時間２１分。」 → ルール3
+
+手数37: △２七角は、▲２八飛△４九角成▲５七角。後手は▲５九金寄の馬殺しが受けにくい。
+
+削除理由:
+
+手数41: 取るのは、▲５六歩。どちらでもカナ駒が取られてしまう。
+
+削除理由:
+
+手数44: 「桂の高跳び、歩の餌食」と言われるが、２六には先手の銀がいるので２五桂はなかなか死なない。
+
+削除理由:
+
+手数45: 金も戦線に参加させ、総攻撃を目指す。△４六同歩▲同金△４五歩は▲３五金でさばける形だ。
+
+削除理由:
+
+手数46: 桂にひもをつける。後手は薄い形だが、厚みを生かして模様を広げることができるか。
+
+削除理由:
+- 「中村の攻め、神谷の受けと棋風通りの展開になりそうだ。」 → ルール5
+
+手数49: これで攻めがつながるのか。
+
+削除理由:
+
+手数51: 自陣の桂を活用する。△５五金には▲５六歩〜▲５五桂がある。△５五金は半端なので、▲５六歩△５四金引▲４六桂やいきなり▲４四歩で駄目そうだ。３七桂に当てて催促する雰囲気の△３六金にも、▲４四歩△同金▲７一角△５二飛▲４五歩△４三金▲４四桂がある。途中、▲４四歩に△４二金と辛抱する手もありそうだが、▲５六角や▲４六桂と浮いた３四銀を狙って攻めがつながりそうだ。
+
+削除理由:
+- 「（窪田六段）」 → ルール1
+
+手数52: カナ駒が手に入れば攻めがつながりそうだ。
+
+削除理由:
+- 「「うーん、」 → 整形
+- 「」（広瀬七段）」 → ルール1
+
+手数57:
+
+削除理由:
+- 「２３時３０分頃の局面。現局面までの消費時間は▲中村５時間４分、△神谷５時間０分。」 → ルール3
+
+手数61: 先手の攻めが筋に入ってきた。△３三馬には▲４四歩と大きな拠点を作れる。以下（１）△４四同金は▲７一角△５二飛▲６二金くらいで先手優勢となる。（２）△４二金も▲４五金とぶつけるのが気持ちのいい寄せだ。
+
+削除理由:
+- 「中村」 → 置換ルール
+
+手数69:
+
+削除理由:
+- 「２３時５０分頃の局面。現局面までの消費時間は▲中村５時間８分、△神谷５時間１７分。」 → ルール3
+
+手数70: 後手は首を差し出した。
+
+削除理由:
+- 「神谷」 → 置換ルール
+
+手数77: 後手が投了した。後手玉に受けは難しい。△７九銀▲同金△３八飛も▲４八歩△３五飛成▲２七桂が両取りで、後手が勝てない。
+
+削除理由:
+- 「ここで神谷が投了した。」 → 置換ルール
+- 「終局時刻は０時１０分。消費時間は▲中村５時間１２分、△神谷５時間２３分。」 → ルール3

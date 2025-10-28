@@ -1,0 +1,63 @@
+**Cleaning Up Game Analysis**
+
+Okay, so I need to go through this mountain of shogi game data and whip the comments into shape. The goal here is pretty clear: get rid of all the noise and keep only the gold. That means anything that isn't directly related to the actual moves and board state has to go. Think meta stuff, player introductions, time stamps - gone. What I *do* want is the meaty stuff: the explanations of what's happening on the board, the reasoning behind each move, the strategic insights. I need it all to flow naturally, like I'm reading a real-time analysis, not a data dump. It's about preserving the *analysis* and discarding the irrelevant fluff.
+
+手数19:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕１６分、△勝又４５分。」 → ルール3, 1
+
+手数26:
+
+削除理由:
+- 「この局面で▲小林裕が１７分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲小林裕５２分、△勝又１時間７分。」 → ルール3, 1
+
+手数37:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕１時間１６分、△勝又１時間３０分。」 → ルール3, 1
+
+手数38: 金銀から離れて自玉が危なそうだが、先手が右辺から攻めようとしているので、戦場から離れることで安全になったと考えることができる。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕２時間０分、△勝又２時間１分。」 → ルール3, 1
+
+手数46:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕２時間６分、△勝又３時間２５分。」 → ルール3, 1
+
+手数47: 端歩を突きこした。後手玉が左辺にいるので、▲９四歩から攻める手も出てきそうだ。
+
+削除理由:
+- 「５５分考えて」 → ルール3
+- 「この局面で△勝又が３１分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲小林裕３時間１分、△勝又３時間５６分。」 → ルール3, 1
+
+手数58:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕３時間２９分、△勝又４時間２４分。」 → ルール3, 1
+
+手数65:
+
+削除理由:
+- 「２１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕４時間８分、△勝又４時間３８分。」 → ルール3, 1
+
+手数94: ここで先手の投了となった。以下は即詰み。
+
+削除理由:
+- 「▲小林裕の」 → ルール1
+- 「消費時間は▲小林裕４時間２５分、△勝又５時間２３分。」 → ルール3, 1
+- 「勝った△勝又は２勝０敗、敗れた▲小林裕は１勝１敗となった。」 → ルール4, 1

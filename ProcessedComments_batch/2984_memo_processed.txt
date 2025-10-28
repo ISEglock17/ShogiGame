@@ -1,0 +1,107 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty straightforward: get rid of all the fluff and leave behind only the useful, analytical bits. I need to take the raw commentary and transform it into concise, insightful explanations of the moves and board states.
+
+My process will involve two key steps. First, I have to be able to identify and strip out all the extraneous information. This means removing things like meta-commentary, player introductions, and any time stamps – essentially, anything that doesn't directly contribute to understanding the *why* and *how* of each move.  
+
+Then, I'll take what's left and give it a polish. The goal is to make the commentary read smoothly and naturally, like a coherent explanation from a seasoned analyst. No more clunky phrases or disjointed thoughts. It needs to be clear, concise, and focused on the key tactical and strategic considerations.
+
+手数5: 先手は四間飛車。
+
+削除理由:
+- 「安用寺は」 → ルール1
+
+手数9: △４二銀は居飛車宣言とも、△３四歩〜△３三銀から矢倉に組もうとしているとも取れる。そこで様子見。
+
+削除理由:
+- 削除対象なし
+
+手数10: これで居飛車確定。
+
+削除理由:
+- 削除対象なし
+
+手数11:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺３２分、△小倉３３分。」 → ルール3
+
+手数12: 後手は△３三角と上がっているため一手遅れており、急戦にはしづらいだろう。
+
+削除理由:
+- 削除対象なし
+
+手数15:
+
+削除理由:
+- 「この局面で小倉が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲安用寺５７分、△小倉１時間４分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺１時間３６分、△小倉１時間２５分。」 → ルール3
+
+手数28: 後手は持久戦調の駒組み。相振り模様の出だしから居飛車にされた格好の先手だが、駒組みに不自然な個所はない。
+
+削除理由:
+- 削除対象なし
+
+手数36: ここで△４四同銀は▲６四歩がある。
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲安用寺２時間１０分、△小倉１時間５６分。」 → ルール3
+- 「１６時頃、安用寺は次の手を考えていた。」 → ルール1, 3
+
+手数37:
+
+削除理由:
+- 「５６分の長考だった。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲安用寺３時間２４分、△小倉２時間３３分。」 → ルール3
+
+手数51: 飛車を走らせないためとは言え、驚愕の金打ち。間違いなく、この金の活躍度が勝敗に直結するだろう。
+
+削除理由:
+- 削除対象なし
+
+手数52: 打たれた金をあまり相手にしない方針。
+
+削除理由:
+- 削除対象なし
+
+手数57:
+
+削除理由:
+- 「この局面で小倉が９分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲安用寺３時間５４分、△小倉２時間５７分。」 → ルール3
+
+手数72: △７五銀では、そっぽの金と中央を押さえる銀の交換になる。７六金は使わせないと一貫した方針。
+
+削除理由:
+- 削除対象なし
+
+手数77:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲安用寺４時間２２分、△小倉３時間２７分。」 → ルール3
+
+手数104: ▲５六同歩は△同飛が金取りと飛車成りがあるので、▲５九香などが考えられそう。先手は８六金が遊んでいるが、駒得で、馬や左桂が働いているのでやや指せそう。
+
+削除理由:
+- 「２１時頃の局面、ここまでの消費時間は▲安用寺４時間５２分、△小倉３時間４２分。」 → ルール3
+
+手数115: 後手の攻めが指しきりとなり、後手は投了した。
+
+削除理由:
+- 「この局面で２分考えた小倉は、次の手を指さずに」 → ルール1, 3
+- 「消費時間は▲安用寺５時間３分、△小倉３時間４７分。」 → ルール3
+- 「勝った安用寺は６勝２敗、敗れた小倉は２勝６敗となった。」 → ルール1, 4

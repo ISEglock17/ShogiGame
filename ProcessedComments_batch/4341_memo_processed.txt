@@ -1,0 +1,117 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments. They're asking me to extract the *good stuff* – the actual insights into the game – from all the extraneous noise.  Think of it as refining ore. We've got all this rich commentary, but it's buried under metadata, player bios, timestamps... it's just cluttering things up. My goal is to isolate the pure, valuable analysis of the board and the moves themselves.
+
+My plan is straightforward: first, I'll systematically remove all the fluff based on a predefined set of rules – a kind of linguistic sieving, if you will. Once the irrelevant bits are gone, I can then reshape what's left into coherent, natural sentences.  Essentially, I'm transforming raw commentary into polished, insightful explanations of the game's unfolding dynamics. This will make the data much more digestible for deeper analysis and understanding. I know exactly how to approach this, given my expertise in the subject!
+
+手数1:
+
+削除理由:
+- 「田村の本年度の成績は１１勝１２敗／勝率は０．４７８」 → ルール4
+- 「通算成績は３１９勝２１４敗／勝率は０．５９９」 → ルール4
+
+手数2:
+
+削除理由:
+- 「大平の本年度の成績は９勝１１敗／勝率は０．４５０」 → ルール4
+- 「通算成績は１２３勝１１２敗／勝率は０．５２３」 → ルール4
+
+手数11: 先手の相掛かり▲２八飛型となった。
+
+削除理由:
+- 「田村の」 → ルールなし（置換ルール）
+
+手数16: 後手は浮き飛車で対抗。
+
+削除理由:
+- 「大平は」 → ルールなし（置換ルール）
+
+手数21: ９筋の突き合いを入れるのが▲２八飛型＋腰掛け銀のポイント。９筋の歩を突いていないと△８六歩▲同歩△同飛で△８七歩と△４六飛を狙われて先手不利となる。▲９六歩は△８七歩に▲９七角を用意した意味がある。
+
+削除理由:
+
+手数32: 後手はひねり飛車に構えた。△５二玉型のひねり飛車は比較的珍しい。
+
+削除理由:
+- 「大平は」 → ルールなし（置換ルール）
+
+手数43: さっそうと仕掛ける。
+
+削除理由:
+
+手数47: すでに中盤戦たけなわ。
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は田村３分、大平３０分。」 → ルール3
+- 「両者、速いペースで指し進めている。」 → ルール3
+- 「午前中だが、」 → ルール3
+
+手数48: この手をうっかりしていたという。なお、△４六角で△３五歩は▲４五銀が利く。
+
+削除理由:
+- 「※田村は」 → ルールなし（置換ルール）
+
+手数56: 角損の強襲。後手は駒の働きの差で勝負したい。
+
+削除理由:
+- 「大平は」 → ルールなし（置換ルール）
+
+手数58: 角筋を止めつつ、銀取りになっている。
+
+削除理由:
+
+手数62: △８五桂▲８六角で楽になったようだ。後手は△３六歩を利かすのは有力だった。
+
+削除理由:
+- 「※」 → ルールなし（整形）
+- 「と田村。」 → ルール1
+
+手数67: 絶好の攻防手。
+
+削除理由:
+
+手数74: すでに終盤戦だ。
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は田村１１分、大平５５分。」 → ルール3
+- 「対局室に入ると、隣で対局している高野五段と佐々木五段が本局の様子を眺めていた。」 → ルール1, 6
+- 「午前中だが、」 → ルール3
+
+手数75: 先手は自玉に詰みなしと見て踏み込んだ。２枚角がよく利いているとはいえ、思い切りのいい手だ。たとえば△７八成香▲同玉△７九金は▲６八玉△６九龍に▲同角と取れる。後手玉は次に▲６一角成△同銀▲５一とから詰みそうだ。▲６八同角は△８四桂▲６五銀△６四銀で紛れる。
+
+削除理由:
+- 「田村は」 → ルールなし（置換ルール）
+- 「少考の末、」 → ルール3
+- 「※」 → ルールなし（整形）
+
+手数76: 後手は金を取った。
+
+削除理由:
+- 「大平は」 → ルールなし（置換ルール）
+- 「１２分の長考（？）で」 → ルール3
+
+手数79: この合駒がよく利いた。
+
+削除理由:
+- 「※」 → ルールなし（整形）
+
+手数80: 角を取って自玉を安全にするのが後手の作戦。
+
+削除理由:
+- 「大平の」 → ルールなし（置換ルール）
+
+手数81: △同玉は▲４三桂まで。
+
+削除理由:
+
+手数83: 先手の指し手が非常に早い。後手は手がかりが少ないので、先手玉を詰ますのは難しそうだ。逆に後手玉は▲７二龍△同玉▲８四桂△６一玉▲７二金以下の詰めろになっているようだ。何気ない合駒に見えた▲３八香が詰みに役立っている。
+
+削除理由:
+- 「ほとんどノータイムで金を取った。」 → ルール3
+- 「なんという田村の早見え。」 → ルール1
+- 「考慮中の大平は何度か駒台の駒に手を触れる。やがて、両者の手が盤上に伸びてきた。最後に大平が駒台に触れたのは投了の意思表示だったようだ。」 → ルールなし（盤面に関係ない情報）
+- 「終局時刻は１２時４分。」 → ルール3
+- 「消費時間は田村１５分、大平１時間１４分。」 → ルール3
+- 「勝った田村は５勝３敗、敗れた大平は２勝６敗となった。」 → ルール4

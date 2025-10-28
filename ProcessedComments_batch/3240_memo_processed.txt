@@ -1,0 +1,124 @@
+**Refining Commentary from Shogi Games**
+
+Okay, so I'm tasked with a bit of a clean-up job. A user has a dataset of Shogi game moves, and each move is accompanied by a comment. The problem is, these comments are a bit messy. They're full of extraneous information – things like metadata about the game, brief introductions of the players, time stamps, and so on. My goal is to refine these comments, to get them down to their core essence: the actual explanation of the board state and the reasoning behind the specific move played.
+
+Basically, I need to strip away all the fluff and leave behind the pure, distilled analysis. I'll need a set of rules – a framework, really – to guide me in identifying what's noise and what's signal. Once I have those rules nailed down, I can methodically go through each comment and ruthlessly delete anything that doesn't directly contribute to understanding the position or the player's intentions. It's about data quality, ultimately. Making sure the comments are concise, insightful, and focused on the actual game analysis. That's the real value.
+
+手数2:
+
+削除理由:
+- 「木下は先日、他棋戦で後手番なのに初手を指してしまう反則負けを喫している。」 → ルール2
+- 「今日は山本が初手を指すまで、しっかりと両手を組んでいた。」 → ルール1
+
+手数6:
+後手はゴキゲン中飛車。
+
+削除理由:
+- 「木下は」 → ルール1
+
+手数11:
+最新形になった。
+
+削除理由:
+- 「▲９六歩〜▲７八銀の」 → ルールなし（文脈を一般化するため削除）
+
+手数22:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２３分、△木下１２分。」 → ルール3
+
+手数24:
+銀冠に組んだ。
+
+削除理由:
+
+手数31:
+先手は▲７七桂を保留して、端に備えていると考えられる。
+
+削除理由:
+- 「この局面で木下が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本１時間１２分、△木下４５分。」 → ルール3
+- 「ここから仮に△５一飛▲７七桂の２手が入れば、昨年１０月のＣ２▲豊島−△真部戦の投了図（真部九段の絶局）、１１月のＣ２▲村山−△大内戦と同一局面。」 → ルール2, 1
+- 「真部九段が「△４二角があった」と語ったとされ、さらに大内九段が△４二角と打って村山五段が大苦戦に陥った局面だ。」 → ルール1, 2
+- 「山本は」 → ルール1
+
+手数33:
+８六と２六、２ヶ所の角成が受からない。
+
+削除理由:
+
+手数36:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間１６分、△木下１時間２４分。」 → ルール3
+
+手数37:
+▲６四同馬としてしまうと、△同歩。３２手目の局面に比べて先手は１手も指さず、後手が３手指している勘定になってしまう。
+
+削除理由:
+
+手数38:
+先手の馬ｖｓ後手の歩得という展開になった。
+
+削除理由:
+
+手数41:
+先手は馬の手厚さを生かすために、さらに手厚い銀冠に組み換える。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間１８分、△木下１時間３８分。」 → ルール3
+
+手数53:
+金銀４枚に馬も付いた左美濃。堅い。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本３時間１０分、△木下２時間１７分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+
+手数57:
+飛車を元の場所へ。
+
+削除理由:
+- 「わずか３分で」 → ルール3
+- 「この局面で木下が１５分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲山本３時間２７分、△木下３時間２８分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本４時間３７分、△木下４時間２１分。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本４時間４９分、△木下５時間４分。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「この局面で木下が３分考え、次の手を指さずに投了した。」 → ルール1, 3
+- 「消費時間は▲山本５時間２９分、△木下５時間８分。」 → ルール3
+- 「勝った山本は２勝６敗、敗れた木下は３勝５敗となった。」 → ルール4

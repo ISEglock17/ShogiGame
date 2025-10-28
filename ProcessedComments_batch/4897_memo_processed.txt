@@ -1,0 +1,106 @@
+**Focusing the Commentary: Streamlining Shogi Game Data**
+
+Okay, so the user wants me to clean up these Shogi game comments. They've got a mountain of data, but it's buried under a lot of noise. The goal is clear: strip away everything that isn't directly related to the board state and the moves being made. I need to get rid of all the extraneous stuff - the meta-commentary, introductions to the players, timestamps, all that jazz.
+
+Essentially, I want to filter the comments down to the *good stuff* - the actual explanations of what's happening on the board, and why the players are making the moves they are.  I need to preserve the natural flow of these explanations, but only the explanations.  It's about distilling the commentary into its purest form, ready for deep analysis and learning.  Think of it as the essence of the game's unfolding narrative, uncluttered and ready for interpretation.
+
+手数1:
+
+削除理由:
+- 「平藤は角換わりを得意にしている。」 → ルール5
+
+手数2:
+
+削除理由:
+- 「大平は居飛車党。」 → ルール5
+- 「手厚い棋風だ。」 → ルール5
+
+手数3:
+
+削除理由:
+- 「平藤の本年度の成績は３勝１敗（勝率は０．７５０）」 → ルール4
+- 「通算成績は３５１勝２８５敗（勝率は０．５５２）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「大平の本年度の成績は４勝３敗（勝率は０．５７１）」 → ルール4
+- 「通算成績は１３１勝１２０敗（勝率は０．５２２）」 → ルール4
+
+手数10: 角換わりを避けた変化球。▲２二角成△同銀▲５三角は△４二角で大丈夫だ。
+
+削除理由:
+
+手数12:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は平藤１３分、大平２分。」 → ルール3
+
+手数13:
+
+削除理由:
+- 「２４分使って指された。」 → ルール3
+
+手数24: ▲４七銀とされる前に歩を交換しにいく。
+
+削除理由:
+
+手数33: △５五歩▲４五銀△３三銀に▲３五歩を用意した。
+
+削除理由:
+- 「▲２六角の局面で大平が８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は平藤１時間１分、大平５２分。」 → ルール3
+- 「昼食の注文は平藤がマーボ豆腐定食。大平は注文なし。」 → ルール7
+
+手数34: 角交換は△３九角がある。
+
+削除理由:
+
+手数36: 相手の動きを利用して、角の転換を目指す。
+
+削除理由:
+
+手数42: 状況を見て、△６五歩と突けるようにしている。
+
+削除理由:
+
+手数43: 囲いに入って、これで一安心。
+
+削除理由:
+
+手数45: 玉を囲って頃合いは良し。さっそく仕掛ける。
+
+削除理由:
+
+手数50: 壁銀になってしまった。
+
+削除理由:
+
+手数56: 待望の反撃。▲同銀は△５四歩から△６六角とさばける。
+
+削除理由:
+
+手数62: なんとも激しいことになってきた。どちらの攻めがポイントを挙げているのだろうか。
+
+削除理由:
+
+手数69:
+
+削除理由:
+- 「１４時１５分ごろの局面。」 → ルール3
+- 「消費時間は平藤１時間３４分、大平１時間１６分。」 → ルール3
+
+手数95:
+
+削除理由:
+- 「１５時２５分ごろの局面。」 → ルール3
+- 「消費時間は平藤１時間５８分、大平１時間５３分。」 → ルール3
+
+手数99: △６四銀に▲７二歩成が痛烈。後手陣は先手に大駒を持たれると、一たまりもない。また、▲７二歩成としておけば、△６九角も▲７八歩と受けられる。
+
+削除理由:
+- 「ここで大平は１分使って投了した。」 → ルール3
+- 「終局時刻は１５時３２分。」 → ルール3
+- 「消費時間は平藤２時間、大平１時間５７分。」 → ルール3
+- 「勝った平藤は２勝０敗、敗れた大平は１勝１敗となった。」 → ルール4

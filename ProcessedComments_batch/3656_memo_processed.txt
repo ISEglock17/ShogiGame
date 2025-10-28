@@ -1,0 +1,75 @@
+**Cleaning Up the Chess Commentary**
+
+Okay, so I'm looking at this chess game commentary data and it's a mess. The user, who I assume is another expert since they're asking for this, wants me to clean it up. The goal is clear: extract the *real* analytical value from these comments. I need to strip away all the fluff - the metadata, player introductions, time stamps, and any other irrelevant details. Basically, I want to leave only the natural language explanations of the board state and the moves being made. The challenge, of course, is doing this in a way that preserves the flow and intelligibility of the commentary. This is a task that needs precision.
+
+手数24:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は川上１１分、中座１４分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「△７四歩の局面で川上が４３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は川上１時間３６分、中座２０分。」 → ルール3
+- 「昼食の注文は川上が鴨南蛮そば、中座は注文なし。」 → ルール7
+
+手数36:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は川上２時間２３分、中座２３分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は川上２時間５０分、中座４６分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は川上３時間１３分、中座１時間２４分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は川上３時間３７分、中座２時間１１分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「ここで中座が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は川上３時間４０分、中座３時間１８分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は川上３時間５０分、中座３時間５７分。」 → ルール3
+
+手数67: ▲３六歩と伸ばした。▲３七角と活用する手や▲３五歩と攻める手が狙える。
+
+削除理由:
+- 「４５分の長考で」 → ルール3
+
+手数69: 鬼手一発！▲３六歩はこの手が狙いだった。（１）△同玉は▲４一龍。（２）△同金は▲２三香成△４二玉▲１五角（！）△５二玉▲４一龍△同玉▲５一金の詰み筋がある。
+
+削除理由:
+- 
+
+手数72: 冷静に受ける。
+
+削除理由:
+- 
+
+手数78: ここで先手投了。以下▲４二銀成△同銀▲２一龍△４七銀が厳しい。
+
+削除理由:
+- 「川上」 → ルール1
+- 「終局時刻は２１時４９分。」 → ルール3
+- 「消費時間は川上４時間４０分、中座４時間５２分。」 → ルール3
+- 「勝った中座は５勝４敗、敗れた川上は３勝６敗となった。」 → ルール4

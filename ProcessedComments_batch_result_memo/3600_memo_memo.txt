@@ -1,0 +1,39 @@
+=== バッチの最終結果: batches/riebu3eg0i7qlamlgowhf7kieqbyq7k846gg ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "key": "3600",
+  "response": {
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "**Cleaning Up These Game Comments**\n\nOkay, so I'm looking at these comments from Shogi games. The user wants me to clean them up. My goal is clear: I need to transform these raw comments into something useful for analyzing the game itself.  I need to ditch all the fluff, the meta commentary, the player introductions, and the time stamps.  Basically, I want to keep only the stuff that's directly relevant to the board state and the moves being made, and present it as naturally flowing sentences. The objective is to make them fit for game analysis, not casual reading or a broadcast setting. The focus needs to be purely on the board and moves.\n",
+              "thought": true
+            },
+            {
+              "text": "手数10: 後手はまだ居飛車か振り飛車かわからない。\n\n削除理由:\n- （なし）\n\n---\n手数12: 居飛車だった。\n\n削除理由:\n- （なし）\n\n---\n手数21: ▲２四歩を見せる。\n\n削除理由:\n- （なし）\n\n---\n手数29:\n\n削除理由:\n- 「１１時頃の局面。」 → ルール3\n- 「消費時間は▲中田宏１６分、△南２８分。」 → ルール3, 1\n\n---\n手数30: 後手の作戦は右玉。\n\n削除理由:\n- 「南の」 → ルール1\n\n---\n手数33: ▲７七銀もあるが、△４五歩と角道を開けたあとの△８五桂▲８六銀△６五歩が嫌味。\n\n削除理由:\n- （なし）\n\n---\n手数36:\n\n削除理由:\n- 「この局面で中田宏が１３分考えて昼食休憩に入った。」 → ルール1, 3, 7\n- 「ここまでの消費時間は▲中田宏３６分、△南１時間１７分。」 → ルール1, 3\n\n---\n手数40: 右玉の薄さをカバーする飛車引き。横に通っているため、そう簡単に２筋を突破されない。\n\n削除理由:\n- （なし）\n\n---\n手数43:\n\n削除理由:\n- 「１４時頃の局面。」 → ルール3\n- 「消費時間は▲中田宏５０分、△南１時間５０分。」 → ルール1, 3\n\n---\n手数46:\n\n削除理由:\n- 「１５時過ぎの局面。」 → ルール3\n- 「消費時間は▲中田宏１時間０分、△南３時間５分。」 → ルール1, 3\n- 「１６時２０分頃、中田宏はまだ次の手を考えていた。」 → ルール1, 3\n- 「相手の長考時に席を外す棋士が多い中、南はどうやら席に座ったまま。」 → ルール1\n- 「地蔵流の本領発揮？」 → ルール1, 5\n\n---\n手数47:\n\n削除理由:\n- 「１時間２８分の大長考。」 → ルール3\n\n---\n手数50: 将来▲３七桂〜▲４五桂のときに当たるので怖い形だ。\n\n削除理由:\n- （なし）\n\n---\n手数52: 形を整える。\n\n削除理由:\n- （なし）\n\n---\n手数55: △６五同歩なら▲７五歩と桂頭攻めを絡められそう。\n\n削除理由:\n- 「１７時半頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲中田宏２時間４１分、△南３時間３２分。」 → ルール1, 3\n\n---\n手数56:\n\n削除理由:\n- 「この局面で中田宏が２０分考えたところで夕食休憩に入った。」 → ルール1, 3, 7\n- 「ここまでの消費時間は▲中田宏３時間１分、△南３時間５１分。」 → ルール1, 3\n\n---\n手数58: 角を打った。▲７四歩と取り込まれたときに△７六歩と打ち返す手を作っている。\n\n削除理由:\n- 「４４分考えて」 → ルール3\n- 「２０時過ぎの局面。」 → ルール3\n- 「消費時間は▲中田宏３時間１分、△南４時間３５分。」 → ルール1, 3\n\n---\n手数59: ▲３九飛より受けに利いているようだ。\n\n削除理由:\n- （なし）\n\n---\n手数60: 強く切っていく。切るために打ったとも言えそうだ。しかし、指しすぎではないかという意見もある。\n\n削除理由:\n- 「検討陣からは」 → ルール1\n\n---\n手数64:\n\n削除理由:\n- 「２１時頃の局面。」 → ルール3\n- 「ここまでの消費時間は▲中田宏４時間１５分、△南４時間４７分。」 → ルール1, 3\n\n---\n手数71: この▲７六桂が厳しい。△７五銀は▲８四歩、△５三銀は▲７四桂がある。\n\n削除理由:\n- 「２２時頃の局面。」 → ルール3\n- 「消費時間は▲中田宏４時間４４分、△南５時間０分。」 → ルール1, 3\n\n---\n手数84:\n\n削除理由:\n- 「２３時ごろの局面。」 → ルール3\n\n---\n手数97:\n\n削除理由:\n- 「２３時５０分頃の局面。」 → ルール3\n- 「消費時間は▲中田宏５時間５４分、△南５時間２５分。」 → ルール1, 3"
+            }
+          ]
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "responseId": "oRv5aI63O-Stz7IPleLWwAk",
+    "modelVersion": "gemini-2.5-pro",
+    "usageMetadata": {
+      "thoughtsTokenCount": 67,
+      "totalTokenCount": 5433,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4244
+        }
+      ],
+      "candidatesTokenCount": 1122,
+      "promptTokenCount": 4244
+    }
+  }
+}

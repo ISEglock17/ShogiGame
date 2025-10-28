@@ -1,0 +1,121 @@
+**Refining Commentary in Shogi Game Data**
+
+Okay, so I'm presented with Shogi game commentary, and the goal is to clean it up. The task is to take the raw commentary data – which likely includes all sorts of noise – and transform it into something truly valuable for analyzing the game. I need to distill it down to the essential elements: the explanations of the board positions and the rationale behind each move. That's the real gold here.
+
+So, my process is pretty clear. First, I need to methodically identify and *eliminate* all the fluff. This means any metadata, player introductions, time stamps, irrelevant background information, and anything else that's not directly about the game itself has got to go. I'll need a set of clear rules to guide this filtering process. Then, and this is crucial, whatever's left needs to be *polished*. I want to ensure that the remaining commentary flows naturally as a description of the board and moves, to avoid fragmented descriptions or an abrupt way of writing. The cleaned commentary should read smoothly and provide context to each move.
+
+手数1:
+
+削除理由:
+- 「◆西尾　明（にしお　あきら）六段◆」 → ルール1, 4
+- 「１９７９年９月３０日生まれ、神奈川県横浜市出身。青野照市九段門下。２００３年、四段。２０１１年、六段。棋士番号は２４８。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆村中　秀史（むらなか　しゅうじ）六段◆」 → ルール1, 4
+- 「１９８１年３月１２日生まれ、東京都北区出身。（故）高柳敏夫名誉九段門下。２００４年、四段。２００９年、六段。棋士番号は２５３。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「西尾の通算成績は２６３勝１８４敗（勝率０．５８８）。」 → ルール4
+- 「本年度成績は８勝１０敗（０．４４４）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「村中の通算成績は１９３勝１６２敗（勝率０．５４４）。」 → ルール4
+- 「本年度成績は６勝９敗（０．４００）。」 → ルール4
+
+手数11: 角換わりとなった。
+
+削除理由:
+
+手数23: 先手は腰掛け銀に確定。後手は右玉へと組む余地はあるが、先手と同じように、銀を５筋の歩の前に進めて左に玉を移動することのほうが多い。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲５六銀までの消費時間は▲西尾２２分、△村中２１分。」 → ルール3
+
+手数32: 後手は右玉に構えた。初投入の戦法だ。もちろん予定通りかもしれないが、先手の手に対応した可能性もある。先手の▲５六銀が早く、右玉に対しての作戦が限定されている。
+
+削除理由:
+- 「村中は」 → ルール1
+
+手数36:
+
+削除理由:
+- 「１２時１０分、ここで村中が１５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲西尾５７分、△村中５３分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数40: 揺さぶりをかける。先手の受けとして、▲４五歩と▲４七銀が考えられる。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△３五銀までの消費時間は▲西尾１時間３分、△１時間２８分。」 → ルール3
+- 「ここで西尾が長考し、１５時を過ぎた。」 → ルール1, 3
+
+手数41:
+
+削除理由:
+- 「この手に１時間３７分使った。」 → ルール3
+
+手数42: 後手は△４七銀成から△３九角、先手は▲３四銀から２筋突破が狙いとなる。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△４六銀までの消費時間は▲西尾２時間４０分、△村中２時間０分。」 → ルール3
+
+手数43: 先に歩の交換を図る。▲３四銀は攻めが重いか。
+
+削除理由:
+
+手数45:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「▲２四同飛までの消費時間は▲西尾２時間５５分、△村中２時間０分。」 → ルール3
+
+手数46: △２三歩は▲３三飛が金取りになり、後手を引く。
+
+削除理由:
+
+手数50: 銀を成り捨て、角で両取りをかけた。
+
+削除理由:
+- 「１８時１０分、ここで西尾が１１分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は▲西尾３時間２８分、△村中３時間１５分。」 → ルール3
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数55: 桂の犠打でスピードアップ。△８四同飛に▲２一飛成と成り込めるようになる。
+
+削除理由:
+
+手数57: 目標とされていた飛車を攻め駒にする。
+
+削除理由:
+
+手数58: ▲９一竜△８七歩成▲同金△同飛成▲８八香で先手勝ちなら分かりやすい。▲８六同歩ならまだまだだ。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「△８六歩までの消費時間は▲西尾３時間５２分、△村中３時間４４分。」 → ルール3
+- 「と控室ではいわれている」 → ルール1, 6
+
+手数61: ここで香を打つ。△８六同とと取らせて手を稼ぎ、▲９三角の詰めろを間に合わせる。
+
+削除理由:
+
+手数65: ▲７一竜△８三玉▲８二竜などの詰めろ。
+
+削除理由:
+
+手数71: ここで後手が投了した。後手玉は▲７一角成△８三玉▲９三竜の詰めろで、受けても一手一手。先手玉に詰みはない。
+
+削除理由:
+- 「村中が」 → ルール1
+- 「終局時刻は２０時３６分。」 → ルール3
+- 「消費時間は▲西尾４時間２６分、△村中３時間５４分。」 → ルール3
+- 「勝った西尾は３勝２敗、敗れた村中は２勝３敗になった。」 → ルール1, 4

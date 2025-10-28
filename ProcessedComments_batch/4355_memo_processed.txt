@@ -1,0 +1,152 @@
+**Refining Commentary for Deeper Game Analysis**
+
+Okay, so I'm presented with a task, a familiar one: someone wants me to clean up and refine the comments associated with each move in a Shogi game dataset.  Essentially, they're providing a treasure trove of data, but the commentary is currently a bit cluttered for serious analysis. I can see the need, especially in this domain.
+
+My objective is clear: to strip away all the extraneous noise – things like metadata, player introductions, time stamps – and leave behind only the pure, insightful explanations of the board state and the moves themselves.  The goal is to turn these raw comments into clear, concise, natural-sounding sentences that truly illuminate the game's unfolding drama.
+
+Here's the approach I'll take. First, I'll need a set of clearly defined rules – a sort of rubric, if you will – to determine what constitutes "unnecessary information" in these comments.  Once I have a solid understanding of what to discard, I'll move on to the second stage: transforming the remaining text into grammatically sound and easily digestible sentences.  I anticipate this will involve some clever natural language processing techniques to ensure the final product is not only informative but also flows smoothly, making it easier to extract meaningful insights from the games.
+
+手数4: 先手の初手▲５六歩からの中飛車に対して、後手は三間飛車で対抗。相振り飛車となった。
+
+削除理由:
+- 「中田の」 → ルール1
+- 「福崎は」 → ルール1
+
+手数10:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「消費時間は中田功１０分、福崎３０分。」 → ルール1, 3
+
+手数11: 先手は桂を跳ねた。桂頭は怖いが次に５五角の両取りを狙っていく。
+
+削除理由:
+- 「中田は」 → ルール1
+- 「１５分使って」 → ルール3
+- 「７七桂」 → 指し手なので残すか迷ったが、「桂を跳ねた」で文脈が通るので削除
+
+手数13: 天王山の角。
+
+削除理由:
+- 削除対象なし
+
+手数14: 香取りを受けるには角合わせしかない。
+
+削除理由:
+- 削除対象なし
+
+手数21: 力戦形の相振り飛車となった。
+
+削除理由:
+- 「ここで福崎が２９分使って昼食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は中田３７分、福崎１時間２４分。」 → ルール1, 3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数26: 後手は玉の態度を保留していたが、ここで右に動いた。後手は更に８二銀の壁銀を解消したいが、角を引いた瞬間に▲８四歩とされてしまうのが厄介か。
+
+削除理由:
+- 「福崎は」 → ルール1
+
+手数36:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「消費時間は▲中田１時間１１分、△福崎２時間０分。」 → ルール1, 3
+
+手数40: と金作りに成功したのは大きいが、玉の壁一つ向こうには脅威も迫っている。
+
+削除理由:
+- 削除対象なし
+
+手数45: ここで行った！美濃囲いは完成していないが、一気の攻めを目指す。
+
+削除理由:
+- 削除対象なし
+
+手数49: △７五角は▲６三角成△同飛▲７四金。しかし△同とで、と金が離れるのも辛い。玉の遠さが活きそうなので先手を持ちたいかもしれない。
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「消費時間は▲中田功１時間４３分、△福崎２時間２０分。」 → ルール1, 3
+- 「控え室を訪れた棋士によれば、「」とのこと。」 → ルール1, 6
+
+手数59: ▲７三歩成から一気に清算して角を成り返ったが、角取りの先手にはなっていない。後手陣もサッパリしてしまったか。
+
+削除理由:
+- 削除対象なし
+
+手数60: 攻防に飛車を打ち下ろす。
+
+削除理由:
+- 「７分の考慮で」 → ルール3
+
+手数61: 当然ながら、ここが後手陣の急所。
+
+削除理由:
+- 削除対象なし
+
+手数62: 次に▲５三歩が詰めろとなる。
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「消費時間は▲中田１時間５４分、△福崎２時間４６分。」 → ルール1, 3
+
+手数65: ▲３一飛の打ち込みを狙って飛車を確保しに行く。
+
+削除理由:
+- 削除対象なし
+
+手数77: △１二角などで龍が詰む筋もある。先手は足を止めずに鋭く攻めていく。△同飛は▲２二龍。
+
+削除理由:
+- 「中田は」 → ルール1
+
+手数81: 遅ればせながら銀が応援に向かっていく。ただし先手は攻め駒が少ないのが不安材料。
+
+削除理由:
+- 「１７時３０分頃の局面。」 → ルール3
+- 「消費時間は▲中田２時間４２分、△福崎３時間１５分。」 → ルール1, 3
+
+手数82: ４５手目の▲８二飛成のお返しとばかりに、後手は角を切った。先手玉を薄くし、次に△３二銀の飛車の捕獲を狙う。
+
+削除理由:
+- 削除対象なし
+
+手数85: 先手の切り返し。△５一玉は▲３二龍。△４二玉は▲３二龍△同玉▲４一銀。△同銀左は▲１一龍△２二銀▲１二龍で龍が逃げられる。
+
+削除理由:
+- 削除対象なし
+
+手数87: △１五桂を受けつつ玉の懐を広げる手。後手からは△７八歩〜△８八歩と、金を取りに行く順があるか。
+
+削除理由:
+- 「ここで福崎が２６分考えて夕食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は▲中田２時間４８分、△福崎３時間５６分。」 → ルール1, 3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数103: 先手が攻めきれるかどうかの勝負。
+
+削除理由:
+- 「１９時５０分頃の局面。」 → ルール3
+- 「消費時間は▲中田３時間８分、△福崎４時間８分。」 → ルール1, 3
+
+手数115:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲中田３時間２９分、△福崎４時間４１分。」 → ルール1, 3
+
+手数122: 評価は後手優勢。現局面は後手の銀得になっている。先手の攻めは届かず、後手からは△６八と▲同金△４八銀▲同玉△５六桂の攻めが厳しいと見られている。
+
+削除理由:
+- 「２１時３０分頃の局面。」 → ルール3
+- 「消費時間は▲中田３時間５５分、△福崎４時間５９分。」 → ルール1, 3
+- 「控え室の」 → ルール1, 6
+
+手数132: ここで先手の投了となった。以下は▲同玉△５六桂▲３八玉△４八金▲２八玉△３八金打▲１八玉△１七銀▲同玉△２五桂▲２六玉△３五金▲１五玉△１四歩で詰みとなる。
+
+削除理由:
+- 「▲中田の」 → ルール1
+- 「終局時刻は２１時５６分。」 → ルール3
+- 「消費時間は▲中田４時間２分、△福崎５時間１８分。」 → ルール1, 3
+- 「勝った福崎は３勝６敗、敗れた中田は２勝７敗となった。」 → ルール1, 4

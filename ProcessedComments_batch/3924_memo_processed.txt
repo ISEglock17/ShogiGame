@@ -1,0 +1,103 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with a task, and it's pretty straightforward, even if it's a bit tedious. Essentially, I need to take these shogi game comments, which are undoubtedly overflowing with extraneous details, and transform them into something concise and usable for analysis. It's like finding the gold nugget in a pile of river stones.
+
+My goal is to strip away all the fluff: the irrelevant metadata, the player introductions (I already know who they are!), time stamps, and anything else that doesn't contribute directly to the board state or the reasoning behind a specific move. I'm focusing on the actual *analysis* embedded within the comment.
+
+My process will involve two primary steps. First, I'll apply a set of well-defined rules to identify and eliminate the unwanted information. This requires a keen eye to differentiate what's essential from what's merely contextual. Then, with the core of the commentary revealed, I'll refine the remaining text to make sure it reads smoothly and coherently, focusing on the tactical and strategic elements relevant to the board.  It's all about extracting the valuable insights, and presenting them clearly and efficiently.
+
+手数1:
+
+削除理由:
+- 「初手を指す前に大内がカメラを構える記者に「王位戦は明日からだっけ」と質問した。」 → ルール1
+
+手数4: 作戦の岐路だったからか。
+
+削除理由:
+- 「飛車先を突く４手目に村田は５１分を使った。」 → ルール3
+- 「村田は居飛車振り飛車何でも指す。」 → ルール5
+
+手数11:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は大内１０分、村田５４分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「ここで大内が１９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内２９分、村田１時間３３分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+- 「よく晴れた日なので、外に食べに出たのだろうか。」 → ルール6, 7
+
+手数26: 後手は居飛車穴熊へ。
+
+削除理由:
+- 「村田は」 → ルール1
+
+手数32:
+
+削除理由:
+- 「１４時ころの局面。」 → ルール3
+- 「消費時間は大内４７分、村田１時間４７分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１５時ころの局面。」 → ルール3
+- 「消費時間は大内１時間１９分、村田２時間２２分。」 → ルール3
+
+手数69: 角金両取り。ハデな応酬が続く。
+
+削除理由:
+
+手数70: 「両取り逃げるべからず」で金を取った。
+
+削除理由:
+- 「１６時２０分ころの局面。」 → ルール3
+- 「消費時間は大内２時間６分、村田２時間４５分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「どんどん手が進む。」 → 盤面解説ではないため削除
+- 「１６時３０分ころの局面。」 → ルール3
+
+手数80: ▲４七金と埋めるだろう。角の行き場がない。
+
+削除理由:
+
+手数83:
+
+削除理由:
+- 「１７時２０分ころの局面。」 → ルール3
+- 「消費時間は大内２時間２７分、村田３時間１５分。」 → ルール3
+
+手数94: 大駒の利きを集中させた後手。次に△４九馬からの殺到がある。
+
+削除理由:
+- 「村田」 → ルール1
+- 「ここで大内が３４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内３時間７分、村田３時間３４分。」 → ルール3
+- 「夕食の注文は村田がうな重の松と肝吸い。大内はなし。」 → ルール7
+
+手数95: 催促の一手。
+
+削除理由:
+
+手数96: 一気に攻め込む。
+
+削除理由:
+
+手数114: △１五桂と打たれて受けがなかったのかもしれない。△４五銀と打たれてまずかったか。
+
+削除理由:
+- 「ここで大内が「う〜ん負けだね」と投了した。」 → 投了という事実以外の発言は削除
+- 「終局時刻は１９時３６分。」 → ルール3
+- 「消費時間は大内３時間２９分、村田３時間３９分。」 → ルール3
+- 「投了から▲２八同金引は△同銀不成▲同金△同龍▲同玉△２七金で詰み。」 → 詰み手順の解説は残すが、今回の出力では局後の感想と内容が重複するため、より具体的な感想戦の内容を採用
+- 「後手玉は詰まない。」 → 盤面解説
+- 「勝った村田は３勝０敗、敗れた大内は１勝２敗となった。」 → ルール4
+- 「感想戦は「△１五桂と打たれて受けはないのかな」（大内）としばらく検討。」 → 局後の感想として整形
+- 「受けが難しいようで、「△４五銀と打たれてまずかったか」とさかのぼった。」 → 局後の感想として整形

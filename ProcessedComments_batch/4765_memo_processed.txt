@@ -1,0 +1,110 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? The goal is crystal clear: I need to transform these chatty comments into concise, focused explanations of the game itself. No fluff, no distractions, just pure strategic insight. Think of it like distilling a complex chemical reaction into its essential components.
+
+Essentially, I need to strip away everything that isn't directly relevant to the board state and the moves being made. That means ditching the introductory chatter, any biographical details about the players, and certainly any time-related information. Those things might be interesting to a casual observer, but they're noise when I'm trying to analyze the game's flow and identify key strategic decisions.
+
+My process will be straightforward: I'll carefully examine each comment, applying the rules I've established for irrelevant information. Anything that doesn't contribute directly to understanding the position or the next move is out. It's about preserving the *substance* of the analysis, not the superfluous window dressing. This allows me, and potentially other experts, to efficiently extract the critical strategic insights from the game data.
+
+手数1:
+
+削除理由:
+- 「近藤正和六段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｏｎｄｏｕ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「日浦市郎八段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈի／ｈｉｕｒａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「近藤正和六段の今年度成績は、１勝１敗（勝率０．５０００）。通算成績は、２６８勝２０１敗（勝率０．５７１４）。前期順位戦は５勝５敗。」 → ルール4
+- 「第３５期棋王戦で挑戦者決定トーナメントに進むも、１回戦で三浦八段に敗れた。」 → ルール2, 1
+- 「前期順位戦の飯島六段戦では、居飛車模様からの△２六角の鬼手が印象深い。」 → ルール2, 1
+- 「【棋譜】 ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２００９／０６／３０／Ｃ１／４２１１．ｈｔｍｌ」 → ルール8
+
+手数4: 後手の中飛車対策は三間飛車だった。先手中飛車対策としては三間飛車が有効と言われているが、純粋居飛車党の後手が採用するのは驚きだ。
+
+削除理由:
+- 「日浦の」 → ルール1
+
+手数6:
+
+削除理由:
+- 「日浦市郎八段の今年度成績は、１勝３敗（勝率０．２５００）。通算成績は、５６０勝４０６敗（勝率０．５７９７）。」 → ルール4
+- 「前期順位戦は４勝６敗。今年４月１６日、第６０期王将戦一次予選（対　中田宏樹八段）にて、七段昇段後１９０勝をあげて八段に昇段した。」 → ルール4, 1
+- 「前期の千葉五段戦では、日浦七段が急戦向飛車の誘いをかけて千葉が乗った。」 → ルール2, 1
+- 「先後や局面は違えども、将棋世界６月号の「イメージと読みの将棋観」で紹介された作戦。」 → ルール2, 8
+- 「この場合は、どちらが良いのだろうか？」 → ルール2
+- 「【棋譜】 ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１０／０２／０９／Ｃ１／４３４６．ｈｔｍｌ」 → ルール8
+
+手数8:
+
+削除理由:
+- 「１０時４０分頃の局面。」 → ルール3
+- 「消費時間は▲近藤が１８分、△日浦が５分。」 → ルール3, 1
+
+手数14:
+
+削除理由:
+- 「ここで近藤が４４分使って昼食休憩となった。」 → ルール3, 7, 1
+- 「消費時間は▲近藤が１時間４０分、△日浦が２１分。」 → ルール3, 1
+- 「昼食の注文は近藤が「中華そば（ほそ島や）」、日浦は注文無し。」 → ルール7, 1
+
+手数16:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲近藤が１時間４０分、△日浦が５１分。」 → ルール3, 1
+
+手数26:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲近藤が２時間４１分、△日浦が１時間１分。」 → ルール3, 1
+
+手数30: この数手は互いに我が道を行く進行。後手の穴熊に対して、先手の陣形がやや不安定なのが気になる。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲近藤が３時間２３分、△日浦が１時間２６分。」 → ルール3, 1
+
+手数38: △７四銀や△９四銀は、銀の頭の歩を突かれてしまう。
+
+削除理由:
+
+手数50:
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲近藤が４時間１４分、△日浦が１時間４１分。」 → ルール3, 1
+
+手数51: ８筋に続いて先手の攻め第二弾。
+
+削除理由:
+- 「近藤の」 → ルール1
+
+手数54: 専守防衛。地中深く、根っこの一番底から支える。
+
+削除理由:
+
+手数62:
+
+削除理由:
+- 「ここで近藤が１２分使って夕食休憩となった。」 → ルール1, 3, 7
+- 「消費時間は▲近藤が４時間５１分、△日浦が１時間５８分。」 → ルール1, 3
+- 「夕食の注文はともに無し。」 → ルール7
+
+手数71:
+
+削除理由:
+- 「ここで日浦八段が１分考えて投了した。」 → ルール1, 3
+- 「終局時刻は１９時３１分。」 → ルール3
+- 「残り時間は▲近藤が１時間３分、△日浦が３時間４１分。」 → ルール1, 3

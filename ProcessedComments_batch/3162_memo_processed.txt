@@ -1,0 +1,114 @@
+**Streamlining Game Commentary for Clarity**
+
+Okay, so I'm tasked with refining these Shogi game commentaries, focusing on distilling the essential information. The user wants the comments to be clean and focused, eliminating unnecessary fluff.  Essentially, I'm aiming for a concise, expert-level summary.
+
+Let's look at this first example. It starts off with information on the players, things like how many seasons they've participated in, their current ranking, and some information about how the current season went for them.
+
+*   **First Turn Analysis**:  I immediately recognize this is all background on the players' history and performance. This is extraneous to the immediate game play. The user explicitly requests that this information should be removed (Rule 4). Therefore, I'm dropping the whole intro as it's not relevant to the game's actual moves.
+
+手数1:
+
+削除理由:
+- 「所司は順位戦参加２２期目。」 → ルール4
+- 「Ｃ級２組は６期連続７期目。」 → ルール4
+- 「今期は勝ち越しで降級点をひとつ消した。」 → ルール4
+- 「室岡は順位戦参加２６期目。」 → ルール4
+- 「Ｃ級２組は４期連続７期目。」 → ルール4
+
+手数6: 後手は四間に振った。
+
+削除理由:
+- 「室岡」 → 先手・後手の実名は「先手」「後手」に置換するルール
+
+手数16: 先手が▲９六歩と端歩を受けたので、居飛車穴熊の可能性が減った。それに呼応して後手も玉を囲いにいく。
+
+削除理由:
+- 該当なし
+
+手数24: ▲３五歩なら以下△３五同歩▲４六銀という順などで一気に決戦になる。
+
+削除理由:
+- 該当なし
+
+手数25: ▲６六歩は持久戦志向。堅い玉形を目指す。
+
+削除理由:
+- 「ここまでの消費時間は所司３１分、室岡７分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「ここで室岡が２４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は所司１時間９分、室岡４６分。」 → ルール3
+- 「昼食の注文は所司がたぬきうどん。」 → ルール7
+- 「室岡はなし。」 → ルール7
+
+手数33:
+
+削除理由:
+- 「１４時ころの局面。」 → ルール3
+- 「消費時間は所司１時間２７分、室岡１時間５分。」 → ルール3
+
+手数45: 一気に大決戦。
+
+削除理由:
+- 該当なし
+
+手数49: この両取りが先手の狙い。後手は駒得なので、しばらく受けに回りたい。一例として△１七同龍▲同桂△２九飛▲２五飛△同飛成▲同桂△２二飛▲２六歩△３七角のような進展なら後手十分。桂香を取れなければ先手の攻めは細い。
+
+削除理由:
+- 「１５時３０分ころの局面。」 → ルール3
+- 「消費時間は所司１時間５３分、１時間２４分。」 → ルール3
+
+手数50: 飛車打ちで両取りを受けた。これならどちらを取られても龍が残る。
+
+削除理由:
+- 該当なし
+
+手数51: 飛車を取る前に利かす。
+
+削除理由:
+- 「１７時ころの局面。」 → ルール3
+- 「消費時間は所司２時間１３分、室岡２時間３６分。」 → ルール3
+
+手数54: ▲２二飛は△４三角と受けられてうまくいかない。
+
+削除理由:
+- 該当なし
+
+手数55:
+
+削除理由:
+- 「消費時間は所司２時間３６分、室岡３時間４分。」 → ルール3
+
+手数57: 桂を犠牲にしてと金を作った。
+
+削除理由:
+- 「ここで室岡が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は所司２時間３８分、室岡４時間１４分。」 → ルール3
+- 「夕食の注文は所司がカレーライス。」 → ルール7
+- 「室岡が鳥丼。」 → ルール7
+
+手数71:
+
+削除理由:
+- 「２１時４０分ころの局面。」 → ルール3
+- 「残り時間は所司１時間４０分、室岡１時間１２分。」 → ルール3
+
+手数72: 後手優勢と見られている。
+
+削除理由:
+- 「２２時３０分ころの局面。」 → ルール3
+
+手数82: 後手勝勢と見られている。▲６九同銀には後手玉の懐が深いので△８九馬で間に合う。
+
+削除理由:
+- 「残り時間は所司５９分、室岡１７分。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「ここで所司が投了。」 → 先手・後手の実名は「先手」「後手」に置換するルール（コメント全削除のため結果的に削除）
+- 「終局時刻は２３時５５分。」 → ルール3
+- 「残り時間は所司２３分、室岡９分。」 → ルール3
+- 「勝った室岡は３勝７敗、敗れた所司は６勝４敗となった。」 → ルール4

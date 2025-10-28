@@ -1,0 +1,58 @@
+**Refining Game Commentary for Clarity**
+
+Okay, so the user wants me to clean up and format some Shogi game commentary, presumably to make it more digestible and professional-looking. I need to treat each move's comment individually, working through them systematically according to some pre-defined rules. My task is to go through each of the rules provided and then work accordingly to edit any existing commentary to reflect these rules.
+
+手数23:
+
+削除理由:
+- 「この局面で村田が１９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本４２分、△村田１時間１８分。」 → ルール3
+
+---
+手数44:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間２１分、△村田２時間０分。」 → ルール3
+
+---
+手数52:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間３分、△村田２時間４２分。」 → ルール3
+
+---
+手数59:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間４９分、△村田３時間３分。」 → ルール3
+
+---
+手数60:
+
+削除理由:
+- 「４５分考えての一手。」 → ルール3
+- 「この局面で山本が１８分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲山本３時間７分、△村田３時間４８分。」 → ルール3
+
+---
+手数75:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本３時間４２分、△村田４時間１３分。」 → ルール3
+
+---
+手数86: 厳しい一手。以下、▲５六歩に（１）△４八銀成▲５五歩△４七成銀は▲６五角が王手成銀取りで先手優勢だが、（２）△２五飛と王手し、▲２六歩に△４八銀成とすれば、▲２五歩△４七成銀のとき、今度は５六歩が邪魔で▲６五角が王手成銀取りにならず、後手勝ちになる。
+
+削除理由:
+
+---
+手数100: 焦点の歩が見事に決まった。（１）▲６五同飛は△４七成銀、（２）▲６五同角は△２五桂がある。
+
+削除理由:
+- 「山本はここで１分考え、次の手を指さずに投了した。」 → ルール3, 対局者の名前を削除
+- 「消費時間は▲山本４時間４３分、△村田４時間５２分。」 → ルール3
+- 「勝った村田は４連勝、敗れた山本は４連敗となった。」 → ルール4

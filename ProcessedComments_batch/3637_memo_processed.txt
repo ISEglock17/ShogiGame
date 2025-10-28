@@ -1,0 +1,155 @@
+**My Approach to Refining Shogi Game Commentary**
+
+Okay, so I'm tasked with cleaning up these comments within shogi game datasets. The goal here is pretty straightforward: I need to transform raw commentary into coherent, insightful analyses of the game itself. No fluff, no extraneous details—just the stuff that truly helps understand the board state and the moves being made.
+
+My plan? First, I'll meticulously go through the comments and apply a rigorous set of rules to identify and eliminate anything that doesn't contribute to the core analysis. Think meta-commentary, biographical tidbits about the players, or time-related information. That stuff isn't helpful here.
+
+Once I've stripped away the unnecessary bits, the real work begins: I need to take what's left and craft it into a clear, natural-sounding explanation of the board and the specific moves. I want the final result to feel like a flowing, logical breakdown of the game, free of jarring shifts or inconsistencies. The goal is a commentary that *I* would find helpful if I were analyzing the game.
+
+手数6: 後手の作戦は１手損角換わり。▲２五歩・△８四歩の形の方が実戦例は多い。
+
+削除理由:
+- 「中村太の」 → ルール1
+
+手数14:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は中座１１分、中村太１８分。」 → ルール3
+
+手数23: 場合によっては▲２五歩△３三銀▲４五桂と飛びかかるつもりだろう。
+
+削除理由:
+- 「（例えば△８四歩と指すと）」 → (補足情報のため、より自然な文章になるよう削除)
+
+手数25: 相腰掛け銀模様に駒組みが進んでいく。
+
+削除理由:
+- (削除なし)
+
+手数28:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は中座５７分、中村太１時間４２分。」 → ルール3
+
+手数31: 先手は後手の右桂の活用を抑える。
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は中座１時間４９分、中村太１時間５６分。」 → ルール3
+- 「中座は」 → ルール1
+- 「中村太は脇息にもたれて考えていた。」 → ルール1
+- 「１６時３０分を過ぎても中村太の長考は続いている。」 → ルール1, 3
+
+手数32:
+
+削除理由:
+- 「中村太は１６時４０分を過ぎて△３三銀と指した。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は中座２時間２１分、中村３時間４９分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「△８五歩の局面で中座が９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中座２時間４３分、中村太４時間２０分。」 → ルール3
+- 「先手飛先保留型（▲２六歩型）角換わり腰掛け銀が出始めた１９８０年代後半から１９９０年代にかけて指された戦型になった。違うのは後手が１手損したことによる手番。通常なら後手の手番だ。」 → ルール2
+
+手数39: 両者とも、飛先の歩を伸ばす。この形は▲２五桂と跳ねて攻める展開になりにくい。
+
+削除理由:
+- (削除なし)
+
+手数40: △４二金引〜△４三金直の上下運動もあるが、後手は６筋に飛車を回った。△６五歩と仕掛けるつもりだろうか。
+
+削除理由:
+- 「中村は」 → ルール1
+
+手数51:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は中座４時間１０分、中村４時間５５分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「超持久戦に「いつ、戦いが起こるのかねえ」と控え室。」 → ルール6
+- 「残り時間は中座１時間１９分、中村１時間４分。」 → ルール3
+
+手数60: 軽い突き出し。▲同飛は△２八角。
+
+削除理由:
+- (削除なし)
+
+手数63:
+
+削除理由:
+- 「２２時４５分ごろの局面。」 → ルール3
+- 「残り時間は中座５２分、中村太３８分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「２３時２５分ごろの局面。」 → ルール3
+- 「残り時間は中座３０分、窪田１７分。」 → ルール1, 3
+
+手数72: 後手は完封狙い。
+
+削除理由:
+- 「中村は」 → ルール1
+
+手数73: 以下△５二飛▲６四歩△３五歩となると飛車が詰んでいるようだが、そこで▲５五銀があるようだ。▲６四歩の局面で△６二歩などと受けないといけないようだ。
+
+削除理由:
+- 「（！）」 → (記号のため削除)
+- 「「これは（先手の）やる気が出るねえ」と控え室。」 → ルール6
+
+手数77: 形勢は難解。もしかすると、持将棋の可能性も。
+
+削除理由:
+- 「検討の通りに局面は進んでいるが、」 → ルール1
+- 「「１時コース」のようだ。」 → ルール3
+
+手数89:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「残り時間は中座１９分、中村太２分。」 → ルール3
+
+手数104: 先手がいいようだ。切れない攻めを心がけたい。
+
+削除理由:
+- 「０時２０分ごろの局面。」 → ルール3
+- 「残り時間は中座１１分、中村１分。」 → ルール3
+- 「中座が」 → ルール1
+
+手数107: ここで△６一飛と引いてどうか。
+
+削除理由:
+- (削除なし)
+
+手数108: 先手が攻め切るのは結構大変か。
+
+削除理由:
+- (削除なし)
+
+手数110: 後手は△８一飛と馬を取らずに桂を打った。何か嫌な変化があったか。
+
+削除理由:
+- 「中村は」 → ルール1
+
+手数112: この局面での駒の損得は先手の香得。「堅い、攻めてる、切れない」のパターンに入ってきたか。
+
+削除理由:
+- (削除なし)
+
+手数114: ここで▲８三銀成と馬を取るのが好手のようだ。
+
+削除理由:
+- (削除なし)

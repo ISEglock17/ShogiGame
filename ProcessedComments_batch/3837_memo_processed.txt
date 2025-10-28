@@ -1,0 +1,131 @@
+**Streamlining Commentary for Enhanced Kifu Analysis**
+
+Okay, so I'm presented with a task, a familiar one: refining commentary within Shogi game records. The goal, as always, is crystal clear. I need to sift through the often verbose comments accompanying a kifu, stripping away anything that muddles the analysis of the board state and individual moves. We're talking about removing extraneous fluff – the kind of information that, while interesting, ultimately doesn't contribute to a deeper understanding of the game's evolution.
+
+My approach will be methodical, a standard three-step process. First, I'll identify and eliminate the irrelevant commentary based on a pre-defined set of removal rules. These rules are crucial; they dictate what gets tossed and what stays. Next, I'll massage the remaining text, shaping it into clear, grammatically sound sentences. The goal here is to transform disconnected phrases into cohesive explanations. Finally, I'll output the refined commentary in a specified format, ensuring that it integrates seamlessly with the existing kifu analysis tools. It's all about efficiency and precision, making sure the commentary enhances, not hinders, the research.
+
+手数12: この局面で、駒が初形から何手動いたか数えると、先手が４手、後手が５手（駒台の角は数えていない）で先手が手損している。しかし後手は２二金が悪形なので、いずれ△３二金と戻る必要があり、実質的に手の損得はない。
+
+削除理由:
+- 「御下段の間で指されている▲金井−△村田智戦も同じような展開。」 → ルール2, 6
+
+---
+手数16: 後手は比較的早い段階で金を戻した。これで手の損得はなくなった。
+
+削除理由:
+- 「村中」 → ルール1
+
+---
+手数22: 先後同型の角換わり腰掛け銀になりそうだ。
+
+削除理由:
+
+---
+手数31: 端歩の突き越しで先後同型にはならなくなった。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷１３分、△村中２９分。」 → ルール3
+- 「糸谷」 → ルール1
+- 「村中」 → ルール1
+
+---
+手数37:
+
+削除理由:
+- 「この局面で村中が１７分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲糸谷２８分、△村中１時間２５分。」 → ルール1, 3
+
+---
+手数38: ▲７九玉と引けば、△６二飛〜△６五歩と飛角銀桂のフル活用で攻める筋が生じる。
+
+削除理由:
+- 「昼食休憩を挟んで１時間の考慮。」 → ルール3, 7
+- 「１４時を回った。」 → ルール3
+- 「消費時間は▲糸谷２８分、△村中２時間８分。」 → ルール1, 3
+
+---
+手数40: 先に突っかける。▲６五同歩なら△同銀で攻めが続く。
+
+削除理由:
+
+---
+手数43: 「ここを受け止めてしまえば」という指し方。後手は食い破れるか。
+
+削除理由:
+- 「村中」 → ルール1
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷１時間２０分、△村中２時間３６分。」 → ルール1, 3
+
+---
+手数45: 先手から▲６五歩と取ると、△同桂▲６六銀△同角▲同金△５七桂成がある。後手から△６六歩と取ると、▲同銀が上部に厚い形。どちらも取りづらい。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷１時間３５分、△村中２時間４０分。」 → ルール1, 3
+
+---
+手数48:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷２時間７分、△村中３時間４０分。」 → ルール1, 3
+
+---
+手数49: 終盤で▲２六桂と打つスペースを作った。その桂馬は７三桂が持ち駒になりそうだ。
+
+削除理由:
+- 「この局面で村中が２８分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲糸谷２時間４８分、△村中４時間８分。」 → ルール1, 3
+
+---
+手数52: △６六歩▲同銀を入れずに△３五歩を突いたほうがよかったのではないかと言われている。
+
+削除理由:
+- 「棋士室では」 → ルール1, 6
+
+---
+手数57: 次に▲７四角成があるので、△６三金と上がるとみられている。△６三金以下▲５五銀左△３七歩成▲４四歩が痛打。６六銀を活用されるので、５０手目の△６六歩が疑問視されていたのだ。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷３時間９分、△村中４時間３２分。」 → ルール1, 3
+
+---
+手数73:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷３時間２８分、△村中５時間２９分。」 → ルール1, 3
+
+---
+手数74: 後手は自ら玉を上がった。
+
+削除理由:
+- 「村中」 → ルール1
+
+---
+手数76: 狙いは入玉のようだ。
+
+削除理由:
+
+---
+手数88:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲糸谷３時間４６分、△村中５時間４７分。」 → ルール1, 3
+
+---
+手数104:
+
+削除理由:
+- 「ここから一分将棋。」 → ルール3
+
+---
+手数119:
+
+削除理由:
+- 「この局面で村中が投了した。」 → ルール1
+- 「消費時間は▲糸谷４時間６分、△村中５時間５９分。」 → ルール1, 3
+- 「両者とも２勝１敗となった。」 → ルール4

@@ -1,0 +1,58 @@
+**Streamlining Shogi Commentary**
+
+Okay, so I understand the task at hand. The user wants me to clean up and reformat shogi game commentary. Essentially, they've given me a set of rules and a mess of data, and they want me to transform it into a readable, concise narrative. My job is to be the editor, the curator, the filter, making sure only the critical information shines through.
+
+I need to understand those rules explicitly. What's considered "unnecessary" information? What's the desired level of detail? Do they want a play-by-play, a strategic overview, or something in between? Once I have those guidelines, I can sift through the raw commentary, identifying the moves, the threats, the piece positions, and any key tactical moments. 
+
+Then comes the real art – crafting it all into natural-sounding sentences. I'll need to use shogi terminology accurately and flow the commentary smoothly, perhaps incorporating the strategic implications of each move.  It's about distilling the essence of the game and presenting it in a way that's both informative and engaging.  Essentially, it’s about making the shogi game accessible to all!
+
+手数29:
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阪口１２分、△大内２分。」 → ルール3
+
+手数30:
+削除理由:
+- 「１時間１分考えて」 → ルール3
+- 「阪口もここで４４分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲阪口５６分、△大内１時間３分。」 → ルール3
+
+手数45:
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阪口１時間４６分、△大内１時間１３分。」 → ルール3
+
+手数51: どんどんと歩を突き捨てて開戦。
+削除理由:
+
+手数52: △４六同歩なら▲７四歩△同歩▲４六飛と歩を手に入れておいて、のちの▲６四歩を見ている。
+削除理由:
+
+手数61: 全面で暴れまわった先手だが、ここで一息ついた。次は▲６四歩から捌くコースが見える。
+削除理由:
+
+手数62: ４筋の位も大きいので、後手も引かずに戦う。
+削除理由:
+- 「大内」 → ルール1
+
+手数70:
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲阪口２時間２７分、△大内１時間４６分。」 → ルール3
+
+手数77: 自玉の堅さを武器に、角を見捨てて攻める。
+削除理由:
+
+手数85: 自然な指し手を重ねて、先手優勢と見られている。
+削除理由:
+
+手数95: ぐいっと食いちぎる。△同金は▲５四飛と、こちらの銀を取り返せる。
+削除理由:
+
+手数107: ▲４六同金は△５七角成が詰めろになっているので危ない。先手は落ち着いて金を引いた。この局面で後手は投了した。後手玉はあと１枚金駒が入ると▲２三銀（金）からの詰みがあるので、△４七銀などと打ちこんでいく手が効かない。
+削除理由:
+- 「阪口」 → ルール1
+- 「大内」 → ルール1
+- 「消費時間は▲阪口２時間５９分、△大内１時間５６分。」 → ルール3
+- 「勝った阪口は４勝６敗、敗れた大内は２勝８敗となった。」 → ルール4
+- 「大内は降級点が決まった。」 → ルール4

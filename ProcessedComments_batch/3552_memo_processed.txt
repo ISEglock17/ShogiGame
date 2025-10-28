@@ -1,0 +1,127 @@
+**Processing Game Commentary for Clarity**
+
+Okay, so I understand the task. The user, likely a fellow expert in this area, wants me to refine the commentary associated with Shogi game data. The goal is to take those raw comments, which often include extraneous information, and transform them into clear, concise, and natural-sounding explanations of the board state and the moves being made.
+
+Essentially, I need to apply a set of pre-defined rules to filter out the noise and focus on the core insights. This means removing anything that doesn't contribute directly to understanding the game's flow or the reasoning behind specific moves. I'll need to pay close attention to the details of the moves and board positions to make sure the final product is informative and engaging. It's about distilling the essence of the commentary, enhancing the quality, and ensuring that any Shogi enthusiast, even at a high level, finds it insightful.
+
+手数3: 先手番のときは本局のように相掛かり、後手番のときは横歩取りを駆使して、攻めまくる将棋が多い。
+
+削除理由:
+- 「「いぶし銀」とも称される桐山だが、実際は攻め将棋と言われる。」 → ルール5
+- 「桐山」 → ルール1
+
+手数5: ▲７八金ではなく、▲９六歩と突くのは先手流。場合によっては▲７八銀と上がる形も考えられる。ここで△８六歩は▲同歩△同飛▲２四歩△同歩▲２三歩で先手必勝。▲９六歩は角の逃げ道を作っている。
+
+削除理由:
+- 「桐山流」 → ルール5
+
+手数17: 先手は棒銀に出る。近年は▲２八飛型での棒銀が多い。
+
+削除理由:
+- 「桐山」 → ルール1
+
+手数23: 飛車を引いた。手損にしか見えないが、８筋の歩を交換させたのを逆に利用するつもり。また、放っておけば▲４五銀がある（２六飛のままだと▲４五銀と出られない）。
+
+削除理由:
+- 「わずか２分の考慮で」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１０時４５分過ぎの局面。」 → ルール3
+- 「消費時間は桐山５分、中田２０分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「△５二金の局面で桐山が８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は桐山４１分、中田１時間１４分。」 → ルール3
+
+手数37: これで、先手の構想が明らかになった。先手は８筋の歩交換を逆手に取って銀冠に組む狙いだった。
+
+削除理由:
+- 「桐山の」 → ルール1
+- 「桐山は」 → ルール1
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は桐山４２分、中田１時間１４分。」 → ルール3
+- 「中田は１時間以上考えている。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１５時２０分の局面。」 → ルール3
+- 「消費時間は桐山１時間、中田２時間５９分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は桐山１時間１８分、中田３時間１６分。」 → ルール3
+- 「中田が３０分以上の長考をしている。」 → ルール3
+
+手数52: 「歩越し銀に歩で対抗」
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は桐山１時間２８分、中田４時間４８分。」 → ルール3
+- 「中田は残り１時間１２分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「△６五飛の局面で桐山が４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は桐山１時間５４分、中田４時間５９分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「２０時１０分ごろの局面。」 → ルール3
+- 「残り時間は桐山３時間２９分、中田４３分。」 → ルール3
+
+手数82: 玉が危険地帯に飛び出してしまった。
+
+削除理由:
+
+手数83: ２筋の攻めが厳しい。
+
+削除理由:
+
+手数84: 飛車取りと、△７四香を狙っている。しかし、この瞬間は、先手チャンスだ。一気の寄せがあるか。
+
+削除理由:
+- 「桐山」 → ルール1
+- 「２１時の局面。」 → ルール3
+- 「残り時間は桐山３時間１３分、中田１７分。」 → ルール3
+
+手数88: 後手は攻めを引っ張り込む。受け切れるかどうかの勝負になったか。
+
+削除理由:
+- 「中田、」 → ルール1
+
+手数100: ９１手目▲１四歩は疑問だったか。
+
+削除理由:
+- 「２１時半の局面。」 → ルール3
+- 「消費時間は桐山２時間４８分、中田１０分。」 → ルール3
+
+手数104: 攻守逆転の感があるが。
+
+削除理由:
+- 「２２時の局面。」 → ルール3
+- 「残り時間は桐山２時間３４分、中田１０分。」 → ルール3
+
+手数109: 鬼手。△同歩なら▲１三角で△３三玉に▲２四角成が生じる。
+
+削除理由:
+
+手数110: 構わず取った。
+
+削除理由:
+
+手数118: ここで先手の投了となった。後手玉は詰まず、先手は受けなしだ。
+
+削除理由:
+- 「桐山の」 → ルール1
+- 「終局時刻は２２時１９分。」 → ルール3
+- 「消費時間は桐山３時間４４分、中田５時間５６分。」 → ルール3
+- 「勝った中田は１勝１敗、敗れた桐山は０勝２敗となった。」 → ルール4

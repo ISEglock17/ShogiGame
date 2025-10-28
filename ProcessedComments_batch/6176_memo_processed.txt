@@ -1,0 +1,127 @@
+**Structuring Shogi Game Commentary**
+
+Okay, so I'm presented with a task: to take shogi game commentary and clean it up, making it more concise and focused. The user wants the commentary formatted, and I have a set of rules to guide me.
+
+My process will be straightforward. I'll break it down step-by-step:
+
+1.  **Read & Parse:** I'll begin by systematically going through each move's commentary.
+2.  **Rule-Based Filtering:** For each sentence within the commentary, I'll cross-reference it against the provided deletion rules.
+3.  **Identify & Annotate:** I'll pinpoint sentences or phrases that fall under these deletion rules. I'll even make a note of *which* rule applies, for my own record. This helps maintain traceability.
+4.  **Refine & Preserve:** Finally, I'll filter out the irrelevant or repetitive parts. I'll be left with a streamlined, edited version of the commentary, ensuring what remains is grammatically sound Japanese. This will present the user with a cleaner, more focused analysis of the game.
+
+手数1:
+
+削除理由:
+- 「富岡　英作（とみおか　えいさく）八段は１９６４年５月１９日生まれ、神奈川県横浜市出身。大内延介九段門下。１９８４年四段、２００２年八段。棋士番号は１６８。」 → ルール4
+- 「順位戦参加は２８期目。Ｂ級１組は通算４期。Ｃ級１組は通算９期目。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「北島　忠雄（きたじま　ただお）六段は１９６６年１月４日生まれ、東京都出身。関根茂九段門下。１９９５年四段、２００３年六段。棋士番号は２１４。」 → ルール4
+- 「順位戦参加は１８期目。Ｃ級１組は通算１３期目。」 → ルール4
+
+手数4: ゴキゲン中飛車だ。
+
+削除理由:
+
+手数5:
+
+削除理由:
+- 「富岡の今年度成績は８勝９敗（０．４７０）」 → ルール4
+- 「通算成績は５０４　勝４５９敗（０．５２３）」 → ルール4
+
+手数6:
+
+削除理由:
+- 「北島の今年度成績は４勝１１敗（０．２６７）」 → ルール4
+- 「通算成績は３２８勝２６９敗（０．５４９）」 → ルール4
+
+手数9:
+
+削除理由:
+- 「富岡は居飛車党。」 → ルール5
+- 「様々な戦型で新手や斬新な構想を披露している。」 → ルール5
+
+手数10:
+
+削除理由:
+- 「北島は受け将棋。」 → ルール5
+- 「オールラウンダーで力戦派だ。」 → ルール5
+
+手数11: 先手は超速▲３七銀を採用した。
+
+削除理由:
+- 「富岡」 → 置換ルール
+
+手数12: 代えて△４二銀と上がれば、△４四銀と構える銀対抗形だった。
+
+削除理由:
+
+手数20: △３二金型へ。最近になってまた復活してきたきた形だ。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「現局面までの消費時間は▲富岡１４分、△北島２９分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１２時１０分、ここで北島が４０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲富岡３２分、△北島１時間２１分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数30: 千日手を含みにした手。仮に▲２四同歩△同角▲２八飛△２三歩▲２五歩△３三角と進めば２８手目の局面と同一局面だ。
+
+削除理由:
+
+手数36:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「現局面までの消費時間は▲富岡１時間８分、△北島１時間２７分。」 → ルール3
+
+手数39: 代えて▲５四歩は△同銀▲同銀△５七歩と反撃される。
+
+削除理由:
+
+手数41: このまま先手が５筋を制圧できればよくなるので、後手が強く反発することが予想される。千日手はなくなったと考えてもいいだろう。
+
+削除理由:
+
+手数42: △６二銀と引くのは、先手の５筋の制空権をにぎられたまま押し切られそうだ。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「現局面までの消費時間は▲富岡２時間２０分、△北島２時間８分。」 → ルール3
+
+手数44: 香取りで調子が良さそうに見えるが、先手にも▲７五銀の返し技がある。△１九角成には▲５三歩成だ。
+
+削除理由:
+
+手数45: △１九角成には▲５三歩成とと金を作られる手もあるので、後手としてはうまい反撃を考えたい。
+
+削除理由:
+- 「北島」 → 置換ルール
+- 「１７時頃の局面。」 → ルール3
+- 「現局面までの消費時間は▲富岡２時間５６分、△北島２時間３０分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１８時１０分、ここで北島が２４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲富岡３時間２０分、△北島３時間３４分。」 → ルール3
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数51:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「現局面までの消費時間は▲富岡４時間１４分、△北島３時間３８分。」 → ルール3
+
+手数53: ここで後手が投了した。△６六同銀▲同銀△５四飛としても▲５五銀打で５筋の勢力争いで負けてしまう。馬が手厚く駒損のため投了となった。
+
+削除理由:
+- 「北島」 → 置換ルール
+- 「終局時刻は２０時５３分。」 → ルール3
+- 「消費時間は▲富岡４時間１７分、△北島４時間２７分。」 → ルール3

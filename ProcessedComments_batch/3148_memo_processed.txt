@@ -1,0 +1,142 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to clean up these comments that come with Shogi game data. They're looking for a refined set, something focused purely on the game itself.  Basically, they want me to filter out all the noise that's cluttering things up. I get it; when you're deeply analyzing a game, you don't need introductions, player bios, or time stamps bogging you down. That kind of contextual information is useful for casual reading, but for serious analysis, it's just distraction.
+
+My task is to take these raw comments and surgically remove the irrelevant bits, leaving behind only the clear, concise explanations of the board state and the moves being played. It's about getting down to the bare bones of the strategic discussion. I'll need to work according to some clearly defined rules to ensure I don't accidentally remove anything important. This process is important, as it helps me better analyze game data.
+
+手数1:
+
+削除理由:
+- 「佐々木は初手に９分使う。」 → ルール3
+- 「飲み物を買っていたようだ。」 → ルール1
+
+手数5: 先手は得意の四間飛車。
+
+削除理由:
+- 「佐々木は」 → 置換ルール
+
+手数22: 後手は急戦策。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は佐々木２９分、東１６分。」 → ルール3
+- 「東は」 → 置換ルール
+
+手数26:
+
+削除理由:
+- 「△８五歩の局面で佐々木が１０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐々木５７分、東５９分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は佐々木１時間１２分、東１時間１分。」 → ルール3
+- 「この局面は１０局指されて、後手が８勝している。」 → ルール2
+- 「先手の２勝のうち、１勝は佐々木が挙げたもの。」 → ルール2, 4
+- 「研究のぶつかり合いが予想される。」 → ルール2
+
+手数31: 端歩を伸ばす。▲９六歩はスキを作らず待つ手。▲３六歩は△６五歩▲同歩△７七角成▲同桂△８二飛▲８八飛△７九角のときに△４六角成が王手になってしまう。
+
+削除理由:
+- 「４７分の長考で」 → ルール3
+
+手数32: 後手は何か指してくださいよ、と△９四歩。「棋は対話なり」
+
+削除理由:
+- 「東は」 → 置換ルール
+
+手数42: 交換した１歩を活用する手順。▲８四歩に△８五歩を用意。
+
+削除理由:
+
+手数43: この桂跳ねが９筋の端歩の意味だが、△６五桂の飛び蹴りが成立する恐れも。
+
+削除理由:
+- 「１５時半の局面。」 → ルール3
+- 「消費時間は佐々木２時間２３分、東１時間４９分。」 → ルール3
+- 「東は１時間以上の長考をしている。」 → ルール1, 3
+- 「１６時半を過ぎても局面は動いていなかった。」 → ルール3
+- 「佐々木は席を外している。」 → ルール1
+
+手数44:
+
+削除理由:
+- 「１時間３４分の長考。」 → ルール3
+
+手数48: 互いに騎虎の勢い。
+
+削除理由:
+
+手数50: 飛車の取り合いを狙う。
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「消費時間は佐々木２時間２８分、東３時間２６分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「３７分の長考。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「△８六歩の局面で佐々木が４分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐々木３時間９分、東３時間４５分。」 → ルール3
+
+手数55: マムシのと金が後手陣を食い付く。
+
+削除理由:
+
+手数59: ▲５六銀の筋を見せる。△同歩なら利かし。
+
+削除理由:
+
+手数69: △６七飛成は甘い。今のうちに攻める。
+
+削除理由:
+
+手数73: 鋭く迫っていく。
+
+削除理由:
+
+手数77:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は佐々木３時間２４分、東４時間６分。」 → ルール3
+
+手数79: △同銀▲同龍は王手角取り。
+
+削除理由:
+
+手数84: 上部脱出を狙う。
+
+削除理由:
+
+手数86: △４六角は▲４八香がピッタリなので辛抱したが、▲３三金が決め手になりそうだ。△同角は▲４五桂。
+
+削除理由:
+- 「、控え室の窪田六段は力強く断言。」 → ルール1, 6
+- 「ここまでの消費時間は佐々木３時間４６分、東４時間８分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「窪田六段推奨の手。」 → ルール1
+- 「佐々木は３８分の長考で指した。」 → ルール1, 3
+
+手数88: ▲４五桂を防ぐ攻防手。
+
+削除理由:
+
+手数89: 後手はこの局面で投了した。▲４一龍や▲３六桂などといった攻めが厳しい。
+
+削除理由:
+- 「東は」 → 置換ルール
+- 「３分考えて」 → ルール3
+- 「終局時刻は２１時２０分。」 → ルール3
+- 「消費時間は佐々木４時間２７分、東４時間１５分。」 → ルール3
+- 「勝った佐々木は７勝０敗、敗れた東は１勝５敗となった。」 → ルール4

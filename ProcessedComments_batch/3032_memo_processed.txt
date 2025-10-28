@@ -1,0 +1,142 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, so I'm presented with a task that's right up my alley: refining Shogi game commentary. The user wants me to take raw comments, which are probably full of irrelevant details and filler, and distill them into clean, concise explanations of each move. It's about data cleaning and information extraction, but with the added wrinkle of natural language generation.
+
+The process I'm envisioning is pretty straightforward:
+
+1.  **Iterate through each move's commentary.**  I'll need to break down the input into manageable chunks, one move at a time.
+2.  **Apply the Deletion Rules.** I need to be a ruthless editor! I'll scan each commentary, identifying and removing anything that matches the pre-defined deletion criteria. That's the core of the cleaning.
+3.  **Synthesize a Natural Sentence.**  Once I've stripped away the fluff, I need to craft what's left into a human-readable sentence. This isn't just about stringing words together; it's about making sure the resulting comment accurately and smoothly conveys the essence of the move. It's about quality.
+
+Basically, I'm taking noisy data and transforming it into useful, digestible information – something that's essential for anyone studying Shogi or following a game.
+
+手数1:
+
+削除理由:
+- 「真部は東京都出身の５５歳、故・加藤治郎名誉九段門下。」 → ルール1, 4
+- 「今期は１勝１敗、０．５０００。」 → ルール4
+- 「通算成績は５９６勝６０５敗、０．４９６３。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「矢倉は大阪府出身の３２歳、桐山清澄九段門下。」 → ルール1, 4
+- 「今期は１勝２敗、０．３３３３。」 → ルール4
+- 「通算成績は２３７勝１９１敗、０．５５３７。」 → ルール4
+
+手数3: 力戦指向の角上がり。
+
+削除理由:
+
+手数7: 先手は筋違い角を打った。早くも乱戦へ。
+
+削除理由:
+- 「真部」 → 置換ルール
+
+手数11:
+
+削除理由:
+- 「ここまでの消費時間は▲真部２６分、△矢倉３２分。」 → ルール3
+
+手数14: 角を押さえるために銀を繰り出していく。
+
+削除理由:
+
+手数16: 力強い玉上がり。△３一銀型のまま、玉を２二に上がる構想。
+
+削除理由:
+
+手数19:
+
+削除理由:
+- 「▲８六歩の局面で矢倉が３９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は真部３５分、矢倉１時間２７分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は真部４９分、矢倉１時間３４分。」 → ルール3
+
+手数24: 後手は桂頭を狙っていく。
+
+削除理由:
+- 「矢倉、△６四銀に１時間１３分の長考。」 → ルール3
+- 「１５時の局面。」 → ルール3
+- 「消費時間は真部４９分、矢倉２時間４７分。」 → ルール3
+
+手数25: 先手は▲９六角と飛び出した。
+
+削除理由:
+- 「１時間２分の長考で」 → ルール3
+
+手数26: 攻めてきなさいの▲９六角に、では攻めましょうの△７五歩。対局者の読みと読みがぶつかった瞬間。
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+
+手数30: 歩の後ろに潜りこむ。△３三角や△７五銀から△７六歩が狙いになっている。
+
+削除理由:
+
+手数31: 手筋の一手。△同歩なら▲８四歩△同歩▲８三歩のような攻めがある。
+
+削除理由:
+
+手数32: ▲７八金なら△６四角がピッタリしている。
+
+削除理由:
+
+手数33: 激しい。互いにわが道を行く。
+
+削除理由:
+
+手数37: 馬に飛車をぶつける。果たしてどちらが読み勝っているのだろうか。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は真部２時間３２分、矢倉３時間２９分。」 → ルール3
+- 「ノータイムで」 → ルール3
+
+手数40: 後手の桂得となった。
+
+削除理由:
+
+手数42: 金取りを受けつつ、８四歩の圧力から逃げる。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「△５三金の局面で真部が６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は真部２時間４８分、矢倉４時間１３分。」 → ルール3
+
+手数46: 駒の交換になれば、玉形の差が出てくる。
+
+削除理由:
+
+手数49: 金を取るのも大きいが、それと同じくらい▲８一飛成から▲３四桂も厳しい攻めだ。
+
+削除理由:
+
+手数50: 手抜いて攻める。
+
+削除理由:
+
+手数52: 攻防の角打ち。
+
+削除理由:
+
+手数53: 先手は攻めを催促する。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は真部３時間２４分、矢倉４時間２６分。」 → ルール3
+
+手数64: 先手は攻防ともに見込みなしと、投了した。
+
+削除理由:
+- 「真部は３分考えて」 → ルール3
+- 「終局時刻は２０時５５分。」 → ルール3
+- 「消費時間は真部３時間４９分、矢倉４時間５９分。」 → ルール3

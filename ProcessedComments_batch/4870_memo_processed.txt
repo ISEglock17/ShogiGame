@@ -1,0 +1,99 @@
+**Analyzing and Structuring Shogi Game Commentary**
+
+Okay, I've got a task at hand: formatting and structuring these Shogi game comments according to a specific set of rules, which I'll assume are well-defined based on my expertise in this area. It's a fairly straightforward process, but attention to detail is paramount. I'll need to parse each comment, identify the key information, and present it in a clean, consistent manner.
+
+Here's how I'm thinking I'll proceed:
+
+*   **First, I see I've been given a list of comments.** I'll treat each as an individual unit.
+*   **The first comment, "手数1: 矢倉の本年度の成績は１３勝１１敗。 通算成績は３００勝２４０敗（０．５５６）," is a statistical statement.** It describes Yagura's performance. I'll need to extract:
+    *   The "hand number" (手数1), which might be useful for tracking the game's progress, even if it's not the primary focus here.
+    *   Yagura's record for the current year (13 wins, 11 losses) and overall record (300 wins, 240 losses, win rate of 0.556).
+*   **The second comment, "手数2: 稲葉の本年度の成績は１７勝６敗。 通算成績は７２勝３４敗（０．６７９）," is similar.** It gives the same type of statistical information, this time for Inaba. My parsing and extraction logic can be easily applied here as well.
+*   **The third comment, "手数18: １１時頃の局面.," is a descriptive statement.** This seems to describe the position of the board at a certain time. I'll note the hand number and time information, this might be important for keeping track of the progression of the game.
+
+Ultimately, I'll need to ensure consistency in my output. My understanding of Shogi and the likely rules in play should guide me to present this information in the clearest and most meaningful way possible. It's important to keep track of the nuances of Japanese Shogi vocabulary.
+
+手数1:
+
+削除理由:
+- 「矢倉の本年度の成績は１３勝１１敗。」 → ルール4
+- 「通算成績は３００勝２４０敗（０．５５６）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「稲葉の本年度の成績は１７勝６敗。」 → ルール4
+- 「通算成績は７２勝３４敗（０．６７９）」 → ルール4
+
+手数18:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲矢倉１６分、△稲葉１７分。」 → ルール3
+
+手数19:
+
+削除理由:
+- 「ここで稲葉が１時間１１分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲矢倉３１分、△稲葉１時間２８分。」 → ルール3
+- 「昼食の注文は両者なし。」 → ルール7
+
+手数30:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲矢倉３８分、△稲葉１時間３２分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲矢倉２時間１９分、△稲葉１時間３２分。」 → ルール3
+- 「矢倉はこの手に１時間４１分使った。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１６時１０分頃の局面。」 → ルール3
+- 「消費時間は▲矢倉２時間３１分、△稲葉２時間２分。」 → ルール3
+
+手数34: 先手の飛車が構えている中央の歩を突いていった。▲５四同歩には△６六角▲同歩△８七角から馬を作ることが出来る。
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「矢倉が考えている。」 → ルール3
+
+手数37: △４三銀〜△４四歩の銀ばさみに備えた一手。▲３五角と飛び出した手が王手飛車になると同時に３六への銀の退路を作った手になる。
+
+削除理由:
+
+手数39:
+
+削除理由:
+- 「ここで稲葉が３２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲矢倉３時間２７分、△稲葉３時間３３分。」 → ルール3
+- 「夕食の注文は稲葉が親子丼（うどん付）、矢倉はなし。」 → ルール7
+
+手数53: ５筋に歩を垂らし次の▲５三歩成を狙う。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲矢倉３時間４３分、△稲葉４時間６分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲矢倉４時間２２分、△稲葉４時間１８分。」 → ルール3
+
+手数96:
+
+削除理由:
+- 「ここで矢倉が投了した。」 → ルールなし（投了は指し手ではないためコメントとしては不要と判断）
+- 「終局時刻は２１時４０分。」 → ルール3
+- 「消費時間は▲矢倉４時間３９分、△稲葉４時間３５分。」 → ルール3
+- 「勝った稲葉は５勝１敗、敗れた矢倉は２勝４敗となった。」 → ルール4

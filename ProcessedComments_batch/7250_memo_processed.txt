@@ -1,0 +1,87 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a Shogi game commentary and my task is clear: I need to clean it up. The user, who's likely another Shogi expert like myself, wants a streamlined version. They want me to strip out all the extraneous details, the noise, and leave behind only the crucial elements: the board positions and the actual moves with their accompanying explanations.
+
+My strategy is straightforward, a methodical step-by-step approach. I'll read through the commentary, move by move. For each sentence within a move's comment, I'll apply the removal rules. If a sentence violates a rule, it gets cut or edited to satisfy the criteria, ensuring only relevant information remains. It's about data pruning – keeping the signal and discarding the noise. This is basic data cleaning, but applied to the nuances of Shogi commentary.
+
+手数1:
+
+削除理由:
+- 「◆真田　圭一（さなだ　けいいち）七段◆」 → ルール1, 4
+- 「１９７２年１０月６日生まれ、千葉県八千代市出身。（故）松田茂役九段門下。１９９２年、四段。２００５年、七段。棋士番号は２０２。」 → ルール4
+- 「タイトル戦登場は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆真田　圭一（さなだ　けいいち）七段◆」 → ルール1, 4
+- 「１９７２年１０月６日生まれ、千葉県八千代市出身。（故）松田茂役九段門下。１９９２年、四段。２００５年、七段。棋士番号は２０２。」 → ルール4
+- 「タイトル戦登場は１回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「真田の本年度成績は６勝６敗（０．５００）。」 → ルール4
+- 「昨年度成績は１３勝１３敗（０．５００）。」 → ルール4
+- 「通算成績は４１６勝３２１敗（０．５６５）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「船江の本年度成績は１２勝９敗（０．５７１）。」 → ルール4
+- 「昨年度成績は２７勝１７敗（０．６１４）。」 → ルール4
+- 「通算成績は８１勝４１敗（０．６６４）。」 → ルール4
+
+手数28:
+
+削除理由:
+- 「開始からここまで真田は１分、船江は２分しかつかっていない。」 → ルール3
+
+手数38: １筋の突き捨ては飛車交換後の△１八歩▲同香△１九飛を狙っている。この△９三桂は次になんでも△８五桂とするのだろう。△８五桂▲３三角成△同桂で△４四角が残る。
+
+削除理由:
+- 「（立会人の瀬川晶司五段）」 → ルール1
+- 「２１時ごろの局面。△９三桂までの消費時間は▲真田３時間６分、△船江５時間１分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「２１時３０分ごろの局面。△１七歩までの消費時間は▲真田３時間１９分、△船江５時間１２分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「２２時３０分ごろの局面。残り時間は▲真田２時間８分、△船江２８分。」 → ルール3
+
+手数50: ▲８六同歩△同飛▲８七歩は△７六飛とすり込まれる。
+
+削除理由:
+
+手数51: ８七の地点を受けつつ桂取り。
+
+削除理由:
+
+手数54:
+
+削除理由:
+- 「２３時２０分ごろの局面。残り時間は▲真田１時間２９分、△船江１９分。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「残り時間は▲真田１時間１２分、△船江１４分。」 → ルール3
+
+手数96: 形勢は大差で後手よし。
+
+削除理由:
+
+手数98: と金を残す寄せ。
+
+削除理由:
+
+手数114: ここで先手が投了した。
+
+削除理由:
+- 「真田」 → 置換ルール
+- 「終局時刻は１時１７分。消費時間は▲真田５時間４４分、△船江５時間５９分。」 → ルール3
+- 「船江は４勝１敗、真田は３勝２敗となった。」 → ルール4

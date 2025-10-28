@@ -1,0 +1,170 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with Shogi game commentary and my task is to refine it. The goal, as I understand it, is to strip away all the extraneous noise – the irrelevant chatter, the asides, the things that aren't *directly* contributing to a clear understanding of the game's evolution. I need to focus on retaining only the crucial information: the board positions and, most importantly, the explanations of the moves themselves.
+
+My process will be quite systematic. First, I'll meticulously analyze each comment, judging it against the given rules. Anything that falls outside the scope of "board position" or "move explanation" goes. I'll ruthlessly excise any fluff, any unnecessary repetition, any subjective opinions that don't directly illuminate the game's logic.
+
+Then, and this is where my expertise comes into play, I'll need to rephrase what remains.  I'll reconstruct these fragments into coherent, natural sentences. The aim is a commentary that *flows*, that reads almost like a real-time analysis by a knowledgeable commentator, but one that is absolutely focused on the core tactical and strategic elements of the game. It's about distilling the essence, presenting the key insights in a concise and accessible manner.
+
+手数1:
+
+削除理由:
+- 「及川の本年度の成績は１４勝１６敗（０．４６７）」 → ルール4
+- 「通算成績は７６勝６１敗（０．５５５）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「中村亮の本年度の成績は１１勝１０敗（０．５２４）」 → ルール4
+- 「通算成績は１５５勝１１５敗（０．５７４）」 → ルール4
+
+手数3:
+
+削除理由:
+- 「及川は居飛車を中心に何でも指しこなすタイプ。」 → ルール5
+- 「詰将棋も得意で、『ＮＨＫ将棋講座テキスト』で詰将棋講座を執筆している。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「中村亮は振り飛車党。」 → ルール5
+- 「石田流や四間飛車を得意にしている。」 → ルール5
+
+手数10: ▲２四歩が見えているが、どう対応するのだろう。
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は及川１７分、中村亮３７分。」 → ルール3
+- 「記者は対局室に入って盤面を見たときは、振り飛車の手番だと思っていた。ところが棋譜を見ると、居飛車の手番で驚いた。」 → ルール1
+
+手数11: ▲２四歩は△同歩▲同飛△４五歩で乱戦になるのを警戒したか。
+
+削除理由:
+- 「３０分の長考で自重。」 → ルール3
+
+手数12: 突っ張る。立石流になりそうだ。
+
+削除理由:
+- 「２４分の考慮で」 → ルール3
+
+手数16:
+
+削除理由:
+- 「ここで及川が９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は及川５６分、中村亮１時間５分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数17: △４六歩を防ぐ。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数19:
+
+削除理由:
+- 「１４時１０分ごろの局面。」 → ルール3
+- 「消費時間は及川１時間５分、中村亮１時間５５分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は及川１時間１２分、中村亮２時間４分。」 → ルール3
+- 「本局は中村亮が序盤から惜しみなく時間を使っている印象だ。」 → ルール3
+
+手数22: △３五歩から△２五歩▲２八飛△４四飛〜△２四飛と進めばうまい。
+
+削除理由:
+- 「５６分の長考で指された。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は及川１時間３６分、中村亮３時間。」 → ルール3
+
+手数24: 角を据える。▲２九飛に△２六歩と押さえる含みがある。
+
+削除理由:
+- 「４０分の長考で」 → ルール3
+
+手数27: ▲２五桂は△２六歩▲３三桂成△同銀で後手の形が良くなってしまう。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数28: △２一飛〜△２六歩〜△３一銀という手順が見えてきた。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は及川２時間３５分、中村亮３時間５２分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「ここで中村亮が２６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は及川２時間４７分、中村亮４時間１８分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数33:
+
+削除理由:
+- 「２０時１０分ごろの局面。」 → ルール3
+- 「消費時間は及川３時間４９分、中村亮４時間２０分。」 → ルール3
+
+手数37: 先手良しと言われている。後手は２筋の駒がつらいようだ。
+
+削除理由:
+- 「四間飛車対山田定跡で似たような局面があるのだが、それと比べると振り飛車がかなり悪形になっている。」 → ルール2
+
+手数41: 位を取り返し、じりじりポイントを稼ぐ。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数45:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は及川４時間９分、中村亮４時間５８分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「２２時１５分ごろの局面。」 → ルール3
+- 「残り時間は及川１時間３０分、中村亮４４分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「３０分の長考で指された。」 → ルール3
+
+手数53: 陣形は先手がいい。それを具体的な優位に結び付けられるかどうか。
+
+削除理由:
+- 「２３時前の局面。」 → ルール3
+- 「残り時間は及川４９分、中村亮３２分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「中村亮は残り１５分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「０時前の局面。」 → ルール3
+- 「残り時間は及川１０分、中村亮５分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「中村亮はここから１分将棋。」 → ルール3
+
+手数81: 後手から有効な攻めは難しく、先手からは▲５三桂や▲４二とが厳しい。
+
+削除理由:
+- 「ここで中村亮の投了となった。」 → ルール4
+- 「終局時刻は０時２６分。」 → ルール3
+- 「消費時間は及川５時間５５分、中村亮５時間５９分。」 → ルール3
+- 「勝った及川は３勝６敗、敗れた中村亮は６勝３敗となった。」 → ルール4

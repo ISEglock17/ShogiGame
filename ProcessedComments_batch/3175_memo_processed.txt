@@ -1,0 +1,99 @@
+**Focusing the Analysis: Streamlining Game Commentaries**
+
+Okay, so I'm presented with a collection of comments accompanying shogi game data, and the task is clear: I need to clean them up. The ultimate goal here is to isolate the pure, insightful commentary on the game itself, removing all the extraneous clutter. Things like the meta information, player introductions, or even the time stamps for each move - those are distractions. My focus is laser-sharp on extracting the essence: the explanations of the board state, the justifications for each move, the strategic reasoning behind the play. These are the gold nuggets I need to keep, and refine into something readable and informative for my users.
+
+手数11: 相掛かりの出だし。「▲２四歩△同歩▲同飛△２三歩▲２八飛」の５手は、あっというまに過ぎ去っていく。
+
+削除理由:
+- 「棋士が棋譜を並べる風景を見ていると」 → ルール1
+- 「２五の歩をポンと駒台に置く動作で」 → 削除対象に該当しないが、文脈を自然にするため調整
+
+手数23: ▲２七銀〜▲３六銀が流行っているが、先手は腰掛け銀を目指した。
+
+削除理由:
+- 「伊奈」 → 先手
+
+手数30: 相腰掛け銀になった。
+
+削除理由:
+- 該当なし
+
+手数31:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈１８分、△田村２５分。」 → ルール3, 4
+
+手数33:
+
+削除理由:
+- 「この局面で田村が４４分の長考に沈んで、そのまま昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲伊奈３２分、△田村１時間２５分。」 → ルール3, 4
+
+手数34:
+
+削除理由:
+- 「昼食休憩を挟んで１時間９分の考慮。」 → ルール3, 7
+- 「早指しで知られる田村にしては、かなりの大長考と言えるだろう。」 → ルール5, 3
+
+手数35: 銀冠に組みあがった。あとは居玉が７九や８八まで移動できれば万全。
+
+削除理由:
+- 該当なし
+
+手数36: 後手は攻撃態勢を整えることを優先する。
+
+削除理由:
+- 該当なし
+
+手数38:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈４２分、△田村２時間１４分。」 → ルール3, 4
+
+手数46:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈１時間５８分、△田村２時間２１分。」 → ルール3, 4
+
+手数56:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈３時間７分、△田村２時間３４分。」 → ルール3, 4
+- 「この局面で伊奈が考え続け、１時間１６分経ったところで夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲伊奈４時間２３分、△田村２時間３４分。」 → ルール3, 4
+
+手数57:
+
+削除理由:
+- 「結局夕食休憩を挟んで１時間２７分の長考だった。」 → ルール3, 7
+
+手数74:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈４時間４９分、△田村２時間４８分。」 → ルール3, 4
+
+手数79:
+
+削除理由:
+- 「伊奈、残り１時間を切った。」 → ルール3, 4
+
+手数87:
+
+削除理由:
+- 「残り５５分から２１分を費やして一本叩いた。」 → ルール3
+
+手数102:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈５時間３５分、△田村２時間５５分。」 → ルール3, 4
+
+手数117:
+
+削除理由:
+- 「伊奈はここから一分将棋。」 → ルール3, 4

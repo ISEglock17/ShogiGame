@@ -1,0 +1,153 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up these shogi commentary snippets. The user wants the focus laser-focused on the *game* itself, not the extraneous noise. I need to make sure I'm zeroing in on the core of the analysis, and cutting away all the fluff.
+
+My brain is already categorizing the 'fluff' into logical groups. I'm thinking, "Okay, rule number one, personalities outside of the players? Gone." That includes any mention of the commentators themselves, or anyone else that isn't directly involved in the *current* game. Next, I'm thinking about the history. "Previous games? Other matches? Forget about it!" It distracts from the immediate flow of the current battle.
+
+Then, there's the whole issue with *time*. The user obviously wants a comment flow that is less about the clock and more about the tactics. I'm going to purge the commentary of all the *time* information. So no mentions of how long they have been thinking or the specific clock times.
+
+Lastly, I need to get rid of anything that’s an aside, about the players themselves – their past performance, their history, or any biographical details. This is all about the *game*, and this is the lens through which I’m going to focus the commentary.
+
+手数8: 後手はゴキゲン中飛車を採用。
+
+削除理由:
+- 「広瀬は」 → 先手・後手の実名は「先手」「後手」に置換
+
+---
+手数11:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は勝又２１分、広瀬８分。」 → ルール3
+
+---
+手数15: 先手は急戦を目指す。
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は勝又４０分、広瀬３３分。」 → ルール3
+- 「勝又は穴熊を指すことは少ない。」 → ルール5
+- 「本局も」 → 文脈を自然にするため調整
+
+---
+手数17:
+
+削除理由:
+- 「▲３七銀の局面で広瀬が２９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は勝又４４分、広瀬１時間１７分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+---
+手数18:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は勝又４４分、広瀬１時間２７分。」 → ルール3
+- 「勝又は５０分以上考えている。」 → ルール3
+
+---
+手数19:
+
+削除理由:
+- 「１時間３分の長考。」 → ルール3
+
+---
+手数20: 銀挟みを狙う。
+
+削除理由:
+- 削除対象なし
+
+---
+手数23: あらかじめ銀にヒモをつける。
+
+削除理由:
+- 削除対象なし
+
+---
+手数24:
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は勝又２時間１分、広瀬１時間３７分。」 → ルール3
+
+---
+手数25:
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+---
+手数27: ５筋を厚くする。
+
+削除理由:
+- 削除対象なし
+
+---
+手数28:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は勝又３時間、広瀬２時間５分。」 → ルール3
+
+---
+手数36:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は勝又３時間４０分、広瀬２時間１５分。」 → ルール3
+
+---
+手数37:
+
+削除理由:
+- 「３７分の長考。」 → ルール3
+
+---
+手数39:
+
+削除理由:
+- 「▲９五歩の局面で夕食休憩に入った。」 → ルール7
+- 「夕食の注文はともになし。」 → ルール7
+
+---
+手数41:
+
+削除理由:
+- 「３９分の長考。」 → ルール3
+- 「勝又は残り１時間。」 → ルール3
+
+---
+手数49:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は勝又５時間、広瀬２時間４９分。」 → ルール3
+
+---
+手数55: 端に戦力を加える。
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「残り時間は勝又３７分、広瀬２時間５６分。」 → ルール3
+
+---
+手数56:
+
+削除理由:
+- 「３９分の長考。」 → ルール3
+
+---
+手数58:
+
+削除理由:
+- 「２１時４５分ごろの局面。」 → ルール3
+- 「残り時間は勝又３２分、広瀬２時間１分。」 → ルール3
+
+---
+手数74: ここで先手は投了した。龍が逃げた後、△５五飛が△５四馬を見て厳しい。
+
+削除理由:
+- 「勝又は」 → 先手・後手の実名は「先手」「後手」に置換
+- 「終局時刻は２２時１０分。」 → ルール3
+- 「消費時間は勝又５時間４９分、広瀬４時間４分。」 → ルール3
+- 「勝った広瀬は３連勝、敗れた勝又は１勝２敗となった。」 → ルール4

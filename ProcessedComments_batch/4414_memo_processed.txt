@@ -1,0 +1,115 @@
+**Cleaning Up Game Annotations**
+
+Okay, so I'm looking at a bunch of Shogi game data, specifically the comments associated with each move. My task is pretty straightforward, but the devil's in the details. Essentially, I need to take these comments, which are often a bit messy, and refine them. The goal is to isolate the *actual* analysis of the game state and the implications of each move, while stripping away all the extraneous stuff. Think of it like distilling a fine brandy from a vat of grapes - we want the pure essence of the strategic thinking, not the grower's introduction or the time it took to ferment.
+
+So, I need to identify and remove all those pesky things that clutter the good stuff. That means getting rid of the meta-data, things like who's commenting, maybe the time stamps of their thoughts, personal introductions, maybe even repetitive phrases that start most comments. The raw analysis of the board state and the move itself, *that's* what I need to preserve. Ideally, the end result should read like a fluid, coherent explanation of the game's unfolding dynamics, focusing on the tactical and strategic impact of each play.
+
+手数6: ゴキゲン中飛車になった。後手はプロになってから２局目のゴキゲン中飛車。
+
+削除理由:
+- 「澤田は」 → ルール1
+- 「１局目は８月の村中四段（当時）戦で、千日手になっている。」 → ルール2
+
+手数11: 最近では珍しい。▲７八銀が多い。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数21:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４７分、△澤田２１分。」 → ルール3
+- 「この一手は４７分。」 → ルール3
+
+手数22: 位取りを防いだ手。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数23: いきなり反発した。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数30:
+
+削除理由:
+- 「この局面で佐藤紳が２０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳２０分、△澤田４３分。」 → ルール3
+- 「休憩に入ってから１０分経った１２時２０分頃に対局室に入ると、佐藤紳は盤の前で全力で考えていた。」 → ルール3, 6, 7
+
+手数40:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳１時間３９分、△澤田１時間３分。」 → ルール3
+
+手数41: ここから穴熊を目指す。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数46:
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳２時間１２分、△澤田１時間９分。」 → ルール3
+
+手数48: ３一の銀がここまで出てきた。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数52: 打った角をもう一手かけて引いた。▲４五歩を突かせたことで、△３三桂〜△６四角の形を目指している。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳３時間２０分、△澤田１時間５６分。」 → ルール3
+
+手数55: 局面が手詰まり気味になってきているようだ。先手は打開していきたい。
+
+削除理由:
+- 「この局面で澤田が１７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲佐藤紳４時間１６分、△澤田２時間２０分。」 → ルール3
+- 「残り時間の差もあるので、」 → ルール3
+
+手数57: △９五歩からの端攻めから遠ざかっている。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数58:
+
+削除理由:
+- 「１９時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間２５分、△澤田２時間５２分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳４時間５８分、△澤田３時間４４分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳５時間３５分、△澤田４時間８分。」 → ルール3
+
+手数76: ５０手目に３三に打たれた角は４二〜６四〜４二〜６四〜５三〜６四と何度も動いている。
+
+削除理由:
+- 「」 → (削除なし)
+
+手数80: ようやく本格的な戦いに入りそうな気配。先手のほうが指しやすい局面と見られている。先手は△３七歩成と成ってもらって▲３四歩と打ちたい。（１）▲３六同歩と応じるのは△２三歩▲２六飛△１九角成が少し嫌味だ。（２）▲６三歩が考えられる。△同金は形が乱れるし、放っておけば▲６二角がある。飛車が横に逃げると▲５四飛、縦に逃げると▲２一飛成が生じる。
+
+削除理由:
+- 「２３時を回り、」 → ルール3
+- 「消費時間は▲佐藤紳５時間４５分、△澤田４時間５２分。」 → ルール3
+
+手数107:
+
+削除理由:
+- 「０時頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳５時間５７分、△澤田５時間１２分。」 → ルール3

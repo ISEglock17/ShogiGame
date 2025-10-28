@@ -1,0 +1,64 @@
+**Focusing My Lens: Shaping Comments for Deep Analysis**
+
+Okay, so I'm presented with a collection of comments from Shogi games, and my task is to refine them. I need to strip away the fluff and get to the heart of the matter – the actual board states and the insightful explanations behind each move. My goal is to transform these raw comments into a clean, concise, and natural language format, perfect for deeper analytical work.
+
+My process will be methodical. First, I'll apply a strict set of rules to identify and eliminate irrelevant information. This means saying goodbye to mentions of people other than the players, ditching any historical context about previous games or similar positions, and definitely scrubbing out any time-related details.
+
+Then, with the core commentary remaining, I'll carefully reconstruct the sentences to make them flow smoothly and clearly articulate the strategy and reasoning behind each move. Finally, I'll format the refined comments to perfectly match the desired output style, ensuring they're ready for seamless integration into my analysis workflow.
+
+手数15: 横歩取りなら▲３四飛だが、先手は▲２六飛。
+
+削除理由:
+- 「松本」 → 先手・後手の実名は「先手」「後手」に置換
+
+手数23: 横歩取り模様の出だしから先手が▲２六飛と引き珍しい戦型に進む。
+
+削除理由:
+- 「午前１１時ごろの局面。」 → ルール3
+- 「松本」 → 先手・後手の実名は「先手」「後手」に置換
+- 「消費時間は松本３３分、長岡４分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「午後１２時１０分、昼食休憩に入る。」 → ルール3, 7
+- 「消費時間は松本５５分、長岡１時間４分。」 → ルール3
+- 「長岡が３２手目を２６分の考慮中。」 → ルール3
+
+手数32: 後手は△３四銀と指した。
+
+削除理由:
+- 「再開後の一手は」 → 自然な文に整形
+- 「再開後２８分で指された。」 → ルール3, 7
+
+手数40:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は松本１時間４４分、長岡２時間１４分。」 → ルール3
+
+手数57: 先手の狙いは▲３二金からの飛車の捕獲。後手は△４三銀と桂を取りたいが、▲４七銀とと金を取られると▲４二歩や▲３八飛があり、後手は指し手が難しい。△５八とが普通だが、▲同金のあとどう攻めるか。
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は松本２時間１１分、長岡２時間５８分。」 → ルール3
+
+手数72:
+
+削除理由:
+- 「１７時３０分過ぎの局面。」 → ルール3
+- 「消費時間は松本２時間３３分、長岡３時間４３分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「１８時１０分、夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は松本３時間２分、長岡３時間５１分。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「ここで松本が１１分考えて投了した。」 → ルール3
+- 「終局時刻は２０時１分。」 → ルール3
+- 「消費時間は▲松本３時間２０分、△長岡４時間２８分。」 → ルール3
+- 「勝った長岡四段は１勝１敗、敗れた松本六段は０勝２敗となった。」 → ルール4

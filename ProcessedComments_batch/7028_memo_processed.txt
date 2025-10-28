@@ -1,0 +1,106 @@
+**Structuring and Refining Shogi Commentary**
+
+Okay, so I'm presented with shogi game commentary that needs some cleaning up. The user wants the comments formatted in a specific way. I understand the task: essentially, I'm going to process each move's commentary based on a set of rules they've provided.
+
+My mental process is pretty straightforward. First, I read through each individual comment. Then, I need to identify which parts of the comment fall under the "delete" rules – these are the unnecessary, repetitive, or perhaps less insightful segments. Next, I apply those rules to remove the designated parts. Finally, and this is the crucial part, I need to take what's left and re-craft it into a coherent, natural-sounding Japanese explanation of the move. It's about distilling the core meaning while making it flow beautifully for a shogi aficionado.
+
+手数1:
+
+削除理由:
+- 「◆門倉　啓太（かどくら　けいた）四段◆」 → ルール1, 4
+- 「１９８７年６月３日生まれ、東京都豊島区出身。石田和雄九段門下。２０１１年、四段。棋士番号は２８２。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆伊藤　真吾（いとう　しんご）四段◆」 → ルール1, 4
+- 「１９８２年１月４日生まれ、東京都八王子市出身。桜井昇八段門下。２００７年、四段。棋士番号は２６６。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「門倉の今年度成績は３勝３敗（０．５００）」 → ルール4
+- 「通算成績は４４勝３４敗（０．５６４）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「伊藤の今年度成績は２勝３敗（０．４００）」 → ルール4
+- 「通算成績は９２勝７０敗（０．５６８）」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数6: 先手の初手▲７八飛に対して、後手は居飛車を選択した。
+
+削除理由:
+- 「門倉」 → ルール1
+- 「伊藤」 → ルール1
+
+手数18:
+
+削除理由:
+- 「１１時過ぎ、△５三銀までの消費時間は▲門倉１１分、△伊藤３８分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「１２時１０分、この局面で門倉が１７分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲門倉５２分、△伊藤１時間７分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+
+手数29: 後手は天守閣美濃に玉を収め、先手は銀冠を目指してじっくりとした駒組み合戦が続いている。
+
+削除理由:
+- 「１４時過ぎ、▲２六角までの消費時間は▲門倉１時間１０分、△伊藤１時間４４分。」 → ルール3
+
+手数34: 位に向かって反発した。▲４四同歩△同銀▲４五歩には△５五銀と出る狙いか。
+
+削除理由:
+- 「１５時過ぎ、△４四歩までの消費時間は▲門倉１時間２０分、△伊藤２時間３５分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１６時過ぎ、△４三金までの消費時間は▲門倉１時間５７分、△伊藤２時間４４分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１７時過ぎ、△６一飛までの消費時間は▲門倉２時間２２分、△伊藤３時間２３分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１８時１０分、この局面で伊藤が３４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲門倉３時間１分、△伊藤３時間５７分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数53:
+
+削除理由:
+- 「２０時半過ぎ、▲８六同歩までの消費時間は▲門倉３時間５７分、△伊藤４時間２９分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２１時半過ぎ、△５五歩までの消費時間は▲門倉４時間１２分、△伊藤５時間１３分。」 → ルール3
+
+手数79: 次に△３七歩が厳しそうだ。
+
+削除理由:
+
+手数83:
+
+削除理由:
+- 「時刻は０時を回った。」 → ルール3
+- 「残り時間は▲門倉１６分、△伊藤１分。」 → ルール3
+
+手数106: ここで先手が投了した。投了以下は▲６七同玉△５七金▲６六玉△６五金までの詰み。
+
+削除理由:
+- 「門倉が投了を告げた」 → ルール1
+- 「終局時刻は０時３８分、消費時間は▲門倉５時間５７分、△伊藤５時間５９分。」 → ルール3

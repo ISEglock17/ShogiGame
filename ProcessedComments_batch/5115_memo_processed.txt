@@ -1,0 +1,89 @@
+**My Approach to Refining Shogi Commentary**
+
+Right, so the user wants me to clean up Shogi commentary, basically stripping it down to the bare essentials: the board state and the moves being made.  The goal here is to get rid of all the fluff, the irrelevant bits that a serious Shogi expert wouldn't need. My process will be pretty straightforward.
+
+First, I need to go through the commentary one move at a time. I'll analyze each comment and figure out if it's actually providing any valuable information about the board or the moves. If it's just repeating the obvious, or giving a purely emotional reaction, that's getting the boot. Only the core insights about the position and the specific play should be preserved.
+
+手数1:
+
+削除理由:
+- 「【村田六段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈoｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｍｕｒａｔａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【永瀬四段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｇａｓｅ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「村田の通算成績は７４勝４２敗（０．６３７９）」 → ルール4
+- 「今年度成績は１７勝１１敗（０．６０７１）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「永瀬の通算成績は１９勝１６敗（０．５４２９）」 → ルール4
+- 「今年度成績は１３勝１２敗（０．５２００）」 → ルール4
+
+手数20:
+
+削除理由:
+- 「１０時５０分頃の局面、消費時間は▲村田３９分、△永瀬０分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「この局面で△永瀬が１４分考え昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田１時間４６分、△永瀬１４分。」 → ルール3
+- 「永瀬は昼食休憩前に１４分使った以外はすべてノータイムでの着手だった。」 → ルール3
+- 「昼食の注文は、永瀬が親子南蛮、村田はなし。」 → ルール7
+
+手数27:
+ここからは未知の局面。
+
+削除理由:
+- 「２６手目までの局面で前例は１局あったがその対局では▲同銀引と指されていた。」 → ルール2
+
+手数32:
+
+削除理由:
+- 「１４時４０分頃の局面、消費時間は▲村田２時間４２分、△永瀬４０分。」 → ルール3
+- 「消費時間に２時間以上の差がついている。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１５時３０分頃の局面、消費時間は▲村田２時間５９分、△永瀬５６分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１６時２０分頃の局面、消費時間は▲村田３時間３２分、△永瀬１時間７分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１７時１０分頃の局面、消費時間は▲村田４時間２６分、△永瀬１時間２３分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「この局面で▲村田が１０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲村田４時間４３分、△永瀬２時間１分。」 → ルール3
+- 「夕食の注文は、永瀬がきつねうどん（ほそ島や）、村田はなし。」 → ルール7
+
+手数66:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は▲村田５時間１３分、△永瀬２時間４０分。」 → ルール3
+
+手数82:
+ここで先手は投了した。
+
+削除理由:
+- 「終局時刻は２０時３４分、消費時間は▲村田５時間２８分、△永瀬２時間４８分。」 → ルール3
+- 「勝った永瀬は５勝４敗、敗れた村田は３勝６敗となった。」 → ルール4

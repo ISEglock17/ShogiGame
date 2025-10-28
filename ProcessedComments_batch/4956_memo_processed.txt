@@ -1,0 +1,121 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the goal here is to refine the comments found within Shogi game data. I need to take a look at these comments and sculpt them into something much more useful for analysis. The current comments are cluttered with unnecessary details, like metadata about the game itself, introductions of the players, and timestamps - things that are ultimately distracting when I'm trying to understand the actual strategic nuances of the moves.
+
+My approach will be methodical. First, I'll establish clear rules for what constitutes unnecessary information. I'll need to remove any references to people *besides* the players involved in the game. That includes their ranks, affiliations with schools, and even mentions of previous games or precedents. Basically, anything that doesn't directly relate to the current board state and the reasoning behind a specific move needs to go. Then, I'll take what's left and clean it up, making sure it flows as a natural and concise explanation of the move. Finally, I'll present the final, refined commentary in the format requested.
+
+手数1:
+
+削除理由:
+- 「中川大輔八段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｇａｗａ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「窪田義行六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｕｂｏｔａ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「中川の今期成績は１３勝８敗（勝率０．６１９）」 → ルール4
+- 「通算成績は５７７勝３５５敗（勝率０．６１９）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「窪田の今期成績は２１勝８敗（勝率０．７２４）」 → ルール4
+- 「通算成績は３０３勝２５７敗（勝率０．５４１）」 → ルール4
+
+手数11: 後手の四間飛車が予想される局面。先手は端歩を受けて急戦含みに構えた。
+
+削除理由:
+- 「窪田の」 → ルール4
+- 「中川は」 → ルール4
+
+手数17:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲中川０分、△窪田３３分。」 → ルール3
+
+手数19: 先手は玉頭位取りを目指した。
+
+削除理由:
+
+手数49: 組みあがるまでに危険なポイントが多数あると言われる玉頭位取りだが、ここまで組めればまずは一安心。手厚い構えのじっくりとした将棋のため、ここからゆっくりとしたペースになっていくだろう。
+
+削除理由:
+- 「ここまでテンポ良く進んできたが、」 → ルール3
+
+手数50:
+
+削除理由:
+- 「この局面で中川が１２分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中川３０分、△窪田１時間１６分。」 → ルール3
+- 「昼食の注文は中川が「半チャンラーメン」（みろく庵）、窪田はなし。」 → ルール7
+- 「対局は１３時に再開される。」 → ルール3, 7
+
+手数61:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲中川５３分、△窪田１時間５１分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲中川１時間３分、△窪田２時間６分。」 → ルール3
+
+手数72: 「持久戦」という言葉がピッタリの間合いの計りあい。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲中川１時間５３分、△窪田２時間３４分。」 → ルール3
+
+手数84: 先手は現状で７七角の働きが悪いため、これを活用するまでは全面的な戦いにはしたくない。後手は７四にキズを抱えているため、２〜５筋方面の折衝でリードしておきたいところ。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲中川２時間２５分、△窪田２時間５０分。」 → ルール3
+
+手数92:
+
+削除理由:
+- 「この局面で中川が２６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中川３時間４０分、△窪田３時間３分。」 → ルール3
+- 「夕食の注文は中川が「五目焼きそば大盛り」（みろく庵）、窪田が「にしんそば」（みろく庵）。」 → ルール7
+- 「対局は１９時に再開される。」 → ルール3, 7
+
+手数93:
+
+削除理由:
+- 「１９時３０分頃の局面。」 → ルール3
+
+手数98:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲中川４時間２分、△窪田３時間２４分。」 → ルール3
+
+手数103:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+
+手数114:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲中川４時間４５分、△３時間４８分。」 → ルール3
+
+手数121:
+
+削除理由:
+- 「２１時３０分頃の局面。」 → ルール3
+
+手数125:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は▲中川５時間５分、△窪田３時間５７分。」 → ルール3

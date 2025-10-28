@@ -1,0 +1,112 @@
+**Processing Shogi Commentary: Focusing on the Game's Essence**
+
+Okay, so the user wants me to clean up these Shogi commentary snippets. The goal is clear: they need to extract the *essential* information for game analysis, ditching all the noise. Think of it like a sculptor chipping away at marble – we're removing everything that isn't the core form. I need to get rid of the fluff: the introductions, the player profiles, the timestamps – all the stuff that's not directly related to the board position or the moves themselves.
+
+My job is to go through each comment, applying the rules I've been given, and produce a distilled version that keeps only the meaningful commentary about the board and the moves.  This should leave a series of natural sentences that are solely focused on the gameplay. This is going to require careful attention to detail and a strong understanding of what *is* and *isn't* crucial to the analytical process. It's a bit like being a Shogi historian, preserving the game's evolution in its purest form.
+
+手数1:
+
+削除理由:
+- 「中村太地（なかむら・たいち）四段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｍｕｒａ―ｔ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「佐藤和俊（さとう・かずとし）五段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓａｔｏｕ―ｋａｚｕｔｏｓｉ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「中村の今年度成績は６勝４敗（勝率０．６０００）」 → ルール4
+- 「通算成績は８６勝６３敗（勝率０．５７７２）」 → ルール4
+- 「２０１０年７月１６日時点で、今年度対局数ランキング１８位、勝ち数ランキング１６位。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「佐藤の今年度成績は２勝４敗（勝率０．３３３３）」 → ルール4
+- 「通算成績は１６１勝８８敗（勝率０．６４６６）」 → ルール4
+
+手数12: こうなれば超急戦となる。ゴキゲン中飛車の肝であり花形の変化。
+
+削除理由:
+
+手数26: 角銀交換で損なようでも、４三の地点を開けたことが大きいとされている。先手の狙いは６三の地点だが、４三の地点を開けたことにより、▲１三龍とした時に龍も６三の地点に利いてくる。
+
+削除理由:
+
+手数31: この手は新手だ。
+
+削除理由:
+- 「前例は▲９一銀成が多い。」 → ルール2
+- 「１０時４５分頃の局面。消費時間は▲中村９分、△佐藤２６分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「３９分の考慮。」 → ルール3
+- 「１１時４０分頃の局面。消費時間は▲中村９分、△佐藤１時間５分。」 → ルール3
+- 「そのまま中村が３９分使って昼食休憩となった。消費時間は▲中村４８分、△佐藤１時間５分。昼食の注文は、ともに無し。」 → ルール3, 7
+
+手数33: 新手が出ても６三の地点が最激戦地であることに変わりはない。桂２枚と香で、ものすごいプレッシャーだ。
+
+削除理由:
+- 「１３時５０分頃の局面。消費時間は▲中村４８分、△佐藤１時間５分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１３分の考慮で決断。」 → ルール3
+
+手数40: 一気に清算された。後手玉が露出したが、先手も持ち駒は角銀のみで、且つ、歩が利く筋も少ないため、そう簡単ではない。
+
+削除理由:
+- 「ノータイムで」 → ルール3
+
+手数43: ７四に合い駒すれば、▲７五歩から迫っていく。
+
+削除理由:
+- 「ゴキゲン中飛車の▲９六角と言えば羽生新手を思い出すが、状況はかなり違う。」 → ルール1, 2
+- 「１５時頃の局面。消費時間は▲中村太１時間２２分、△佐藤２時間２０分。」 → ルール3
+
+手数48: 最後の１歩だが、受けに使うのは難しそうだ。先手陣の最急所の叩きに使った。
+
+削除理由:
+- 「１５時５０分頃の局面。消費時間は▲中村１時間３１分、△佐藤３時間３分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「１７時頃の局面。消費時間は▲中村１時間４５分、△佐藤３時間１０分。」 → ルール3
+
+手数52: １三の龍の利きから逃げて、次に△５六香と走る手を用意する。しかし何ともすごいとしか言いようがない。
+
+削除理由:
+- 「１時間１５分の大長考だった。」 → ルール3
+- 「ここで中村が２６分使って夕食休憩となった。消費時間は▲中村２時間２９分、△佐藤４時間２５分。夕食の注文は、中村が「冷やしきつねうどん（みろく庵）」、佐藤は注文無し。」 → ルール3, 7
+
+手数56:
+
+削除理由:
+- 「１９時５０分頃の局面。消費時間は▲中村２時間３４分、△佐藤４時間３７分。」 → ルール3
+
+手数57: 「自玉は詰まないので、攻め合って勝ち」という読みだが、果たして。
+
+削除理由:
+- 「１時間２５分の長考。」 → ルール3
+- 「中村の」 → ルール1
+- 「２０時４５分頃の局面。消費時間は▲中村３時間５９分、△佐藤４時間３７分。」 → ルール3
+
+手数60: 同玉は△７六桂から詰んでしまう。
+
+削除理由:
+
+手数61:
+
+削除理由:
+- 「２１時３０分頃の局面。消費時間は▲中村３時間５９分、△佐藤４時間４２分。」 → ルール3
+- 「２１時４７分、佐藤は５６分の考慮で先手玉に詰み無しと読み、次の手を指さずに投了した。」 → ルール3
+- 「消費時間は▲中村３時間５９分、△佐藤５時間３８分。」 → ルール3
+- 「勝った中村太地四段、敗れた佐藤和俊五段、ともに１勝１敗となった。」 → ルール1, 4

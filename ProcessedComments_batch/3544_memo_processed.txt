@@ -1,0 +1,90 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I'm tackling this dataset of Shogi game comments. The goal, as I see it, is to get down to the bare bones – the *essential* elements. I want to strip away all the extraneous noise that's cluttering up the analysis. That means ditching the metadata, the player introductions, and the time stamps. It's all about making sure that only the truly valuable commentary surrounding board positions and move explanations survives the cut.
+
+My approach is straightforward: I'll carefully review each comment, applying the specified rules to identify what needs to go. Once I've excised all the unnecessary information, I'll then smooth out what's left, ensuring it reads like a coherent and natural explanation of the game's unfolding dynamics. It's all about extracting the signal from the noise and putting that signal into a more useful format.
+
+手数18:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田２５分、△長沼３３分。」 → ルール3, 4
+
+手数28:
+
+削除理由:
+- 「この局面で窪田が９分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲窪田５０分、△長沼１時間６分。」 → ルール3, 4
+
+手数34:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田１時間２７分、△長沼１時間１３分。」 → ルール3, 4
+
+手数38:
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田２時間４分、△長沼１時間５６分。」 → ルール3, 4
+
+手数47:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田３時間４分、△長沼２時間１分。」 → ルール3, 4
+
+手数49:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田３時間３４分、△長沼２時間６分。」 → ルール3, 4
+
+手数60: 穴熊が堅く、後手が指しやすいと見られている。
+
+削除理由:
+- 「この局面で窪田が４分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲窪田３時間４７分、△長沼３時間１分。」 → ルール3, 4
+- 「夕食休憩後に棋士室に姿を見せた勝又六段（対安用寺五段戦の対局中で、観戦記がついている）は「同じ全勝ならこっち（を観戦記）にしましょうよ。これは長沼さんの駒取り坊主が見られますよ。あーやだやだ」とぼやきにぼやいていた。」 → ルール1, 6
+
+手数68: ▲８三飛成には△７一桂で飛車の行く場所がない。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田３時間５３分、△長沼３時間４９分。」 → ルール3, 4
+
+手数69:
+
+削除理由:
+- 「本局を検討中、窪田が棋士室に姿を見せた。」 → ルール1, 4, 6
+- 「入口の近くにいた棋士がそれを告げると、慌てて盤を崩す検討陣。」 → ルール1, 6
+- 「窪田はわざわざ継ぎ盤に背中を向け、カニ歩きで棋士室に入ってきた。」 → ルール1, 4, 6
+
+手数73:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田４時間１２分、△長沼３時間５４分。」 → ルール3, 4
+
+手数75: 満を持して端攻め。
+
+削除理由:
+
+手数86:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田４時間２０分、△長沼４時間３９分。」 → ルール3, 4
+
+手数100: 後手がはっきり良いようだ。
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田４時間３６分、△長沼４時間４７分。」 → ルール3, 4
+- 「「これははっきり居飛車（後手）よしですね」と検討陣。」 → ルール1
+
+手数120: 以下▲同玉に△１五歩▲２五玉△２四歩▲同玉△２三金▲２五玉△３三桂までの詰み。先手はここで投了した。
+
+削除理由:
+- 「消費時間は▲窪田５時間１３分、△長沼４時間５５分。」 → ルール3, 4
+- 「勝った長沼は４勝３敗、敗れた窪田は５勝１敗となった。」 → ルール4

@@ -1,0 +1,92 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm being asked to clean up and format some Shogi game commentary. The goal is clear: strip away all the extraneous noise and leave behind only the crucial information - the board state descriptions and the moves themselves. That's my forte, I can handle this.
+
+My plan is straightforward:
+
+1.  I'll go through the commentary, one move at a time, meticulously analyzing each comment.
+2.  I'll use the provided rules as my guide, like a seasoned detective identifying suspects. I'll search for those tell-tale phrases or patterns that mark content for deletion.
+3.  As I find sections that match the deletion criteria, I'll make a note of what's being removed and which rule number applies. This'll help with auditing later. This is exactly how I would approach the problem, step by step.
+
+手数16: 横歩取りになった。後手も得意形。
+
+削除理由:
+- 「野月は横歩取り△８五飛を流行させた人物。」 → ルール1, 5
+- 「桐山」 → ルール1
+
+手数29:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲野月３３分、△桐山１４分。」 → ルール3
+- 「野月は第６３期Ｂ２最終局（ｖｓ屋敷九段戦）で同じ形を経験している。その対局に勝った野月は、最終局で敗れた土佐七段を逆転し、Ｂ１昇級を決めた。今期の土佐七段はそれ以来の昇級のチャンスとなる。」 → ルール1, 2, 4
+
+手数36:
+
+削除理由:
+- 「この局面で野月が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲野月１時間０分、△桐山５４分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１３時５０分頃の局面。」 → ルール3
+- 「消費時間は▲野月１時間１０分、△桐山１時間７分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１時間２７分の長考。」 → ルール3
+- 「１５時を回った。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は▲野月３時間２１分、△桐山１時間３４分。」 → ルール3
+
+手数54: △６五桂は▲同桂で、５三に殺到される。
+
+削除理由:
+
+手数56: 依然として△６五桂とは取りづらいので、５三を補強した。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲野月３時間２３分、△桐山２時間１６分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「この局面で桐山が３４分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲野月３時間４７分、△桐山３時間４分。」 → ルール3
+
+手数68: 王手金取り。
+
+削除理由:
+
+手数76: 夕食休憩の局面はいい勝負とされていたのだが、この局面は後手が指せるようだ。
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲野月４時間８分、△桐山３時間６分。」 → ルール3
+
+手数78: 長考して銀を打った。やはり後手優勢のようだ。
+
+削除理由:
+
+手数80: ８八の金も落ちている。
+
+削除理由:
+
+手数85:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲野月４時間３５分、△桐山３時間４９分。」 → ルール3
+
+手数100: この局面で先手が投了した。以下は▲１六玉に△３八馬▲同銀△２四桂▲１五玉△１四歩までの即詰み。
+
+削除理由:
+- 「消費時間は▲野月４時間５０分、△桐山４時間９分。」 → ルール3
+- 「勝った桐山は６勝４敗、敗れた野月は５勝５敗となった。」 → ルール4

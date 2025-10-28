@@ -1,0 +1,114 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to clean up and reformat shogi game commentaries. They've given me a set of rules, and my job is to take raw comments, which are probably pretty verbose, and turn them into concise, natural-sounding explanations of each move.
+
+Here's how I see it playing out. I'll need to dissect each comment, move by move. I'll have to be good at spotting the things they want me to get rid of, based on the provided deletion rules. Then, and this is crucial, I need to replace the player names with "Sente" (先手) for the first player and "Gote" (後手) for the second, following the substitution rules they've outlined. The goal, ultimately, is to transform these comments into easily understandable descriptions of the game's progress, focusing on the actions and their significance. It's a matter of distilling the commentary down to its essence, removing the clutter, and ensuring clarity for the reader.
+
+手数5: 先手の作戦はダイレクトな向かい飛車。
+
+削除理由:
+- 「長沼の」 → ルール1
+
+手数18:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼１５分、△大平２６分。」 → ルール1, 3
+
+手数27:
+
+削除理由:
+- 「この局面で大平が１５分考え、昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲長沼５１分、△大平１時間４分。」 → ルール1, 3
+
+手数31:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼１時間２０分、△大平１時間６分。」 → ルール1, 3
+
+手数34:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼１時間４５分、△大平１時間３０分。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼２時間４４分、△大平２時間６分。」 → ルール1, 3
+
+手数45: お互いに堅陣になってきた。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「１６時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼２時間５９分、△大平２時間１９分。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「１７時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼３時間１９分、△大平２時間４６分。」 → ルール1, 3
+
+手数62:
+
+削除理由:
+- 「この局面で長沼が２３分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲長沼４時間１分、△大平２時間５１分。」 → ルール1, 3
+
+手数67: さらなる固め合いへ。
+
+削除理由:
+
+手数69: △６六角は▲６八飛で大丈夫と見ている。以下△９九角成は▲６四飛、△６五歩は▲４五歩。
+
+削除理由:
+
+手数70: △６六角よりも、▲４五歩に対する備えを優先した。
+
+削除理由:
+
+手数71:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼４時間３０分、△大平３時間１６分。」 → ルール1, 3
+
+手数75: ようやく開戦。△４五同歩は▲６二角成。
+
+削除理由:
+
+手数83: △同角なら▲７三馬がある。
+
+削除理由:
+
+手数92: ▲５六飛も▲６七飛成も考えられる展開。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼４時間５９分、△大平３時間４２分。」 → ルール1, 3
+
+手数95: と金・歩を払ったが、後手玉のほうが堅く、後手ペースと言われている。
+
+削除理由:
+
+手数96: ▲４六同龍は△６八角がある。
+
+削除理由:
+
+手数102: 間接的に４七も狙っていて厳しい。
+
+削除理由:
+
+手数106: ▲４一歩を受けている。
+
+削除理由:
+
+手数110: ひたひたと先手陣にと金が忍び寄ってくる。
+
+削除理由:

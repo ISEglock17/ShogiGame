@@ -1,0 +1,105 @@
+**Processing and Refinement of Shogi Game Commentary**
+
+Okay, so I understand the task. I'm being asked to take raw Shogi game commentary and surgically refine it. The goal is to strip away all the fluff – the extraneous remarks, the irrelevant asides – and distill each comment down to its core: the board state and the move itself, plus any crucial explanatory details. 
+
+Essentially, I need to act like a precision editor, applying the established rules to each comment in the sequence, each *hand*, and zeroing in on the truly essential information. I need to be methodical: analyze each comment meticulously, identify anything that violates those predefined "deletion targets," and then remove those parts surgically, leaving only the focused analysis. This process will repeat for every single move of the game to provide a clean and concise commentary that only includes useful information.
+
+手数1:
+
+削除理由:
+- 「田中寅の本年度の成績は０勝４敗（０．０００）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「野月の本年度の成績は４勝４敗（０．５００）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「「序盤のエジソン」の異名を誇る田中。」 → ルール1, 5
+- 「序盤から他の棋士とは違った指し方を好む。」 → ルール5
+
+手数6:
+お互いにやや変わった指し方だ。
+
+削除理由:
+- 「１１分。」 → ルール3
+
+手数9:
+
+削除理由:
+- 「１０時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅９分△野月１４分。」 → ルール3
+
+手数18:
+先手の狙いは早囲いや穴熊。じっくり構えていては後手としては不満なので、早めに攻めの態勢を用意したい。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「１１時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中寅２２分△野月５９分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「この局面で野月が２５分使って昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田中３４分△野月１時間２４分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１３時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中４４分△野月１時間２８分。」 → ルール3
+
+手数31:
+単に▲７九角では▲３五歩が手抜かれる恐れがあるとみたか。
+
+削除理由:
+- 「５３分の長考。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中１時間４５分△野月２時間１分。」 → ルール3
+
+手数40:
+「継ぎ歩」と呼ばれる攻め方。単に△同飛より後に厳しい狙いが残る。
+
+削除理由:
+
+手数43:
+▲６五銀は△８五飛が十字飛車。逃げ道を広げる。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中２時間１７分△野月２時間２１分。」 → ルール3
+
+手数50:
+勢いからして攻めたい所だが、一手我慢。後の▲５三桂などの王手を消す大きな一着だ。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中２時間５８分△野月２時間４１分。」 → ルール3
+
+手数88:
+この局面で先手は投了した。投了図以下は▲同金△７八竜▲５九玉△４八金までの詰み。
+
+削除理由:
+- 「田中は」 → ルール1
+- 「終局は１７時３１分。」 → ルール3
+- 「消費時間は▲田中３時間１８分△野月２時間４４分。」 → ルール3
+- 「勝った野月は１勝１敗、敗れた田中は０勝２敗となった。」 → ルール4
+- 「夕食休憩時（１８時１０分）に記者が対局室に入ると既に両者の姿はなく、駒も片づけられていた。」 → ルール1, 6, 7

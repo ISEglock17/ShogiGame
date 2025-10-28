@@ -1,0 +1,68 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to clean up and reformat shogi game commentary, removing the noise and presenting the core information clearly and concisely, adhering to the given rules.  My process will involve these steps:
+
+1.  I'll go through the commentary move by move, systematically examining each comment.
+2.  I'll carefully identify and filter out any irrelevant details, extraneous descriptions, or unnecessary repetition that might obscure the key information in each move.
+3.  I'll then rewrite the cleaned-up data into logical, fluent sentences that accurately reflect the current state of the game. I want the result to be easily understandable for any Shogi fan.
+
+手数1:
+
+削除理由:
+- 「◆梶浦　宏孝（かじうら　ひろたか）四段◆」 → ルール4
+- 「１９９５年７月６日生まれ、東京都新宿区出身。鈴木大介八段門下。２０１５年、四段。棋士番号は３０１。」 → ルール1, 4
+手数2:
+
+削除理由:
+- 「◆高野　智史（たかの　さとし）四段◆」 → ルール4
+- 「１９９３年１０月２７日生まれ、埼玉県富士見市出身。木村一基八段門下。２０１５年、四段。棋士番号は３０２。」 → ルール1, 4
+手数3:
+
+削除理由:
+- 「梶浦の今年度成績は２０勝１６敗（０．５５６）」 → ルール4
+- 「通算成績は４４勝２８敗（０．６１１）」 → ルール4
+- 「対局数ランキングは１８位タイ（１位は佐々木勇気五段の５５局）」 → ルール1, 4
+手数4:
+
+削除理由:
+- 「高野の今年度成績は１８勝１６敗（０．５２９）」 → ルール4
+- 「通算成績は２０勝１９敗（０．５１３）」 → ルール4
+手数15: 戦型は横歩取りになった。
+
+削除理由:
+手数29: ▲３六歩と突けば、△８六歩▲同歩△同飛▲３五歩△８八飛成が予想された。
+
+削除理由:
+- 「それは後手の勝率が７割もある。」 → ルール2
+- 「直近の順位戦では今年１月のＢ級１組▲飯島栄治七段−△橋本崇載八段戦で、後手が勝った。」 → ルール1, 2
+- 「【第７５期順位戦Ｂ級１組▲飯島七段−△橋本八段】」 → ルール1, 2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１７／０１／２６／Ｂ１／８７４６．ｈｔｍｌ」 → ルール8
+手数31: 先手は端の突き合いを入れてから、▲７七角と上がった。△８六歩を警戒した駒組みである。
+
+削除理由:
+- 「梶浦」 → ルール1
+手数34:
+
+削除理由:
+- 「１１時１５分の着手。」 → ルール3
+- 「△７七角成までの消費時間は、▲梶浦３２分、△高野４２分。」 → ルール3
+手数37: 先手が仕掛けた。△１六同歩は▲１二歩△同香▲２一角がある。香を取れば、▲８六香から飛車を取れる。９筋の突き合いが生きる格好だ。
+
+削除理由:
+- 「梶浦」 → ルール1
+手数38: 後手は飛車の横利きを通す。桂頭を狙って手を作ることになりそうだ。
+
+削除理由:
+- 「高野」 → ルール1
+手数39:
+
+削除理由:
+- 「１１時３９分の着手。」 → ルール3
+- 「１２時、この局面で昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は、▲梶浦５０分、△高野１時間８分。」 → ルール3
+- 「対局は１２時４０分から再開される。」 → ルール3, 7
+手数40:
+
+削除理由:
+- 「対局再開。」 → ルール7
+- 「昼食休憩後の指し手。」 → ルール7

@@ -1,0 +1,85 @@
+**Structuring Chess Game Commentary: My Approach**
+
+Okay, so I need to take these chess game commentaries and make them cleaner, more focused. The user wants the commentary to be streamlined, so only the critical information - the board state and the moves' rationale - remains. I get it. We're getting rid of the fluff, the extraneous details that bog down the analysis.
+
+Here's how I'm thinking about it:
+
+1.  **Comment-by-Comment Examination:** First, I'll take each individual comment in the provided data and treat it as a separate unit.  This ensures focused processing.
+2.  **Applying the "Hit-List" for Unnecessary Details:** I have a set of clear rules and criteria (which I will refer to as the " **Deletion Rules** ") that will help me identify and systematically remove any parts of the commentary that aren't core to the analysis itself. Once I can identify these elements, I can then eliminate them from the text, making it more focused and concise.
+
+手数8: 後手は得意の中飛車を使った。
+
+削除理由:
+- 「今日も」 → ルール2
+- 「阪口」 → 置換ルール
+
+手数16:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３３分、△阪口９分。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「この局面で淡路が１３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路１時間４８分、△阪口１４分。」 → ルール3
+- 「朝から棋士室に設置されているＷｅｂカメラ観賞用のパソコンが不調で、昼食休憩に関西一のＩＴ通・淡路が立ち向かった。しかしパソコンは対局室の様子を映し出さず、淡路は「僕、将棋指しに行かなあかんからなぁ」と対局室に戻っていった。」 → ルール1, 6, 8
+
+手数28: 取られそうな歩を突き出す。▲３四銀と出られても、あらかじめ△３二金と守っているので角を逃げておけば大丈夫。
+
+削除理由:
+
+手数36: △５九角成をどう受けるか。
+
+削除理由:
+
+手数37: 先手は飛車を回って受けた。
+
+削除理由:
+- 「淡路」 → 置換ルール
+
+手数41: ５筋で戦いを起こしても３六銀が取り残されるため、先手はこちらから動く。先手は８八角が働いていないのも気がかり。
+
+削除理由:
+- 「淡路」 → 置換ルール
+
+手数43:
+
+削除理由:
+- 「１４時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路２時間８分、△阪口１時間１０分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路２時間５２分、△阪口２時間４分。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路２時間５８分、△阪口２時間４２分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「この局面で淡路が２４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路３時間５０分、△阪口２時間５７分。」 → ルール3
+
+手数81: ずっと負担だった角をさばくことができた。
+
+削除理由:
+
+手数92:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間１５分、△阪口３時間３３分。」 → ルール3
+
+手数111:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間５０分、△阪口４時間２分。」 → ルール3

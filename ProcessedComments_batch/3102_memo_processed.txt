@@ -1,0 +1,141 @@
+**Refining the Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up this Shogi commentary. Essentially, the user wants me to focus solely on the *game itself*, stripping away all the extraneous noise. Let me break down the process in my head:
+
+First, I need to understand what's considered "noise." The user has provided a clear set of rules for what to eliminate. I'm going to internalize these: ditch anything about people *not* directly playing, no past games, no clock-watching, no player stats or style analysis, no venue details, no food breaks, and definitely no "live broadcast" chatter. Got it.
+
+Next, the *replacement* rules are critical. "Player names" get swapped for "先手" or "後手," depending on who's playing at that moment, which makes sense.  And then *all* other names are out. That will require a quick scan to make sure I don't inadvertently delete something important, like a specific game notation.
+
+I'll proceed systematically through the commentary, applying these rules. My goal is to produce a focused, clear, and concise account of the Shogi match itself, free of anything that distracts from the core strategic developments.
+
+手数12: 相矢倉の進行。
+
+削除理由:
+
+---
+手数24: 矢倉２４手組。矢倉の基本的な形だ。
+
+削除理由:
+- 「データベース上だけでも２５００局以上ある、」 → ルール2
+
+---
+手数25: こちらはシンプルな▲３七銀戦法。
+
+削除理由:
+- 「今日同時に指されている▲豊島−△増田戦は▲６八角からの森下システムの駒組みだったが、」 → ルール2
+
+---
+手数31: お互いに玉を入城させた。
+
+削除理由:
+
+---
+手数33:
+
+削除理由:
+- 「過去の実戦例は６局。」 → ルール2
+
+---
+手数37:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲松本２０分、△藤原２４分。」 → ルール3
+
+---
+手数39: 雀刺しを狙う。
+
+削除理由:
+
+---
+手数42:
+
+削除理由:
+- 「この局面で松本が１０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲松本３６分、△藤原１時間１７分。」 → ルール3
+
+---
+手数48: 歩を打たせたことに満足して、自陣を立て直す。
+
+削除理由:
+
+---
+手数53:
+
+削除理由:
+- 「１４時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本１時間６分、△藤原２時間２分。」 → ルール3
+
+---
+手数54:
+
+削除理由:
+- 「１時間２５分の大長考。」 → ルール3
+
+---
+手数57:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲松本１時間３０分、△藤原３時間２７分。」 → ルール3
+
+---
+手数70: 激しい戦いになった。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲松本１時間４１分、△藤原４時間７分。」 → ルール3
+
+---
+手数72:
+
+削除理由:
+- 「この局面で松本が２４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲松本２時間２６分、△藤原４時間２０分。」 → ルール3
+
+---
+手数78:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本２時間５８分、△藤原４時間３６分。」 → ルール3
+
+---
+手数79: 後手のほうが指せる気がするという見方もある。
+
+削除理由:
+- 「、と棋士室の平藤六段」 → ルール1
+
+---
+手数80:
+
+削除理由:
+- 「５２分の長考で、残り３２分となった。」 → ルール3
+
+---
+手数86:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本３時間４０分、△藤原５時間３１分。」 → ルール3
+
+---
+手数94:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「消費時間は▲松本４時間１２分、△藤原５時間４９分。」 → ルール3
+
+---
+手数98:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「消費時間は▲松本４時間３４分、△藤原５時間５０分。」 → ルール3
+
+---
+手数118: 投了以下、先手玉は即詰み。
+
+削除理由:
+- 「消費時間は▲松本５時間６分、△藤原５時間５８分。」 → ルール3
+- 「勝った藤原は４連勝、敗れた松本は１勝３敗となった。」 → ルール4

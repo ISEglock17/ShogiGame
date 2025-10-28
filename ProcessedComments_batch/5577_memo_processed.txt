@@ -1,0 +1,112 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this user, and they want me to refine the commentary within Shogi game data. The goal is clear: extract the pure gold of board analysis and move explanations, while ruthlessly cutting away the chaff.  I'm thinking, this means stripping out all the noise—the meta-information about the game, introductions of the players, timestamps, all that jazz that isn't directly relevant to *understanding* the game's flow.
+
+My strategy is straightforward: first, I'll build a set of rules, a mental checklist if you will, to identify the elements that absolutely must go. Things that don't contribute to the analytical narrative will be flagged for deletion. Then, once I've got a clean slate, I need to mold what remains into a readable, coherent commentary, not just a list of fragments. It has to *flow*, logically connecting the board positions and the reasoning behind each move.
+
+手数1:
+
+削除理由:
+- 「大平武洋五段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4, 8
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｏｈｉｒａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「富岡英作八段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4, 8
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｏｍｉｏｋａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「大平の今期成績は１０勝１３敗／０．４３５」 → ルール4
+- 「通算成績は１５２勝１４６敗／０．５１０」 → ルール4
+
+手数4:
+
+削除理由:
+- 「富岡の今期成績は４勝１８敗／０．１８２」 → ルール4
+- 「通算成績は４９４勝４５０敗／０．５２３」 → ルール4
+
+手数6: 序盤から駆け引きが続いた。後手が△１四歩と早々に打診すると、先手は▲１六歩。この手が意外だったのか、後手は△４四歩としている。気配としては相振り飛車を目指したものか。
+
+削除理由:
+- 「富岡が」 → 置換ルール
+- 「大平は」 → 置換ルール
+- 「１分の考慮で」 → ルール3
+- 「富岡は」 → 置換ルール
+- 「４７分の長考で」 → ルール3
+- 「１１時すぎ△４四歩までの消費時間は▲大平１分、△富岡５３分。」 → ルール3
+
+手数14: 四間飛車対三間飛車の相振り飛車に進んでいる。力の勝負となりそうだ。
+
+削除理由:
+- 「前例は見当たらない。」 → ルール2
+
+手数18:
+
+削除理由:
+- 「この局面で大平が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲大平３５分、△富岡１時間２６分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール3, 7
+
+手数23:
+
+削除理由:
+- 「１４時過ぎ▲３九玉までの消費時間は▲大平４７分、△富岡１時間５１分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１５時過ぎ▲６八銀までの消費時間は▲大平１時間１分、△富岡２時間５３分。」 → ルール3
+
+手数32: 後手が独創的な陣形を組み上げた。２二角の活用が課題か。
+
+削除理由:
+- 「富岡が」 → 置換ルール
+
+手数33:
+
+削除理由:
+- 「１６時過ぎ▲５六銀までの消費時間は▲大平１時間１６分、△富岡３時間３７分。」 → ルール3
+
+手数34: 後手の玉は左側に移動した。居飛車とも振り飛車ともいいがたい変幻自在な作戦。
+
+削除理由:
+- 「これが富岡流の真骨頂か。」 → ルール5
+
+手数35: △４一玉に先手は▲７七桂と跳ねる。
+
+削除理由:
+- 「大平は」 → 置換ルール
+- 「動揺した様子もなく、２分で」 → ルール3
+- 「こちらも大平流のいつものペースを保っている。」 → ルール5
+
+手数39:
+
+削除理由:
+- 「１７時過ぎ▲９七角までの消費時間は▲大平１時間１８分、△富岡４時間３５分。」 → ルール3
+
+手数47: 後手が飛車先の歩を交換してきたところで、先手も一気に戦線を拡大した。一気に決戦に突入する雰囲気になっている。
+
+削除理由:
+- （なし）
+
+手数59:
+
+削除理由:
+- 「この局面で富岡が８分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲大平１時間２０分、△富岡５時間２２分。」 → ルール3
+- 「残り時間３８分の富岡は、夕食休憩中も盤の前を離れず考え続けていた。」 → ルール3, 7
+
+手数60: 後手は△６四金と着手し、先手が投了した。▲７六飛には△７五歩で先手は駒損が避けられず、自陣の形も悪いため銀を取られては望みがないと見たようだ。
+
+削除理由:
+- 「夕食休憩明け、富岡が」 → ルール7, 置換ルール
+- 「着手したところで大平がすぐに投了を告げた。」 → 置換ルール
+- 「どうやら、休憩前からここで投げるつもりだったようだ。」 → ルール7
+- 「投了以下は」 → 整形
+- 「終局時刻は１９時１分、消費時間は▲大平１時間２０分、△富岡５時間３０分。」 → ルール3
+- 「勝った富岡は２勝８敗。」 → ルール4
+- 「降級点は確定しているが最後に意地を見せた。」 → ルール4
+- 「大平は６勝４敗で今期を終えている。」 → ルール4

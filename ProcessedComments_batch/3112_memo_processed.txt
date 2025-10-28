@@ -1,0 +1,172 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so I'm tackling this task of refining shogi commentary data. The goal here is pretty clear: the user needs clean, focused analysis from the game records. They want to strip out all the fluff – the metadata, player introductions, time stamps, all that noise – and leave behind only the *meaningful* stuff: the actual explanations of board positions and move rationales.  This is a process I'm very familiar with, as it's key to effectively parsing and utilizing game data.
+
+I've got the rules laid out, and my approach is straightforward. First, I need to methodically go through each comment. I'll use the established rules to identify what information is *irrelevant* and eliminate it. It's like editing a text, but the rules dictate what's "in" and "out." Then, with the essential pieces remaining, I'll need to do some linguistic manipulation to reshape it into a coherent, natural-sounding explanation. I need to ensure that the logic of the move and the board state are clearly presented in a way that is easy to parse. This will lead to much more effective analysis in the next steps!
+
+手数6: 後手は三間飛車。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数17: 力戦派の先手。本局は相振り飛車になった。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は田丸９分、遠山２９分。」 → ルール3
+- 「田丸」 → ルール1
+- 「力戦派の」 → ルール5
+
+手数26: 現在は二枚金よりも美濃囲いの方が主流。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数30:
+
+削除理由:
+- 「△５四歩の局面で田丸が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は田丸５６分、遠山５８分。」 → ルール3
+
+手数35: 玉をどちらに囲うか難しいところだが、先手は左に玉をもっていく。
+
+削除理由:
+- 「田丸は」 → ルール1
+
+手数36: 手厚い高美濃に組み替える。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数37: △７四歩▲同歩△同金の筋を警戒している。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数42: 飛車の横利きを通して、△７四歩の筋を狙う。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数43:
+
+削除理由:
+- 「１４時１０分ごろの局面。」 → ルール3
+- 「消費時間は田丸１時間３１分、遠山１時間２６分。」 → ルール3
+
+手数48: 狙いの反発。ここ数年で多用されるようになった手筋。玉頭を盛り上がっていく。
+
+削除理由:
+- 「遠山は△７四歩に３３分の長考。」 → ルール1, 3
+
+手数51: このままでは危険と見たか右辺に囲う構想だが、手損は大きい。
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は田丸１時間３８分、遠山２時間１４分。」 → ルール3
+
+手数56: 銀冠を狙う。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数60: 後手は銀冠を完成させて十分な駒組み。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数63: ここまでくれば、７筋の圧力を避けて一安心。先手は流れ矢倉の陣形になっている。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数64: 後手は金銀４枚で玉を固めた。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数67: 先手も盛り上がる作戦。
+
+削除理由:
+- 「田丸も」 → ルール1
+
+手数68: 後手はすかさず反発。飛車の横利きが通ったのも大きい。
+
+削除理由:
+- 「遠山は」 → ルール1
+
+手数69:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は田丸１時間５４分、遠山３時間６分。」 → ルール3
+
+手数71: ▲４六銀は本譜のように△６五歩▲４五銀△６六歩となって取る駒がない（▲同銀は△７六歩、▲同角は角交換になって、４五の銀が空振り）。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数77: △６五歩から角交換になるのを避ける。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数78: △１三角とこちらから使っていく構想。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数80: ▲４六角の筋を先に受ける。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数82:
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「消費時間は田丸２時間２７分、遠山３時間２９分。」 → ルール3
+
+手数83: ▲７五銀は△同金▲同歩△６六歩が厳しい（取れば△６七金）。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数84: 狙いが実現。△３五歩▲同金△同角▲同歩△３六歩が厳しい。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数89:
+
+削除理由:
+- 「▲７七桂の局面で遠山が１８分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は田丸２時間４２分、遠山３時間５０分。」 → ルール3
+
+手数92: 桂頭攻めが実現。後手好調。
+
+削除理由:
+- 「遠山好調」 → ルール1
+
+手数98: 厳しく迫る。後手陣は金銀４枚が心強い。▲同金は△２七飛成の筋が残り、▲同角も△５九角が両取りになる。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数106: ２筋を突破。これで攻めが切れる心配はなくなった。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数108: ▲同玉は△６七龍。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数120: （１）▲同飛は△同と▲同玉△６七銀▲７九玉△２九龍▲８八玉（▲６九歩は△同龍▲同玉△６八飛）△７八飛以下で、（２）▲８九玉は△７八銀▲９八玉△８七銀成▲同玉△７七と▲９八玉△８六桂以下でいずれも詰み。
+
+削除理由:
+- 「田丸は２分考えて投了した。」 → ルール1, 3
+- 「終局時刻は１９時５６分。」 → ルール3
+- 「消費時間は田丸２時間５９分、遠山４時間１６分。」 → ルール3
+- 「勝った遠山は４勝１敗、田丸は１勝４敗となった。」 → ルール1, 4

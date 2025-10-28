@@ -1,0 +1,39 @@
+**Processing and Cleaning up Shogi Commentary**
+
+Okay, so I'm looking at this Shogi data. It seems the user wants me to process the comments within the game records. They're asking me to clean things up – essentially, to extract the valuable information and remove all the fluff. I get it. We need to get rid of the meta stuff, like introductions, time stamps, player bios, you know, all the noise. What we *want* are the insightful explanations of the board state and the moves themselves, presented in a clear and readable way. That's the core of what needs to be done. We need to follow their defined rules and format precisely, ensuring the output is perfectly structured.
+
+手数20:
+削除理由:
+- 「武市は陽動振り飛車。」 → ルール5
+
+手数24:
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は西尾２時間５３分、武市４時間３６分。」 → ルール3
+
+手数33: ▲９七角の筋も狙っている。
+削除理由:
+
+手数37: 手薄な３筋を狙う。
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は西尾３時間１６分、武市５時間１１分。」 → ルール3
+
+手数45: 後手が居玉なので、強気に指す。
+削除理由:
+
+手数48: ▲５四歩△同金▲６三銀の筋を受ける。
+削除理由:
+
+手数50:
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間は西尾２時間１９分、武市１３分。」 → ルール3
+
+手数51: 先手の攻めを受け切れないと見て、後手の投了となった。
+削除理由:
+- 「西尾の」 → 先手・後手の実名は置換
+- 「武市の」 → 先手・後手の実名は置換
+- 「終局時刻は２２時２３分。」 → ルール3
+- 「消費時間は西尾３時間５０分、武市５時間４７分。」 → ルール3
+- 「勝った西尾は４勝１敗、武市は１勝４敗となった。」 → ルール4

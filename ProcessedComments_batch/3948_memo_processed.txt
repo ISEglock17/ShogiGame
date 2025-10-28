@@ -1,0 +1,96 @@
+**Structuring Game Commentary - A Quick Think**
+
+Okay, so I'm presented with some Shogi commentary that needs a bit of a facelift.  The user wants it cleaned up and formatted according to a specific set of guidelines. Let's see...
+
+I've got this one line: "手**数3: ４手目に戸辺が長考している."
+
+Right, first things first, "戸辺" needs to become "後手" – that's a straightforward replacement based on the provided rules. Now, the part about "長考している" is interesting.  It's technically related to time, which the rules might classify as something to remove. However, I think that the information could be valuable in setting the stage for the move, it's about the context of the move. Perhaps simply leaving "長考" would lose some important context.  I'll have to consider the specific guidelines regarding time-related information and how it's best integrated with other comments.
+
+手数3: 後手が長考している。
+
+削除理由:
+- 「戸辺」 → 置換ルール
+
+手数4: 後手は居飛車含みか？
+
+削除理由:
+- 「振り飛車党の戸辺だが、」 → ルール5
+
+手数25: 相居飛車になった。
+
+削除理由:
+- 「残り時間は室岡１時間２７分、戸辺３５分。」 → ルール3
+- 「室岡」 → 置換ルール
+- 「戸辺」 → 置換ルール
+- 「戸辺は４手目△６二銀に１９分使ったあとはずっとノータイム指しが続いている。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は室岡４９分、戸辺１時間１３分。」 → ルール3
+- 「室岡」 → 置換ルール
+- 「戸辺」 → 置換ルール
+
+手数51:
+
+削除理由:
+- 「２３時４５分ころの局面。」 → ルール3
+- 「残り時間は室岡３５分、戸辺１時間４分。」 → ルール3
+- 「室岡」 → 置換ルール
+- 「戸辺」 → 置換ルール
+
+手数52: 「後手模様よし」との評判。「必勝態勢」という声も。先手の攻めの体勢が遅れている。
+
+削除理由:
+
+手数55:
+
+削除理由:
+- 「間もなく２４時になろうとしている。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「０時２０分ころの局面。」 → ルール3
+
+手数70: 模様がよいと思われる後手は丁寧に面倒を見る。
+
+削除理由:
+- 「戸辺」 → 置換ルール
+
+手数72: やはり後手よしとのこと。
+
+削除理由:
+- 「０時３０分ころの局面。」 → ルール3
+- 「モニターを眺める若手棋士たちに評価を聞いてみると」 → ルール1
+
+手数77:
+
+削除理由:
+- 「０時４５分ころの局面。」 → ルール3
+- 「残り時間は室岡１７分、戸辺３２分。」 → ルール3
+- 「室岡」 → 置換ルール
+- 「戸辺」 → 置換ルール
+- 「東京のＣ２は本局と▲長岡−△佐藤和戦の２局だけが残っている。」 → ルール1, 2, 6
+
+手数78: 慎重に読みを入れて打った。
+
+削除理由:
+
+手数80: 角道を止めてこの金出を狙っていたのか。
+
+削除理由:
+
+手数81: 狭いところに逃げた。
+
+削除理由:
+
+手数82:
+
+削除理由:
+- 「０時５９分、８２手で戸辺の勝ち。」 → ルール3
+- 「残り時間は室岡１６分、戸辺１９分。」 → ルール3
+- 「勝った戸辺は２勝１敗、敗れた室岡は０勝３敗となった。」 → ルール4
+- 「室岡」 → 置換ルール
+- 「戸辺」 → 置換ルール

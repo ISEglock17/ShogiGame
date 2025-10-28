@@ -1,0 +1,120 @@
+**The Task at Hand: Crafting Concise, Focused Game Commentary**
+
+Right, so the user wants me to essentially clean up and format some Shogi game commentary. I understand the goal: they want to transform this raw commentary into something streamlined and useful for analyzing the game itself. No fluff, no extraneous details. Just the pure essence of the board state and the moves being made.
+
+Essentially, I need to take all the given text and filter it through a specific lens, as per their rules.
+The rules require me to eliminate anything that doesn't directly contribute to understanding the game's progress. That means cutting out any meta-information, player introductions, time stamps, and anything else that isn't directly related to the position on the board and the moves being played.
+My objective is to reconstruct the commentary as naturally flowing statements that accurately describe the board and the specific moves in question.
+
+手数1:
+
+削除理由:
+- 「小林の今年度成績は５勝７敗（０．４１７）。」 → ルール4
+- 「通算成績は６１３勝６００敗（０．５０５）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「脇の今年度成績は７勝６敗（０．５３６）。」 → ルール4
+- 「通算成績は５６６勝５１９敗（０．５２２）。」 → ルール4
+
+手数3: 先手は居飛車、振り飛車何でも指しこなす。本局では早々と中飛車に構えた。
+
+削除理由:
+- 「小林は」 → ルール1
+
+手数4: 後手は居飛車党。後手番では横歩取りが得意。また矢倉戦における『脇システム』は角対抗定跡として知られている。本局は先手の早々の中飛車をみてか、相振り飛車を選んだ。
+
+削除理由:
+- 「脇は」 → ルール1
+- 「脇システム」 → ルール1
+
+手数9: 先手は玉の囲いを後回しにし、金銀の活用を急ぐ駒組み。
+
+削除理由:
+- 「小林は」 → ルール1
+
+手数13: 形にこだわらない金上がり。代わりに▲６八銀などは△５四歩とされ、▲同歩と取れなくなる。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林８分、△脇３５分。」 → ルール3
+
+手数21: ここに左の金を出たことで、先手玉は右にいくと見ていいだろう。
+
+削除理由:
+- 「小林の」 → ルール1
+
+手数27:
+
+削除理由:
+- 「この局面で脇が１２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林２０分、△脇１時間３８分。」 → ルール3
+
+手数28: 後手は金無双に構えた。
+
+削除理由:
+- 「脇は」 → ルール1
+
+手数30: ここで後手が仕掛けた。
+
+削除理由:
+- 「脇が」 → ルール1
+
+手数35: 先手は金銀を中央に配置し、厚みで勝負しに行っている。
+
+削除理由:
+- 「小林は」 → ルール1
+
+手数37:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林３２分、△脇２時間１６分。」 → ルール3
+
+手数38: 後手も負けじと金を繰り出していった。ものすごい力将棋になってきた。
+
+削除理由:
+- 「脇も」 → ルール1
+- 「関西棋士同士らしい、」 → ルール1
+
+手数39:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林５７分、△脇２時間１６分。」 → ルール3
+
+手数48: 小粋な空成りが出た。何でとっても△４五歩で金が取れる。
+
+削除理由:
+- 
+
+手数51: 先手も負けじと金のただ捨て。この辺り、早くも正念場を迎えているようだ。
+
+削除理由:
+- 「小林も」 → ルール1
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林１時間１９分、△脇３時間１４分。」 → ルール3
+
+手数52: 飛車で！
+
+削除理由:
+- 
+
+手数55: こうなってくると、数手前に突いておいた８筋の歩が、ものすごく生きそうな感じに見える。
+
+削除理由:
+- 
+
+手数60: △７３金打の受けを用意した手だが苦しそうだ。
+
+削除理由:
+- 
+
+手数65: この局面で後手の投了となった。投了図からは次の▲５一竜や▲１二竜がすこぶる厳しく、先手玉はそれに勝る早い攻めがなく、投了もやむを得ない。
+
+削除理由:
+- 「脇の」 → ルール1
+- 「終了時刻は１７時１２分。」 → ルール3
+- 「消費時間は▲小林１時間４７分、△脇４時間２分。」 → ルール3
+- 「勝った小林、敗れた脇は共に３勝２敗となった。」 → ルール1, 4

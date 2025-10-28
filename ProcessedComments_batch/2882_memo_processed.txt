@@ -1,0 +1,75 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm looking at this request for cleaned-up Shogi commentary.  The user wants me to take raw match comments and refine them, making them more concise and reader-friendly. My immediate instinct is to focus on the structure and content, keeping the essential tactical and strategic insights while removing all the extraneous fluff.
+
+The rules are key here. I need to make sure I'm crystal clear on what constitutes "unnecessary information." Let me quickly re-examine those removal guidelines:
+
+*   **Individuals Beyond the Players:** Absolutely, names of commentators, sponsors, or other figures need to go. We're interested in the *game*, not the periphery.
+*   **Historical Context:** Prior games, past records - those are noise. They might provide context for a human, but for the summary it's an unnecessary distraction. I'm focusing on *this* game, *this* moment.
+*   **Time References:** We want a flow, a strategic narrative, not a clock report. That's a definite cut.
+*   **Player Bios:** This also includes a player's career history. I agree with the intent here. I'm focusing on the *moves*, not the *players*.
+*   **Style, Preferences, Location:** I don't want any of this in a summary. These don't belong in the core analysis.
+*   **Match Specifics:** We're keeping our focus on the game and analysis.
+
+Alright, with that firmly in mind, I'm ready to begin the transformation. Let's get to work on extracting the heart of the commentary!
+
+手数21:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野２１分、△西川３８分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「この局面で△西川が１２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲上野４８分、△西川１時間６分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野１時間２分、△西川１時間３６分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野２時間７分、△西川２時間１分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野２時間５９分、△西川２時間３７分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「ここで西川が１１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲上野３時間４２分、△西川３時間１分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野４時間８分、△西川３時間１８分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５時間２０分、△西川３時間３４分。」 → ルール3
+
+手数88:
+
+削除理由:
+- 「２２時３０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲上野５時間３８分、△西川４時間３４分。」 → ルール3
+
+手数107:
+ここで後手の投了となった。
+
+削除理由:
+- 「消費時間は▲上野５時間５７分、△西川５時間８分。」 → ルール3
+- 「勝った▲上野は１勝１敗、破れた△西川は０勝２敗となった。」 → ルール4

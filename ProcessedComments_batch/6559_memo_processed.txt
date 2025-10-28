@@ -1,0 +1,84 @@
+**Focusing the Lens: Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. They're looking for a refined set, something that truly highlights the strategic thinking behind each move. My goal is to strip away all the extraneous noise – you know, the meta-commentary, player introductions, time stamps – the fluff that doesn't actually contribute to our understanding of the board. What I want to do is isolate the core, the essence of the analysis: the positions and the moves, explained in clear, natural language. This will give us a much cleaner dataset to work with, allowing us to delve deeper into the strategic nuances without getting bogged down in the peripheral stuff. It's about getting to the heart of the game, one insightful comment at a time.
+
+手数1:
+
+削除理由:
+- 「本日３度目の対局開始の礼をして、指し直し局が始まった。」 → ルール7
+- 「初手も３度目の▲７六歩。」 → ルール2
+
+手数2:
+
+削除理由:
+- 「１度目の千日手局と同じく」 → ルール2
+- 「阿部は」 → ルール1
+
+手数76:
+
+削除理由:
+- 「現局面は今年６月に行われた名人戦七番勝負第６局▲羽生善治二冠−△森内俊之名人戦（後手勝ち）と同じ。」 → ルール2
+
+手数77: ▲１一竜は有力と検討されていた手。（１）△５八桂成▲３九飛△２七金▲６四角△４八角成▲２九飛△３八馬▲８九飛△５七成桂▲４四香といった進行と、（２）△７五歩▲１七桂といった進行が検討されていた。
+
+削除理由:
+- 「名人戦第６局は▲５一竜だったので前例と離れたが、」 → ルール2
+- 「感想戦で」 → ルール7
+
+手数78:
+
+削除理由:
+- 「△７五歩までの消費時間は▲長岡５時間０分、△阿部４時間３０分。」 → ルール3
+- 「本局が始まってからここまで長岡はノータイム、阿部は９分しか時間を使っていない。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「４２分の考慮で」 → ルール3
+
+手数83:
+
+削除理由:
+- 「▲２五歩までの消費時間は▲長岡５時間４３分、△阿部４時間３９分。」 → ルール3
+
+手数91: 現状では△６七歩成から後手が勝てそうだという見解になっている。
+
+削除理由:
+- 「控え室の」 → ルール1
+- 「阿部は指先で盤を指しながら考えている。」 → ルール8
+
+手数93: 飛車と角を取り合う。実戦的な手だ。どちらが良いのか、詰みがあるのか検討されているが、難解なようだ。
+
+削除理由:
+- 「、と控え室」 → ルール1
+
+手数94:
+
+削除理由:
+- 「２時ごろの局面。」 → ルール3
+- 「△２一歩までの消費時間は▲長岡５時間４７分、△阿部５時間８分。」 → ルール3
+- 「「長岡先生、残り７分です」と記録係の声。」 → ルール1, 3
+- 「対して阿部は５０分以上も残している。」 → ルール3
+
+手数96: 後手は△４四玉。後手勝勢という評判になっている。
+
+削除理由:
+- 「阿部はノータイムで」 → ルール1, 3
+- 「控え室では」 → ルール1
+
+手数97: この手には平凡に△４八飛で良さそうだ。
+
+削除理由:
+- 「と検討されている」 → ルール1
+
+手数100: ▲２六角には△３五金でも△４三玉でも大丈夫のようだ。
+
+削除理由:
+- （なし）
+
+手数102:
+
+削除理由:
+- 「△３五同歩を見て長岡が投了した。」 → ルール8
+- 「終局時刻は２時２９分。」 → ルール3, 7
+- 「消費時間は▲長岡５時間５９分、△阿部５時間１４分。」 → ルール3

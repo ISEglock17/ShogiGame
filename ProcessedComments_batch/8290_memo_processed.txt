@@ -1,0 +1,113 @@
+**Structuring and Cleaning Up Shogi Commentary**
+
+Okay, so I'm being asked to take raw Shogi game commentary and whip it into shape, to make it more digestible. The goal is to strip away all the fluff and just get to the core analysis. Essentially, I need to make the commentary a lot more readable and insightful for someone who understands the game.
+
+Here's how I'll tackle this:
+
+1.  **Iterate and Isolate:** I'll process the commentary step-by-step, focusing on each move individually.
+2.  **Rule-Based Removal:** I'll apply a set of predefined rules to identify and remove irrelevant information. This means getting rid of stuff like game setup information, unnecessary interjections, or redundant descriptions that don't add to the strategic understanding.
+3.  **Player Name Standardization:**  "Player names" are a distraction. I'll replace them universally with "Sente" (先手) for the first player and "Gote" (後手) for the second, making it clearer who's doing what without clutter.
+4.  **Re-Write and Refine:**  After removing the unnecessary bits, I'll then massage the remaining text, ensuring it flows naturally and maintains the essence of the game's analysis.
+5.  **Output with Transparency:** Finally, I need to present the cleaned-up commentary along with explanations for the deletions made. This helps to justify my modifications and ensures that my work is transparent and verifiable.
+
+手数1:
+
+削除理由:
+- 「◆阪口　悟（さかぐち　さとる）五段◆」 → ルール4
+- 「１９７８年８月１６日生まれ、大阪府高石市出身。」 → ルール4
+- 「（故）木下晃七段門下。」 → ルール1, 4
+- 「２００４年、四段。２００９年、五段。」 → ルール4
+- 「棋士番号は２５４。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆日浦　市郎（ひうら　いちろう）八段◆」 → ルール4
+- 「１９６６年３月４日生まれ、北海道新ひだか町出身。」 → ルール4
+- 「安恵照剛八段門下。」 → ルール1, 4
+- 「１９８４年、四段。２０１０年、八段。」 → ルール4
+- 「棋士番号は１６４。」 → ルール4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「阪口の今年度成績は７勝８敗（０．４６７）」 → ルール4
+- 「通算成績は１８６勝１５６敗（０．５４４）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「日浦の今年度成績は４勝１０敗（０．２８６）」 → ルール4
+- 「通算成績は６３４勝４９６敗（０．５６１）」 → ルール4
+
+手数7: ７筋ではなく６筋へ振った。機を見て▲６五歩と動くのだろうか。
+
+削除理由:
+
+手数8: 飛車に飛車で対抗する。
+
+削除理由:
+
+手数21: 三間飛車に振り直す。▲６八飛は右四間を誘う趣向だったようだ。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲阪口２１分、△日浦２６分。」 → ルール3
+
+手数26: 穴熊へ囲う。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「１２時１０分、ここで日浦が１８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲阪口５６分、△日浦１時間３分。」 → ルール3
+- 「昼食の注文は、阪口があんかけそば（みろく庵）。」 → ルール7
+- 「日浦はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+手数32: いきなり飛車をぶつけた。
+
+削除理由:
+
+手数36: 互いに飛車打ちのスキを消していく。先手は△６六角をどう受けるか。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲阪口１時間２７分、△日浦１時間１９分。」 → ルール3
+
+手数37: 金で歩を守った。先手の左辺の金銀が逆形なのが気がかりだ。
+
+削除理由:
+
+手数41: △６五同歩に▲同桂は、△８八角成でゲームセット。おそらく▲９七角だろう。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲阪口２時間７分、△日浦１時間５１分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲阪口２時間７分、△日浦２時間５２分。」 → ルール3
+
+手数49: 自陣飛車。△７二歩に▲７三歩、もしくは▲５六飛〜▲６三歩成で攻めを繋げることになりそうだ。
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲阪口２時間４８分、△日浦３時間１０分。」 → ルール3
+
+手数55: ▲５五歩から着実に攻めるのが速いようだ。
+
+削除理由:
+
+手数69: ８六角の利きが通り、５三の突破が確実になった。美濃囲いが残っているのも心強い。後手が投了した。
+
+削除理由:
+- 「ここで日浦が投了した。」 → ルールなし（整形）
+- 「終局時刻は１７時３５分。」 → ルール3
+- 「消費時間は▲阪口２時間５３分、△日浦３時間２８分。」 → ルール3
+- 「勝った阪口、敗れた日浦はともに２勝３敗。」 → ルール4

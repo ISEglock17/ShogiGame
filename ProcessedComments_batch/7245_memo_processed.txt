@@ -1,0 +1,182 @@
+**Focusing the Lens: Cleaning Up Shogi Commentary**
+
+Okay, so I've got a user who's after some serious cleanup in their shogi commentary data. It seems they want to strip away all the fluff – the metadata, the player introductions, the time stamps – and leave behind only the pure, distilled essence: the in-depth analysis of the board positions and the insightful commentary on each move. This is a common need, especially when building datasets for machine learning or preparing material for detailed strategic analysis.
+
+My task is clear: I need to process these comments, adhering strictly to a set of pre-defined rules. These rules are crucial for extracting the truly valuable information. I must be ruthless in removing:
+
+1.  Anything mentioning figures external to the current game, like other players' names, ranks, or their affiliations.
+2.  Any references to prior matches, precedents, or historical context. These distract from the immediate strategic situation.
+3.  Time information. This, while interesting for understanding the flow of the game, is extraneous for pure positional analysis.
+4.  Player profiles, records, ranks, and any identification numbers. We're concerned with the game itself, not the players' biographies.
+
+Essentially, I'm aiming to transform these raw comments into a format that's laser-focused on the board state and the strategic reasoning behind each move. This refined data will be far more valuable for their intended purpose.
+
+手数1:
+
+削除理由:
+- 「◆橋本　崇載（はしもと　たかのり）八段◆」 → ルール4
+- 「１９８３年３月３日生まれ、石川県小松市出身。剱持松二九段門下。２００１年、四段。２０１２年、八段。棋士番号は２３９。」 → ルール1, 4
+
+手数2:
+
+削除理由:
+- 「◆藤井　猛（ふじい　たけし）九段◆」 → ルール4
+- 「１９７０年９月２９日生まれ、群馬県沼田市出身。西村一義九段門下。１９９１年、四段。２０００年、九段。棋士番号は１９８。」 → ルール1, 4
+- 「タイトル戦登場は７回。獲得は竜王３期。棋戦優勝は７回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「橋本の今年度成績は３勝３敗（０．５００）」 → ルール4
+- 「通算成績は２９５勝１７７敗（０．６２５）」 → ルール4
+
+手数4: 後手は再び角道を開けたまま四間飛車に構えた。
+
+削除理由:
+- 「藤井は」 → 置換ルール
+- 「少し時間を使って、」 → ルール3
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数8: 再び角交換振り飛車へ。
+
+削除理由:
+
+手数18: 後手は本局では美濃囲いを採用。持久戦になると９筋を突き越されていることが響いてくるので、この場合は後手から早い動きを目指すことが多い。
+
+削除理由:
+- 「藤井は」 → 置換ルール
+
+手数22: ３筋の位を取って積極的に攻勢を目指す。
+
+削除理由:
+
+手数26: 早い段階で仕掛けた。
+
+削除理由:
+
+手数29: 次に▲２三歩と打って２四銀を取る狙い。
+
+削除理由:
+
+手数30: 歩を打って先手の飛車を押さえ込む。
+
+削除理由:
+
+手数32: 次に△５五歩から角を圧迫する狙い。
+
+削除理由:
+
+手数33: 退路を用意して角の動きを楽にする。
+
+削除理由:
+
+手数36: ぐいぐい歩を突いて積極的だ。
+
+削除理由:
+
+手数37: 先手は囲いを引き締めて戦いに備えた。
+
+削除理由:
+
+手数38: 後手も自陣角を設置した。２三の地点を受けて△３三銀〜△２四飛と組み替えを目指す狙いか。
+
+削除理由:
+
+手数41: 今度は先手から動いた。
+
+削除理由:
+
+手数47: 強く前に出る。先に銀損するが、△２五同銀に▲２三歩で銀を取り返せそうだ。
+
+削除理由:
+
+手数49: △２七銀と打つのは、▲同飛△同角成▲２二歩成で駒の損得はほぼないが、２五銀が遊び駒になるため後手がつらい。
+
+削除理由:
+
+手数51: 先手は２筋を突破したが、２三歩が重い形ですぐには飛車を成り込めない。
+
+削除理由:
+
+手数54: 角取りに構わず反撃した。
+
+削除理由:
+
+手数57: たたきを入れてから角を取って攻め合いへ。
+
+削除理由:
+
+手数58: 大きなと金ができた。先手はこのと金が寄って来る前に攻めなければいけない。
+
+削除理由:
+
+手数59: ▲４三歩△同飛を入れた効果で、この角出が飛車に当たる。
+
+削除理由:
+- 「０時５０分過ぎ、残り時間は▲橋本１３分、△藤井４８分。」 → ルール3
+
+手数63: 切り込んだ。
+
+削除理由:
+
+手数65: △３四同飛は▲２五角、△２三飛には▲４一角△２二飛▲５二角成△同飛▲４三金が厳しい狙い。
+
+削除理由:
+
+手数69: 飛車を切って先手がスパートをかけた。
+
+削除理由:
+- 「橋本が」 → 置換ルール
+
+手数70: ▲６二銀が詰めろになる。
+
+削除理由:
+
+手数72: ▲６二銀に対しても△７一角が受けの筋。
+
+削除理由:
+
+手数75: 飛車を狙う。
+
+削除理由:
+- 「時刻は１時２０分を回った。」 → ルール3
+- 「残り時間は▲橋本８分、△藤井３４分。」 → ルール3
+
+手数76: ▲１一角成ではいかにも遅い。▲５五角成も考えられるが△２六飛が気持ちのいい転回になる。
+
+削除理由:
+
+手数78: 先手から厳しい攻めが見えないので、振り飛車が良さそうだ。ただ▲９五歩と詰められているので、見た目ほど大差ではなさそうだ。
+
+削除理由:
+- 「控室には感想戦を終えた松尾歩七段と広瀬章人七段が来訪。」 → ルール1, 6
+- 「（広瀬七段）」 → ルール1
+
+手数81: 銀不成で取った。
+
+削除理由:
+- 「時間に追われた手つきで」 → ルール3
+
+手数83: 食らいつきにいくが、攻めが細い印象だ。
+
+削除理由:
+
+手数88: ここで攻め合いへ。先手玉はまだ詰めろではないが、先手からの詰めろも続かないと見たのだろう。
+
+削除理由:
+
+手数89: ▲６一角成以下の詰めろ。しかし△７二銀とかわしてしのいでいるか。先手玉は次に飛車をもう１枚一段目に下ろせば詰めろになる。
+
+削除理由:
+
+手数90: 慎重に△７二銀。読み切ったか。後手玉には詰めろが掛からず、先手玉は△４九飛が詰めろで受けても一手一手の寄りとなる。
+
+削除理由:
+- 「時間を使って」 → ルール3
+- 「ここで橋本が投了を告げた。」 → 対局結果に関するメタ情報のため削除
+- 「終局時刻は１時５２分、消費時間は▲橋本５時間５６分、△藤井５時間４４分（消費時間は千日手局からの引き継ぎ）。勝った藤井、敗れた橋本ともに１勝１敗となっている。」 → ルール3, 4

@@ -1,0 +1,76 @@
+**Cleaning Up the Commentary for Deeper Analysis**
+
+Okay, so I'm looking at this data set of shogi game commentary, and the goal is pretty clear. I need to get rid of all the fluff – the metadata, the introductions, the time stamps – and distill it down to the essential stuff: the board positions and the explanations of the moves. I want to keep only the commentary that actually delves into the game itself, the strategic thinking, and the potential lines of play. This will make it much cleaner and easier to analyze the games in detail, focusing on the tactical and strategic aspects that I'm really interested in. It's about getting to the meat of the matter without wading through the peripheral noise.
+
+手数1:
+
+削除理由:
+- 「◆田中　魁秀（たなか　かいしゅう）九段◆」 → ルール1, 4
+- 「１９４７年３月２日生まれ、大阪府枚方市出身。（故）本間爽悦八段門下。１９６９年、四段。２０００年、九段。棋士番号は１０４。」 → ルール4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆吉田　正和（よしだ　まさかず）五段◆」 → ルール1, 4
+- 「１９８６年１月２３日生まれ、埼玉県ふじみ野市出身。神吉宏充七段門下。２００８年、四段。２０１２年、五段。棋士番号は２７３。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「田中の通算成績は６５５勝７０８敗（勝率０．４６７）。」 → ルール4
+- 「昨年度成績は５勝１８敗（０．２１７）。」 → ルール4
+- 「本年度成績は０勝２敗。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「吉田の通算成績は８８勝７７敗（勝率０．５３３）。」 → ルール4
+- 「昨年度成績は１３勝１４敗（０．４８１）。」 → ルール4
+- 「本年度成績は２勝３敗（０．４００）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「田中は初戦では小倉久史七段と対局した。結果は負け。」 → ルール2
+
+手数6:
+
+削除理由:
+- 「吉田は初戦では佐藤和俊六段と対局した。結果は負け。」 → ルール2
+
+手数21: 早い桂の活用。青野流だ。横歩取りの先手ながら積極的に攻めることができる手法だ。
+
+削除理由:
+- 「青野照市九段が指し始めた手法で、」 → ルール1
+
+手数22: 中原流の△４一玉・△５一金型は避ける。桂を跳ねてきたときのために、５三の地点の備えをしている。
+
+削除理由:
+- 「中原流の」 → ルール1
+
+手数23: 一気に。
+
+削除理由:
+
+手数27: 先手は思い切り攻めた。△５二金には▲３八銀と間合いを取る手が指されていたので、▲４五桂は初めてかもしれない。先手は無理気味のようでも８筋に歩が利くなど手段はある。後手は桂を取り切れれば良くなるが、慎重にいきたい。
+
+削除理由:
+- 「１１時頃の局面。▲２四飛までの消費時間は▲田中３４分、△吉田１７分。」 → ルール3
+- 「千葉幸生六段からコメントをもらった。」 → ルール1
+- 「「田中先生が」 → ルール1
+- 「ですね」 → 文体整形
+- 「ので、▲４五桂は初めてですね。」 → 文体整形
+
+手数34:
+
+削除理由:
+- 「１２時１０分、ここで田中が３８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲田中１時間１９分、△吉田４１分。」 → ルール3
+- 「対局再開は１３時。」 → ルール7
+
+手数41:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「▲２四歩までの消費時間は▲田中２時間５分、△吉田４４分。」 → ルール3

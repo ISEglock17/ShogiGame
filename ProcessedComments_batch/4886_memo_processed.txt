@@ -1,0 +1,162 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm presented with a task: to clean up and structure shogi game commentary. The user wants the commentary formatted according to a specific set of rules.  Essentially, I need to take the raw input, which I assume is a bit messy, and turn it into something organized and easily understandable.
+
+Here's how I'm thinking I'll approach this:
+
+1.  **Read and Parse:** First, I'll read through each comment in the provided commentary.  
+2.  **Rule-Based Removal:**  Next, I'll apply the deletion rules.  I'll need to identify the parts of the commentary that match these rules and mark them for removal. This is the crucial part; accuracy is paramount.
+3.  **Natural Language Beautification:**  Once I've identified and removed the irrelevant bits, I need to take what's left and rephrase it into more grammatically sound and natural-sounding sentences.  This is where I'll use my knowledge of shogi terminology and typical commentary style.
+4.  **Organized Output:** Finally, I'll present the processed commentary in a structured format.  This includes the move number, the cleaned-up comment, and the reason (or reasons) why certain parts of the original comment were removed.  This ensures transparency and makes it easy to follow the editing process.
+
+手数1:
+
+削除理由:
+- 「駒を並べる前に、長岡が駒台の高さを気にして、記録係が交換に走る一幕があった。」 → ルール6
+- 「元々用意されていた駒台は、盤よりも数ミリ高かった。」 → ルール6
+
+手数6:
+後手の作戦はゴキゲン中飛車。
+
+削除理由:
+- 「阪口の」 → ルール1
+
+手数13:
+▲６八玉型のまま▲３七銀〜▲４六銀と出る急戦が最近流行している戦型のひとつ。
+
+削除理由:
+- 削除対象なし
+
+手数18:
+
+削除理由:
+- 「１０時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡０分、△阪口２９分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「この局面で長岡が３４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲長岡１時間２分、△阪口５９分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡１時間３１分、△阪口１時間１８分。」 → ルール3
+
+手数35:
+▲７六角の飛車取りと、▲６三角成の狙いが同時に受からない。
+
+削除理由:
+- 削除対象なし
+
+手数36:
+▲３八飛なら△７五角成として飛車にひもが付く。
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡１時間４４分、△阪口２時間７分。」 → ルール3
+
+手数39:
+飛車を取らず、馬を作っていく。
+
+削除理由:
+- 削除対象なし
+
+手数40:
+馬を逃げるのは、△４七馬が残るので、▲７四同馬が有力。
+
+削除理由:
+- 削除対象なし
+
+手数43:
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡２時間４０分、△阪口２時間１６分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡２時間４６分、△阪口３時間７分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「この局面で阪口が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲長岡３時間２１分、△阪口３時間３７分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡３時間５１分、△阪口３時間４１分。」 → ルール3
+
+手数55:
+戦いの場が左辺になっているので、右の駒を中央に使っていく。
+
+削除理由:
+- 削除対象なし
+
+手数61:
+△４六同馬には▲４二歩で飛車が打ち込めそうだ。
+
+削除理由:
+- 削除対象なし
+
+手数66:
+うまい切り返しかもしれない。
+
+削除理由:
+- 「「うまい切り返しか」と棋士室で言われていた。」 → ルール1, 6
+
+手数76:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲長岡４時間３５分、△阪口４時間１８分。」 → ルール3
+
+手数77:
+△２三同銀は▲４一龍。時間はかかるが受けようがない攻めなので、後手は受けることよりももっと早い攻めがないか考えなければいけない。
+
+削除理由:
+- 削除対象なし
+
+手数80:
+そっぽにあった馬だが、好所に引きつけることができた。２枚の馬の存在感が抜群。
+
+削除理由:
+- 削除対象なし
+
+手数82:
+▲３二とに△１一馬を用意。
+
+削除理由:
+- 削除対象なし
+
+手数88:
+△７六桂の狙い。
+
+削除理由:
+- 削除対象なし
+
+手数90:
+銀を打って受けたが、これでこちらの銀の逃げる場所がない。かといって▲７七銀打で▲７七銀（６六銀を引く）だと△７六桂が厳しい。
+
+削除理由:
+- 削除対象なし
+
+手数94:
+▲６七同金は△７五桂で攻めを呼び込む形になる。
+
+削除理由:
+- 削除対象なし
+
+手数98:
+
+削除理由:
+- 「この局面で長岡が９分考え、次の手を指さずに投了した。」 → ルール3
+- 「消費時間は▲長岡５時間１０分、△阪口４時間２８分。」 → ルール3
+- 「両者２勝４敗となった。」 → ルール4

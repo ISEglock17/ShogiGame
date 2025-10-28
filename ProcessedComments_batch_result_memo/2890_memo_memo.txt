@@ -1,0 +1,39 @@
+=== バッチの最終結果: batches/50ed0mc1stz45ww6fb8bt1x1qhiziuey45wp ===
+=== バッチ出力ファイル内容（JSON） ===
+{
+  "response": {
+    "usageMetadata": {
+      "promptTokenCount": 3977,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3977
+        }
+      ],
+      "totalTokenCount": 4698,
+      "thoughtsTokenCount": 61,
+      "candidatesTokenCount": 660
+    },
+    "modelVersion": "gemini-2.5-pro",
+    "responseId": "noT4aKT7C_eqqtsP--HkqQU",
+    "candidates": [
+      {
+        "finishReason": "STOP",
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "**Cleaning Up Game Analysis**\n\nOkay, so I need to go through this mountain of shogi game data and whip the comments into shape. The goal here is pretty clear: get rid of all the noise and keep only the gold. That means anything that isn't directly related to the actual moves and board state has to go. Think meta stuff, player introductions, time stamps - gone. What I *do* want is the meaty stuff: the explanations of what's happening on the board, the reasoning behind each move, the strategic insights. I need it all to flow naturally, like I'm reading a real-time analysis, not a data dump. It's about preserving the *analysis* and discarding the irrelevant fluff.\n",
+              "thought": true
+            },
+            {
+              "text": "手数19:\n\n削除理由:\n- 「１１時過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕１６分、△勝又４５分。」 → ルール3, 1\n\n手数26:\n\n削除理由:\n- 「この局面で▲小林裕が１７分考えて昼食休憩に入った。」 → ルール3, 7, 1\n- 「ここまでの消費時間は▲小林裕５２分、△勝又１時間７分。」 → ルール3, 1\n\n手数37:\n\n削除理由:\n- 「１４時過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕１時間１６分、△勝又１時間３０分。」 → ルール3, 1\n\n手数38: 金銀から離れて自玉が危なそうだが、先手が右辺から攻めようとしているので、戦場から離れることで安全になったと考えることができる。\n\n削除理由:\n\n手数43:\n\n削除理由:\n- 「１５時半過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕２時間０分、△勝又２時間１分。」 → ルール3, 1\n\n手数46:\n\n削除理由:\n- 「１７時過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕２時間６分、△勝又３時間２５分。」 → ルール3, 1\n\n手数47: 端歩を突きこした。後手玉が左辺にいるので、▲９四歩から攻める手も出てきそうだ。\n\n削除理由:\n- 「５５分考えて」 → ルール3\n- 「この局面で△勝又が３１分考えて夕食休憩に入った。」 → ルール3, 7, 1\n- 「ここまでの消費時間は▲小林裕３時間１分、△勝又３時間５６分。」 → ルール3, 1\n\n手数58:\n\n削除理由:\n- 「２０時過ぎの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕３時間２９分、△勝又４時間２４分。」 → ルール3, 1\n\n手数65:\n\n削除理由:\n- 「２１時３０分ごろの局面。」 → ルール3\n- 「ここまでの消費時間は▲小林裕４時間８分、△勝又４時間３８分。」 → ルール3, 1\n\n手数94: ここで先手の投了となった。以下は即詰み。\n\n削除理由:\n- 「▲小林裕の」 → ルール1\n- 「消費時間は▲小林裕４時間２５分、△勝又５時間２３分。」 → ルール3, 1\n- 「勝った△勝又は２勝０敗、敗れた▲小林裕は１勝１敗となった。」 → ルール4, 1"
+            }
+          ],
+          "role": "model"
+        }
+      }
+    ]
+  },
+  "key": "2890"
+}

@@ -1,0 +1,101 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these comments from shogi game data. The goal is clear: they want to transform a messy collection of notes into concise, readable explanations of the board positions and moves. Essentially, they want the *insight*, not the fluff. I get it.
+
+My process will involve a few key steps. First, I'll need to define some clear rules for what constitutes extraneous information - you know, the metadata, introductions, time stamps, all that noise that distracts from the actual game analysis. Then, I'll ruthlessly eliminate those parts, leaving only the core explanation of the positions and moves.
+
+After the pruning, I'll need to smooth out the remaining text. The aim is to make it read naturally. I'll focus on crafting coherent sentences, ensuring that the explanations are easy to follow and focus solely on providing understanding for the game. No extraneous details. Just the good stuff.
+
+手数1:
+
+削除理由:
+- 「野月浩貴七段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎｏｄｕｋｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「泉正樹七段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｉｚｕｍｉ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「野月の本年度の成績は４勝２敗（０．６６７）」 → ルール4
+- 「通算成績は３１０勝２２４敗（０．５８１）」 → ルール4
+
+手数4: ここで後手は角道を止めた。オーソドックスな振り飛車になりそうだ。
+
+削除理由:
+- 「泉の」 → ルール1
+- 「本年度の成績は０勝１敗」 → ルール4
+- 「通算成績は５３８勝５０３敗（０．５１７）」 → ルール4
+
+手数5:
+
+削除理由:
+- 「野月は激しい攻め将棋の棋風。」 → ルール5
+- 「居飛車党だが、後手のときは飛車を振ることも。」 → ルール5
+
+手数6:
+
+削除理由:
+- 「泉は居飛車党。」 → ルール5
+- 「攻め将棋の棋風で、「野獣流」と呼ばれる。」 → ルール5
+
+手数8: 後手は向かい飛車を選択した。
+
+削除理由:
+- 「泉は」 → ルール1
+- 「泉が向かい飛車を指すのは実に４年ぶりとなる。」 → ルール2
+
+手数15: ここで▲５八金右とすれば舟囲いが完成だったが、▲７七角とあがって、さらに深く囲えるようにした。
+
+削除理由:
+
+手数16: 先手の手に対応して後手も穴熊などが考えられたが、短手数で囲える美濃囲いに構えた。持久戦になれば高美濃や銀冠に発展させることもできる。
+
+削除理由:
+- 「とは言っても」 → 整形
+
+手数18:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲野月５分、△泉３３分。」 → ルール3
+
+手数19: 後手が美濃囲いに構えたので先手もまずは短手数で囲う。もちろんこれで完成というわけではなく、隙があれば穴熊への組み換えを狙っている。
+
+削除理由:
+
+手数24: 昼食休憩前に仕掛けた。現在の玉形は後手がいいので早めに戦いを起こしたい。先手は逆にしばらくは局面を落ち着かせたい。
+
+削除理由:
+- 「もちろん、」 → 整形
+- 「この局面で▲野月が１４分使って、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲野月４５分、△泉１時間１２分。」 → ルール3
+- 「昼食の注文は両者無し。」 → ルール7
+
+手数27:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲野月５４分、△泉１時間５３分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「消費時間は▲野月１時間３０分、△泉２時間２３分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１６時３０分頃の局面。」 → ルール3
+- 「消費時間は▲野月１時間３１分、△泉３時間２６分。」 → ルール3
+
+手数63: △同金▲同と△同金と６二の地点で精算するのは▲７一角と、詰めろ金取りをかけられるのでいけない。
+
+削除理由:
+- 「１７時３０分頃の局面。」 → ルール3
+- 「消費時間は▲野月１時間５１分、△泉４時間１２分。」 → ルール3

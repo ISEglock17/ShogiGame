@@ -1,0 +1,60 @@
+**Analyzing and Structuring Shogi Game Commentary**
+
+Okay, so I'm presented with a task: format Shogi game commentary. The user needs the raw comments transformed into a structured, readable output. My strategy is pretty straightforward. I'm going to take each comment, one at a time, and process it according to the specified rules and formatting guidelines. This means I'll need to dissect each comment, understanding its meaning in the context of a specific move number, and then structure the information for clear presentation.
+
+I know I'll need to delve into how to actually *do* this, so this is where I'll be able to demonstrate my expertise. I need to figure out exactly how to parse the details of each move and then figure out how to output everything in the correct format. Let's see what I can do!
+
+手数19:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇９分、△岡崎３１分。」 → ルール3, 1
+
+手数27:
+
+削除理由:
+- 「ここで後手が２２分考えて昼食休憩に入った。」 → ルール3, 7, 置換
+- 「ここまでの消費時間は▲脇４５分、△岡崎１時間１０分。」 → ルール3, 1
+
+手数33:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇１時間２５分、△岡崎２時間５分。」 → ルール3, 1
+
+手数45:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇２時間１１分、△岡崎３時間７分。」 → ルール3, 1
+
+手数49:
+
+削除理由:
+- 「ここで後手が１９分考えて夕食休憩に入った。」 → ルール3, 7, 置換
+- 「ここまでの消費時間は▲脇２時間３９分、△岡崎４時間１２分。」 → ルール3, 1
+
+手数54:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇３時間３２分、△岡崎４時間２６分。」 → ルール3, 1
+
+手数58:
+
+削除理由:
+- 「２１時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇４時間２３分、△岡崎４時間４４分。」 → ルール3, 1
+
+手数69:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇４時間５９分、△岡崎５時間７分。」 → ルール3, 1
+
+手数77: 攻防ともに見込みなしとみて、後手の投了となった。
+
+削除理由:
+- 「△岡崎の投了となった」 → 置換
+- 「消費時間は▲脇５時間２１分、△岡崎５時間２２分。」 → ルール3, 1
+- 「勝った▲脇、敗れた△岡崎ともに１勝２敗となった。」 → ルール4, 1

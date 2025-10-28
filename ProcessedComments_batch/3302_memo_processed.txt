@@ -1,0 +1,40 @@
+**Structuring and Refining Game Commentary**
+
+Okay, so I'm presented with a task: format these Shogi commentary snippets. The goal is clear – clean up the provided lines, remove irrelevant details, and synthesize the essential information into fluent, readable sentences.  Essentially, I'm taking raw data and transforming it into something palatable for a discerning Shogi enthusiast.
+
+The task is pretty straightforward based on the rules. We're given a set of commentaries:
+
+1.  "手38: ２２時過ぎの局面。残り時間は村山１時間２０分、東１時間２５分。"
+2.  "手51: ２３時過ぎの局面。"
+
+I'll need to strip out the superfluous preamble ("手数" and the Japanese prefixes for time) and rephrase it into something like: "At move 38, it's past 10 PM, with Murakami having 1 hour and 20 minutes remaining and Azuma having 1 hour and 25 minutes remaining." or for the second statement, "At move 51, it's past 11 PM." Keeping it concise, accurate, and easy to follow is key.  I'm basically acting as a digital editor, removing the clutter and revealing the core insights of the game's progress.
+
+手数38:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「残り時間は村山１時間２０分、東１時間２５分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は村山５９分、東５８分。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「残り時間は村山２７分、東３６分。」 → ルール3
+
+手数97:
+
+削除理由:
+- 「１時頃の局面。」 → ルール3
+- 「残り時間は村山２１分、東９分。」 → ルール3
+
+手数113: この局面で後手は投了した。以下は△３二玉に▲４三金以下の簡単な即詰み。
+
+削除理由:
+- 「消費時間は▲村山５時間４６分、△東５時間５９分。」 → ルール3
+- 「勝った村山は３勝１敗、敗れた東は１勝３敗となった。」 → ルール4

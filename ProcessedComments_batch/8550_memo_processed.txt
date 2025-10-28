@@ -1,0 +1,98 @@
+**Refining Commentary for Deeper Tactical Analysis**
+
+Alright, so the user wants me to clean up these comments from shogi match data. The goal is clear: they need to filter out the noise and leave only the pure, insightful commentary about the game itself – the actual board states and move explanations. This is pretty straightforward. I've got to focus on stripping away all the fluff – the metadata, player introductions, time stamps, you know, all the stuff that clogs up the signal.  My job is to extract the essence of the analysis and leave behind a set of clean, natural-sounding sentences that focus solely on the strategic flow of the game.  I'm basically performing a crucial data transformation, readying the comments for more sophisticated analysis down the line. I know the key is to be precise in identifying what to keep and what to discard, adhering strictly to the established rules for comment selection. This will enable advanced analysis of the game's tactical nuances.
+
+手数1:
+
+削除理由:
+- 「◆三枚堂　達也（さんまいどう　たつや）四段◆」 → ルール1, 4
+- 「１９９３年７月１４日生まれ、千葉県浦安市出身。内藤國雄九段門下。２０１３年、四段。棋士番号は２９４。」 → ルール1, 4
+
+手数2:
+
+削除理由:
+- 「◆中座　真（ちゅうざ　まこと）七段◆」 → ルール1, 4
+- 「１９７０年２月３日生まれ、北海道稚内市出身。（故）佐瀬勇次名誉九段門下。１９９６年、四段。２００７年、七段。棋士番号は２１９。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「三枚堂の今年度成績は１３勝１２敗（０．５２０）」 → ルール4
+- 「通算成績は４１勝２８敗（０．５９４）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「中座の今年度成績は６勝１１敗（０．３５３）」 → ルール4
+- 「通算成績は３５４勝２９９敗（０．５４２）」 → ルール4
+
+手数15: 戦型は横歩取りへ。
+
+削除理由:
+
+手数22: 横歩取り△８五飛戦法の基本的な形になった。
+
+削除理由:
+- 「△８五飛戦法の別名は中座飛車。」 → ルール1, 5
+- 「中座が初めて指した戦法で、第２６回升田幸三賞を受賞している。」 → ルール1, 4
+- 「１号局の第５６期（１９９７年度）順位戦Ｃ級２組▲松本佳介四段−△中座は大乱戦になった。」 → ルール2, 1
+- 「結果は中座の勝ち。（段位は当時）」 → ルール2
+
+手数25:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲三枚堂２１分、△中座１２分。」 → ルール3
+
+手数28: ７六歩を狙う、横歩取りでおなじみの仕掛けだ。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「１２時１０分、ここで三枚堂が１５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲三枚堂３２分、△中座１時間７分。」 → ルール3
+- 「中座の注文は、中座がすき焼きうどん、餅１個（みろく庵）、三枚堂はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+手数34:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲三枚堂１時間３９分、△中座１時間１４分。」 → ルール3
+
+手数35: ▲３三角成は△同桂が飛車に当たる。それが△２五歩の効果だ。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲三枚堂１時間５８分、△中座１時間１４分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１時間３０分の大長考だった。」 → ルール3
+
+手数38: ２筋を安定させてから、桂の活用を図った。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲三枚堂２時間４分、△中座２時間４６分。」 → ルール3
+
+手数39: 先手は飛車の位置が悪いので、まとめるには力がいりそうだ。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲三枚堂３時間２４分、△中座２時間３４分。」 → ルール3
+
+手数44: ▲６六歩には△同飛▲６八銀△６五桂、または△同角▲６七玉△７五歩の展開が予想されている。
+
+削除理由:
+- 「１８時１０分、ここで三枚堂が５７分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲三枚堂３時間３５分、△中座３時間２０分。」 → ルール3
+- 「夕食の注文は、中座が上カツ丼（ほそ島や）、三枚堂はしょうが焼き定食・大盛り（みろく庵）。」 → ルール7
+- 「対局再開は１９時。」 → ルール7

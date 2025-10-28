@@ -1,0 +1,122 @@
+**Cleaning Up Commentary: Stripping the Fat, Keeping the Meat**
+
+Okay, so the task at hand is to refine these comments accompanying shogi game data. The goal? To take the raw commentary, which often gets bogged down in extraneous details, and transform it into concise, insightful prose focused solely on the board itself and the moves being made. I need to distill the essence of the commentary, making it useful for deep analysis and learning.
+
+Essentially, I'm going through each hand, each comment, and applying these rules like a filter. First, I'm binning all the stuff that's not directly about the game itself. That means any mention of names, ranks, affiliations of people not directly involved in the current match are out. Historical context and mentions of past games? Gone. Time stamps? Irrelevant. Player bios, stats, or their established styles? Into the trash. And all the extraneous fluff about the location, weather, or accommodations? Absolutely unnecessary.
+
+My focus is laser-sharp: I'm looking for the *why* and the *how* of each move, the strategic reasoning, the tactical threats, and the positional advantages. The goal is to retain the critical analysis, the essential insights, the actual understanding of the game as it unfolds, and discard anything else. This should leave me with a streamlined, refined set of comments that are far more valuable for anyone trying to understand the intricacies of the game.
+
+手数1:
+
+削除理由:
+- 「佐藤秀司（さとう・しゅうじ）七段は宮城県古川市出身、１９６７年６月８日生まれ。」 → ルール4
+- 「中原誠十六世名人門下。」 → ルール1, 4
+- 「棋士番号は１９６。」 → ルール4
+- 「８０年、６級で奨励会入会。９０年、四段。２００７年、七段。」 → ルール4
+- 「棋戦優勝は９２年の新人王戦１回。」 → ルール4
+- 「順位戦は２２期目。Ｃ級１組は通算５期目で、今期の順位は２２位。前期成績は４勝６敗。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「佐藤の通算成績は４３８勝３２３敗（０．５７６）」 → ルール4
+- 「今年度成績は３勝３敗（０．５００）」 → ルール4
+- 「直近１０局の成績は３勝７敗（●●●●○○●●●○）星取りは右が直近。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「佐藤は居飛車党だが、まれに振り飛車を指すこともある。」 → ルール5
+- 「今期初戦は後手番で、糸谷哲郎六段に敗れた。」 → ルール1, 2
+- 「【第７１期（２０１２年）Ｃ級１組１回戦　▲糸谷哲郎六段−△佐藤秀司七段戦】」 → ルール2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１２／０６／１２／Ｃ１／５９４７．ｈｔｍｌ」 → ルール8
+
+手数4:
+
+削除理由:
+- 「土佐浩司（とさ・こうじ）七段は新潟県南魚沼市出身、１９５５年３月３０日生まれ。」 → ルール4
+- 「故・清野静男八段門下。」 → ルール1, 4
+- 「棋士番号は１２４。」 → ルール4
+- 「７１年、６級で奨励会入会。７６年、四段。９７年、七段。」 → ルール4
+- 「棋戦優勝は９８年度の早指し将棋選手権１回。」 → ルール4
+- 「２０００年、現役勤続２５年で表彰。１０年、通算６００勝達成で将棋栄誉賞を受賞している。」 → ルール4
+- 「順位戦は３６期目。Ｃ級１組は通算８期目で、今期の順位は３２位。前期の成績は２勝８敗で１つ目の降級点がついた（降級点２つでＣ級２組へ降級）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「土佐の通算成績は６２１勝６０５敗（０．５０７）」 → ルール4
+- 「今年度成績は１勝４敗（０．２００）」 → ルール4
+- 「直近１０局の成績は４勝６敗（○●○●○●●●●○）星取りは右が直近。」 → ルール4
+
+手数6:
+
+削除理由:
+- 「土佐は居飛車党。」 → ルール5
+- 「今期初戦は先手番で、桐山清澄九段に敗れている。」 → ルール1, 2
+- 「【第７１期（２０１２年）Ｃ級１組１回戦　▲土佐浩司七段−△桐山清澄九段戦】」 → ルール2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１２／０６／１２／Ｃ１／５９１２．ｈｔｍｌ」 → ルール8
+
+手数7:
+
+削除理由:
+- 「両者０勝１敗同士、本局に勝って成績を五分に戻したいところ。」 → ルール4
+
+手数27:
+
+削除理由:
+- 「▲１六歩までの消費時間は▲佐藤２５分、△土佐２４分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１２時１０分になり昼食休憩に入った。」 → ルール3, 7
+- 「昼食休憩までの消費時間は▲佐藤４８分、△土佐１時間８分。」 → ルール3, 7
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数35: 飛車の利きを通して７六の歩を守る。
+
+削除理由:
+
+手数36: ならばと３五の歩に狙いをつける。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「△８五飛までの消費時間は▲佐藤５８分、△土佐１時間４５分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「△３五飛までの消費時間は▲佐藤１時間２４分、△土佐２時間２６分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「△４四角までの消費時間は▲佐藤１時間５５分、△土佐２時間５０分。」 → ルール3
+
+手数48: 後手は次に△８八角成▲同金△同飛成の狙いがある。
+
+削除理由:
+
+手数49: よって△８八角成を先受けする飛車切り。
+
+削除理由:
+
+手数51: 先手の主張はと金が残ったことと香得。後手の主張は飛車を手持ちにしているので、どこかで打ち込む狙いがある。
+
+削除理由:
+
+手数52:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「△２五歩までの消費時間は▲佐藤２時間３７分、△土佐３時間１６分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「ここで土佐が２３分使って夕食休憩に入った。」 → ルール3, 7
+- 「夕食休憩までの消費時間は▲佐藤３時間１３分、△土佐３時間３９分。」 → ルール3, 7
+- 「対局再開は１９時。」 → ルール3, 7

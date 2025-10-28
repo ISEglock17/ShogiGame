@@ -1,0 +1,146 @@
+**Cleaning Up the Commentary: My Approach**
+
+Okay, so I'm tackling this task of cleaning up the comments in these shogi game records. The user, who I assume knows a thing or two about this, wants me to streamline the commentary. My goal is clear: I need to strip away all the extraneous stuff that gets in the way of insightful analysis. Think metadata, player introductions, time stamps – all that fluff that just clutters things up. I'm after the core: the insightful commentary on the board state and the moves.
+
+My strategy? First, I'll go through the comments with a fine-toothed comb, applying a set of rules I'll have to define to identify what needs to be chucked. Anything that doesn't contribute directly to understanding the game's flow or the reasoning behind moves is gone. Then, I'll work to reshape what's left into something that reads smoothly, like a natural explanation of the game's progression. It's about preserving the *meaning* of the commentary while removing the distracting elements.
+
+手数1:
+
+削除理由:
+- 「畠山成にしては珍しい初手だが、」 → ルール5, 1
+- 「過去２２回採用しており、１１勝１１敗。」 → ルール2, 4
+
+手数2:
+
+削除理由:
+- 「虚を突かれたか気合を入れなおしたか、先崎は」 → ルール1
+- 「２手目に８分考えている。」 → ルール3
+
+手数4: 相振り飛車になった。
+
+削除理由:
+- 「ここでも６分考え、」 → ルール3
+
+手数11: 先手はいつ角道を開けるのだろうか。
+
+削除理由:
+- 「畠山成は」 → ルール1
+
+手数14:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成１０分、△先崎３９分。」 → ルール3, 1
+
+手数15: ここで角道を開ける。目が慣れていないとドキッとするが、角には飛車のひもがついている。
+
+削除理由:
+
+手数16: 後手玉は穴熊へ。
+
+削除理由:
+- 「先崎玉は」 → ルール1
+
+手数19:
+
+削除理由:
+- 「この局面で先崎が１２分考えて」 → ルール1, 3
+- 「昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲畠山成１時間２分、△先崎５９分。」 → ルール3, 1
+
+手数25:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成１時間４８分、△先崎１時間１４分。」 → ルール3, 1
+
+手数32:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成２時間２０分、△先崎１時間４３分。」 → ルール3, 1
+
+手数39:
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「消費時間は▲畠山成３時間３分、△先崎２時間７分。」 → ルール3, 1
+
+手数41:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「消費時間は▲畠山成３時間４２分、△先崎２時間３１分。」 → ルール3, 1
+- 「この局面のまま、先崎が４９分考えたところで」 → ルール1, 3
+- 「夕食休憩となった。」 → ルール7
+- 「消費時間は▲畠山成３時間４２分、△先崎３時間２０分。」 → ルール3, 1
+
+手数50: △７七角成は▲同桂でまるまる一手損。じっくりと位をはった。
+
+削除理由:
+
+手数53: まだまだ難しい局面だが、穴熊なので指しやすいのかもしれない。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成４時間１６分、△先崎３時間４６分。」 → ルール3, 1
+- 「検討陣からはたびたび「穴熊ですから」という声が聞こえてくる。」 → ルール1
+
+手数58: 攻め合い。
+
+削除理由:
+
+手数63: 穴熊の急所は端。今なら飛車の横利きもない。
+
+削除理由:
+
+手数66: ▲９五歩△同歩▲９四歩△同香▲８五銀は△９三銀打で受かりそう。単に▲８五銀はあるかもしれない。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成４時間５０分、△先崎４時間４分。」 → ルール3, 1
+
+手数72: 後手は歩が入ったのを生かして反撃に出る。
+
+削除理由:
+- 「先崎は」 → ルール1
+
+手数77: 飛車の横利きがあるので、この香車は取られない。
+
+削除理由:
+
+手数78: ▲１八同玉は△１七銀でも危ない。
+
+削除理由:
+
+手数80: 穴熊側が指しやすいようだ。
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成５時間１８分、△先崎４時間２７分。」 → ルール3, 1
+
+手数91: ▲１九同玉は△１七角成がある。
+
+削除理由:
+
+手数94: ▲９四銀と出れば、△７四飛が両取りになる仕組み。
+
+削除理由:
+
+手数97:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成５時間５０分、△先崎４時間５２分。」 → ルール3, 1
+
+手数107:
+
+削除理由:
+- 「２３時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成５時間５７分、△先崎５時間１４分。」 → ルール3, 1
+
+手数116: 飛車取りで、飛車を逃げると△５八角成（▲同金は△１七銀以下即詰み）がある。ここで先手は投了した。
+
+削除理由:
+- 「畠山成は」 → ルール1
+- 「消費時間は▲畠山成５時間５８分、△先崎５時間２７分。」 → ルール3, 1

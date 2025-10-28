@@ -1,0 +1,118 @@
+**Streamlining Commentary for Enhanced Game Analysis**
+
+Okay, so I'm looking at this data set of Shogi game records, and the user wants to clean up the comments. The goal is clear: strip out all the extraneous fluff and distill it down to the essential, illuminating insights about the board positions and specific moves. Basically, they want to focus on the *why* and the *how*, not the play-by-play filler.
+
+I've got a set of rules to guide me, and I'll need to apply them methodically to each comment attached to each move. The process will be pretty straightforward: I'll identify and eliminate the irrelevant information based on those rules. Then, I'll take what's left and reshape it, transforming those fragments into complete, coherent, and natural-sounding sentences. This will make the resulting commentary much more digestible and, critically, far more useful for in-depth analysis of the games.
+
+手数1:
+
+削除理由:
+- 「北浜健介（きたはま・けんすけ）七段のプロフィール ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｉｔａｈａｍａ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「島朗（しま・あきら）九段のプロフィール ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓｉｍａ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「北浜の今期成績は２勝３敗（０．４００）」 → ルール4
+- 「通算成績は３８３勝２８６敗（０．５７３）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「島の今期成績は２勝３敗（０．４００）」 → ルール4
+- 「通算成績は７５５勝５７２敗（０．５６９）」 → ルール4
+
+手数7: 局面は相掛かりに進んでいる。
+
+削除理由:
+
+手数11: 先手は飛車を深く引いた。▲２六飛と浮き飛車に構える作戦もあり、その場合は華々しい空中戦になることが多い。本譜のように深く引いた場合は、３九銀を棒銀模様に繰り出して行く構想が多く見られる。
+
+削除理由:
+- 「北浜は」 → ルール1
+
+手数17: 先手は▲４七銀〜▲５六銀と腰掛け銀の形を目指しているようだ。
+
+削除理由:
+
+手数24: 後手は積極的に銀を繰り出して攻勢を目指す。
+
+削除理由:
+- 「１１時頃、△８三銀までの消費時間は▲北浜１３分、△島２９分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１２時１０分、この局面で島が５０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲北浜３９分、△島１時間１９分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+
+手数26: △８四銀は△９五歩の端攻めも含みにした棒銀模様の銀の使い方。新手だ。
+
+削除理由:
+- 「前例は３局でいずれも△７四銀と出ていた。」 → ルール2
+- 「島の」 → ルール1
+
+手数27: ここで角交換。後手の棒銀が迫る前に、目標になる大駒をさばいてしまうという意味がある。
+
+削除理由:
+
+手数30:
+
+削除理由:
+- 「１４時過ぎ、△４二玉までの消費時間は▲北浜１時間９分、△島１時間４０分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１５時１０分頃、△９六歩までの消費時間は▲北浜１時間４６分、△島２時間１５分。」 → ルール3
+- 「１６時１０分を回った。」 → ルール3
+- 「北浜の考慮が１時間を超えている。」 → ルール1, 3
+
+手数45: ▲９六同香は△８五銀で香取りが受けづらい。
+
+削除理由:
+
+手数46: それでも△８五銀と出た。７六の歩を狙っている。
+
+削除理由:
+
+手数47: ▲７七銀と受けるのは端が薄くなって危険か。先手は手厚く銀を引き付けて耐える。
+
+削除理由:
+- 「北浜は」 → ルール1
+
+手数50: 駒の損得はなし。９筋を詰めたのは後手のポイントで、少し後手がリードしたか。
+
+削除理由:
+- 「１７時１０分、△８三銀までの消費時間は▲北浜３時間１０分、△島２時間３７分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１８時１０分、この局面で島が１０分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲北浜３時間４６分、△島３時間４分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数57:
+
+削除理由:
+- 「２０時頃、▲８六歩までの消費時間は▲北浜４時間２４分、△島３時間１１分。」 → ルール3
+
+手数63: 第二次駒組みが続いている。
+
+削除理由:
+- 「２１時１０分頃、▲６六銀までの消費時間は▲北浜４時間４６分、△島３時間５８分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「２１時４５分頃、▲４八飛までの消費時間は▲北浜４時間４９分、△島４時間３１分。」 → ルール3
+
+手数80: 後手は一時的に桂損しているが、飛角交換から飛車を打ち込んで香を確実に取り返せる形。好調と見てよさそうだ。
+
+削除理由:

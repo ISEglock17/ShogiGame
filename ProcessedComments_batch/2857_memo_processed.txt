@@ -1,0 +1,76 @@
+**Structuring My Approach to Cleaning Up Shogi Game Commentary**
+
+Okay, so I've got a new challenge here: formatting Shogi game commentary to make it more readable and streamlined. This is right up my alley! The user wants me to take raw commentary and transform it based on specific rules, removing anything unnecessary and crafting smooth, natural-sounding sentences.
+
+My plan is pretty straightforward. I'll need to dissect the commentary move-by-move. Step one, and this is crucial, will be analyzing the commentary for each individual move. This will be the foundation of the cleaning process. I'll need to identify the key elements of each comment and find the information that is helpful, and remove the rest.
+
+手数1: 中飛車を指向する初手だ。
+
+削除理由:
+- 「開始の声とともに」 → ルール8
+- 「▲５六歩。」 → 指し手情報は不要（手数に含まれるため）
+
+手数15: △５四歩とされると▲同歩とは取り返せない。
+
+削除理由:
+- 「まさかウッカリではないだろうが…。」 → 解説に不要な主観的表現のため削除
+
+手数16: これで居飛車指しやすいというのが定説。先手は▲５七銀〜▲４六銀と歩を取り返しにいくしかないが、５五に出た銀が負担になるケースが多い。
+
+削除理由:
+- 「定説」 → ルール2（過去の知見に基づく表現のため）
+
+手数27: △５七歩の筋を消した飛車浮きだが、いかにも怖い格好。△８六歩は大丈夫なのだろうか。
+
+削除理由:
+- 「いかにも怖い格好。」 → 解説に不要な主観的表現のため削除
+
+手数28: ▲同歩なら△８八歩▲同角△８六飛▲７八金△８八飛成▲同金△４五角の筋がある。他にも▲８六同歩△８五歩▲同歩△同桂▲６六角△８八歩など怖い順が多く、収拾困難にも思える。
+
+削除理由:
+- 「のだが…」 → 文末の調整
+
+手数30: スッパリと。
+
+削除理由:
+- 指し手の様子を表す擬態語であり、具体的な解説ではないため削除
+
+手数32: これが後手の狙い。技が入ったか？
+
+削除理由:
+- 「田中」 → ルール1
+
+手数33: 先手は銀を取らせて指す方針。ここから△５五角▲２五飛打は△３五歩がピッタリで受かりそうだ。
+
+削除理由:
+- 「森は」 → ルール1
+
+手数34: まるっと銀得。ここで▲２五飛打が成立しないのであれば▲８一飛か。しかしそれも△５一銀左▲９一飛成△９九角成くらいで後手優勢だろう。先手に秘手はあるのだろうか。
+
+削除理由:
+- 「森に」 → ルール1
+
+手数41: △６二金と寄り、▲２三飛成△同玉▲４一飛成△２二飛の受けを用意すれば大丈夫そうだ。
+
+削除理由:
+- なし
+
+手数46: これは痛い。▲４六飛に△５五馬▲４五飛△同馬▲７三飛成△６九飛の展開は後手勝勢。早い終局もあるかもしれない。
+
+削除理由:
+- 「この局面で休憩に入った。」 → ルール7
+- 「消費時間は森１時間８分、田中４５分。」 → ルール3
+
+手数52: 決めに出た。▲同玉の一手に△２六銀▲同玉△３五金▲２七玉△２六飛▲１八玉△４九馬の筋がある。
+
+削除理由:
+- なし
+
+手数60: 最後は綺麗な飛車捨てで幕。▲同銀は△２七金▲３九玉△３八金打まで。合い駒をしても△２七金〜△２八金打で即詰めとなる。後手は先手の小ミスを的確に捉えた快勝譜。
+
+削除理由:
+- 「森の」 → ルール1
+- 「田中の」 → ルール1
+- 「感想戦は森の「▲５六飛がひどかったね」の一言で終わったようだ。」 → ルール1, 8
+- 「消費時間は森１時間１２分、田中５３分。」 → ルール3
+- 「勝った田中は２勝８敗、敗れた森は４勝６敗となった。」 → ルール1, 4

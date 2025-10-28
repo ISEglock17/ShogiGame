@@ -1,0 +1,113 @@
+**Streamlining Game Commentary for Deep Analysis**
+
+Okay, so I'm tasked with cleaning up these shogi game commentaries. The goal is clear: strip away all the fluff – the metadata, player intros, timestamps – and leave behind only the pure, insightful analysis of the board and the moves themselves. Essentially, I need to distill the essence of the commentary into something lean and focused, perfect for my more in-depth analyses.
+
+I'll be working through the comments, move by move, carefully applying the rules I've been given. Let's see... the rules are pretty straightforward.  Anything extraneous needs to go. I need to be particularly vigilant about removing things like references to people *not* directly involved in the game, any historical or precedent-based commentary, timekeeping information, and anything that dwells on the players' biographies or rankings beyond what's directly relevant to the specific game being analyzed. It's about getting to the heart of the *strategy*, not the surrounding noise. I'll need to be meticulous, but I'm ready for the challenge. Let's get started.
+
+手数1:
+
+削除理由:
+- 「【戸辺誠（とべ・まこと）六段】」 → ルール4
+- 「神奈川県横浜市出身、１９８６年８月５日生まれ。加瀬純一六段門下。棋士番号は２６２。１９９８年９月に６級で奨励会入会、１９７４年４月１日に四段昇段。２００９年度に新人賞を受賞。」 → ルール4
+- 「【戸辺六段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｏｂｅ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【野月浩貴（のづき・ひろたか）七段】」 → ルール4
+- 「北海道出身、１９７３年７月４日生まれ。勝浦修九段門下。棋士番号は２２１。１９８５年に６級で奨励会入会、１９９６年１０月１日に四段昇段。棋戦優勝は２回（早指し新鋭戦１回・１９９８年度、勝抜き戦５勝以上１回・１９９８〜９９年度）。」 → ルール4
+- 「【野月七段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎｏｄｕｋｉ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「戸辺の今年度成績は１６勝８敗（０．６６６７）」 → ルール4
+- 「通算成績は１００勝４６敗（０．６８４９）、今年１０月２９日に１００勝達成（棋聖戦・対三浦八段）。」 → ルール4
+- 「直近１０局の成績は●●○○○●千○○○○（右が直近）」 → ルール4
+- 「１１月１７日時点のランキングは、勝数１９位・勝率１５位。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「野月の今年度成績は１０勝９敗（０．５２６３）」 → ルール4
+- 「通算成績は３００勝２１５敗（０．５８２５）、今年１１月５日に３００勝達成（棋聖戦・対田中寅九段）。」 → ルール4
+- 「直近１０局の成績は●●○○○●●○●○（右が直近）」 → ルール4
+
+手数14: 先手から速い攻めが無いので穴熊を目指す。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１０時５０分頃の局面、」 → ルール3
+- 「消費時間は▲戸辺１２分、△野月２３分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「この局面で戸辺が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲戸辺５６分、△野月５８分、」 → ルール3
+- 「昼食の注文は両者とも無し。」 → ルール7
+
+手数38: この手が新手で実戦例は無くなった。その対局では△同金に代えて△２二角と指されていた。
+
+削除理由:
+- 「参考棋譜 第６８期順位戦Ｃ級２組４回戦遠山−及川戦 ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２００９／０９／２９／Ｃ２／４５４１．ｈｔｍｌ」 → ルール2, 8
+
+手数39:
+
+削除理由:
+- 「１４時頃の局面、」 → ルール3
+- 「消費時間は▲戸辺１時間５分、△野月１時間６分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時１０分頃の局面、」 → ルール3
+- 「消費時間は▲戸辺１時間２５分、△野月２時間３０分。」 → ルール3
+- 「１時間以上の差がついた。」 → ルール3
+
+手数45: ３四の歩を狙っていく。受けるには△４五歩しかないがそれには▲３五歩と合わせて△同歩▲同金で次は４五の歩を狙う。
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「消費時間は▲戸辺２時間１０分、△野月２時間３２分。」 → ルール3
+
+手数46: △４五歩と指した。
+
+削除理由:
+- 「１時間１９分の長考で」 → ルール3
+- 「１７時２０分頃の局面。」 → ルール3
+- 「消費時間は▲戸辺２時間１０分、△野月３時間５１分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「この局面で野月が１８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲戸辺２時間４５分、△野月４時間１０分。」 → ルール3
+- 「夕食の注文は両者無し。」 → ルール7
+
+手数61:
+
+削除理由:
+- 「２０時頃の局面、」 → ルール3
+- 「消費時間は▲戸辺３時間１９分、△野月４時間３３分。」 → ルール3
+
+手数71: この手が攻防によく利いており、かなり厳しい。次に▲４三飛成△同金▲同角成の狙いがある。
+
+削除理由:
+
+手数74: 手抜きで切り合いにいった。読み切っているのはどちらなのだろうか。
+
+削除理由:
+- 「２１時４５分頃の局面、」 → ルール3
+- 「残り時間は▲戸辺２時間２２分、△野月２１分。」 → ルール3
+
+手数99:
+
+削除理由:
+- 「ここで野月が投了した。」 → ルール3, 4
+- 「終局時刻は２２時２７分、」 → ルール3
+- 「消費時間は▲戸辺４時間１３分、△野月５時間４８分。」 → ルール3
+- 「勝った戸辺は５勝１敗、敗れた野月は２勝４敗となった。」 → ルール4

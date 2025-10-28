@@ -1,0 +1,77 @@
+**Analyzing and Processing Shogi Game Commentary**
+
+Okay, so I understand the task. The user wants me to clean up shogi game commentary, removing extraneous details and presenting the core moves in a clear, concise way. I need to apply specific rules to filter out unnecessary information and then rewrite the remaining data into natural sentences.
+
+For example, looking at **move 23**, all the information about time (like "11時過ぎの局面" and the players' remaining time) is flagged for removal. The only thing I need to do is preserve the move number.
+
+Then, with **move 27**, I see a similar situation. The time spent by the players and the fact that a lunch break has commenced are also considered irrelevant. All I should keep is the move number. I see that the overall goal is to streamline the commentary, focusing solely on the actual gameplay, and nothing more.
+
+手数23:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田１時間２分、△脇２分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「ここで△脇が１１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲塚田１時間１２分、△脇４７分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１４時半ごろ局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田１時間４１分。△脇１時間３分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田１時間５０分、△脇２時間４３分。」 → ルール3
+
+手数46: ６三の銀が自陣に利いているため、飛車交換は後手に分がある。
+
+削除理由:
+
+手数52:
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田２時間４９分、△脇３時間２６分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「ここで▲塚田が３５分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲塚田３時間２９分、△脇３時間２８分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田３時間３４分、△脇４時間３１分。」 → ルール3
+
+手数71: 変化の一例としては、△７七歩成▲同桂△７六歩▲６五桂△８九角のような展開が考えられる。
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田５時間１分、△脇４時間３８分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田５時間１０分、△脇５時間２４分。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「０時の局面。」 → ルール3
+- 「ここまでの消費時間は▲塚田５時間４６分、△脇５時間５１分。」 → ルール3
+
+手数105: 次の▲７四馬が厳しく先手玉に寄りがないことから、ここで後手の投了となった。
+
+削除理由:
+- 「△脇の」 → 置換ルール
+- 「終局時刻は０時３１分、消費時間は▲塚田５時間５５分、△脇５時間５７分。」 → ルール3

@@ -1,0 +1,193 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with a shogi game commentary, and the goal is to clean it up. The user, being the expert they are, wants me to extract the *essential* information, focusing on the board state and the moves themselves, all in a natural flow.  Essentially, I need to make it more readable for someone who really *gets* shogi.
+
+Here's my thought process on how I'll tackle this:
+
+1.  **Iterative Processing:**  I'll go through each move's commentary sequentially, one after the other.
+2.  **Rule-Based Filtering:** For *each* sentence within the commentary of *every* move, I'll analyze it against a pre-defined set of rules. I'll need a good grasp of the exclusion criteria so I don't mistakenly remove something crucial.
+3.  **Identification & Logging:**  When I find a sentence that violates a rule, I'll flag it for deletion. Critically, I'll note *why* it's being deleted (which rule it breaks). This is important for debugging and ensuring I'm being consistent.
+4.  **Natural Language Polishing:**  The remaining sentences will need to be rephrased if required to make them sound natural and grammatically correct. It's about providing fluent insights, not just a list of factual statements.
+5.  **Content Verification:** If after removing the irrelevant sentences, there's absolutely nothing left that describes the game's progress (the move or the state of the board) in any way, then the entire commentary for that move will be discarded.  It's just unnecessary clutter in that situation.
+6.  **Formatted Output:** Finally, the cleaned-up commentary, alongside the list of reasons why parts were deleted, must be rendered in the specific format the user has requested. Keeping in mind, they want this for analysis or publication; It needs to be precise and useful.
+
+手数4: 最もシンプルな形の一手損角換わりになった。
+
+削除理由:
+
+---
+手数10: 後手の作戦は角交換後の振り飛車。
+
+削除理由:
+- 「脇の」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+- 「今期順位戦では３回戦の田中魁秀九段戦、６回戦の千葉五段戦に続く採用となる。」 → ルール2, 1
+
+---
+手数21: 角交換をされたときの懸案である壁銀を解消。角交換しない形に比べて、左銀を立て直す一手をさらに指さなければならない。
+
+削除理由:
+
+---
+手数22: じっくり陣形を立て直してから△２二飛と回る。△５二金左や△７二玉を省略した形で△２二飛と回ると▲６五角の反撃があるので注意が必要だ。
+
+削除理由:
+
+---
+手数24:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５２分、△脇１９分。」 → ルール3
+- 「脇はここまでノータイムだったが、ここで初めて時間を使った。」 → ルール3
+
+---
+手数34:
+
+削除理由:
+- 「この局面で高野が３０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲高野１時間３５分、△脇２０分。」 → ルール3
+
+---
+手数38:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野１時間４８分、△脇１時間２０分。」 → ルール3
+
+---
+手数39: 飛車を角のラインに入れる。歩が入ったあとに▲３五歩△同歩▲３四歩となれば厳しい。
+
+削除理由:
+
+---
+手数40:
+
+削除理由:
+- 「５６分の長考。」 → ルール3
+- 「１５時４０分頃の局面。」 → ルール3
+- 「消費時間は▲高野１時間５５分、△脇２時間１６分。」 → ルール3
+- 「対局室では上着を脱いでいる棋士が多い中、本局の両者はスーツの上着を着たままだった。」 → ルール6
+
+---
+手数41: 歩を手に入れに行く。
+
+削除理由:
+
+---
+手数42: △７五同歩は▲同角で２か所の角成りが受けにくい形。
+
+削除理由:
+
+---
+手数47:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野３時間１４分、△脇２時間２９分。」 → ルール3
+
+---
+手数50: 飛車の場所を換えて踏ん張る。
+
+削除理由:
+
+---
+手数56: ▲１一角成が目につくが、角が動くと△７五金もある。
+
+削除理由:
+- 「この局面で高野が２４分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲高野３時間５０分、△脇３時間４分。」 → ルール3
+
+---
+手数59: 金が逃げれば、穴熊の急所である８三まで利きが通ってくる。
+
+削除理由:
+
+---
+手数61:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野３時間５８分、△脇３時間１９分。」 → ルール3
+- 「この局面で脇が考えている。」 → ルール3
+
+---
+手数62: 金を出た。
+
+削除理由:
+- 「２０分以上考えて」 → ルール3
+
+---
+手数63: 後手から△７六歩と打たれてはいけない。
+
+削除理由:
+
+---
+手数65: 馬を引いた。
+
+削除理由:
+- 「じわーっとした丁寧な手つきで」 → 盤面や指し手の解説に不要な表現のため
+
+---
+手数66:
+
+削除理由:
+- 「時折高野の指が画面に映る。」 → 盤面や指し手の解説に不要な表現のため
+- 「２１時１５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野４時間７分、△脇４時間３１分。」 → ルール3
+
+---
+手数76: と金取りを防ぐ。先手がいつまでも飛車を取らないなら、後手は△５五歩▲同銀△４五銀と飛銀を働かせる順が残っている。
+
+削除理由:
+- 「２２時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野４時間４７分、△脇４時間５２分。」 → ルール3
+
+---
+手数79: ▲８三香成△同銀▲７一飛成が生じている。
+
+削除理由:
+
+---
+手数81: ▲８三香成は詰めろではないので△２八角成と飛車を取られてしまう。
+
+削除理由:
+
+---
+手数84: 飛車取りになっている。
+
+削除理由:
+
+---
+手数90: 先手が７筋に駒を足したが、それを攻める。
+
+削除理由:
+
+---
+手数94:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５時間２９分、△脇５時間３７分。」 → ルール3
+
+---
+手数112: ここで△７六歩と取り込むのが「最後のチャンス」だったのかもしれない。
+
+削除理由:
+- 「（※）感想戦では」 → ルール2
+- 「とされていた」 → 自然な文章にするため表現を調整
+
+---
+手数132:
+
+削除理由:
+- 「０時半頃の局面。」 → ルール3
+- 「消費時間は▲高野５時間４３分、△脇５時間５９分。」 → ルール3
+- 「脇は１１６手目△９七歩から一分将棋になっている。」 → ルール3
+
+---
+手数153:
+
+削除理由:
+- 「この局面で脇が投了した。」 → 投了は棋譜情報に含まれるためコメントからは削除
+- 「消費時間は▲高野５時間５５分、△脇５時間５９分。」 → ルール3
+- 「勝った高野は３勝３敗、敗れた脇は４勝３敗となった。」 → ルール4

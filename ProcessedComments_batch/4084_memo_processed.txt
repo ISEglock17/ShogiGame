@@ -1,0 +1,108 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments, basically transforming them into something more suitable for focused analysis. They've given me a set of rules, and my job is to follow them to the letter.  Essentially, I need to strip away all the extraneous stuff - anything that's not directly related to the board position or the moves themselves. That means getting rid of all the meta information, like introductions, time stamps, and any unnecessary details about the players.  My goal is to distill each comment down to its core: a natural-sounding explanation of the board state and the reasoning behind each move. I'm focusing on the essence of the game, leaving only what's truly essential for understanding the strategic flow.
+
+手数20: 横歩取り△８五飛戦法となった。
+
+削除理由:
+- 「北浜の」 → ルール1
+
+手数21: △２五飛を防ぐ。
+
+削除理由:
+- 「」 →
+
+手数24:
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「消費時間は森２０分、北浜５分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「３１分の長考。」 → ルール3
+
+手数27: ▲４八銀△７四歩▲３六歩といった展開が普通だが、先手は角交換して変化した。
+
+削除理由:
+- 「森は」 → ルール1
+
+手数31: ▲８六歩から後手飛車を圧迫しようとしている。
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は森５８分、北浜２０分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「ここで北浜が使って昼食休憩に入った。」 → ルール7
+- 「消費時間は森１時間１０分、北浜４４分。」 → ルール3
+- 「昼食の注文は北浜がとろろせいろそば。森は注文なし。」 → ルール7
+
+手数34: ▲８五歩の筋に備える。▲８五歩は△同桂▲８六飛は△９五角▲８五飛△同飛▲同桂△５九飛。怖すぎて先手が指せない変化だ。
+
+削除理由:
+- 「昼食休憩を挟む４０分の長考。」 → ルール3, 7
+
+手数36: この戦法では好点になる角打ち。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は森１時間２１分、北浜１時間２６分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は森１時間４１分、北浜１時間４７分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「５４分の長考で指された。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は森２時間３６分、北浜２時間１９分。」 → ルール3
+
+手数45: ▲８五同飛△同飛▲同桂△７七歩といった激しい順は互いに怖いが、先手は３筋が壁になっているためやりにくいだろう。▲４八銀と上がっているかどうかで、先手玉の広さがだいぶ変わってくる。
+
+削除理由:
+- 「」 →
+
+手数46: ４２手目に△８五同桂だと▲８六飛とされる。そこで１歩損ながら工夫して対応した。
+
+削除理由:
+- 「」 →
+
+手数49: △６四香を警戒しながら飛車を攻める。
+
+削除理由:
+- 「」 →
+
+手数50:
+
+削除理由:
+- 「１７時３０分過ぎの局面。」 → ルール3
+- 「消費時間は森３時間１７分、北浜３時間。」 → ルール3
+- 「ここで森が３７分使って夕食休憩に入った。」 → ルール7
+- 「消費時間は森３時間５４分、北浜３時間となった。」 → ルール3
+- 「夕食の注文は森が中華そば。北浜が味噌煮込みうどん。」 → ルール7
+
+手数57:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は森４時間３０分、北浜３時間１４分。」 → ルール3
+
+手数64: 以下は▲同金に△同香成▲同玉△４九角▲５八香△３八角成が△６六金▲６八玉△７七馬▲６九玉△５九金までの詰めろで寄り筋。
+
+削除理由:
+- 「ここで森が３分考えて投了した。」 → ルール1, 3
+- 「終局時刻は２０時２８分。」 → ルール3
+- 「消費時間は森４時間４０分、北浜３時間３４分。」 → ルール3
+- 「勝った北浜は２勝１敗、敗れた森は１勝２敗となった。」 → ルール1, 4

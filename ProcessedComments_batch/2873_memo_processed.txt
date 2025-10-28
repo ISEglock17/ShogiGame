@@ -1,0 +1,50 @@
+**Structuring Shogi Commentary for Clarity**
+
+Okay, so I'm presented with a couple of Shogi commentary snippets that need some work. The user wants me to clean them up, essentially. My task is to strip away extraneous details and rephrase them into clear, concise, and natural sentences, adhering to the standard Shogi comment formatting.
+
+Essentially, I'm going to remove the clutter and focus on the core information. For the first comment, I need to extract the move number, time control data, and the players' remaining time. I'll phrase it as a statement about the current position and the time situation.  
+
+For the second comment, I'll need to recognize the key term "振り飛車右玉" and find a smooth way to weave it into a single coherent sentence. I'll need to remove redundant language.
+
+手数18:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田４９分、△小林健２６分。」 → ルール3, ルール1
+
+手数36: 対振り右玉。後手は最近右玉を積極的に採用しており、用意の作戦か。
+
+削除理由:
+- 「糸谷四段が指して有名になった」 → ルール1, ルール2
+- 「▲小林健」 → 置換ルール
+
+手数43:
+
+削除理由:
+- 「ここで△小林健が１０分考えて昼食休憩に入った。」 → ルール1, ルール3, ルール7
+- 「ここまでの消費時間は▲窪田１時間分、△小林健３０分。」 → ルール1, ルール3
+
+手数61:
+
+削除理由:
+- 「１４時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田１時間４９分、△小林健１時間２分。」 → ルール1, ルール3
+
+手数78:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲窪田２時間６分、△小林健２時間２２分。」 → ルール1, ルール3
+
+手数101:
+
+削除理由:
+- 「ここで△小林が４０分考えて夕食休憩に入った。」 → ルール1, ルール3, ルール7
+- 「ここまでの消費時間は▲窪田２時間２１分、△小林４時間４分。」 → ルール1, ルール3
+
+手数141: ここで後手の投了となった。以下は即詰みとなる。
+
+削除理由:
+- 「△小林健の」 → 置換ルール
+- 「終局時刻は２０時５７分。」 → ルール3
+- 「消費時間は▲窪田３時間２８分、△小林健４時間３９分。」 → ルール1, ルール3

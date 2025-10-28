@@ -1,0 +1,105 @@
+**Refining Chess Commentary for Focused Analysis**
+
+Okay, so I'm presented with the task of cleaning up some chess commentary, specifically for analyzing a game record. The user, being an expert, clearly wants to streamline things, stripping away all the fluff – the introductions, the time checks, the biographical details – and getting right down to the meat of the matter: the board state and the move explanations. This makes perfect sense; as someone who works in this field, I understand the need to have a tight, focused dataset for in-depth analysis. It’s about creating a lean, mean, chess-analyzing machine.
+
+Right, so the provided rules are basically a summary of what I need to do. I need to make sure I take the initial steps correctly and make this efficient.
+
+手数7: 先手は中飛車に構える。
+
+削除理由:
+- 「稲葉は」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+
+---
+手数15:
+
+削除理由:
+- 「１０時５５分頃の局面。」 → ルール3
+- 「消費時間は▲稲葉２６分、△上野６分。」 → ルール3
+
+---
+手数19:
+
+削除理由:
+- 「ここで上野が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲稲葉３０分、△上野１時間２９分。」 → ルール3
+- 「昼食の注文は上野が玉子とじうどんとおにぎり、稲葉はなし。」 → ルール7
+
+---
+手数23:
+
+削除理由:
+- 「１４時５分頃の局面。」 → ルール3
+- 「消費時間は▲稲葉１時間１７分、△上野１時間４１分。」 → ルール3
+
+---
+手数26:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲稲葉１時間２０分、△上野２時間３５分。」 → ルール3
+
+---
+手数30:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲稲葉１時間３０分、△上野３時間１６分。」 → ルール3
+
+---
+手数31: ▲７五歩△同歩▲同飛と飛車を捌こうという狙い。
+
+削除理由:
+（削除なし）
+
+---
+手数35:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲稲葉２時間１５分、△上野３時間３１分。」 → ルール3
+
+---
+手数40:
+
+削除理由:
+- 「ここで稲葉が１６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲稲葉２時間５０分、△上野４時間１０分。」 → ルール3
+- 「夕食の注文は稲葉がカツ丼セット（温かいそば）、上野はなし。」 → ルール7
+
+---
+手数56:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は▲稲葉３時間２０分、△上野４時間２９分。」 → ルール3
+
+---
+手数62: 次に△６五歩の仕掛けがあるが成否はわからない。後手番なので仕掛けずに待機する手もある。先手からの仕掛けが難しい局面ではないかとも言われている。
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲稲葉３時間４５分、△上野５時間４分。」 → ルール3
+- 「上野の残り時間が１時間を切った。」 → ルール3
+
+---
+手数66:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「消費時間は▲稲葉４時間２４分、△上野５時間２２分。」 → ルール3
+
+---
+手数88: 後手の銀が囲いから離れてしまったが、△５六歩〜△５七歩成を狙っている。▲６三歩成〜▲５三と〜▲５四とと銀を取っても後手玉は非常に堅いのでゆっくりした攻めを狙っている。
+
+削除理由:
+- 「２３時１５分頃の局面。」 → ルール3
+- 「消費時間は▲稲葉５時間９分、△上野５時間３２分。」 → ルール3
+
+---
+手数103:
+
+削除理由:
+- 「ここで上野が投了した。」 → 投了は指し手ではないためコメントとしては不要
+- 「終了時刻は２３時３９分。」 → ルール3
+- 「消費時間は▲稲葉５時間２０分、△上野５時間３９分。」 → ルール3
+- 「勝った稲葉は７勝２敗、敗れた上野は２勝７敗となった。」 → ルール4

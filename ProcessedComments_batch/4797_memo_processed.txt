@@ -1,0 +1,124 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the goal here is to refine the comments within a Shogi game dataset. I need to strip away all the extraneous noise and leave behind only the valuable insights related to the board positions and the moves played. This means I'm basically applying a series of filters to the commentary.
+
+Essentially, I'm working with a set of rules to identify and eliminate specific types of information. It's a bit like data cleansing, but in this case, it's focused on text.
+
+**Specifically, I need to remove:**
+
+1.  Mentions of individuals *not* directly involved in the current game – things like the names, ranks, and affiliation of others.
+2.  Any references to prior games or past experiences.
+3.  Time stamps or any information related to the game's duration.
+4.  Detailed profiles, like player statistics, ranks, or identifying numbers.
+5.  Subjective analysis of playing styles or tactical preferences.
+6.  Details about the game's location, the weather, accommodations, etc.
+7.  Information about breaks, meals, or other procedural matters.
+
+Ultimately, I'm aiming to transform these raw comments into concise, focused explanations of the game's progress, ready for in-depth analysis. It's about data quality and efficiency in my workflow, making sure I'm only dealing with the most relevant information.
+
+手数2:
+
+削除理由:
+- 「井上の本年度の成績は９勝１３敗。」 → ルール4
+- 「通算成績は６３２勝４５３敗（０．５８２）」 → ルール4
+
+手数3:
+
+削除理由:
+- 「中田宏の本年度の成績は１１勝１１敗。」 → ルール4
+- 「通算成績は６４４勝３９０敗（０．６２３）」 → ルール4
+
+手数20:
+△８五飛戦法を採用。
+
+削除理由:
+- 「井上の後手番のエース戦法だ。」 → ルール5
+
+手数23:
+先手の対策は流行の新山崎流を始めとして色々とあるが、オーソドックスな中住まいを採用。
+
+削除理由:
+- 「中田宏は」 → ルール1
+
+手数29:
+▲４八銀より先に桂馬の活用を図る。
+
+削除理由:
+
+手数32:
+先手の駒が二枚利いている場所に歩を打つ。一見タダのようだが定跡の一手だ。▲２五同飛は△同飛▲同桂△８八角成▲同銀△２九飛で後手有利。▲２五同桂は△８八角成▲同銀△２四歩で同じく後手有利。
+
+削除理由:
+
+手数34:
+先手の飛車を引かして横利きを消してから７筋を攻める。
+
+削除理由:
+- 「１１時過ぎの局面。消費時間はともに１７分。」 → ルール3
+
+手数35:
+▲７五同歩は新手。後手の主張を通す手なので、プロはまず読まない手のようだ。
+
+削除理由:
+- 「ここで井上が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中田宏１時間２３分、△井上３０分。」 → ルール3
+- 「昼食の注文は両者なし。」 → ルール7
+- 「中田宏はこの手に１時間６分使った。」 → ルール1, 3
+- 「ここまで実戦例は６局あり、直近４局はいずれも▲６六歩と角交換を避けている。」 → ルール2
+- 「その４局は昨年１０月２０日〜１１月１９日というわずか一ヶ月の間に指されている。」 → ルール2
+- 「そのうちの１局は順位戦Ｂ級１組での対局。」 → ルール2
+- 「【第６９期順位戦Ｂ級１組９回戦　▲中村修−△深浦】」 → ルール1, 2
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１０／１１／１９／Ｂ１／４７８０．ｈｔｍｌ」 → ルール8
+- 「この手を見た稲葉四段は「この手だけは考えたことが無かった」と驚いていた。」 → ルール1
+
+手数39:
+△８八歩が見えるが、２九に飛車がいるので▲８八同金と取ることができる。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲中田宏１時間２５分、△井上１時間２６分。」 → ルール3
+- 「１５時を回ったが、中田宏はまだ考えている。」 → ルール1, 3
+
+手数41:
+
+削除理由:
+- 「１時間３７分の長考での着手。」 → ルール3
+
+手数43:
+桂頭をカバーしながら金銀を連結させる。
+
+削除理由:
+
+手数47:
+▲２三歩を利かして銀を呼び、当たりを強くしてから桂馬を跳ね違える。後手の２五の桂馬を目標にする指し回しだ。
+
+削除理由:
+
+手数49:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲中田宏３時間４分、△井上１時間４１分。」 → ルール3
+- 「１７時を回ったが、井上はまだ考えている。」 → ルール1, 3
+
+手数59:
+この手に対する対応は難しいようだ。（１）△７三同銀は▲４四角△同歩▲５三桂成。（２）△４五銀は▲１一角成。（３）△６六桂は▲同歩に飛車が逃げる一手で銀を取り返すことが出来る。いずれも先手がうまくやったのではないかと言われている。
+
+削除理由:
+- 「ここで井上が８分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は▲中田宏３時間３３分、△井上３時間１６分。」 → ルール3
+- 「夕食の注文は中田宏がにしんそばとおにぎり、井上はきつねうどん。」 → ルール1, 7
+
+手数73:
+ここで後手が投了した。△４二同玉には▲３三角成△５二玉▲５一金、△５二玉には▲５一金△４二玉▲３三角成以下の即詰みだ。
+
+削除理由:
+- 「井上の」 → ルール1
+- 「井上の再開後の着手はは全て一分以内だった。。」 → ルール1, 3
+- 「終了時刻は１９時１８分。」 → ルール3
+- 「消費時間は▲中田宏３時間４７分、△井上３時間１６分。」 → ルール3
+- 「勝った中田宏は５勝５敗、敗れた井上は４勝６敗となった。」 → ルール1, 4

@@ -1,0 +1,119 @@
+**Refining Game Commentary for Clarity**
+
+Okay, so I'm presented with the task of cleaning up some shogi game commentary. The user wants me to make it more digestible, and I'm going to do that by applying some specific rules.  Essentially, I'm going to focus on the essential game information.
+
+Here's the gist of it: I need to go through each comment and strategically remove certain pieces of information. The primary objective is to make the commentary laser-focused on the actual *game* itself.  It's about distilling the commentary down to its purest form.
+
+Specifically, I'll need to identify and eliminate anything that doesn't directly pertain to the players or the moves. That includes details about people not actively playing the game. This will ensure the commentary is easy to understand without any distractions.
+
+手数1:
+
+削除理由:
+- 「中村の今期成績は１７勝１３敗（０．５６７）」 → ルール4
+- 「第４０期新人王戦で準優勝」 → ルール4
+
+手数2:
+
+削除理由:
+- 「阪口の今期成績は１２勝１２敗（０．５００）」 → ルール4
+- 「現在３連勝中」 → ルール4
+
+手数6: 後手は得意のゴキゲン中飛車に構えた。
+
+削除理由:
+- 「阪口は」 → ルール1
+
+手数10:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲中村３分、△阪口２分。」 → ルール3
+- 「ここで中村が長考しているようだ。」 → ルール1, 3
+
+手数11:
+
+削除理由:
+- 「ここでこの手が成立するか、中村は１時間１０分考えた。」 → ルール1, 3
+
+手数14: ▲同歩は△８八角成▲同銀△３五角の王手飛車がある。
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲中村１時間１３分、△阪口５分。」 → ルール3
+
+手数17:
+
+削除理由:
+- 「ここで阪口は２６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲中村１時間１９分、△阪口４２分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「１３時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲中村１時間１９分、△阪口４７分。」 → ルール3
+
+手数22: 後手は決戦を決断した。
+
+削除理由:
+- 「３１分使って、」 → ルール3
+- 「阪口は」 → ルール1
+
+手数26: と金を作って、後手が良さそうに見えるが…。
+
+削除理由:
+- なし
+
+手数27: △２二飛ぶつけを消した手。
+
+削除理由:
+- なし
+
+手数28:
+
+削除理由:
+- 「１４時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲中村１時間５０分、△阪口１時間３３分。」 → ルール3
+
+手数29: 角金両取りになったが、４八の銀が当たっているので駒損にはならない。
+
+削除理由:
+- なし
+
+手数35: 角道を開けつつ、後手玉の頭を狙っている。
+
+削除理由:
+- なし
+
+手数39:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲中村２時間３３分、△阪口１時間４６分。」 → ルール3
+
+手数43: 遊び駒の活用。次に▲４五馬が味がいい。
+
+削除理由:
+- なし
+
+手数46: 一直線の攻め合い。だが、桂香が響きそうだ。
+
+削除理由:
+- なし
+
+手数51: 厳しい追撃。
+
+削除理由:
+- なし
+
+手数54: 王手馬取りをかけるが…。
+
+削除理由:
+- なし
+
+手数59: 後手は投了した。△４一金なら▲５三桂が厳しい。
+
+削除理由:
+- 「ここで阪口は投了した。」 → ルール1
+- 「消費時間は▲中村３時間２３分、△阪口１時間５７分。」 → ルール3
+- 「勝った中村は５勝４敗、阪口は４勝５敗となった。」 → ルール1, 4

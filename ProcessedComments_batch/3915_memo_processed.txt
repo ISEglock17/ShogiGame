@@ -1,0 +1,110 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I'm presented with a bunch of Shogi game data, specifically the commentary attached to each move. My job, it seems, is to refine these comments. I need to take the raw, often messy commentary and sculpt it into something useful for serious analysis.
+
+My goal is clear: I want to strip away all the fluff. That means the metadata, the introductions of players, the time checks...anything that doesn't directly contribute to understanding the board state or the reasoning behind a particular move has to go. Essentially, I'm aiming for concise, clear explanations of *why* a move was played, focusing on the immediate tactical and strategic considerations.
+
+The process itself is straightforward, conceptually at least. First, I need to apply a set of rules – my expertise should guide me here – to identify and remove all the extraneous information. Then, with the essential content remaining, it's about re-writing the comments to create a flowing, readable narrative. This isn't just a simple deletion; it's a re-construction to ensure clarity and coherence. 
+
+手数22:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3, 6
+- 「消費時間は松本９分、佐藤紳２６分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「△５四銀の局面で松本が１４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は松本５０分、佐藤紳１時間６分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数31:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3, 6
+- 「消費時間は松本１時間１２分、佐藤紳１時間６分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3, 6
+- 「消費時間は松本１時間３４分、佐藤紳２時間３２分。」 → ルール3
+
+手数36: △６五歩・△８五歩・▲７七銀となっていれば、通常の角換わりから発生する形だが、本局は微妙に違う。それがどう影響するのか。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3, 6
+- 「消費時間は松本２時間３９分、佐藤紳２時間４２分。」 → ルール3
+
+手数42: ジッと香を上がった。ここで先手が再び長考している。
+
+削除理由:
+- 「２８分の長考で」 → ルール3
+- 「松本」 → 置換ルール
+
+手数43:
+
+削除理由:
+- 「▲２六飛の局面で佐藤紳が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は松本３時間３１分、佐藤紳３時間３０分。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3, 6
+- 「消費時間は松本３時間４８分、佐藤紳３時間５６分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「２０時４５分ごろの局面。」 → ルール3, 6
+- 「消費時間は松本４時間１４分、佐藤紳４時間８分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3, 6
+- 「消費時間は松本４時間３９分、佐藤紳４時間３２分。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3, 6
+- 「残り時間は松本１時間２０分、佐藤紳１時間２５分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3, 6
+- 「残り時間は松本１時間２０分、佐藤紳１時間４分。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3, 6
+- 「残り時間は松本４７分、佐藤紳１時間。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「２３時の局面。」 → ルール3, 6
+- 「残り時間は松本４７分、佐藤紳３８分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「２３時３０分ごろの局面。」 → ルール3, 6
+- 「残り時間は松本４２分、佐藤紳１９分。」 → ルール3
+
+手数88: 後手玉は▲３二角成△同玉▲２三銀△４二玉▲５二金△３一玉で際どく詰まない。先手玉は受けなし。ここで先手の投了となった。
+
+削除理由:
+- 「松本」 → 置換ルール
+- 「終局時刻は２３時２９分。」 → ルール3
+- 「消費時間は松本５時間１９分、佐藤紳５時間４５分。」 → ルール3
+- 「勝った佐藤紳は６勝３敗、敗れた松本は４勝５敗となった。」 → ルール4

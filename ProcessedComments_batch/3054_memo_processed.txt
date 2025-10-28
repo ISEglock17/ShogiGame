@@ -1,0 +1,45 @@
+**Analyzing and Preparing Comments from a Shogi Match**
+
+Okay, so I've been given some Shogi match data and need to clean up the comments associated with each move. The rules are clear, and I'll work through them systematically.
+
+First, I see the initial comment: "手数27: 木下、１時間１分の長考。"  This is straightforward.  I'll parse it to extract the move number (27), the player (木下), and the time spent thinking (1 hour 1 minute).
+
+Next, I have a more detailed comment: "手数28: ここで昼食休憩。消費時間は木下１時間４８分、中尾１３分。昼食の注文は、木下は冷やしきつねそば大盛。中尾はなし。" This is a bit more involved. I need to break this down. Move number 28 indicates a lunch break. I need to extract the total time consumed for each player before the break (木下: 1 hour 48 minutes, 中尾: 13 minutes). I will also need to parse the food orders: 木下 ordered cold kitsune udon large, and 中尾 did not order anything.  I need to make sure I format this information consistently, so that it is useful for analysis.
+
+手数27:
+
+削除理由:
+- 「木下、」 → ルール1
+- 「１時間１分の長考」 → ルール3
+
+手数28:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は木下１時間４８分、中尾１３分。」 → ルール3, 1
+- 「昼食の注文は、木下は冷やしきつねそば大盛。中尾はなし。」 → ルール7, 1
+
+手数51: 先手は手裏剣をとばす。
+
+削除理由:
+- 「木下、」 → ルール1
+
+手数53:
+
+削除理由:
+- 「１４時半前の局面。」 → ルール3
+- 「消費時間は木下２時間２４分、中尾３２分。」 → ルール3, 1
+
+手数87:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は木下２時間５２分、中尾１時間２６分。」 → ルール3, 1
+
+手数96: まだ中盤戦のようだが、先手はここで駒を投じた。
+
+削除理由:
+- 「木下」 → ルール1
+- 「終了時刻は１６時９分。」 → ルール3
+- 「消費時間は木下２時間５９分、中尾１時間５０分。」 → ルール3, 1
+- 「勝った中尾、負けた木下は、ともに１勝１敗となった。」 → ルール4, 1

@@ -1,0 +1,127 @@
+**Cleaning Up Game Annotations**
+
+Okay, so I need to get this set of game annotations ready for my analysis. The user wants me to focus on the core strategic insights, the actual "meat" of the game. I understand.  Basically, I need to strip away all the extraneous noise – things like the game's metadata, introductions of the players, time controls, and the timestamps that are cluttering up the commentary.  My goal here is to leave behind only the valuable stuff: the nuanced commentary about the board state and the explanations of each move, expressed in a way that flows naturally.  I want a clean, streamlined set of annotations that are perfectly suited for my deeper dive into the strategic elements.  No fluff, just the good stuff.
+
+手数16: 相矢倉になった。
+
+削除理由:
+
+---
+手数21: 先手は積極的な指し回し。▲６六歩から▲６七金右が普通。
+
+削除理由:
+- 「佐藤紳は２６分考えて」 → ルール1, 3
+
+---
+手数22:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳３７分、大平３分。」 → ルール1, 3
+
+---
+手数23:
+
+削除理由:
+- 「２５分の考慮。」 → ルール3
+
+---
+手数26: 中央を重視した指し方。
+
+削除理由:
+
+---
+手数32:
+
+削除理由:
+- 「△７四歩の局面で佐藤紳が１５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐藤紳１時間３０分、大平２２分。」 → ルール1, 3
+
+---
+手数36:
+
+削除理由:
+- 「１４時１０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳１時間４２分、大平１時間。」 → ルール1, 3
+
+---
+手数39: 後手の動きに反発する。
+
+削除理由:
+- 「大平の」 → ルール1
+
+---
+手数41: 放っておくと、△５六銀とぶつけられる（▲同金に△７六飛▲６五銀△５八銀▲７九玉△７八飛成▲同玉△７八金が狙い）恐れがある。しっかり受けておく。
+
+削除理由:
+
+---
+手数44: ▲同歩△同飛▲７五歩に△５四飛と使うつもりだろうか。
+
+削除理由:
+
+---
+手数45:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳２時間４４分、大平１時間１６分。」 → ルール1, 3
+
+---
+手数47: △３四飛の筋を消しながら、飛車を働かせる。
+
+削除理由:
+
+---
+手数48: ▲同角は△同飛▲２八飛△４九角で好調。
+
+削除理由:
+
+---
+手数52:
+
+削除理由:
+- 「１６時４５分過ぎの局面。」 → ルール3
+- 「消費時間は佐藤紳３時間１７分、大平２時間７分。」 → ルール1, 3
+
+---
+手数54: 攻めをつなげようとする。このまま▲５六歩△４四銀となっては面白くない。
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳３時間４１分、大平２時間１６分。」 → ルール1, 3
+
+---
+手数58:
+
+削除理由:
+- 「△４九角の局面で佐藤紳が１９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐藤紳４時間２３分、大平２時間２４分。」 → ルール1, 3
+
+---
+手数61: ２筋の歩を切ってもらってカウンター。
+
+削除理由:
+
+---
+手数66: △同金は▲２二歩。
+
+削除理由:
+
+---
+手数71: 激しい駒の取り合い。
+
+削除理由:
+
+---
+手数74: 後手が勝ちそうと言われている。途中の△３一歩が好手だったようだ。
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は佐藤紳４時間５３分、大平２時間４８分。」 → ルール1, 3
+- 「大平が」 → ルール1
+
+---
+手数77: 手筋の早逃げ。
+
+削除理由:

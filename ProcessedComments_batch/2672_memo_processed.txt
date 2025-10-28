@@ -1,0 +1,166 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up these Shogi game commentaries.  The user wants me to go through the data, which seems to be rife with unnecessary information.  My goal is to distill each comment down to its essence, focusing on what's truly relevant for analyzing the game itself - the board state and the moves.  I need to strip away all the extraneous fluff.
+
+Essentially, I'll be going through the following process:
+
+1.  I'll scrutinize each comment against a set of rules, identifying and removing the irrelevant bits.  This seems to involve getting rid of information like names, ranks, affiliations of people who aren't playing the game.  Anything that doesn't directly relate to the analysis of the position or the move will have to go.
+
+2.  Once I've purged the comments of unnecessary information, I will need to make the remaining text grammatically correct.  I'll focus on smoothing out the language into natural-sounding sentences.
+
+3.  Finally, I'll output the refined comments in a specified format.  Each will be labeled with the move number, followed by the cleaned-up commentary and a reason for the deletions, for my own reference.  This should give the user a clean, focused dataset for their analysis.
+
+手数1:
+
+削除理由:
+- 「千日手によって佐藤和は先手番を手にした。」 → ルール2
+- 「有吉は持ち時間のリードを手にした。」 → ルール3
+- 「千日手局の流れはともかく、両者ともに言い分のある千日手成立となった。」 → ルール2
+
+手数2:
+
+削除理由:
+- 「記録用紙には、初手と２手目の通計消費時間欄に千日手局の消費時間が記入されている。」 → ルール3, 8
+- 「本局の場合は「２４３」と「１０２」。」 → ルール3, 8
+
+手数3:
+先手は、今度は中飛車。
+
+削除理由:
+- 「佐藤和」 → 置換ルール
+
+手数6:
+後手は間髪入れずに指し進める。
+
+削除理由:
+- 「有吉は４時間超の持ち時間があるのだが、」 → ルール3
+- 「有吉」 → 置換ルール
+
+手数21:
+
+削除理由:
+- 「この局面で有吉が７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤和４時間１７分、△有吉１時間５３分。」 → ルール3
+- 「有吉」 → 置換ルール
+- 「佐藤和」 → 置換ルール
+
+手数32:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤和４時間４７分、△有吉２時間１３分。」 → ルール3
+
+手数37:
+次に▲６五歩と突いて、△同銀に▲５三歩成の狙い。銀が６四から動けば飛車も捌きやすくなる。
+
+削除理由:
+
+手数38:
+三方にらみの角。これがあるなら▲６六歩は疑問だったか。
+
+削除理由:
+- 「八方にらみならぬ、」 → 文の整形
+- 「、の声も。」 → 文の整形
+
+手数43:
+△８七角成を防いだ。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤和５時間１７分、△有吉２時間３３分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤５時間４２分、△有吉３時間１４分。」 → ルール3
+
+手数72:
+対中飛車でよく現れる、手筋の叩き。▲同飛なら△８九龍がある。もし後手に角か銀があれば△６九銀（角）の割り打ちもある、厳しい手筋だ。
+
+削除理由:
+
+手数77:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「消費時間は▲佐藤５時間５１分、△有吉３時間３３分。」 → ルール3
+
+手数86:
+後手は△５七竜と入る狙いが楽しみ。
+
+削除理由:
+
+手数89:
+先手が勝っていそうだ。
+
+削除理由:
+- 「、と久保八段。」 → ルール1
+
+手数90:
+△５七竜を残すために、頑張った手。
+
+削除理由:
+- 「頑張った。」 → 文の整形
+
+手数92:
+さあ、逃げ込めるか？
+
+削除理由:
+
+手数93:
+▲３七金△同桂成▲同玉に△５七竜と入られると困るので▲５四歩と押さえたが、△４六歩が厳しいと言われている。
+
+削除理由:
+- 「佐藤はここで２分考え、一分将棋となった。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「力強い手つき。」 → 盤面に関係ない情報
+
+手数98:
+叩きつけるような迫力で成桂を打ちつけた。後手勝ちになったようだ。
+
+削除理由:
+
+手数100:
+先手玉への詰めろを消さないように、△５四玉▲４二と△４三歩が予想されていた。しかし冷静に局面を見返すと後手勝勢。
+
+削除理由:
+- 「検討陣からは悲鳴があがる。」 → ルール1
+
+手数102:
+後手玉に詰みはない。
+
+削除理由:
+- 「１秒未満の着手。」 → ルール3
+
+手数104:
+
+削除理由:
+- 「「すごい…」（久保八段）」 → ルール1
+- 「「強すぎる！」（橋本七段）」 → ルール1
+
+手数106:
+
+削除理由:
+- 「待ちきれない言わんばかりに、▲３四成桂が着手されているときにはもう手が伸びていた。」 → 盤面に関係ない情報
+
+手数110:
+先手玉は詰んでいる。
+
+削除理由:
+
+手数114:
+この局面で先手は投了した。投了図以下、▲３八玉に△３九飛▲４八玉△４七銀成まで先手玉は即詰み。
+
+削除理由:
+- 「佐藤和」 → 置換ルール
+- 「消費時間は佐藤和５時間５９分、△有吉３時間５９分。」 → ルール3
+- 「勝った有吉は６勝３敗、敗れた佐藤和は５勝４敗となった。」 → ルール4
+- 「有吉は、順位戦史上最年長での勝ち越しを決めた。」 → ルール4

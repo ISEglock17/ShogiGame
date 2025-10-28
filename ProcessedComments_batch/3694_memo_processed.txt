@@ -1,0 +1,135 @@
+**Structuring Shogi Commentary for Clarity**
+
+Okay, so I'm presented with this shogi commentary, and the goal is to refine it. The user wants the commentary cleaned up, stripped down to its essential elements. My understanding is that they want a concise, natural-flowing explanation of the game's progress, focusing only on the board state and the moves themselves. Essentially, eliminate any extraneous details and reformat for readability.
+
+My plan of attack is pretty straightforward:
+
+1.  **Iterate through each move.** I'll analyze the commentary chunk by chunk, focusing on each individual move. This is the cornerstone of the process.
+2.  I'll start by parsing the commentary, identify and remove all the unnecessary information, such as the initial data of the comments and the unnecessary information.
+3.  Rewrite each of the comments into natural-flowing, easy-to-read sentences, that only describe the moves and the state of the board.
+
+I see this as a matter of removing the noise and highlighting the signal. It's about presenting the core of the game in a clear and compelling way.
+
+手数5: 先手の作戦は三間飛車。
+
+削除理由:
+- 「石川の」 → ルール1
+
+手数18:
+
+削除理由:
+- 「ここまでの消費時間は石川１５分、脇１２分。」 → ルール3
+
+手数20: 後手は左美濃に組んだ。
+
+削除理由:
+- 「脇は」 → ルール1
+
+手数29:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は石川１時間２分、脇５３分。」 → ルール3
+- 「昼食の注文は、脇はすきやき丼。石川はなし。」 → ルール7
+
+手数30: 銀冠に組み替える。
+
+削除理由:
+- 
+
+手数35:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は石川１時間１７分、脇１時間３１分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は石川１時間５４分、脇１時間３７分。」 → ルール3
+
+手数40: じっと角にプレッシャーをかける。
+
+削除理由:
+- 「５６分考えて、」 → ルール3
+
+手数41: あらかじめ角を逃げながら、間接的に８四飛に狙いを定めた。
+
+削除理由:
+- 「ここまでの消費時間は石川２時間２０分、脇２時間３３分。」 → ルール3
+
+手数42: 角筋を通す。
+
+削除理由:
+- 「２１分で」 → ルール3
+
+手数43:
+
+削除理由:
+- 「この一手は４９分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「この一手は４４分。」 → ルール3
+- 「順位戦らしい、スローペースのまま夕食休憩に入った。」 → ルール7, 8
+- 「消費時間の通計は、石川３時間１８分、脇３時間３８分。」 → ルール3
+- 「夕食の注文は、脇は芝えびラーメン。石川はなし。」 → ルール7
+
+手数45: 駒がぶつかった。
+
+削除理由:
+- 「夕休後少しして、」 → ルール7
+
+手数52:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は石川３時間４１分、脇３時間４７分。」 → ルール3
+
+手数53: 敵陣深くに垂らす。後手は次の歩成を受ける手はない。
+
+削除理由:
+- 
+
+手数54: 反撃。
+
+削除理由:
+- 「４６分考えて」 → ルール3
+
+手数56: 歩の垂らし合いとなった。
+
+削除理由:
+- 「ここまでの消費時間は石川３時間４２分、脇４時間３３分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「２１時１５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は石川４時間４分、脇４時間４３分。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「２１時５０分頃の局面。」 → ルール3
+- 「消費時間は石川４時間２９分、脇４時間５３分。」 → ルール3
+
+手数72: 長い中盤戦が続いている。まだまだ難しい形勢のようだ。
+
+削除理由:
+- 「２２時４５分頃の局面。」 → ルール3
+- 「残り時間は石川１時間９分、脇３６分。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「２３時２０分頃の局面。」 → ルール3
+- 「残り時間は石川４２分、脇３０分。」 → ルール3
+
+手数83:
+
+削除理由:
+- 「終了時刻は２３時３５分。」 → ルール3
+- 「消費時間は石川５時間２５分、脇５時間４７分。」 → ルール3
+- 「勝った石川は１勝１敗、敗れた脇は２連敗となった。」 → ルール4

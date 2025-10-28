@@ -1,0 +1,43 @@
+**Processing Game Commentary for Strategic Analysis**
+
+Okay, so I'm presented with a collection of Shogi game commentary and my task is to refine it. My goal is clear: to strip away all the fluff and distill the essence of the discussion down to the bare bones of strategic insight. I need to get rid of anything that doesn't contribute directly to a clear understanding of the board state and the reasoning behind each move. That means I need to...
+
+1.  ...apply a set of rules, or a process, to identify and then eliminate all the unnecessary verbiage. I'm thinking things like acknowledgements of the commentator, any conversational asides, and perhaps even overly-detailed descriptions of the player's emotions, if it doesn't directly inform the analysis. The core of each comment should be about the board and moves.
+
+手数27:
+
+削除理由:
+- 「山本が１８分考えて昼食休憩に入った」 → ルール3, 7
+- 「ここまでの消費時間は▲西尾５３分、△山本１時間２分」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１４時半頃の局面」 → ルール3
+- 「ここまでの消費時間は▲西尾１時間３５分、△山本１時間４０分」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１時間１５分の長考」 → ルール3
+- 「１６時過ぎの局面」 → ルール3
+- 「ここまでの消費時間は▲西尾２時間５０分、△山本２時間８分」 → ルール3
+
+手数41: △１二飛には▲４四角成△同歩▲２四歩がある。
+
+削除理由:
+- 「１時間の長考」 → ルール3
+- 「ここで山本が３６分考え、夕食休憩に入った」 → ルール3, 7
+- 「ここまでの消費時間は▲西尾３時間５６分、△山本３時間３分」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２０時半頃の局面」 → ルール3
+- 「ここまでの消費時間は▲西尾４時間４０分、△山本３時間５３分」 → ルール3
+
+手数83:
+
+削除理由:
+- 「山本が１分考え、そのまま投了した」 → ルール3
+- 「消費時間は▲西尾５時間７分、△山本４時間４０分」 → ルール3

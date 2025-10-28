@@ -1,0 +1,58 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: to take these Shogi game comments and polish them according to a specific set of rules. I understand the goal is to make the commentary cleaner and more informative. It seems like the rules likely involve formatting conventions, perhaps standardized timestamps or clearer notation. I need to make sure I grasp the specifics of those rules before I dive in.
+
+First, I see the initial comment: "手数19: １１時の局面。 ここまでの消費時間は▲神崎２４分、△長沼１９分。"  Alright, I'll need to figure out what needs to be changed. Is the time format okay? The "手数" notation is clear, but are there preferred ways to represent the players or their time consumption? This needs further investigation in the rule set.
+
+Next, "手数25: 両者小刻みに時間を使いながら駒組みが進む。" This comment seems a bit vague and descriptive. Depending on the rules, I might need to clarify what "小刻みに" means and possibly provide more specific information about the board state. Maybe I'll need to rewrite it to convey the sense of building positions, or perhaps the rules call for removing these kinds of vague observations altogether.
+
+The third comment, "手数28: ここで▲神崎が２０分考えて昼食休憩に入った。 ここまでの消費時間は▲神崎１時間１５分、△長沼４４分。" This seems quite important, detailing a pause in the game. I need to make sure all the time information is consistent and formatted correctly, and also maybe make sure the comment explains the meaning of "昼食休憩" and format it so the information is obvious to the reader. 
+
+Overall, I need to ensure the final output is precise, professional, and follows the specified guidelines precisely, so the Shogi commentary is clear and valuable for the intended audience. I will need to use my knowledge of the game to fully appreciate the content and what is relevant in the commentaries.
+
+手数19:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎２４分、△長沼１９分。」 → ルール3, 1
+
+手数25: 駒組みが進む。
+
+削除理由:
+- 「両者小刻みに時間を使いながら」 → ルール3
+
+手数28:
+
+削除理由:
+- 「ここで▲神崎が２０分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲神崎１時間１５分、△長沼４４分。」 → ルール3, 1
+
+手数40:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎１時間４４分、△長沼１時間５３分。」 → ルール3, 1
+
+手数51:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎２時間５９分、△長沼２時間２３分。」 → ルール3, 1
+
+手数56:
+
+削除理由:
+- 「ここで▲神崎が１１分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲神崎３時間５０分、△長沼３時間７分。」 → ルール3, 1
+
+手数67:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎４時間３８分、△長沼３時間３２分。」 → ルール3, 1
+
+手数73: △同桂に▲２三飛成△同玉▲２四銀△３二玉▲３三歩成の寄せを狙っている。決まったか。
+
+削除理由:
+- 「２１時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎４時間５９分、△長沼４時間１１分。」 → ルール3, 1

@@ -1,0 +1,126 @@
+**My Approach to Refining Shogi Game Comments**
+
+Okay, so I understand the goal here is to clean up Shogi game comments. The user, probably another expert in the field like me, wants to streamline the data. They want to remove all the fluff, the unnecessary chatter, and just keep the good stuff: the analysis of the board position and the explanation of the moves themselves.
+
+My process will involve meticulously going through each comment associated with a move, and applying a set of rules – I imagine these rules will be quite specific and geared towards eliminating anything that isn't directly relevant to the actual game's progress or the strategic thinking behind the moves.  Essentially, I'm aiming to create a clean, coherent narrative of the game's evolution, free from distractions. It's about preserving the *essence* of the commentary, not just the words. This will make future analysis and research much smoother and more insightful.
+
+手数1:
+
+削除理由:
+- 「◆脇　謙二（わき　けんじ）八段◆」 → ルール1, 4
+- 「１９６０年８月１０日生まれ、大阪府大阪市出身。（故）高島一岐代九段門下。１９７９年、四段。２０００年、八段。棋士番号は１３８。」 → ルール1, 4
+- 「棋戦優勝は３回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆金井　恒太（かない　こうた）五段◆」 → ルール1, 4
+- 「１９８６年５月２５日生まれ、埼玉県上尾市出身。飯野健二七段門下。２００７年、四段。２０１０年、五段。棋士番号は２６５。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「脇の今年度成績は４勝７敗（０．３６４）」 → ルール4
+- 「通算成績は５９７勝５８７敗（０．５０４）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「金井の今年度成績は７勝７敗（０．５００）」 → ルール4
+- 「通算成績は１５４勝１０７敗（０．５９０）」 → ルール4
+
+手数15: 先手は横歩を取らず相掛かり模様に進めた。
+
+削除理由:
+- 「脇は」 → 置換ルール
+
+手数31: 相腰掛け銀に。
+
+削除理由:
+- 
+
+手数40: 早くも開戦した。
+
+削除理由:
+- 
+
+手数49: 角交換から再びじっくりした展開に。
+
+削除理由:
+- 「１１時過ぎ、▲２八飛までの消費時間は▲脇２１分、△金井１７分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「１２時１０分、この局面で金井が２９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲脇３３分、△金井１時間１２分。」 → ルール3
+
+手数54: 早くも開戦した。これはもう一気に激しくなりそうだ。
+
+削除理由:
+- 
+
+手数56: 手筋の垂らし。▲９七同桂は△９五香で手になりそう。▲９七同香は△９六歩▲同香△７四角で香取りが受からなくなる。
+
+削除理由:
+- 
+
+手数57: ９五歩を支えつつ、次に▲９七銀や▲９七香で歩を取ってしまう狙い。後手は９七の歩が生きているうちが勝負だ。
+
+削除理由:
+- 「１４時過ぎ、▲８六銀までの消費時間は▲脇１時間２０分、△金井１時間１２分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１５時過ぎ、△５五銀直までの消費時間は▲脇１時間２０分、△金井２時間７分。」 → ルール3
+- 「１６時を回った。脇が長考している。」 → ルール3
+
+手数62: 一見タダだが、▲５五同金に△４六角の両取りがある。
+
+削除理由:
+- 
+
+手数63: △２四同歩と取らせておけば、△４六角〜△３七角成に▲２四飛と幸便に走ることができる。
+
+削除理由:
+- 
+
+手数69:
+
+削除理由:
+- 「１７時過ぎ、▲２四飛までの消費時間は▲脇２時間４６分、△金井２時間５５分。」 → ルール3
+
+手数72: 銀取りに桂を打って、同時に先手の飛車の８筋への展開も防いでいる。
+
+削除理由:
+- 「１８時１０分、この局面で脇が５２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲脇３時間４７分、△金井３時間０分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数75:
+
+削除理由:
+- 「２０時過ぎ、▲７二銀までの消費時間は▲脇３時間５３分、△金井３時間４分。」 → ルール3
+
+手数78: 飛車は助からない。
+
+削除理由:
+- 
+
+手数79: 馬と刺し違える狙いだ。
+
+削除理由:
+- 
+
+手数82: 単純に飛車を下ろされて厳しい。これは先手がはっきり苦しくなったようだ。
+
+削除理由:
+- 
+
+手数90: ここで先手が投了を告げた。冷静に玉をかわされて、後手玉に厳しい攻めが続かない。先手玉は△８九飛成▲同玉△８七銀の厳しい寄せの狙いがあって、収拾がつかない形。
+
+削除理由:
+- 「脇が」 → 置換ルール
+- 「終局時刻は２１時２５分、消費時間は▲脇４時間９分、△金井４時間５７分。」 → ルール3
+- 「勝った金井は３勝２敗と白星先行、脇は１勝４敗に。」 → ルール4

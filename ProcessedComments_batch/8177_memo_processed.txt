@@ -1,0 +1,102 @@
+**Structuring Japanese Shogi Commentary**
+
+Okay, so I'm presented with a task: to clean up and organize shogi game commentary, likely from a Japanese source. The user wants the commentary to be presented in a specific, polished format. My process is pretty straightforward. I'm going to take the commentary, step-by-step, move-by-move.
+
+First, I read through the commentary for each individual move. Then, I need to identify any sections that match specific deletion rules, basically recognizing those parts that aren't necessary for the final, neat output. Following the rules, I'll remove those unnecessary parts. Finally, I'll replace any player's actual names with "Sente" (先手) for the first player and "Gote" (後手) for the second player, which is standard shogi notation. That'll keep the focus on the moves and the flow of the game, rather than the players themselves. It's a process of filtering and reformatting to get a streamlined, professional-looking commentary.
+
+手数1:
+
+削除理由:
+- 「◆田村　康介（たむら　こうすけ）七段◆」 → ルール1, 4
+- 「１９７６年３月１６日生まれ、富山県魚津市出身。」 → ルール4
+- 「大内延介九段門下。」 → ルール1, 4
+- 「１９９５年、四段。２０１３年、七段。」 → ルール4
+- 「棋士番号は２１７。」 → ルール4
+- 「２００３年、第３４回新人王戦で優勝。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆窪田　義行（くぼた　よしゆき）六段◆」 → ルール1, 4
+- 「１９７２年５月１８日生まれ、東京都足立区出身。」 → ルール4
+- 「（故）花村元司九段門下。」 → ルール1, 4
+- 「１９９４年、四段。２００７年、六段。」 → ルール4
+- 「棋士番号は２１０。」 → ルール4
+
+手数5: 先手は９筋の突き合いを入れてから、▲７五歩と石田流三間飛車を目指した。
+
+削除理由:
+- 「田村は」 → ルール1
+
+手数8: 後手も△３五歩〜△３二飛と石田流三間飛車に。相振り飛車で序盤から激しい変化をはらんだ戦型になった。
+
+削除理由:
+- 「窪田も」 → ルール1
+
+手数9:
+
+削除理由:
+- 「【田村の公式戦成績】」 → ルール4
+- 「通算＝４２０勝３００敗（０．５８３）」 → ルール4
+- 「昨年度＝２５勝１２敗（０．６７６）」 → ルール4
+- 「今年度＝１１勝１３敗（０．４５９）」 → ルール4
+
+手数10:
+
+削除理由:
+- 「【窪田の公式戦成績】」 → ルール4
+- 「通算＝３６４勝３４３敗（０．５１５）」 → ルール4
+- 「昨年度＝１４勝１８敗（０．４３８）」 → ルール4
+- 「今年度＝６勝１０敗（０．３７５）」 → ルール4
+
+手数13:
+
+削除理由:
+- 「田村の順位戦成績は１１５勝８２敗（０．５８４）。」 → ルール4
+- 「初参加は１９９６年度の第５５期。」 → ルール4
+- 「最高クラスはＢ級２組で、通算在位は５期。」 → ルール4
+
+手数14:
+
+削除理由:
+- 「窪田の順位戦成績は１１１勝１０６敗（０．５１２）。」 → ルール4
+- 「初参加は１９９４年度の第５３期。」 → ルール4
+- 「最高クラスはＢ級２組で、通算在位は７期。」 → ルール4
+
+手数20: 後手は飛車を３四に引く。飛車の横利きで先手からの▲７四歩を防いでいる。
+
+削除理由:
+
+手数23: 先手は▲４六歩〜▲４七金と高美濃に組む。後手の浮き飛車を金銀で圧迫するのが、先手が優勢になるための理想のひとつである。
+
+削除理由:
+
+手数30:
+
+削除理由:
+- 「１２時１０分、△１四歩の局面で田村が７分使って昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲田村５６分、△窪田１時間１分。」 → ルール3
+- 「昼食の注文は、田村が「カレーライス・ほそ島や」、窪田は注文なし。」 → ルール7
+- 「対局は１３時に再開される。」 → ルール3, 7
+- 「１３時となり、対局が再開された。」 → ルール3, 7
+
+手数39: 先手は４七の金を３六に上がった。後手の飛車を圧迫する力強い金上がりになりそうだ。後手は２五の歩取りをどう受けるのだろうか。
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「田村は」 → ルール1
+
+手数40:
+
+削除理由:
+- 「４０手目までの消費時間は、▲田村１時間２７分、△窪田２時間４６分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「５０手目までの消費時間は▲田村１時間３０分、△窪田３時間４５分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「６０手目までの消費時間は▲田村１時間３０分、△窪田３時間５１分。」 → ルール3

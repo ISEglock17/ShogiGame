@@ -1,0 +1,156 @@
+**Cleaning Up the Commentary: Streamlining Analysis**
+
+Okay, so I'm presented with this task: taking a bunch of commentary from shogi games and making it more useful. The goal is clear – I need to strip away all the fluff – the metadata, the introductions, the time stamps – and leave behind only the *meat* of the explanation: the insightful analysis of the board state and the individual moves. Think of it like a chef preparing a dish. You don't want the recipe to be bogged down with irrelevant details about the kitchen's setup, just the core instructions.
+
+The process is straightforward in principle. First, I'll need to define some clear rules, almost like a set of filters, to identify what absolutely needs to go. I'll need to develop a keen eye for what's relevant and what's extraneous to the actual *analysis* of the game.
+
+手数3: 相矢倉の出だし。
+
+削除理由:
+
+---
+手数15: 飛車先不突矢倉が多い。
+
+削除理由:
+- 「現代は」 → ルール2
+- 「矢倉といえば」 → 整形
+
+---
+手数20:
+
+削除理由:
+- 「ここまでの消費時間は泉１６分、野月５分。」 → ルール3, 1
+
+---
+手数21:
+
+削除理由:
+- 「野月はここで実に１時間２７分考え、そのまま昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間の通計は、泉２９分、野月１時間３２分。」 → ルール1, 3
+- 「昼食の注文は、両者ともになし。」 → ルール7
+
+---
+手数22:
+
+削除理由:
+- 「野月、昼食休憩をはさんで１時間４４分の長考。」 → ルール1, 3, 7
+
+---
+手数23: この銀の動きは。
+
+削除理由:
+
+---
+手数25: 先手はカニカニ銀でいく。
+
+削除理由:
+- 「泉は」 → ルール1
+
+---
+手数27: 猛攻開始か。
+
+削除理由:
+
+---
+手数31:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は泉５２分、野月２時間１０分。」 → ルール1, 3
+
+---
+手数35:
+
+削除理由:
+- 「野獣猛進流。」 → ルール5
+
+---
+手数37:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は泉１時間１６分。野月２時間４７分。」 → ルール1, 3
+
+---
+手数38: 手厚く入れる。
+
+削除理由:
+- 「５０分考えて、」 → ルール3
+
+---
+手数42:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまえの消費時間は泉１時間５４分、野月４時間２分。」 → ルール1, 3
+
+---
+手数44:
+
+削除理由:
+- 「泉がここで５５分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間の通計は、泉２時間５７分、野月４時間２分。」 → ルール1, 3
+- 「夕食の注文は、両者ともになし。」 → ルール7
+
+---
+手数47: これでもかと攻めつける先手。対して後手は考え続けている。
+
+削除理由:
+- 「１９時再開後、すぐにここまで進む。」 → ルール3, 7
+- 「泉」 → ルール1
+- 「野月は」 → ルール1
+- 「、２０時を過ぎた」 → ルール3
+
+---
+手数48:
+
+削除理由:
+- 「１時間５分考えた。」 → ルール3
+
+---
+手数50:
+
+削除理由:
+- 「２０時４５分頃の局面。」 → ルール3
+- 「残り時間は泉３時間２分、野月５３分。」 → ルール1, 3
+
+---
+手数51: 先手は金を取った。
+
+削除理由:
+- 「泉、５０分で」 → ルール1, 3
+
+---
+手数56:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「残り時間は泉２時間１分、野月４６分。」 → ルール1, 3
+
+---
+手数59:
+
+削除理由:
+- 「２２時１０分頃の局面。」 → ルール3
+- 「残り時間は泉１時間１４分、野月４６分。」 → ルール1, 3
+
+---
+手数60:
+
+削除理由:
+- 「野月は３７分を使って、残り９分。」 → ルール1, 3
+
+---
+手数62:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は泉１時間１４分、野月５分。」 → ルール1, 3
+
+---
+手数71:
+
+削除理由:
+- 「終了時刻は２３時３５分。」 → ルール3
+- 「消費時間は泉５時間１９分、野月５時間５９分。」 → ルール1, 3
+- 「勝った泉は３勝３敗、負けた野月は２勝４敗となった。」 → ルール1, 4

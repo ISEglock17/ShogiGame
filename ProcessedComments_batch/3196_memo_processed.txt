@@ -1,0 +1,96 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up these Shogi game commentary entries. The goal is to distill them down to their core essence, the actual analysis of the game state and moves, while stripping away all the fluff. I'm talking about things like the general introductions, the biographical tidbits about the players, any time-related details, and other meta-commentary that just clutters things up.
+
+My plan is straightforward: I'll use a set of defined rules to systematically remove all the unwanted information. Then, with the cleaned-up content as a base, I'll go through and ensure the remaining commentary reads smoothly and naturally. I want to end up with a set of concise and insightful analyses, fit for serious study or discussion.
+
+手数25: ここでは▲６八角の森下システム、▲３七銀の積極策もあるところ。
+
+削除理由:
+- 「ここまで両者ノータイム。」 → ルール3
+- 「ここで初めて中尾が１分使った。」 → ルール1, 3
+
+手数27: ▲３七銀は△３五歩▲同角△３六歩▲４六銀△４五歩となって失敗。一見苦しそうな端飛車だが、タイミングよく▲３八飛などと活用できるため、遊ぶことはない。
+
+削除理由:
+
+手数36: 後手は端を詰める。その分、手が遅れる可能性もある。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は中尾８分、松本２９分。」 → ルール1, 3
+- 「松本は」 → ルール1
+
+手数38:
+
+削除理由:
+- 「△７三角の局面で中尾が１５分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間はともに５９分。」 → ルール3
+
+手数45: 攻めの理想形。
+
+削除理由:
+
+手数46: 次に△６五歩と突けば、飛角が一気に働く。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は中尾５９分、松本１時間３２分。」 → ルール1, 3
+
+手数47:
+
+削除理由:
+- 「５１分の長考。」 → ルール3
+
+手数49: 角筋がそれたタイミングで仕掛ける。
+
+削除理由:
+
+手数50: 後手は攻め合いを狙う。
+
+削除理由:
+- 「松本は」 → ルール1
+
+手数53:
+
+削除理由:
+- 「１５時半の局面。」 → ルール3
+- 「消費時間は中尾２時間２１分、松本１時間５７分。」 → ルール1, 3
+
+手数55: △同銀▲同桂となれば、絶好調。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「１６時半の局面。」 → ルール3
+- 「消費時間は中尾２時間３４分、松本２時間４４分。」 → ルール1, 3
+
+手数61: 厳しい割り打ち。
+
+削除理由:
+
+手数66: △同金は▲４四歩△同金▲５三銀でつぶれる。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「消費時間は中尾３時間１５分、松本２時間５７分。」 → ルール1, 3
+
+手数78:
+
+削除理由:
+- 「△７八銀の局面で中尾が２０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中尾３時間４７分、松本３時間７分。」 → ルール1, 3
+
+手数105: 以下、△同玉▲５二飛成△４五玉▲４七飛△４六歩▲５五龍で詰む。後手の投了となった。
+
+削除理由:
+- 「松本の投了となった。」 → ルール1
+- 「終局時刻は１９時３３分。」 → ルール3
+- 「消費時間は中尾４時間１０分、松本３時間７分。」 → ルール1, 3
+- 「勝った中尾は３勝３敗、敗れた松本は１勝５敗となった。」 → ルール1, 4

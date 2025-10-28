@@ -1,0 +1,173 @@
+**Streamlining Commentary for Enhanced Game Analysis**
+
+Okay, so I understand the goal here: the user, like me, needs to clean up the commentary accompanying shogi game records. We're talking about taking those raw comments and transforming them into something lean, focused, and *useful* for analysis. Think of it as data purification – getting rid of the noise and amplifying the signal.
+
+My objective is crystal clear: to distill each comment down to its essence. I need to identify and strip away the irrelevant chatter – anything that doesn't directly contribute to understanding the board state or the reasoning behind a specific move. This involves a two-step process: first, applying the given rules meticulously to surgically remove the unwanted information, and then, crucially, rephrasing what remains into a concise and grammatically sound sentence. I want the final result to read naturally, as if I were *personally* explaining the move.
+
+The output needs to be structured in a way that makes it immediately digestible.  I'll start each line with "手数<N>:" followed by the cleaned-up comment.  And, for transparency (and to help me learn and refine the process), I'll include a "削除理由:" section, clearly stating the rationale behind any deletions. This is all about precision and clarity, creating a commentary that enhances, not hinders, the analytical process.
+
+手数1:
+
+削除理由:
+- 「阿久津の本年度の成績は９勝９敗／０．５００」 → ルール4
+- 「通算成績は３１３勝１６３敗／０．６５８」 → ルール4
+
+手数2:
+
+削除理由:
+- 「田中の本年度の成績は２勝９敗／０．１８２」 → ルール4
+- 「通算成績は７１９勝５７６敗／０．５５５」 → ルール4
+
+手数8:
+後手は得意の無理矢理矢倉。
+
+削除理由:
+- 「田中は」 → 置換ルール
+
+手数9:
+▲７八銀△８五歩▲７七銀と矢倉に構えるのもある。以下△２二銀▲５六歩△４二角▲７九角△３三銀が進展例。
+
+削除理由:
+- 「が進展例」 → ルール2
+
+手数15:
+先手は積極的に攻勢を狙う。
+
+削除理由:
+- 「阿久津は」 → 置換ルール
+
+手数16:
+
+削除理由:
+- 「１１時１０分ごろの局面。」 → ルール3
+- 「消費時間は阿久津４０分、田中１３分。」 → ルール3
+
+手数17:
+さわやかに歩を突っかけた。
+
+手数18:
+数で４四を受ける。
+
+手数23:
+
+削除理由:
+- 「▲７八銀の局面で田中が１５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は阿久津１時間２５分、田中３３分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数26:
+先手は慎重だ。どのタイミングで駒をぶつけていくか。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は阿久津２時間、田中４１分。」 → ルール3
+- 「田中はピシピシ指し手が早い。」 → ルール5
+- 「阿久津は」 → 置換ルール
+
+手数29:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は阿久津２時間５０分、田中１時間５分。」 → ルール3
+
+手数30:
+▲４七銀なら△５四銀で後手十分の形。
+
+手数34:
+美濃囲いが遠いため、△５七歩成▲４三歩成△４八と▲５三との攻め合いは後手無謀。
+
+手数38:
+先手陣は飽和点を迎えつつある。後手は△３一玉〜△７四歩〜△７三桂と指したい手は多い。第二弾の攻めを考えたいところだ。
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は阿久津３時間５分、田中１時間３８分。」 → ルール3
+- 「阿久津陣は」 → 置換ルール
+
+手数39:
+△５三銀打▲４四銀△同銀で千日手にはならない。△５三銀打に▲３七桂で▲４五桂が受からず、先手十分となる。
+
+手数40:
+よって取る。
+
+手数41:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は阿久津３時間３５分、田中１時間４６分。」 → ルール3
+
+手数45:
+△同金に▲５四歩△同金▲１一角成の狙い。
+
+削除理由:
+- 「ここで田中が２６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は阿久津３時間５１分、田中３時間４分。」 → ルール3
+- 「夕食の注文は、田中寅がとろろせいろそば大盛り（ほそ島や）。阿久津は注文なし。」 → ルール7
+
+手数47:
+次に▲５三桂不成の王手金取りがある。
+
+手数48:
+勝負手か。▲５三桂不成のほかに▲８六同角も有力のようだ。先手はジックリと読みを入れている。
+
+削除理由:
+- 「「勝負手ですね」の声。」 → ルール1
+- 「阿久津は」 → 置換ルール
+
+手数49:
+
+削除理由:
+- 「１時間の長考で指された。」 → ルール3
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「残り時間は阿久津５９分、田中２時間８分。」 → ルール3
+
+手数50:
+手裏剣をパシュッと放つ。▲同玉なら△４八角成▲同金△４五金から△６四桂が厳しくなる。
+
+手数51:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は阿久津３８分、田中１時間４１分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「２２時３０分ごろの局面。」 → ルール3
+- 「残り時間は阿久津３８分、田中１時間２４分。」 → ルール3
+- 「田中は考慮中に残り１時間を告げられた。」 → ルール3
+- 「「阿久津君がいいのだと思います」と片上六段。」 → ルール1
+
+手数56:
+長考の末に「大駒は近づけて受けよ」の手筋を出した。
+
+手数57:
+強く踏み込む。△８七銀成▲同銀△同飛成は▲４二銀で後手玉が詰む。
+
+削除理由:
+- 「田中は「そうかぁ」とつぶやきながら考えていた。」 → ルール1, 3
+
+手数58:
+
+削除理由:
+- 「２３時１０分ごろの局面。」 → ルール3
+- 「残り時間は阿久津３６分、田中２６分。」 → ルール3
+
+手数59:
+軽手。▲４二銀の詰めろ。△７二同飛は、飛車が攻めに使えなくなるだけでなく、▲６三角が王手飛車になる。
+
+手数60:
+後手は「玉の早逃げ、八手の得あり」で頑張る。
+
+削除理由:
+- 「田中は」 → 置換ルール
+
+手数61:
+今度は先手が「玉の腹に銀を打て」の応用で、玉の横に角を突きつけた。△同玉は▲４二銀で詰み。放っておくのも▲４三成桂で詰み。後手は受けが難しい。後手玉は受けが難しく、先手玉は△７八銀成▲同金△８九飛▲６八玉で詰みはない。
+
+削除理由:
+- 「阿久津が」 → 置換ルール
+- 「田中はここで６分使って投了を告げた。」 → ルール3, 7
+- 「終局時刻は２３時２５分。」 → ルール3
+- 「消費時間は阿久津５時間３０分、田中５時間４３分。」 → ルール3
+- 「勝った阿久津は４勝１敗、敗れた田中は１勝４敗となった。」 → ルール4

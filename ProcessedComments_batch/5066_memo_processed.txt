@@ -1,0 +1,153 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with a fascinating challenge: a dataset of Shogi game commentary that needs some serious cleaning up.  The user is looking for a refined, professional presentation of the analysis, and that's right up my alley.  My task is to take these raw comments, which probably contain a lot of extraneous information, and transform them into clear, concise, and natural explanations of the game's progress, focusing specifically on the board positions and key moves.
+
+My approach will be methodical.  I'll need to dissect the commentary on a move-by-move basis. The initial step, I figure, will be to parse each comment and identify the essential elements – the core insights about the position and the specific move that's being discussed. The specified rules are crucial here; they'll guide me in determining what's "unnecessary" and what needs to be preserved. My experience tells me that finding and interpreting the relevant portions will be key. From there, I'll stitch these essential pieces together, constructing well-formed sentences that flow smoothly and effectively convey the nuances of the strategic development. This will be a great exercise in NLP and a chance to truly create value from complex game data.
+
+手数1:
+
+削除理由:
+- 「松本佳介六段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｍａｔｕｍｏｔｏ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「中村太地四段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｍｕｒａ―ｔ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「松本の今年度成績は１０勝９敗（勝率０．５２６）」 → ルール4
+- 「通算成績は２５２勝２３０敗（勝率０．５２３）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「中村の今年度成績は１９勝１３敗（勝率０．５９４）」 → ルール4
+- 「通算成績は９９勝７２敗（勝率０．５７９）」 → ルール4
+
+手数8: 一手損角換わりに進んでいる。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本１０分、△中村２６分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「この局面で中村が２２分使って昼食休憩に入った。」 → ルール3, 7
+- 「対局は１３時に再開する。」 → ルール3, 7
+- 「ここまでの消費時間は▲松本２３分、△中村１時間３１分。」 → ルール3
+
+手数36: △４四歩と突けば、同型角換わりの△８五歩が△８四歩に代わった局面で、その局面も後手悪くないと言われている。後手はあえてその局面は避けて来た。この形で深い研究を用意しているのだろう。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本２６分、△中村１時間３３分。」 → ルール3
+- 「消費時間に１時間以上の差がついているが、長考派の中村はこれがいつものペース。」 → ルール3, 5
+
+手数37:
+
+削除理由:
+- 「１４時５０分頃の局面。」 → ルール3
+- 「松本はこの手に５７分の長考。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１５時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本１時間４０分、△２時間４３分。」 → ルール3
+
+手数44: 少し無理気味ではないかと見られていた攻め筋。
+
+削除理由:
+- 「中継室の評判では」 → ルール1, 6
+
+手数49:
+
+削除理由:
+- 「１６時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本２時間２６分、△中村２時間４５分。」 → ルール3
+- 「中村の考慮中に時刻は１７時半を回った。」 → ルール3
+
+手数50: 銀をこちらに出るのでは、ややそっぽで感触が悪いと言われている。
+
+削除理由:
+- 「この局面で松本が３１分使って夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲松本２時間５７分、△中村３時間５８分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール3, 7
+- 「控室では、」 → ルール1, 6
+
+手数56:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本３時間９分、△中村４時間１３分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「２０時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本３時間４８分、△中村４時間３７分。」 → ルール3
+
+手数71: 先手の攻めが筋に入ってきている。
+
+削除理由:
+- 「２１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松本４時間７分、△４時間５９分。」 → ルール3
+
+手数72: 先手は決めに行っているが、そう簡単ではなさそうと言われている。▲６四歩が一目だが、そこで手抜きで△８六歩などが検討されている。
+
+削除理由:
+- 「２１時５０分頃の局面。」 → ルール3
+- 「控室では、」 → ルール1, 6
+
+手数74: 後手は最強の応手。▲７三角の両取りを掛けさせている間に先手玉を寄せる狙い。
+
+削除理由:
+- 「中村は」 → ルール1
+
+手数76:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は▲松本５１分、△中村３８分。」 → ルール3
+
+手数77: この局面は容易に結論が出ない。
+
+削除理由:
+- 「２３時２５分頃の局面。」 → ルール3
+- 「残り時間は▲松本１９分、△中村３８分。」 → ルール3
+- 「を控室で検討しているが」 → ルール1, 6
+
+手数81: 凄い攻防だ。勝敗の行方はいまだ見えていない。
+
+削除理由:
+- 「と控室で歓声があがっている。」 → ルール1, 6
+
+手数87: これは５七の成銀を抜きに行っている。
+
+削除理由:
+
+手数112: 後手玉が詰んでいると言われている。
+
+削除理由:
+- 「控室では」 → ルール1, 6
+
+手数122: ▲７五金がピッタリの手。
+
+削除理由:
+
+手数131: この手で後手が投了した。投了図から△８三玉▲７四金△同玉▲６四馬以下の詰み。
+
+削除理由:
+- 「を見て中村が投了を告げた」 → ルール1
+- 「終局時刻は０時４９分。」 → ルール3
+- 「消費時間は両者５時間５９分の大熱戦だった。」 → ルール3
+- 「勝った松本は６勝２敗、敗れた中村は４勝４敗となっている。」 → ルール4

@@ -1,0 +1,134 @@
+**Focusing the Analysis: Streamlining Game Commentaries**
+
+Okay, so I'm presented with a task, and it's a familiar one: a user, likely a fellow expert in the world of Shogi, wants to clean up the commentary data they've got. The goal is clear, and it's something I've grappled with many times in my own analysis.  We need to distill the essence of the game.
+
+What they've got, I imagine, is a mountain of information—the raw material of a brilliant match. But it's cluttered with the usual suspects: the opening formalities, player introductions that quickly become irrelevant, and the ever-present time stamps that tell a story of the clock, but not necessarily of the strategy. It's all extraneous noise when we're trying to extract strategic insights.
+
+So, here's the real challenge: to strip away the fluff. To be left with the core – the descriptions of the board state, the explanations of moves, the *why* behind each decision. To create a narrative that flows naturally, a commentary that illuminates the thinking behind the moves, not the process of recording them. That's the key to making the data useful for deeper analysis and strategic learning.
+
+手数10: 後手は角道を止めない四間飛車を採用。
+
+削除理由:
+- 「神谷は」 → ルール1
+- 「鈴木大介八段の著書に「ダイレクト四間飛車」として紹介されている形。」 → ルール1, 2
+
+手数11: ▲２四歩は△同歩▲同飛△８八角成▲同銀△２二飛の反撃がある。この△２二飛とぶつける筋は「升田式石田流」の応用といえる。
+
+削除理由:
+- 「現代にも升田将棋が生きている一例といえる。」 → ルール1, 2
+
+手数12:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は中田６分、神谷８分。」 → ルール1, 3
+
+手数15: 先手が角を交換しなければ、後手は△３二銀や△２二飛と指すことになる。
+
+削除理由:
+
+手数16:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は中田３６分、神谷１９分。」 → ルール1, 3
+
+手数19:
+
+削除理由:
+- 「▲３六歩の局面で神谷が２０分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中田１時間１６分、神谷４２分。」 → ルール1, 3
+- 「昼食の注文は神谷が五目焼きそば、中田は注文なし。」 → ルール1, 7
+
+手数21: この自陣角の筋は、△４四歩と突きにくいため後手は桂頭攻めが受けにくいだろうという主張。
+
+削除理由:
+- 「１４時過ぎ、消費時間は中田１時間２２分、神谷４３分。」 → ルール1, 3
+- 「堀口弘治七段が最初に指した。」 → ルール1, 2
+
+手数22: まずは角筋を避ける。
+
+削除理由:
+
+手数23: 積極的に銀を繰り出していく。好機に▲３五歩△同歩▲同銀がある。
+
+削除理由:
+
+手数25: 攻める前に陣形を固める。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は中田２時間２９分、神谷１時間４４分。」 → ルール1, 3
+
+手数26: △３九角は▲３八飛△８四角成▲３五歩と３筋を攻められてかえってお手伝いとなってしまう。
+
+削除理由:
+
+手数32: 駒を中央へ活用する。
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は中田２時間５５分、神谷２時間２１分。」 → ルール1, 3
+
+手数35: ▲同角は△２七角から△５四角成が嫌らしい。
+
+削除理由:
+
+手数36:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は中田３時間１７分、神谷２時間５２分。」 → ルール1, 3
+
+手数37: 後手の歩切れを見越す。
+
+削除理由:
+- 「ここで神谷が２０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中田３時間４７分、神谷３時間１２分。」 → ルール1, 3
+
+手数48:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は中田３時間５１分、神谷４時間３分。」 → ルール1, 3
+
+手数57: 先手が優勢という評判だ。飛と金桂の２枚換えの上に１九香が４五にいる計算で、３枚換えに近い。▲３四龍〜▲４四龍が好手順だったようだ。
+
+削除理由:
+
+手数61: ２九桂がここまでさばけると気分がいい。
+
+削除理由:
+
+手数62:
+
+削除理由:
+- 「２１時前の局面。」 → ルール3
+- 「消費時間は中田４時間１８分、神谷４時間１９分。」 → ルール1, 3
+
+手数65: 平凡にしがみつく。▲６三成桂が厳しすぎる。
+
+削除理由:
+
+手数66: 後手は馬を活用し、粘り強く指している。
+
+削除理由:
+- 「神谷は」 → ルール1
+
+手数67:
+
+削除理由:
+- 「２１時５０分ごろの局面。」 → ルール3
+- 「残り時間は中田５３分、神谷１時間２８分。」 → ルール1, 3
+
+手数69: 激辛流の受け。
+
+削除理由:
+
+手数73: 後手は攻防ともに見込みなしと判断し、投了となった。
+
+削除理由:
+- 「ここで神谷の投了となった。」 → ルール1
+- 「終局時刻は２２時３１分。」 → ルール3
+- 「消費時間は中田５時間９分、神谷５時間１３分。」 → ルール1, 3
+- 「勝った中田は１勝０敗、敗れた神谷は０勝１敗となった。」 → ルール1, 4

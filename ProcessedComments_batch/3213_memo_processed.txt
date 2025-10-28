@@ -1,0 +1,151 @@
+**Streamlining Commentary for My Shogi Analysis**
+
+Alright, let's get down to it. I'm tasked with cleaning up the comments in this shogi game data, and I've got a pretty good grasp on how to approach this. It's essentially a multi-step process.
+
+First, I'll be meticulously going through each comment, one by one. I'll need to pay close attention to the specific rules laid out. Then, comes the real work: identifying the parts of each comment that need to be removed based on those rules. Once that's done, I'll carefully refine the remaining text, smoothing it out and making sure it flows naturally as a sentence.
+
+Finally, there's a quick but essential step. I'll be replacing the specific player names – I'll swap them with the generalized terms "Sente" and "Gote." This way, the focus remains on the game itself, not the individuals involved. Should be a pretty straightforward task.
+
+手数25: がっちりと穴熊に潜った。
+
+削除理由:
+
+
+---
+手数30:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上２１分、△矢倉４４分。」 → ルール3, 4
+
+---
+手数32:
+
+削除理由:
+- 「この局面で川上が２３分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲川上５３分、△矢倉１時間４分。」 → ルール3, 4
+
+---
+手数36:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲川上５６分、△矢倉１時間３６分。」 → ルール3, 4
+
+---
+手数43:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上２時間６分、△矢倉２時間０分。」 → ルール3, 4
+
+---
+手数46: 次に△３六歩と突いて一気に捌く順を狙っている。
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は▲川上２時間１６分、△矢倉２時間５８分。」 → ルール3, 4
+
+---
+手数47:
+
+削除理由:
+- 「この局面で矢倉が５１分の長考に沈み、そのまま夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲川上３時間１１分、△矢倉３時間４９分。」 → ルール3, 4
+
+---
+手数53:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上３時間５２分、△矢倉４時間６分。」 → ルール3, 4
+
+---
+手数59:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上４時間１０分、△矢倉４時間４２分。」 → ルール3, 4
+
+---
+手数70:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上４時間２５分、△矢倉５時間１８分。」 → ルール3, 4
+
+---
+手数92:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲川上４時間５５分、△矢倉５時間３７分。」 → ルール3, 4
+
+---
+手数106:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「消費時間は▲川上５時間１２分、△矢倉５時間４３分。」 → ルール3, 4
+
+---
+手数124: 馬の利きを遮断。「好手」と評判がいい。
+
+削除理由:
+
+
+---
+手数126: 外堀は堅いので、端も絡めた。
+
+削除理由:
+
+
+---
+手数131: 再度△８五桂と打たれないように、そして後手玉の脅威にもなる香打ち。
+
+削除理由:
+
+
+---
+手数134:
+
+削除理由:
+- 「０時２０分ごろの局面。」 → ルール3
+- 「残り時間は川上１８分、矢倉１５分。」 → ルール3, 4
+
+---
+手数140: ▲７七同金は△７九竜、▲７七同桂は△９七香成で受けが難しい。
+
+削除理由:
+- 「この手を見た検討陣から「うおおおおおっ」という驚きの声が上がった。」 → ルール1
+
+---
+手数144: 後手は角を取られるような展開にしてはいけない。
+
+削除理由:
+
+
+---
+手数156: 自玉を緩和しながら、△８五桂打を狙っている。
+
+削除理由:
+
+
+---
+手数157:
+
+削除理由:
+- 「川上はここで一分将棋に入った。」 → ルール3, 4
+
+---
+手数170:
+
+削除理由:
+- 「ここから矢倉も一分将棋。」 → ルール1, 3
+
+---
+手数174:
+
+削除理由:
+- 「１時２０分ごろの局面。」 → ルール3
+- 「既に両者一分将棋。」 → ルール3

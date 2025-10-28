@@ -1,0 +1,143 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I'm being asked to clean up and format some Shogi game commentary. The goal is to provide a concise, expert-level summary, focusing only on the crucial elements - the board state and the move explanations. Basically, I need to strip away all the extraneous chatter that a seasoned player wouldn't need.
+
+My process will be straightforward: I'll analyze the comments step-by-step, meticulously going through each move. I'll flag any parts that fall under the "delete" category based on the provided rules. Once I've identified the unnecessary segments, I'll excise them, leaving behind only the core analysis. From there, I'll make sure the remaining commentary reads smoothly and naturally.
+
+Finally, I'll anonymize the players, replacing their names with "Black" and "White".  The output needs to be structured in a specific way, detailing the move number, the refined commentary, and the reasons for removing any parts of the original comment.  I'm confident I can make this work well for those who know the game.
+
+手数6: 後手得意のゴキゲン中飛車。
+
+削除理由:
+- 「佐藤和」 → ルール1
+
+手数11: 先手は丸山ワクチンで対抗。
+
+削除理由:
+- 「及川」 → ルール1
+- 「丸山」 → ルール1
+
+手数17: 右の金銀を動かさないのが工夫だろう。
+
+削除理由:
+- 削除対象なし
+
+手数18:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は及川４分、佐藤和５４分。」 → ルール3, 1
+
+手数22:
+
+削除理由:
+- 「△４四銀の局面で及川が１４分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は及川３４分、佐藤和１時間２３分。」 → ルール1, 3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数24: ４６分の長考で繰り出す。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は及川５４分、佐藤和２時間９分。」 → ルール1, 3
+
+手数26: △６六銀は▲８八角△３三角▲５六銀のように６六銀を狙われてしまう。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は及川１時間３４分、佐藤和２時間３７分。」 → ルール1, 3
+
+手数40:
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は及川２時間１４分、佐藤和３時間９分。」 → ルール1, 3
+
+手数46: ▲５四飛に△６七角成を用意している。このような変化のときに、金が浮いているのがマイナスになっている。
+
+削除理由:
+- 削除対象なし
+
+手数47:
+
+削除理由:
+- 「佐藤和がここで１６分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は及川２時間４８分、佐藤和４時間２分。」 → ルール1, 3
+
+手数55:
+
+削除理由:
+- 「２０時１５分ごろの局面。」 → ルール3
+- 「消費時間は及川３時間４６分、佐藤和４時間１３分。」 → ルール1, 3
+
+手数64: 後手良しといわれている。
+
+削除理由:
+- 削除対象なし
+
+手数66:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は及川３時間５５分、佐藤和４時間４５分。」 → ルール1, 3
+
+手数70: 厳しい攻めが続く。後手が順調に進めているようだ。
+
+削除理由:
+- 「佐藤和」 → ルール1
+
+手数73:
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は及川１時間２９分、佐藤和１時間１０分。」 → ルール1, 3
+
+手数76: ヒタヒタ成り駒で迫っていく。
+
+削除理由:
+- 削除対象なし
+
+手数77: 先手は１八角を軸に攻めるしかない。
+
+削除理由:
+- 「及川」 → ルール1
+
+手数78: １八角の利きを止める。５一飛は受け駒として使うつもりだ。
+
+削除理由:
+- 削除対象なし
+
+手数81: ５八とを狙いながら、▲５四角から２枚角の攻めを狙っている。形勢は先手が不利といわれている。
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は及川１時間２２分、佐藤和５１分。」 → ルール1, 3
+
+手数97:
+
+削除理由:
+- 「２３時１０分ごろの局面。」 → ルール3
+- 「残り時間は及川１時間２分、佐藤和２５分。」 → ルール1, 3
+
+手数98: ▲６三歩が見えているだけに強い手だ。
+
+削除理由:
+- 削除対象なし
+
+手数99: 当然打ってくる。
+
+削除理由:
+- 削除対象なし
+
+手数100: 後手玉が詰まなければ後手勝ち。
+
+削除理由:
+- 削除対象なし
+
+手数104: 後手玉は詰みがないようだ。先手玉は受けなし。
+
+削除理由:
+- 「ここで及川の投了となった。」 → ルール1
+- 「終局時刻は２３時２７分。」 → ルール3
+- 「消費時間は及川５時間４分、佐藤和５時間４４分。」 → ルール1, 3
+- 「勝った佐藤和は４勝１敗、敗れた及川は３勝２敗となった。」 → ルール1, 4

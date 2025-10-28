@@ -1,0 +1,217 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so I'm presented with this task: a user wants me to clean up and format some Shogi game commentary.  My job is to take this raw text and make it presentable, more streamlined, and focused on the core game analysis.
+
+I understand the core principle: the user wants to remove any extraneous information that isn't directly related to the current move and the immediate tactical situation. Specifically, this means stripping out any biographical details about the players that aren't *directly* relevant to the move being discussed.  Titles, ranks, affiliations, any background information about their students or training – gone. The user is clearly interested in the game itself, not the players' resumes.
+
+Also, I need to excise any historical context or references to previous games. This is about the *now*, the current board state, and the tactical considerations of this particular move.  Anything that alludes to past events or prior match results will be removed.  I'm focusing on the *immediate*, and that's the only thing that matters.
+
+I'm ready to dig in and apply these rules methodically. Let's get this commentary refined!
+
+手数12: 早々と端を突き越す。
+
+削除理由:
+- 削除対象なし
+
+---
+手数14:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は富岡１１分、小林健２６分。」 → ルール1, 3
+
+---
+手数24: △８八角は▲７七角△同角成▲同銀で無効。
+
+削除理由:
+- 削除対象なし
+
+---
+手数25:
+
+削除理由:
+- 「▲６六歩の局面で小林健が１９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は富岡１時間９分、小林健５１分。」 → ルール1, 3
+
+---
+手数27: 力を込めて指された。
+
+削除理由:
+- 削除対象なし
+
+---
+手数30: 後手はどのような駒組みを見せるだろうか。
+
+削除理由:
+- 「小林健」 → ルール1
+
+---
+手数31: 先手は左美濃。このままで戦うか、▲７七銀〜▲７八金と矢倉に組み替えるか。
+
+削除理由:
+- 「富岡」 → ルール1
+
+---
+手数32: 後手は玉を動かさずに駒組みを進める。右玉の可能性もある。
+
+削除理由:
+- 「小林」 → ルール1
+
+---
+手数36:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は富岡１時間５１分、小林５４分。」 → ルール1, 3
+
+---
+手数37: 先手は速攻含みに桂を跳ねた。
+
+削除理由:
+- 「富岡」 → ルール1
+
+---
+手数40: ▲４五歩の仕掛けが見えているが、堂々と飛車を引いた。
+
+削除理由:
+- 削除対象なし
+
+---
+手数41: ３八で歩を空打ちして勢いをつけてから▲４五歩が着手された。
+
+削除理由:
+- 削除対象なし
+
+---
+手数42:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は富岡２時間２９分、小林健１時間。」 → ルール1, 3
+
+---
+手数45: 金をソッポに行かせる手筋。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「消費時間は富岡３時間５３分、小林健１時間。」 → ルール1, 3
+
+---
+手数48: 戦いが始まっており、△４二玉などとしている場合ではない。
+
+削除理由:
+- 削除対象なし
+
+---
+手数50: 攻防の角打ち。
+
+削除理由:
+- 削除対象なし
+
+---
+手数55: 先手は桂損なので、ガンガンいきたいところ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数58:
+
+削除理由:
+- 「１７時２０分の局面。」 → ルール3
+- 「消費時間は富岡４時間２６分、小林健１時間２０分。」 → ルール1, 3
+
+---
+手数61: 遠見の角で攻めを続ける。
+
+削除理由:
+- 削除対象なし
+
+---
+手数67:
+
+削除理由:
+- 「▲３五角の局面で小林健が１１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は富岡５時間２分、小林健１時間４７分。」 → ルール1, 3
+
+---
+手数68: 手厚い銀打ち。
+
+削除理由:
+- 削除対象なし
+
+---
+手数70: この金の活用が間に合ったのは大きい。
+
+削除理由:
+- 削除対象なし
+
+---
+手数72: 角取りを催促。
+
+削除理由:
+- 削除対象なし
+
+---
+手数74: これで銀桂と角の二枚換え。
+
+削除理由:
+- 削除対象なし
+
+---
+手数77: 力強く金を繰り出して戦力を増強する。
+
+削除理由:
+- 削除対象なし
+
+---
+手数78: 待望の反撃。
+
+削除理由:
+- 削除対象なし
+
+---
+手数83: 後手の玉頭を狙う。２六角も活動範囲が広くなった。
+
+削除理由:
+- 削除対象なし
+
+---
+手数86: 端を集中的に狙う。
+
+削除理由:
+- 削除対象なし
+
+---
+手数88:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は富岡５時間３６分、小林健２時間４分。」 → ルール1, 3
+
+---
+手数91:
+
+削除理由:
+- 「富岡、残り２０分。」 → ルール1, 3
+
+---
+手数96: 挟撃を狙う。
+
+削除理由:
+- 削除対象なし
+
+---
+手数102: 角を捕獲して好調。
+
+削除理由:
+- 削除対象なし
+
+---
+手数114: ここで先手の投了。▲同金△同銀は△５六金以下の詰めろになる。しかし、玉が逃げる場所もない。
+
+削除理由:
+- 「富岡」 → ルール1
+- 「終局時刻は２０時５０分。」 → ルール3
+- 「消費時間は富岡５時間５９分、小林健２時間１８分。」 → ルール1, 3
+- 「勝った小林健は４勝３敗、敗れた富岡は３勝４敗となった。」 → ルール1, 4

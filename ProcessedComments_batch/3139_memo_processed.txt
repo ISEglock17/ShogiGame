@@ -1,0 +1,81 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the challenge is clear: I'm dealing with Shogi game data, specifically the comments attached to the moves. My goal here is to refine those comments, to surgically remove all the unnecessary fluff – the meta details, player introductions, time stamps, you know the drill – and retain only the pure, insightful analysis of the board position and the actual moves made. Essentially, I need to sculpt the existing commentary into a streamlined narrative that's laser-focused on the strategic depth of the game. It's about distilling the essence of the analysis for efficient consumption and deeper understanding.
+
+手数26:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は島本２７分、中尾１０分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「ここで島本が２１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は島本１時間１４分、中尾４０分。」 → ルール3, 4
+
+手数54: ▲２四歩△同歩に▲２五歩や▲２三歩の攻めが考えられる。後手も金が出てきたので豊富な歩の持ち駒を活かしてうまく攻めたいところ。
+
+削除理由:
+- 「１４時４０分を過ぎた。」 → ルール3
+- 「消費時間は島本１時間３７分、中尾１時間５分。」 → ルール3, 4
+
+手数57: △同歩なら▲同飛が王手金取り。
+
+削除理由:
+
+手数61: △７七歩成で銀損になるが、▲２三銀からの猛ラッシュに期待する。
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は島本２時間５２分、中尾１時間３８分。」 → ルール3, 4
+
+手数62: ▲同飛なら飛車の横利きがなくなるので自陣が弱くなる。
+
+削除理由:
+
+手数64: 勝敗を左右しそうな重大な局面を迎えている。
+
+削除理由:
+- 「１７時２０分を過ぎた。」 → ルール3
+- 「消費時間は島本２時間３５分、中尾３時間８分。」 → ルール3, 4
+- 「考慮時間を見ても、６０手目以降▲２四歩（１６分）△２七歩（３０分）▲同飛（１６分）△２六歩（２７分）と慎重に指していることがわかる。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「この局面で中尾が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は島本３時間５２分、中尾２時間５９分。」 → ルール3, 4
+
+手数82: △同飛は▲同銀不成△同玉▲２三飛成で寄り形になる。▲２三飛成はなんとしても阻止したい。
+
+削除理由:
+
+手数83:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「消費時間は島本４時間１７分、中尾３時間４１分。」 → ルール3, 4
+
+手数91:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+
+手数96:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「消費時間は島本４時間５２分、中尾４時間５６分。」 → ルール3, 4
+
+手数105:
+
+削除理由:
+- 「２３時１５分の局面。」 → ルール3
+- 「消費時間は島本５時間２３分、中尾５時間１３分。」 → ルール3, 4
+
+手数120: ここで先手の投了となった。以下▲同玉△８八歩▲同金△７九飛▲同玉△６八銀▲７八玉△６九銀打▲８九玉△８八桂成▲同玉△７九角▲９八玉△８八金までの詰みとなる。
+
+削除理由:
+- 「消費時間は島本５時間３９分、中尾５時間５４分。」 → ルール3, 4
+- 「勝った中尾は２勝３敗、敗れた島本は１勝４敗となった。」 → ルール4

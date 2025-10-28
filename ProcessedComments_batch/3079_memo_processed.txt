@@ -1,0 +1,92 @@
+**Cleaning Up and Refining Shogi Commentary**
+
+Okay, so I'm looking at this Shogi data with all these hand comments, and my task is clear: I need to whip these comments into shape. Right now, they're cluttered with all sorts of extraneous information – introductions, time stamps, and other non-essential details – things that, frankly, an expert like me can skip right over. My goal is to extract the pure essence of the commentary: the board analysis and the explanation of the moves themselves, all presented in a clean, natural-sounding way.
+
+The process is straightforward: first, I'll apply a set of rules to identify and ruthlessly remove any information that doesn't contribute to the core analysis. It's like a surgical procedure, getting rid of the noise. Then, with the essential content remaining, I'll refine the language. I'll make sure it flows smoothly, making sure the insight into the positions and moves makes sense. It's about preserving the valuable analysis, presented in a format that's easy to digest.
+
+手数9: 本局は早めに金を上がった。
+
+削除理由:
+- 「カニカニ銀でおなじみの児玉だが、」 → ルール1, 5
+
+手数28: いきなりの機敏な動き。
+
+削除理由:
+- なし
+
+手数29: さすがに桂馬を取らせるわけにはいかない。
+
+削除理由:
+- なし
+
+手数30: 次に△８九歩成を目指す。
+
+削除理由:
+- なし
+
+手数31: 
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉５０分、△大内９分。」 → ルール3
+
+手数34: ▲５五同歩は△４四銀から５五〜６六とずいずい進出する。
+
+削除理由:
+- なし
+
+手数39: 
+
+削除理由:
+- 「この局面で大内が１０分考えて昼食休憩になった。」 → ルール3, 7
+- 「ここまでの消費時間は▲児玉１時間２８分、△大内２４分。」 → ルール3
+
+手数49: 先手陣もなんとかまとまったか。
+
+削除理由:
+- なし
+
+手数53: 
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間１２分、△大内４５分。」 → ルール3
+
+手数54: 駒は中央にいたほうが働くが、先手は８八の金が７八玉より外側にいる。ウイークポイントをついて、後手は中央から攻撃に転じた。
+
+削除理由:
+- 「大内は」 → ルール1
+
+手数56: どんどん中央へ。
+
+削除理由:
+- なし
+
+手数64: 先に桂馬をもらっているので桂取りは無理に受けない。銀を引いて角道を通した。
+
+削除理由:
+- なし
+
+手数66: 
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉２時間３１分、△大内１時間２４分。」 → ルール3
+
+手数72: 
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲児玉３時間５分、△大内２時間３３分。」 → ルール3
+
+手数88: 
+
+削除理由:
+- 「この頃、夕食休憩となる１８時１０分になったが、本局は両者合意の下、休憩無しで指し継がれることになった。」 → ルール7
+
+手数96: 
+
+削除理由:
+- 「この局面で児玉が投了した。」 → ルールなし (投了は指し手情報として扱われ、コメントで解説する内容ではない)
+- 「消費時間は▲児玉３時間５０分、△大内３時間２分。」 → ルール3
+- 「勝った大内は１勝２敗、敗れた児玉は３連敗となった。」 → ルール4

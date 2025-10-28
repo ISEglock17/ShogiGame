@@ -1,0 +1,112 @@
+**Focusing the Analysis: Streamlining Game Commentaries**
+
+Okay, so I've got a user who's deeply involved with Shogi, obviously a real expert. They're asking me to refine the comments associated with each move in a Shogi game's data.  Essentially, the goal is to *clean up* the commentaries.  They want to strip away all the extraneous stuff - metadata, biographical details, time stamps... anything that isn't directly related to the actual analysis of the board position and the move itself.
+
+My job, as I understand it, is to extract the *meaningful* commentary, focusing specifically on the tactical and strategic insights provided by the game's commentators.  It needs to be a natural, coherent explanation of *why* the move was played, and what its implications are. The goal is a concise, focused explanation of each move's impact.
+
+This is a great exercise in information filtering and pattern recognition.  I'll need to develop a set of clear rules to identify and remove the irrelevant parts, leaving only the essential core of the analysis.  It's all about distilling the essence of the game's commentary to create a valuable resource for anyone studying those specific games.
+
+手数1:
+
+削除理由:
+- 「◆大平　武洋（おおひら　たけひろ）五段◆ １９７７年５月１１日生まれ、東京都北区出身。桐谷広人七段門下。２００２年、四段。２００６年、五段。棋士番号は２４３。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆桐山　清澄（きりやま　きよずみ）九段◆ １９４７年１０月７日生まれ、奈良県下市町出身。（故）増田敏二六門下。１９６６年、四段。１９８４年、九段。棋士番号は９３。 タイトル戦登場は１０回。獲得は棋王１期、棋聖３期の計４期。棋戦優勝は７回。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「大平の今年度成績８勝６敗（０．５７１）」 → ルール4
+- 「通算成績は１７６勝１７１敗（０．５０７）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「桐山の今年度成績は２勝８敗（０．２００）」 → ルール4
+- 「通算成績は９５２勝８３２敗（０．５３４）」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】 「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数17: 戦型は相矢倉へ。先手が早囲いを採用している。
+
+削除理由:
+- 「大平が」 → ルール1
+
+手数22:
+
+削除理由:
+- 「３０分の考慮で着手。」 → ルール3
+- 「１１時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲大平５分、△桐山３４分。」 → ルール3
+
+手数35: 先手は右銀をどう使うか。▲３七銀、▲５七銀右〜▲６五歩〜▲６六銀右のルートがある。
+
+削除理由:
+- 「１２時１０分、ここで桐山が１８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲大平４６分、△桐山１時間９分。」 → ルール3
+- 「対局再開は１３時。」 → ルール7
+
+手数36: 次に△６三銀〜△７三桂と活用する狙い。先手の角の利きを止めて、攻め駒を前に出しやすくしている。
+
+削除理由:
+
+手数37: ３七へ。先手は銀を攻めに使った。
+
+削除理由:
+- 「大平は」 → ルール1
+
+手数40:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲大平１時間２０分、△桐山１時間２５分。」 → ルール3
+
+手数41: △３五同歩は▲同銀△３四歩▲２四歩で棒銀がさばけそうだ。後手は△６五歩から△６四角と出るような感じで指したいところ。
+
+削除理由:
+- 「（対局立会人の瀬川晶司五段）」 → ルール1
+
+手数42: 桂を活用。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲大平１時間３４分、△桐山２時間５分。」 → ルール3
+
+手数51: 銀をさばく。代えて▲３五歩は△４五銀がいやだっただろう。
+
+削除理由:
+
+手数53:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲大平２時間２分、△桐山２時間３０分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「１時間１２分の考慮で着手。」 → ルール3
+- 「１７時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲大平２時間２分、△桐山３時間４２分。」 → ルール3
+
+手数64: 急所の６六角をいじめにいく。
+
+削除理由:
+
+手数73: 後手が投了した。銀と桂がとられてしまうため、仕方ない局面だ。
+
+削除理由:
+- 「ここで桐山が」 → ルール1
+- 「（勝又清和六段）」 → ルール1
+- 「終局時刻は１７時５８分。」 → ルール3
+- 「消費時間は▲大平２時間２７分、△桐山４時間８分。」 → ルール3

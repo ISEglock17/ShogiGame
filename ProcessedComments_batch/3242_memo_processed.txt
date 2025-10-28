@@ -1,0 +1,100 @@
+**Cleaning Up My Commentary for Analysis**
+
+Right, so I'm tackling this dataset of Shogi game comments. The user wants me to clean them up, essentially. My goal here is to strip away all the extraneous noise – you know, the meta bits, the player introductions, the time stamps – and just leave behind the pure gold: the insights into the board state and the moves themselves. Essentially, I need to keep the actual analytical commentary.
+
+I'll be following a set of rules – I'll need to figure out what those are, I suppose – to determine what gets the axe and what stays.  I imagine this will involve some pattern recognition, maybe even a bit of NLP to understand the context of each sentence and decide if it's relevant to the game's actual unfolding.  It's a straightforward task in principle, though I suspect the devil will be in the details of those rules and how well they capture the nuances of Shogi commentary.  The next step, whatever it is, I will have to figure out to make this whole process effective.
+
+手数15: 先手は横歩を取った。
+
+削除理由:
+- 「長岡」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+
+手数18: 後手は８五ではなく、８四に飛車を引いた。古い形の横歩取りに。
+
+削除理由:
+- 「豊島」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+
+手数25:
+
+削除理由:
+- 「１１時３０分ころの局面。」 → ルール3
+- 「消費時間は長岡２２分、豊島３０分。」 → ルール3, 先手・後手の実名
+
+手数26:
+
+削除理由:
+- 「ここで長岡が２０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡５０分、豊島１時間７分。」 → ルール3, 先手・後手の実名
+- 「昼食の注文は長岡がカキフライ定食、豊島はなし。」 → ルール7
+
+手数27: 先手は銀を上がった。
+
+削除理由:
+- 「昼休再開後すぐに」 → ルール7
+- 「長岡」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+
+手数31:
+
+削除理由:
+- 「１４時３０分ころの局面。」 → ルール3
+- 「消費時間は長岡１時間６分、豊島１時間４０分。」 → ルール3, 先手・後手の実名
+
+手数36: 後手も歩を取り返し、駒の損得はなくなった。
+
+削除理由:
+- 
+
+手数42:
+
+削除理由:
+- 「１６時ころの局面。」 → ルール3
+- 「消費時間は長岡１時間３９分、豊島２時間５２分。」 → ルール3, 先手・後手の実名
+
+手数45: 再び先手の１歩得になった。
+
+削除理由:
+- 
+
+手数46:
+
+削除理由:
+- 「１７時ころの局面。」 → ルール3
+- 「消費時間は長岡１時間５５分、豊島３時間３０分。」 → ルール3, 先手・後手の実名
+
+手数48:
+
+削除理由:
+- 「ここで長岡が１９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡が３時間１分、豊島が３時間５４分。」 → ルール3, 先手・後手の実名
+- 「夕食の注文は長岡がとり丼大盛り、赤だし、チョコレート。豊島はなし。」 → ルール7
+
+手数55: 先手陣は２枚の銀が好形になった。
+
+削除理由:
+- 「長岡」 → 先手・後手の実名は「先手」「後手」に置き換えるルール
+- 「２０時過ぎの局面。消費時間は長岡３時間３６分、豊島４時間１分。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は長岡４時間５分、豊島４時間４９分。」 → ルール3, 先手・後手の実名
+
+手数64:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「残り時間は長岡１時間６分、豊島４５分。」 → ルール3, 先手・後手の実名
+
+手数79:
+
+削除理由:
+- 「２３時ころの局面。」 → ルール3
+- 「残り時間は長岡４７分、豊島３１分。」 → ルール3, 先手・後手の実名
+
+手数111:
+
+削除理由:
+- 「２４時１５分、１１１手で長岡の勝ち。」 → ルール3
+- 「残り時間は長岡１９分、豊島４分。」 → ルール3
+- 「勝った長岡は４勝４敗、敗れた豊島は６勝２敗となった。」 → ルール4

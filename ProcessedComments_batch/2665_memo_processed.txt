@@ -1,0 +1,127 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: to clean up and refine the comments associated with Shogi game data. The user, I assume, wants these comments to be more readable and useful. I need to take a look at the data and identify the "noise" – the unnecessary details, redundancies, or anything that clutters the information. My initial approach will be to analyze each comment individually, checking for specific patterns or keywords that indicate information I should remove.  I'll then rewrite the remaining content into a coherent and natural-sounding sentence or phrase, making sure it still accurately reflects the Shogi game situation.  It sounds straightforward enough, let's see what kind of data I'm working with and what specific rules are provided to guide this cleaning process.
+
+手数3: 先手は得意の矢倉を目指す。
+
+削除理由:
+- 「佐藤は」 → ルール1, 5
+- 「得意の」 → ルール5
+
+手数12: 左美濃の駒組み。急戦調の将棋になったとき、固さが活きる。
+
+削除理由:
+- 削除対象なし
+
+手数20: ▲２六歩と突かれたので、銀を上がる。先手の飛先不突き矢倉を防いだだけでもプラスと見ている。
+
+削除理由:
+- 削除対象なし
+
+手数35: 結局、先手は加藤流の作戦を採る。
+
+削除理由:
+- 「佐藤は」 → ルール1
+- 「加藤流」 → ルール1
+
+手数36: 後手は積極的に攻め合いを狙う。ただ比較的珍しい形。普通は△９四歩の代わりに△２二玉となっている場合が多い。
+
+削除理由:
+- 「攻めの棋風の泉。」 → ルール1, 5
+- 「代表例は第６４期七番勝負第３局の▲谷川−△森内戦など。」 → ルール2
+
+手数40: 手得は気持ちがいいが、４筋の歩が伸び過ぎになる前に一仕事しないといけないので、後手は忙しい。
+
+削除理由:
+- 削除対象なし
+
+手数44: 一歩損になるが銀をさばく手筋。
+
+削除理由:
+- 削除対象なし
+
+手数49: ４筋の伸びすぎをとがめにいく。
+
+削除理由:
+- 削除対象なし
+
+手数52: 先手から角を取ると、歩が伸びるのが不満。後手から角を取ると手順に銀を好位置に活用されてしまうのが不満。というわけで、角のにらみ合いが続くことが予想される。
+
+削除理由:
+- 削除対象なし
+
+手数53: 渋い。後手から有効な手がないのを見越しているということだろうか。
+
+削除理由:
+- 削除対象なし
+
+手数54: 端を狙う。
+
+削除理由:
+- 削除対象なし
+
+手数55: △同歩と取れば、歩を使った小技が利くので大きなポイントになる。
+
+削除理由:
+- 削除対象なし
+
+手数60: 桂馬の活用を図る。
+
+削除理由:
+- 削除対象なし
+
+手数61: 先手は厳しい取り込みで応戦。
+
+削除理由:
+- 削除対象なし
+
+手数63: この利かしは大きい。
+
+削除理由:
+- 削除対象なし
+
+手数65: 手筋。何で取っても、次の▲３五歩が厳しくなる。
+
+削除理由:
+- 「残り時間は佐藤４４分、泉２７分。」 → ルール3
+
+手数68: 囲いから離れてしまったのは痛い。
+
+削除理由:
+- 削除対象なし
+
+手数73: 攻め駒を責めつつ上部を厚くする。
+
+削除理由:
+- 削除対象なし
+
+手数75:
+
+削除理由:
+- 「残り時間は佐藤３９分、泉１８分。」 → ルール3
+
+手数77: 桂得で手厚い先手がリードか。
+
+削除理由:
+- 削除対象なし
+
+手数79: 手堅い。適当な飛車の行き所がない。
+
+削除理由:
+- 削除対象なし
+
+手数81: 決めに出る。
+
+削除理由:
+- 削除対象なし
+
+手数87: 銀が入れば後手玉は詰む。
+
+削除理由:
+- 削除対象なし
+
+手数107: △同玉▲５二金△同玉▲６三角以下の詰み。
+
+削除理由:
+- 「終局時刻は４時４２分。」 → ルール3
+- 「消費時間は佐藤５時間４１分、泉５時間５９分。」 → ルール3

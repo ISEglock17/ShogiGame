@@ -1,0 +1,115 @@
+**Cleaning Up Game Annotations**
+
+Okay, so I need to refine a set of game comments from a Shogi match. The goal is clear: strip away all the fluff – the metadata, player introductions, time stamps, you know, the usual distractions – and leave behind only the actual, insightful commentary on the board positions and moves. Essentially, I want to transform a collection of often-disjointed notes into a coherent narrative of the game's unfolding strategic drama.
+
+The process itself isn't too complicated. I'll need to develop a set of rules, essentially a filter, to identify and flag the parts of the comments that are extraneous. Then, applying that filter, I can carefully remove those irrelevant pieces, leaving the core game analysis intact and hopefully even improving its readability as a unified text.
+
+手数1:
+
+削除理由:
+- 「佐藤和の本年度の成績は９勝７敗／勝率は０．５６３　通算成績は１４５勝７６敗／勝率は０．６５６」 → ルール4
+- 「佐藤慎の本年度の成績は７勝９敗／勝率は０．４３８　通算成績は１３勝１２敗／勝率は０．５２０」 → ルール4
+
+手数7: 駆け引きの末に先手は三間飛車へ。
+
+削除理由:
+- 「佐藤和」 → 先手（置換）
+
+手数10:
+
+削除理由:
+- 「１１時１０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤和２８分、佐藤慎３１分。」 → ルール3
+
+手数14: 後手は向かい飛車にして相振り飛車となった。
+
+削除理由:
+- 「佐藤慎」 → 後手（置換）
+
+手数15: 後手の角道を止めさせる狙い。△５二金左なら▲４五銀と出て先手十分。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「△６二玉の局面で佐藤和が１９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐藤和１時間７分、佐藤慎５２分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数19:
+
+削除理由:
+- 「昼食休憩後、すぐに指された。」 → ルール7, 3
+
+手数25: 先手は矢倉を目指す。
+
+削除理由:
+- 「佐藤和」 → 先手（置換）
+
+手数28: 後手は美濃囲い。
+
+削除理由:
+- 「佐藤慎」 → 後手（置換）
+
+手数32:
+
+削除理由:
+- 「１４時１０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤和１時間３８分、佐藤慎１時間２３分。」 → ルール3
+
+手数39: 先手は▲６六角〜▲７七桂〜▲８五桂が楽しみ。
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤和２時間３５分、佐藤慎１時間３４分。」 → ルール3
+
+手数40: 端を攻める。
+
+削除理由:
+- 「１時間１３分の長考で」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は佐藤和２時間３６分、佐藤慎２時間４７分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１７時４０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤和３時間６分、佐藤慎３時間８分。」 → ルール3
+- 「佐藤和はここで３９分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐藤和３時間４５分、佐藤慎３時間８分となった。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は佐藤和３時間５５分、佐藤慎３時間３０分。」 → ルール3
+
+手数56: 辛抱した手。後手は△３五歩が楽しみ。
+
+削除理由:
+- 「４６分の長考で」 → ルール3
+
+手数58:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は佐藤和４時間１２分、佐藤慎４時間３２分。」 → ルール3
+
+手数61: 後手陣の急所を突く。
+
+削除理由:
+
+手数62: 激しい攻め合いとなった。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間は佐藤和１時間１３分、佐藤慎５６分。」 → ルール3

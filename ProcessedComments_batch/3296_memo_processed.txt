@@ -1,0 +1,89 @@
+**My Approach to Transforming Shogi Commentary**
+
+Okay, so I'm presented with a shogi game record, and the user wants me to process the commentary associated with each move. Based on the instructions, it looks pretty straightforward.
+
+First, I need to read through each comment individually. It's like examining each piece of a puzzle. Then, I'll need to identify any parts of the commentary that match specific deletion rules, basically, unwanted noise. After that, I'll apply the replacement rules – specifically, transforming player names (like "Taro Yamada") into the generic "Sente" (first player) and "Gote" (second player).
+
+Next, and this is where my expertise comes into play, I'll take what's left after the filtering and substitutions and use my understanding of the game's flow to rephrase it into a concise, natural sentence. This is where I can add a layer of human-like intelligence. Lastly, I'll package up the transformed commentary into the desired output format, ready for the user's consumption.
+
+手数11: 相掛かりになった。
+
+削除理由:
+- 「指し直し局は」 → ルール2
+
+---
+手数17:
+
+削除理由:
+- 「２０時４５分の局面。」 → ルール3
+
+---
+手数21: 先手は▲２七銀からの棒銀ではなく腰掛け銀の方が得意。前の▲９六歩は大事な一手で、ここで△８六歩▲同歩△同飛と横歩取りにこられるのを防いでいる。
+
+削除理由:
+- 「飯島は▲２七銀からの棒銀ではなく腰掛け銀の方が得意。」 → ルール5
+
+---
+手数30: バランスを重視する。
+
+削除理由:
+
+---
+手数36: 互いに位を張り合う。
+
+削除理由:
+
+---
+手数43:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は飯島４時間４９分、岡崎３時間４４分。」 → ルール3
+
+---
+手数44: 先手の桂馬の活用をおさえる。
+
+削除理由:
+
+---
+手数45: 怖いが玉頭で戦うつもり。
+
+削除理由:
+
+---
+手数48: 後手は端から反撃する。
+
+削除理由:
+- 「岡崎」 → ルール1
+
+---
+手数51: 先手は手抜きで攻める。
+
+削除理由:
+- 「２２時１０分の局面。」 → ルール3
+- 「残り時間は飯島５６分、岡崎１時間５８分。」 → ルール3
+- 「飯島」 → ルール1
+
+---
+手数53: 飛車の利きを止めつつ、大きな拠点となっている。
+
+削除理由:
+
+---
+手数56: ▲同銀なら△６四飛▲６七歩△２四飛となってうまいが。
+
+削除理由:
+
+---
+手数57: 垂れ歩を手抜く攻めがあった。△６七銀は▲同金右△同歩成▲同玉で大丈夫。
+
+削除理由:
+
+---
+手数59: △同銀、△同金ともに▲４四歩が厳しくなる。といって▲２一歩成を許すと挟撃になってしまい後手は辛い。後手は投了を告げた。
+
+削除理由:
+- 「岡崎は３分考えた末に」 → ルール1, 3
+- 「終局時刻は２２時４３分。」 → ルール3
+- 「消費時間は飯島５時間１４分、岡崎４時間２２分。」 → ルール3
+- 「勝った飯島は２勝０敗、敗れた岡崎は１勝１敗となった。」 → ルール4

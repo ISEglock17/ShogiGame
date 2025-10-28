@@ -1,0 +1,76 @@
+**Cleaning Up My Commentary for Enhanced Clarity**
+
+Alright, so I'm presented with a task, a familiar one actually. It seems someone wants me to refine commentary found within Shogi game data. The goal is straightforward: to streamline the text, keeping only the essential, insightful explanations about the board state and the moves played, while getting rid of all the extraneous fluff that tends to clutter up these types of comments.
+
+The strategy I'll take is clear. I need to apply specific rules to analyze each comment and determine what needs to go and what needs to stay. I'll identify and remove the irrelevant parts, leaving behind only the pure essence of the analysis and the description of the game's unfolding.
+
+手数1:
+
+削除理由:
+- 「大石の今期成績は８勝１０敗（０．４４４）。」 → ルール4
+- 「第５１期王位戦でリーグ入り。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「矢倉の今期成績は１６勝１０敗（０．６１５）。」 → ルール4
+- 「現在３連勝中。」 → ルール4
+
+手数11:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲大石３分、△矢倉２２分。」 → ルール3
+
+手数12: 後手は振り飛車模様の駒組みからスルスルと銀が上がってきた。
+
+削除理由:
+- 「矢倉は」 → ルール1
+
+手数16: 後手は中飛車に構えた。
+
+削除理由:
+- 「矢倉は」 → ルール1
+
+手数17: 先手はスキありとみて、角頭から攻めていった。
+
+削除理由:
+- 「大石は」 → ルール1
+
+手数22: 手筋の歩突き。▲３五銀には△３七歩成▲同桂△３六歩の筋がある。
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲大石２１分、△矢倉５０分。」 → ルール3
+- 「ここで大石は４８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲大石１時間９分、△矢倉５０分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「１３時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲大石１時間２８分、△矢倉５０分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１４時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲大石１時間２９分、△矢倉１時間７分。」 → ルール3
+- 「１５時３０分を回ったが、この局面で矢倉は長考している。」 → ルール1, 3
+
+手数29: 激しい順を選ぶ。
+
+削除理由:
+
+手数33: △２九飛は▲５八金右で何でもない。先手は▲４四角など攻める手に困らない。形勢は先手良し。
+
+削除理由:
+- 「１７時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲大石１時間５５分、△矢倉４時間９分。」 → ルール3
+
+手数43: 後手は投了した。次に▲４一竜△６二玉▲６一竜で後手陣は崩壊する。
+
+削除理由:
+- 「ここで矢倉は投了した。」 → ルール1
+- 「消費時間は▲大石１時間５７分、△矢倉４時間２７分。」 → ルール3
+- 「勝った大石は５勝４敗、敗れた矢倉は４勝５敗となった。」 → ルール1, 4

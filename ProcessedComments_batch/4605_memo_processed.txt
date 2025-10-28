@@ -1,0 +1,128 @@
+**My Approach to Transforming Shogi Game Commentary**
+
+Okay, I've got the task laid out. I need to take raw Shogi game commentary and make it presentable. My approach is pretty straightforward, mirroring my usual meticulous process.
+
+First, I'll read through each comment. Then, I'll identify anything that needs to go – anything that falls under the specified deletion rules. It's about careful observation, making sure I don't accidentally remove something crucial.
+
+Next comes the name substitution. I'll replace the player names with "先手" (Sente, the first player) and "後手" (Gote, the second player) as needed, keeping the flow clean and accessible. This step requires a nuanced understanding of context, ensuring the substitution is accurate and doesn't introduce ambiguity.
+
+Finally, I'll refine what's left into natural-sounding sentences. This isn't just a simple text replacement; it's about making the commentary readable and engaging. I'll make sure to follow the output format precisely, clearly explaining the modifications made and why they were necessary. My goal is to produce insightful and well-structured commentary, ready for analysis.
+
+手数5: 先手は今度は三間飛車に構えた。
+
+削除理由:
+- 「橋本」 → 置換ルール
+
+手数11: 石田流に組んだ。
+
+削除理由:
+- 削除対象なし
+
+手数14: 後手は持久戦模様の駒組み。
+
+削除理由:
+- 「桐山」 → 置換ルール
+
+手数18: 居飛車穴熊を明示。
+
+削除理由:
+- 削除対象なし
+
+手数19: △１二香をみて、先手は仕掛けた。
+
+削除理由:
+- 「橋本」 → 置換ルール
+
+手数25:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲橋本１７分、△桐山３時間６分。」 → ルール3, 置換ルール
+
+手数26: ▲３四飛がみえているが、構わず穴熊にもぐった。
+
+削除理由:
+- 削除対象なし
+
+手数27: 一回はしまっておきたいところ。
+
+削除理由:
+- 削除対象なし
+
+手数34: 歩を突き捨てて駒の効率をよくするのが、後手の狙い。
+
+削除理由:
+- 削除対象なし
+
+手数38:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲橋本２３分、△桐山３時間３４分。」 → ルール3, 置換ルール
+- 「稲葉陽四段にこの局面の形勢判断をしてもらうと「普通は振り飛車が指せるような気がします」とのこと。」 → ルール1
+
+手数39: 先手の主張は２歩得、後手は玉の堅さを主張している。
+
+削除理由:
+- 削除対象なし
+
+手数44: じっとしているのはジリ貧とみて、後手は動いていった。
+
+削除理由:
+- 「桐山」 → 置換ルール
+
+手数46: ▲同歩△６五飛として、△６八飛成▲同金△８七銀の筋を狙いにしようという意味か。
+
+削除理由:
+- 「１６時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲橋本４７分、△桐山４時間４分。」 → ルール3, 置換ルール
+
+手数49: 飛車をぶつける。△７五飛なら▲６三飛成があるので、取る一手。先手陣には打ち込みのスキがなく、形勢は先手良し。
+
+削除理由:
+- 削除対象なし
+
+手数52: ▲８二飛を消した手だが、つらい一手でもある。
+
+削除理由:
+- 削除対象なし
+
+手数57: 自陣を引き締めながら、後手に手を渡す。
+
+削除理由:
+- 削除対象なし
+
+手数60:
+
+削除理由:
+- 「ここで橋本は２４分使って、夕食休憩に入った。」 → ルール3, 7, 置換ルール
+- 「ここまでの消費時間は▲橋本１時間４５分、△桐山４時間１８分。」 → ルール3, 置換ルール
+
+手数68: ▲８三竜は△７六歩で紛れる。
+
+削除理由:
+- 削除対象なし
+
+手数71: 金取りに飛車を下ろした。次に痛い手が待っている。
+
+削除理由:
+- 「１９時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲橋本１時間５４分、△桐山４時間３１分。」 → ルール3, 置換ルール
+
+手数73: △同歩は▲６三歩△５三角▲４五歩で先手勝勢。
+
+削除理由:
+- 削除対象なし
+
+手数74: だが後手には受けがない。この手で△７二金は▲６三歩成△同金▲６四歩で後手しびれている。
+
+削除理由:
+- 削除対象なし
+
+手数81: 飛車取りと▲４三角成をみた厳しい手。この手をみて、後手は投了した。
+
+削除理由:
+- 「桐山」 → 置換ルール
+- 「消費時間は▲橋本１時間５５分、△桐山４時間３８分。」 → ルール3, 置換ルール
+- 「勝った橋本、敗れた桐山ともに３勝５敗になった。」 → ルール4, 置換ルール
+- 「感想戦はなく、すぐに駒が片付けられた。」 → ルール7

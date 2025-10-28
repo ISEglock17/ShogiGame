@@ -1,0 +1,105 @@
+**Cleaning Up My Game Analysis Comments**
+
+Alright, so the user wants me to go through these comments attached to shogi game data and whip them into shape. The goal here is pretty clear: get rid of all the noise. I need to strip out the fluff – things like meta-commentary, biographical details about the players, time stamps, and anything else that doesn't actually contribute to an insightful analysis of the game's evolution. What I'm after is the core commentary on the board state and the moves themselves, presented in a clear and flowing manner. That's the real meat of the analysis, and that's what I want to preserve.
+
+So, the process seems straightforward: I have to develop a clear set of rules for identifying and removing the irrelevant material. Once I've got that sorted, it's just a matter of applying those rules systematically to the comments and refining them.
+
+手数1:
+
+削除理由:
+- 「豊川の通算成績は３６９勝２７１敗（勝率０．５７７）。今年度成績は３勝４敗。」 → ルール4
+- 「山崎の通算成績は４０１勝１８４敗（勝率０．６８６）。今年度成績は１４勝５敗。対局数ランキングは３位タイ、勝数ランキングは３位、勝率ランキングは１２位、連勝ランキングは４位タイ。」 → ルール4
+
+手数3: ３手目に角道を止めた。後手は矢倉をあまり指さず、横歩取り、角換わり、相掛かりをよく指すので矢倉にできるかと聞いている意味もある。
+
+削除理由:
+- 「山崎」 → 置換ルール
+
+手数4:
+
+削除理由:
+- 「△３四歩に１０分、△５四歩には１４分考えていた。」 → ルール3
+
+手数10: 後手は中飛車を選んだ。
+
+削除理由:
+- 「山崎」 → 置換ルール
+
+手数21:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川１０分、△山崎３６分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「この局面で豊川が３２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲豊川１時間６分、△山崎５１分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川１時間１７分、△山崎１時間４１分。」 → ルール3
+
+手数28: ▲３四歩△同銀▲４六銀△４五歩▲３五歩△４六歩▲３四歩の進展が予想される。
+
+削除理由:
+- 「１５時すぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川１時間１７分、△山崎２時間２２分。」 → ルール3
+- 「この局面で豊川が１時間半以上考えているようだ。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「２時間７分の長考だった。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「この局面で山崎が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲豊川３時間５５分、△山崎３時間７分。」 → ルール3
+
+手数44: ▲２三歩に△１一角を用意している。
+
+削除理由:
+
+手数45:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川４時間１０分、△山崎３時間５２分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川４時間４２分、△山崎３時間５８分。」 → ルール3
+
+手数57: ▲４五同飛は△３六歩がある。
+
+削除理由:
+
+手数64: パズルのような手順で後手が捌きにいく。（１）▲５七同金は△４八飛成。（２）▲４五銀は△３九龍。そこで（３）▲３一飛成△６七馬▲同玉△４九飛成▲７八玉の展開が予想される。
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲豊川５時間１０分、△山崎４時間２２分。」 → ルール3
+
+手数65: 主に３種類考えられた応手。先手は飛を取った。
+
+削除理由:
+- 「豊川」 → 置換ルール
+
+手数70: 筋よく攻めていく。▲５六同銀には△５七歩と垂らせる。
+
+削除理由:
+
+手数72: 今度は遠巻きに垂らしていく。
+
+削除理由:
+
+手数76: と金ができて、後手の攻めは切れない形になった。
+
+削除理由:

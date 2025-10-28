@@ -1,0 +1,103 @@
+**Cleaning Up the Commentary: Streamlining for Deeper Analysis**
+
+Okay, so I'm looking at this data set of Shogi game commentary and my immediate thought is "This needs some serious cleaning."  The goal here is pretty clear: I want to strip out all the fluff. I'm talking about the meta-commentary, the introductions of the players, the time stamps... all the stuff that's just noise when I'm trying to actually *analyze* the game itself. I need a lean, mean, commentary machine focused purely on the board state and the moves.
+
+So, the plan of attack is straightforward. First, I'm going to meticulously go through each comment and apply a set of rules – my own rules, honed from years of experience analyzing Shogi – to decide what's essential and what's expendable.  Anything that doesn't contribute directly to understanding the position or the rationale behind a move gets the axe.  Then, once I've got the raw core of the commentary, I'll work on smoothing things out.  I'll rephrase, connect ideas, and basically polish it all up so it reads like a cohesive narrative, even without the extraneous material. That's the key: building a clear, concise, and analytically useful commentary.
+
+手数1:
+
+削除理由:
+- 「◆中座　真（ちゅうざ　まこと）七段◆」 → ルール1, 4
+- 「１９７０年２月３日生まれの４４歳。北海道稚内市出身。（故）佐瀬勇次名誉九段門下。１９８１年、６級で奨励会入会。１９９６年、四段。２００７年、七段。棋士番号は２１９。」 → ルール4
+- 「順位戦は１８期目。Ｃ級２組は通算１３期目。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆田中　魁秀（たなか　かいしゅう）九段◆」 → ルール1, 4
+- 「１９４７年３月２日生まれの６７歳。大阪府枚方市出身。（故）本間爽悦八段門下。１９６０年、７級で奨励会入会。１９６９年、四段。２０００年、九段。棋士番号は１０４。棋戦優勝は１回。」 → ルール4
+- 「順位戦は４３期目。Ｃ級２組は通算３期目。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「中座の通算成績は３３３勝２７３敗（勝率０．５５０）。」 → ルール4
+- 「今年度成績は１４勝１３敗（勝率０．５１９）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「田中の通算成績は６５５勝７４３敗（勝率０．４６９）。」 → ルール4
+- 「今年度成績は５勝１６敗（勝率０．２３８）。」 → ルール4
+
+手数5: 両者はともに居飛車党。
+
+削除理由:
+- 「中座は今期の順位戦、ここまで相居飛車が５局、対抗形が４局という内訳になっている。」 → ルール2, 5
+
+手数6: △８八角成で戦型は一手損角換わりとなった。
+
+削除理由:
+- 「対する田中は今期の順位戦、相居飛車が６局、対抗形が３局という内訳だった。」 → ルール2, 5
+- 「ノータイムで」 → ルール3
+
+手数13: 先手の作戦は早繰り銀。
+
+削除理由:
+- 「中座の」 → ルール1
+
+手数20: 後手は△７二飛で揺さぶりをかける。ここは△６二玉から右玉に囲う作戦も有力だ。
+
+削除理由:
+- 「田中は」 → ルール1
+
+手数21:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「▲７七銀までの消費時間は▲中座３９分、△田中２分。」 → ルール1, 3
+
+手数25: 先手は▲８二角と打ち込んだ。
+
+削除理由:
+- 「中座は」 → ルール1
+- 「３１分考えて」 → ルール3
+
+手数26: △７三角が香取りを受ける唯一の手。以下▲７三同角成△同桂に再度▲８二角なら△６五桂と跳ねて勝負できる。
+
+手数29: ジッと玉を寄って飛車筋をかわした。７三に桂を跳ねたことで飛車の活動範囲が狭くなっているのが先手の狙い。
+
+手数33: 端角を打って飛車を取りにいく。△８四飛でも△９四飛でも▲６三角成△同金▲９五銀打△７四飛▲７五歩で飛車の逃げ場がない。午前中から激しい流れで早くも局面は勝負所を迎えている。
+
+削除理由:
+- 「▲９六角の局面で田中が１８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲中座１時間２８分、△田中２７分。」 → ルール1, 3
+
+手数40: ３４手目△９四飛以降、一気にこの局面まで進んだ。先手が飛車を手にして指しやすそうだが、それ以外の攻め駒がなく９五の銀も遊んでいるので形勢は難しい。
+
+手数43: 王手は追う手。先手は二段目に飛車を打ち下ろした。
+
+削除理由:
+- 「中座は」 → ルール1
+
+手数44: 金取りを受ける△５二角。７四の金にヒモを付けた意味もある。
+
+手数47: 貴重な１歩でと金を作りにいく。
+
+手数53: 金が補充できて先手十分。次に▲６二金と打つ手が厳しい。
+
+手数54:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△９九角成までの消費時間は▲中座２時間１分、△田中３６分。」 → ルール1, 3
+
+手数61: 再び、と金を作りにいく。
+
+手数67: ▲７三同銀成までで後手の投了となった。この後▲６三成銀〜▲５二成銀の攻めを受ける手段がない。
+
+削除理由:
+- 「田中の」 → ルール1
+- 「終局時刻は１４時４３分。」 → ルール3
+- 「消費時間は▲中座２時間３９分、△田中４２分。」 → ルール1, 3
+- 「勝った中座は５勝５敗、敗れた田中は２勝８敗で今期の順位戦を終えた。」 → ルール1, 2, 4

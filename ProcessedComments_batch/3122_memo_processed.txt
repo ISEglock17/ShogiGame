@@ -1,0 +1,87 @@
+**Refining the Shogi Commentary**
+
+Okay, I'm working with a user request here – they want me to clean up Shogi game commentary. Essentially, they're giving me the raw text and want me to transform it into a more focused, concise version. It sounds like a typical data cleansing task, and I'm ready to tackle it.
+
+My understanding is that I need to filter out a lot of irrelevant information. The user's provided a clear set of rules for what to eliminate. My primary focus will be on removing anything that isn't directly related to the *current* game itself. This means getting rid of background noise:
+
+*   **No extraneous player details:** I'm not interested in their histories, previous games, or profiles at this stage. That's outside the scope of what the user wants in the reformatted commentary.
+*   **Time stamps are out:** I'll eliminate any mentions of thinking time or specific clock readings. The user wants the commentary to focus on the moves, not the clock.
+*   **Irrelevant past context:** I'll also look for references to past games or precedents. These details are distracting and will be omitted from the revised commentary.
+*   **Personal information about any individual** This includes name, affiliation, or any other personal details.
+
+Essentially, I need to strip the commentary down to its essential structure, ensuring that only the core game analysis remains. I'm ready to dive in and get to work on transforming this raw data into something much more usable.
+
+手数2: ２手目△３二金は、居飛車を指す相手に振り飛車をやってこいと挑発する意味合いがある。
+
+削除理由:
+- 該当なし
+
+手数9: 相手の注文に乗って飛車を振った。
+
+削除理由:
+- 該当なし
+
+手数11:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は糸谷１４分、山本３８分。」 → ルール3
+
+手数18: 銀冠なら、△３二金の一手が負担にならずに駒組みができる。
+
+削除理由:
+- 該当なし
+
+手数21:
+
+削除理由:
+- 「ここで山本が３８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は糸谷２０分、山本１時間４０分。」 → ルール3
+
+手数22: ただの銀冠ではなく穴熊を目指すようだ。
+
+削除理由:
+- 該当なし
+
+手数33: 後手は飛車先の歩を突かない代わりに囲いの完成を急ぐ。△１一玉のあと金が２二、３二に並ぶ形になれば相当堅くなる。
+
+削除理由:
+- 「１４時４０分を過ぎた。」 → ルール3
+- 「消費時間は糸谷５６分、山本２時間２８分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「消費時間は糸谷１時間２５分、山本３時間０分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１７時２０分を過ぎた。」 → ルール3
+- 「消費時間は糸谷１時間４９分、山本３時間５５分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「この局面で糸谷が８分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は糸谷２時間１８分、山本４時間３５分。」 → ルール3
+
+手数79:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「消費時間は糸谷２時間４９分、山本５時間９分。」 → ルール3
+
+手数109:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は糸谷３時間２３分、山本５時間３３分。」 → ルール3
+
+手数125:
+
+削除理由:
+- 「ここで山本の投了となった。」 → ルール4
+- 「消費時間は糸谷３時間４３分、山本５時間５７分。」 → ルール3
+- 「勝った糸谷は３勝２敗、破れた山本は０勝５敗となりました。」 → ルール4

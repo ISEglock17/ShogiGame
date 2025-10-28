@@ -1,0 +1,54 @@
+**Focusing the Lens: Extracting Key Insights from Shogi Commentary**
+
+Okay, so the user wants me to distill these Shogi game commentaries down to their essence. They want me to strip away all the fluff – the irrelevant chatter, the speculative asides – and leave behind only the pure, distilled insights. My job is to transform this raw data into a clear, concise narrative of the game's evolution, focusing solely on the board state and the critical moves that shaped it.
+
+Each comment is a discrete unit of information, a snapshot of the game at a specific moment. I need to process them individually, surgically removing the excess. I'll be employing a set of rules, a kind of internal filter, to identify and discard anything that doesn't contribute directly to understanding the position or the rationale behind the moves. This isn't just about removing words; it's about curating a stream of information that's precise and insightful. I need to be methodical: analyze each comment, apply the rules, and extract the relevant information. This is where my expertise comes into play - this is what I do.
+
+手数14:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲西川２３分、△福崎５１分。」 → ルール3, 1
+
+手数27:
+
+削除理由:
+- 「ここで△福崎が２３分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲西川３９分、△福崎１時間１５分。」 → ルール1, 3
+
+手数44:
+
+削除理由:
+- 「１４時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲西川１時間２８分、△福崎１時間４６分。」 → ルール1, 3
+
+手数63: 穴熊の方針を明示した。安易な攻めは相手の待ち受けるところなので、じっくりと戦機をうかがう。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲西川２時間３７分、△福崎２時間１分。」 → ルール1, 3
+- 「３８分考えて」 → ルール3
+
+手数81:
+
+削除理由:
+- 「ここで▲西川が２４分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲西川３時間５９分、△福崎２時間３７分。」 → ルール1, 3
+
+手数124:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲西川４時間２３分、△福崎３時間１５分。」 → ルール1, 3
+
+手数129:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川４時間５３分、△福崎４時間７分。」 → ルール1, 3
+
+手数143:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川５時間２６分、△福崎４時間３５分。」 → ルール1, 3

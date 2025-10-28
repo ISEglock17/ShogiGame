@@ -1,0 +1,110 @@
+**Focusing the Lens: Cleaning Up Game Commentary**
+
+Okay, so I'm tasked with a familiar problem in my line of work: refining game commentary from shogi matches. The core of my goal here is to get down to the brass tacks – the actual, insightful analysis of the board and moves.  I need to strip away all the extraneous noise that clutters the data. Think of it like a sculptor chipping away the marble to reveal the statue within.
+
+Essentially, I'm going to follow a two-step process. First, I'll need to develop a set of clear rules to identify and remove all the stuff that's not directly related to explaining the gameplay. I'm talking about introductions, character descriptions, time stamps – anything that's metadata and doesn't actually contribute to a deeper understanding of the board. Second, with the "unnecessary" stuff gone, I'll focus on polishing what remains into clear, cohesive sentences that really illuminate the tactical and strategic reasoning behind each move. It's about clarity and conciseness, so that the raw analytical gold can be easily mined.
+
+手数20:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は大内３分、中村太１９分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「ここで大内が４２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内１時間１４分、中村太３７分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数35: 先手はすぐに銀を上がった。
+
+削除理由:
+- 「対局が再開されると、」 → ルール7
+- 「大内」 → 置換ルール
+
+手数39: グイッと力強く金を繰り出す。
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は大内１時間４２分、中村太５０分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は大内１時間５１分、中村太１時間５２分。」 → ルール3
+
+手数51: 互いに浮き飛車に構える。
+
+削除理由:
+
+手数57:
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は大内２時間４分、中村太２時間３４分。」 → ルール3
+
+手数59: 後手が手詰まりであることを見越して手待ちする。
+
+削除理由:
+
+手数63: 振り飛車から打開。
+
+削除理由:
+
+手数65:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は大内２時間１８分、中村太３時間４３分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「ここで大内が２７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内２時間４５分、中村太４時間１分。」 → ルール3
+
+手数68: 銀冠穴熊を目指す。
+
+削除理由:
+
+手数71: ジックリした展開。歩の交換がまだない。
+
+削除理由:
+
+手数74: △２四角の筋もでき、終盤で△２六歩から玉頭を狙える。
+
+削除理由:
+
+手数89: 嫌みな垂れ歩。
+
+削除理由:
+- 「２０時４５分ごろの局面。」 → ルール3
+- 「消費時間は大内３時間２６分、中村太４時間３８分。」 → ルール3
+
+手数94: バッサリ行った。
+
+削除理由:
+
+手数96: 堅さを生かした強襲。▲７九飛などは△５六金から△４七金〜△３八歩がある。
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は大内３時間３０分、中村太５時間２６分。」 → ルール3
+
+手数99: 鬼手！△同金に▲８八飛や▲３八飛と逃げれば、後手の駒が重くなる。▲６七銀をウッカリしたか。
+
+削除理由:
+
+手数104: △７九飛〜△２六歩を狙う。
+
+削除理由:
+
+手数148: ここまで攻められては受けがない。
+
+削除理由:
+- 「ここで大内の投了となった。」 → ルール4
+- 「終局時刻は２２時２５分。」 → ルール3
+- 「消費時間は大内３時間３９分、中村太５時間５４分。」 → ルール3
+- 「勝った中村太は７勝２敗、敗れた大内は２勝７敗となった。」 → ルール4

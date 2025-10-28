@@ -1,0 +1,141 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with this task: clean up shogi commentary data. Essentially, I need to take these raw comments from a shogi game record and get them into a format that's actually useful for analysis. I'm thinking, "I need to turn this messy stream of text into concise, insightful explanations of the game."
+
+The goal is pretty clear. I need to strip out all the fluff – the metadata, the player introductions, time stamps – all the stuff that's irrelevant to understanding the board position and the actual moves. I want to be left with natural-sounding explanations of the positions and the moves made.
+
+My approach is straightforward. I'll define some clear rules for identifying and removing the unnecessary parts of the comments. Based on those rules, I can selectively remove the extraneous information. The end result is a polished commentary that only contains the essential, insightful points.
+
+手数16: 横歩取りになった。
+
+削除理由:
+
+手数21: 先手はヒネリ飛車を目指す。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は田村２０分、長岡１分。」 → ルール3, 1
+
+手数22: △８二飛では気合が悪いと見て、強く飛車を取った。
+
+削除理由:
+- 「１時間の長考で」 → ルール3
+
+手数26:
+
+削除理由:
+- 「△５五角の局面で田村が３６分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間はともに１時間１分。」 → ルール3
+- 「昼食の注文は田村がなべ焼きうどん、ライス。」 → ルール1, 7
+- 「長岡の注文はなし。」 → ルール1, 7
+
+手数28: ばっさり切った。
+
+削除理由:
+
+手数33:
+
+削除理由:
+- 「１３時５０分ごろの局面。」 → ルール3
+- 「消費時間は田村１時間９分、長岡１時間３１分。」 → ルール1, 3
+- 「長岡は１時間以上考えていた。」 → ルール1, 3
+
+手数34: 歩を払う。△８八歩成▲８一歩成の進展は後手が勝てないと判断した。
+
+削除理由:
+- 「１時間２３分の長考で」 → ルール3
+
+手数35: 攻防の飛打ち。
+
+削除理由:
+
+手数38: ▲８四飛には△８七歩▲同金△同銀成▲同飛△７八飛成で攻められる。
+
+削除理由:
+
+手数41: 後手の飛車を詰ます。どちらが得したのだろうか。
+
+削除理由:
+
+手数45:
+
+削除理由:
+- 「１６時前の局面。」 → ルール3
+- 「消費時間は田村１時間２７分、長岡３時間１６分。」 → ルール1, 3
+
+手数46: 自陣のスキを消した。△６七銀成は▲１五角（△５九飛成を受ける）△３三桂▲７一飛△５二玉▲８三歩のような攻め合いが考えられる。
+
+削除理由:
+- 「１時間３分の長考で」 → ルール3
+
+手数51: 先手もスキがない形になった。
+
+削除理由:
+
+手数52: 一転渋い展開へ。
+
+削除理由:
+
+手数57: △同飛なら▲７七桂△８九飛成▲６五桂△７八龍▲５三桂成△５二歩▲６二銀の攻め合いで勝てそうだ。
+
+削除理由:
+
+手数63:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は田村１時間５３分、長岡４時間２７分。」 → ルール1, 3
+
+手数65: 伸び伸びとした指し回し。
+
+削除理由:
+
+手数66: ８二いた金は５二まできた。
+
+削除理由:
+
+手数73:
+
+削除理由:
+- 「▲３五歩の局面で長岡が６分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は田村１時間５４分、長岡４時間５２分。」 → ルール1, 3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数75: 渋い展開になった。ただ、後手は金銀が５枚も自陣にいることは効率がよいのかどうか。
+
+削除理由:
+
+手数77: ５八角が司令塔になって左右両方に利いている。
+
+削除理由:
+
+手数83: 満を持して攻めを狙う。
+
+削除理由:
+
+手数85: △１三歩は▲同香成△同銀▲３三歩成と攻めるのだろうか。
+
+削除理由:
+
+手数88: ものすごい辛抱。
+
+削除理由:
+
+手数89: ジッと歩を伸ばす。
+
+削除理由:
+
+手数90:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は田村２時間９分、長岡５時間２９分。」 → ルール1, 3
+
+手数101: ここで後手が投了。▲２五歩〜▲３四歩が厳しい。
+
+削除理由:
+- 「長岡が１０分考えて」 → ルール1, 3
+- 「終局時刻は２０時３２分。」 → ルール3
+- 「消費時間は田村２時間２７分、長岡５時間４０分。」 → ルール1, 3
+- 「勝った田村は６勝２敗、敗れた長岡は５勝３敗となった。」 → ルール1, 4
+- 「田村は本局に勝ち、通算３００勝を達成した。」 → ルール1, 4

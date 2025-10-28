@@ -1,0 +1,87 @@
+**Streamlining Commentary for Focused Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries. Basically, they're looking to strip away all the extraneous noise, leaving behind only the pure, essential stuff: the board state and the move explanations. Think of it like a surgical procedure, where I'm the skilled surgeon, meticulously removing all the irrelevant tissue to reveal the core structure.
+
+I'm going to be relying on a set of clearly defined rules to guide this process. These are the surgical instruments, if you will. The goal is to produce a streamlined, natural-flowing narrative of the game, free from distractions that would hinder a thorough analysis.
+
+Specifically, I'll be looking out for and removing:
+
+*   Any mention of individuals other than the players themselves – no names, ranks, or affiliations beyond the immediate context of the game.
+*   References to past games, precedents, or anything outside the specific, unfolding match.
+*   All time-related information; clocks and durations are to be excised.
+*   Biographical details, statistics, and rank data on the players.
+*   Etc. (This is where the user would specify specific items).
+
+Basically, I'm aiming for a lean, mean, analysis-ready version of the commentary. Time to get to work!
+
+手数1:
+
+削除理由:
+- 「藤原は初手に１３分考えた。」 → ルール3
+
+手数15: 横歩取り。
+
+削除理由:
+- 「最近は一手損角換わりに押され気味だが、決して横歩取りの後手番がダメとされたわけではない。」 → ルール2, 5
+
+手数22: この玉寄りを後回しにすると、▲３三角成△同桂▲２一角の強襲が成立する場合がある。
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原１６分、△村中１７分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「この局面で藤原が１３分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲藤原１時間６分、△村中５１分。」 → ルール3
+
+手数29: この局面は、次の手はほとんどが△７三桂。他に△２五歩など。
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「消費時間は▲藤原１時間５０分、△村中５４分。」 → ルール3
+- 「この局面は前例が１３２局あり、▲５５勝△７６勝（１千日手）。」 → ルール2
+- 「前例がたくさんあるといっても、そのほとんどが２０００年頃に指されている。昨年はわずか４局で、横歩取りの減少がはっきりとわかるデータだ。」 → ルール2
+
+手数33:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原２時間１４分、△村中１時間３４分。」 → ルール3
+- 「１６時半になってもこの局面だった。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１時間４８分の長考。」 → ルール3
+- 「藤原もここで１時間２６分考え、夕食休憩となった。」 → ルール3, 7
+- 「消費時間は▲藤原３時間４０分、△村中３時間２２分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１９時５０分頃の局面。」 → ルール3
+- 「消費時間は▲藤原３時間５０分、△村中３時間５３分。」 → ルール3
+
+手数40: 飛車の横利きを通し、７筋に歩を叩く手ができる。攻守に手段が多くなる突き捨て。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原４時間４分、△村中４時間２９分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「２１時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲藤原４時間３０分、△村中５時間１分。」 → ルール3
+
+手数58: お互い４五桂と打つ手が急所なので、ここで手番をにぎっている先手に▲４五歩と打つ権利がある。逆に△４五桂と打たれると、先手玉は一気に危ない形になる。
+
+削除理由:
+- 「２２時５０分頃の局面。」 → ルール3
+- 「消費時間は▲藤原５時間１３分、△村中５時間１９分。」 → ルール3

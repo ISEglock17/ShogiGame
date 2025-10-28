@@ -1,0 +1,158 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: a user wants me to clean up and refine commentary from Shogi game data. My job is to take raw comments and transform them into something more digestible and focused. I need to be precise about this.
+
+Essentially, I'm going to take it one comment at a time. I'll read each one, and using my established understanding of the rules provided, I'll identify and ruthlessly eliminate any extraneous information. No fluff, just the essentials: the current board state and the move being discussed.
+
+Once I've stripped away the noise, I'll then work to refine what remains. The goal is to make these pieces of information read smoothly and naturally, almost like hearing someone explain the game in real-time. This isn't just a simple extraction; it's a careful reconstruction into clear and understandable language. I see this process as an exercise in clarity and precision, ensuring that the essence of each commentary is preserved and presented in the most effective manner.
+
+手数19:
+
+削除理由:
+- 「ここで藤倉が１２分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は高崎２時間５７分、藤倉３時間８分。」 → ルール3
+- 「藤倉」 → ルール1
+- 「高崎」 → ルール1
+
+手数24:
+
+削除理由:
+- 「２０時１５分ごろの局面。」 → ルール3
+- 「消費時間は高崎３時間５分、藤倉３時間５１分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数33:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は高崎３時間４７分、藤倉３時間５９分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数36:
+
+削除理由:
+- 「２１時３０分ごろの局面。」 → ルール3
+- 「残り時間は高崎２時間２分、藤倉１時間２８分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数46:
+先手は勢いよく指しているが、攻め切れないのではないかという声も出ている。
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は高崎２時間８分、藤倉１時間２６分。」 → ルール3
+- 「高崎が」 → ルール1
+
+手数48:
+▲９二角があると言われていた。
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は高崎１時間５５分、藤倉１時間。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数51:
+
+削除理由:
+- 「２３時１０分ごろの局面。」 → ルール3
+- 「残り時間は高崎１時間１４分、藤倉５９分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数56:
+ジッと遊び金を使う。
+
+削除理由:
+- 「２３時３０分過ぎの局面。」 → ルール3
+- 「残り時間は高崎１時間９分、藤倉３７分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数58:
+
+削除理由:
+- 「０時前の局面。」 → ルール3
+- 「残り時間は高崎５７分、藤倉３３分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数64:
+
+削除理由:
+- 「０時１５分ごろの局面。」 → ルール3
+- 「残り時間は高崎４６分、藤倉２０分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数65:
+先手は玉を逃がした。
+
+削除理由:
+- 「高崎は２５分という終盤の長考で」 → ルール1, 3
+
+手数66:
+▲１八玉なら△５三飛と逃げやすい。▲６四飛△同歩▲７四角成に△２八飛と打てるからだ。
+
+削除理由:
+- 「０時４０分。」 → ルール3
+- 「残り時間は高崎２１分、藤倉２０分。」 → ルール3
+- 「高崎」 → ルール1
+- 「藤倉」 → ルール1
+
+手数67:
+
+削除理由:
+- 「高崎、残り１６分。」 → ルール1, 3
+
+手数70:
+飛角が元気なうちにスパーク。
+
+削除理由:
+
+手数78:
+
+削除理由:
+- 「残り時間は高崎１５分、藤倉８分。」 → ルール1, 3
+
+手数79:
+先手は端歩を突いた。後手玉は広いために詰まない。ここで△２九金が△３八龍以下の詰めろとなっている。
+
+削除理由:
+- 「高崎は６分考えて」 → ルール1, 3
+
+手数80:
+
+削除理由:
+- 「藤倉は残り８分から７分使い、ここから１分将棋。」 → ルール1, 3
+
+手数82:
+
+削除理由:
+- 「高崎は残り９分。」 → ルール1, 3
+- 「１時２０分過ぎの局面。」 → ルール3
+
+手数84:
+△６二玉は▲７二金△５三玉▲３四角成が詰めろ逃れ詰めろになる。
+
+削除理由:
+
+手数87:
+これは詰みだ。△同金は▲７五歩△同玉▲８四銀…。
+
+削除理由:
+- 「高崎、残り７分。」 → ルール1, 3
+
+手数89:
+以下△同金▲８四銀△８五玉▲６三角成と攻めて詰んでいる。８０手目△４八龍に代えて△２四香なら、受けにくい攻めでまだ後手にも勝機があったようだ。△２四香に▲６一銀△７三玉▲５一角で厳密には先手勝ちのようだが、難しい変化だった。
+
+削除理由:
+- 「終局時刻は１時３３分。」 → ルール3
+- 「消費時間は高崎５時間５３分、藤倉５時間５９分。」 → ルール3
+- 「勝った高崎は４勝１敗、敗れた藤倉は０勝５敗となった。」 → ルール1, 4
+- 「終局後、すぐに８０手目△４八龍に代えて△２四香が示されていた。」 → 盤面解説として統合
+- 「それなら」 → 盤面解説として統合
+- 「藤倉は頭を抱えていた。」 → ルール1

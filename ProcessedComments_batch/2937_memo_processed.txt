@@ -1,0 +1,90 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with Shogi game commentary and my task is to refine it. The goal, as I understand it, is to strip away all the extraneous noise – anything that wouldn't contribute directly to a reader's understanding of the board state or the reasoning behind a specific move. I need to focus on distilling these comments down to concise, natural language explanations that would be useful for someone *analyzing* the game.
+
+My process will be straightforward: I'll carefully apply the specified rules to identify and remove all the unnecessary information. Once that's done, I'll then smooth out the remaining text into grammatically sound sentences. Finally, I'll output the refined commentary in the requested format. It's all about precision and clarity, making the analysis process as streamlined as possible.
+
+手数18:
+
+削除理由:
+- 「後手はここで始めて持ち時間を使い、５分考えて着手している。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島４６分、△神崎８分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「先手は初手から全ての手に対して細かく持ち時間を使って指している。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「ここで△神崎が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲北島１時間４分、△神崎５２分。」 → ルール3
+
+手数30: △８一飛〜△６二玉の右玉も考えられたところ。
+
+削除理由:
+
+手数38:
+
+削除理由:
+- 「１４時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島１時間３０分、△神崎１時間１０分。」 → ルール3
+
+手数46: 単に△同桂成は▲同銀で先手陣が安定する。攻めの足がかりを作る。
+
+削除理由:
+- 「１５時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島２時間１６分、△神崎１時間５７分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲北島３時間７分、△神崎２時間１７分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「この局面で△神崎が９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲北島４時間１０分、△神崎２時間４０分。」 → ルール3
+
+手数68:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島４時間４０分、△神崎３時間１８分。」 → ルール3
+
+手数75:
+
+削除理由:
+- 「２１時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島５時間１５分、△神崎３時間３９分。」 → ルール3
+
+手数76: 歩を成った。
+
+削除理由:
+- 「４３分考えて」 → ルール3
+
+手数87:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島５時間２０分、△神崎４時間３９分。」 → ルール3
+
+手数97:
+
+削除理由:
+- 「２３時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島５時間３６分、△神崎５時間７分。」 → ルール3
+
+手数117:
+
+削除理由:
+- 「０時４０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲北島５時間５２分、△神崎５時間４８分。」 → ルール3

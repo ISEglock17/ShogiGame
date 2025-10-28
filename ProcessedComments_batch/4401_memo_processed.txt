@@ -1,0 +1,60 @@
+**Cleaning Up My Commentary for Sharper Insights**
+
+Okay, so I'm looking at this mountain of commentary data from shogi games. It's a goldmine, but it's buried under a ton of noise. What I really need is a way to refine those comments. The goal is clear: I want to strip away all the fluff – the irrelevant chatter, the redundant explanations – and get right to the heart of the matter. I'm after concise, insightful commentary that illuminates the board state and the reasoning behind each move. Think of it as distilling the essence of the game's analysis into clear, natural sentences that flow logically. No more wasted words, just pure strategic brilliance to work with. I need the good stuff to feed my own analysis.
+
+手数12: ９筋の位を取って、向かい飛車に振った。
+
+削除理由:
+
+
+手数26: 開戦。
+
+削除理由:
+
+
+手数29: 放っておくと△７九角成で終わってしまう。
+
+削除理由:
+- 「（！）」 → 装飾的な記号のため削除
+
+手数30: △３三桂の筋をみせつつ、△５四歩からの角の活用が後手の構想。
+
+削除理由:
+- 「山本」 → ルール1
+
+手数42: 
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中村太１時間４５分、山本５６分。」 → ルール3
+
+手数46: 
+
+削除理由:
+- 「１４時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中村太２時間１分、山本１時間３２分。」 → ルール3
+
+手数50: ▲４四角を受けた手だが、辛い形。
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中村太２時間３２分、山本１時間４８分。」 → ルール3
+
+手数58: 
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中村太３時間５９分、山本２時間２分。」 → ルール3
+
+手数63: 
+
+削除理由:
+- 「ここで山本は６分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は中村太４時間２０分、山本２時間２５分。」 → ルール3
+
+手数77: ここで後手は投了した。飛金両取りを受けるなら△２一銀ぐらいだが、▲２三歩成が厳しい。
+
+削除理由:
+- 「山本」 → ルール1
+- 「終局時刻は１９時２８分。」 → ルール3
+- 「消費時間は中村太４時間３４分、山本２時間３３分。」 → ルール3

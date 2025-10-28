@@ -1,0 +1,120 @@
+**Streamlining Commentary for Sharper Insights**
+
+Okay, so I'm presented with a task, a familiar one actually. It's about taking raw commentary data from Shogi games and refining it. The goal is clear: strip away all the fluff, the extraneous noise that clogs up the signal, and leave behind the pure essence – the insightful explanations of board positions and move choices. Think of it like a distillation process, getting to the concentrated knowledge within.
+
+I'm essentially going to apply a set of rules, a structured approach, to each individual comment associated with a move. First, I'll meticulously examine each comment against those established guidelines, making ruthless cuts. Anything that doesn't contribute directly to understanding the game's evolution gets the axe. Think of it as pruning the branches of a tree to reveal the strong, central trunk.
+
+Then comes the finesse. With the essential pieces remaining, I'll work to reconstruct them, weaving them into coherent, natural sentences. The aim isn't just to have isolated facts but to transform them into flowing narratives that truly illuminate the game's unfolding logic. I'm taking the raw materials and crafting them into a polished, informative presentation.
+
+手数1:
+
+削除理由:
+- 「◆木村　一基（きむら　かずき）八段◆」 → ルール1, 4
+- 「１９７３年６月２３日生まれ、千葉県四街道市出身。（故）佐瀬勇次名誉九段門下。１９９７年、四段。２００７年、八段。棋士番号は２２２。」 → ルール1, 4
+- 「タイトル戦登場は５回。棋戦優勝は２回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆橋本　崇載（はしもと　たかのり）八段◆」 → ルール1, 4
+- 「１９８３年３月３日生まれ、石川県小松市出身。剱持松二九段門下。２００１年、四段。２０１２年、八段。棋士番号は２３９。」 → ルール1, 4
+
+手数3:
+
+削除理由:
+- 「木村の通算成績は５３４勝２８８敗（勝率０．６５０）。」 → ルール4
+- 「昨年度成績は２２勝１８敗（０．５５０）。」 → ルール4
+- 「本年度成績は１９勝１４敗（０．５７６）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「橋本の通算成績は３２４勝２０１敗（勝率０．６１７）。」 → ルール4
+- 「昨年度成績は１８勝１５敗（０．５４５）。」 → ルール4
+- 「本年度成績は１４勝１２敗（０．５２２）。」 → ルール4
+
+手数15: 横歩取りへ。
+
+削除理由:
+
+手数18: ８四飛戦法へ。
+
+削除理由:
+- 「橋本はここ５年ほど、横歩取りはほとんど指していなかったが、２０１４年１１月に２回、後手を持って指している。２０１４年１１月１３日には順位戦で採用。」 → ルール2, 5
+- 「【第７３期順位戦Ｂ級１組８回戦▲豊島将之七段−△橋本戦】」 → ルール2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１４／１１／１３／Ｂ１／７３５４．ｈｔｍｌ」 → ルール8
+
+手数19:
+
+削除理由:
+- 「木村は横歩取りは得意戦法のうちの一つ。」 → ルール5
+- 「同日の２０１４年１１月１３日の対局では後手番を持って指していた。」 → ルール2
+- 「【第７３期順位戦Ｂ級１組８回戦▲谷川浩司九段−△木村戦】」 → ルール2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１４／１１／１３／Ｂ１／７３５３．ｈｔｍｌ」 → ルール8
+
+手数22: ここまでは相横歩取りや青野流などの変化はあるが、横歩取りでは一番多い進行だ。ここからは先手がどう囲うかによって展開が変わってくる。
+
+削除理由:
+
+手数23:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲５八玉までの消費時間は▲木村３３分、△橋本６分。」 → ルール3
+
+手数24: 意味深長な端歩。端攻めの含みや△９三桂の活用、さらに△６二玉〜△７二玉と右に囲ったときに逃げ場を広くする意味まである。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１２時１０分、ここで橋本が３８分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲木村４４分、△橋本１時間８分。」 → ルール3
+- 「昼食の注文は橋本がギンダラ定食（みろく庵）。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+
+手数29: 端からの軽い桂の活用。▲２五桂と使う道しかないが、その分スキが少なく使うことができる。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「▲１七桂までの消費時間は▲木村１時間１４分、△橋本１時間１３分。」 → ルール3
+
+手数30: 軽い突き捨て。
+
+削除理由:
+
+手数32: ３筋へ転換した。戦場に飛車を利かしてけん制したということになるか。たとえば▲３六飛〜▲２五桂と３二金の浮き駒を狙うような筋はなくなっている。
+
+削除理由:
+
+手数33: ３筋を強化。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△１四歩までの消費時間は▲木村１時間３９分、△橋本１時間５５分。」 → ルール3
+
+手数35: ▲８二飛成を狙った手。単純な攻めだが後手は時間を使っている。受けるだけなら△８四歩や△８三歩で簡単だが、手持ちの歩を使うのはもったいない。弱い受けは避けたいので悩んでいるということだろう。
+
+削除理由:
+- 「橋本は」 → ルール1
+
+手数36: 弱気に受けるくらいなら受けないと攻め合いに行った。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△１五歩までの消費時間は▲木村１時間５９分、△橋本２時間４４分。」 → ルール3
+
+手数38: ここでの角交換は△２八角と打ちこむためか。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「△２八角までの消費時間は▲木村２時間７分、△橋本３時間３６分。」 → ルール3

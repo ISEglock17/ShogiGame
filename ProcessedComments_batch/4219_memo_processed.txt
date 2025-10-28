@@ -1,0 +1,140 @@
+**Streamlining Chess Commentary: My Thought Process**
+
+Alright, so the user wants me to clean up some chess game commentary, essentially giving it a professional polish. My plan is pretty straightforward. I'm going to take it step-by-step, move-by-move.
+
+First, I'll read through each comment associated with a move. Then, I'll apply the specific rules they've provided. These rules will act as my filters, pointing out exactly what needs to go – any extraneous details, irrelevant asides, or anything that doesn't contribute to a clear understanding of the position.
+
+Next, the actual pruning. Based on those rules, I'll meticulously remove the unwanted segments. This is where I'll be most critical, making sure I'm adhering precisely to the guidelines. Finally, with the unnecessary baggage gone, I'll focus on smoothing out what remains. I'll rephrase it to be natural, concise, and flow smoothly in Japanese. Essentially, I'm transforming raw commentary into something that's both informative and a pleasure to read.
+
+手数7: 相手の態度を見てから、歩交換後に自分の飛車の引く位置を決めようとしている。
+
+削除理由:
+
+---
+手数11:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は田中２分、日浦２０分。」 → ルール3
+
+---
+手数14: このタイミングで歩を交換した。
+
+削除理由:
+
+---
+手数20: 後手は棒銀を繰り出す。
+
+削除理由:
+- 「日浦」 → 置換ルール
+
+---
+手数25: 近年流行している相掛かり引き飛車棒銀の先後逆の形になっている。
+
+削除理由:
+
+---
+手数30:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は田中１７分、日浦１時間４分。」 → ルール3
+
+---
+手数31:
+
+削除理由:
+- 「▲３六歩の局面で日浦が３２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は田中２５分、日浦１時間３６分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+---
+手数33: △７六銀は▲２二角成で逃げられる。
+
+削除理由:
+
+---
+手数34: 角交換させないようにする。
+
+削除理由:
+
+---
+手数39:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は田中５３分、日浦２時間７分。」 → ルール3
+
+---
+手数40: バランスよく雁木に構える。
+
+削除理由:
+
+---
+手数47: △１三同香▲７七桂△５四銀引▲２五桂△１四香▲７四歩△同歩▲３七角のように進めば先手成功形。後で▲８六飛や▲７六飛と転換する味がいい。
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は田中１時間２２分、日浦２時間３４分。」 → ルール3
+- 「田中は軽快な将棋を得意としている。「カルショウ」ともいわれる。」 → ルール5
+
+---
+手数54:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は田中１時間４６分、日浦３時間２１分。」 → ルール3
+
+---
+手数60:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は田中２時間８分、日浦４時間１分。」 → ルール3
+
+---
+手数64:
+
+削除理由:
+- 「考えて夕食休憩に入った。」 → ルール7
+- 「消費時間は田中２時間４６分、日浦４時間１０分。」 → ルール7, 3
+
+---
+手数77:
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「消費時間は田中３時間５分、日浦４時間２８分。」 → ルール3
+
+---
+手数86:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「残り時間は田中２時間４８分、日浦４０分。」 → ルール3
+
+---
+手数93: ▲１六飛を狙っている。
+
+削除理由:
+
+---
+手数95: 先手陣は飛車以外の攻めには強い格好だ。
+
+削除理由:
+
+---
+手数98:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は田中２時間７分、日浦１４分。」 → ルール3
+
+---
+手数105: ここで後手の投了となった。先手陣は手付かずで、後手玉は寄り筋。
+
+削除理由:
+- 「日浦」 → 置換ルール
+- 「終局時刻は２２時６分。」 → ルール3
+- 「消費時間は田中３時間５９分、日浦５時間４７分。」 → ルール3
+- 「勝った田中は１勝１敗、敗れた日浦は２連敗となった。」 → ルール4

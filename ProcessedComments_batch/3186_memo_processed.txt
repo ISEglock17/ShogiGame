@@ -1,0 +1,148 @@
+**Focusing My Lens: Shaping Comments for Deeper Analysis**
+
+Okay, so I've got this data set of Shogi game moves, and the user wants me to refine the comments associated with each move. My goal here is clear: strip away all the extraneous noise – you know, the meta-commentary, player introductions, time stamps – the stuff that clogs up the signal. I need to get down to the pure essence of the move and the board position, leaving behind only the insightful explanations. Think of it like distilling a complex liquid to its purest form.
+
+The process is straightforward: first, I'll apply the specific deletion rules to the comments. I'll meticulously filter out everything that doesn't contribute directly to understanding the game's evolution. Then, and this is crucial, I'll transform what's left into coherent, flowing sentences. My aim is not just to reduce the data, but to enhance its readability and usefulness for in-depth analysis. This is about making the data ready for the heavy lifting I know it can handle.
+
+手数8: 後手は得意の中飛車。
+
+削除理由:
+- 「戸辺は」 → 置換ルール（後手に置換）
+- 「得意の」 → ルール5
+
+手数22: 目標になりそうな角をさばく。▲６六歩と止めてくれれば、先手の攻撃力が落ちる。
+
+削除理由:
+- （なし）
+
+手数24:
+
+削除理由:
+- 「１０時５５分ごろの局面。」 → ルール3
+- 「消費時間は川上１８分、戸辺５分。」 → ルール3
+
+手数27: 先手は手得になっていることに満足して持久戦を目指す。
+
+削除理由:
+- 「川上は」 → 置換ルール（先手に置換）
+
+手数29: がっちり位を確保する。
+
+削除理由:
+- （なし）
+
+手数32:
+
+削除理由:
+- 「△４二金の局面で川上が１時間２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は川上１時間３６分、戸辺１７分。」 → ルール3
+
+手数33: 角を上がり、持久戦を目指す。
+
+削除理由:
+- 「昼食休憩を挟む１時間３２分の長考で」 → ルール3, 7
+
+手数35:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は川上２時間９分、戸辺２９分。」 → ルール3
+
+手数46: 後手は銀冠に組み替えた。
+
+削除理由:
+- （なし）
+
+手数49: 中央に戦力を集める。
+
+削除理由:
+- （なし）
+
+手数52:
+
+削除理由:
+- 「１５時半ごろの局面。」 → ルール3
+- 「消費時間は川上２時間３５分、戸辺１時間２２分。」 → ルール3
+
+手数56: 振り飛車は左桂のさばきが重要。
+
+削除理由:
+- （なし）
+
+手数60: 端から攻めの継続をはかる。
+
+削除理由:
+- （なし）
+
+手数65:
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は川上２時間５５分、戸辺２時間１５分。」 → ルール3
+
+手数66: これが△１五歩からの狙いだった。
+
+削除理由:
+- （なし）
+
+手数70: △６九銀のキズを見越して、中央から攻める。
+
+削除理由:
+- （なし）
+
+手数71: ▲７五歩の攻めを見せて攻防。
+
+削除理由:
+- （なし）
+
+手数72:
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は川上３時間２１分、戸辺２時間４０分。」 → ルール3
+- 「この局面で川上が４０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は川上４時間１分、戸辺２時間４０分。」 → ルール3
+
+手数73: 桂馬を捨てて、手を稼ぐ。
+
+削除理由:
+- 「▲３三桂成は夕食休憩を挟んで４８分の長考。」 → ルール3, 7
+
+手数79: ▲６七桂からの狙いの筋。
+
+削除理由:
+- （なし）
+
+手数84: ▲同桂が両取りになるが、△５五香と走れるのも大きい。
+
+削除理由:
+- （なし）
+
+手数88: 先手は△５五香が残っており、忙しい。
+
+削除理由:
+- 「２０時１０分ごろの局面。」 → ルール3
+- 「消費時間は川上４時間１５分、戸辺３時間２５分。」 → ルール3
+
+手数93: ３九角を活用する。
+
+削除理由:
+- （なし）
+
+手数98: 一直線の寄せ合い。
+
+削除理由:
+- （なし）
+
+手数101: これが詰めろではない。
+
+削除理由:
+- （なし）
+
+手数114: ここで先手が投了した。以下▲同金は△８七銀▲同玉△７五桂▲７六玉△６七銀▲７五玉△７六飛▲６四玉△５三金▲５五玉△４三桂で、▲８七玉も△７五桂▲７六玉△８七銀▲同金△６七銀▲７五玉△５七角引成から詰む。
+
+削除理由:
+- 「川上が」 → 置換ルール（先手に置換）
+- 「終局時刻は２１時６分。」 → ルール3
+- 「消費時間は川上４時間４６分、戸辺３時間４１分。」 → ルール3
+- 「勝った戸辺、敗れた川上ともに６勝３敗となった。」 → ルール4

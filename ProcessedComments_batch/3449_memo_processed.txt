@@ -1,0 +1,138 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a task: to clean up and structure shogi game commentary, much like I've done countless times before. My expertise in this area is second nature at this point. I need to take raw commentary and transform it into a clean, easy-to-read format.
+
+Here's my thought process. First, I'll logically split the input into individual moves, making each move's commentary a separate entity. This is straightforward; I know the patterns to look for. Then, the real work begins: applying the cleaning rules. I'll systematically remove any irrelevant or redundant information based on the specific guidelines provided. Finally, I'll perform the real-time replacement of any player names with the standardized labels "Sente" (先手) for the first player and "Gote" (後手) for the second player. This ensures consistency and anonymity when needed, keeping the focus on the strategic analysis of the moves. Essentially, I'm streamlining the commentary, making it perfect for analysis or archiving.
+
+手数2:
+
+削除理由:
+- 「堀口は」 → ルール1
+- 「３分を使っての着手。」 → ルール3
+
+手数3: 矢倉模様の出だし。
+
+削除理由:
+- 「隣りでおこなわれている▲屋敷−△阿部戦と同じく、」 → ルール2
+
+手数25: 矢倉森下システム。
+
+削除理由:
+- 「ここまでの消費時間は井上４分、堀口０分。」 → ルール1, 3
+
+手数45:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は井上３０分、堀口１時間２１分。」 → ルール1, 3
+- 「昼食の注文は、井上はミックス雑炊。堀口はなし。」 → ルール1, 7
+
+手数54: 桂損の攻め。
+
+削除理由:
+
+手数55:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は井上１時間３分、堀口１時間２２分。」 → ルール1, 3
+
+手数56: ▲同銀は△７五飛であたってくる。
+
+削除理由:
+- 「堀口、この一手に１時間３分。」 → ルール1, 3
+
+手数57:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は井上１時間５分、堀口２時間３１分。」 → ルール1, 3
+
+手数64: 決めるだけ決めて、手を戻した。
+
+削除理由:
+
+手数65: キズを消す。
+
+削除理由:
+- 「時刻は１６時を過ぎた。」 → ルール3
+- 「ここまでの消費時間は井上１時間５０分、堀口２時間５０分。」 → ルール1, 3
+
+手数66: 腰を据えて再攻撃。
+
+削除理由:
+
+手数67: クリンチ。
+
+削除理由:
+
+手数68:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は井上２時間１１分、堀口３時間２８分。」 → ルール1, 3
+
+手数75: これで先手の桂香得。
+
+削除理由:
+
+手数76:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は井上３時間２３分、堀口３時間２８分。」 → ルール1, 3
+- 「夕食の注文は、井上はうな重（梅）。堀口はなし。」 → ルール1, 7
+
+手数80:
+
+削除理由:
+- 「１９時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は井上３時間２２分、堀口３時間３０分。」 → ルール1, 3
+
+手数82:
+
+削除理由:
+- 「堀口、１時間３２分の長考だった。」 → ルール1, 3
+- 「残り時間は井上２時間１８分、堀口５８分。」 → ルール1, 3
+
+手数84:
+
+削除理由:
+- 「２１時半時頃の局面。」 → ルール3
+- 「残り時間は井上２時間１４分、堀口３６分。」 → ルール1, 3
+- 「控え室では「難しいです」の声。」 → ルール1, 6
+
+手数85: じっと成銀を逃げた。
+
+削除理由:
+- 「２４分考え、」 → ルール3
+
+手数86: 後手は銀を出る。以下は不退転の攻め。
+
+削除理由:
+- 「堀口は」 → ルール1
+- 「２０分を割いて」 → ルール3
+
+手数94:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「残り時間は井上１時間３５分、堀口５分。」 → ルール1, 3
+
+手数97:
+
+削除理由:
+- 「井上は２２分を使って、残りは１時間１３分。」 → ルール1, 3
+
+手数98: 後は一分将棋。
+
+削除理由:
+- 「堀口は最後１分を使って、」 → ルール1, 3
+- 「「井上先生が余してそう」と関西の検討陣。」 → ルール1
+
+手数115:
+
+削除理由:
+- 「終了時刻は２３時４９分。」 → ルール3
+- 「消費時間は井上５時間１７分、堀口５時間５９分。」 → ルール1, 3
+- 「勝った井上は３勝１敗、敗れた堀口は１勝３敗となった。」 → ルール1, 4

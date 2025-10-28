@@ -1,0 +1,76 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty straightforward: get rid of all the noise and keep only the gold. I need to take the raw commentary data from these games and filter out the unnecessary fluff - you know, the meta stuff, the introductions to players, the clock information... all that jazz that clutters the analysis. My goal is to distill each comment down to its essence: a clear, concise explanation of the board state and the move itself, presented in a natural, readable sentence. That's the real value here.  I'm going to have to develop a robust system to identify what's crucial and what's expendable. After identifying the noise, I'll then focus on rephrasing the useful content into concise sentences for optimal readability.
+
+手数11: 先手向かい飛車、後手三間飛車の相振り飛車となった。
+
+削除理由:
+- (削除なし)
+
+手数16:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は佐々木１９分、田村１３分。」 → ルール3
+
+手数19: 金美濃と呼ばれる形。普通の美濃囲いよりも３筋が堅い。
+
+削除理由:
+- (削除なし)
+
+手数22: 後手は穴熊を狙った動き。
+
+削除理由:
+- 「田村」 → ルール1
+
+手数25: 先手は伸び伸びと位を３つ取る。
+
+削除理由:
+- 「佐々木」 → ルール1
+
+手数26:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は佐々木１時間６分、田村２１分。」 → ルール3
+- 「ここで佐々木が３８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐々木１時間４４分、田村２１分となった。」 → ルール3
+- 「昼食の注文は田村が冷やしむじなそば、佐々木は注文なし。」 → ルール7
+
+手数32: ▲２六飛に△２四歩を用意した。
+
+削除理由:
+- (削除なし)
+
+手数39: 居玉は避けよ。
+
+削除理由:
+- (削除なし)
+
+手数40:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は佐々木２時間３０分、田村２４分。」 → ルール3
+
+手数41: ２二角を狙う。
+
+削除理由:
+- (削除なし)
+
+手数51: 穴熊の弱点は９筋。
+
+削除理由:
+- (削除なし)
+
+手数54: 大事な手。放っておくと、▲８四歩△同歩▲同銀△８三歩▲同銀成△同銀▲８四歩の筋で銀交換になるところ。
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は佐々木３時間１４分、田村３７分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は佐々木４時間１０分、田村４７分。」 → ルール3

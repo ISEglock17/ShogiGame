@@ -1,0 +1,124 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with this Shogi commentary and the goal is to make it as clean and insightful as possible, focusing purely on the game's evolution. As an expert, I know exactly what needs to be done. It's essentially a surgical procedure, carefully removing all the extraneous noise and leaving behind the pure essence of the game.
+
+Here's how I'll approach it. Firstly, I'll dissect the commentary on a move-by-move basis. Then, I'll apply my knowledge of the established rules, identifying any parts of the commentary that are irrelevant to the actual analysis of the game itself – things like greetings, authorial asides, or anything not directly related to the board position or the player's choices. This requires a nuanced understanding of what *is* valuable information.
+
+Next, I'll systematically remove these identified elements, ensuring I adhere strictly to the guidelines. This is the crucial part: getting rid of the clutter without losing any critical context.
+
+After the pruning, the remaining text will likely need some natural language processing to make it flow smoothly and read as a coherent analysis. I will tidy the structure to ensure readability.
+
+Finally, the end product will be a neatly formatted, concise commentary, presented as instructed. Each pruned section must be clearly labeled, so the user knows *why* I removed it. The end goal is to provide a clean and insightful analysis, perfect for any Shogi enthusiast.
+
+手数16:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間は中田７分、広瀬１０分。」 → ルール3
+
+手数19:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は中田４９分、広瀬１５分。」 → ルール3
+
+手数20:
+
+削除理由:
+- 「△３三角の局面で中田が２７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は中田１時間１６分、広瀬４４分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は中田１時間２４分、広瀬１時間２７分。」 → ルール3
+
+手数35: ▲６八金右としなかったので、銀冠穴熊の線はほとんどないといっていい。
+
+削除理由:
+- なし
+
+手数37: ▲３五歩△同歩▲３八飛を狙う。
+
+削除理由:
+- なし
+
+手数38: ▲３五歩△同歩▲３八飛に△４四角を用意。
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は中田２時間１８分、広瀬２時間１分。」 → ルール3
+
+手数41: 先手はいきなり仕掛けた。▲９五歩や▲８五歩を突かない最短の仕掛け。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は中田２時間３１分、広瀬２時間６分。」 → ルール3
+- 「中田は」 → 置換ルール
+
+手数42:
+
+削除理由:
+- 「５１分の長考。」 → ルール3
+
+手数54: ▲３四飛に△３三角▲同飛成△２二角が狙いの反撃だろう。先手は後手の飛車をさばかせてはならない。具体的には上記の△２二角に▲同龍△同飛は最悪で、２枚飛車の攻めが受からなくなる。△２二角には▲５五角と受けるのだろう。後手としたら５二飛がさばければもうけもの。飛がさばけなくても、受け駒として考えて指すつもりだろう。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は中田２時間５１分、広瀬３時間２５分。」 → ルール3
+- 「広瀬としたら」 → 置換ルール
+- 「中田がここで３７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は中田３時間２８分、広瀬３時間２５分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「１９時４５分ごろの局面。」 → ルール3
+- 「消費時間は中田３時間４０分、広瀬３時間４８分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「消費時間は中田３時間４０分、広瀬３時間５４分。」 → ルール3
+
+手数68: 穴熊ペースのようだ。先手が７六のキズを消すのは大変だ。
+
+削除理由:
+- 「消費時間は中田４時間５２分、広瀬３時間５７分。」 → ルール3
+
+手数70: この飛車浮きは痛いかもしれない。懸案だった飛車がさばけては後手が好調だろう。
+
+削除理由:
+- 「「痛いですね、この飛車浮き」と村中四段。」 → ルール1
+- 「広瀬が」 → 置換ルール
+- 「残り時間は中田１５分、広瀬２時間。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「中田残り１２分。」 → ルール3
+- 「広瀬が考えている。」 → ルール3
+
+手数76: ▲７二金の筋を前もって受ける。
+
+削除理由:
+- なし
+
+手数77: 米長玉で頑張る。
+
+削除理由:
+- 「中田、残り９分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「中田、残り２分。」 → ルール3
+
+手数96: 穴熊流の一手。これで寄り付きがなくなった。ここで先手の投了となった。
+
+削除理由:
+- 「中田の」 → 置換ルール
+- 「終局時刻は２３時１１分。」 → ルール3
+- 「消費時間は中田５時間５９分、広瀬４時間４３分。」 → ルール3
+- 「勝った広瀬は５勝１敗、敗れた中田は２勝３敗となった。」 → ルール4

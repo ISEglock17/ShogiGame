@@ -1,0 +1,118 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty clear: they want me to take this raw data full of comments and transform it into something lean and mean, ready for deep analysis. They're asking me to extract the *meaningful* insights about the game itself, the strategic thinking behind the moves, and chuck out all the fluff.
+
+So, I'm thinking, I need a clear rule set.  First, I'll need to identify and zap the irrelevant bits. We're talking about those off-topic asides, the introductions, the clock updates – anything that doesn't directly contribute to understanding the board state or the player's intentions. I'll need to define what's truly essential and what's just noise in this specific context.
+
+Once that's done, it's about making sense of the remaining text.  I need to smooth out the language, connect the ideas logically, and ensure the final output is a cohesive narrative that flows and actually *explains* the crucial moments of the game.  It's about crafting an insightful commentary that's both accurate and easily digestible for further processing and analysis. Essentially, I'm aiming for a streamlined, expert-level breakdown of the game's key decisions.
+
+手数1:
+
+削除理由:
+- 「【森けい二九段】」 → ルール1, 4
+- 「１９４６年４月６日生まれ、高知県出身。（故）大友昇九段門下。」 → ルール1, 4
+- 「１９６３年５級で奨励会入会。１９６８年４月１日四段。１９８５年１２月９日九段。タイトル獲得は通算２期。」 → ルール4
+- 「順位戦は４３期目。Ｃ級１組は通算３期目。Ａ級在籍１０期（名人挑戦１回）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【福崎文吾九段】」 → ルール1, 4
+- 「１９５９年１２月６日生まれ、大阪府出身。田中魁秀九段門下。」 → ルール1, 4
+- 「１９７５年５級で奨励会入会。１９７８年１０月１１日四段。２００５年１０月２８日九段。タイトル獲得２期（十段、王座）。」 → ルール4
+- 「順位戦は３３期目。Ｃ級１組は通算６期目。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「森の今年度成績は８勝１１敗（勝率０．４２１）。」 → ルール4
+- 「通算成績は８２６勝７８１敗（勝率０．５１４）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「福崎の今年度成績は７勝１３敗（勝率０．３５０）。」 → ルール4
+- 「通算成績は５９５勝６０１敗（勝率０．４９７）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「森も福崎も居飛車・振り飛車両方を指しこなすが、森は今期の順位戦では７局中２局が居飛車、５局が振り飛車を選んでいる。」 → ルール5
+
+手数6: 本局は三間飛車へ振った。
+
+削除理由:
+- 「一方の福崎は今期の順位戦では７局中４局が居飛車、３局が振り飛車を選んでいる。」 → ルール5
+
+手数13: 先手は向かい飛車へ。戦型は相振り飛車となった。
+
+削除理由:
+- 「森は」 → 置換ルール
+
+手数14: 後手は美濃囲いに組む。
+
+削除理由:
+- 「福崎は」 → 置換ルール
+
+手数17: ８筋の歩を伸ばしていく。
+
+削除理由:
+- 「森」 → 置換ルール
+
+手数18: 後手は△３四飛と引き、先手の飛車先交換を一時的に受けつつ石田流の駒組みを目指す。
+
+削除理由:
+- 「福崎は」 → 置換ルール
+
+手数23:
+
+削除理由:
+- 「１０時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森１４分、△福崎９分。」 → ルール3
+
+手数30: 後手は積極的に銀をぶつけていった。
+
+削除理由:
+- 「福崎は」 → 置換ルール
+- 「この局面で森が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲森１時間８分、△福崎４６分。」 → ルール3
+
+手数31: 先手は▲５五銀とかわした。▲４五同銀△同歩と進めるのは、角が向かい合う形となり、囲いが未完成の先手としては指し切れない。
+
+削除理由:
+- 「昼食休憩が終わり、対局が再開してすぐ」 → ルール7
+- 「森は」 → 置換ルール
+
+手数34:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森１時間２９分、△福崎５６分。」 → ルール3
+
+手数41: ５五にいた銀を手順に７五へ移動させた。単純だが次に▲８四銀から８筋突破を目指す狙いがある。
+
+削除理由:
+- 「森」 → 置換ルール
+
+手数42:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲森２時間２４分、△福崎１時間２３分。」 → ルール3
+
+手数47: 次に▲８三歩△同銀▲８四銀△同銀▲８三歩と攻める順がある。
+
+削除理由:
+
+手数50: ４７手目のコメントで書いたとおり、△８三同銀には▲８四銀が厳しい。後手は端玉で耐える。
+
+削除理由:
+- 「福崎」 → 置換ルール
+
+手数53: この局面で後手が投了した。投了図は▲９三銀成△同玉▲９四歩△９二玉▲８二歩成までの詰めろだが、△７一金や△７一角と受けても▲９四歩△同歩▲９三歩の攻めが厳しく、既に受けが難しい局面のようだ。
+
+削除理由:
+- 「福崎が投了を告げた」 → 置換ルール
+- 「終局時刻は１５時４０分。」 → ルール3
+- 「消費時間は▲森２時間４４分、△福崎１時間４０分。」 → ルール3
+- 「勝った森は４勝４敗、敗れた福崎は３勝５敗となった。」 → ルール4

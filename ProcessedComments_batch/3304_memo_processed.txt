@@ -1,0 +1,101 @@
+**Focusing the Lens: Cleaning Up Game Commentary**
+
+Okay, so I've got this request – someone wants me to refine commentary found within shogi game data. My goal, as I understand it, is to distill these comments down to their essential analytical core. I need to strip away all the extraneous stuff: the metadata, the player introductions, the time stamps... all the fluff that distracts from the actual analysis of the board state and the moves.
+
+Essentially, I'm aiming for clean, insightful explanations of what's happening on the board, expressed as natural, readable sentences. It's about focusing the commentary, removing the noise, and ensuring that what remains is directly relevant to understanding the game's unfolding dynamics. My next steps are clearly defined: I need to establish a set of rules for identifying and removing the unnecessary information, and then I'll use those rules to massage the surviving commentary into something concise and coherent.
+
+手数1:
+
+削除理由:
+- 「先崎は闘志十分の様子。」 → ルール4
+- 「指し直し局に向けて、駒は一旦記録係がしまうことが多いが、先崎がかなり早く戻ったため、棋譜確認中だった記録係はまだ駒をしまっていなかったようだ。」 → ルール1, 8
+- 「モニターに映る盤上に下座側から手が伸び、次々と駒が片付けられていた。」 → ルール1, 8
+
+手数3: 挑発気味の手。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数6: 後手も誘いに乗って中飛車を選んだ。
+
+削除理由:
+- 「桐山」 → ルール1
+
+手数28:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲先崎３時間５５分、△桐山４時間４１分。」 → ルール3, 1
+
+手数37: ▲３二同飛成は△同金で、後手陣に打ち込みの隙がなく、軽やかに捌かれている。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数38: △３五歩と打つよりもプレッシャーが大きい。▲３六歩ならそこで△３五歩と打てば先手を取れる。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数44: △５五歩では△３三角とあらかじめ当たりを避けておいたほうがよかったのかもしれない。
+
+削除理由:
+- 「感想戦では、」 → ルール8
+- 「といわれていた」 → （自然な文章に整形）
+
+手数49:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲先崎４時間２１分、△桐山４時間５９分。」 → ルール3, 1
+
+手数52: ▲３五金と押さえられる手を避ける。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数60: ▲３五同金なら△５六飛。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数62: なおもしつこく追い掛け回す。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数66: ばっさりと。△３五同角は▲５五金とかわされるくらいでも続かなさそうだ。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数73:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲先崎４時間５８分、△桐山５時間３２分。」 → ルール3, 1
+
+手数74: △５六銀成▲２四歩△４六成銀は▲１一角成で先手玉が広いと判断したのだろう。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数80: 後手は駒損。攻めが続かなければならない。△４五銀（▲同銀は△５五角の王手飛車）の大技も狙いのひとつ。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数81: △６六歩と突かれる手を防ぎながら、▲１一角成を見せ、後手玉もにらんでいる。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数86: ▲２四同歩なら△２五歩▲１六飛△１四歩と飛車を取りに行く狙い。
+
+削除理由:
+- 「」 → （削除なし）
+
+手数87: 徹底的に受ける。
+
+削除理由:
+- 「」 → （削除なし）

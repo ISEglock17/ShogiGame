@@ -1,0 +1,84 @@
+**Streamlining Chess Commentary for Analysis**
+
+Okay, so I'm presented with a task, a familiar one: taking raw commentary from a Shogi game and refining it. My goal is clear – I need to sift through the noise and isolate the valuable insights, the strategic observations about the board state and the moves being played. I want to strip away all the extraneous chatter that's irrelevant to our analytical needs, leaving only the pure essence of the game's unfolding narrative.
+
+Essentially, I'm working with a three-step process. First, I have to leverage established deletion rules to precisely identify the junk. It's about efficiently flagging the irrelevant material. Second, with the signal separated, I'll rework what remains, structuring it into grammatically sound and logical sentences. Finally, with a clean and focused summary, I'll output the refined commentary in the format requested.
+
+手数2:
+
+削除理由:
+- 「淡路、２手目に６分考えた。」 → ルール1, 3
+
+手数4:
+
+削除理由:
+- 「ここでも８分。」 → ルール3
+
+手数14:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５分、△淡路４１分。」 → ルール1, 3
+
+手数27:
+
+削除理由:
+- 「この局面で淡路が３９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲高野１５分、△淡路１時間４１分。」 → ルール1, 3
+
+手数33: 後手が角を引いた瞬間に▲２四歩を突くことが多い。△同歩▲同角△同角▲同飛と進んだときに、角を引いた一手がムダになるからだ。
+
+削除理由:
+
+手数34: 歩は取らず、突っ張る。
+
+削除理由:
+
+手数38: ▲４五同桂は△４四銀〜△１九角成の狙いがある。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野２９分、△淡路２時間４１分。」 → ルール1, 3
+
+手数46: 「菊水矢倉」と呼ばれる形の変形。将来、一段目に飛車を打ち込まれても△３一銀や△１二玉と、懐深く戦うことができる囲いだ。
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「消費時間は▲高野１時間１３分、△淡路２時間２６分。」 → ルール1, 3
+- 「一時期大流行した対四間飛車のミレニアム（トーチカ・カマボコ囲いなど）に似ているが、ミレニアムが菊水矢倉を応用したものだろう。」 → ルール2
+
+手数52:
+
+削除理由:
+- 「１時間１７分の長考で着手。」 → ルール3
+- 「ここで高野が３２分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲高野２時間５８分、△淡路３時間５５分。」 → ルール1, 3
+
+手数60:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野３時間９分、△淡路４時間２分。」 → ルール1, 3
+
+手数61:
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野４時間３分、△淡路４時間２９分。」 → ルール1, 3
+
+手数89:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は▲高野４時間３３分、△淡路５時間９分。」 → ルール1, 3
+
+手数99:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５時間７分、△淡路５時間２１分。」 → ルール1, 3

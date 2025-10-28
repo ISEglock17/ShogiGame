@@ -1,0 +1,124 @@
+**The Challenge of Clean Commentary**
+
+Okay, so I'm presented with a task, seemingly straightforward on the surface, but likely nuanced given the nature of the data. The user, another expert I presume, wants me to surgically remove the noise from these Shogi game commentaries, leaving only the essential information: the board state and the move itself.
+
+My process will involve a meticulous, step-by-step approach. I'll need to dissect each comment, meticulously parsing it for each move in the game. Then, I'll have to cross-reference each element of the commentary against the defined set of removal rules. This part will be critical, as I'll need to be precise – missing even a minor rule could result in inaccuracies. Finally, with the rules firmly in place, I'll excise the unwanted sections, leaving behind the distilled essence of each move: the pure, strategic heart of the game. It's a matter of precision and understanding the underlying language of Shogi.
+
+手数1:
+
+削除理由:
+- 「佐藤天は」 → 置換ルール（先手への置換）
+- 「初手に２分使った」 → ルール3
+
+手数11: 現在後手は矢倉や右玉、陽動振り飛車、雁木などの選択肢があるので態度を決めてもらう意味。△３三銀なら矢倉、△３三角なら右玉や陽動振り飛車になる公算が高い。
+
+削除理由:
+
+手数12: 珍しい矢倉になった。
+
+削除理由:
+- 「予定だったか、わずか１分で銀を上がった。」 → ルール3
+- 「武市にしては」 → 置換ルール（後手への置換）、ルール1
+
+手数19: ２五歩を決めた関係で普通の矢倉にすると作戦の幅が狭く面白くない。そこで、２五歩型が生きる急戦矢倉を目指す。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は佐藤天２０分、武市２９分。」 → ルール3, 置換ルール
+
+手数27: 急戦矢倉の形。
+
+削除理由:
+- 「米長邦雄永世棋聖が得意にしていた」 → ルール1, 2
+
+手数28: 居玉のまま打って出る。積極的な指し回しだ。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「▲６六銀の局面で武市が３７分考えて昼食休憩に入った。」 → ルール3, 7, 置換ルール
+- 「消費時間は佐藤天３０分、武市１時間２４分。」 → ルール3, 置換ルール
+
+手数32: 後手は攻めた。類似した局面では無理筋と言われているが、秘策はあるのだろうか。
+
+削除理由:
+- 「昼食休憩を挟む４４分の長考で」 → ルール3, 7
+- 「（先後逆の△４一玉型）」 → ルール2
+- 「武市に」 → 置換ルール
+
+手数33:
+
+削除理由:
+- 「定跡通りとばかりに５分の消費時間で角を取った。」 → ルール2, 3
+
+手数38: 部分的に定跡通りの進行が続く。
+
+削除理由:
+
+手数40: △７七歩はここに金を打ちたかったから。後手は▲８三歩から飛車を押さえ込まれる前に攻める必要があった。
+
+削除理由:
+
+手数43: 飛車の横利きが利いているので、攻め切るのは容易ではない。
+
+削除理由:
+
+手数46: △８九龍は▲７九金で自陣に戻らされることになる。
+
+削除理由:
+
+手数47: 互いに騎虎の勢いで指し進めているため、進行が早い。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は佐藤天３８分、武市２時間１５分。」 → ルール3, 置換ルール
+
+手数51: 龍を閉じ込めることに成功した。
+
+削除理由:
+
+手数53: ▲２九飛の金取りが狙いだ。
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「佐藤天４５分、武市２時間４９分。」 → ルール3, 置換ルール
+
+手数54:
+
+削除理由:
+- 「１時間１５分の長考。」 → ルール3
+
+手数58: 後手は何とか手を作りたい。歩の小技で攻める。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は佐藤天４８分、武市４時間１５分。」 → ルール3, 置換ルール
+- 「武市」 → 置換ルール
+
+手数63:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は佐藤天１時間２２分、武市４時間３１分。」 → ルール3, 置換ルール
+
+手数71:
+
+削除理由:
+- 「▲６六歩の局面で武市が１９分考えて夕食休憩に入った。」 → ルール3, 7, 置換ルール
+- 「消費時間は佐藤１時間２６分、武市５時間２１分。」 → ルール3, 置換ルール
+- 「武市の残り時間はわずか３９分。」 → ルール3, 置換ルール
+
+手数83: 後手は攻めを完封されてしまった格好。△同龍▲８三歩成からボロボロと駒が取られてしまう。ここで後手の投了となった。
+
+削除理由:
+- 「武市は」 → 置換ルール
+- 「ここで２分考えて武市の投了となった。」 → ルール3, 置換ルール
+- 「終局時刻は１９時３１分。」 → ルール3
+- 「消費時間は佐藤天１時間３３分、武市５時間３８分。」 → ルール3, 置換ルール
+- 「勝った佐藤天は３勝１敗、敗れた武市は１勝３敗となった。」 → ルール4, 置換ルール

@@ -1,0 +1,104 @@
+**Streamlining Game Commentary for Deep Analysis**
+
+Okay, so I'm being asked to whip a bunch of Shogi game commentary into shape. My goal? To distill it down to its purest form – the insightful analysis of the board state and the moves themselves. I need to be ruthless and efficient, stripping away anything that doesn't contribute to that core understanding.
+
+Here's how I'll approach this:
+
+1.  **Iterative Processing:** I'll methodically work through each comment, one by one. No shortcuts here.
+2.  **Rule-Based Filtering:** I'll apply the given rules to meticulously sift through each comment.  Is it valuable commentary on a move or position, or is it noise I can safely discard? I'll be rigorous about this.
+3.  **Natural Language Polishing:** Once I've filtered, I'll take what's left and refine it. I want to ensure the remaining information flows smoothly and reads intelligently. This is where expertise really matters, turning raw data into meaningful insights.
+4.  **Format Compliance:** Finally, I'll format the output precisely as specified. My goal is clarity and easy use.
+
+手数1:
+
+削除理由:
+- 「【村中の公式戦成績】」 → ルール4
+- 「通　算＝１９３勝１５７敗（０．５５１）」 → ルール4
+- 「昨年度＝１４勝１５敗（０．４８３）」 → ルール4
+- 「本年度＝６勝４敗（０．６００）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【長岡の公式戦成績】」 → ルール4
+- 「通　算＝１５４勝１６８敗（０．４７８）」 → ルール4
+- 「昨年度＝１２勝１５敗（０．４４４）」 → ルール4
+- 「本年度＝６勝５敗（０．５４６）」 → ルール4
+
+手数23:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「▲５八玉までの消費時間は▲村中５２分、△長岡０分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１２時１０分。」 → ルール3
+- 「この局面で村中が１６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「△３三桂までの消費時間は▲村中１時間２４分、△長岡３６分。」 → ルール3
+- 「対局は１３時に再開される。」 → ルール7
+
+手数30:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「△１四歩までの消費時間は▲村中１時間２６分、△長岡２８分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「▲７七桂までの消費時間は▲村中２時間３６分、△長岡１時間１７分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「▲７五歩までの消費時間は▲村中２時間４８分、△長岡１時間５８分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１７時の局面。」 → ルール3
+- 「△２四飛までの消費時間は▲村中２時間４８分、△長岡３時間１分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１８時１０分。」 → ルール3
+- 「この局面で村中が３３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「△１六香までの消費時間は▲村中３時間５７分、△長岡３時間３分。」 → ルール3
+- 「対局は１９時に再開される。」 → ルール7
+
+手数49:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「消費時間は▲村中４時間０分、△長岡３時間５１分。」 → ルール3
+
+手数57: 先手は▲６五桂と跳ねた。△１七香成には▲５三桂成がありそうだ。△同金左は▲２二飛成、△同玉はそこで▲１七香と香を補充し、△同飛成に▲５六香が厳しい。後手は歩切れが痛い。
+
+削除理由:
+
+手数58:
+
+削除理由:
+- 「残り時間は▲村中５９分、△長岡５６分。」 → ルール3
+
+手数59: 先手は▲５三桂成と成り捨てた。△同金左は▲２二飛成があるので、後手は△同玉と応じるが、そこで先手はどう攻めを続けるか。
+
+削除理由:
+
+手数75: 先手の攻めが薄くなり、後手優勢との見方がある。
+
+削除理由:
+- 「控室では」 → ルール1, 6
+- 「との声があがっている」 → 自然な文章にするため表現を調整
+
+手数80:
+
+削除理由:
+- 「この局面で村中が９分使って投了した。」 → ルール3
+- 「終局時刻は２３時５０分。」 → ルール3
+- 「消費時間は▲村中５時間４９分、△長岡５時間４５分。」 → ルール3

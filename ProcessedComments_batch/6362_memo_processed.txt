@@ -1,0 +1,147 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these Shogi game comments. They're asking me to strip away all the fluff and leave behind only the crucial bits: the board states and the moves themselves. That's a good request – it'll make any subsequent analysis much cleaner and more efficient.
+
+Essentially, I need to act like a data filter. I've got this set of rules to follow, a checklist of things to excise. I'll need to go through each comment, one by one, and ruthlessly apply these rules.
+
+I've got a mental checklist already:
+
+*   **Rule #1**: Anything about someone who isn't actually playing in that game? Gone. No names, titles, or associated groups. They're irrelevant to the moves on the board.
+*   **Rule #2**: Mentions of previous games or precedents? Out. We're focused on this specific game, this specific moment.
+*   **Rule #3**: Time data? That's not the core information. Cut it.
+*   **Rule #4**: Player profiles, past records, anything extraneous to this current game? Delete.
+*   **Rule #5**: Generalizations about playing styles or preferred strategies? Useless.
+*   **Rule #6**: Location, weather, accommodations – it's like reading the weather report while trying to understand a complex equation. Delete.
+
+My primary goal here is to make this data as lean and informative as possible. Get rid of the noise, and leave behind only the signal – the bare bones of the game. That's how I can make the game commentary useful. Let's get to work.
+
+手数1: 先手は初手に▲２六歩を指した。
+
+削除理由:
+- 「八代の順位戦デビュー局」 → ルール4
+- 「だった」を整形 → 指し手の解説として自然な表現に修正
+
+手数3:
+
+削除理由:
+- 「八代は１９９４年生まれ、２０１２年四段。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「阪口は１９７８年生まれ、２００４年四段、２００９年五段。」 → ルール4
+
+手数6: 後手の作戦はゴキゲン中飛車。
+
+削除理由:
+- 「阪口の」 → 先手・後手に置換
+
+手数7:
+
+削除理由:
+- 「八代の通算成績は４戦全勝（勝率１．０００）。」 → ルール4
+- 「今年度成績は同じ。」 → ルール4
+
+手数8:
+
+削除理由:
+- 「阪口の通算成績は１４０勝１０６敗（勝率０．５６９」 → ルール4
+- 「今年度成績は３勝１敗。」 → ルール4
+
+手数16: 先手の『超速』▲３七銀戦法に対し、後手は△４四銀と対抗する形を選んだ。こうなると先手が３筋から仕掛けることは難しく、持久戦に進む。
+
+削除理由:
+- 「八代の」 → 先手・後手に置換
+- 「阪口は」 → 先手・後手に置換
+
+手数24: 後手は穴熊を目指した。
+
+削除理由:
+- 「阪口は」 → 先手・後手に置換
+
+手数27:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「▲８八玉までの消費時間は▲八代２１分、△阪口２１分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「この局面で阪口が１２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲八代５２分、△阪口５８分。」 → ルール3
+
+手数44: 後手は△４二角を指した。
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△４二角までの消費時間は▲八代１時間２７分、△阪口１時間４分。」 → ルール3
+- 「△４二角を指した阪口は棋士室に姿を見せて、「一昨日指した将棋と同じになった」。一昨日は公式戦は指されていないので、自身が練習で指した将棋ということだろうか。」 → ルール2, 6
+
+手数45: ７筋の歩を手持ちにしていることで、守りでは将来の△７一歩、攻めでは△７八歩を可能にしている。
+
+削除理由:
+- 「先ほど「一昨日」としたのは記者の聞き間違いだったようで、１手前△４二角の局面は先週１３日に指された▲阪口−△澤田戦（王将戦、阪口勝ち）と同じだった。」 → ルール1, 2
+- 「▲阪口−△澤田戦も終盤に△７八歩が痛打になっていた。」 → ルール1, 2
+
+手数49:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲八代２時間１４分、△阪口１時間２５分。」 → ルール3
+
+手数56: ▲２四歩は入れば大きいが、入るか難しい。他に▲４五同銀や▲５五銀も考えられる。▲４五同銀△同桂▲５四銀は△１七角成〜△５四飛の筋がある。▲２四歩は△５六歩▲同歩△４四角があるのではないか。
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲八代２時間３６分、△阪口１時間５９分。」 → ルール3
+- 「「ちょっと遅れている気がしますが、」 → ルール3
+- 「を予想します。」 → 解説文として整形
+- 「（船江恒平五段。今日は関西将棋会館道場のレディースＤａｙでアドバイザー棋士を務めていた）」 → ルール1, 6
+- 「（棋士室を訪れた糸谷哲郎六段）」 → ルール1, 6
+
+手数60:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「△３五角までの消費時間は▲八代３時間１７分、△阪口２時間１１分。」 → ルール3
+
+手数63: △５四歩と△４七銀成が有力。手堅く行くなら△５四歩、勢い重視なら△４七銀成で、どちらでも後手が優勢に見える。
+
+削除理由:
+- 「この局面で阪口が２１分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲八代３時間５８分、△阪口２時間４６分。」 → ルール3
+- 「対局再開後、棋士室では船江恒平五段と香川愛生女流１級が本局を検討している。香川女流１級が△４七銀成を指摘すると船江五段は「センスがいいですね。僕は△３七桂成とか△５四歩とか、重い手しか浮かばなかった」。ただ、△４七銀成とするなら１手前の△４五桂のところで△４七銀成（▲２三歩成なら△４五桂）としたほうが得だったのではないかと言われている。」 → ルール1, 6
+- 「しばらく検討した船江五段は「」 → ルール1
+- 「と解説してくれた。」 → 解説文として整形
+
+手数64: 有力視されていた手。
+
+削除理由:
+- 「船江五段が本命に挙げていた手。」 → ルール1、文脈を考慮して整形
+
+手数70: 丁寧に、先手の攻めの種を減らしていく。
+
+削除理由:
+- 削除対象なし
+
+手数75: △５八歩成▲同飛△４七銀成を受けている。
+
+削除理由:
+- 削除対象なし
+
+手数81: 後手は銀を犠牲に玉を引きずり出した。
+
+削除理由:
+- 削除対象なし
+
+手数83: 後手が優勢と言われている。
+
+削除理由:
+- 「２０時半頃の局面。」 → ルール3
+- 「▲４五飛までの消費時間は▲八代４時間２９分、△阪口３時間２９分。」 → ルール3
+
+手数86: 大駒を打ち込んでいく攻めだが、後手玉が堅いので十分成立している。
+
+削除理由:
+- 削除対象なし

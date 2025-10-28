@@ -1,0 +1,50 @@
+**Processing a Request for Shogi Game Commentary Formatting**
+
+Okay, I'm taking in this request. The user needs help cleaning up and formatting commentary on a shogi game. It's about taking raw commentary data and transforming it into something readable and natural, following specific formatting rules. So, I need to understand what those rules are and use them to filter out the noise and emphasize the key moments and strategic insights. It's all about making the game accessible and enjoyable for someone following along. I have to make sure it's clear and not cluttered.
+
+手数28:
+
+削除理由:
+- 「１１時すぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲長沼２４分、△勝又１７分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「ここで△後手が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手１時間５分、△後手５２分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「ここまでの消費時間は▲先手１時間４９分、△後手１時間３９分。」 → ルール3
+
+手数41: 次に▲３五銀を狙う。△同銀なら▲同歩、△４三銀なら▲２四歩で駒が前進できる。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１６時の局面。」 → ルール3
+- 「ここまでの消費時間は▲先手２時間３９分、△後手２時間８分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲先手２時間３９分、△後手２時間８分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「ここで▲先手が１７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手４時間４分、△後手２時間５０分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「ここで後手の投了となった。」 → ルール3
+- 「消費時間は▲先手４時間５６分、△後手３時間１１分。」 → ルール3
+- 「勝った先手は１勝３敗、敗れた後手は２勝２敗となった。」 → ルール4

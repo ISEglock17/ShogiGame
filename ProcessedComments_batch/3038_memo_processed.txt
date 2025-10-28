@@ -1,0 +1,79 @@
+**Cleaning Up the Commentary for Deeper Analysis**
+
+Okay, so I'm looking at this Shogi commentary data, and my goal is clear: I need to refine these comments. I want to strip away all the fluff, the extraneous details, anything that doesn't contribute directly to understanding the board state or the moves being made. Essentially, I'm trying to distill the essence of the commentary into clean, concise explanations of the positions and the reasoning behind each play. This is all about preparing the data for serious analysis, focusing on the core ideas, and making it easier to parse the strategic nuances embedded in the game.
+
+手数18:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲村中２５分、△東２７分。」 → ルール3, 1
+
+手数22:
+
+削除理由:
+- 「この局面で村中が１５分考え、昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲村中１時間０分、△東１時間２６分。」 → ルール3, 1
+
+手数25:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中１時間２１分、△東１時間２６分。」 → ルール3, 1
+
+手数27:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中２時間９分。△東２時間２分。」 → ルール3, 1
+
+手数30:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中２時間２６分、△東２時間５０分。」 → ルール3, 1
+
+手数34:
+
+削除理由:
+- 「この局面で村中が２１分考え、夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲村中３時間１９分、△東３時間４１分。」 → ルール3, 1
+
+手数43:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中３時間４５分、△東４時間４分。」 → ルール3, 1
+
+手数55:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲村中４時間３４分、△東４時間２７分。」 → ルール3, 1
+
+手数80:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲村中５時間７分、△東５時間１８分。」 → ルール3, 1
+
+手数94:
+
+削除理由:
+- 「ここまでの消費時間は▲村中５時間３７分、△東５時間２２分。」 → ルール3, 1
+
+手数107:
+
+削除理由:
+- 「ここで６分使った村中は一分将棋に突入。」 → ルール3, 1
+
+手数112:
+
+削除理由:
+- 「東はここで２１分使い、一分将棋。」 → ルール1, 3
+- 「ここから両者一分将棋となった。」 → ルール3
+
+手数129: 後手玉は即詰みとなる。
+
+削除理由:
+- 「この局面で東が投了した。」 → ルール1
+- 「消費時間は▲村中５時間５９分、△東５時間５９分。」 → ルール3, 1

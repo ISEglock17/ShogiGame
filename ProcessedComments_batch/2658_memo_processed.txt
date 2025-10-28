@@ -1,0 +1,57 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Right, so the user wants me to clean up these Shogi game commentaries, eh? My goal is to transform the existing text, full of extraneous details, into something truly useful for analysis.  Think of it like this: I need to surgically remove all the noise – the meta-commentary, the biographical fluff about the players, the timestamps – and leave only the pure essence of the board state and the critical moves themselves, explained in a smooth, readable narrative. It's about distilling the commentary down to its analytical gold.
+
+手数35:
+
+削除理由:
+- 「残り時間は北島１時間１６分。中座１時間３５分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「この局面での残り時間。北島５２分。中座１時間１４分。」 → ルール3
+
+手数69: 手筋の垂れ歩攻め。
+
+削除理由:
+
+手数72: 後手も負けじと、７筋に集中砲火を浴びせようとする。
+
+削除理由:
+- 「ここでの残り時間は北島３０分。中座６１分。」 → ルール3
+
+手数79: 角交換をしながら７七の地点に駒を足して味がいい。
+
+削除理由:
+- 「残り時間は北島２２分。中座３４分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２９分の苦しい長考。これで残り５分に。」 → ルール3
+
+手数88:
+
+削除理由:
+- 「この局面での双方の残り時間は北島１８分、中座５分。」 → ルール3
+
+手数108:
+
+削除理由:
+- 「この局面での残り時間、北島１５分、中座４分。」 → ルール3
+
+手数124:
+
+削除理由:
+- 「△３七玉の局面での残り時間、北島１分、中座２分。」 → ルール3
+
+手数133: 以下は難解ながら詰みのようだ。
+
+削除理由:
+
+手数141: 以下は△４八玉▲３八金△５七玉▲４九桂で詰み。
+
+削除理由:
+- 「終局時刻は２時１５分。」 → ルール3
+- 「消費時間はともに５時間５９分。」 → ルール3

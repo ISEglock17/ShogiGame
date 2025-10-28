@@ -1,0 +1,108 @@
+**Cleaning Up Those Game Comments**
+
+Okay, so I'm looking at a bunch of comments from Shogi games, right? My goal here is to refine them - to get rid of all the fluff and just keep the good stuff, the actual analysis of the game. Things like, "Player A is on a roll!" or "It's now player B's turn." I want those gone. Also, the introductions, the time stamps... all of that is irrelevant. What I *need* is the breakdown of the board state and the explanations of why a certain move was played. That's the meat of it. I want to end up with clean, natural-sounding sentences that dive right into the strategic thinking behind the moves.  That's my primary focus in this whole process.
+
+手数6: 後手の三間飛車は、下町流三間飛車と呼ばれる。
+
+削除理由:
+- 「小倉の」 → ルール1
+
+手数22:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎１１分、△小倉５６分。」 → ルール3
+
+手数31: 先手は着々と穴熊に潜った。
+
+削除理由:
+
+手数32: 後手は美濃囲い。
+
+削除理由:
+
+手数36:
+
+削除理由:
+- 「この局面で神崎が１１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲神崎３６分、△小倉１時間１４分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎４７分、△小倉１時間５５分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎１時間３８分、△小倉２時間８分。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎２時間１０分、△小倉２時間３３分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎２時間１９分、△小倉３時間４２分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「この局面で神崎が１１分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲神崎２時間５６分、△小倉３時間４９分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎３時間２４分、△小倉４時間１４分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎３時間３５分、△小倉４時間５４分。」 → ルール3
+
+手数78: △６六飛は▲同銀と逃げられるのを嫌った。
+
+削除理由:
+
+手数80: 駒割りは飛車と銀桂の交換。
+
+削除理由:
+
+手数90:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は▲神崎４時間２５分、△小倉５時間６分。」 → ルール3
+
+手数103: △７八銀成のあとの８六への殺到を防ぐためとは言え、辛い飛車打ちだ。
+
+削除理由:
+
+手数110:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「消費時間は▲神崎５時間５分、△小倉５時間２８分。」 → ルール3
+
+手数113: 攻めを催促する。後手は急がなければ▲６五馬から切らされてしまう。
+
+削除理由:
+
+手数124: 攻防の一手。▲７四桂打を受けた。
+
+削除理由:
+
+手数126:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲神崎５時間２７分、△小倉５時間４８分。」 → ルール3

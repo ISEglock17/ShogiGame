@@ -1,0 +1,65 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got this task - to clean up and refine comments from Shogi game data. The goal here is pretty clear: I need to transform these comments into concise, focused explanations of the game. I want to strip out all the fluff - the metadata, the player introductions, the time stamps - everything that's extraneous to understanding the board and the moves.
+
+Essentially, I'm going to act as an editor, applying these established rules to filter and extract the core meaning. Then, I'll need to work on the remaining text to make sure it reads smoothly, turning it into a natural, accessible commentary on the game.
+
+手数22:
+
+削除理由:
+- 「ここまでの消費時間は▲安用寺３０分、△田中魁２４分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「ここで△田中魁が１５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲安用寺１時間１６分、△田中魁４２分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１４時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間０分、△田中魁１時間１５分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺２時間５４分、△田中魁２時間２分。」 → ルール3
+
+手数58: 飛車の横利きを通して、角の進出を防ぐ。
+
+削除理由:
+
+手数60: ついに香車が３枚並んだ。
+
+削除理由:
+- 「１７時半ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺３時間１６分、△田中魁２時間５０分。」 → ルール3
+
+手数61: 玉を広くする味の良い手。
+
+削除理由:
+- 「ここで△田中魁が２６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲安用寺３時間３９分、△田中魁３時間２０分。」 → ルール3
+
+手数63: 当然取る一手。
+
+削除理由:
+- 「、ノータイムで応じる」 → ルール3
+
+手数71: １筋の守りを放棄して反撃を狙う。▲３六歩の効果が大きい。
+
+削除理由:
+
+手数93:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲安用寺４時間３０分、△田中魁３時間３５分。」 → ルール3
+
+手数103:
+
+削除理由:
+- 「ここで△田中魁の投了となった。」 → ルール3
+- 「終局時刻は２１時６分、消費時間は▲安用寺４時間４３分、△田中魁４時間２分。」 → ルール3

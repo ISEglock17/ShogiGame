@@ -1,0 +1,89 @@
+**Cleaning Up My Analysis: Streamlining Game Commentaries**
+
+Okay, so I've got this data set, a treasure trove of shogi game commentaries, and I need to refine them. The user wants me to go through each comment and clean it up. The goal is straightforward: I need to isolate the valuable insights – the actual analysis of the board state and the moves – and discard the fluff. Think of it like a meticulous edit, stripping away the unnecessary noise.
+
+I've got a system in mind. I'll need to define clear rules for what constitutes extraneous information – things like metadata about the game, introductions of players, time stamps, and any other commentary that doesn't directly contribute to the tactical or strategic explanation of the moves. Then, it's just a matter of applying those rules systematically. I'll meticulously go through each comment, identify the irrelevant bits, and excise them, leaving behind only the distilled essence of the expert analysis. This should ensure that the final result is a lean, focused collection of observations, ripe for further study.
+
+手数1:
+
+削除理由:
+- 「浦野は初手に７分使った。」 → ルール3
+- 「隣で指されている▲橋本−△山崎戦に取材陣が集まり、対局室の空気が落ち着かなかったためだろうか。」 → ルール1, 6
+
+手数14:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４４分、△飯塚９分。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「この局面で浦野が１９分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲浦野１時間２８分、△飯塚３１分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野１時間５６分、△飯塚４９分。」 → ルール3
+
+手数25: 代わりに▲７七角と上がっても△８六歩以下角交換になるので、２手前の▲６五歩が生きない展開になる。
+
+削除理由:
+- 「１時間３分の長考。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野３時間２１分、△飯塚１時間１３分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野３時間５４分、△飯塚２時間２４分。」 → ルール3
+- 「この局面で飯塚は次の手を指さず、１時間３分考えたところで夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲浦野３時間５４分、△飯塚３時間７分。」 → ルール3
+
+手数45: 驚きの金打ち。▲８六歩〜▲８七金寄と歩を払えば万全という判断。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４時間１６分、△飯塚３時間４６分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野４時間４８分、△飯塚４時間５分。」 → ルール3
+
+手数75: 飛車を切ったのは、この歩に期待。
+
+削除理由:
+
+手数84:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲浦野５時間７分、△飯塚４時間４５分。」 → ルール3
+
+手数91:
+
+削除理由:
+- 「残り時間は浦野２６分、飯塚１時間６分。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「残り時間は浦野１５分、飯塚３８分。」 → ルール3
+
+手数113:
+
+削除理由:
+- 「残り時間は浦野５分、飯塚１２分。」 → ルール3

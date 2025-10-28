@@ -1,0 +1,120 @@
+**My Approach to Refining Shogi Game Comments**
+
+Okay, so I'm tasked with cleaning up these comments within Shogi game data. The goal is clear: I need to strip away all the fluff and extraneous details – the introductions, the player biographies, the time stamps – and leave behind only the pure, insightful commentary on the board state and the moves themselves. Essentially, I'm aiming for a concise and elegant explanation of the strategic thinking behind each play.
+
+My plan of attack is straightforward. First, I'll meticulously go through each comment, applying my established rules to identify and remove all the unnecessary information. I'll need to be precise here, ensuring that I don't accidentally toss out anything truly valuable, but also that I'm ruthless in eliminating anything that detracts from the core analysis.
+
+Next, and this is crucial, I'll need to reconstruct the remaining snippets into well-formed, natural-sounding sentences. This isn't just about stringing words together; it's about conveying the underlying strategic reasoning in a clear and compelling way. It's about ensuring that a reader, even a seasoned pro, can instantly grasp the tactical and positional implications of each move based on the cleaned-up comments.
+
+手数15: 指し直し局も横歩取りになった。
+
+削除理由:
+- (削除なし)
+
+手数23:
+
+削除理由:
+- 「ここまで両者ノータイムだったが、」 → ルール3
+- 「初めて屋敷が１分使った。」 → ルール3, 対局者名置換
+
+手数25: これは「新山崎流」と呼ばれる形。
+
+削除理由:
+- 「山崎隆之七段の名が冠せられている。」 → ルール1
+
+手数26: 対して後手の布陣は「中原囲い」。
+
+削除理由:
+- 「中原誠・十六世名人の名が使われている。」 → ルール1
+
+手数31: △８六歩▲同歩△同飛は、△７六飛と一歩取る狙い。それを防いでいる。
+
+削除理由:
+- (削除なし)
+
+手数34: △３六歩の狙い。
+
+削除理由:
+- (削除なし)
+
+手数35:
+
+削除理由:
+- 「屋敷は同じ局面を、今期３回戦のｖｓ山崎隆之七段戦で経験している（山崎勝ち）。」 → ルール2, 1
+- 「【第６９期Ｂ級１組順位戦３回戦　▲山崎隆之七段−△屋敷伸之九段】」 → ルール2, 1
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１０／０７／２３／Ｂ１／４６９７．ｈｔｍｌ」 → ルール8
+
+手数38: △５五角は前例で披露された新手。
+
+削除理由:
+- 「２２時５０分頃の局面。」 → ルール3
+- 「消費時間は▲屋敷４時間２５分、△畠山鎮５時間０分。」 → ルール3
+- 「前述の▲山崎−△屋敷戦で」 → ルール2, 1
+- 「屋敷が指した手を畠山鎮がお返しした格好だ。」 → ルール1, 2
+
+手数40: これが後手の新工夫のようだ。
+
+削除理由:
+- 「▲山崎−△屋敷戦は△１九角成だった。」 → ルール2, 1
+- 「畠山鎮の」 → ルール1
+
+手数41: 角は逃げられないので、取るしかない。
+
+削除理由:
+- (削除なし)
+
+手数44: 前例に比べて８筋の形を乱しているのが後手の主張。
+
+削除理由:
+- 「２３時４０分頃の局面。」 → ルール3
+- 「消費時間は▲屋敷５時間１分、△畠山鎮５時間２５分。」 → ルール3
+- 「▲山崎−△屋敷戦に」 → ルール2, 1
+
+手数45: △６五同馬なら▲２三歩△同金▲２四歩の攻めがある。
+
+削除理由:
+- (削除なし)
+
+手数46:
+
+削除理由:
+- 「※△６五馬や△８九飛が優った。」 → ルール8（棋譜解析ソフトによる評価値のような情報のため）
+
+手数50: ２手前に△４二金寄と逃げると、▲３四桂の金銀両取りがある。▲３五桂と打ってもらってから４二に逃げる。
+
+削除理由:
+- (削除なし)
+
+手数51: しかし、次の▲２三歩成が受けにくい。
+
+削除理由:
+- (削除なし)
+
+手数55: 駒の取り合いになった。
+
+削除理由:
+- 「０時半頃の局面。」 → ルール3
+- 「消費時間は▲屋敷５時間２６分、△畠山鎮５時間４４分。」 → ルール3
+- 「畠山鎮はここで考えていて、記録係に「残り５分です」と告げられていた。」 → ルール3, 1
+
+手数57: ２枚目のと金を作りに行く。
+
+削除理由:
+- (削除なし)
+
+手数63: ▲３三銀以下の詰めろになっている。
+
+削除理由:
+- (削除なし)
+
+手数68: 攻めの拠点となっている桂馬を外したが、まだ拠点はある。
+
+削除理由:
+- (削除なし)
+
+手数69: ここで後手は投了した。以下△４一玉と逃げても▲４四角が詰めろと龍取りになっていて、適当な受けがない。
+
+削除理由:
+- 「（▲４二香△５二玉▲４一銀以下）」 → 指し手解説の補足として整形済みコメントに統合
+- 「消費時間は▲屋敷５時間３７分、△畠山鎮５時間５７分。」 → ルール3
+- 「両者とも４勝３敗となった。」 → ルール4

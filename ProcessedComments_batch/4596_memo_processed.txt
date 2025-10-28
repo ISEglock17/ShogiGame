@@ -1,0 +1,106 @@
+**Processing Game Commentary for Expert Analysis**
+
+Okay, so I'm presented with this mass of text, which is supposed to be commentary on a Shogi game. The goal is clear: refine it for a deeper, expert-level analysis. I need to strip away all the fluff, the stuff that's obvious or irrelevant to understanding the board state and the moves being made.
+
+Essentially, my thought process will follow these steps: first, I'll meticulously go through the commentary, applying my understanding of the rules to identify and discard anything that's extraneous to the actual game flow and the strategic implications of each move. Then, I'll take what's left, the core descriptions of the board positions and the rationale behind each move, and re-craft it into clear, concise, and grammatically correct sentences. Finally, I'll output this refined commentary in the requested format, ready for a detailed examination of the game. It's about distilling the essence of the game and making it ready for a true expert like myself to dive deep.
+
+手数14: 横歩取りになりそうだ。
+
+削除理由:
+
+
+手数28: 横歩取り△８五飛戦法対「新山崎流」の定跡形。
+
+削除理由:
+
+
+手数33:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は澤田３時間２７分、村中４時間３４分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「２１時４５分ごろの局面。」 → ルール3
+- 「残り時間は澤田２時間２６分、村中１時間８分。」 → ルール1, 3
+
+手数46: ▲２四歩とたたかれる筋がないので、銀を動かしやすい。
+
+削除理由:
+- 「２２時１０分ごろの局面。」 → ルール3
+- 「残り時間は澤田２時間２6分、村中５５分。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「２２時４０分の局面。」 → ルール3
+- 「残り時間は澤田２時間３分、村中４１分。」 → ルール1, 3
+
+手数67:
+
+削除理由:
+- 「２３時３５分ごろの局面。」 → ルール3
+- 「残り時間は澤田１時間４８分、村中８分。」 → ルール1, 3
+
+手数68: 後手は銀を引いた。先手は考えている。
+
+削除理由:
+- 「残り４分まで考えて」 → ルール3
+- 「澤田がしばらく考えている。」 → ルール1
+
+手数71:
+
+削除理由:
+- 「０時１５分の局面。」 → ルール3
+- 「残り時間は澤田１時間１６分、村中４分。」 → ルール1, 3
+
+手数77:
+
+削除理由:
+- 「０時３０分の局面。」 → ルール3
+- 「残り時間は澤田１時間８分、村中２分。」 → ルール1, 3
+
+手数79: 小駒だけだが、玉の堅さを頼りに何とか食らいつこうとしている。
+
+削除理由:
+
+
+手数80:
+
+削除理由:
+- 「村中はここから１分将棋。」 → ルール1, 3
+
+手数82: 先手玉は△５八歩が急所になるが、まだ詰めろではない。▲５四桂が成桂取りを防ぎながらの攻めになる。▲５四桂の後、▲３三歩が▲３二銀△５二玉▲４二桂成といった順で後手玉の詰みを狙える。
+
+削除理由:
+
+
+手数87:
+
+削除理由:
+- 「澤田、残り５０分。」 → ルール1, 3
+
+手数88: ▲３二銀を受けたが、玉が狭くなった。▲５三銀のような攻めが厳しくなる。
+
+削除理由:
+
+
+手数93: 飛車取りにもなっており、後手の受けが難しい。
+
+削除理由:
+
+
+手数94: ▲同金は△８七角で大事件。また、▲７九玉なら△６九金▲８八玉△４四角打として無理やり受けようとしている。
+
+削除理由:
+
+
+手数95: ここで後手の投了となった。以下△６九金▲８八玉△４四角打としても３四飛が取られる形で先手勝ち筋。
+
+削除理由:
+- 「村中の」 → ルール1
+- 「終局時刻は１時８分。」 → ルール3
+- 「消費時間は澤田５時間１４分。村中５時間５９分。」 → ルール1, 3
+- 「勝った澤田は２勝１敗、敗れた村中は１勝２敗となった。」 → ルール1, 4

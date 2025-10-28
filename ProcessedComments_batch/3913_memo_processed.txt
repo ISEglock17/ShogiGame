@@ -1,0 +1,85 @@
+**Refining the Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up this Shogi commentary, making it really focused and useful. The user wants me to strip away all the fluff and just keep the juicy bits: the board states and the moves themselves, along with insightful explanations.  
+
+Here's my thought process on how I'm going to approach this:
+
+I need to meticulously go through each line of commentary, one step at a time. For each sentence, I'll run it through my internal "rulebook" -  a set of guidelines I've got to determine if a sentence is relevant or if it's got to go. If something's getting cut, I'll need to remember *why* it got cut, like maybe it mentioned a player's name directly and that's not needed. Then, I will reconstruct the remaining sentences with good grammar and readability. And finally, output the cleaned-up commentary in the specific format the user requested.
+
+For example, take "手数6: 及川の作戦はゴキゲン中飛車。" I can see "及川の" is just the player's name and unnecessary for our purposes.
+
+手数6: 後手の作戦はゴキゲン中飛車。
+
+削除理由:
+- 「及川の」 → ルール1
+
+手数12: △５六歩なら大決戦になるところだった。後手は数手前の△５五歩で考え、そのときに作戦を決めたようだ。
+
+削除理由:
+- 「及川は」 → ルール1
+- 「３８分考えているが」 → ルール3
+- 「ここで佐藤紳が５４分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐藤紳１時間２３分、及川４１分。」 → ルール1, 3
+
+手数13:
+
+削除理由:
+- 「昼食休憩を挟む１時間３分の長考。」 → ルール3, 7
+
+手数16:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は佐藤紳１時間３５分、及川１時間２４分。」 → ルール1, 3
+
+手数25:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は佐藤紳２時間２４分、及川１時間３５分。」 → ルール1, 3
+
+手数36:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳２時間５６分、及川１時間５４分。」 → ルール1, 3
+
+手数38:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳３時間１９分、及川２時間５分。」 → ルール1, 3
+
+手数48:
+
+削除理由:
+- 「△２五歩の局面で佐藤紳が１７分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は佐藤紳４時間３０分、及川２時間２１分。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は佐藤紳５時間１分、及川２時間３６分。」 → ルール1, 3
+
+手数61: 先手の攻めが決まったか。この角切りは検討の価値がある。
+
+削除理由:
+- 「佐藤紳の」 → ルール1
+- 「控え室では」 → ルール6
+- 「どよめきが。」 → ルール6
+
+手数78:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は佐藤紳５時間４６分、及川３時間２分。」 → ルール1, 3
+- 「佐藤紳は残り１４分。」 → ルール1, 3
+
+手数85: 後手はここで投了した。先手の攻めは切れず、一手一手だ。
+
+削除理由:
+- 「及川は」 → ルール1
+- 「終局時刻は２１時２７分。」 → ルール3
+- 「消費時間は佐藤紳５時間５７分、及川３時間３分。」 → ルール1, 3
+- 「勝った佐藤紳、敗れた及川ともに１勝１敗となった。」 → ルール1, 4

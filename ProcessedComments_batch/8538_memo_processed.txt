@@ -1,0 +1,109 @@
+**Cleaning Up the Commentary for Analysis**
+
+Okay, so I'm presented with a task: I need to clean up the commentary from a shogi game's data.  Essentially, someone wants me to take this raw stream of comments associated with moves and distill it down to the essential information.  My goal is to isolate the *useful* stuff – the analysis of the board state and the explanations of the moves themselves.  I need to strip away all the fluff.
+
+This means getting rid of anything that doesn't contribute directly to understanding the game's evolution.  I'm thinking:
+
+*   **Meta-information:** Things like who the players are, their backgrounds, the time of the match, tournament details... that's all noise.  Irrelevant.
+*   **Introductions and biographies:**  Unless it directly informs a specific strategic decision, player backgrounds aren't going to help me understand *why* a move was made.
+*   **Time-related details:**  Clock times, elapsed time, anything referencing the timing of a move... It's extraneous to the analysis I'm after.
+
+In the end, I want to be left with clean, natural-sounding sentences that describe the board and the reasoning behind each move.  That's where the *real* analytical value lies.
+
+手数1:
+
+削除理由:
+- 「◆中田　功（なかた　いさお）七段◆」 → ルール1, 4
+- 「１９６７年７月２７日生まれ、福岡県福岡市中央区出身。（故）大山康晴十五世名人門下。１９８６年、四段。２００５年、七段。棋士番号は１７６。」 → ルール1, 4
+手数2:
+
+削除理由:
+- 「◆石井　健太郎（いしい　けんたろう）四段◆」 → ルール1, 4
+- 「１９９２年４月１３日生まれ、千葉県千葉市出身。所司和晴七段門下。２０１３年、四段。棋士番号は２９３。」 → ルール1, 4
+手数3:
+
+削除理由:
+- 「中田の今年度成績は８勝１２敗（０．４００）」 → ルール4
+- 「通算成績は５１７勝４８１敗（０．５１８）」 → ルール4
+手数4:
+
+削除理由:
+- 「石井の今年度成績は２７勝１０敗（０．７３０）」 → ルール4
+- 「通算成績は５５勝２８敗（０．６６３）」 → ルール4
+手数5:
+
+削除理由:
+- 「１９分の考慮で」 → ルール3
+手数7: 先手は居飛車を選んだ。
+
+削除理由:
+- 「中田」 → ルール1
+手数8: 後手は石田流を目指す。
+
+削除理由:
+- 「石井」 → ルール1
+手数14:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲中田２４分、△石井１３分。」 → ルール3
+手数24:
+
+削除理由:
+- 「１２時１０分、ここで中田が２１分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中田１時間１０分、△石井４８分。」 → ルール3
+- 「昼食の注文は、石井が本鴨南ばんそば（みろく庵）、中田はなし。」 → ルール7
+- 「対局再開は１３時。」 → ルール7
+手数25: 先手は穴熊に囲った。
+
+削除理由:
+手数31: △４五歩▲同歩△同銀には▲４八飛と回って、一局の将棋。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲中田１時間２４分、△石井１時間１６分。」 → ルール3
+手数35: △２四歩を警戒するなら▲１六歩もあった。△２四歩なら▲同歩△同角▲１七桂で居飛車十分だ。
+
+削除理由:
+- 「（勝又清和六段）」 → ルール1
+手数36: 後手が仕掛けた。
+
+削除理由:
+- 「石井」 → ルール1
+手数39: ▲２五歩は△１五角で振り飛車ペース。
+
+削除理由:
+手数45: △３六飛と走るとどうなるか。一例は▲３八歩△３四飛▲２五桂△３八飛成▲４七飛△同竜▲同銀△３七角成▲３三桂成△４七馬▲４三歩の攻め合いだが、△３九飛▲４二歩成△６九馬▲同金△同飛成で振り飛車の攻め合い勝ちになる。
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲中田１時間４１分、△石井１時間５９分。」 → ルール3
+- 「と永瀬拓矢六段。」 → ルール1
+手数46: △２六歩から突破しようとしている。
+
+削除理由:
+手数50: 大さばきになった。
+
+削除理由:
+手数64:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲中田１時間５３分、△石井２時間４９分。」 → ルール3
+手数78: 一瞬、不安定な形だが、ここを凌げば駒得が大きい。
+
+削除理由:
+手数84: 根元の桂を取るのがわかりやすい。代えて△７一金は▲同銀不成で大変だ。
+
+削除理由:
+手数93: ▲７五歩は△７六桂が厳しかった。
+
+削除理由:
+手数103:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲中田２時間１分、△石井３時間２３分。」 → ルール3
+手数106: △７七角成▲同桂△８八銀からの詰めろ。
+
+削除理由:

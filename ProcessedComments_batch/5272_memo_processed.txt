@@ -1,0 +1,117 @@
+**The Challenge of Cleaning Up Shogi Commentary**
+
+Okay, I've got it. The user wants me to whip some Shogi commentary into shape. My task is straightforward, but it requires a bit of finesse. They need me to take a messy stream of text, the kind you get after a heated Shogi match, and filter it down to the good stuff.  I need to strip away all the fluff – any extraneous chatter, contextual remarks that are only useful to the moment, things that are irrelevant to the pure analysis of the game itself – and leave behind only the crucial elements.  Specifically, I must retain the commentary directly tied to specific moves and board positions.  I see the goal: I need to transform this raw data into something a Shogi analyst or serious player would find genuinely useful for study and review.
+
+The process I'll need to follow is clear: I'll need to evaluate each comment individually. It is the only way to be precise.
+
+手数1:
+
+削除理由:
+- 「【桐山清澄九段】」 → ルール1, 4
+- 「１９４７年１０月７日生まれ、奈良県出身。（故）増田敏二六段門下。」 → ルール1, 4
+- 「１９５８年７級で奨励会入会。１９６６年４月１日四段。１９８４年１０月９日九段。タイトル獲得は通算４期。」 → ルール4
+- 「順位戦は４５期目。Ａ級在籍１４期。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【森下卓九段】」 → ルール1, 4
+- 「１９６６年７月１０日生まれ、福岡県出身。（故）花村元司九段門下。」 → ルール1, 4
+- 「１９７８年６級で奨励会入会。１９８３年９月２１日四段。２００３年１２月１２日九段。」 → ルール4
+- 「順位戦は２８期目。Ａ級在籍１０期。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「桐山の今期成績は０勝１敗（勝率０．０００）。」 → ルール4
+- 「通算成績は９４３勝７８８敗（勝率０．５４５）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「森下の今期成績は２勝３敗（勝率０．４００）。」 → ルール4
+- 「通算成績は８１０勝５１８敗（勝率０．６１０）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「過去の対戦成績は桐山の５勝、森下の６勝。」 → ルール2
+
+手数19:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山２分、△森下１８分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「この局面で昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲桐山１時間１分、△森下５４分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山１時間１２分、△森下１時間１３分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山１時間３１分、△森下２時間２１分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山１時間４３分、△森下３時間６分。」 → ルール3
+
+手数67: ▲４六銀と桂取りに銀を打ったが、この後△５三銀引▲２六角△２七飛と進めて、後手が少し良いのではないかと言われている。
+
+削除理由:
+- 「桐山は」 → ルール1
+
+手数71: △５七桂成▲同銀△２六飛成▲同桂△３七角の王手飛車が見える。他にはじっと△４四歩と打っておく手もありそうだ。
+
+削除理由:
+
+手数72:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山１時間５６分、△森下３時間４６分。」 → ルール3
+
+手数82: 王手桂取り。
+
+削除理由:
+
+手数88:
+
+削除理由:
+- 「この局面で桐山が１９分考え、そのまま夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲桐山２時間１７分、△森下４時間７分。」 → ルール3
+
+手数94: お互い竜、馬を引きつけて長い戦いになりそうだ。
+
+削除理由:
+
+手数103:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山３時間９分、△森下４時間２０分。」 → ルール3
+
+手数117:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲桐山３時間２９分、△森下５時間１１分。」 → ルール3
+
+手数130: 次の△６七歩成が厳しく、また後手玉も堅いので攻防ともに見込みなしとの判断で投了となった。
+
+削除理由:
+- 「この手を見た桐山が投了を告げた。」 → ルール1
+- 「終局時刻は２１時３４分。」 → ルール3
+- 「消費時間は▲桐山３時間３５分、△森下５時間２３分。」 → ルール3
+- 「勝った森下は１勝０敗、敗れた桐山は０勝１敗となった。」 → ルール4

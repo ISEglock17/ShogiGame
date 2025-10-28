@@ -1,0 +1,108 @@
+**The Task at Hand: Polishing Commentary**
+
+Alright, so the user wants me to clean up these Shogi match comments. My job is to take this raw stream of commentary and make it *useful* for analyzing the game itself, not just the fluff around it.
+
+It's all about focus: I need to strip away anything that doesn't contribute to understanding the board state or the moves being played. That means all the meta-stuff, introductions of the players, time elapsed – gone! My goal is to extract the *essential* Shogi strategy and explanation. I'll transform these comments into concise and well-structured sentences focused on the moves and the implications of those moves. I need to make them flow naturally.
+
+手数17: 相矢倉になった。
+
+削除理由:
+
+---
+手数27: 「脇システム」と呼ばれる形。
+
+削除理由:
+
+---
+手数30:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は木下５分、村中２４分。」 → ルール3
+
+---
+手数34:
+
+削除理由:
+- 「△８五歩の局面で」 → 文脈上不要
+- 「木下が３０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は木下１時間１５分、村中３７分。」 → ルール3
+
+---
+手数37: 珍しい手。△４六角なら▲同歩から▲４五歩と攻める狙いか。
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は木下１時間１６分、村中４２分。」 → ルール3
+- 「村中が長考している。」 → ルール3
+
+---
+手数38:
+
+削除理由:
+- 「１時間の長考。」 → ルール3
+
+---
+手数40: ▲７四歩△６四銀▲６五歩は△４五歩で大丈夫と見ている。
+
+削除理由:
+
+---
+手数48: 矢倉の攻めの理想形が組めた。
+
+削除理由:
+
+---
+手数49:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は木下１時間３３分、村中２時間１０分。」 → ルール3
+
+---
+手数50: 次に△９五歩と伸ばして、△８六歩▲同銀△８五銀をより厳しくするつもり。
+
+削除理由:
+
+---
+手数53: 銀にヒモをつけて、▲４五歩を可能にした。
+
+削除理由:
+
+---
+手数60:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は木下１時間４４分、村中３時間５分。」 → ルール3
+
+---
+手数65:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は木下２時間１５分、村中３時間６分。」 → ルール3
+
+---
+手数66:
+
+削除理由:
+- 「△８五銀の局面で」 → 文脈上不要
+- 「木下が５０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は木下３時間５分、村中３時間４０分。」 → ルール3
+
+---
+手数88:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は木下３時間４２分、村中３時間５８分。」 → ルール3
+
+---
+手数90: 先手はここで投了した。△７八歩成▲同金△同金▲同玉△５八飛の寄せが受けにくい。
+
+削除理由:
+- 「木下」 → 先手（置換）
+- 「終局時刻は２０時９分。」 → ルール3
+- 「消費時間は木下３時間５４分、村中３時間５９分。」 → ルール3
+- 「勝った村中は２勝０敗、敗れた木下は０勝２敗となった。」 → ルール4

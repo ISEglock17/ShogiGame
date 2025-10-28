@@ -1,0 +1,142 @@
+**Cleaning Up the Commentary: Focusing on the Game Itself**
+
+Alright, so a user, presumably another expert in this fascinating game of Shogi, wants me to refine the commentary associated with a set of game data. The goal is clear: strip away all the extraneous noise from the comments, leaving only the essential insights into the board state and the reasoning behind each move. Think of it like a distilled essence of the game's unfolding drama.
+
+My thinking is, this is all about enhancing the learning experience. We need to eliminate anything that clutters the analysis - the introductions, time stamps, meta-data, and biographical fluff that distract from the core of the game itself. It's about getting down to the bare bones, the raw tactical and strategic brilliance (or blunders!).
+
+My plan is straightforward: I'll carefully analyze the structure of the comments and, following a predetermined set of rules, identify and excise all those non-essential elements. The focus is to make the commentary a lean and insightful description of the game's actual progression, for us both to enjoy.
+
+手数19:
+
+削除理由:
+- 「まだ１０時７分。」 → ルール3
+- 「棋士室では１０時集合のある研究会の対局が始まったところだ。その中には昨日東京で対局だった西川和宏四段の姿も。」 → ルール1, 6
+
+手数26: ▲８六同歩△同飛から△７六飛〜△４六飛を狙っている。
+
+削除理由:
+
+手数29: 序盤にしては長考。
+
+削除理由:
+- 「１９分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁３０分、△大平６分。」 → ルール3, 4
+
+手数36:
+
+削除理由:
+- 「この局面で田中魁が１時間１１分の長考に沈み、休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲田中魁１時間４２分、△大平１５分。」 → ルール3, 4
+
+手数37:
+
+削除理由:
+- 「再開をはさんで１時間１２分の長考だった。」 → ルール3, 7
+
+手数43: 軽く成り捨てて、後手の駒の働きを悪くする。
+
+削除理由:
+
+手数47: 角を手放した先手、右銀で制空権を握りたい。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「１３時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁２時間４分、△大平１９分。」 → ルール3, 4
+
+手数49:
+
+削除理由:
+- 「田中魁がこの手を考えている間、大平は棋士室に姿を見せていた。」 → ルール4, 6
+- 「棋士室の研究会は１０代後半から２０代前半の奨励会三段や四段陣がずらり。」 → ルール1, 6
+- 「その中に混じって、２０代後半の山崎七段が盤面をにらんでいる。」 → ルール1
+- 「王座戦挑戦者になった山崎七段は今週９月２日号の週刊将棋の一面、将棋世界の最新１０月号の表紙を飾っており、旬の人と言える。」 → ルール1, 8
+
+手数54: 後手のほうが飛車の打ち込みに強い形になっている。
+
+削除理由:
+
+手数58: 銀取りと△３六角成を狙っている。後手は歩得もしているので、馬ができると大きなリードを奪うことになる。
+
+削除理由:
+
+手数61: 先手は飛車の打ち込みに弱い形なので、王手で根元の桂馬を払う。
+
+削除理由:
+
+手数66: 詰めろ銀取り。▲６六銀で受かっているだろうか。
+
+削除理由:
+
+手数68: 終盤戦になってきた。
+
+削除理由:
+- 「まだ１５時にして」 → ルール3
+
+手数72:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲田中魁３時間１７分、△大平２６分。」 → ルール3, 4
+- 「大平の消費時間のいくつかは棋士室から対局室まで戻る時間。」 → ルール3, 4, 6
+- 「尋常ではない早指しだ。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「ここもノータイム。」 → ルール3
+
+手数81:
+
+削除理由:
+- 「棋士室ではまだ検討が行われず、本局について聞こえる感想は「早い」「早い」だけ。」 → ルール1, 6
+
+手数82: △３八馬▲同金△７八馬と、△７八馬▲同飛△６九馬の２つの攻め筋がある。
+
+削除理由:
+- 「１６時を回った。」 → ルール3
+- 「ここまでの消費時間は▲田中魁３時間５２分、△大平３４分。」 → ルール3, 4
+- 「この一手の消費時間が７分で、大平が５分以上考えたのは３４手目△７四飛以来２回目。」 → ルール3, 4
+
+手数84: ▲３三飛成は△７八馬で、▲３一飛成△同金▲同龍も△４一金で後手玉は詰まないといわれている。
+
+削除理由:
+
+手数86: これで先手玉には△８七金までの詰めろがかかっている。
+
+削除理由:
+
+手数90: △６二玉と逃げるのは▲７三金△同銀▲６三銀という筋があって危ない。
+
+削除理由:
+- 「ここで田中魁の手が止まっている。」 → ルール4
+- 「１７時を回った。」 → ルール3
+- 「消費時間は▲田中魁４時間３３分、△大平３４分。」 → ルール3, 4
+
+手数91:
+
+削除理由:
+- 「３４分考え、１７時を回ったところで早くも残り時間が１時間を切った。」 → ルール3
+- 「（※）どうやら田中魁は詰みありと見て踏み込んだようだ。」 → ルール4
+- 「△４一金で不詰に気づいた。」 → ルール4
+- 「途中は先手がよかったようで、田中魁は感想戦を覗きこんだ小林裕士六段（田中門下）に「どう寄せるんやった？」と聞いていた。」 → ルール1, 4
+
+手数101:
+
+削除理由:
+- 「▲５三銀成から両者１０秒もしないうちに指していく。」 → ルール3
+
+手数104: 後手玉は詰まず、先手はここで投了した。
+
+削除理由:
+- 「田中魁はここで投了した。」 → ルール4
+- 「消費時間は▲田中魁５時間８分、△大平３６分。」 → ルール3, 4
+- 「勝った大平は２勝２敗、敗れた田中魁は１勝４敗となった。」 → ルール4

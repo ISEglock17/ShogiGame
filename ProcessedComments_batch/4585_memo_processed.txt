@@ -1,0 +1,116 @@
+**Streamlining Commentary for Sharp Analysis**
+
+Okay, so I'm presented with this mass of commentary from a shogi game record, and the goal is crystal clear: I need to whip it into shape. My aim? To distill the essence of the game, focusing solely on the board state and the critical moves, presented as a flowing narrative.  Think pure, unadulterated strategic insights, free from the noise.
+
+Essentially, I'm going to surgically remove all the fluff. That means any mention of people not directly involved in the game – no player introductions, no mentions of their ranks or affiliations. Gone.  I also need to eradicate any reminiscing about previous games or similar positions. This is about the *current* game, the *now*, and only that. My focus is on extracting the core strategic elements and presenting them effectively.
+
+手数5: 先手は三間飛車を採用。
+
+削除理由:
+- 「振り飛車党の藤倉は」 → ルール5
+
+手数14: 後手は△３三角と上がり持久戦模様に。
+
+削除理由:
+- 「中村は」 → 置換ルール
+
+手数22: 先手の三間飛車に後手は△１二香と上がり穴熊を目指した。
+
+削除理由:
+- 「午前１１時ごろの局面。」 → ルール3
+- 「藤倉の」 → 置換ルール
+- 「中村太は」 → 置換ルール
+- 「消費時間は藤倉２０分、中村太２６分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「午後１２時１０分、昼食休憩に入る。」 → ルール3, 7
+- 「消費時間は藤倉２９分、中村太１時間３０分。」 → ルール3
+- 「中村太が２４手目を１時間４分の考慮中。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「再開後すぐに指された。」 → ルール7
+- 「△８四飛の消費時間は１時間４分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は藤倉１時間１０分、中村太２時間３１分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１６時３０分過ぎの局面。」 → ルール3
+- 「消費時間は藤倉２時間１６分、中村太３時間７分。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１７時３０分過ぎの局面。」 → ルール3
+- 「消費時間は藤倉２時間４９分、中村太３時間１９分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１８時１０分、夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は藤倉２時間５０分、中村太４時間１４分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は藤倉３時間３６分、中村太４時間５分。」 → ルール3
+
+手数48: 先手の１六銀がつらい格好で居飛車ペースと見られている。
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は藤倉３時間３６分、中村太４時間２４分。」 → ルール3
+- 「先手の藤倉が長考中。」 → ルール3
+- 「控室で検討している千葉幸生五段は「」と分析。」 → ルール1, 6
+
+手数59:
+
+削除理由:
+- 「藤倉は考慮中に残り１時間を切る。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「残り時間は藤倉４５分、中村太４２分。」 → ルール3
+- 「これは長そうだね、と検討陣。」 → ルール1
+
+手数65: 飛車角の働きの差が大きく依然居飛車優勢との評判。
+
+削除理由:
+
+手数87: 依然として居飛車優勢。
+
+削除理由:
+- 「残り時間は藤倉１８分、中村太１２分。」 → ルール3
+
+手数119:
+
+削除理由:
+- 「残りは藤倉１分、中村太３分。」 → ルール3
+
+手数125:
+
+削除理由:
+- 「中村太は前傾姿勢で頭を抱えているが…。」 → 削除対象ルールに該当しないが、盤面解説と関係ない対局者の様子を描写した情報のため削除
+
+手数127: △３七金から先手玉は詰みそうだ。
+
+削除理由:
+
+手数128:
+
+削除理由:
+- 「▲藤倉−△中村太戦は０時５２分、１２８手で中村太四段の勝ちとなりました。」 → ルール3, 4
+- 「消費時間は▲藤倉５時間５９分、△中村太５時間５８分。」 → ルール3
+- 「勝った中村太は２連勝。」 → ルール4
+- 「敗れた藤倉は２連敗と明暗を分けた。」 → ルール4

@@ -1,0 +1,147 @@
+**Cleaning Up the Commentary for Analysis**
+
+Okay, so I'm presented with a task: I need to clean up the commentary from a shogi game's data.  Essentially, someone wants me to take this raw stream of comments associated with moves and distill it down to the essential information.  My goal is to isolate the *useful* stuff – the analysis of the board state and the explanations of the moves themselves.  I need to strip away all the fluff.
+
+This means getting rid of anything that doesn't contribute directly to understanding the game's evolution.  I'm thinking:
+
+*   **Meta-information:** Things like who the players are, their backgrounds, the time of the match, tournament details... that's all noise.  Irrelevant.
+*   **Introductions and biographies:**  Unless it directly informs a specific strategic decision, player backgrounds aren't going to help me understand *why* a move was made.
+*   **Time-related details:**  Clock times, elapsed time, anything referencing the timing of a move... It's extraneous to the analysis I'm after.
+
+In the end, I want to be left with clean, natural-sounding sentences that describe the board and the reasoning behind each move.  That's where the *real* analytical value lies.
+
+手数1:
+
+削除理由:
+- 「中川　大輔（なかがわ　だいすけ）　八段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｇａｗａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「神谷　広志（かみや　ひろし）　七段」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｍｉｙａ．ｈｔｍｌ」 → ルール8
+
+手数4: 最近流行の兆しがある、「角道を止めない」振り飛車。
+
+削除理由:
+- 「３分。」 → ルール3
+
+手数12:
+
+削除理由:
+- 「１０時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中川９分△神谷１５分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１１時３０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲中川３４分△神谷４２分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「この局面で中川が１６分使って昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲中川５６分△神谷５７分。」 → ルール3
+- 「昼食の注文は神谷が肉豆腐定食、中川はなし。」 → ルール7
+
+手数33: この戦型は手詰まりになる事も多いので、損のない一手。
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「ここまでの消費時間は▲中川１時間１３分△神谷１時間６分。」 → ルール3
+
+手数34: この辺りはお互いに一手一手の構想が非常に難しい所。
+
+削除理由:
+- 「４２分の考慮で△７四歩。」 → ルール3
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中川１時間１３分△神谷１時間４８分。」 → ルール3
+
+手数35: 石田流に対する、居飛車側の一つの対抗策。
+
+削除理由:
+- 「１時間２８分の長考。」 → ルール3
+
+手数39:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中川２時間４１分△神谷１時間５９分。」 → ルール3
+
+手数42: 上から受ける手も考えられるが、金底の歩も堅い。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲中川３時間４分△神谷２時間４２分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「この局面で中川が３７分使って夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲中川３時間４６分、△神谷３時間３分。」 → ルール3
+- 「夕食の注文は中川が力うどん、神谷はマーボー豆腐定食。」 → ルール7
+
+手数59:
+
+削除理由:
+- 「１９時３０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲中川３時間５２分△神谷３時間１２分。」 → ルール3
+
+手数60: 攻防に利かす。
+
+削除理由:
+- 「３２分。」 → ルール3
+- 「２０時２０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲中川３時間５２分△神谷３時間４４分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２１時１０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲中川４時間２４分△神谷４時間７分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「ここまでの消費時間は▲中川４時間４９分△神谷４時間２２分。」 → ルール3
+
+手数88: 現状は攻めが細いので、戦線拡大。
+
+削除理由:
+
+手数90:
+
+削除理由:
+- 「２３時前の局面。」 → ルール3
+- 「残り時間は中川５３分、神谷５４分。」 → ルール3
+
+手数96: 歩では間に合わないと見て、非常手段で手を作ってゆく。
+
+削除理由:
+
+手数107:
+
+削除理由:
+- 「２３時２０分頃の局面。」 → ルール3
+- 「記者が棋譜を確認しに行くと、中川が駒音高く▲６八金打と指した場面だった。」 → ルール1, 8
+- 「残り時間は▲中川３１分△神谷４７分。」 → ルール3
+
+手数111: ３五馬が絶好のポジションなので、いずれかに利きを逸らす。
+
+削除理由:
+- 「２３時３０分過ぎの局面。」 → ルール3
+- 「残り時間は中川３０分神谷３７分。」 → ルール3
+
+手数123: ここで後手は投了した。△同玉▲７一竜△８二銀には、▲７二竜△同玉▲６一角以下の寄せがある。
+
+削除理由:
+- 「神谷」 → ルール1
+- 「終局は０時９分。」 → ルール3
+- 「消費時間は▲中川５時間４４分△神谷５時間３７分。」 → ルール3

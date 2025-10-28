@@ -1,0 +1,121 @@
+**Processing this Shogi Commentary**
+
+Okay, so I'm presented with a Shogi game commentary and the goal is clear: clean it up, make it more focused.  I need to process each move's comment, but I have a checklist of things to immediately filter out. My expert eye is already scanning for those common elements that dilute the analysis.
+
+First, anything related to people *not* directly involved in the match is out. No extraneous biographical details on commentators or onlookers.  Then, I'm quickly dismissing any references to past games or precedents. The focus is *this* game, *this* moment.
+
+Time is irrelevant here.  No need to clutter the text with time controls, time spent thinking, or the current time of day. We're interested in the *moves* and their immediate tactical and strategic implications.
+
+Profiles, stats, ranks – all that background noise gets tossed.  We're looking at the *game*, not the players' resumes. Similarly, descriptions of playing styles or preferred openings are distractions. The actual moves themselves, and the rationale behind them, are what matters.
+
+Finally, anything about the location, weather, or accommodations is totally irrelevant. We're in the abstract space of the Shogi board, and these real-world details have no bearing on the analysis. I'm focusing on the core Shogi logic.
+
+手数1:
+
+削除理由:
+- 「土佐浩司七段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｏｓａ．ｈｔｍｌ」 → ルール8
+---
+手数2:
+
+削除理由:
+- 「橋本崇載七段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｈａｓｉｍｏｔｏ―ｔ．ｈｔｍｌ」 → ルール8
+---
+手数3:
+
+削除理由:
+- 「土佐の今期成績は５勝９敗（勝率０．３５７）」 → ルール4
+- 「通算成績は６０４勝５７７敗（勝率０．５１１）」 → ルール4
+---
+手数4:
+
+削除理由:
+- 「橋本の今期成績は１１勝９敗（勝率０．５５０）」 → ルール4
+- 「通算成績は２４２勝１４２敗（０．６３０）」 → ルール4
+---
+手数6: 後手一手損角換わりへ。
+
+削除理由:
+- 「最近の橋本は後手番でこの作戦を連採している。」 → ルール5
+---
+手数12:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「消費時間は▲土佐２０分、△橋本１０分。」 → ルール3
+---
+手数13: 先手は棒銀を目指した。
+
+削除理由:
+- 削除対象なし
+---
+手数16: 後手は珍しい構想。手損の無い角換わり戦では「棒銀には早繰り銀」という格言もあるが、一手損角換わりではほとんど見たことがない。また、後手の飛先の歩が伸びていないので早繰り銀というわけではなさそうだ。
+
+削除理由:
+- 削除対象なし
+---
+手数17:
+
+削除理由:
+- 「この局面で橋本が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲土佐１時間１２分、△橋本４８分。」 → ルール3
+- 「昼食の注文は土佐が「親子丼」（ほそ島や）、橋本はなし。」 → ルール7
+- 「対局は１３時に再開される。」 → ルール7
+---
+手数20:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲土佐２時間３分、△橋本５５分。」 → ルール3
+---
+手数23:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲土佐２時間２０分、△橋本５６分。」 → ルール3
+---
+手数25: ここでついに角交換後始めて駒がぶつかった。
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲土佐２時間４０分、△橋本１時間３５分。」 → ルール3
+- 「大変ゆっくりとした進行の本局も、」 → ルール3
+---
+手数27:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲土佐２時間４７分、△橋本３時間１０分。」 → ルール3
+---
+手数29:
+
+削除理由:
+- 「この局面で橋本が３６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲土佐３時間１７分、△橋本３時間４６分。」 → ルール3
+- 「夕食の注文は土佐が「きつねうどん」（ほそ島や）、橋本はなし。」 → ルール7
+- 「対局は１９時に再開される。」 → ルール7
+---
+手数30:
+
+削除理由:
+- 「１９時３０分頃の局面。」 → ルール3
+---
+手数35:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲土佐４時間１分、△橋本３時間５３分。」 → ルール3
+---
+手数43:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+---
+手数50: この手を見て先手は投了した。投了の局面以下▲２六角△２五銀▲３五角△３四銀で角が助からず、角を持たれると△３九角などの筋が厳しく望みのない戦いと見たようだ。
+
+削除理由:
+- 「１分後、」 → ルール3
+- 「土佐は指さずに投了を告げた」 → (整形)
+- 「終局時刻は２０時５１分、消費時間は▲土佐４時間２分、△橋本４時間４２分。」 → ルール3
+- 「勝った橋本崇載七段は６勝１敗、敗れた土佐浩司七段は３勝４敗となった。」 → ルール4

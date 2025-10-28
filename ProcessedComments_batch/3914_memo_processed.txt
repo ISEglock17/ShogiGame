@@ -1,0 +1,114 @@
+**Structuring Shogi Commentary: My Approach**
+
+Okay, so I'm presented with a task: to clean up and format some Shogi game commentary. The user wants the comments structured according to a defined set of rules.  Essentially, I need to take raw commentary and transform it into a more readable and understandable format. My initial focus is, of course, understanding what exactly constitutes a "comment" in this context.  More importantly, I need a detailed grasp on those formatting rules.  The instruction so far is limited to an overall intention; it is missing the necessary meat of the action and details. As an expert, I know that rules will be the determining factor in achieving the right output. I need to be presented the parameters of that rule set.
+
+手数2: 飛車を振ってみろという手。もちろん、対策は用意していることだろう。
+
+削除理由:
+
+---
+手数5: 先手は大きく位を取る作戦に出た。
+
+削除理由:
+- 「佐藤紳」 → ルール1
+
+---
+手数6:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は佐藤紳１８分、山本３０分。」 → ルール3
+
+---
+手数8: 相中飛車になった。
+
+削除理由:
+- 「この形は佐藤康光棋王が２００７年度の第２０期竜王戦七番勝負第６局で指したことで話題になった。」 → ルール1, 2
+
+---
+手数11: 先手は美濃囲いに組むのだろう。
+
+削除理由:
+- 「▲４八玉の局面で山本が５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐藤紳１時間１８分、山本４４分。」 → ルール3
+- 「昼食の注文は佐藤紳は冷やし月見うどん、山本が五目焼きそば。」 → ルール7
+- 「渡辺竜王は▲４六歩と突いていたが、」 → ルール1, 2
+
+---
+手数16:
+
+削除理由:
+- 「１３時４５分の局面。」 → ルール3
+- 「消費時間は佐藤紳１時間２５分、山本５１分。」 → ルール3
+
+---
+手数17:
+
+削除理由:
+- 「１時間２９分の長考。」 → ルール3
+
+---
+手数25:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は佐藤紳３時間２４分、山本１時間２１分。」 → ルール3
+
+---
+手数28:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は佐藤紳３時間３１分、山本２時間２８分。」 → ルール3
+
+---
+手数32: １手１手が難しい将棋になっている。
+
+削除理由:
+- 「△２二飛の局面で佐藤紳が２７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は佐藤紳４時間２６分、山本２時間３４分。」 → ルール3
+
+---
+手数41: 互いに歩交換。少しずつ局面がほぐれてきている。
+
+削除理由:
+
+---
+手数43: 本譜に見られるように△５五金に▲７四歩を用意している。
+
+削除理由:
+
+---
+手数46: ▲５六銀とされては面白くない。
+
+削除理由:
+
+---
+手数49: △同歩▲同飛△８三歩▲７三歩成で飛車をさばく狙い。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は佐紳４時間４８分、山本２時間５５分。」 → ルール3
+
+---
+手数62:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は佐藤紳５時間３分、山本３時間３７分。」 → ルール3
+
+---
+手数83: 先手の駒得となった。▲６二歩や▲６一角を狙いたい。
+
+削除理由:
+- 「２２時２０分ごろの局面。」 → ルール3
+- 「残り時間は佐藤紳１８分、山本２時間３分。」 → ルール3
+
+---
+手数95: 後手玉は一手一手の寄せ。
+
+削除理由:
+- 「山本はここで６分考えて投了となった。」 → ルール3
+- 「終局時刻は２３時５分。」 → ルール3
+- 「消費時間は佐藤紳５時間４８分、山本４時間４３分。」 → ルール3
+- 「勝った佐藤紳は３勝１敗、敗れた山本は１勝３敗となった。」 → ルール4

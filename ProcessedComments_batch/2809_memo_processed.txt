@@ -1,0 +1,122 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up these shogi commentary snippets. The goal is clear: to get rid of all the fluff – the introductions, the time checks, any irrelevant metadata – and leave behind only the pure, insightful analysis of the game state and the actual moves being played. It's about distilling the commentary down to its essence, making it a clear and concise explanation of what's happening on the board.
+
+My strategy? I'm going to carefully read each comment, applying the specified rules to identify what's extraneous and needs to go. It's like being a digital editor, but instead of words, I'm working with shogi commentary, carefully cutting away the unnecessary parts to reveal the core of the analysis. It's all about precision and focus, ensuring the final product is a valuable resource for anyone studying the game.
+
+手数10: 居飛車か振り飛車かわかりづらい駒組みをするのが、最近の後手の特徴。
+
+削除理由:
+- 「南」 → 置換ルール
+
+手数11: 先手も慎重な駒組み。これなら相手が居飛車でも振り飛車でも対応できる。
+
+削除理由:
+- 「松尾」 → 置換ルール
+
+手数14: 居飛車のようだ。
+
+削除理由:
+- 削除対象なし
+
+手数28: 右玉が有力だろうか。
+
+削除理由:
+- 削除対象なし
+
+手数29:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾２３分、△南１６分。」 → ルール3, 4
+
+手数42:
+
+削除理由:
+- 「この局面で松尾が１７分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲松尾５１分、△南５９分。」 → ルール3, 4
+
+手数45:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾１時間８分、△南１時間１２分。」 → ルール3, 4
+
+手数46: びゅーんと転換。右玉は下段飛車が端から端まで利いているのが魅力。
+
+削除理由:
+- 削除対象なし
+
+手数49: これで穴熊のハッチが閉まった。
+
+削除理由:
+- 削除対象なし
+
+手数50:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾１時間２９分、△南２時間１８分。」 → ルール3, 4
+
+手数54:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾２時間０分、△南２時間３６分。」 → ルール3, 4
+
+手数57: お互い玉を固めあっている。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾２時間４１分、△南２時間４２分。」 → ルール3, 4
+
+手数70:
+
+削除理由:
+- 「この局面で松尾が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲松尾３時間２６分、△南３時間１８分。」 → ルール3, 4
+
+手数77: 後手が手待ちを繰り返している間に、「ビッグ４」と呼ばれる堅い堅い囲いが完成した。
+
+削除理由:
+- 削除対象なし
+
+手数84:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾３時間３９分、△南３時間５６分。」 → ルール3, 4
+
+手数92: 一気に飛車の取り合いになった。と金の位置は３段目の後手のほうがいいが、玉の堅さは先手が優る。
+
+削除理由:
+- 削除対象なし
+
+手数98:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾４時間３４分、△南４時間２２分。」 → ルール3, 4
+
+手数101: 大きな拠点を作った。
+
+削除理由:
+- 削除対象なし
+
+手数105:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲松尾４時間４２分、△南４時間３０分。」 → ルール3, 4
+
+手数106: 後手は端に望みを託す。
+
+削除理由:
+- 「南」 → 置換ルール
+
+手数117:
+
+削除理由:
+- 「この局面で南は１分考え、次の手を指さずに投了した。」 → ルール3, 4
+- 「消費時間は▲松尾４時間５７分、△南５時間１９分。」 → ルール3, 4
+- 「勝った松尾は４勝１敗、敗れた南は１勝４敗となった。」 → ルール4

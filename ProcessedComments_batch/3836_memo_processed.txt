@@ -1,0 +1,112 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Alright, so the user wants me to clean up the commentary accompanying shogi game data, huh?  They want to strip away all the fluff – the metadata, the bios, the time stamps – and just leave the core, insightful explanations of the moves and board states. My goal is to transform those scattered thoughts into concise, naturally flowing sentences that are directly relevant to the game's unfolding strategy.
+
+The process is pretty straightforward. First, I have to be the judge, based on the provided rules, and decide what gets the axe.  I'll mercilessly delete any irrelevant information. Then, I'll stitch together what remains into a readable narrative. Finally, I'll present the output in the prescribed format: move number, followed by the polished comment, and a "Deletion Reason" section clearly listing the removed elements and the specific rules that justified their removal. This will make it much easier to track the analysis process and ensure consistency. This should give the user a clean, focused dataset for their advanced analysis, free from the noise.
+
+手数1:
+
+削除理由:
+- 「島本のほうが年長でプロ入りもだいぶ早いが、先日五段に昇段した糸谷に上座を譲っている。」 → ルール1, 4, 6
+
+手数2:
+
+削除理由:
+- 「糸谷は今年５月１日に竜王戦連続昇級で昇段。」 → ルール4
+- 「５月３日の森一門合同祝賀会では山崎七段のＢ１昇級と一門外の稲葉四段の昇段だけを祝う予定だったが、急遽糸谷も祝福される側に回った。」 → ルール1
+
+手数6: 両者何度も経験のある、一手損角換わりへ。
+
+削除理由:
+- 「両者何度も経験のある、」 → ルール2
+
+手数18:
+
+削除理由:
+- 「１１時すぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本２４分、△糸谷３１分。」 → ルール3
+
+手数19:
+
+削除理由:
+- 「この局面で糸谷が４８分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲島本４２分、△糸谷１時間１９分。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本１時間２４分、△糸谷１時間３３分。」 → ルール3
+
+手数27: 後々△３九角から馬を作られるのを防いだ。
+
+削除理由:
+
+手数30:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本２時間７分、△糸谷１時間４３分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本２時間４９分、△糸谷２時間７分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲島本２時間５４分、△糸谷２時間４５分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「この局面で島本が１９分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲島本４時間７分、△糸谷２時間５２分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本４時間１７分、△糸谷３時間３６分。」 → ルール3
+
+手数61:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲島本４時間４３分、△糸谷４時間５分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「消費時間は▲島本４時間５９分、△糸谷４時間１７分。」 → ルール3
+
+手数86: △７三桂の代わりに△８四歩なら後手優勢が維持できたようだ。
+
+削除理由:
+- 「（※）局後に島本に聞いたところ、」 → ルール1
+
+手数108:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「消費時間は▲島本５時間５７分、△糸谷５時間９分。」 → ルール3
+- 「棋士室に棋譜がここまで届いた段階で、終局が伝えられた。」 → ルール6, 8
+- 「その結果に「え！？」と反応する検討陣。」 → ルール1
+- 「さて、結果は…。」 → ルール8
+
+手数115: この手の代わりに▲２三同飛成は、△８五歩以下の頓死。飛車の横利きは残しておかなければならない。
+
+削除理由:
+- 「（※）」 → ルール8
+- 「「うっかりしてましたわー、危ない危ない。時間があってよかった」（棋士室にて、島本。残り時間３分のうち１分をここで使っている）」 → ルール1, 3, 6
+
+手数119:
+
+削除理由:
+- 「この局面で糸谷が投了した。」 → ルール1
+- 「以下は△３二玉に▲２三飛成以下の即詰み。」 → (解説のため残す)
+- 「消費時間は▲島本５時間５８分、△糸谷５時間９分。」 → ルール3

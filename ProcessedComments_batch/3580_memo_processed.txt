@@ -1,0 +1,138 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I've been asked to clean up some commentary attached to Shogi game data. The goal here is to strip out all the extraneous stuff - you know, the metadata, player intros, time stamps - and just leave the good, meaty analysis of the board position and the moves being played, presented in a natural, flowing way.
+
+Here's how I'm going to approach this: First, I'll go through the comments and apply some specific rules to determine what needs to be removed. Then, I'll take what's left and massage it into a proper sentence or paragraph, making sure it reads smoothly.
+
+Finally, the output will be structured like this:
+
+*   The first line will be like: "Move <N>: <The cleaned-up comment>".
+*   Subsequent lines, if any, will start with "Deletion Reason:" and then list the phrases or sentences that were removed, along with the specific rule number that applied.
+
+The removal rules I'll be using are pretty straightforward:
+
+1.  Anything mentioning people other than the players, including their names, ranks, or who their teachers are.
+2.  Any references to previous games or precedents.
+3.  Any information about time, like how long they took on a move.
+
+It's all about getting down to the core strategic insights, free from clutter. This should make the data much easier to work with for my analysis later.
+
+手数3: 先手は横歩取りを避けて角道を止めた。
+
+削除理由:
+- 「野月は横歩取り△８五飛戦法の育ての親と言われている。」 → ルール1, 5
+- 「豊川は」 → ルール1, 5
+
+手数8: 後手の５筋位取り中飛車となった。
+
+削除理由:
+- 「野月の」 → ルール1, 5
+
+手数18:
+
+削除理由:
+- 「１０時４０分の局面。」 → ルール3
+- 「消費時間は豊川１３分、野月２２分。」 → ルール3, 4
+
+手数24: 後手の５筋は好形になった。
+
+削除理由:
+- 削除対象なし
+
+手数27:
+
+削除理由:
+- 「▲２六歩の局面で野月が２４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は豊川４９分、野月１時間７分。」 → ルール3, 4
+- 「昼食の注文はともになし。」 → ルール7
+
+手数28:
+
+削除理由:
+- 「昼食休憩をはさむ５９分の長考。」 → ルール3, 7
+
+手数30:
+
+削除理由:
+- 「１４時１５分の局面。」 → ルール3
+- 「消費時間は豊川４９分、野月１時間４９分。」 → ルール3, 4
+
+手数31: トラック囲いと言われている形だ。
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は豊川１時間３８分、野月２時間６分。」 → ルール3, 4
+
+手数34:
+
+削除理由:
+- 「１６時２０分過ぎの局面。」 → ルール3
+- 「消費時間は豊川１時間３８分、野月２時間４０分。」 → ルール3, 4
+- 「豊川は１時間以上考えている。」 → ルール3, 4
+
+手数35:
+
+削除理由:
+- 「１時間１８分の大長考。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は豊川２時間５６分、野月２時間５１分。」 → ルール3, 4
+
+手数43:
+
+削除理由:
+- 「野月がここで１２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は豊川３時間３９分、野月３時間２１分。」 → ルール3, 4
+- 「夕食の注文は豊川がかけうどん（天かすなし）、納豆巻、野月は注文なし。」 → ルール7
+
+手数57: 居飛車が良いようだ。教科書通りの端攻めが厳しい。
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「消費時間は豊川４時間５４分、野月３時５６分。」 → ルール3, 4
+
+手数65:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は豊川４６分、野月１時間３２分。」 → ルール3, 4
+
+手数69: 馬筋を止めてしまうが、飛車を成らせるわけにはいかない。
+
+削除理由:
+- 削除対象なし
+
+手数77: 先手は攻防の角で反撃。先手玉は９筋が広い。
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は豊川２７分、野月１時間２５分。」 → ルール3, 4
+- 「豊川は」 → ルール1, 4
+
+手数96:
+
+削除理由:
+- 「２３時の局面。」 → ルール3
+- 「残り時間は豊川１４分、野月１時間。」 → ルール3, 4
+- 「野月は残り１時間を告げられても、しばらく気が付かない様子で局面を考えていた。」 → ルール1, 3, 4
+
+手数118:
+
+削除理由:
+- 「残り時間は豊川４分、野月５２分。」 → ルール3, 4
+
+手数119: 先手玉は遠く、寄せ合い勝ちが望める。
+
+削除理由:
+- 「野月はここで８分考えて投了した。」 → ルール1, 3, 4
+- 「終局時刻は２３時５０分。」 → ルール3
+- 「消費時間は豊川５時間５７分、野月５時間１６分。」 → ルール3, 4
+- 「勝った豊川は３勝０敗、敗れた野月は１勝２敗となった。」 → ルール4

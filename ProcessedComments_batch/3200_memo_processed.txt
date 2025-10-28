@@ -1,0 +1,138 @@
+**Streamlining the Commentary: My Approach**
+
+Okay, so I'm tasked with cleaning up this Shogi commentary, making it lean and focused. The goal is to strip away all the extraneous noise and leave only the crucial insights about the board and the moves. Think of it like a highly distilled analysis, leaving no room for fluff.
+
+My strategy is pretty straightforward, but methodical. I'll be working through each comment, one move at a time, like a surgeon. I'll scrutinize every sentence within those comments, applying a set of strict criteria – the "deletion rules," as I'm calling them. I'll be meticulously checking each sentence against these rules. If a sentence falls under one of those rules, it's flagged for removal.  And importantly, I'm going to note *why* I'm deleting it – the specific rule number that applies – so there's a clear audit trail. This way, the process is transparent and ensures consistent application of the editing criteria.
+
+手数18:
+
+削除理由:
+- 「先手でのカニカニ銀に並ぶ、棋譜を見ただけで児玉とわかる一手。」 → ルール1, 5
+- 「児玉は公式戦で過去４８局、この手を指している。」 → ルール2, 4
+- 「…ところが、成績は１３勝３５敗。見る者を楽しませてくれる戦法だが、なかなか結果には結びついていないようだ。」 → ルール4, 5
+- 「２００５年８月から１１連敗中というさらに悪いデータもあるが…。」 → ルール2, 4
+
+手数31:
+
+削除理由:
+- 「１１時２０分頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳５２分、△児玉２分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「この局面で佐藤紳が１６分考え、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲佐藤紳１時間１７分、△児玉３７分。」 → ルール3
+
+手数38: 金銀交換になったあと、次は銀を繰り出す。
+
+削除理由:
+- 「児玉」 → ルール1
+
+手数39: △６五歩が見えているので、角道を通して受ける。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲佐藤紳２時間５分、△児玉１時間５分。」 → ルール3
+- 「１５時半になってもこの局面。」 → ルール3
+- 「児玉が長考している。」 → ルール1, 3
+
+手数42:
+
+削除理由:
+- 「１時間４５分の長考だった。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時４０分頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳２時間２６分、△児玉２時間５２分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「この局面で佐藤紳が９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲佐藤紳３時間２９分、△児玉３時間２９分。」 → ルール3
+
+手数56: 後手は角が玉をにらんでいることを生かして攻めている。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲佐藤紳３時間３６分、△児玉４時間０分。」 → ルール3
+
+手数57: 際どい形だが受かっているだろうか。
+
+削除理由:
+- 「５２分の長考。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳４時間３７分、△児玉４時間７分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳４時間４０分、△児玉４時間５１分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳５時間１分、△児玉４時間５５分。」 → ルール3
+
+手数78:
+
+削除理由:
+- 「２３時頃。」 → ルール3
+- 「消費時間は佐藤５時間１３分、児玉４時間５５分。」 → ルール3
+
+手数81:
+
+削除理由:
+- 「消費時間は▲佐藤紳５時間３９分、△児玉５時間２分。」 → ルール3
+
+手数84: 詰めろ。
+
+削除理由:
+
+手数85:
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「消費時間は▲佐藤紳５時間３９分、△児玉５時間３３分。」 → ルール3
+
+手数97:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「消費時間は▲佐藤紳５時間５０分、△児玉５時間４１分。」 → ルール3
+
+手数100: 王手龍取りがかかった。
+
+削除理由:
+
+手数101:
+
+削除理由:
+- 「０時２０分頃の局面。」 → ルール3
+- 「消費時間は▲佐藤５時間５４分、△児玉５時間５０分。」 → ルール3
+
+手数111:
+
+削除理由:
+- 「０時４０分頃。」 → ルール3
+- 「残りは佐藤紳１分、児玉３分。」 → ルール3
+
+手数122: 先手が投了した。以下▲７九同角に△７六金以下の即詰み。
+
+削除理由:
+- 「ここで佐藤紳が」 → ルール1
+- 「消費時間は▲佐藤紳５時間５９分、△児玉５時間５７分。」 → ルール3
+- 「勝った児玉は１勝８敗、敗れた佐藤紳は４勝５敗となった。」 → ルール4

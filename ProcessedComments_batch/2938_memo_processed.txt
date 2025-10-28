@@ -1,0 +1,113 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm being asked to take a pile of shogi game commentary and whip it into shape, focusing only on the game itself. The user wants the meat and potatoes, the actual analysis of the board state and the moves, not the extraneous fluff.
+
+Here's my game plan: I need to process each move individually.  I'll go through the provided commentary step-by-step. First, I'll need to identify the irrelevant parts based on the specified rules. Think things like greetings, player reactions that don't directly relate to the game, and so on.  Once I've identified those, I'll delete them.
+
+Then, there's the replacement step. I have to replace player names with "Sente" (先手, or "White") and "Gote" (後手, or "Black"). It's about maintaining a clear, unbiased perspective on the game's flow.
+
+Finally, after all the clean-up and replacements, I will have to refine the remaining text to make sure the commentary makes sense in its new form. I will then present the structured and clean commentary along with the reasons for deletions, as per the desired output format. The goal is to provide a concise and focused analysis of the shogi game.
+
+手数1:
+
+削除理由:
+- 「勝又は初手に４分使った。」 → ルール3
+
+手数5: 先手は角道を止めた。ここで▲２五歩△８五歩…なら横歩取りになるところだった。▲６六歩は矢倉系の将棋にしたいという意味。
+
+削除理由:
+- 「勝又は」 → 置換ルール
+- 「９分考えて」 → ルール3
+
+手数12:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は勝又３６分、片上７分。」 → ルール3, 4
+
+手数20: 変則的な相矢倉になった。この瞬間の後手陣がユニークだ。△４二銀は▲２五歩に△３三銀を用意したもの。
+
+削除理由:
+- 「△４二銀の局面で勝又が３０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は勝又１時間４０分、片上２０分。」 → ルール3, 4
+
+手数27: 先手は居玉のまま駒組みを進める。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は勝又１時間５１分、片上４１分。」 → ルール3, 4
+- 「勝又は」 → 置換ルール
+
+手数29: ▲７七桂なら穏やかだが、一番強気な指し手だ。
+
+削除理由:
+- 「４３分の長考。」 → ルール3
+
+手数32: 後手は６筋の歩を交換した。これで△７三角と出るときに視界が良くなった。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は勝又２時間４９分、片上１時間１４分。」 → ルール3, 4
+- 「片上は」 → 置換ルール
+
+手数33:
+
+削除理由:
+- 「２９分の考慮。」 → ルール3
+
+手数35: ▲７七角△３三銀の交換を入れたため、当たりが強くなっている。
+
+削除理由:
+- 削除対象なし
+
+手数38:
+
+削除理由:
+- 「１６時２０分の局面。」 → ルール3
+- 「消費時間は勝又３時間２０分、片上１時間４８分。」 → ルール3, 4
+
+手数39: ▲５五歩△６五銀▲６三歩成△同金▲６六歩が一つの狙い。
+
+削除理由:
+- 削除対象なし
+
+手数42: 攻め合い。△７三桂から△６五桂が早い。
+
+削除理由:
+- 削除対象なし
+
+手数47: 局面の激しさは増す一方だ。どちらが読み勝っているか。
+
+削除理由:
+- 「１７時３０分前の局面。」 → ルール3
+- 「消費時間は勝又３時間４８分、片上２時間１３分。」 → ルール3, 4
+
+手数48: 手筋のたたきで角道を止める。
+
+削除理由:
+- 「△６六歩の局面で勝又が３６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は勝又４時間２４分、片上２時間３１分。」 → ルール3, 4
+
+手数51: 金を玉に近づける。
+
+削除理由:
+- 削除対象なし
+
+手数53:
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は勝又４時間４０分、片上３時間２分。」 → ルール3, 4
+
+手数54: △４七銀成となれば、厳しい。
+
+削除理由:
+- 削除対象なし
+
+手数64: 以下、▲１一角成に△６七歩が厳しい。また、▲６七銀と粘るのも、△６六成銀▲同銀△６七歩▲同金△３六角の筋が強烈だ。
+
+削除理由:
+- 「５分考えて勝又の投了となった。」 → ルール3
+- 「終局時刻は２０時５０分。」 → ルール3
+- 「消費時間は勝又５時間４分、片上３時間３３分。」 → ルール3, 4
+- 「勝った片上は３勝２敗、敗れた勝又は２勝３敗となった。」 → ルール4

@@ -1,0 +1,132 @@
+**Refining Commentary from Shogi Games**
+
+Okay, so I'm presented with a task, a familiar one actually. It involves cleaning up commentary from Shogi game datasets. The user, obviously someone who understands the nuances of the game, wants me to trim the fat from the commentary attached to each move. My goal here is precise: I need to extract only the valuable nuggets, the concise explanations of the board state and the reasoning behind each move. Think of it as distilling the essence of the analysis.
+
+Essentially, I'm focusing on the "why" and "what" of each move. I need to get rid of anything that isn't directly related to the strategic analysis. That means deleting all the unnecessary fluff – the meta-comments about the commentators themselves, the introductions of the players, and any time stamps. It's about getting to the meat of the matter, the pure tactical or strategic insights that accompany a move. I know I can do it efficiently.
+
+手数10: 後手の作戦は、角道を止めた中飛車。
+
+削除理由:
+- 「矢倉」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数15: 先手は持久戦模様の駒組み。
+
+削除理由:
+- 変更なし
+
+手数24: 右銀も守りに使おうという先手に対し、後手は△６五歩から６筋を狙おうとしている。
+
+削除理由:
+- (整形のみ)
+
+手数26:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司１３分、△矢倉２２分。」 → ルール1, 3
+
+手数30:
+
+削除理由:
+- 「この局面で所司が３７分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲所司１時間２３分、△矢倉３９分。」 → ルール1, 3
+
+手数32:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司１時間３０分、△矢倉１時間１４分。」 → ルール1, 3
+
+手数38:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司２時間５分、△矢倉１時間５１分。」 → ルール1, 3
+
+手数39: この歩を打っておかないと、△６八角成▲２二飛成△７八馬▲同銀△２二金で駒損になる。△３二金と、飛車にひもをつけた手が利いている。
+
+削除理由:
+- 変更なし
+
+手数46: 後手は桂馬が捌けたが、堅さは先手が優っている。
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲所司２時間４９分、△矢倉２時間１３分。」 → ルール1, 3
+
+手数48: 飛車取りになっている。
+
+削除理由:
+- 変更なし
+
+手数54: 飛車が一気に自由になった。
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司３時間２３分、△矢倉２時間３２分。」 → ルール1, 3
+
+手数57:
+
+削除理由:
+- 「この局面で矢倉が１１分考え、夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は▲所司４時間２分、△矢倉２時間５６分。」 → ルール1, 3
+
+手数71: 角と馬がよく利いている。
+
+削除理由:
+- 変更なし
+
+手数77: △５三金直が予想されている。△６二金寄なら▲４三成香がうるさい。後手はと金が間に合うように、先手の攻めを遅らせたい。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司４時間３０分、△矢倉３時間８分。」 → ルール1, 3
+
+手数78: 後手は金引を選択。
+
+削除理由:
+- 「矢倉」 → 先手・後手の実名は「先手」「後手」に置き換える
+
+手数84: 一直線の攻め合い。
+
+削除理由:
+- 変更なし
+
+手数94: ▲７一角成があるように見えるが、２二角で玉を取られてしまう。
+
+削除理由:
+- 変更なし
+
+手数96:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司４時間４８分、△矢倉３時間４５分。」 → ルール1, 3
+
+手数100:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲所司４時間５３分、△矢倉３時間４９分。」 → ルール1, 3
+
+手数107: ６六角の力で、飛車と龍の働きを悪くする。
+
+削除理由:
+- 変更なし
+
+手数110: 何度も何度も。厳しい。
+
+削除理由:
+- 変更なし
+
+手数118: △７八角成▲同銀引△９九金以下の詰めろになっている。
+
+削除理由:
+- 変更なし
+
+手数126: この局面で先手が投了した。▲６八同銀は△８七角成で詰み。
+
+削除理由:
+- 「所司」 → 先手・後手の実名は「先手」「後手」に置き換える
+- 「消費時間は▲所司５時間３１分、△矢倉４時間１５分。」 → ルール1, 3
+- 「勝った矢倉は５勝４敗、敗れた所司は２勝６敗となった。」 → ルール1, 4

@@ -1,0 +1,127 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm presented with this shogi commentary data. My goal here is to refine it, to strip away all the fluff – the metadata, the introductions, the clock updates – and get right down to the meat of the analysis: the actual board explanations and the reasoning behind each move. It's about distilling the commentary to its essence.
+
+Here's how I see this working: first, I'll need to dissect each comment, meticulously following the rules I've been given. I'll flag and remove any sections that fall into those "delete" categories. Then, the real fun begins: I'll take what's left and smooth it out, reconstructing it into natural-sounding sentences that focus solely on the strategic implications.
+
+Finally, I'll package everything up neatly. I'll keep track of the move number, the cleaned-up commentary, and importantly, the reason for any deletions. This last bit is crucial – it allows for auditing and potentially refining the rule set down the line. It's all about precision and clarity, getting the most out of these shogi insights.
+
+手数16: 後手得意の藤井システム。
+
+削除理由:
+- 「室岡」 → ルール1
+
+手数19: 急戦を見せる。
+
+削除理由:
+
+手数20: 藤井システムは居飛車側が急戦を見せたら△６二玉と玉を移動させるのが定跡だ。
+
+削除理由:
+
+手数21: 先手は△６二玉を見て、穴熊を目指す。藤井システムで先手玉を直接狙うときに６二玉が流れ弾にあたりやすい。
+
+削除理由:
+- 「藤原は」 → ルール1
+
+手数23:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は藤原３７分、室岡１４分。」 → ルール1, 3
+
+手数26: この△３二飛も藤井システムの一変化。△５二金左が△８二玉に代わっている将棋も見られるところ。△３二飛は先手が数手前に指した▲３六歩をとがめようとしている。
+
+削除理由:
+
+手数27:
+
+削除理由:
+- 「▲９九玉の局面で室岡が２８分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は藤原１時間１０分、室岡４８分。」 → ルール1, 3
+
+手数28: 藤井システムならではの仕掛け。
+
+削除理由:
+- 「昼食休憩を挟んで３０分の長考。」 → ルール3, 7
+
+手数31: 角交換を避ける。
+
+削除理由:
+
+手数33:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は藤原１時間２６分、室岡５２分。」 → ルール1, 3
+- 「１９９９年の第５７期Ａ級順位戦プレーオフ▲森内−△谷川戦で現れた進行。」 → ルール2
+- 「研究家室岡はどのような新手を用意しているのだろうか。」 → ルール1, 5
+
+手数39:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は藤原２時間１０分、室岡１時間３３分。」 → ルール1, 3
+
+手数41: 角を引く。６六銀を７七に引き付けられるようになった。
+
+削除理由:
+- 「５４分の長考で」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時３０分ごろの局面。」 → ルール3
+- 「消費時間は藤原３時間５分、室岡１時間５９分。」 → ルール1, 3
+
+手数45: 歩をぶつけた。△同歩▲同角から▲４七金として飛角を圧迫していく楽しみもできる。
+
+削除理由:
+- 「４６分の長考で」 → ルール3
+
+手数46: ▲４六同角のほかに▲５七金から▲４六金と前進させる手段もある。
+
+削除理由:
+- 「ここで藤原が１９分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は藤原４時間１０分、室岡２時間４８分。」 → ルール1, 3
+
+手数55:
+
+削除理由:
+- 「１９時４５分の局面。」 → ルール3
+- 「消費時間は藤原４時間２５分、室岡３時間７分。」 → ルール1, 3
+
+手数56: 入城した。
+
+削除理由:
+- 「２５分考えて」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「残り時間は藤原１時間１０分、室岡３時間４４分。」 → ルール1, 3
+
+手数65:
+
+削除理由:
+- 「２１時３０分前の局面。」 → ルール3
+- 「残り時間は藤原５３分、室岡２時間４分。」 → ルール1, 3
+- 「室岡が長考している。」 → ルール1, 3
+
+手数69: △２四龍が厳しい。以下、▲同飛△４六角打が飛金両取りだ。
+
+削除理由:
+
+手数70: これは厳しい手があった。先手が長考している。
+
+削除理由:
+- 「藤原が」 → ルール1
+
+手数74: ここで先手は投了した。△２四角と△７九角成の両方が同時には受からない。
+
+削除理由:
+- 「藤原が４分考えて」 → ルール1, 3
+- 「終局時刻は２２時３４分。」 → ルール3
+- 「消費時間は藤原５時間３８分、室岡４時間４０分。」 → ルール1, 3
+- 「勝った室岡は２連勝、敗れた藤原は１勝１敗となった。」 → ルール1, 4

@@ -1,0 +1,122 @@
+**Analyzing and Refactoring Shogi Game Commentary**
+
+Okay, I've got it. The user wants me to process Shogi game commentary, cleaning it up and making it more readable. It looks like I need to take the raw comments, apply some specific rules, strip out the irrelevant details, and then rephrase the core information into concise, natural-sounding sentences.
+
+It's a step-by-step process. First, I need to analyze each move's commentary individually. I'll need to figure out how to parse the text, identify the key actions, and discard any extraneous information. Then, I'll need to use my understanding of Shogi to craft a clear and insightful summary for each move, respecting the provided rules. This will require some careful attention to detail and a good grasp of the game's vocabulary and common phrasing.
+
+手数11: 後手が中飛車の場合は左美濃で戦う構想。もし▲６八銀なら△５二飛と中飛車にする作戦だろう。
+
+削除理由:
+- 「中村太は」 → ルール1
+
+手数22: 相矢倉になった。後手が飛先不突なのは珍しい。
+
+削除理由:
+- なし
+
+手数23:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は大平１２分、中村２８分。」 → ルール3
+
+手数30: △４二角は本譜の通りに進んで１手損の可能性がある。有効な手待ち。
+
+削除理由:
+- なし
+
+手数32: ▲７五同歩△同角のときに▲６五歩から盛り上がられることがなくなったので仕掛ける。
+
+削除理由:
+- なし
+
+手数34:
+
+削除理由:
+- 「△７五同角の局面で大平が１６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大平４６分、中村太１時間９分。」 → ルール3
+
+手数35: ４六銀型を生かして中央から反撃する。
+
+削除理由:
+- なし
+
+手数36: 突き違いの手筋。△５五同歩▲５八飛△５二飛▲５五銀△５四歩▲７六歩の進行は後手が手損する恐れがある。
+
+削除理由:
+- なし
+
+手数39:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は大平５１分、中村太１時間４４分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１時間９分の長考。」 → ルール3
+
+手数44: 互いに強気な指し手。読み勝っているのはどちらか。
+
+削除理由:
+- なし
+
+手数45:
+
+削除理由:
+- 「１５時１５分の局面。」 → ルール3
+- 「消費時間は大平１時間２分、中村太２時間５８分。」 → ルール3
+
+手数47: ▲５四銀は△６四角▲５九飛△７六歩のような進展が気になったか。
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数49:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は大平１時間４２分、中村太３時間３４分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「３６分の長考。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は大平１時間５８分、中村太４時間１８分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「△３一玉の局面で大平が１６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は大平２時間３７分、中村太４時間１８分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は大平２時間５９分、中村４時間５０分。」 → ルール3
+
+手数89: ▲６七同金と欲張ると、△７七金と張り付かれる。拠点を払った方が後腐れがなくて良い。
+
+削除理由:
+- なし
+
+手数92:
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「残り時間は大平２時間４１分、中村太４５分。」 → ルール3
+
+手数110: 以下▲８八玉△６六角▲同龍△５八龍の筋が受からないため、先手の投了となった。
+
+削除理由:
+- 「２分考えて大平の投了となった。」 → ルール3
+- 「終局時刻は２１時５７分。」 → ルール3
+- 「消費時間は大平３時間３９分、中村太５時間４４分。」 → ルール3
+- 「勝った中村太は３勝１敗、敗れた大平は２勝２敗となった。」 → ルール4

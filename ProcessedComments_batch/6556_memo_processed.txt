@@ -1,0 +1,58 @@
+**Analyzing and Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a task: to take a list of Shogi game comments and format them according to some pre-defined rules. The user, who likely understands Shogi deeply, wants these comments structured in a specific way. I need to be precise, as even minor errors could disrupt the flow of analysis.
+
+Let me break this down. First, I'm given the raw data: a simple list of comments. The initial comment, "手数7: 指し直し局はノーマル角換わりになりそうだ。" (Hand 7: The replay game seems to be heading towards a normal Kakugawari), suggests the game is early, perhaps a replay. I need to parse the "Hand" information and the prediction about the opening. The second comment, "手数50: ２２時ごろの局面。" (Hand 50: Position around 22:00), is also straightforward, with the Hand information and rough time context.
+My job now is to properly render these comments, and to be sure of the format the user requires.
+
+手数7: 指し直し局はノーマル角換わりになりそうだ。
+
+削除理由:
+- 「指し直し局は」 → ルール2
+
+手数50:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「消費時間は▲富岡５時間３分、△金井３時間３２分。」 → ルール3, 1
+- 「指し直し局の消費時間は、富岡４分、金井０分とすごい速さで指している。」 → ルール2, 3, 1
+
+手数61:
+
+削除理由:
+- 「先月行われた名人戦第６局▲羽生善治二冠−△森内俊之名人戦をなぞっている（後手勝ち）。」 → ルール1, 2
+- 「富岡はどこで手を変えてくるか。」 → ルール1
+- 「【第７０期（２０１２年）名人戦七番勝負第６局▲羽生善治二冠−△森内俊之名人】」 → ルール1, 2, 8
+- 「ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１２／０６／１２／Ｍ７／６５５４．ｈｔｍｌ」 → ルール8
+
+手数64: この手で先述の前例から離れた。
+
+削除理由:
+- 「名人戦第６局」 → ルール2
+
+手数70:
+
+削除理由:
+- 「６４手目からここまで、昨年の棋聖戦五番勝負第３局▲深浦康市九段−△羽生善治二冠戦をなぞっている。」 → ルール1, 2
+- 「以下、▲４六角△同歩▲２五竜△３七角成▲２四歩と進行している。」 → ルール2
+
+手数88:
+
+削除理由:
+- 「０時ごろの局面。」 → ルール3
+- 「△７七歩成までの消費時間は▲富岡５時間５６分、△金井４時間２４分。」 → ルール1, 3
+
+手数99: 鋭い手つきで桂馬を打つ。
+
+削除理由:
+- 「鋭い手つきで」 → 棋譜解析に不要な描写
+
+手数101:
+
+削除理由:
+- 「ここで富岡は時間を使い切り、１分将棋に突入。」 → ルール1, 3
+
+手数104:
+
+削除理由:
+- 「△５八とまでの消費時間は▲富岡５時間５９分、△金井５時間３８分。」 → ルール1, 3

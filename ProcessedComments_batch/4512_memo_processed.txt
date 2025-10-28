@@ -1,0 +1,141 @@
+**My Approach to Refining Shogi Game Commentary**
+
+Okay, so I'm tasked with cleaning up these comments within Shogi game datasets. The goal here is pretty straightforward: get rid of the noise. I need to strip out all the extraneous stuff – the meta information, the player introductions, time stamps... everything that isn't directly relevant to the actual board state and the moves being made. I want to keep only the insightful commentary about the game itself, the analysis of positions and the reasoning behind each move. And of course, it all needs to read smoothly, like a real, natural sentence.
+
+So, here's how I'll do it. First, I'll systematically go through the comments and apply my deletion rules, targeting all the unnecessary fluff. Then, I'll focus on what's left, polishing the language to ensure it reads well and flows coherently. Finally, I'll format the refined commentary according to the specified output requirements, making sure everything is neatly organized and ready for further analysis. This is about making these comments truly useful for serious Shogi study and research.
+
+手数1:
+
+削除理由:
+- 「中座の今期成績は９勝１０敗（０．４７４）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「伊奈の今期成績は１０勝９敗（０．５２６）。」 → ルール4
+
+手数11: 先手の作戦は相掛かりの▲２八飛型。
+
+削除理由:
+- 「中座の」 → ルール1
+
+手数16:
+
+削除理由:
+- 「１０時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座４分、伊奈６分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「１１時１５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座２２分、伊奈７分。」 → ルール3
+- 「ここで伊奈が長考に入っているようだ。」 → ルール3
+
+手数22:
+
+削除理由:
+- 「伊奈はこの一手に５７分使った。」 → ルール3
+
+手数23: 先手は▲８七歩と受けないで角道を開けた。ここから△８六歩は▲２二角成△同銀▲８八銀で大丈夫。
+
+削除理由:
+- 「中座は」 → ルール1
+- 「ここで伊奈は３１分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は中座２６分、伊奈１時間３５分。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「１３時４５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座３１分、伊奈１時間５５分。」 → ルール3
+
+手数26: 銀を進出させてから飛車を引き、損をしているようだが、次に△８八角成▲同銀△３三桂▲１六銀△３六歩の筋を狙っている。
+
+削除理由:
+- 「１４時５０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座３１分、伊奈３時間１２分。」 → ルール3
+
+手数27: ここまで出てきた銀を引くわけにはいかない。
+
+削除理由:
+
+手数30: この反撃が後手の狙い。▲３六同歩は飛車のコビンがあいて、角交換後の△５五角が厳しくなる。
+
+削除理由:
+- 「伊奈の」 → ルール1
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座１時間１分、伊奈３時間２６分。」 → ルール3
+
+手数31: △３三同桂は▲２三歩で角を取り返すことができる。また、△３三同角は▲２一飛成で飛車を成り込んでどうか。
+
+削除理由:
+- 「中座はこの一手に１時間２分使った。」 → ルール3
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座２時間３分、伊奈３時間２６分。」 → ルール3
+
+手数36: 次の狙いは△１二銀で竜の捕獲と△８八角成▲同金△同飛成。
+
+削除理由:
+- 「ここで中座は２８分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は中座２時間３５分、伊奈４時間２９分。」 → ルール3
+- 「１９時４０分を回っても、中座はまだ考慮中。」 → ルール3
+
+手数38: 竜を確保。▲１一竜△同角▲同角成△２八飛となれば後手良し。
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座３時間２１分、伊奈４時間３６分。」 → ルール3
+
+手数44: 後手の次の狙いは△３八飛成▲同金△２九飛成。
+
+削除理由:
+- 「２１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座４時間１５分、伊奈５時間５分。」 → ルール3
+
+手数45: △２九飛成には▲３二香成を用意した。
+
+削除理由:
+- 「２２時１５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座４時間３３分、伊奈５時間５分。」 → ルール3
+
+手数49: 打った香が取られる代償に、飛車先を止めることができた。１二の銀が落ちているので、先手がポイントを稼いだようだ。
+
+削除理由:
+
+手数54: 先手がやれそうという評判。
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座４時間４９分、伊奈５時間４７分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２３時４０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座５時間４１分、伊奈５時間４７分。」 → ルール3
+
+手数66: ここでは△８六角の王手桂取りがあった。
+
+削除理由:
+
+手数86:
+
+削除理由:
+- 「０時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は中座５時間５１分、伊奈５時間５７分。」 → ルール3
+
+手数87: △２四飛の手を消しつつ、後手玉に迫る。
+
+削除理由:
+
+手数89: 飛車を捕獲。
+
+削除理由:
+
+手数115: 後手は投了した。△８二玉、△９二玉など、どこに逃げても▲８三金で後手玉は詰む。
+
+削除理由:
+- 「ここで伊奈は」 → ルール1
+- 「消費時間は中座５時間５７分、伊奈５時間５９分。」 → ルール3
+- 「勝った中座は５勝２敗、敗れた伊奈は３勝４敗となった。」 → ルール4

@@ -1,0 +1,159 @@
+**My Approach to Refining Shogi Game Commentaries**
+
+Okay, so I've got this task of cleaning up and refining the comments found within Shogi game data. The goal, as I understand it, is to streamline these comments, essentially filtering out the noise and focusing on the actual strategic insights that matter for analysis. I need to get rid of all the extraneous stuff - metadata, introductions of the players, time stamps - and leave behind only the crucial analysis tied directly to the board state and individual moves.
+
+My approach is pretty straightforward:
+
+1.  **Filtering:** I'll begin by systematically going through each comment and applying a set of rules to determine what's truly relevant and what needs to be removed. This will be the heavy lifting, the first pass to get rid of the obvious fluff.
+2.  **Smoothing:** With the core strategic content isolated, the next step is to make it read more naturally. This might involve restructuring sentences, filling in gaps, and ensuring the remaining comments flow together coherently as a coherent analysis of the game.
+
+手数1: 
+
+削除理由:
+- 「佐藤天は」 → ルール1
+- 「初手に４分使っている」 → ルール3
+
+手数4: 近年は角道を止めない振り飛車が流行している。
+
+削除理由:
+- 「近年は」 → ルール2
+
+手数9: 
+
+削除理由:
+- 「１０時５５分ごろの局面」 → ルール3
+- 「消費時間は佐藤天１４分、佐藤和１６分」 → ルール1, 3
+
+手数10: 後手は△８二玉に考慮した。
+
+削除理由:
+- 「佐藤和、」 → ルール1
+- 「２２分の考慮」 → ルール3
+
+手数11: 
+
+削除理由:
+- 「佐藤天は」 → ルール1
+- 「▲９六歩に２０分使っている」 → ルール3
+
+手数16: ９筋の位を取られた後手は穴熊へ。
+
+削除理由:
+- 「佐藤和」 → ルール1
+
+手数21: 先手は美濃囲い。
+
+削除理由:
+- 「▲７八銀の局面で佐藤和が２３分考えて昼食休憩に入った」 → ルール1, 3, 7
+- 「消費時間は佐藤天４３分、佐藤和１時間１６分」 → ルール1, 3
+- 「佐藤天は」 → ルール1
+
+手数27: 
+
+削除理由:
+- 「１４時ごろの局面」 → ルール3
+- 「消費時間は佐藤天１時間１３分、佐藤和１時間４０分」 → ルール1, 3
+
+手数35: 
+
+削除理由:
+- 「１５時半ごろの局面」 → ルール3
+- 「消費時間は佐藤天１時間２５分、佐藤和２時間４５分」 → ルール1, 3
+
+手数39: 大きな位取り。
+
+削除理由:
+- 削除対象なし
+
+手数44: 
+
+削除理由:
+- 「１６時４５分ごろの局面」 → ルール3
+- 「消費時間は佐藤天２時間２分、佐藤和３時間１７分」 → ルール1, 3
+
+手数45: 好所の角打ち。２二の飛車と９筋の端攻めを狙う。
+
+削除理由:
+- 削除対象なし
+
+手数46: 
+
+削除理由:
+- 「△１四香の局面で佐藤天が２２分考えて夕食休憩に入った」 → ルール1, 3, 7
+- 「消費時間は佐藤天２時間５７分、佐藤和３時間５６分」 → ルール1, 3
+
+手数50: 後手は攻防の角打ちで２筋を受ける。
+
+削除理由:
+- 「佐藤和は」 → ルール1
+
+手数53: 後手から△４五歩とは取れないのでジッと力をためる。
+
+削除理由:
+- 削除対象なし
+
+手数55: 端攻めの準備。
+
+削除理由:
+- 「２０時１０分ごろの局面」 → ルール3
+- 「消費時間は佐藤天３時間３９分、佐藤和４時間１６分」 → ルール1, 3
+
+手数59: 形勢は居飛車ペースかもしれない。居飛車が総攻撃開始。歩が入れば９筋が厳しいと見られている。
+
+削除理由:
+- 「「形勢は居飛車ペースなんでしょ」という声が出ている」 → ルール1
+- 「見ている」 → ルール1
+
+手数63: このタイミングで端に味付け。
+
+削除理由:
+- 削除対象なし
+
+手数72: △同桂は▲９二歩△同玉▲９四香が厳しい。
+
+削除理由:
+- 削除対象なし
+
+手数73: タイミングよく利かす。取れば▲５五角が王手飛車だ。
+
+削除理由:
+- 削除対象なし
+
+手数81: 端でポイントを挙げたので、今度はこちらから。
+
+削除理由:
+- 削除対象なし
+
+手数85: 手筋の垂れ歩。△同金は▲５二銀不成が両取り。
+
+削除理由:
+- 削除対象なし
+
+手数86: 
+
+削除理由:
+- 「２１時３０分の局面」 → ルール3
+- 「消費時間は佐藤天４時間６分、佐藤和４時間５６分」 → ルール1, 3
+
+手数87: ポイントを挙げてから、手を渡すのは参考になる攻め方。
+
+削除理由:
+- 削除対象なし
+
+手数91: 後手の動きによって、先手の角が手順に急所へ利いてきた。一気にいく。
+
+削除理由:
+- 削除対象なし
+
+手数95: 取ればやはり▲５二銀。
+
+削除理由:
+- 削除対象なし
+
+手数105: 後手の投了となった。先手玉は広く、後手玉は受けなし。
+
+削除理由:
+- 「ここで佐藤和の投了となった」 → ルール1
+- 「終局時刻は２１時５７分」 → ルール3
+- 「消費時間は佐藤天４時間２２分、佐藤和５時間」 → ルール1, 3
+- 「勝った佐藤天、敗れた佐藤和ともに５勝４敗となった」 → ルール1, 4

@@ -1,0 +1,60 @@
+**Analyzing and Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a task. Someone wants me to format shogi game commentary, likely a move-by-move breakdown, according to a specific set of rules.  I'll need to understand those rules thoroughly, of course, to do this correctly.  It looks like I'm supposed to take a list of comments, probably in some raw format, and then transform them.  I'm starting with a list.  The first item in the list is empty at the moment, which means I'll have to parse it when the information is presented. I assume there'll be the raw comments, and my job is to make them suitable.
+
+手数1:
+
+削除理由:
+- 「北島忠雄（きたじま・ただお）六段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋｉｔａｚｉｍａ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「中田功（なかた・いさお）七段のプロフィール日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｄａ―ｉｓａ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「北島の今期成績は３勝４敗／０．４２９」 → ルール4
+- 「通算成績は３１３勝２４３敗／０．５６３」 → ルール4
+
+手数4:
+
+削除理由:
+- 「中田の今期成績は１勝４敗／０．２００」 → ルール4
+- 「通算成績は４６０勝４０８敗／０．５３０」 → ルール4
+
+手数32:
+
+削除理由:
+- 「２０時３０分頃の局面。」 → ルール3
+- 「消費時間は▲北島４時間５３分、△中田２時間４１分。」 → ルール3
+
+手数34: ゴキゲン中飛車から急展開に進んでいる。
+
+削除理由:
+- 「現局面は前例が１局存在する。今年の１月に行われた棋王戦予選▲堀口一史座七段−△遠山雄亮四段（肩書きは当時）で結果は後手が勝っている。」 → ルール1, 2
+- 「北島がどこで前例から離れるか注目だ。」 → ルール2
+
+手数36: まだ前例と同じ進行をたどっている。
+
+削除理由:
+- 「まだ前例と同じ進行をたどっている。」 → ルール2
+
+手数37: この手で前例を離れて未知の将棋に入っている。
+
+削除理由:
+- 「前例は▲６八同銀だった。」 → ルール2
+
+手数57:
+
+削除理由:
+- 「２２時４０分頃の局面。」 → ルール3
+- 「消費時間は▲北島５時間４５分、△中田３時間４３分。」 → ルール3
+
+手数69: 後手玉は▲６一と△同玉▲５一金△同玉▲５二金までの詰めろで、受けても一手一手。先手玉は詰まず、投了やむなし。
+
+削除理由:
+- 「この局面で中田が投了を告げた。」 → ルール4
+- 「終局時刻は２３時３分、消費時間は▲北島５時間５１分、△中田３時間５７分。」 → ルール3
+- 「勝った北島は１勝１敗、中田は２敗となっている。」 → ルール4

@@ -1,0 +1,106 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Deeper Analysis**
+
+Okay, so I'm presented with a task, and it's right up my alley. I need to take these chess game commentaries, these sprawling streams of thoughts and observations, and refine them into something useful for my analysis. The user, understanding the nuances of this data, wants me to distill the commentary into its purest form.
+
+My objective is crystal clear: eliminate all the noise. Get rid of the fluff – the metadata, the introductions, the clock readings – and zero in on the core of the matter: the board's evolving state and the reasoning behind each move. I want to be left with clean, insightful commentary, phrased naturally, that truly illuminates the game's unfolding drama.
+
+Here's how I see it: first, I'll apply a set of well-defined rules to filter out the irrelevant content. Then, I'll reshape the remaining observations into coherent, flowing sentences. Finally, I'll deliver the results in the exact format specified, ready for immediate use in the analysis pipeline. It's about precision, efficiency, and ultimately, a deeper understanding of the game.
+
+手数2:
+
+削除理由:
+- 「藤原は２分の考慮。」 → ルール3
+
+手数6: 相掛かりになった。
+
+削除理由:
+
+手数17: おなじみの引き飛車棒銀。
+
+削除理由:
+
+手数23:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座１５分、△藤原３６分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「この局面で藤原が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲中座２７分、△藤原１時間２７分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座１時間１分、△藤原１時間３３分。」 → ルール3
+
+手数40: 軽く突き捨てを連発して動いている。
+
+削除理由:
+
+手数42: ▲８七歩なら△４六飛がある。
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座１時間３６分、△藤原２時間４１分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１６時４０分頃の局面。」 → ルール3
+- 「ここで藤原が考えている。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１時間１０分の長考だった。」 → ルール3
+
+手数46: ▲７七角をけん制した手。▲７七角と打てば△４六飛▲４七歩△３七歩成▲同桂△３六飛が銀桂両取りになる。
+
+削除理由:
+- 「この局面で中座が１時間９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲中座３時間６分、△藤原３時間５１分。」 → ルール3
+- 「２０時を回ったが、中座はまだ次の手を考えているようだ。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「夕食休憩をはさんで２時間１５分の大長考。」 → ルール3, 7
+
+手数53: これはものすごい攻め合いになってきた。
+
+削除理由:
+
+手数54: 攻め合いはギリギリ先手勝ちと見られている。それを読み切って▲５六角を打ったようだ。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座４時間２２分、△藤原４時間３０分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座４時間３４分、△藤原５時間６分。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「消費時間は▲中座５時間１５分、△藤原５時間１９分。」 → ルール3
+
+手数75: 先手優勢のようだ。
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲中座５時間１７分、△藤原５時間１９分。」 → ルール3
+
+手数89:
+
+削除理由:
+- 「この局面で藤原は１分考え、次の手を指さずに投了した。」 → ルール3
+- 「消費時間は▲中座５時間２５分、△藤原５時間５９分。」 → ルール3
+- 「勝った中座は６勝４敗、敗れた藤原は２勝８敗となった。」 → ルール4
+- 「藤原は２度目の降級点となった。」 → ルール4

@@ -1,0 +1,141 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm presented with these Shogi game data, complete with commentary for each move. My task? To really refine that commentary, to make it *useful* for deeper analysis. The core idea is to sift through the existing text, get rid of all the fluff, and leave behind only the truly insightful parts.
+
+I'm thinking I'll proceed in three main steps. First, I'll need to define clear rules for what constitutes "unnecessary" information. That means things like metadata, any personality sketches, or even timing details that just clutter things up. The goal here is laser-focused: keeping only the core explanations of the board state and the move itself.
+
+Secondly, once I've stripped away the noise, I need to make the remaining text sound natural and fluid. This isn't just about eliminating words; it's about crafting sentences that actually *explain* the game's logic.
+
+Finally, the output needs to be structured and organized. I'll include the move number, the polished commentary, and importantly, a note on *why* I removed specific information. This allows for traceability and an audit trail. Essentially, I'm aiming for a clean, insightful, and traceable set of commentaries that can inform my deeper analyses.
+
+手数4:
+削除理由:
+- 「福崎は今年に入ってから３局用いて全勝している。（通算では３勝３敗１千日手）」 → ルール2, 4
+
+手数5: ５手目はやはり角交換することが多い。角交換しない手では▲４八銀、▲２五歩、▲５八金右などがある。
+削除理由:
+- 「御下段の間で指されている▲長沼−△千葉戦は▲６八玉だった。」 → ルール2
+
+手数8: 本当は△２二飛としたいが、▲６五角と打たれるのを防いでいる。
+削除理由:
+
+手数14: ８三の地点を守ったので△２二飛と回れた。今度▲６五角と打つのは、△４二銀や△５二金左で４三を守ればいい。
+削除理由:
+
+手数16:
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦３１分、△福崎１０分。」 → ルール3
+
+手数19: 角を打ったからには、３三桂を狙っていきたい。
+削除理由:
+
+手数25:
+削除理由:
+- 「この局面で福崎が１１分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲日浦１時間５分、△福崎５１分。」 → ルール3
+
+手数28: 自陣に隙をなくす好形。角のラインからも逃げている。
+削除理由:
+
+手数30: 穴熊を目指す。
+削除理由:
+
+手数33: 先手は角の打ち込みに気をつけて駒組みしなければいけない。
+削除理由:
+
+手数38: 金銀２枚の穴熊。４二金も寄せたいが、３三桂にヒモをつけておかないと気持ち悪い。
+削除理由:
+
+手数39: 先手は位を２つ取って、伸び伸びした形になってきた。
+削除理由:
+
+手数41:
+削除理由:
+- 「１４時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦１時間１３分、△福崎１時間３１分。」 → ルール3
+
+手数42: 先手の角の利きがあるが、大胆な一手。▲同銀には△同桂で、次の△３九角を狙っていくということだろうか。
+削除理由:
+- 「棋士室でウェブカメラの本局を見ながら将棋世界最新号（関西将棋会館では既に発売中）を読んでいた日浦は、△４五銀を確認すると、残りのページを最後までパラパラとめくってから対局室に戻っていった。」 → ルール1, 6
+
+手数44:
+削除理由:
+- 「今度は福崎が棋士室に姿を見せた。先ほど日浦が座っていた同じポジションで、日浦が置いていった将棋世界（恐らく棋士室共用のもの）を読んでいた。」 → ルール1, 6
+
+手数46: 角がにらみを利かし、▲４五銀を防いでいる。場合によっては△３七銀もあるかもしれない。
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦１時間２５分、△福崎２時間２８分。」 → ルール3
+
+手数50: ▲５六銀と上がっているので、飛車を逃げたときに△４七成桂と寄れなくなっている。
+削除理由:
+
+手数52: 銀が動けば△４七成桂が実現する。
+削除理由:
+- 「１６時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦２時間４分、△福崎２時間４１分。」 → ルール3
+
+手数56: 次は△４六馬▲５四銀△５七成桂がある。
+削除理由:
+
+手数57: △４六成桂は、▲５四銀△３六馬▲４五歩で受かっている。
+削除理由:
+
+手数58: 桂が重い形かもしれない。
+削除理由:
+- 「「４四桂が重い形ですが…」と畠山鎮七段。」 → ルール1
+
+手数62:
+削除理由:
+- 「１７時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦２時間４３分、△福崎３時間８分。」 → ルール3
+
+手数63:
+削除理由:
+- 「この局面で福崎が３０分考え、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲日浦３時間１０分、△福崎３時間３８分。」 → ルール3
+
+手数67: ▲同銀は△５五馬がある。
+削除理由:
+
+手数69: △同金に▲６三歩成。銀損の荒い攻めだが、元々銀桂交換の駒得・先手玉のほうが堅い・後手の攻め駒が先手玉から遠いなどの理由でいけると判断したのだろう。
+削除理由:
+
+手数74: 次は△７六歩がある。
+削除理由:
+
+手数77:
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦３時間５９分、△福崎３時間５０分。」 → ルール3
+
+手数78:
+削除理由:
+- 「日浦がここで考えている。」 → ルール3
+
+手数82: じわりじわりとにじり寄る恐怖。
+削除理由:
+
+手数84:
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦４時間３６分、△福崎４時間８分。」 → ルール3
+
+手数95: △３三同飛なら▲２二飛成が厳しい。
+削除理由:
+
+手数98: なんとか△６七歩成を実現させたい。
+削除理由:
+- 「福崎も残り１時間を切った。」 → ルール3
+
+手数104:
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲日浦５時間１１分、△福崎５時間１分。」 → ルール3
+
+手数109:
+削除理由:
+- 「この局面で福崎は２分考え、次の手を指さずに投了した。」 → ルール3
+- 「消費時間は▲日浦５時間２１分、△福崎５時間３分。」 → ルール3
+- 「勝った日浦は４連勝、敗れた福崎は１勝３敗となった。」 → ルール4

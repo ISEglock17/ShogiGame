@@ -1,0 +1,114 @@
+**My Task: Refining Shogi Commentary for Analysis**
+
+Okay, so I've got this user, and they're asking me to clean up comments from Shogi game data. The goal is clear: extract the *essential* information for analysis, and get rid of the fluff.  I need to strip out all the stuff that clutters up the insightful commentary – things like metadata about the game itself, introductions of the players, time records, and all that noise.
+
+Essentially, I need to focus on what's truly valuable for understanding the board state and the moves being played. I have to parse the comments, apply the appropriate filtering rules, and ultimately, present the remaining insights as coherent, natural-sounding sentences. It's all about distilling the essence of the game's unfolding narrative for deeper analysis.
+
+手数1:
+
+削除理由:
+- 「【脇謙二八段】」 → ルール1
+- 「１９６０年８月１０日生まれ、大阪府出身。（故）高島一岐代九段門下。」 → ルール4
+- 「１９７５年５級で奨励会入会。１９７９年７月１６日四段。２０００年１１月１６日八段。」 → ルール4
+- 「順位戦は３２期目。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「【浦野真彦七段】」 → ルール1
+- 「１９６４年３月１４日生まれ、大阪府出身。（故）中井捨吉八段門下。」 → ルール4
+- 「１９７７年６級で奨励会入会。１９８３年１０月１９日四段。１９９６年４月１日七段。」 → ルール4
+- 「順位戦は２８期目。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「脇の今期成績は１勝２敗（勝率０．３３３）。」 → ルール4
+- 「通算成績は５７０勝５３０敗（勝率０．５１８）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「浦野の今期成績は１勝２敗（勝率０．３３３）。」 → ルール4
+- 「通算成績は４５８勝４５２敗（勝率０．５０３）。」 → ルール4
+
+手数6: 戦型は後手の四間飛車。
+
+削除理由:
+- 「浦野の」 → ルール1
+
+手数13:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲脇４分、△浦野３８分。」 → ルール3
+
+手数20: 角交換後に、四間飛車から向かい飛車へと振り直した。
+
+削除理由:
+
+手数21:
+
+削除理由:
+- 「この局面で昼食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲脇３４分、△浦野１時間２７分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇３６分、△浦野１時間５０分。」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇１時間２９分、△浦野２時間１０分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇１時間５１分、△浦野２時間２４分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇１時間５１分、△浦野３時間３０分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「この局面で夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲脇３時間１２分、△浦野３時間５１分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇３時間４３分、△浦野３時間５８分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇４時間２０分、△浦野４時間２３分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲脇４時間４５分、△浦野４時間５２分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２３時過ぎの局面。」 → ルール3
+- 「残り時間は▲脇４１分、△浦野３３分。」 → ルール3
+
+手数86:
+
+削除理由:
+- 「２３時３０分頃の局面。」 → ルール3
+- 「残り時間は▲脇２３分、△浦野２１分。」 → ルール3

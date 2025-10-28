@@ -1,0 +1,139 @@
+**Focusing My Lens: Shaping Comments for Deeper Analysis**
+
+Okay, so I'm tackling this task of refining these Shogi game comments. The user wants me to clean up the data – to strip away the fluff that gets in the way of serious analysis. Think of it like a sculptor chipping away at marble to reveal the true form beneath.
+
+My objective is crystal clear: to isolate the *actual* strategic insights hidden within the comments. We're talking about removing all the noise – the metadata, player introductions, time stamps... anything that doesn't directly contribute to understanding the board state or the reasoning behind specific moves. I want only the pure, distilled commentary on the game itself.
+
+The process is fairly straightforward, but exacting. First, I have to apply these strict rules to identify and ruthlessly eliminate the unnecessary information. It's about recognizing the patterns and the structures that signify "this is noise, delete."
+
+Then, comes the artistry. I'll need to smooth out what's left, transforming fragmented phrases into coherent, natural sentences. The goal is to make these comments not just readable, but insightful, ready for deeper dissection within the context of the game. That's where the real value lies.
+
+手数1:
+
+削除理由:
+- 「中村太の今年度成績は１４勝３敗（０．８２３５）、通算成績は１１９勝７９敗（０．６０１０）」 → ルール4
+- 「今年度の対局数ランキングでは１３位、勝数ランキングでは４位、勝率ランキングでは３位と好成績を収めている」 → ルール4
+
+手数2:
+
+削除理由:
+- 「中村亮の今年度成績は４勝６敗（０．４０００）、通算成績は１４８勝１１１敗（０．５７１４）」 → ルール4
+
+手数3:
+
+削除理由:
+- 「【中村太地五段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｍｕｒａ―ｔ．ｈｔｍｌ」 → ルール4, 8
+
+手数4:
+
+削除理由:
+- 「これは中村亮が得意とする」 → ルール5
+- 「今期の開幕局も後手番で採用したが、澤田四段に敗れた。」 → ルール1, 2
+- 「【第７０期順位戦Ｃ級２組１回戦】 ｈｔｔｐ：／／ｍｅｍｂｅｒ．ｍｅｉｊｉｎｓｅｎ．ｊｐ／ｐａｙ／ｋｉｆ／ｍｅｉｊｉｎｓｅｎ／２０１１／０６／２１／Ｃ２／５３７５．ｈｔｍｌ 【中村亮介五段のプロフィール】 ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｋａｍｕｒａ―ｒ．ｈｔｍｌ」 → ルール8, 4
+
+手数6: 後手からの角交換。一手損になるが先手の囲いを限定させた意味がある。例えば、ここから先手が左美濃や穴熊に組むのは非常に困難だ。
+
+削除理由:
+
+手数12:
+
+削除理由:
+- 「１１時１０分頃の局面。」 → ルール3
+- 「消費時間は▲中村太１０分、△中村亮４２分。」 → ルール3
+
+手数16: 部分的にはある手だが、この局面では初めて。２五の地点を争点にして棒銀で２筋の逆襲を狙う。
+
+削除理由:
+- 「この局面で▲中村太が８分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中村太５６分、△中村亮１時間７分。」 → ルール3
+- 「昼食の注文は両者ともに無し。」 → ルール7
+
+手数20:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲中村太１時間１２分、△中村亮１時間５３分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲１時間３４分、△２時間２３分。」 → ルール3
+
+手数26: これで後手からは、いつでも△２五歩と開戦することができるようになった。
+
+削除理由:
+
+手数27:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲２時間２１分、△２時間３９分。」 → ルール3
+- 「１７時になったが中村亮はまだ指さない。」 → ルール3
+
+手数28: 後手はあと△７二銀の一手が入れば囲いが完成する。一方で先手は完成までまだ時間がかかりそうだ。
+
+削除理由:
+- 「この局面で▲中村太が１時間５分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲中村太３時間２６分、△中村３時間４２分。」 → ルール3
+- 「夕食の注文は中村太が肉じゃが定食（みろく庵）、中村亮は無し。」 → ルール7
+
+手数34:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は▲中村太４時間１２分、△中村亮４時間１分。」 → ルール3
+
+手数39: ここで△２五歩と突かれて悪いとなると▲４八飛とは回らないのではないか。△２五歩以下、▲５六銀△同銀▲同歩△４三歩▲６六角の変化は後手が面白くないと言われている。
+
+削除理由:
+- 「控え室の佐藤康光九段、先崎学八段の検討によると」 → ルール1
+- 「継ぎ盤では」 → ルール1
+- 「２０時４５分頃の局面。消費時間は▲中村太４時間３０分、△中村亮４時間１分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「「そっかー後手から打つのは見えなかったなー」（佐藤九段）」 → ルール1
+- 「検討では先手から▲６六角と打つ筋は頻出していたが、後手から打つ手は出なかった。」 → ルール1
+- 「２１時３０分頃の局面。消費時間は▲中村太４時間３０分、△中村亮４時間５２分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「「え？え？こっちから打つの？」（先崎八段）」 → ルール1
+- 「「何か間違ってるんじゃないの？」（佐藤康九段）」 → ルール1
+- 「２２時頃の局面。残り時間は▲中村太１時間８分、△中村亮５９分。この手の考慮中に△中村亮の残り時間が１時間を切った。」 → ルール3
+
+手数52:
+
+削除理由:
+- 「「いやーすごい手順だなー」（先崎八段）」 → ルール1
+
+手数53: 検討では△７七銀成▲同金△６五桂▲６六歩△７七桂成▲同玉が示されている。
+
+削除理由:
+- 「２２時４０分頃の局面。残り時間は▲中村太５９分、△中村亮４８分。」 → ルール3
+
+手数59:
+
+削除理由:
+- 「２３時２０分頃の局面。残り時間は▲中村太４１分、△中村亮１５分。」 → ルール3
+
+手数78:
+
+削除理由:
+- 「０時１０分頃の局面。」 → ルール3
+- 「消費時間は▲中村太５分、△中村亮７分。」 → ルール3
+
+手数96:
+
+削除理由:
+- 「残り時間は▲中村太４分、△中村亮２分。」 → ルール3
+
+手数119:
+
+削除理由:
+- 「この手を見てすぐに△中村亮は投了した。」 → ルール1
+- 「終局時刻は０時５２分、消費時間は▲中村太５時間５８分、△中村亮５時間５９分。」 → ルール3
+- 「勝った中村太は３勝、敗れた中村亮は１勝２敗となった。」 → ルール4

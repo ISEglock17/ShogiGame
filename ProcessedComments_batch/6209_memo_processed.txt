@@ -1,0 +1,88 @@
+**Cleaning Up My Commentary: My Thoughts on Preparing Chess Game Data**
+
+Okay, so the user wants me to clean up these comments from Shogi matches. It's pretty straightforward, actually. The goal here is to get rid of all the fluff – the metadata, the introductions, the time stamps – all the stuff that isn't directly relevant to the actual chess analysis. What I *want* is the pure, unadulterated explanation of the board state and the moves being made. The meat and potatoes, basically.
+
+My plan? First, I'll go through the comments and apply the rules I've defined to identify and scrub out the unnecessary bits. Then, and this is key, I'll work on making what's left into something that flows naturally, like a coherent sentence or two. That's the real challenge, smoothing out the rough edges and making the insights easy to grasp.
+
+手数1:
+
+削除理由:
+- 「永瀬拓矢五段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｇａｓｅ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「西川慶二七段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎｉｓｉｋａｗａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「永瀬の今年度成績は１９勝６敗（０．７６０）」 → ルール4
+- 「通算成績は７９勝３７敗（０．６８１）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「西川の今年度成績は２勝１０敗（０．１６７）」 → ルール4
+- 「通算成績は４７６勝５２３敗（０．４７７）」 → ルール4
+
+手数7: 先手は中飛車の作戦。
+
+削除理由:
+- 「永瀬は」 → ルール1
+
+手数17: △５五同歩▲同角△同角▲同飛に△４四角の反撃が見えるが、▲５九飛△９九角成に▲５三飛成と銀を取られてしまい成立しない。先手に５筋の交換を許したくない場合は４二玉型で△５三銀と上がる必要がある。本譜の後手はあえて先手に５筋の歩を切らせる狙いで、凝った作戦といえそうだ。
+
+削除理由:
+- 「１１時過ぎ、▲５五歩までの消費時間は▲永瀬２６分、△西川１４分。」 → ルール3
+
+手数24: 一見８筋が無防備なようだが、これには受けの手筋が用意されている。
+
+削除理由:
+
+手数27: この手で８筋はピッタリ受かっている。５九飛が８九桂にヒモを付けているのがミソだ。
+
+削除理由:
+
+手数29: 最近は先手が５筋の歩を切る展開を良く見る。最新形だろう。
+
+削除理由:
+- 「１２時１０分、この局面で永瀬が５５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬１時間２７分、△西川３０分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+- 「本日の対局立会人を務める室岡克彦七段が中継室に来訪した。」 → ルール1, 6
+- 「「今日は先手中飛車が多いですね。」 → ルール2
+- 「」（室岡七段）」 → ルール1
+
+手数31: 先手は５筋の歩を、後手は８筋の歩を切って第二次駒組みに入った。
+
+削除理由:
+
+手数32: 後手は中央に位を取った。押さえ込みを目指す展開だ。
+
+削除理由:
+
+手数38:
+
+削除理由:
+- 「１４時過ぎ、△５四銀までの消費時間は▲永瀬１時間１８分、△西川１時間３５分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「１５時過ぎ、▲３六歩までの消費時間は▲永瀬２時間８分、△西川１時間４６分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１６時過ぎ、△６五銀までの消費時間は▲永瀬２時間８分、△西川１時間５９分。」 → ルール3
+
+手数59: この局面で後手は投了。▲７八歩は△６七歩に▲７七銀を用意している。攻めては▲５三歩が厳しく、△５一金に▲５二銀と打つ込む手が厳しい。後手は攻防ともに見込みがないと判断しての投了となったようだ。
+
+削除理由:
+- 「１３分考えた西川は次の手を指さずに」 → ルール1, 3
+- 「投了を告げた。」 → 指し手の結果なので残す部分に含める
+- 「終局時刻は１６時５９分、消費時間は▲永瀬３時間１１分、△西川２時間２６分。」 → ルール3
+- 「勝った永瀬は２勝２敗、西川は４連敗と苦しい星に。」 → ルール4

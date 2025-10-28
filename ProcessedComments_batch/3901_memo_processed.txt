@@ -1,0 +1,81 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm presented with a bunch of Shogi game comments, and my task is to whip them into shape. The user wants the commentary cleaned up and presented in a specific, well-defined format. It's a pretty straightforward process, but it requires careful attention to detail and adherence to the specified rules.
+
+Essentially, I need to go through each comment, line by line. First, I have to identify any parts that match the "delete-worthy" criteria. Once I've found those sections, I'll remove them. Then, I'll smooth out what's left, making it into a grammatically sound sentence, as if I was reading the commentary out loud.
+
+Finally, I need to format the output. For each comment, I'll note the move number, the cleaned-up comment itself, and the reason for any deletions I made. It's all about providing clear, structured information. The goal is to provide a clean and informative set of annotations, suitable for someone studying or analyzing the game.
+
+手数7: 先手は腰掛け銀を目指す。
+
+削除理由:
+- 「独特の序盤戦術を持つ高田。」 → ルール1, 5
+
+---
+手数8:
+
+削除理由:
+- 「１０時５０分ごろの局面。」 → ルール3
+- 「消費時間は高田１８分、藤倉２１分。」 → ルール3
+
+---
+手数18:
+
+削除理由:
+- 「△８二玉の局面で高田が３５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は高田１時間１１分、藤倉４９分。」 → ルール3
+
+---
+手数19:
+
+削除理由:
+- 「昼食休憩を挟む１時間の長考。」 → ルール3, 7
+
+---
+手数26:
+
+削除理由:
+- 「１４時の局面。」 → ルール3
+- 「消費時間は高田１時間４３分、藤倉１時間。」 → ルール3
+
+---
+手数30:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は高田２時間１１分、藤倉１時間３４分。」 → ルール3
+
+---
+手数36:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は高田２時間５４分、藤倉２時間１０分。」 → ルール3
+
+---
+手数40:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は高田３時間５分、藤倉２時間５８分。」 → ルール3
+
+---
+手数46:
+
+削除理由:
+- 「△４二飛の局面で高田が１９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は高田３時間５６分、藤倉３時間。」 → ルール3
+
+---
+手数51:
+
+削除理由:
+- 「２０時１５分の局面。」 → ルール3
+- 「消費時間は高田４時間２４分、藤倉３時間２７分。」 → ルール3
+
+---
+手数55:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は高田４時間３１分、藤倉４時間２５分。」 → ルール3

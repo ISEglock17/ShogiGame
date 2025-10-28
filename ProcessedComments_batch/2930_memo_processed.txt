@@ -1,0 +1,135 @@
+**The Challenge of Tidying Up Game Commentary**
+
+Okay, so I'm presented with a task, a familiar one: a user wants me to clean up and structure shogi game commentary.  My job is to take raw commentary, which likely includes a lot of extraneous information, and distill it down to the core elements that matter - the board position and the move itself.  I need to strip away all the fluff, the introductory remarks, the general observations, and anything that isn't directly related to the state of the game.
+
+My process will be methodical. I'll take it one move at a time, reading each comment associated with a specific hand.  Then, comes the crucial step: I need to apply a set of well-defined rules, presumably provided, that tell me *exactly* what type of content needs to be axed.  This means I'll need to develop a keen eye for identifying these "delete-me" phrases and statements within each comment, and then make a surgical removal of those sections. The goal is to leave behind only the purest, most relevant information: what the board looks like, and what the player just did.
+
+手数1:
+
+削除理由:
+- 「阿久津は」 → ルール1
+- 「４分使った」 → ルール3
+
+手数11: 相掛かり▲２八飛型。攻防にバランスが取れた戦法だ。
+
+削除理由:
+
+手数16: 後手は浮き飛車に構える。
+
+削除理由:
+- 「上野は」 → ルール1
+
+手数26:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は阿久津１５分、上野２０分」 → ルール1, 3
+
+手数28:
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「△６五歩の局面で阿久津が１２分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阿久津５７分、上野５８分。」 → ルール1, 3
+
+手数32: ▲５六銀に△５四銀を用意する。
+
+削除理由:
+
+手数38: 後手が手損していたが、△３三銀から△４四歩として４五の銀を引かせれば逆に手得となる。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は阿久津１時間１１分、上野１時間１５分。」 → ルール1, 3
+
+手数41: ▲７七桂は▲８六歩から銀冠への組み換えや▲６五銀△同銀▲同桂と攻める筋を含みにしている。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は阿久津１時間５２分、上野１時間１７分。」 → ルール1, 3
+- 「上野が長考している。」 → ルール1, 3
+- 「一度、席を外していた阿久津は対局室に戻り、上野が指していないことを確認すると足早に控え室へ向かった。」 → ルール1, 6
+
+手数42:
+
+削除理由:
+- 「１時間３０分の長考。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１６時２０分の局面。」 → ルール3
+- 「消費時間は阿久津２時間６分、上野２時間５８分。」 → ルール1, 3
+
+手数47: 銀をぶつけた。
+
+削除理由:
+- 「２１分の考慮で」 → ルール3
+
+手数49: 取る一手のはずだ。
+
+削除理由:
+- 「３３分の消費時間が記録されている。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１７時３０分前の局面。」 → ルール3
+- 「消費時間は阿久津３時間、上野３時間７分。」 → ルール1, 3
+
+手数51:
+
+削除理由:
+- 「▲７九玉の局面で上野が４０分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は阿久津３時間６分、上野３時間４７分。」 → ルール1, 3
+
+手数53: スキありと見れば攻め込む。
+
+削除理由:
+- 「２７分考えて攻め込む。」 → ルール3
+- 「のが阿久津流だ」 → ルール1, 5
+
+手数54: △同歩は▲４三歩△５二玉に▲６一銀（△同玉に▲４一角）と打つ筋があるようだ。
+
+削除理由:
+
+手数55: 手裏剣を飛ばして形を乱す。
+
+削除理由:
+
+手数58: ▲７二銀△６二金▲７三桂成△同金▲６二角が有力視されている。金を受けるだけなら（例えば△６四銀）、▲６三銀成が好調な攻めとなる。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は阿久津３時間４３分、上野４時間５分。」 → ルール1, 3
+
+手数59: 先手が良いのではないかと言う評判。
+
+削除理由:
+
+手数70:
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は阿久津４時間２１分、上野４時間３２分。」 → ルール1, 3
+- 「▲１七桂△１三桂が伝えられると、控え室で検討していた宮田敦史五段は「神の手順だ」とつぶやいた。」 → ルール1, 6
+
+手数72: 香を打ち込んだ。
+
+削除理由:
+- 「５２分の長考で」 → ルール3
+- 「２２時１０分の局面。」 → ルール3
+- 「残り時間は阿久津１時間３１分、上野３６分。」 → ルール1, 3
+
+手数73: 先手は金を寄った。それに対して、後手は投了した。△７八香成▲同金の後、▲３四香のしっぺ返しが厳しいそうだ。
+
+削除理由:
+- 「阿久津は３４分考えて」 → ルール1, 3
+- 「上野は１８分考えた末に」 → ルール1, 3
+- 「終局時刻は２３時３分。」 → ルール3
+- 「消費時間は阿久津５時間３分、上野５時間４２分。」 → ルール1, 3
+- 「勝った阿久津は３勝２敗、上野２勝３敗となった。」 → ルール1, 4

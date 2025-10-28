@@ -1,0 +1,90 @@
+**My Approach to Refining Shogi Game Commentaries**
+
+Okay, so I've got this task. The user wants me to process these Shogi game commentaries, which is right up my alley. The goal is clear: to sculpt these raw commentaries into something more refined, more focused on the *actual* analysis of the moves and board positions. Essentially, I'm aiming to strip away all the extraneous noise – the metadata, the bios, the timestamps, anything that doesn't directly contribute to understanding the game's flow and strategy.
+
+Essentially, I need to methodically comb through these comments, identifying and removing the unnecessary clutter based on established rules. Once that's done, I'll be left with a streamlined, natural-sounding explanation of the game's pivotal moments.
+
+手数1:
+
+削除理由:
+- 「菅井の本年度の成績は２１勝８敗。」 → ルール4
+- 「通算成績は２１勝８敗（０．７２４）」 → ルール4
+---
+手数2: 後手は角頭歩を採用した。
+
+削除理由:
+- 「なんと」 → 不要な感嘆詞
+- 「増田は」 → 置換ルール（後手）
+- 「増田の本年度の成績は９勝１１敗。」 → ルール4
+- 「通算成績は２３８勝１９２敗（０．５５３）」 → ルール4
+---
+手数4: ここで先手が激しく行くと、▲２五歩△同歩▲同飛△８八角成▲同銀△３三桂▲２三飛成△２二飛▲２四歩△２三飛▲同歩成△４五桂が一例。
+---
+手数5: 手堅く玉を上がる。△８八角成▲同銀△３三桂が後手のひとつの狙いだったが、以下▲２三角△４五角▲４六歩△３二銀▲同角成△６七角成▲同玉△３二金で先手が銀得となる。６七の地点を玉が守っているために▲４六歩が成立する。
+---
+手数13:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井３３分、△増田２２分。」 → ルール3
+---
+手数19:
+
+削除理由:
+- 「ここで増田が３４分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲菅井５７分、△増田１時間５分。」 → ルール3
+- 「昼食の注文は菅井がきつねうどん、増田はなし。」 → ルール7
+---
+手数27:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井１時間１１分、△増田１時間５０分。」 → ルール3
+---
+手数34:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井１時間３３分、△増田２時間１２分。」 → ルール3
+---
+手数45:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井２時間９分、△増田２時間２０分。」 → ルール3
+- 「増田は３８手目△４三銀直からここまでノータイムで指している。」 → ルール3
+---
+手数48: ▲４五歩△同歩▲５六銀のように攻める順がある。後手自信が無いと言われている。
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲菅井２時間１０分、△増田３時間３０分。」 → ルール3
+- 「ここで菅井が１時間１７分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲菅井３時間２７分、△増田３時間３０分。」 → ルール3
+- 「夕食の注文は増田が他人丼、菅井はカツ丼。」 → ルール7
+---
+手数57:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲菅井３時間３１分、△増田４時間９分。」 → ルール3
+---
+手数64:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井３時間５４分、△４時間５６分。」 → ルール3
+---
+手数91:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「消費時間は▲菅井４時間８分、△増田５時間３２分。」 → ルール3
+---
+手数109:
+
+削除理由:
+- 「ここで増田が投了した。」 → ルール4
+- 「終了時刻は２２時５１分。」 → ルール3
+- 「消費時間は▲菅井４時間３８分、△増田５時間４１分。」 → ルール3
+- 「勝った菅井は５勝２敗、敗れた増田は２勝５敗となった。」 → ルール4

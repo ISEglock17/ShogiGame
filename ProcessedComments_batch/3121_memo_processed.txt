@@ -1,0 +1,99 @@
+**Focusing the Commentary: Refining Game Analysis Data**
+
+Okay, so I'm tackling this set of comments from Shogi games, and the goal is crystal clear: I need to whip these into shape for proper analysis.  My objective is to distill them down to pure, insightful commentary on the board state and the moves, stripping away all the fluff. I'm talking about the stuff that clogs up the signal—the introductions, the time stamps, the biographical asides. Gone! Useless for my analysis.
+
+Here's the plan, and it's pretty straightforward:
+
+1.  **Sift and Delete:** I'll run through the comments, my expert eye zeroing in on the rules about what needs to go.  Anything that doesn't directly speak to the game itself, out it goes.  This involves a detailed understanding of the game's vocabulary and what is relevant in this context.
+2.  **Smooth Transformation:** Once I've trimmed the fat, I'll go through the remaining text and rephrase it, ensuring it flows naturally as a coherent commentary. It should read seamlessly, not like a disjointed collection of phrases.
+3.  **Output Structure:** Finally, I'll package the refined comments into the required format. The structure is important for ease of data handling later.  Essentially, I'm cleaning up and organizing the raw data for efficient processing and analysis.
+
+手数1:
+
+削除理由:
+- 「中村亮は１分遅刻したため３倍の３分が引かれる。」 → ルール3
+- 「初手に２分考えたので、合計５分が初手の考慮時間として記録された。」 → ルール3
+
+手数13: 藤井システムの出だし。後手が穴熊なら居玉のまま仕掛ける。
+
+削除理由:
+
+手数16: △７四歩とつけば急戦の可能性が高い。
+
+削除理由:
+
+手数17: 居玉では急戦を受けきれないので玉を囲う。
+
+削除理由:
+
+手数18: やはり急戦のようだ。
+
+削除理由:
+
+手数24: △６四歩や△７三銀も考えられるが、本局は左銀急戦になった。
+
+削除理由:
+
+手数28: 銀を上がった。△７六歩もあるところ。
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は中村亮７分、児玉４３分。」 → ルール3, 4
+- 「３２分考えて」 → ルール3
+
+手数29: ６六の地点を手厚くして角の進出を防ぐ。
+
+削除理由:
+
+手数38:
+
+削除理由:
+- 「ここで中村亮が１０分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は中村亮４１分、児玉１時間１６分。」 → ルール3, 4
+
+手数44: 急戦から一転、じっくりした戦いになりそうだ。△７三角としてコビンを攻める狙いか。
+
+削除理由:
+
+手数47: 持久戦を見越して穴熊に囲う。後手は２枚の銀をどう使うかがポイントになりそうだ。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１４時４０分を過ぎた。」 → ルール3
+- 「消費時間は中村亮１時間１０分、児玉２時間１０分。」 → ルール3, 4
+
+手数58:
+
+削除理由:
+- 「１７時２０分を過ぎた。」 → ルール3
+- 「消費時間は中村亮２時間０分、児玉４時間０分。」 → ルール3, 4
+- 「この局面で中村亮が５６分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は中村亮２時間５６分、児玉４時間０分。」 → ルール3, 4
+
+手数60:
+
+削除理由:
+- 「２０時２０分の局面。」 → ルール3
+- 「消費時間は中村亮３時間１５分、児玉４時間２９分。」 → ルール3, 4
+
+手数62:
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「消費時間は中村亮３時間４７分、児玉５時間１１分。」 → ルール3, 4
+
+手数75:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「消費時間は中村亮４時間２９分、児玉５時間３４分。」 → ルール3, 4
+
+手数95: 後手は駒損がひどく先手玉への寄せがない。
+
+削除理由:
+- 「ここで児玉の投了となった。」 → ルール4
+- 「消費時間は中村亮４時間４４分、児玉５時間４７分。」 → ルール3, 4
+- 「勝った中村亮は１勝４敗、敗れた児玉は０勝５敗となった。」 → ルール4

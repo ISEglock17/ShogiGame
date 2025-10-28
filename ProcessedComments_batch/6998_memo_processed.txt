@@ -1,0 +1,111 @@
+**Cleaning Up Commentary for Deep Dive Analysis**
+
+Okay, so I'm tackling this task of cleaning up these Shogi game commentaries, right? The user wants me to whip these comments into shape, stripping away all the fluff – you know, the meta details, player intros, timestamps – basically anything that doesn't directly relate to the board position or the moves themselves. My goal is to leave behind only the pure, insightful commentary on the game's actual flow and strategies.
+
+Essentially, I'm going to take these raw comments and perform a surgical extraction. I'll need to develop a robust set of rules to identify and discard the irrelevant information, leaving behind a concise and coherent narrative of the game's progression, focusing only on the critical analysis of moves and their impact on the board. This refined output will then be ready for serious, in-depth analysis of the game.
+
+手数1:
+
+削除理由:
+- 「◆桐山　清澄（きりやま　きよずみ）九段◆」 → ルール1, 4
+- 「１９４７年１０月７日生まれ、奈良県下市町出身。（故）増田敏二六段門下。１９６６年、四段。１９８４年、九段。棋士番号は９３。」 → ルール4
+- 「タイトル戦登場は１０回。獲得は棋王１期、棋聖３期の計４期。棋戦優勝は７回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆片上　大輔（かたがみ　だいすけ）六段◆」 → ルール1, 4
+- 「１９８１年８月２８日生まれ、広島県広島市出身。森信雄七段門下。２００４年、四段。２００９年、六段。棋士番号は２５１。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「桐山の今年度成績は５勝１６敗（０．２３８）」 → ルール4
+- 「通算成績は９５５勝８４０敗（０．５３２）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「片上の今年度成績は１６勝１４敗（０．５３３）」 → ルール4
+- 「通算成績は２１３勝１３４敗（０．６１４）」 → ルール4
+
+手数23:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲桐山１４分、△片上７分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１２時１０分、ここで桐山が５０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲桐山１時間１０分、△片上４７分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数34: 次に△３三歩と打てば銀が取れる。▲２四同飛は△３三歩があり、そこで▲２五銀と引くと、△２三銀で飛車が死ぬ。
+
+削除理由:
+- 「（田中悠一四段）」 → ルール1
+
+手数35: ▲２四角と、角で歩を取るつもり。２四歩を取れば、▲２五銀の退路をできる。
+
+削除理由:
+
+手数36: ▲２四角を受けた角打ち。▲２四角△同角▲同飛には、相変わらず△３三歩がある。
+
+削除理由:
+
+手数37: ▲４五銀のぶつけを用意。
+
+削除理由:
+
+手数38: 銀をさばかせるようだが、先手の角が狭いので、後手はそれを狙うつもりらしい。
+
+削除理由:
+- 「「」と田中悠四段。」 → ルール1
+
+手数41: △２二同金には▲２四角とさばける。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲桐山１時間３６分、△片上１時間１２分。」 → ルール3
+
+手数42: ▲２六角と逃げれば△２二金。後手は次に△２五歩▲１七角△１五歩と角をいじめる狙いがある。
+
+削除理由:
+
+手数49: ▲５五歩（△同銀は▲４三香成）には、△４八成銀▲同飛△４四香と歩切れを突く筋がある。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲桐山２時間３３分、△片上２時間１７分。」 → ルール3
+
+手数54: 後手は駒得で、先手の駒の効率が悪いので後手がいい。
+
+削除理由:
+- 「「これは片上さんがいいですね。」」 → ルール1
+- 「（遠山雄亮五段）」 → ルール1
+
+手数59:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「現局面までの消費時間は▲桐山２時間４１分、△片上２時間５５分。」 → ルール3
+
+手数72:
+
+削除理由:
+- 「１８時１０分、ここで桐山が１３分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲桐山３時間１６分、△片上３時間１１分。」 → ルール3, 7
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数90: ここで先手が投了した。以下▲８七同銀は△８九飛成から、▲７七銀は△６九飛成の詰み。
+
+削除理由:
+- 「終局時刻は１９時４３分。」 → ルール3
+- 「消費時間は▲桐山３時間２０分、△片上４時間５分。」 → ルール3
+- 「勝った片上は６勝４敗、敗れた桐山は２勝８敗で今期を終えた。」 → ルール4

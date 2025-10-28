@@ -1,0 +1,114 @@
+**The Challenge of Clean Commentary**
+
+Okay, so I'm looking at this data, these comments attached to shogi game records. My goal is clear: strip away all the fluff, all the noise that's cluttering up the real gems of analysis. I need to get rid of the meta-data, the player introductions, the time stamps... all that stuff that's useful context *outside* of the actual analysis, but which muddies the waters when you're trying to understand the strategic thinking behind each move.
+
+I want the *pure* commentary, the insightful explanations of the board state and the reasoning behind each specific move, presented as if it were a natural flowing narrative. It's about distilling the essence of the analysis, the raw intellectual energy driving the game.
+
+Now, I need to figure out how to process each individual comment, following the given rules to make sure I don't lose that vital information while simultaneously pruning the irrelevant bits.
+
+手数1:
+
+削除理由:
+- 「◆平藤　眞吾（ひらふじ　しんご）七段◆」 → ルール1, 4
+- 「１９６３年１０月１５日生まれの４９歳。大阪府豊中市出身。賀集正三七段門下。１９８０年、５級で奨励会入会。１９９１年、四段。２０１１年、七段。棋士番号は１９９。」 → ルール4
+- 「順位戦は２２期目。Ｃ級１組は８期目。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆脇　謙二（わき　けんじ）八段◆」 → ルール1, 4
+- 「１９６０年８月１０日生まれの５２歳。大阪府大阪市出身。（故）高島一岐代九段門下。１９７５年、５級で奨励会入会。１９７９年、四段。２０００年、八段。棋士番号は１３８。棋戦優勝は３回。」 → ルール4
+- 「順位戦は３３期目。Ｃ級１組は通算８期目。」 → ルール4
+
+手数4: 先手は一手損角換わりだったが、本局は後手の角道オープン型四間飛車。
+
+削除理由:
+- 「千日手局は」 → ルール2
+- 「脇の」 → ルール1
+
+手数6: ▲６八玉のタイミングで△８八角成と交換する変化もある。
+
+削除理由:
+- 
+
+手数12: ▲２五歩に△３三角と受けないのが角道オープン型の特徴。▲２四歩△同歩▲同飛なら△８八角成▲同銀△２二飛のカウンターがある。
+
+削除理由:
+- 
+
+手数15: ▲６八玉の局面で角交換（△８八角成）しておけば銀で取る一手だったが、７八まで玉が寄っていると▲８八同玉と取ることができる。
+
+削除理由:
+- 
+
+手数17: 飛車取りに角を打つ。△１二飛は▲２四歩があるので後手も角を打つ一手だが、そこで▲６六歩（または▲５五歩）と突いて局面を治める狙い。
+
+削除理由:
+- 
+
+手数19: お互いに角を手放したので、先手はこの後ゆっくり居飛車穴熊を目指すことができる。それが▲７七角の真意だ。
+
+削除理由:
+- 
+
+手数21: 居飛車穴熊ではなく左美濃だった。
+
+削除理由:
+- 
+
+手数22: 後手は△２四歩から仕掛けた。後手は低い陣形で大駒交換になっても打ち込みの隙がない。
+
+削除理由:
+- 「脇が」 → ルール1
+
+手数24: 角で取った。ここは△２四同飛もあるところ。
+
+削除理由:
+- 
+
+手数25: 手拍子で▲５四歩は△７九角成で飛車を素抜かれる。先手は▲５七銀と上がって受けた。△同角成なら▲２二飛成。
+
+削除理由:
+- 「平藤は」 → ルール1
+
+手数29: 向かい飛車でよく現れる自陣飛車。飛車を手放してもったいないようだが、角取りを見せつつ△２八飛と打たれる手を消している。
+
+削除理由:
+- 
+
+手数31: ▲４六銀は次に▲４五銀と出て▲３四銀〜▲２三銀成と攻め込む狙い。
+
+削除理由:
+- 
+
+手数32: △３三銀と立つと▲２三飛成がある。また△３三桂は２二の角が使えなくなるので、受けるなら△４四歩の一手。
+
+削除理由:
+- 
+
+手数35: ▲４五同銀は△５七飛があるので、ここは一旦銀を引く。
+
+削除理由:
+- 
+
+手数37: 先手はさらにもう一段銀を引く。一度は４六まで出た銀が４八までバックする不思議な手順だ。
+
+削除理由:
+- 「平藤は」 → ルール1
+
+手数46: △２三歩は▲３四飛△４三銀▲４四飛△同銀▲５四歩で先手指せる。
+
+削除理由:
+- 
+
+手数51: ここで先手は角道を通した。
+
+削除理由:
+- 「平藤は」 → ルール1
+
+手数57: ▲５三歩成に後手は投了した。少し早い投了に思えるが、陣形、駒の働きともに先手が勝り、次の▲６六香や▲４四馬、▲５五馬などの攻めが厳しくかなり差がついた局面のようだ。
+
+削除理由:
+- 「脇は１分考え、そのまま投了を告げた」 → ルール1, 3
+- 「終局時刻は２２時５７分。消費時間は▲平藤４時間２分、△脇５時間４４分。」 → ルール3
+- 「勝った平藤は５勝３敗、敗れた脇は８連敗となった。」 → ルール1, 4

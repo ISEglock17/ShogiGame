@@ -1,0 +1,141 @@
+**Structuring Commentary for a Shogi Game**
+
+Okay, so I'm being asked to clean up some shogi game commentary, making it really focused and useful. The goal is to strip away all the fluff – any extraneous information that doesn't directly contribute to the analysis of the board position or the moves themselves. My expert eye needs to identify what's crucial and what's not, based on the agreed-upon rules for this kind of formatting.
+
+Here's my thought process:
+
+1.  I'll go through the commentary line by line, focusing on each individual move.
+2.  I'll apply my knowledge of the rules to pinpoint those parts that need to go. That's the key, weeding out the unnecessary.
+3.  I'll surgically remove the irrelevant bits and then re-phrase what remains so that it flows logically and makes sense as a coherent explanation of the game state and strategy.
+4.  Finally, I'll output the reformatted commentary. It will include the move number, the cleaned-up comment itself, and a clear reason for why any sections were deleted. This structured output will be incredibly valuable for analyzing the game.
+
+手数1:
+
+削除理由:
+- 「初手に１９分。」 → ルール3
+- 「豊川は始まってすぐに席を立っていた。」 → ルール4
+
+手数4: 後手は一手損角換わりを選択。
+
+削除理由:
+- 「畠山成」 → ルール1
+
+手数13: 先手は１筋を突き越す。
+
+削除理由:
+- 「豊川」 → ルール1
+
+手数19: 相腰掛け銀模様に進む。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川３０分、畠山成１８分。」 → ルール3, 1
+
+手数29: 先手は右玉にした。
+
+削除理由:
+- 「豊川」 → ルール1
+- 「この局面で畠山成が１４分考えて、昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は豊川４４分、畠山成１時間１１分。」 → ルール3, 1
+
+手数34:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川５７分、畠山成１時間４１分。」 → ルール3, 1
+
+手数37:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川１時間３１分、畠山成２時間５分。」 → ルール3, 1
+
+手数41: 先手は７七の銀を引きつけ手待ちする。
+
+削除理由:
+- 「豊川」 → ルール1
+- 「１６時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川２時間５分、畠山成２時間２９分。」 → ルール3, 1
+
+手数42: なかなか手が進まない神経戦。
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川２時間５分、畠山成２時間５２分。」 → ルール3, 1
+
+手数43:
+
+削除理由:
+- 「豊川はこの手に１時間１７分の長考。」 → ルール1, 3
+
+手数44:
+
+削除理由:
+- 「ここで豊川が２６分考えて、夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は豊川３時間４８分、畠山成３時間９分。」 → ルール3, 1
+
+手数46: まだ駒がぶつからない。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川３時間５４分、畠山成３時間４６分。」 → ルール3, 1
+
+手数50: 千日手になるかもしれない。同一局面２回目。
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川４時間４５分、畠山成３時間４８分。」 → ルール3, 1
+
+手数51: 先手から打開する。
+
+削除理由:
+- 「豊川」 → ルール1
+
+手数61: △４四歩を消す手筋。
+
+削除理由:
+- 削除対象なし
+
+手数64: ４筋を奪還しようとするが…。
+
+削除理由:
+- 削除対象なし
+
+手数65: この角打ちが厳しかった。
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川５時間１５分、畠山成４時間１５分。」 → ルール3, 1
+
+手数70: △４三金引はジリ貧と見て勝負手を放つ。
+
+削除理由:
+- 削除対象なし
+
+手数75: 矢倉崩しに出てくる手筋。
+
+削除理由:
+- 削除対象なし
+
+手数80:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は豊川５時間２２分、畠山成５時間１６分。」 → ルール3, 1
+
+手数85: 一枚ずつはがしていく。わかりやすい寄せ。
+
+削除理由:
+- 削除対象なし
+
+手数94: △２四歩は▲３三角成△同桂▲３二金打△１二玉▲２三銀以下即詰み。
+
+削除理由:
+- 削除対象なし
+
+手数105: 以下△４四玉▲５三銀△同玉▲３三竜以下、△５二同銀も▲３二竜以下でいずれも即詰み。
+
+削除理由:
+- 「ここで畠山成は投了した。」 → ルール1
+- 「消費時間は豊川５時間４５分、畠山成５時間３０分。」 → ルール3, 1
+- 「勝った豊川は６勝１敗、敗れた畠山成は３勝４敗となった。」 → ルール4, 1

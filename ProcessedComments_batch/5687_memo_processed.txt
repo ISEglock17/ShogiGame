@@ -1,0 +1,117 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the goal here is pretty clear: I need to refine these Shogi game comments.  We've got a treasure trove of insights buried within these texts, but it's all cluttered with irrelevant data. My objective is to distill these comments down to the pure essence of the game analysis – the specific moves and the resulting board states, framed in natural language. Think of it as stripping away the extraneous noise to reveal the signal.
+
+My brain is already firing up, breaking down the task into actionable steps. I have a set of rules, a mental checklist of what needs to go: any mention of individuals not directly involved in the match (names, ranks, affiliations), anything that drifts into past games or precedents, and of course, all those time-stamps that are cluttering up the narrative. These things, as helpful as they might be for a live broadcast, simply don't contribute to my primary goal of extracting core game logic.  It's about removing the context of the *who* and the *when* to understand the *what* and the *why* of each move. I'm ready to dive in and get to work.
+
+手数1:
+
+削除理由:
+- 「金井恒太五段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｋａｎａｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「脇謙二八段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｗａｋｉ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「金井の今期成績は１５勝１３敗／０．５３６」 → ルール4
+- 「通算成績は９４勝６７敗／０．５８４」 → ルール4
+
+手数4:
+
+削除理由:
+- 「脇の今期成績は４勝１１敗／０．２６７」 → ルール4
+- 「通算成績は５７３勝５３９敗／０．５１５」 → ルール4
+
+手数10: 後手の作戦は角道を止めた中飛車。
+
+削除理由:
+- 「脇の」 → ルール4
+
+手数15: 先手は一直線に玉を深く囲いに行く。これは穴熊が濃厚。振り飛車側が角道を止めずに積極的に戦うようになったのは、居飛車の穴熊の作戦に苦戦したからだ。
+
+削除理由:
+- 「金井は」 → ルール4
+
+手数21: すぐに穴は掘らずに、まずは外堀から固めて行くようだ。
+
+削除理由:
+
+手数24: 後手は四間飛車に振り直した。▲６六銀で先手の４筋が薄くなったので狙いを変えて揺さぶりをかけている。
+
+削除理由:
+
+手数25: この形はいずれ△４五歩に▲２六飛と受けて、以下△４四角▲３六飛△３二飛〜△３五歩▲２六飛△３六歩▲同飛△同飛、という手順で飛車交換を狙われると避けづらい。そのため先手は飛車交換に備えて金銀の離れ駒を作らないように慎重に駒組みを続けている。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１１時頃、△５二金左までの消費時間は▲金井１３分、△脇２８分。」 → ルール3
+
+手数37: 次に△３六歩で飛車交換は確実にできる。ただ後手陣には▲４一飛と打たれるキズがあるので、すぐに△３六歩とは行きづらいか。
+
+削除理由:
+- 「この局面で脇が９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲金井２８分、△脇１時間１８分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+
+手数41:
+
+削除理由:
+- 「１４時過、▲７五銀までの消費時間は▲金井１時間１分、△脇１時間３８分。」 → ルール3
+
+手数42: 後手は角交換を避けた。
+
+削除理由:
+- 「脇は」 → ルール4
+- 「５０分の長考で」 → ルール3
+- 「１５時１０分頃、△７一角までの消費時間は▲金井１時間１分。△脇２時間２８分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１６時１０分頃、▲２四歩、までの消費時間は▲金井２時間１９分、△脇２時間２８分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「１７時１０分頃、▲２二飛までの消費時間は▲金井３時間０分、△脇２時間３７分。」 → ルール3
+- 「この局面で脇が１時間９分の大長考でそのまま夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲金井３時間０分、△脇３時間２６分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数55:
+
+削除理由:
+- 「金井は▲４三成銀に１時間３３分使った。」 → ルール3
+- 「消費時間は▲金井４時間３３分、△脇３時間４７分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「２１時１５分頃、△８四桂までの消費時間は▲金井４時間４０分、△脇３時間５９分。」 → ルール3
+
+手数67: 先手は数で攻める。単純な攻めは受からない。
+
+削除理由:
+- 「金井は」 → ルール4
+- 「控室ではしばらく前から先手勝勢と見て検討が打ち切られている。」 → ルール1, 6
+
+手数76:
+
+削除理由:
+- 「２２時１０分頃、△６一香までの消費時間は▲金井５時間１４分、△脇４時間１１分。」 → ルール3
+
+手数81: この手を見て後手がすぐに投了を告げた。投了から△６二同香に▲同銀成△同角▲同竜△６一金▲５三馬で一手一手の寄り。先手玉は有効な王手が続かない形で投了やむなし。
+
+削除理由:
+- 「脇が」 → ルール4
+- 「終局時刻は２２時１８分、消費時間は▲金井５時間３６分、△脇４時間１２分。」 → ルール3
+- 「勝った金井は３連勝で３勝５敗、脇は敗れて３勝５敗。」 → ルール4

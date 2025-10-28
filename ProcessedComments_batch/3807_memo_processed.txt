@@ -1,0 +1,90 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm presented with a shogi commentary task. Essentially, the user wants me to clean up and reformat existing commentary for a shogi match.  My goal is to take the raw commentary and, following the provided rules, strip out all the extraneous details and present the core strategic information in a clear, concise, and natural-sounding way.  This means I need to identify what's crucial to understanding the flow of the game—the key moves, the strategic considerations, and the evolving board state—and express those ideas in a grammatically correct and reader-friendly format. I'll need to be mindful of the rules I've been given, ensuring I adhere to the specific formatting and content requirements.
+
+手数11:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は村田智１３分、小林８分。」 → ルール3, 1
+
+手数20:
+
+削除理由:
+- 「１１時３０分の局面。」 → ルール3
+- 「消費時間は村田智４０分、小林３３分。」 → ルール3, 1
+
+手数22:
+
+削除理由:
+- 「△２四歩の局面で村田智が３９分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は村田智１時間２２分、小林３５分。」 → ルール3, 1
+
+手数33:
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「消費時間は村田智１時間３２分、小林５２分。」 → ルール3, 1
+
+手数39:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は村田智２時間４７分、小林２時間９分。」 → ルール3, 1
+
+手数50:
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は村田智３時間１８分、小林２時間４１分。」 → ルール3, 1
+
+手数53:
+
+削除理由:
+- 「ここで小林が１８分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は村田３時間４５分、小林２時間４８分。」 → ルール1, 3
+
+手数57:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は村田智３時間４９分、小林３時間３０分。」 → ルール3, 1
+
+手数71: ここで△８九馬は▲同飛△３八桂成▲同玉△７七飛成に▲１三角が厳しい。先手良しとみられている。
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は村田智４時間２２分、小林４時間１３分。」 → ルール1, 3
+- 「控え室では」 → ルール1, 6
+- 「先手良しの声」 → 自然な文章に整形
+
+手数72: 金を取った。
+
+削除理由:
+- 「１時間１２分の長考で」 → ルール3
+
+手数74:
+
+削除理由:
+- 「２２時１０分ごろの局面。」 → ルール3
+- 「残り時間は村田智１時間３８分、小林３５分。」 → ルール1, 3
+
+手数77:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「残り時間は村田智５９分、小林３５分。」 → ルール1, 3
+
+手数81:
+
+削除理由:
+- 「２３時１５分の局面。」 → ルール3
+- 「残り時間は村田智５８分、小林１６分。」 → ルール1, 3
+
+手数85: 後手玉は▲３二桂成△同玉▲４三金以下の詰めろ。先手玉はまだ大丈夫。
+
+削除理由:
+- 「ここで小林が７分考えて投了した。」 → ルール1, 3
+- 「終局時刻は２３時２９分。」 → ルール3
+- 「消費時間は村田智５時間９分、小林５時間５２分。」 → ルール1, 3
+- 「勝った村田智は６勝４敗、敗れた小林は４勝６敗となった。」 → ルール1, 4

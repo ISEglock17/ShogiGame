@@ -1,0 +1,90 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm being asked to take a pile of Shogi game commentary and whip it into shape, to make it really useful for someone seriously analyzing the game. It's a pretty straightforward process, actually.
+
+First, I need to understand the rules of what to keep and what to toss. This is key. It's about focusing on the game itself, the moves, the board positions, and the insightful commentary around those crucial elements. So, it's about removing the noise.
+
+Then, the actual work begins. I'll meticulously go through each comment, cross-referencing it with the rules. Anything about the commentators, their affiliations, or any digressions about past games... that's got to go. My focus is on the *now* of the game.
+
+Once I have the core content, it's about making it flow naturally. The goal is to provide a smooth, coherent explanation of the moves and the thinking behind them, not just a bunch of disjointed phrases. I need to make the output clear, concise and ready for expert level analysis. Finally, it all needs to be formatted as specified, ready for use!
+
+手数3:
+削除理由:
+- 「３０分のインターバルで、ひねった序盤を用意してきた。」 → ルール3
+
+手数4: 後手は四間飛車を採用。
+削除理由:
+- 「戸辺、今度は」 → ルール1
+
+手数21: 相穴熊へ。
+
+削除理由:
+
+手数31:
+削除理由:
+- 「この局面で戸辺が９分考え、休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲伊奈３時間３５分、△戸辺２時間３５分。」 → ルール3
+
+手数44:
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈４時間４分、△戸辺２時間４２分。」 → ルール3
+
+手数56: 一歩を犠牲にして桂得した先手だが、歩切れで飛車成りをどうやって受けるだろうか。
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲伊奈４時間５５分、△戸辺３時間４分。」 → ルール3
+
+手数57: △同歩なら大きな利かし。△４九飛成には▲７四歩として、▲７五桂△７四銀▲５四馬の狙いがある。
+
+削除理由:
+
+手数67:
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈５時間６分、△戸辺３時間３１分。」 → ルール3
+
+手数77: 後手は食いつかれたと言われている。
+
+削除理由:
+
+手数82: これで先手の攻めが切れ模様と見られている。
+
+削除理由:
+
+手数90: この一手が受けの決め手と見られ、検討は打ち切られたようだ。▲３一馬は△６二飛がぴったり。
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲伊奈５時間４２分、△戸辺４時間２６分。」 → ルール3
+- 「検討は打ち切られた」 → ルール1
+
+手数92: 検討されていた飛車切り。
+削除理由:
+- 「棋士室で」 → ルール1, 6
+
+手数96:
+削除理由:
+- 「戸辺はまだ１時間半残している。」 → ルール1, 3
+
+手数111:
+削除理由:
+- 「伊奈、残り５分。」 → ルール1, 3
+
+手数113: 徹底抗戦するが、つらい局面のようだ。
+
+削除理由:
+
+手数118: 後手は不敗の体勢を築く。
+削除理由:
+- 「昇級の可能性を残している戸辺、」 → ルール1, 4
+
+手数140: ▲同龍は△６八金と貼りつく手がある。
+
+削除理由:
+
+手数144:
+削除理由:
+- 「この局面で伊奈が投了した。」 → ルール1
+- 「消費時間は▲伊奈５時間５５分、△戸辺４時間４３分。」 → ルール3
+- 「勝った戸辺は８勝２敗、敗れた伊奈は５勝５敗となった。」 → ルール1, 4
+- 「戸辺は東京で指されている▲村中−△中村太戦が村中勝ちの場合にＣ１昇級となる。」 → ルール1, 4, 6

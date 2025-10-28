@@ -1,0 +1,66 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I've been asked to clean up some commentary data from shogi games. Essentially, they want me to take a messy collection of comments and turn it into something useful for analysis. My goal here is to strip out all the extraneous fluff – the metadata, player introductions, time stamps, you know the drill – and just leave behind the core insights about the board state and the moves themselves.
+
+It seems pretty straightforward in principle, just a matter of following a few rules. First, I need to identify and remove all the information that doesn't contribute to explaining the game. Then, once I've got a clean slate, I'll need to rephrase what's left into natural, understandable sentences. Easy peasy, really. This will allow for more focused, data-driven insights.
+
+手数23:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁２６分、△中田功２４分。」 → ルール3, 4
+
+手数30:
+
+削除理由:
+- 「この局面で先手が３６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は先手１時間６分、後手４９分。」 → ルール3, 4
+
+手数38: △同金は▲１四角の飛車金両取りがかかる。金が逃げれば▲５六歩と攻めが続く。
+
+削除理由:
+- 「この局面で１４時を過ぎた。」 → ルール3
+- 「ここまでの消費時間は▲田中魁１時間４２分、△中田功１時間０分。」 → ルール3, 4
+
+手数45:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁２時間４９分、△中田功１時間２１分。」 → ルール3, 4
+
+手数48: 少し前の△４七銀から△１四角もそうだが、後手からは大胆な攻めで先手陣に迫っている。
+
+削除理由:
+- 「棋士室からは驚きの声が上がる。」 → ルール1, 6
+
+手数50: 一瞬駒損するようだが。
+
+削除理由:
+
+手数52: この両取りがあるので、駒損はすぐに回復できる。
+
+削除理由:
+
+手数62:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁３時間４３分、△中田功１時間５０分。」 → ルール3, 4
+
+手数66: 後手から△４九歩成の攻めが見えているので、先手としてはゆっくりしていられない。ここからどうやって攻めていくのか。
+
+削除理由:
+- 「この局面で先手が４９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は先手４時間５９分、後手１時間５１分。」 → ルール3, 4
+
+手数74:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲田中魁５時間１８分、△中田功２時間３１分。」 → ルール3, 4
+
+手数100: ここで先手の投了となった。以下は▲８八玉△７九銀以下の即詰みとなる。
+
+削除理由:
+- 「消費時間は▲田中魁５時間５１分、△中田功２時間４７分。」 → ルール3, 4
+- 「勝った後手は２勝０敗、敗れた先手は０勝２敗となった。」 → ルール4

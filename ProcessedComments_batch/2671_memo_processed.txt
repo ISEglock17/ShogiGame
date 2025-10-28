@@ -1,0 +1,47 @@
+**Okay, let me break this down.**  The user wants me to clean up and reformat some Shogi commentary.  Essentially, they're giving me raw data from a game and a set of rules, and my job is to filter out the noise and present the important stuff in a readable, sensible way.  They want the essence, the core narrative, not just a jumble of moves.
+
+For this example, it looks like they're starting me off with a particular move: "Move 13: Suzuki plays a Bishop's Third File Opening (Sangenbisha) into Ishida's Rapid-Fire Attack (Ishida-ryu)."  That's my starting point. I understand what they're looking for!
+
+手数13: 先手は三間飛車から石田流へ。
+
+削除理由:
+- 「鈴木」 → 置換ルール
+
+---
+手数20:
+
+削除理由:
+- 「１６時３０分ころの局面。」 → ルール3
+- 「残り時間は▲３時間５８分、△堀口３時間５０分。」 → ルール3
+
+---
+手数36: ハデな展開で飛車角交換。
+
+削除理由:
+- なし
+
+---
+手数38:
+
+削除理由:
+- 「ここで鈴木が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲鈴木３時間２１分、△堀口２時間５０分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+---
+手数39: 指された手は６四歩。
+
+削除理由:
+- 「再開後８分の考慮で」 → ルール3, 7
+
+---
+手数44:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+
+---
+手数50:
+
+削除理由:
+- 「この一手に堀口は４４分考えた。」 → ルール3

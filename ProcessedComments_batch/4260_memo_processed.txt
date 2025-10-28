@@ -1,0 +1,119 @@
+**The Task at Hand: Polishing Commentary for Shogi Data**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, which I'm happy to do. It looks like the goal is to extract the good stuff – the actual game analysis and board descriptions – and ditch the rest.  We need to turn these scattered comments into coherent, readable sentences that actually enhance the understanding of the game.
+
+**Process Outline:**
+
+My approach will be straightforward:
+
+1.  **Iterate and Analyze:** I'll go through the commentary, move by move, dissecting each comment.
+2.  **Define and Apply Filtering Rules:** Based on the specific rules provided, I'll filter out the noise and retain only the valuable insights on the board state and the moves made.
+3.  **Synthesize Natural Language:** Finally, I'll stitch together the surviving fragments into grammatically correct sentences, making sure the essence of the analysis is captured.
+
+This is a pretty standard NLP task. Let's see what the data throws at me!
+
+手数5: 後手が一手損角換わりを誘ったが、先手は拒否。
+
+削除理由:
+- 「平藤」 → ルール1
+- 「西川慶」 → ルール1
+
+手数8:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶１１分、△平藤３１分。」 → ルール1, 3
+
+手数22:
+
+削除理由:
+- 「この局面で西川慶が１８分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲西川慶１時間１３分、△平藤４７分。」 → ルール1, 3
+
+手数27: ７九から４六に一手で上がれたので、少し得。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶１時間４６分、△平藤１時間２分。」 → ルール1, 3
+
+手数30: 矢倉で右銀が５三に上がったときは、受け身に入るサイン。
+
+削除理由:
+
+手数35: 先手の矢倉の囲い方は早囲いと呼ばれる。▲７八金と締まるまでに仕掛けられると不安定だが、ここまで指せれば強い戦いもできる。
+
+削除理由:
+
+手数37:
+
+削除理由:
+- 「１５時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶２時間５６分、△平藤１時間２８分。」 → ルール1, 3
+
+手数41:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶３時間１６分、△平藤２時間２５分。」 → ルール1, 3
+
+手数43:
+
+削除理由:
+- 「この局面で平藤が３９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲西川慶３時間３７分、△平藤３時間２１分。」 → ルール1, 3
+
+手数47:
+
+削除理由:
+- 「１９時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶４時間１１分、△平藤３時間２４分。」 → ルール1, 3
+
+手数53: 次に▲３六銀〜▲３七桂と組めたら好形だ。
+
+削除理由:
+
+手数58: 角交換をすると、▲８三角や▲６一角が厳しいので、交換を拒否した。
+
+削除理由:
+
+手数61: 初志貫徹で、角交換を迫った。
+
+削除理由:
+
+手数65: どちらで取っても味が悪い形。△２四同歩なら▲２三歩とたたかれる。やや先手が指しやすいと見られている。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶４時間４３分、△平藤３時間５５分。」 → ルール1, 3
+
+手数90:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲西川慶５時間２６分、△平藤５時間０分。」 → ルール1, 3
+
+手数95: 打たなければ△６七角成以下先手玉が詰む。
+
+削除理由:
+
+手数103: （１）△７八金▲同玉△５六金としたいが、▲２一金から後手玉が危ない。（２）△５六金▲６八玉のときに△５一歩など、受けに回る必要がありそう。ここで受けに回らざるを得ないのでは、後手は辛いのではと言われている。
+
+削除理由:
+- 「０時頃の局面。」 → ルール3
+- 「消費時間は▲西川慶５時間５４分、△平藤５時間３０分。」 → ルール1, 3
+
+手数119:
+
+削除理由:
+- 「西川慶はここから一分将棋。」 → ルール1, 3
+
+手数124:
+
+削除理由:
+- 「この局面で西川慶が投了した。」 → ルール1
+- 「消費時間は▲西川慶５時間５９分、△平藤５時間４４分。」 → ルール1, 3
+- 「勝った平藤は２勝１敗、敗れた西川慶は０勝２敗となった。」 → ルール1, 4

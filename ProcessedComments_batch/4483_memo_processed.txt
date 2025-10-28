@@ -1,0 +1,118 @@
+**Analyzing and Refining Shogi Commentary**
+
+Okay, so I'm presented with a task: to clean up and structure the comments that accompany Shogi game data. I understand the user, likely another Shogi expert, wants the commentary to be more streamlined and readable. My approach will be methodical and adhere to the provided rules for comment processing.
+
+My first step is to isolate each comment and examine it individually. I'll need to scrutinize each one for specific patterns or phrases that fall under the "deletion target" criteria.  Once I've identified those unwanted segments, I'll remove them. Finally, and this is crucial, I'll smooth out what's left, ensuring the remaining commentary flows naturally in Japanese, maintaining its clarity and meaning. This isn't just a simple deletion; it's a careful editing process to produce the most informative and concise commentary possible.
+
+手数3: 先手が３手目に▲７五歩と突くのは珍しい。
+
+削除理由:
+- 「稲葉が」 → ルール1 (置換ルール適用)
+- 「１１月の順位戦・小倉七段戦以来２回目」 → ルール1, 2
+
+---
+手数13: お互い角道を通したまま駒組みを進めている。
+
+削除理由:
+- 「１１時１０分頃の局面。ここまでの消費時間は▲稲葉２８分、△村田顕１６分。」 → ルール3
+
+---
+手数21:
+
+削除理由:
+- 「この局面で村田顕が３４分考えて昼食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲稲葉３７分、△村田顕１時間２２分。」 → ルール1, 3
+
+---
+手数25:
+
+削除理由:
+- 「１４時２０分頃の局面。ここまでの消費時間は▲稲葉１時間２４分、△村田顕１時間３１分。」 → ルール1, 3
+
+---
+手数31:
+
+削除理由:
+- 「１５時半頃の局面。ここまでの消費時間は▲稲葉２時間１分、△村田顕２時間４分。」 → ルール1, 3
+
+---
+手数33:
+
+削除理由:
+- 「１６時２０分頃の局面。ここまでの消費時間は▲稲葉２時間２９分、△村田顕２時間４４分。」 → ルール1, 3
+
+---
+手数34:
+
+削除理由:
+- 「１時間１９分の長考だった。」 → ルール3
+- 「時刻は１７時４０分。」 → ルール3
+
+---
+手数36:
+
+削除理由:
+- 「この局面で稲葉が３２分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲稲葉３時間１４分、△村田顕３時間４５分。」 → ルール1, 3
+
+---
+手数37: ▲８六飛△７六歩▲８五飛△同桂▲６六銀という進行が検討されている。
+
+削除理由:
+- 「棋士室では」 → ルール1, 6
+- 「を検討していた」 → 整形
+
+---
+手数43: ここで飛車をぶつけた。▲８八歩と備えているので、強い戦いができるということだろう。
+
+削除理由:
+
+---
+手数46:
+
+削除理由:
+- 「２０時前の局面。ここまでの消費時間は▲稲葉３時間３５分、△村田顕４時間５分。」 → ルール1, 3
+
+---
+手数47:
+
+削除理由:
+- 「５３分の長考。」 → ルール3
+
+---
+手数48:
+
+削除理由:
+- 「２１時頃の局面。ここまでの消費時間は▲稲葉４時間２８分、△村田顕４時間９分。」 → ルール1, 3
+
+---
+手数65:
+
+削除理由:
+- 「２２時頃の局面。ここまでの消費時間は▲稲葉４時間５８分、△村田顕４時間４２分。」 → ルール1, 3
+
+---
+手数93: 後手が優勢と見られている。
+
+削除理由:
+- 「２３時頃の局面。ここまでの消費時間は▲稲葉５時間２５分、△村田顕５時間２６分。」 → ルール1, 3
+
+---
+手数97: ９八角が利いているので、△５五同香とは取ることができない。
+
+削除理由:
+
+---
+手数105: 後手が必勝と見られている。
+
+削除理由:
+- 「２３時５０分頃の局面。残り時間は稲葉２６分、村田顕２０分。」 → ルール1, 3
+- 「糸谷五段は「村田必勝です」。記者が「必勝って書いていいんですか？」と聞き返すと「書いていいです」。」 → ルール1
+
+---
+手数138: この局面で先手は投了した。
+
+削除理由:
+- 「稲葉は４分考え、次の手を指さずに投了した。」 → ルール1, 3
+- 「消費時間は▲稲葉５時間４８分、△村田顕５時間５４分。」 → ルール1, 3
+- 「勝った村田顕は５勝３敗、敗れた稲葉は４勝４敗となった。」 → ルール1, 4

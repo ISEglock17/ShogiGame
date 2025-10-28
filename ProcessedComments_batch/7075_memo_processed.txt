@@ -1,0 +1,132 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff – the metadata, the intros, the time stamps – and leave behind only the meaty, tactical commentary about the board and the moves themselves. Think of it like distilling a complex sauce down to its essential flavors.
+
+The process is pretty straightforward, I think. First, I need to methodically go through each comment and, using the defined rules, figure out what's expendable. It's like a mental checklist: *Does this mention the players? Trash. Is this about the time control? Gone. Is it pure fluff? Out!*
+
+Then, once I've got the essentials, I need to smooth things out. The remaining bits of commentary, even if accurate, might be clunky. I need to rephrase and restructure them into natural-sounding sentences, ensuring they're clear and concise. Think of it as polishing a rough gemstone to let its brilliance shine through.
+
+Finally, there's the output. The user has a specific format in mind, I gather. So, I need to ensure that the cleaned-up and refined commentary is presented exactly as requested, making it ready for whatever further analysis they have planned.
+
+手数1:
+
+削除理由:
+- 「◆小倉　久史（おぐら　ひさし）七段◆」 → ルール1, 4
+- 「１９６８年５月１５日生まれ、東京都出身。中原誠十六世名人門下。１９８８年、四段。２００５年、七段。棋士番号は１８８。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆村中　秀史（むらなか　しゅうじ）六段◆」 → ルール1, 4
+- 「１９８１年３月１２日生まれ、東京都北区出身。（故）高柳敏夫名誉九段門下。２００４年、四段。２００９年、六段。棋士番号は２５３。」 → ルール4
+
+手数3:
+先手は十八番の三間飛車に構える。
+
+削除理由:
+- 「小倉は」 → ルール1
+- 「小倉の今年度成績は５勝５敗（０．５００）。」 → ルール4
+- 「昨年度成績は１９勝１６敗（０．５４３）。」 → ルール4
+- 「通算成績は４８５勝４０２敗（０．５４７）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「村中の今年度成績は９勝３敗（０．７５０）。」 → ルール4
+- 「昨年度成績は１０勝１７敗（０．３７０）。」 → ルール4
+- 「通算成績は１６１勝１２５敗（０．５６３）。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「【お知らせ】」 → ルール8
+- 「「名人戦棋譜速報」はスマートフォン＆タブレットも対応しています。サイトにはレスポンシブＷＥＢデザインを採用し、通信環境さえあればいつでもどこでもネット中継をお楽しみ頂けます。利用シーンが増えた「名人戦棋譜速報」を是非、スマートフォン・タブレットでもお試し下さい。」 → ルール8
+
+手数13: 先に囲いの形を作る。
+
+削除理由:
+
+手数16: 端を受けない。後手の囲いは穴熊が予想される。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「△５三銀までの消費時間は▲小倉１６分、△村中２９分。」 → ルール3
+
+手数19: １筋を突き越した。先手玉は囲いの入り口に座ったまま、なかなか囲いの中に入ろうとしない。
+
+削除理由:
+- 「４３分の考慮で」 → ルール3
+
+手数20:
+
+削除理由:
+- 「１２時１０分、この局面で小倉が２２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲小倉１時間２１分、△村中３８分。」 → ルール3
+- 「対局再開は１３時。」 → ルール7
+
+手数25:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲８六歩までの消費時間は▲小倉１時間４５分、△村中１時間１０分。」 → ルール3
+
+手数33: 後手は押さえ込み穴熊にするのだろう。穴熊にしないとさすがにきつそうだ。先手の左の飛角金銀を捌かせないという指し方だろうか。▲６五歩に備えて△７二金とされているので、先手としてもなかなかやりにくいのだろう。
+
+削除理由:
+- 「「」」 → 整形
+- 「（東京・対局立会人の植山悦行七段）」 → ルール1
+- 「１５時ごろの局面。」 → ルール3
+- 「▲３六歩までの消費時間は▲小倉１時間４７分、△村中２時間０分。」 → ルール3
+
+手数40: 少しずつ盛り上げていく。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「▲４八金までの消費時間は▲小倉２時間５分、△村中２時間３６分。」 → ルール3
+
+手数57: 後手は穴熊にしなかったのか。これはよくある将棋になった。先手は飛車がへこまされているが、下段で自由に動けるので地下鉄飛車のような感じでそこまで悪くない。後手は△６五歩から桂交換して△５六桂と打ちたいところだが、６八の角が遠く１筋を見ているのが気になるところだ。それでも△６五歩と行きたいだろう。
+
+削除理由:
+- 「植山七段「」」 → ルール1
+- 「１７時ごろの局面。」 → ルール3
+- 「▲８八歩までの消費時間は▲小倉２時間３２分、△村中２時間５７分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「１８時１０分、この局面で小倉が２１分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲小倉３時間７分、△村中３時間４１分。」 → ルール3
+- 「対局再開は１９時。」 → ルール7
+
+手数81:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「▲２五桂までの消費時間は▲小倉３時間３１分、△村中４時間１８分。」 → ルール3
+
+手数93:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「▲４四香までの消費時間は▲小倉３時間５３分、△村中４時間４２分。」 → ルール3
+
+手数108:
+
+削除理由:
+- 「△１二玉までの消費時間は▲小倉３時間５９分、△村中４時間５９分。」 → ルール3
+
+手数110: △６七歩成を見て先手が投了した。先手は飛車を逃げても△５六角や△７八竜が厳しい。後手玉に迫る手段もなく投了となった。
+
+削除理由:
+- 「小倉が」 → ルール1
+- 「終局時刻は２１時４２分。」 → ルール3
+- 「消費時間は▲小倉４時間７分、△村中５時間１分。」 → ルール3
+- 「勝った村中、敗れた小倉はともに２勝１敗となった。」 → ルール4

@@ -1,0 +1,147 @@
+**Structuring and Cleaning Up Shogi Game Commentary**
+
+Okay, so I'm presented with a task: to clean up these Shogi game commentaries, transforming raw data into useful, flowing text. My objective is clear – I need to take the comments embedded within the game data and refine them, focusing solely on the strategic insights and explanations of moves, while getting rid of all the unnecessary fluff.  Basically, I have to ensure the commentary helps with further analysis.
+
+Here's how I'm approaching this:
+
+1.  **Iterate through the Data:** I'll begin by systematically analyzing each comment associated with every move in the game record.
+2.  **Filter and Refine:** I need to identify specific elements within each comment that fall under the "delete" category (things that aren't relevant to the actual analysis of the position). The goal is to isolate and remove these, leaving only the essentials.
+3.  **Standardize and Mask:** Next, I'll apply the replacement rules to de-identify the players, making their roles clear, and ensuring the comments can apply to any game I may analyze in the future. I'll swap out their actual names with placeholders like "Sente" (player 1) and "Gote" (player 2). This ensures the commentaries are not tied to specific players, but remain useful.
+
+手数1:
+
+削除理由:
+- 「高崎五段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔａｋａｚａｋｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「真田七段のプロフィール」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓａｎａｄａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「高崎の通算成績は１１３勝６９敗（０．６２１）」 → ルール4
+- 「今年度成績は１７勝１０敗（０．６３０）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「真田の通算成績は３７８勝２８６敗（０．５６９）」 → ルール4
+- 「今年度成績は１０勝１１敗（０．４７６）」 → ルール4
+
+手数7: 先手は先手中飛車に構える。
+
+削除理由:
+- 「高崎」 → 置換ルール
+
+手数8: 後手は△３一角と引き角で対抗するようだ。引き角戦法はアマチュア間でも人気のある戦法。
+
+削除理由:
+- 「真田」 → 置換ルール
+
+手数10:
+
+削除理由:
+- 「１０時４５分頃の局面。」 → ルール3
+- 「消費時間は▲高崎１１分、△真田１７分。」 → ルール3, 4
+
+手数14: 「８筋が空いているじゃないか」と△８六歩を突くと、▲７三角成や▲３三角成が飛車角による両王手。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「１０時４５分頃の局面。」 → ルール3
+- 「消費時間は▲高崎３５分、△真田２９分。」 → ルール3, 4
+- 「１１時３０分頃、ここで高崎が考えている。」 → ルール3, 4
+
+手数19:
+
+削除理由:
+- 「ここで真田が１４分使って昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は▲高崎１時間１５分、△真田４３分。」 → ルール3, 4
+- 「昼食の注文は、真田が「鳥南ばんそば（ほそ島や）」、高崎は無し。」 → ルール7
+
+手数21:
+
+削除理由:
+- 「１３時４０分頃の局面。」 → ルール3
+- 「消費時間は▲高崎１時間２２分、△真田１時間２分。」 → ルール3, 4
+
+手数22:
+
+削除理由:
+- 「５４分の考慮。」 → ルール3
+
+手数26:
+
+削除理由:
+- 「１４時４５分頃の局面。」 → ルール3
+- 「消費時間は▲高崎１時間２７分、△真田２時間１１分。」 → ルール3, 4
+
+手数28: △８六同角は▲８四歩が生じる。重くとも桂を取りきってしまいたい。
+
+削除理由:
+
+手数30: 頑張った取り方。後手は歩切れなので△同香や△同桂では▲９六歩とじりじりと攻める。この△同飛でも▲９六歩があるかもしれない。
+
+削除理由:
+- 「１５時４０分頃の局面。消費時間は▲高崎１時間３７分、△真田２時間５１分。」 → ルール3, 4
+- 「１６時３０分頃、高崎の長考が続く。」 → ルール3, 4
+
+手数32:
+
+削除理由:
+- 「１７時２５分頃の局面。」 → ルール3
+- 「消費時間は▲高崎２時間３７分、△真田３時間２１分。」 → ルール3, 4
+
+手数34:
+
+削除理由:
+- 「ここで高崎が１１分使って夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は▲高崎３時間３８分、△真田３時間２２分。」 → ルール3, 4
+- 「夕食の注文は、真田は「うな玉丼、肝吸い（ふじもと）」、高崎は「ロースカツ丼（ふじもと）」」 → ルール7
+
+手数35: この打ち込みで先手が良くなったのではないか、と言われている。後手は居玉が祟りそうだ。
+
+削除理由:
+
+手数41:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は▲高崎３時間５０分、△真田３時間４０分。」 → ルール3, 4
+
+手数43: この一手だけで先手陣に出城が出来たような印象。
+
+削除理由:
+
+手数46:
+
+削除理由:
+- 「２０時２０分頃の局面。」 → ルール3
+- 「消費時間は▲高崎４時間４分、△真田３時間５４分。」 → ルール3, 4
+
+手数48:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲高崎４時間３１分、△真田４時間４分。」 → ルール3, 4
+
+手数59:
+
+削除理由:
+- 「２１時３０分頃の局面。」 → ルール3
+- 「消費時間は▲高崎４時間５３分、△真田４時間２３分。」 → ルール3, 4
+
+手数61:
+
+削除理由:
+- 「ここで真田は３分考えて投了を告げた。」 → ルール3, 4
+- 「終局時刻は２１時４４分。」 → ルール3
+- 「消費時間は▲高崎４時間５７分、△真田４時間３１分。」 → ルール3, 4
+- 「勝った高崎一生五段は６勝３敗、敗れた真田圭一七段は５勝４敗なった。」 → ルール4

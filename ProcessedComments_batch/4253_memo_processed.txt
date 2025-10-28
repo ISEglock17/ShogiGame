@@ -1,0 +1,100 @@
+**Processing the Shogi Commentary**
+
+Okay, so I'm getting a request here to clean up and format some Shogi commentary. Looks like they want me to focus only on the actual gameplay analysis, stripping away all the extraneous stuff.  The instructions are pretty clear: anything that's not directly related to the current moves and strategic considerations needs to go. I see the list of items to eliminate - mentions of people other than the players, background on previous games or historical context, any discussion of time elapsed, player profiles, win/loss records, and anything about their playing styles or favorite openings.  This is straightforward; I understand what needs to be done. It's essentially a surgical extraction of the core tactical thinking from all the fluff. I'll get to work.
+
+手数8: １手損角換わりとなった。
+
+削除理由:
+- 「村山の」 → ルール1
+
+---
+手数21: 互いに似た形なので、端の位は大きな価値を持つ。▲９六歩と受けた方が無難だ。
+
+削除理由:
+- 削除対象なし
+
+---
+手数25:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「消費時間は大平１９分、村山３分。」 → ルール3
+
+---
+手数27: 先手は腰掛け銀に構える。
+
+削除理由:
+- 「大平は」 → ルール1
+
+---
+手数35:
+
+削除理由:
+- 「１１時４０分ごろの局面。」 → ルール3
+- 「消費時間は大平５６分、村山１４分。」 → ルール3
+
+---
+手数36: ２筋と８筋の歩の位置以外は同型となっている。
+
+削除理由:
+- 削除対象なし
+
+---
+手数37: ▲４五歩△同歩▲３五歩もあるが先手は力をためた。
+
+削除理由:
+- 「ここで村山が２４分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大平１時間１分、村山５１分。」 → ルール3
+- 「昼食の注文は村山がカレーライス。大平は注文なし。」 → ルール7
+- 「大平は」 → ルール1
+
+---
+手数41:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は大平１時間９分、村山１時間２０分。」 → ルール3
+
+---
+手数42: 攻め合いなので、飛車を活用できるようにする。
+
+削除理由:
+- 削除対象なし
+
+---
+手数45: 手筋の受け。▲６五同銀△同桂▲６六銀△８六歩となると、受けが難しい。△８六歩に▲６五銀は△５五角が香取りになる。
+
+削除理由:
+- 削除対象なし
+
+---
+手数47:
+
+削除理由:
+- 「１５時１０分ごろの局面。」 → ルール3
+- 「消費時間は大平１時間２８分、村山２時間２３分。」 → ルール3
+
+---
+手数51: 先手は飛車が使えないので受けに回る。
+
+削除理由:
+- 「大平は」 → ルール1
+
+---
+手数57:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は大平１時間４０分、村山２時間５２分。」 → ルール3
+
+---
+手数58:
+
+削除理由:
+- 「５２分の長考。」 → ルール3
+
+---
+手数60: 意表を突く筋で攻めをつなげる。▲４七金に△４四銀▲２八飛△３七角成▲同金△５五銀となれば２枚換えで後手がいい。
+
+削除理由:
+- 削除対象なし

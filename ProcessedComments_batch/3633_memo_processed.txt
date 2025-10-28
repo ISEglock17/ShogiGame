@@ -1,0 +1,107 @@
+**Analyzing and Reformatting Shogi Commentary**
+
+Okay, so I'm presented with a task: a user wants me to clean up and reformat Shogi game commentary. Basically, they've got raw commentary data, and they want it transformed into something more readable and concise, following a specific set of rules.
+
+My process will be straightforward. I'll need to break down the commentary into individual moves or turns. Then, for each move, I'll carefully analyze the existing comment. My aim is to extract the essential information while stripping away anything extraneous. The goal is to produce a streamlined, natural-sounding sentence that accurately reflects the state of the game after each move.
+
+Effectively, I'll be editing and rewriting these comments, ensuring they adhere to the user's defined style guide, only keeping the necessary data and presenting it smoothly. This requires a strong understanding of Shogi to ensure the correct information is retained and presented well.
+
+手数4: 先手も後手も振り飛車党だが、後手が譲った形になった。
+
+削除理由:
+- 「矢倉も」 → ルール1
+- 「遠山も」 → ルール1
+- 「遠山が」 → ルール1
+
+手数15: 先手は藤井システムの駒組み。
+
+削除理由:
+- 「矢倉は」 → ルール1
+
+手数17: ここで銀を上がっておかないと、△５三角と引かれたときに８六の地点が受からなくなる。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉２４分、△遠山２７分。」 → ルール3, 1
+
+手数25:
+
+削除理由:
+- 「この局面で遠山が１８分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲矢倉５６分、△遠山５９分。」 → ルール3, 1
+
+手数29:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉１時間２０分、△遠山１時間２３分。」 → ルール3, 1
+
+手数30: 後手は▲４五歩を警戒しなければならないため、苦労する序盤になった。
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉１時間２０分、△遠山１時間５７分。」 → ルール3, 1
+
+手数31:
+
+削除理由:
+- 「ちょうど１時間の長考。」 → ルール3
+- 「１６時を回った。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉２時間５３分、△遠山２時間５９分。」 → ルール3, 1
+
+手数39:
+
+削除理由:
+- 「この局面で遠山が２２分考えて夕食休憩に入った。」 → ルール3, 7, 1
+- 「ここまでの消費時間は▲矢倉３時間２２分、△遠山３時間３４分。」 → ルール3, 1
+
+手数43:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉３時間４６分、△遠山３時間５７分。」 → ルール3, 1
+
+手数53:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉４時間７分、△遠山３時間３７分。」 → ルール3, 1
+
+手数54:
+
+削除理由:
+- 「２３分考えて飛車を寄った。」 → ルール3
+
+手数57:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「消費時間は▲矢倉４時間１４分、△遠山５時間０分。」 → ルール3, 1
+
+手数70:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉４時間３５分、△矢倉５時間３０分。」 → ルール3, 1
+
+手数93: 先手勝勢のようだ。
+
+削除理由:
+- 「２３時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲矢倉５時間１０分、△遠山５時間５２分。」 → ルール3, 1
+- 「矢倉」 → ルール1
+
+手数107: この局面で後手が投了した。以下は△１三玉に▲２二銀△１四玉▲２三竜△同玉▲３三金以下の詰み。
+
+削除理由:
+- 「遠山が」 → ルール1
+- 「消費時間は▲矢倉５時間１５分、△遠山５時間５８分。」 → ルール3, 1

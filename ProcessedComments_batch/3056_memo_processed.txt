@@ -1,0 +1,64 @@
+**Cleaning Up My Shogi Commentary**
+
+Alright, so the user wants me to go through this shogi commentary data and tidy it up. Basically, they want me to filter out the irrelevant noise so the core analysis shines through. From what I understand, they've laid out a few key rules to follow.
+
+First things first, I need to get rid of any names that aren't the players themselves. It's distracting and doesn't add anything to the strategic insights. Then, anything mentioning previous games or specific past moves is also out. We're focused on this current match. 
+
+Next, any time-related details are a no-go. I understand the importance of time management in shogi, but it distracts from the move analysis itself. So, no clock information, pondering times, or exact moments in the game. That includes total consumption too. I will keep an eye out for any exceptions. 
+
+手数14:
+
+削除理由:
+- 「ここまでの消費時間は高田２４分、田村１９分。」 → ルール3
+
+手数15: 力戦形に。
+
+削除理由:
+
+手数20:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は高田１時間３０分、田村３０分。」 → ルール3
+- 「昼食の注文は、田村は冷やしむじなそば。高田はなし。」 → ルール7
+
+手数34:
+
+削除理由:
+- 「１４時半前の局面。」 → ルール3
+- 「ここまでの消費時間は高田２時間９分、田村４９分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は高田３時間６分、田村１時間２１分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は高田４時間０分、田村１時間５８分。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は高田４時間２４分、田村２時間２６分。」 → ルール3
+- 「夕食の注文は、田村は冷やし中華。高田はなし。」 → ルール7
+
+手数78:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は高田４時間４７分、田村２時間３７分。」 → ルール3
+
+手数116: ８手連続で歩を使う。
+
+削除理由:
+
+手数121:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「残り時間は高田１６分、田村３時間９分。」 → ルール3

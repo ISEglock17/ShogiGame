@@ -1,0 +1,94 @@
+**Cleaning Up My Commentary for Sharper Analysis**
+
+Okay, so I'm looking at this mountain of commentary data from shogi games. My goal here is to streamline it. I want to strip away all the fluff, the introductory remarks, the acknowledgements, anything that doesn't directly contribute to the *actual* analysis of the board position and the move itself. I want to get down to the bare bones of what's *actually* being said about the strategic implications, the tactical possibilities, and the evaluations. Essentially, I'm aiming for clean, concise, and insightful commentary that can feed directly into my deeper analysis. I need to convert it into a set of natural language statements explaining the moves and the thinking behind them, stripped from any unnecessary noise.
+
+手数15:
+
+削除理由:
+- 「１０時４０分ごろの局面。」 → ルール3
+- 「消費時間はともに１３分。」 → ルール3
+
+手数19:
+
+削除理由:
+- 「５階で指されている」 → ルール6
+- 「▲村山−△宮田戦とほぼ同じ将棋。」 → ルール1, 2
+
+手数23: △３三銀と上がられる前に歩交換にいく。
+
+削除理由:
+
+手数32: ▲２四角を防ぐ。
+
+削除理由:
+
+手数35:
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「消費時間は上野４０分、高野３６分。」 → ルール3, 4
+
+手数37:
+
+削除理由:
+- 「▲７九玉の局面で高野が１７分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は上野５８分、高野５４分。」 → ルール3, 4
+
+手数38: 受けないなら位を取る。銀冠と端の位は相性がいい。
+
+削除理由:
+
+手数39: 後手の攻めの形が整っていないので、現在は先手の方が玉が堅い。
+
+削除理由:
+- 「４４分の長考で玉を入った。」 → ルール3
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は上野１時間４２分、高野１時間３分。」 → ルール3, 4
+
+手数44: ５筋を狙う筋はあるが、本局は△７四歩と突いたときに（△７三桂の狙い）▲６五歩と突かれない様にした意味なので、別の展開になる。
+
+削除理由:
+- 「▲村山−△宮田戦でも」 → ルール1, 2
+- 「それは△４四銀・△５二飛の組み合わせ。」 → ルール2
+
+手数48:
+
+削除理由:
+- 「１５時３０分の局面。」 → ルール3
+- 「消費時間は上野２時間２１分、高野２時間。」 → ルール3, 4
+
+手数49:
+
+削除理由:
+- 「４３分の長考。」 → ルール3
+
+手数51: △同歩なら▲４六銀〜▲３五銀〜▲２四銀となだれ込んでいける。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は上野３時間４分、高野２時間４分。」 → ルール3, 4
+
+手数52:
+
+削除理由:
+- 「４１分の長考。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は上野３時間２３分、高野２時間４８分。」 → ルール3, 4
+
+手数55:
+
+削除理由:
+- 「▲３四歩の局面で高野が２０分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は上野３時間４７分、高野３時間８分。」 → ルール3, 4
+
+手数65: 軽手一発！　△同角は▲５五銀。△同飛や△同金、△５一飛も▲６五歩で角が動けない（５五銀を取られる）。ここで後手は投了した。
+
+削除理由:
+- 「高野は１１分考えて」 → ルール3, 4
+- 「終局時刻は１９時３８分。」 → ルール3
+- 「消費時間は上野３時間５７分、高野３時間３２分。」 → ルール3, 4
+- 「勝った上野は１勝４敗、敗れた高野は２勝３敗となった。」 → ルール4

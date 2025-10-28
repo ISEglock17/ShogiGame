@@ -1,0 +1,91 @@
+**Cleaning Up My Game Commentary**
+
+Okay, so I'm tackling this task of refining these Shogi game commentary snippets. The goal is clear: I need to transform these messy comments into something actually useful for analysis. Right now, they're cluttered with all sorts of noise – the meta stuff, bios, time stamps... it's just distracting from the core insights.
+
+My approach is straightforward, really. I'm going to follow the established rules to identify and ruthlessly eliminate all the extraneous information. The end game is to leave behind only the pure, elegant explanations of the board state and the moves themselves. Essentially, I'm aiming for concise, articulate explanations that feel natural – the kind of commentary that'll be a joy to work with during analysis.
+
+手数1:
+
+削除理由:
+- 「横山泰明（よこやま・ひろあき）五段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｙｏｋｏｙａｍａ―ｈｉｒｏ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「島本亮（しまもと・りょう）五段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓｉｍａｍｏｔｏ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「横山の今期成績は８勝５敗／０．６１５」 → ルール4
+- 「通算成績は１９０勝１２１敗／０．６１１」 → ルール4
+
+手数4:
+
+削除理由:
+- 「島本の今期成績は５勝７敗／０．４１７」 → ルール4
+- 「通算成績は１０２勝１３８敗／０．４２５」 → ルール4
+
+手数7: 先手の５筋位取り中飛車に進んでいる。
+
+削除理由:
+
+手数20: 後手は２枚の銀を繰り出す形で中飛車に対抗した。
+
+削除理由:
+
+手数31: ▲１六歩は新手。後手の攻め駒が迫る忙しそうな局面で、終盤に生きそうな端歩をじっと突く。粘り強い指し回しが先手らしい新手だ。
+
+削除理由:
+- 「１１時１０分頃の局面。」 → ルール3
+- 「消費時間は▲横山１２分、△島本１６分。」 → ルール3
+- 「前例がなく」 → ルール2
+- 「横山」 → ルール1
+
+手数35:
+
+削除理由:
+- 「この局面で島本が２６分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲横山４５分、△島本１時間３分。」 → ルール3
+- 「昼食の注文は横山が「ミックス雑炊」、島本は「花まきそば」。」 → ルール7
+- 「対局は１３時に再開する。」 → ルール7, 3
+
+手数38:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「消費時間は▲横山１時間２５分、△島本１時間１９分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「消費時間は▲横山１時間５１分、△島本１時間５４分。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「消費時間は▲横山２時間３１分、△島本２時間１１分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲横山３時間１０分、△島本２時間１９分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「この局面で横山が１５分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲横山４時間６分、△島本２時間３５分。」 → ルール3
+- 「夕食の注文は両者ともになし。」 → ルール7
+- 「対局は１９時に再開する。」 → ルール7, 3
+
+手数97: 後手玉は２筋突破が受からず、先手玉が鉄壁のため攻防ともに見込みがない。投了やむなし。
+
+削除理由:
+- 「ここで島本が投了を告げた。」 → ルール1
+- 「終局時刻は１９時４４分。」 → ルール3
+- 「消費時間は▲横山４時間３４分、△島本２時間４０分。」 → ルール3
+- 「勝った横山五段は１勝２敗、島本五段も１勝２敗となった。」 → ルール4

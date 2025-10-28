@@ -1,0 +1,186 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a task: take raw commentary from a Shogi game and clean it up, making it more concise and focused. My goal is to distill the commentary down to the core insights about the game itself, removing all the extraneous noise.
+
+The strategy is pretty straightforward. I'll need to go through each comment, one by one. For each sentence within the comment, I need to evaluate it against a set of very specific rules. These rules are key to identifying the irrelevant information. Essentially, I'm looking for anything that's not directly about the current board state or the moves being made.
+
+I've got a well-defined list of what to filter out: anything about people who aren't playing, irrelevant historical context or pre-game analysis, time-related details, player profiles and past records, their general playing styles or tendencies, the physical setting of the game, any breaks or meal-related commentary, and any references to the broadcast itself or where to find the game online.
+
+Basically, I'm aiming for the heart of the game, eliminating everything that doesn't contribute to a clear understanding of the evolving battle on the board.
+
+手数1:
+
+削除理由:
+- 「上野は初手に１分使っている。」 → ルール3
+
+手数2:
+
+削除理由:
+- 「片上も２手目に１分使う。」 → ルール3
+
+手数16:
+本局は横歩取り△３三角型を採用した。
+
+削除理由:
+- 「何でも指す片上だが、」 → ルール1, 5
+
+手数28:
+
+削除理由:
+- 「１０時５０分の局面。」 → ルール3
+- 「消費時間は上野１２分、片上５分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「３２分の長考。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「データベースで調べると、片上はこの形を指すのは初めてのようだ。」 → ルール2
+
+手数33:
+▲７七角では▲３六飛△４五桂▲同桂△同飛と進むことの方が多い。
+
+削除理由:
+- 「１１時３０分の局面。」 → ルール3
+- 「消費時間は上野５７分、片上８分。」 → ルール3
+- 「片上の長考は続き、ここで４８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は上野５７分、片上５６分。」 → ルール3
+- 「昼食の注文は上野がおにぎり三つ、片上はうな重（梅）。」 → ルール7
+
+手数34:
+
+削除理由:
+- 「昼食休憩を挟む５３分の長考。」 → ルール3, 7
+
+手数37:
+
+削除理由:
+- 「１３時５０分の局面。」 → ルール3
+- 「消費時間は上野１時間１０分、片上１時間１３分。」 → ルール3
+- 「上野はこの局面まで後手番を持って経験している。」 → ルール2
+
+手数38:
+
+削除理由:
+- 「３３分の長考。」 → ルール3
+
+手数39:
+先手は上部を厚くして、△６五桂の攻めに備える。
+
+削除理由:
+- 「上野」 → 置換ルール
+
+手数40:
+
+削除理由:
+- 「１５時の局面。」 → ルール3
+- 「消費時間は上野１時間２２分、片上１時間５５分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「３６分の長考。」 → ルール3
+
+手数42:
+△６五飛の狙いは△６四飛〜△５四飛。
+
+削除理由:
+- 「１６時１５分の局面。」 → ルール3
+- 「消費時間は上野１時間５８分、片上２時間３０分。」 → ルール3
+- 「片上は△６五飛に３５分の長考。」 → ルール1, 3
+
+手数43:
+金を繰り出した。
+
+削除理由:
+- 「３５分の長考で」 → ルール3
+- 「グイッと」 → 整形
+
+手数49:
+後手の弱点である桂頭を攻める。
+
+削除理由:
+- 「１７時半の局面。」 → ルール3
+- 「消費時間は上野３時間３分、片上３時間２分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「△５四角の局面で上野が２３分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は上野３時間２６分、片上３時間２８分。」 → ルール3
+- 「夕食の注文は上野が梅雑炊、片上はすき焼き丼とあんぱん。」 → ルール7
+
+手数54:
+目標の桂をさばいた。
+
+削除理由:
+- 「２０時前の局面。」 → ルール3
+- 「消費時間は上野４時間２分、片上３時間４３分。」 → ルール3
+
+手数58:
+後手は△３七歩が厳しい狙い。
+
+削除理由:
+- 「２０時５０分の局面。」 → ルール3
+- 「消費時間は上野４時間１８分、片上３時間４８分。」 → ルール3
+- 「記者が棋譜を取りに対局室へ向かうと、片上が４階のカウンターで夕食に頼んでいたあんぱんをモグモグ。」 → ルール1, 6, 7
+- 「２１時５分ごろ、上野が控え室に入り、軽食を食べていた。互いに夜戦に備えて燃料補給といったところだ。」 → ルール1, 3, 6, 7
+
+手数59:
+
+削除理由:
+- 「２１時４０分の局面。」 → ルール3
+- 「残り時間は上野５３分、片上２時間１２分。」 → ルール3
+- 「▲３六角は４８分の長考で指された。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「２２時４０分ごろの局面。」 → ルール3
+- 「残り時間は上野２５分、片上１時間３５分。」 → ルール3
+- 「片上は真っ赤な顔で記録係に残り時間を聞いていた。」 → ルール1
+
+手数70:
+
+削除理由:
+- 「３８分の長考。」 → ルール3
+
+手数71:
+
+削除理由:
+- 「２３時１５分の局面。」 → ルール3
+- 「残り時間は上野１１分、片上５７分。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「２３時４５分の局面。」 → ルール3
+- 「残り時間は上野１１分、片上４３分。」 → ルール3
+- 「片上は考慮中に残り２５分を告げられた。」 → ルール1, 3
+
+手数84:
+
+削除理由:
+- 「０時１０分ごろの局面。」 → ルール3
+- 「残り時間は上野８分、片上１０分。」 → ルール3
+
+手数85:
+▲３二歩成には△３九飛が好手。▲同銀は△４七飛成▲６九玉△４九龍の詰み。▲６六歩も△４七馬▲同銀△同飛成▲６七玉（▲同玉は詰み）△８五桂で寄り筋。
+
+削除理由:
+- 「※」 → 整形
+- 「（！）」 → 整形
+
+手数96:
+▲４七銀なら△４八銀以下詰み。
+
+手数98:
+▲６八玉△５八龍▲７七玉（▲同玉は△５七銀打以下詰み）△６五桂で寄り筋。後手玉は詰みはない。
+
+削除理由:
+- 「ここで上野の投了となった。」 → ルール1
+- 「終局時刻は０時３５分。」 → ルール3
+- 「消費時間はともに５時間５８分。」 → ルール3

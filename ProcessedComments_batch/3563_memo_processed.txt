@@ -1,0 +1,76 @@
+**My Approach to Formatting Shogi Game Commentary**
+
+Okay, so the user wants me to clean up Shogi game commentary. I get it - it's probably a mess, needs to be standardized for easier analysis or presentation. My process will be pretty straightforward: I'll tackle each move, one by one. I'll read in the comments associated with that move, and then apply whatever specific formatting rules the user has laid out. It's a matter of following the guidelines meticulously and ensuring consistency throughout the entire output. This should be pretty manageable, given my experience with this kind of text manipulation and the well-defined rules I'll be working with. I'm ready to dive in.
+
+手数11: 本局は相振り飛車になった。
+
+削除理由:
+- 「居飛車、振り飛車を使いこなせる両者。」 → ルール5
+
+手数17:
+
+削除理由:
+- 「１０時４５分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は橋本９分、桐山３１分。」 → ルール3
+
+手数21: 矢倉囲いを目指す。相振り飛車の矢倉は組めれば十分のことが多い。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「ここで後手は３５分考えて、昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は先手２０分、後手１時間３８分。」 → ルール3
+
+手数32: 後手は美濃囲いに組んだ。
+
+削除理由:
+
+手数38: ▲８四歩からの飛車先歩交換を防ぐ。
+
+削除理由:
+
+手数39: 盛り上がっていく。△３五歩なら▲４五銀△３二飛▲８四歩△同歩▲同飛△８三歩▲２四飛で先手良し。
+
+削除理由:
+
+手数50: ここでは先手の作戦勝ち。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は橋本４４分、桐山１時間５３分。」 → ルール3
+
+手数51: 機敏な仕掛け。
+
+削除理由:
+
+手数55: △同飛なら▲３一角成。
+
+削除理由:
+
+手数71: 飛車を取って、先手勝勢。
+
+削除理由:
+
+手数73:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「ここまでの消費時間は橋本１時間７分、桐山２時間２６分。」 → ルール3
+
+手数74: ▲同飛なら△８四香▲７五飛△４二角と飛車を攻めて、先手も嫌みが残る。
+
+削除理由:
+
+手数83: 銀桂の両取り。
+
+削除理由:
+
+手数87: 後手は投了した。放っておくと▲７一銀△同銀▲同馬△同玉▲５一竜以下の詰めろ。△５三銀も▲５一竜で受けがない。
+
+削除理由:
+- 「ここで桐山は３分考えて投了した。」 → ルール3
+- 「終局時間は１５時２６分。」 → ルール3
+- 「消費時間は橋本１時間１８分、桐山２時間４２分。」 → ルール3
+- 「勝った橋本は６勝４敗で、桐山は２勝８敗の降級点（１つ目）で、今期の順位戦を終えた。」 → ルール4

@@ -1,0 +1,98 @@
+**Analyzing and Preparing the Shogi Commentary**
+
+Okay, so I'm being asked to format a Shogi commentary, which is right up my alley. I need to take each comment and process it according to the specified rules. Let's see...
+
+First, I've got a list of comments I need to address. The first one gives me some stats on Muratachi. I see his win-loss record for the current year, and then his overall career record, including his winning percentage. Good information to have, helps provide context.
+
+Next, I've got a similar statement for Matsumoto, detailing his seasonal record and overall performance in the game. It's a key part of analysis, especially in the middle game, providing context for the current moves.
+
+Finally, a time stamp: it's a little past 11, and that means we are past the initial phase of the game. That would mean we are in the midgame, and need to consider the game state from this point forward.
+
+Alright, with this information in mind, I can start to piece together the commentary. Time to get to work.
+
+手数1:
+
+削除理由:
+- 「村田智の本年度の成績は１２勝８敗。」 → ルール4
+- 「通算成績は１５５勝１３１敗（０．５４２）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「松本の本年度の成績は８勝９敗。」 → ルール4
+- 「通算成績は２５０勝２３０敗（０．５２１）」 → ルール4
+
+手数32:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田智２６分、△松本１５分。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「ここで松本が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田智５８分、△松本５３分。」 → ルール3
+- 「昼食の注文は村田智がそば定食、松本はなし。」 → ルール7
+
+手数44:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田智１時間２分、△松本１時間１０分。」 → ルール3
+
+手数45: 銀を上がった。△８五桂が銀当たりにならないようにしている。
+
+削除理由:
+- 「１時間５分の長考で」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田智２時間７分、△松本１時間３１分。」 → ルール3
+
+手数56:
+
+削除理由:
+- 「１６時１０分頃の局面。」 → ルール3
+- 「消費時間は▲村田智２時間４５分、△松本１時間５８分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲村田智３時間２９分、△松本２時間２分。」 → ルール3
+
+手数65:
+
+削除理由:
+- 「ここで松本が２９分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲村田智３時間４１分、△松本３時間５分。」 → ルール3
+
+手数76:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲村田智３時間５９分、△松本３時間４１分。」 → ルール3
+
+手数94:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は▲村田智４時間９分、△松本４時間２８分。」 → ルール3
+- 「２２時を過ぎたが、村田智が考えている。」 → ルール3
+
+手数108:
+
+削除理由:
+- 「２３時１５分頃の局面。」 → ルール3
+- 「残り時間は▲村田智２０分、△松本１時間０分。」 → ルール3
+
+手数116:
+
+削除理由:
+- 「ここで村田智が投了した。」 → ルール1
+- 「終了時刻は２３時３２分。」 → ルール3
+- 「消費時間は▲村田智５時間４９分、△松本５時間７分。」 → ルール3
+- 「勝った松本は５勝２敗、敗れた村田智は３勝４敗となった。」 → ルール4

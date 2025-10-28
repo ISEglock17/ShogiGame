@@ -1,0 +1,117 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I'm presented with this task of cleaning up some commentary, specifically from Shogi games. The goal is clear: I need to transform these comments, which are probably all over the place with metadata, introductions, and timing details, into something that's purely focused on the game itself. Essentially, I want to isolate the actual insightful commentary – the explanations of the board positions and the reasoning behind each move. It's about distilling the essence of the analysis.
+
+My plan is straightforward: I'll use a set of rules to identify and remove all the extraneous information. It's about being methodical; I'll scan each comment, apply my knowledge of what's *useful* for analysis, and ruthlessly trim the fat. The goal, ultimately, is to leave behind only the pure, valuable analysis in a natural, readable format.
+
+手数1:
+
+削除理由:
+- 「【遠山雄亮五段のプロフィール】」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｔｏｏｙａｍａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【八代弥四段のプロフィール】」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｙａｓｈｉｒｏ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「遠山の今年度成績は５勝４敗（０．５５６）」 → ルール4
+- 「通算成績は１３５勝９５敗（０．５８７）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「八代の今年度成績は５勝１敗（０．８３３）」 → ルール4
+- 「八代は今年４月に四段昇段したので、今年度成績がそのまま通算成績になる。」 → ルール4
+
+手数22:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「△７二飛までの消費時間は▲遠山１６分、△八代２８分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「遠山は２９分考えて▲７八金と上がった。」 → ルール3, 対局者名置換
+- 「この局面で八代が４８分考え、そのまま昼食休憩へ。」 → ルール3, 7, 対局者名置換
+- 「昼食休憩までの消費時間は▲遠山４５分、△八代１時間１６分。」 → ルール3, 7
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数31:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲８五歩までの消費時間は▲遠山１時間１７分、△八代１時間４５分。」 → ルール3
+
+手数32:
+
+削除理由:
+- 「遠山がここで１時間近く考えている。」 → ルール3, 対局者名置換
+- 「１５時ごろの局面。」 → ルール3
+- 「△２四角までの消費時間は▲遠山１時間１７分、△八代１時間５６分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「１時間３分の考慮で端歩を突いた。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「△２二玉までの消費時間は▲遠山２時間２７分、△八代２時間２６分。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「▲８六飛までの消費時間は▲遠山３時間０分、△八代２時間４８分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「△９三桂に遠山が再び長考に沈む。」 → ルール3, 対局者名置換
+- 「１時間１分考えたところで夕食休憩に入った。」 → ルール3, 7
+- 「夕食休憩までの消費時間は▲遠山４時間１分、△八代２時間５７分。」 → ルール3, 7
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数47:
+
+削除理由:
+- 「対局再開後すぐに▲３六歩。」 → ルール7
+
+手数56:
+
+削除理由:
+- 「２０時ごろの局面△５四銀までの消費時間は▲遠山４時間１４分、△八代３時間３２分。」 → ルール3
+
+手数78:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「△１六歩までの消費時間は▲遠山４時間４３分、△八代４時間２分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「▲２四歩までの消費時間は▲遠山５時間８分、△八代４時間３１分。」 → ルール3
+
+手数99:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「▲１六歩までの消費時間は▲遠山５時間２１分、△八代５時間１０分。」 → ルール3
+- 「両者残りが１時間を切った。」 → ルール3
+
+手数136:
+
+削除理由:
+- 「△３六桂を見て遠山が投了した。」 → 対局者名置換
+- 「終局時刻は２４時２１分。」 → ルール3
+- 「消費時間は▲遠山５時間５０分、△八代５時間４５分。」 → ルール3

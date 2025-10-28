@@ -1,0 +1,127 @@
+**My Approach to Formatting Shogi Game Commentary**
+
+Okay, so I'm being asked to take these Shogi game comments and tidy them up, make them presentable.  I see the user wants a structured output.  No problem.  Here's how I'm going to approach it, step-by-step:
+
+First, I'll read through each comment. I need to get a feel for what's there and identify the specific parts that need to be removed or replaced based on the provided rules. Think of it like a quick scan for the "problem areas".
+
+Next, and this is crucial, I'll apply those rules.  I'll pinpoint the exact phrases or words that trigger a deletion or a substitution. I'll act like a meticulous editor, making the necessary cuts and adjustments based on what I've been given.
+
+Then, I'll put my language skills to work. I'll take what's left and smooth it out, making sure it reads like a natural, logical sentence.  It should flow, not feel choppy.
+
+Finally, I need to present the formatted comment in the requested format. That means including the move number, the cleaned-up comment itself, and a clear reason for why any deletions or substitutions were made.  That's key for the user to understand my process.  So, pretty straightforward overall!
+
+手数1:
+
+削除理由:
+- 「岡崎の今期成績は９勝１２敗（０．４２９）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「豊島の今期成績は４０勝１３敗（０．７５５）。」 → ルール4
+- 「対局数、勝数、勝率ランキングでいずれも１位。」 → ルール4
+
+手数15: 先手は横歩を取った。
+
+削除理由:
+- 「岡崎」 → ルール(置換)
+
+手数20: 後手は中座流を採用した。
+
+削除理由:
+- 「豊島」 → ルール(置換)
+- 「中座流」 → ルール1
+
+手数22:
+
+削除理由:
+- 「１０時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎１２分、△豊島７分。」 → ルール3
+
+手数29: ここまでは定跡通りの進行。
+
+削除理由:
+- 「１１時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎２６分、△豊島９分。」 → ルール3
+- 「このまま昼食休憩に入った。」 → ルール7
+- 「豊島はこの一手に１時間２４分使っている。」 → ルール3
+- 「消費時間は▲岡崎２６分、△豊島１時間３３分。」 → ルール3
+
+手数33:
+
+削除理由:
+- 「この手は第５８期王将戦７番勝負第７局（▲深浦康市王位−△羽生善治王将）が代表例。」 → ルール2
+- 「今年度に入ってからは４局指されている。」 → ルール2
+
+手数37: ▲７五同歩△同飛となれば、後手の飛車が使いやすくなる。
+
+削除理由:
+
+手数40: ▲同飛なら△７七角成▲同金△６五桂と△４四角の筋をみせた攻めを食らってしまう。
+
+削除理由:
+- 「１４時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎１時間９分、△豊島１時間５７分。」 → ルール3
+
+手数45: ▲６六歩は△９四角の筋がみえているだけにやりづらいし、△３五歩から動いていく順も嫌み。
+
+削除理由:
+
+手数47:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎２時間４分、△豊島２時間１５分。」 → ルール3
+
+手数48: 後手がゆっくりしていると▲２六飛〜▲３五歩と先手の陣形がどんどん良くなっていくので、後手は攻めに出た。▲６六銀なら△７七歩▲８八金△８六飛▲８七歩△６六飛▲同歩△２七歩成▲同飛△９四角という反撃筋がありそうだ。
+
+削除理由:
+- 「豊島」 → ルール(置換)
+
+手数49: 先手は反撃に出た。
+
+削除理由:
+- 「岡崎」 → ルール(置換)
+- 「１７時２０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎２時間４３分、△豊島３時間５分。」 → ルール3
+
+手数52: 放っておくと▲６二桂成△同金▲９五角の筋がある。
+
+削除理由:
+
+手数56: △１二銀は利かされ過ぎだし、△３四銀は▲４六桂で銀取りの処置に困りそうだ。
+
+削除理由:
+
+手数57:
+
+削除理由:
+- 「ここで豊島は３１分考えて、夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲岡崎２時間５０分、△豊島４時間８分。」 → ルール3
+
+手数59: ▲７二角は△７一飛▲６三角成△５二金で馬の行く場所がない。そこで銀の両取りをかけたが、２四の銀を取ってもあまり後手陣に利かない。
+
+削除理由:
+
+手数62: 桂を取って、狙いの攻め。
+
+削除理由:
+
+手数64:
+
+削除理由:
+- 「１９時３０分ごろの局面。」 → ルール3
+- 「ここまでの消費時間は▲岡崎２時間５０分、△豊島４時間８分。」 → ルール3
+
+手数69: ▲４九玉は△６七角成▲３九玉△２一金▲２四角△３二金で後手良し。
+
+削除理由:
+
+手数73: 両取りを守るにはこの手しかない。
+
+削除理由:
+
+手数74: 後手は決めに出た。
+
+削除理由:
+- 「豊島」 → ルール(置換)

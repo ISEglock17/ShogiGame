@@ -1,0 +1,52 @@
+**My Approach to Reformatting Shogi Commentary**
+
+Okay, so the user wants me to clean up Shogi game commentary. Basically, they're giving me raw data and I need to transform it into something readable and concise.  I see a specific example: "手 **57: １時の局面。ここまでの消費時間は▲小林裕４時間２５分、△西川５時間１８分。**".  
+
+My first thought is, I need to strip away any extraneous information.  My expertise allows me to recognize that "手数" (move number) is important, "１時の局面" (current position, at 1 o'clock) is context, and the time information (consumptions) is also crucial. The use of "▲" and "△" as player indicators is standard and I understand this immediately. My goal is to extract the core details: the move number, the game time context, and the player time consumption.
+
+So I think I'll reformulate it something like: "Move 57. Position at 1:00. Time consumed: ▲ Kobayashi Y. 4h 25m, △ Nishikawa 5h 18m."  I need to follow the user's specific rules, but that's the basic gist: distill it down to its essence, make it grammatically correct in English, and maintain the critical details for someone following the game. I have to make sure to present it with clarity and conciseness, ready for a Shogi enthusiast to understand.
+
+手数57:
+
+削除理由:
+- 「１時の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕４時間２５分、△西川５時間１８分。」 → ルール3, 1
+
+手数87:
+
+削除理由:
+- 「１時５０分過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕４時間４９分、△西川５時間３６分。」 → ルール3, 1
+
+手数96: △４二歩はいい手ではないかと言われている。
+
+削除理由:
+- 「「小林先生電池切れか」ｂｙ某棋士」 → ルール1
+
+手数99: 先手からは▲６九金△同とに▲２三銀以下の詰みを狙っている。５八のと金が動いたときに王手にならないように飛車の利きを遮断した。
+
+削除理由:
+
+手数100: ▲６九銀が詰めろになるのを早逃げで受ける。
+
+削除理由:
+
+手数102: 大きな駒損だが背に腹は変えられない。
+
+削除理由:
+
+手数104: 局面の評判は若干先手良しか。
+
+削除理由:
+- 「棋士室に残っている棋士」 → ルール1, 6
+- 「の評判は若干小林良しか」 → ルール1
+- 「ただ、小林裕がこの時間まで対局してるのは珍しいので電池切れでは、との声も。」 → ルール1, 3
+- 「３時を過ぎた。ここまでの消費時間は▲小林裕５時間１３分、△西川５時間５０分。」 → ルール3, 1
+
+手数120: 長い戦いもついに大詰めか。
+
+削除理由:
+
+手数148: 執念を感じさせる歩打ち。勝負はあきらめない。
+
+削除理由:

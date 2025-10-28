@@ -1,0 +1,149 @@
+**Cleaning Up Commentary for Deep Analysis**
+
+Okay, so I'm tackling this dataset of Shogi game comments. The goal is clear: I need to transform these raw comments into something usable for my analysis. Currently, they're cluttered with extraneous details – the pre-game hype, player introductions, timestamps, all that noise. My focus needs to be laser-sharp on the *gameplay* itself.
+
+My process will be methodical. First, I'll define a set of rules – a filter, essentially – to identify and purge all the irrelevant information.  I'm thinking I can categorize the undesirable elements based on their common patterns. It's about stripping away everything that doesn't contribute directly to understanding the board state or the reasoning behind a specific move.
+
+Then comes the more interesting part: the cleanup. Once I've excised all the junk, I'll need to re-weave the remaining snippets of commentary into coherent, natural sentences. This means understanding the context of each phrase and how it relates to the preceding and following moves. Essentially, I'm aiming to synthesize a streamlined narrative that captures the essence of the game's unfolding strategy. This is where my expertise in understanding Shogi's nuances will truly come into play.
+
+手数1:
+
+削除理由:
+- 「◆佐藤　和俊（さとう　かずとし）六段◆」 → ルール1, 4
+- 「１９７８年６月１２日生まれ、千葉県松戸市出身。」 → ルール4
+- 「加瀬純一六段門下。」 → ルール1, 4
+- 「２００３年、四段。２０１４年、六段。」 → ルール4
+- 「棋士番号は２５０。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆瀬川　晶司（せがわ　しょうじ）五段◆」 → ルール1, 4
+- 「１９７０年３月２３日生まれ、神奈川県横浜市出身。」 → ルール4
+- 「安恵照剛八段門下。」 → ルール1, 4
+- 「２００５年、四段。２０１２年、五段。」 → ルール4
+- 「棋士番号は２５９。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「佐藤の通算成績は２５７勝１６８敗（勝率０．６０５）。」 → ルール4
+- 「本年度成績は２１勝１２敗（０．６３６）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「瀬川の通算成績は１７５勝１４０敗（勝率０．５５６）。」 → ルール4
+- 「本年度成績は１７勝１４敗（０．５４８）。」 → ルール4
+
+手数12:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「△４二銀までの消費時間は▲佐藤４９分、△瀬川８分。」 → ルール3
+
+手数21: 手順や形で細かい工夫は見られるが、６六銀型は先手が相振りの基本としているフォーム。
+
+削除理由:
+- 「佐藤が」 → ルール1
+
+手数22: 後手の戦型選択は居飛車が多いが、本局のように相振り飛車を指すこともある。
+
+削除理由:
+- 「瀬川の」 → ルール1
+
+手数24:
+
+削除理由:
+- 「１２時１０分、ここで佐藤が１４分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲佐藤１時間２８分、△瀬川３０分。」 → ルール3
+- 「昼食注文は瀬川が肉豆腐定食（みろく庵）、佐藤はなし。」 → ルール7
+- 「対局は１３時から再開される。」 → ルール3, 7
+
+手数29: 先手は金無双を完成させた。
+
+削除理由:
+
+手数30: 後手は矢倉模様だが、角を持ち合う将棋では発展させにくい面もある。あまり固めずに仕掛ける展開も有力だ。
+
+削除理由:
+
+手数32:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「△１五歩までの消費時間は▲佐藤２時間８分、△瀬川４３分。」 → ルール3
+
+手数35:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「▲６七金までの消費時間は▲佐藤２時間４０分、△瀬川１時間７分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△５四歩までの消費時間は▲２時間４０分、△瀬川２時間１０分。」 → ルール3
+
+手数37: 先手はじっくり、銀を繰り替える。
+
+削除理由:
+
+手数38: 後手は相振り飛車版のカニカニ銀といった陣形。
+
+削除理由:
+
+手数40:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「△７三歩までの消費時間は▲佐藤２時間５６分、△瀬川２時間３３分。」 → ルール3
+
+手数41: ７筋には蓋をされたので、狙う筋を変える。
+
+削除理由:
+
+手数42:
+
+削除理由:
+- 「１８時１０分、ここで佐藤が２４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲佐藤３時間５４分、△瀬川３時間６分。」 → ルール3
+- 「夕食注文は瀬川がかき玉うどん（ほそ島や）、佐藤はなし。」 → ルール7
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数43:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「▲３五歩までの消費時間は▲佐藤４時間２６分、△瀬川３時間６分。」 → ルール3
+
+手数56: 激しい展開になった。
+
+削除理由:
+- 「２０時を過ぎてから」 → ルール3
+
+手数72:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「△３五銀までの消費時間は▲佐藤４時間４２分、△瀬川４時間５５分。」 → ルール3
+
+手数76: スパートして、決めにいった。
+
+削除理由:
+
+手数78:
+
+削除理由:
+- 「２２時２０分頃の局面。」 → ルール3
+- 「△３六銀までの消費時間は▲佐藤４時間５６分、△瀬川５時間６分。」 → ルール3
+
+手数80: ここで先手が投了した。
+
+削除理由:
+- 「佐藤が」 → ルール1
+- 「終局時刻は２２時２５分。」 → ルール3
+- 「消費時間は▲佐藤４時間５８分、△瀬川５時間７分。」 → ルール3
+- 「勝った瀬川は４勝６敗、敗れた佐藤は５勝５敗になった。」 → ルール4
+- 「瀬川は降級点回避が確定した。」 → ルール4

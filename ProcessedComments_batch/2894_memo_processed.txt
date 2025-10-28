@@ -1,0 +1,62 @@
+**Structuring Shogi Commentary for Clarity**
+
+Okay, so I'm presented with this task: a user wants me to clean up shogi commentary. It looks like they've got a specific set of rules in mind. My goal is to streamline these comments, removing all the extraneous fluff – the metadata, player introductions, time stamps, you know, the stuff that bogs down a good analysis – and leave behind only the pure essence: the descriptions of the board state and the move itself, articulated as naturally as possible. I need to distill the commentary down to its strategic core. I'm essentially parsing through the noise to get to the signal – the meat of the shogi play.
+
+手数1:
+
+削除理由:
+- 「対局開始から姿の見えなかった△神崎が、昼食休憩直前に現れ対局が始まった。」 → ルール7
+- 「棋譜用紙には１１８分の遅刻と記されている。」 → ルール3
+- 「規定では遅刻時間の３倍を持ち時間から引くことになっているので、１１８分の３倍の３５４分が初手の消費時間として記録された。」 → ルール3
+
+手数4:
+
+削除理由:
+- 「この局面で▲小林健が４分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林健６分、△神崎５時間５４分。」 → ルール3
+
+手数33:
+先手は仕掛けた。
+
+削除理由:
+- 「２１分考えて」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健３９分、△神崎５時間５６分。」 → ルール3
+
+手数39:
+先手は銀を引いた。
+
+削除理由:
+- 「１７分考えて」 → ルール3
+
+手数62:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲小林健１時間４３分、△神崎５時間５７分。」 → ルール3
+
+手数73:
+先手は自陣に打ちつけた。
+
+削除理由:
+- 「ノータイムで」 → ルール3
+- 「その手つきからは自信がありそうに見える。」 → （盤面解説と無関係な主観的表現のため削除）
+
+手数92:
+ここで受けるようでは辛いか。次の一手は▲４一銀が推奨される。△同金は▲同馬△同玉▲４三金で後手玉に有効な受けが無い。△２二玉なら▲４三金で先手が良い。
+
+削除理由:
+- 「検討陣推奨の」 → ルール1
+- 「先手調子が良い」 → 「先手が良い」に整形
+
+手数107:
+後手の投了となった。以下は即詰みとなる。
+
+削除理由:
+- 「ここで△神崎の」 → 「後手の」に置換
+- 「消費時間は▲小林健２時間３０分、△神崎５時間５９分。」 → ルール3
+- 「勝った▲小林健、敗れた△神崎ともに１勝１敗となった。」 → ルール4

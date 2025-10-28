@@ -1,0 +1,83 @@
+**Cleaning Up Those Game Comments**
+
+Okay, so I'm looking at this dataset of Shogi game comments and it's a bit of a mess, as usual. The user wants me to clean it up – a very sensible request, honestly. My goal is to get rid of all the extraneous fluff, the metadata, the player introductions, and the time stamps. It's all noise I don't need when I'm trying to actually analyze the moves and understand the game. What I *want* is the good stuff: the actual descriptions of the board positions, the explanations of each move, and any insightful commentary on the strategy. Essentially, I need the narrative of the game, stripped down to its essential form, a clear and concise explanation of what's happening on the board.
+
+手数1:
+
+削除理由:
+- 「永瀬拓矢四段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｇａｓｅ．ｈｔｍｌ」 → ルール4, 8
+
+手数2:
+
+削除理由:
+- 「小倉久史七段のプロフィール（日本将棋連盟ＨＰ） ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｇｕｒａ．ｈｔｍｌ」 → ルール4, 8
+
+手数3:
+
+削除理由:
+- 「永瀬の今期成績は２２勝１２敗／０．６４７」 → ルール4
+- 「通算成績は５１勝２８敗／０．６４６」 → ルール4
+
+手数4:
+
+削除理由:
+- 「小倉の今期成績は６勝１１敗／０．３５３」 → ルール4
+- 「通算成績は４５６勝３７６敗／０．５４８」 → ルール4
+
+手数16: 相振り飛車に進んでいる。
+
+削除理由:
+
+手数18:
+
+削除理由:
+- 「１１時過ぎ」 → ルール3
+- 「△６二玉までの消費時間は▲永瀬１４分、△小倉３５分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「この局面で永瀬が１７分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬５２分、△小倉１時間１分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール3, 7
+
+手数39:
+
+削除理由:
+- 「１４時過ぎ」 → ルール3
+- 「▲９七角までの消費時間は▲永瀬１時間１６分、△小倉１時間２５分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時過ぎ」 → ルール3
+- 「▲４七銀引までの消費時間は▲永瀬１時間３３分、△小倉１時間５５分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１６時過ぎ」 → ルール3
+- 「△３三桂までの消費時間は▲永瀬２時間４分、△小倉２時間４０分。」 → ルール3
+- 「１７時過ぎ、永瀬が長考している。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「この局面で小倉が４１分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬３時間３１分、△小倉３時間２５分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール3, 7
+
+手数65:
+
+削除理由:
+- 「２０時過ぎ」 → ルール3
+- 「▲８三歩成までの消費時間は▲永瀬４時間７分、△３時間４０分。」 → ルール3
+
+手数89: 後手は投了した。投了図から△６二金左には▲４一飛で角が助からない。他に有効な粘りも難しく投了もやむを得ない。
+
+削除理由:
+- 「ここで小倉が投了を告げた。」 → 対局者名「小倉」を削除し、「後手は投了した。」に整形
+- 「投了から」 → 「投了図から」に整形
+- 「投了もやむなし。」 → 「投了もやむを得ない。」に整形
+- 「終局時刻は２０時２６分、消費時間は▲永瀬４時間１２分、△小倉３時間５０分。」 → ルール3
+- 「勝った永瀬は３勝３敗、小倉は２勝４敗。」 → ルール4

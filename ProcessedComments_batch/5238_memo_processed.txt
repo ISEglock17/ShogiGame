@@ -1,0 +1,25 @@
+**Focusing on Streamlining Shogi Commentary**
+
+Okay, so I'm presented with the task of cleaning up and formatting these Shogi match commentaries. The user, being an expert in the field, likely wants this done precisely and efficiently. I understand the goal: take this raw, potentially messy commentary and transform it into something clean and digestible.
+
+My initial approach is to focus on the provided rules.  Essentially, I'm going to be surgically removing specific types of information. It seems the main targets are information that doesn't directly pertain to the players or the game itself.
+
+手数4: 指し直し局では４手目△３三角戦法を採用した。
+
+削除理由:
+- 「福崎は」 → ルール1
+
+手数7: △２二飛を強要する歩突き。
+
+削除理由:
+- 削除対象なし
+
+手数20: 後手は美濃囲いに構えた。
+
+削除理由:
+- 「福崎は得意の穴熊ではなく、」 → ルール1, 5
+
+手数21: 将来の端攻めもみた桂跳ね。
+
+削除理由:
+- 削除対象なし

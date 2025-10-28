@@ -1,0 +1,117 @@
+**Structuring the Chess Commentary**
+
+Okay, so the user wants me to clean up these chess game comments, making them more concise and focused. My job is to strip out all the fluff, the stuff that doesn't contribute directly to the analysis of the board state and the moves themselves. Essentially, I need to leave only the essential information: the positions and the moves, along with any relevant explanations of those moves.
+
+I'll need to go through each comment individually. I'll need a set of rules, a clear rubric really, to determine what gets the axe and what stays. It's a matter of identifying the "noise" – anything that's extraneous to the core analysis – and cutting it out. This means a good, solid method to filter the non-essentials from the comments and make it as easy as possible to digest for a chess pro.
+
+手数4: ４手目△３三角戦法になった。
+
+削除理由:
+- 「今年の将棋界の流行語大賞を選ぶなら、間違いなくトップ１０に入りそうな」 → ルール8
+
+手数5: さまざまな対策があるが、１番人気は角交換する手。
+
+削除理由:
+
+手数12:
+
+削除理由:
+- 「３７分の長考。」 → ルール3
+
+手数14:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１５分、△横山４７分。」 → ルール3, 4
+
+手数20:
+
+削除理由:
+- 「１０月に指された棋王戦の▲深浦王位−△橋本七段戦が似た形。」 → ルール1, 2
+
+手数23:
+
+削除理由:
+- 「この局面で横山が１４分考えて昼食休憩に入った。」 → ルール3, 4, 7
+- 「ここまでの消費時間は▲山本４５分、△横山１時間１４分。」 → ルール3, 4
+
+手数25: 先手は左美濃を完成させて、強い戦いができるようになった。
+
+削除理由:
+
+手数28: 後手は穴熊を目指す。
+
+削除理由:
+- 「横山」 → 先手・後手への置換ルール
+
+手数31: 先手はなおも自陣に手を入れる。
+
+削除理由:
+- 「山本」 → 先手・後手への置換ルール
+
+手数33:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間６分、△横山１時間５０分。」 → ルール3, 4
+
+手数43:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本１時間４４分、△横山２時間１３分。」 → ルール3, 4
+
+手数46:
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本２時間１２分、△横山３時間１７分。」 → ルール3, 4
+
+手数50:
+
+削除理由:
+- 「この局面で山本が１時間４分の長考。」 → ルール3, 4
+- 「そのまま夕食休憩に入った。」 → ルール7
+- 「ここまでの消費時間は▲山本３時間３１分、△横山３時間２２分。」 → ルール3, 4
+
+手数56:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本４時間２分、△横山４時間１分。」 → ルール3, 4
+
+手数61:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本４時間４３分、△横山４時間３分。」 → ルール3, 4
+
+手数63: 予想手順の一例は、△３九角成▲６八飛△２九馬▲２三歩成△４五桂▲３三と。先手は▲４三とではなく、▲４二とが次の狙いになる。
+
+削除理由:
+- 「２２時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本５時間８分、△横山４時間５２分。」 → ルール3, 4
+
+手数72:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲山本５時間１６分、△横山５時間１９分。」 → ルール3, 4
+
+手数78: ▲４二とを受けている。
+
+削除理由:
+
+手数82: 相手の手に乗じて、馬を先手玉に近づける。△５八馬〜△５七桂成が間に合えば強力。
+
+削除理由:
+
+手数95: ８三は穴熊の急所。
+
+削除理由:
+
+手数100:
+
+削除理由:
+- 「０時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲山本５時間４２分、△横山５時間４８分。」 → ルール3, 4

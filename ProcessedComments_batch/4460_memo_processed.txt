@@ -1,0 +1,117 @@
+**Refining Game Commentary for Strategic Analysis**
+
+Okay, so I'm presented with this task: clean up and refine these Shogi game commentaries. The goal is clear – I need to strip away all the fluff – the metadata, player introductions, time stamps, and anything else irrelevant to the actual strategic unfolding of the game. My focus has to be laser-sharp on the concrete elements: the board state at any given moment and the specific moves made.  I'm essentially distilling the commentary down to its essential tactical and strategic insights, presented as natural-flowing prose. This is all about preparing the data for rigorous analysis, so I can extract meaningful patterns and insights from the game's evolution. No distractions, just pure strategic brilliance!
+
+手数1:
+
+削除理由:
+- 「記録係の鈴木肇三段は、本局の１０日前に当たる１１月７日の奨励会で三段昇段を決めた。」 → ルール1
+
+手数2:
+
+削除理由:
+- 「佐藤天の本年度の成績は１４勝９敗／勝率は０．６０９」 → ルール4
+- 「通算成績は８０勝４０敗／勝率は０．６６７」 → ルール4
+
+手数3:
+
+削除理由:
+- 「大内の本年度の成績は４勝１０敗／勝率は０．２８６」 → ルール4
+- 「通算成績は８８５勝７９８敗／勝率は０．５２６」 → ルール4
+
+手数5: 先手の三間飛車となった。
+
+削除理由:
+- 「大内」 → 置換ルール
+
+手数13:
+
+削除理由:
+- 「３３分の長考で指された。」 → ルール3
+
+手数14: 持久戦を目指す△３三角。これで玉を２二へ移動できるようにしている。
+
+削除理由:
+
+手数20: ▲４六銀に△４四銀を用意する。
+
+削除理由:
+
+手数22: 相穴熊へ。
+
+削除理由:
+
+手数27:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は大内３４分、佐藤天４分。」 → ルール3
+
+手数30: 放っておくと、▲４五銀から▲３四銀を狙われる恐れがあった。
+
+削除理由:
+- 「ここで大内が５０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大内１時間３２分、佐藤天２６分。」 → ルール3
+- 「昼食の注文はともになし。」 → ルール7
+
+手数31:
+
+削除理由:
+- 「昼食休憩を挟む１時間４分の長考で指された。」 → ルール3, 7
+
+手数38: 互いに四角い穴熊を完成させた。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は大内２時間２分、佐藤天４８分。」 → ルール3
+
+手数41: 先手は仕掛けた。次に△７三桂▲６八飛を利かされるのが不満と見たのだろう。
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は大内２時間５５分、佐藤天５３分。」 → ルール3
+- 「大内は４３分の長考で」 → ルール1, 3
+
+手数48:
+
+削除理由:
+- 「１６時２０分ごろの局面。」 → ルール3
+- 「消費時間は大内３時間２３分、佐藤天４１分。」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１７時２０分ごろの局面。」 → ルール3
+- 「消費時間は大内３時間４０分、佐藤天２時間１３分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「△２八角成の局面で大内が１６分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は大内４時間９分、佐藤天２時間４１分。」 → ルール3
+
+手数69:
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「消費時間は大内４時間２９分、佐藤天３時間１分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「消費時間は大内４時間３０分、佐藤天３時間１２分。」 → ルール3
+
+手数82:
+
+削除理由:
+- 「２１時の局面。」 → ルール3
+- 「消費時間は大内４時間４０分、佐藤天３時間５５分。」 → ルール3
+
+手数96: ぴったりした詰めろがかかり、先手の投了となった。▲２八桂も△５四龍がひどい。
+
+削除理由:
+- 「大内」 → 置換ルール
+- 「終局時刻は２１時２１分。」 → ルール3
+- 「消費時間は大内５時間１分、佐藤天３時間５６分。」 → ルール3
+- 「勝った佐藤天は３勝３敗、敗れた大内は１勝５敗となった。」 → ルール4

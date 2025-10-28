@@ -1,0 +1,106 @@
+**Focusing the Lens: Cleaning Up Game Comments for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: I need to strip away all the fluff – the metadata, player introductions, time stamps – and leave only the pure, insightful commentary about the board state and the moves themselves. Essentially, I'm aiming to transform these raw comments into coherent, natural-sounding explanations of the game's unfolding dynamics, the kind that will be most useful for further in-depth analysis of the game's flow and strategy.
+
+This calls for a systematic approach, a set of rules to guide the filtering process. I'll need to meticulously evaluate each comment, identifying and eliminating the irrelevant parts while preserving the core tactical and strategic explanations. The end result should be a streamlined dataset, primed for sophisticated pattern recognition and deeper insights. I'm ready to dive in and get this data refined.
+
+手数1:
+
+削除理由:
+- 「◆永瀬　拓矢（ながせ　たくや）六段◆」 → ルール1, 4
+- 「１９９２年９月５日生まれ、神奈川県横浜市出身。安恵照剛八段門下。」 → ルール1, 4
+- 「２００９年、四段。２０１３年、六段。棋士番号は２７６。」 → ルール4
+- 「２０１２年、第２期加古川青流戦と第４３期新人王戦で優勝。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆西尾　明（にしお　あきら）六段◆」 → ルール1, 4
+- 「１９７９年９月３０日生まれ、神奈川県横浜市出身。青野照市九段門下。」 → ルール1, 4
+- 「２００３年、四段。２０１１年、六段。棋士番号は２４８。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「永瀬の今年度成績は７勝８敗（０．４６７）」 → ルール4
+- 「通算成績は１４９勝６４敗（０．７００）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「西尾の今年度成績は１４勝５敗（０．７３７）」 → ルール4
+- 「通算成績は２３８勝１６４敗（０．５９２）」 → ルール4
+
+手数10: 振り飛車模様の立ち上がりから、居飛車に変化した。
+
+削除理由:
+
+手数11: ▲５九角〜▲２四歩を狙っている。
+
+削除理由:
+
+手数12: 非常に凝った序盤戦術だ。
+
+削除理由:
+- 「１局だけ前例があった。１９９９年１０月に行われた王位戦予選▲北島忠雄五段−△野本虎次七段戦（肩書きは当時）で、結果は先手が勝っている。」 → ルール1, 2
+- 「１１時過ぎ、△４二玉までの消費時間は▲永瀬２７分、△西尾２５分。」 → ルール3
+
+手数15: 後手は工夫した面白い作戦だ。▲２四歩は受からないが、「角交換には５筋を突くな」の格言があるように、▲５六歩と突いてあると角交換しづらい意味がある。なので先手も▲２四歩とはちょっと行きづらい。右銀を▲３六歩〜▲３七銀と繰り出したり、右四間飛車のような形で攻めていくのではないだろうか。後手は飛車先の歩を突いていないことが主張になるので、それを生かすような組み立てを考えているのだと思う。
+
+削除理由:
+- 「１２時１０分、▲７七銀までの消費時間は▲永瀬１時間２分、△西尾１時間０分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+- 「中継室に千葉幸生六段が来訪した。」 → ルール1
+- 「（千葉六段）」 → ルール1
+
+手数18:
+
+削除理由:
+- 「１４時過ぎ、△８四歩までの消費時間は▲永瀬１時間１９分、△西尾１時間３３分。」 → ルール3
+
+手数19: しばらく穏やかに駒組みが続きそうだ。
+
+削除理由:
+
+手数22:
+
+削除理由:
+- 「１５時過ぎ、△７四歩までの消費時間は▲永瀬２時間１分、△西尾１時間５１分。」 → ルール3
+
+手数23: ここまで保留してきた▲２四歩を決行した。
+
+削除理由:
+
+手数30: 互いに角を持ち合って駒組みが続く。当然角の打ち込みには細心の注意が必要だ。
+
+削除理由:
+
+手数37:
+
+削除理由:
+- 「１７時過ぎ、▲４六歩までの消費時間は▲永瀬３時間２分、△西尾２時間２７分。」 → ルール3
+
+手数40: 後手がおもむろに中央から仕掛けた。まずは一歩交換だろうか。
+
+削除理由:
+- 「１８時１０分、この局面で永瀬が１７分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬３時間２３分、△西尾３時間３７分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数42: こちらも突き捨てた。一歩交換ではなく、総攻撃か。
+
+削除理由:
+
+手数48: ２枚利いているところだが歩を打った。▲５六同銀は△３九角の狙いや、△同銀▲同金△４七銀などの狙いがある。
+
+削除理由:
+
+手数49: ▲６八銀は△６六銀▲同金△３九角がある。
+
+削除理由:
+
+手数50: △４九角は、まず△８六飛▲同歩△２七銀の狙いがあるが、これはやるかどうか微妙なところだ。潜在的な狙いとしては、美濃囲いの弱点である▲２四歩△同歩▲２五歩と継ぎ歩で攻められた際に、次に▲２四歩と取り込まれても△２七歩で止められるということだ。先手の棋風としては、ここで▲３六角と打ちそうだ。後手が６三の地点をどう受けるかを見て、方針を立てるイメージか。
+
+削除理由:
+- 「控室では佐々木勇気五段が検討している。」 → ルール1
+- 「（佐々木勇五段）」 → ルール1

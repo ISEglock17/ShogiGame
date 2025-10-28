@@ -1,0 +1,83 @@
+**Structuring My Approach to Cleaning Up Shogi Game Commentary**
+
+Okay, so I've got a new task. Someone wants me to take raw Shogi game commentary and whip it into shape, making it much more readable and concise. Think of it like a really in-depth data cleaning process, but specifically tailored for Shogi game descriptions.
+
+First, I need to understand that the user wants this according to some predefined rules. That's crucial, otherwise I'm just guessing at what's "important" versus what's "fluff". I'll keep those rules front and center.
+
+My plan is to process this step-by-step. I'll analyze the commentary, one move at a time. This is where the magic happens. I'll need to identify the key elements: the piece moved, the starting and ending squares, any captures, promotions, and then remove everything else.  I'll want to translate that structured information into a complete, easy to read sentence. This way the user can easily review the game.
+
+手数19:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成３８分、△桐山１５分。」 → ルール3, 4
+
+手数32:
+
+削除理由:
+- 「この局面で先手が１８分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手１時間１１分、△後手４２分。」 → ルール3, 4
+
+手数47:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成２時間６分、△桐山１時間３８分。」 → ルール3, 4
+
+手数48: 角が左右に使えるようになった。
+
+削除理由:
+
+手数49: ７五歩を守る。
+
+削除理由:
+
+手数56: ブンと振り回して飛車成りを狙う。▲８六歩とは打ちにくいが、▲８六飛とぶつけて飛車交換をするのは、矢倉に入っていない先手に不利になりそうだ。
+
+削除理由:
+- 「ブンと振り回して」 → 自然な文章への整形
+- 「１７時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成２時間５７分、△桐山２時間３５分。」 → ルール3, 4
+
+手数57: やはり飛車交換はできない。歩を打ってじっと我慢。
+
+削除理由:
+- 「この局面で後手が４５分考え、そのまま夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手３時間３１分、△後手３時間２０分。」 → ルール3, 4
+
+手数65:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成４時間３分、△桐山３時間２５分。」 → ルール3, 4
+
+手数82: 後手優勢と見られている。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲畠山成４時間３８分、△桐山４時間２分。」 → ルール3, 4
+
+手数89:
+
+削除理由:
+- 「先手はここで２４分考え、残り１時間を切っている。」 → ルール3
+
+手数90:
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲畠山成５時間１６分、△桐山４時間３３分。」 → ルール3, 4
+
+手数92: ３三の桂取りと、▲８一角（△同玉には▲６一飛成）を両方受けている。
+
+削除理由:
+
+手数93: これも３三と６四の両睨み。
+
+削除理由:
+
+手数94:
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「消費時間は▲畠山成５時間３４分、△桐山４時間５１分。」 → ルール3, 4

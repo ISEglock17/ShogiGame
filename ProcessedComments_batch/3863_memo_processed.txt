@@ -1,0 +1,124 @@
+**Cleaning Up Commentary: Focusing on the Game**
+
+Okay, so I'm presented with a task, a familiar one: I need to clean up these comments from Shogi game data. The goal is clear: I want to transform the often-messy raw comments into concise, natural explanations of the moves and board positions. Essentially, I'm aiming to strip away the noise – the meta-commentary, player introductions, time stamps, and extraneous details – and leave behind only the core analysis.
+
+My approach is straightforward. I'll need to define clear rules for what constitutes unnecessary information. I'll meticulously identify those elements within each comment and remove them. This is the first, crucial step. It's about discerning what's *essential* to understanding the game and its flow versus what's just extra baggage. Once I have the rules in place, I can iterate and refine them as I encounter different comment styles and structures. The end goal is a clear, precise, and easily digestible commentary stream that allows a real understanding of the nuances of the moves.
+
+手数1:
+
+削除理由:
+- 「佐藤は初手に１分。」 → ルール3
+
+手数2:
+
+削除理由:
+- 「淡路は２手目に５分。」 → ルール3
+
+手数5:
+
+削除理由:
+- 「ここまでの消費時間は佐藤９分、淡路１１分。」 → ルール3
+- 「淡路が次の手をずっと考えて、時刻は１１時を過ぎた。」 → ルール1, 3
+
+手数6:
+
+削除理由:
+- 「淡路、この一手に４８分。」 → ルール1, 3
+
+手数10:
+
+削除理由:
+- 「佐藤が５２分を使って、ここで昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間の通計は、佐藤１時間８分、淡路５９分。」 → ルール3
+- 「昼食の注文は両者ともになし。」 → ルール7
+
+手数19:
+
+削除理由:
+- 「１４時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤１時間５１分、淡路１時間３６分。」 → ルール3
+
+手数32: 後手は右玉に。
+
+削除理由:
+- 「淡路」 → ルール1
+
+手数38:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤２時間３１分、淡路２時間３分。」 → ルール3
+
+手数50: 互いに一歩を手にした。
+
+削除理由:
+
+手数51: 角の打ち込みに備えて、バランス重視。
+
+削除理由:
+
+手数57: 手損をしながら、高度な手渡し。
+
+削除理由:
+
+手数58:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費事案は佐藤３時間５７分、淡路２時間５９分。」 → ルール3
+- 「夕食の注文は、淡路は上カツ丼。佐藤は上親子丼。」 → ルール7
+
+手数67: △８五歩と突かせた効果で、△９二同香ならば▲８四桂と打てる。
+
+削除理由:
+
+手数68: 手抜いた。
+
+削除理由:
+- 「ここまでの消費時間は佐藤４時間７分、淡路３時間１０分。」 → ルール3
+
+手数72:
+
+削除理由:
+- 「２０時１５分頃の局面。」 → ルール3
+- 「消費時間は佐藤３時間３６分、淡路３時間１７分。」 → ルール3
+
+手数74:
+
+削除理由:
+- 「消費時間は佐藤５時間１分、淡路３時間１７分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２１時半頃の局面。」 → ルール3
+- 「残り時間は佐藤３４分、淡路２時間１９分。」 → ルール3
+
+手数84:
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「残り時間は佐藤２０分、淡路２時間９分。」 → ルール3
+
+手数101:
+
+削除理由:
+- 「２２時半頃の局面。」 → ルール3
+- 「残り時間は佐藤７分、淡路２時間０分。」 → ルール3
+
+手数111: 鬼手。
+
+削除理由:
+
+手数117:
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「残り時間は佐藤４分、淡路１時間３８分。」 → ルール3
+
+手数141:
+
+削除理由:
+- 「終了時刻は２３時２２分。」 → ルール3
+- 「消費時間は佐藤５時間５８分、淡路４時間３４分。」 → ルール3
+- 「勝った佐藤、敗れた淡路は、ともに５勝２敗となった。」 → ルール4

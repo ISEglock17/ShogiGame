@@ -1,0 +1,98 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Okay, so I've got a user requesting some work on shogi game commentary data.  Essentially, they want me to refine the comments found within these game records.  The goal is pretty clear: get rid of the fluff.  I need to strip out all the extraneous details that don't directly contribute to the *actual* analysis of the game. That means eliminating metadata, any personal introductions to the players, time stamps, and anything else that's not directly related to the position on the board or the specific move being made.
+
+It's about distilling the commentary down to its essence – just the explanations of the board state and the reasoning behind each move, presented in a clear and flowing narrative.  My process will involve carefully analyzing each comment, applying a set of well-defined rules to identify what needs to be removed.  I'll need to be precise, ensuring that I maintain the natural flow of the commentary while discarding the irrelevant portions. This refined data will be far more useful for in-depth analysis of the game's strategies.
+
+手数1:
+
+削除理由:
+- 「石川陽生七段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｉｓｉｋａｗａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「藤原直哉六段のプロフィール（日本将棋連盟ＨＰ）」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｈｕｚｉｗａｒａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「石川の今期成績は４勝８敗／０．３３３」 → ルール4
+- 「通算成績は４２１勝４１１敗／０．５０６」 → ルール4
+
+手数4:
+
+削除理由:
+- 「藤原の今期成績は５勝９敗／０．３５７」 → ルール4
+- 「通算成績は３５２勝３７０敗／０．４８８」 → ルール4
+
+手数7: 先手のノーマル三間飛車に後手が居飛車で対抗する図式に進んでいる。
+
+削除理由:
+- 「石川の」 → ルール1
+- 「藤原が」 → ルール1
+
+手数18:
+
+削除理由:
+- 「１１時過ぎ」 → ルール3
+- 「△３二金までの消費時間は▲石川２５分、△藤原１９分」 → ルール3
+
+手数23: 穴熊模様の後手に対して、先手が足早に銀を繰り出して牽制した。
+
+削除理由:
+- 「石川が」 → ルール1
+- 「この局面で藤原が１６分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲石川１時間３分、△藤原５０分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール3, 7
+
+手数24: △３五歩と取られそうな歩をかわす手もあったが、後手は飛車の横利きを通して筋よく受けた。ただし、自らの角道も止めているので先手はどこかで▲６五歩と突いて角を使いやすくなる。
+
+削除理由:
+- 「藤原は」 → ルール1
+
+手数26: 中央からさばきを狙う先手に対して柔らかく角を引いて受けた。
+
+削除理由:
+- 「」 →
+
+手数28: 目障りな４五の銀を追い払いに行く。
+
+削除理由:
+- 「１４時過ぎ△３三桂までの消費時間は▲石川１時間１８分、△藤原１時間３０分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１５時過ぎ△８四飛までの消費時間は▲石川１時間５９分、△藤原１時間３７分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１６時過ぎ△６四歩までの消費時間は▲石川２時間２５分、△藤原２時間２０分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１７時過ぎ△６四角までの消費時間は▲石川２時間５６分、△藤原２時間４８分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「この局面で石川が１５分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲石川３時間２０分、△藤原３時間３０分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール3, 7
+
+手数63:
+
+削除理由:
+- 「２０時過ぎ▲６二歩までの消費時間は▲石川４時間１分、△藤原３時間５０分。」 → ルール3
+
+手数81: 駒の損得はなく、まだ寄せの段階ではないが、次に飛車の成り込みを見せられ△６四歩と受けても「と金」を活用されては受けが利かない。攻防ともに見込みがなく投了やむなし。
+
+削除理由:
+- 「この局面で藤原は６分考えたが、次の手を指さずに投了を告げた。」 → ルール3
+- 「終局時刻は２１時２５分、消費時間は▲石川４時間３５分、△藤原４時間２５分。」 → ルール3
+- 「勝った石川は１敗を堅持、藤原は２勝４敗。」 → ルール4

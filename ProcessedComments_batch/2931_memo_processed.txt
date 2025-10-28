@@ -1,0 +1,132 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. The goal is clear: strip out all the fluff that's not directly about the game itself.  I'm talking about getting rid of all the extraneous stuff - the metadata, player intros, time stamps, you name it. It's all noise I need to filter out.  What I'm left with should be pure, insightful commentary on the board state and the moves being made.
+
+My process will be straightforward. First, I'll need a set of solid rules to identify what gets the axe.  I'll analyze the comments, based on my understanding of what's crucial to Shogi analysis and what's just extra verbiage. Then, I'll systematically remove any information that falls outside of those criteria. After that, I'll work my magic to refine the remaining text and get it into a natural-sounding, easy-to-digest format. It has to make sense on its own, independent of the removed material. It's all about making the data ready for some serious analysis.
+
+手数13: 居玉のまま、石田流を目指す。
+
+削除理由:
+
+手数22: 後手は居飛車穴熊。
+
+削除理由:
+- 「飯島は」 → ルール1
+
+手数23: 
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は小倉１５分、飯島２４分。」 → ルール3
+
+手数28: ▲９五角の筋を消し、△８四飛と浮く準備。
+
+削除理由:
+- 「△９四歩の局面で小倉が１６分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は小倉５１分、飯島１時間５分。」 → ルール3
+
+手数35: 角筋を通す。前手で▲２八玉と入城したのは、将来△６六角の筋が王手にならないようにする必須の一手。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は小倉１時間１５分、飯島１時間２５分。」 → ルール3
+
+手数36: 慎重に指す。
+
+削除理由:
+- 「４１分の長考。」 → ルール3
+
+手数37: 
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は小倉１時間２５分、飯島２時間６分。」 → ルール3
+
+手数38: 銀を４二にくっつけて固める構想。
+
+削除理由:
+- 「３６分の長考。」 → ルール3
+
+手数41: ▲６五歩から▲７四歩では後手の角が７七の桂馬に当たってくる。▲７四歩から▲６五歩と逆に突いていくのが手順。これなら△同飛▲同飛と飛車交換になったとき桂馬が当たっていない。
+
+削除理由:
+
+手数44: ▲７四飛から▲７二飛成に△７三飛とぶつける手を見せた逃げ場所。△８二飛では反撃できないし、▲６四歩も取る一手になる。
+
+削除理由:
+- 「１６時２０分の局面。」 → ルール3
+- 「消費時間は小倉１時間５８分、飯島２時間５４分。」 → ルール3
+
+手数49: 
+
+削除理由:
+- 「１７時３０分前の局面。」 → ルール3
+- 「消費時間は小倉２時間３４分、飯島３時間２３分。」 → ルール3
+
+手数50: 
+
+削除理由:
+- 「△７三飛の局面で小倉が３６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は小倉３時間１０分、飯島３時間４６分。」 → ルール3
+
+手数54: 飛車交換になった。
+
+削除理由:
+
+手数57: 攻防の飛車打ち。後手は先手の桂馬が取れないのがつらいところ。
+
+削除理由:
+
+手数64: と金を犠牲に角をさばく。
+
+削除理由:
+
+手数67: 取った駒を打ち付けていく。
+
+削除理由:
+
+手数69: 駒得の先手か、鉄壁の後手か。
+
+削除理由:
+- 「２０時の局面。」 → ルール3
+- 「消費時間は小倉３時間４０分、飯島４時間４分。」 → ルール3
+
+手数70: 先手の駒得だが、駒得の感じがしない。
+
+削除理由:
+- 「、と控え室」 → ルール1, 6
+
+手数75: △３六歩▲同歩△５五角や△５四香の筋を受ける。
+
+削除理由:
+
+手数77: 
+
+削除理由:
+- 「２１時１５分の局面。」 → ルール3
+- 「消費時間は小倉３時間５４分、飯島４時間５２分。」 → ルール3
+- 「「飯島君が苦しそうな気がするなあ」と片上五段。」 → ルール1
+
+手数81: ▲４五歩は角筋が開いてまずい。
+
+削除理由:
+
+手数87: 依然として、先手良しと見られている。先手は「と金の遅早」で攻めていく。
+
+削除理由:
+- 「小倉良しと見られている。」 → ルール1
+- 「小倉は」 → ルール1
+
+手数93: 
+
+削除理由:
+- 「２２時１０分の局面。」 → ルール3
+- 「残り時間は小倉１時間５０分、飯島２７分。」 → ルール3
+
+手数100: 金銀３枚を持って迫っていく。
+
+削除理由:
+
+手数106: 形を乱してから手を戻す。実戦的な指し方だ。大変な形勢のようだ。
+
+削除理由:

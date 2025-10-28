@@ -1,0 +1,140 @@
+**Focusing the Lens: Refining Shogi Commentary for Analysis**
+
+Okay, so the user wants me to clean up shogi commentary, and I think I know what they're aiming for. It's that familiar feeling, the need to distill things down to their essence. They want to strip away all the fluff – the metadata, the bios, the time stamps – and leave only the crucial bits: the board state and the *why* behind each move. They essentially want me to create focused, insightful commentary.
+
+I get it. When you're really diving into a game, you don't want to wade through irrelevant details. You want the raw analysis, presented in a clear, flowing narrative. So, my task is to surgically remove the noise and reshape the remaining text into something that reads smoothly, like a natural explanation of the game's progression. It's all about streamlining the thought process, helping the user to connect with the underlying strategy more effectively. I can definitely see how that would be valuable.
+
+手数14: ようやくにして態度を明らかにしたようだが、まだ居飛車、振り飛車、どちらにもできる。
+
+削除理由:
+- 削除対象なし
+
+手数18:
+
+削除理由:
+- 「ここまでの消費時間は橋本１０分、南１３分。」 → ルール3
+
+手数30: 右玉に。
+
+削除理由:
+- 削除対象なし
+
+手数31:
+
+削除理由:
+- 「１１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は橋本２６分、南３４分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は橋本１時間０分、南４９分。」 → ルール3
+- 「昼食の注文は両者ともになし。」 → ルール7
+
+手数35: 先手の作戦はしゃがみ矢倉。対右玉に有効とされる構えのひとつだ。
+
+削除理由:
+- 「１３時、対局再開。」 → ルール3, 7
+- 「橋本」 → 先手への置換
+
+手数41:
+
+削除理由:
+- 「１３時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は橋本１時間４分、南１時間１４分。」 → ルール3
+
+手数42: 金を出る。形にとらわれない着想だ。
+
+削除理由:
+- 「３２分考えて、」 → ルール3
+- 「ぐいっと」 → 自然な文への整形のため
+
+手数44: なおも強気に。
+
+削除理由:
+- 削除対象なし
+
+手数45: 決戦を前に、玉を深く囲う。
+
+削除理由:
+- 「ここまでの消費時間は橋本１時間８分、南１時間４６分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１時間６分の長考。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「１６時前の局面。」 → ルール3
+- 「ここまでの消費時間は橋本１時間３１分、南２時間５２分。」 → ルール3
+
+手数48: 連続長考で、３二金がここまで出てきた。
+
+削除理由:
+- 「南、この一手に５８分。」 → ルール1, 3
+
+手数65: 形勢は大きく先手よしなようだ。
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「橋本」 → 先手への置換
+- 「消費時間は橋本１時間５２分、南４時間５０分。」 → ルール3
+- 「夕食の注文は両者ともになし。」 → ルール7
+
+手数76: 先手陣も削られる形となったが。
+
+削除理由:
+- 削除対象なし
+
+手数77: 痛烈な王手。
+
+削除理由:
+- 「ここまでの消費時間は橋本２時間２分、南５時間３分。」 → ルール3
+
+手数86: 先手が勝ちそうな流れだが、さて具体的にどうするか。有力手は▲８六同歩か▲２二飛成。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「橋本」 → 先手への置換
+- 「残り時間は橋本３時間５６分、南３７分。」 → ルール3
+
+手数87:
+
+削除理由:
+- 「残り時間が充分ある橋本、ここで５１分を使った。」 → ルール1, 3
+
+手数88: 検討されていた強防。一息つけば△８七歩成が残っている。
+
+削除理由:
+- 削除対象なし
+
+手数94:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「残り時間は橋本３時間１分、南３６分。」 → ルール3
+
+手数106: 打ち歩詰の形。
+
+削除理由:
+- 削除対象なし
+
+手数107: 落ち着いて飛車を取る。
+
+削除理由:
+- 「残り時間は橋本２時間３１分、南３４分。」 → ルール3
+
+手数108: 後手は角を出て、退路を開く。
+
+削除理由:
+- 「南は１９分で」 → ルール1, 3
+- 「残りは１５分。」 → ルール3
+- 「橋本はまた時間を使って考えている。」 → ルール1, 3
+
+手数109: 飛車を打つ。王手角取り。
+
+削除理由:
+- 「３７分で」 → ルール3

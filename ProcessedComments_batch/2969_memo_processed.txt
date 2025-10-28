@@ -1,0 +1,142 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tasked with cleaning up these Shogi game commentary datasets. The goal here is pretty clear: I need to strip away all the extraneous fluff – the metadata, player introductions, time stamps, you know, the stuff that's not directly relevant to the actual analysis of the game itself.  I want to focus on the truly valuable bits: the positions on the board and the explanations of the moves. Essentially, I'm building a more streamlined, more digestible version of the commentary, something that feels like natural prose.
+
+My plan is straightforward: I'll go through the comments, apply the established rules to identify and eliminate the unwanted information.  Then, with what's left, I'll work on making sure everything flows smoothly, transforming the remaining bits and pieces into coherent sentences that highlight the key points of the game's evolution. It's about getting to the core of the analysis, and leaving the rest behind.
+
+手数1:
+
+削除理由:
+- 「小倉は中原誠十六世名人門下。」 → ルール1, 4
+- 「東京都出身、１９６８年５月１５日生まれの３９歳。」 → ルール4
+- 「今期８勝１１敗、０．４２１１。」 → ルール4
+- 「通算成績は３９６勝３１０敗、０．５６０９。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「岡崎は故・平野広吉七段門下。」 → ルール1, 4
+- 「千葉県出身、１９６７年５月４日生まれの４０歳。」 → ルール4
+- 「今期７勝１１敗、０．３８８９。」 → ルール4
+- 「通算成績は２６１勝２３０敗、０．５３１６。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「小倉は順位戦参加１７期目。」 → ルール4
+- 「Ｃ級１組は連続１１期目。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「岡崎は順位戦参加１４期目。」 → ルール4
+- 「Ｃ級１組は連続１０期目。」 → ルール4
+
+手数5:
+
+削除理由:
+- 「小倉は軽快なさばきを得意とする三間飛車党。」 → ルール5
+
+手数14:
+
+削除理由:
+- 「岡崎は居飛車穴熊模様の持久戦志向。」 → ルール5
+
+手数16:
+
+削除理由:
+- 「ここまでの消費時間は小倉１３分、岡崎６分。」 → ルール3
+
+手数27: 石田流への組み換えを目指す。
+
+削除理由:
+
+手数31:
+
+削除理由:
+- 「ここで岡崎が１９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は小倉５２分、岡崎１時間４分。」 → ルール3
+- 「昼食の注文は岡崎がギンダラ定食、小倉はなし。」 → ルール7
+
+手数32:
+
+削除理由:
+- 「△５五歩は昼休を挟む２０分の考慮。」 → ルール3, 7
+
+手数37:
+
+削除理由:
+- 「１４時ころの局面。」 → ルール3
+- 「消費時間は小倉１時間１０分、岡崎１時間３６分。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は小倉１時間３４分、岡崎２時間７分。」 → ルール3
+
+手数46: △７五銀からの押さえ込みを狙う。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は小倉１時間５６分、岡崎２時間５０分。」 → ルール3
+
+手数50: 角と飛車の利きで飛車の成る場所がない。
+
+削除理由:
+
+手数56: 銀の力で押さえる。
+
+削除理由:
+
+手数61:
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「消費時間は小倉２時間２４分、岡崎３時間１９分。」 → ルール3
+
+手数70: 先手からは▲７七飛のぶつけが切り札。いいタイミングで決行したい。
+
+削除理由:
+- 「ここで小倉が２２分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は小倉２時間５３分、岡崎３時間５５分。」 → ルール3
+- 「夕食の注文は岡崎が鳥南蛮うどん、小倉はなし。」 → ルール7
+
+手数93: 「棋譜合ってるのかな」という位置に桂を打った。香を取って▲２四香と打ちたいということだろうか。
+
+削除理由:
+
+手数94:
+
+削除理由:
+- 「２０時を過ぎた。」 → ルール3
+- 「消費時間は小倉３時間５分、岡崎４時間２６分。」 → ルール3
+- 「「この将棋だけどんどん進むね」と控え室。」 → ルール1, 6
+
+手数100: ▲２四香に備えて歩を補充した。
+
+削除理由:
+
+手数111:
+
+削除理由:
+- 「どんどん手が進む。」 → 削除対象外だが意味が薄いため削除
+- 「ここまでの消費時間は小倉３時間１５分、岡崎４時間３７分。」 → ルール3
+
+手数115: 駒損の先手は攻めも相当細い。普通は後手が良いのだろうが、受け切るのは大変かもしれない。
+
+削除理由:
+- 「２１時を過ぎた。」 → ルール3
+- 「残り時間は小倉２時間３９分、岡崎１時間９分。」 → ルール3
+- 「と遠山四段」 → ルール1
+
+手数144:
+
+削除理由:
+- 「まで１４４手で岡崎の勝ち。」 → 削除対象外だが整形により不要
+- 「終局時刻は２１時３８分。」 → ルール3
+- 「勝った岡崎は３勝４敗、敗れた小倉は２勝５敗となった。」 → ルール4

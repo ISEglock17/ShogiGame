@@ -1,0 +1,129 @@
+**My Approach to Refining Shogi Commentary**
+
+Okay, so I'm tackling this shogi commentary cleanup task. The user wants me to go through these game data comments and really refine them. The goal here is pretty straightforward: get rid of all the fluff – any meta-information, player introductions, time stamps, you name it – and leave behind only the actual analysis of the board position and the moves being played. I need to make sure the remaining text flows naturally as a coherent explanation.
+
+My process will be pretty clear. First, I'll establish a solid set of rules to determine what's on the chopping block. Then, armed with those rules, I'll go through each comment, ruthlessly removing anything that's not directly related to the actual game analysis. Finally, once I've got a clean slate, I'll work to rephrase and structure the remaining insights into clear, natural sentences. This way the user gets concise, insightful, and easily digestible commentary.
+
+手数16: 相掛かりになった。
+
+削除理由:
+- 「淡路は序盤に長考することが多いが、今日はまだ１分しか使っていない。」 → ルール1, 3, 5
+
+手数29: 
+
+削除理由:
+- 「この局面で藤原が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路３３分、△藤原１時間２７分。」 → ルール3
+
+手数31: 
+
+削除理由:
+- 「１時間５分の長考。」 → ルール3
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲淡路１時間３８分、△藤原１時間２８分。」 → ルール3
+
+手数36: 
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路２時間２９分、△藤原２時間９分。」 → ルール3
+
+手数41: 
+
+削除理由:
+- 「１７時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３時間１７分、△藤原２時間４１分。」 → ルール3
+
+手数43: 
+
+削除理由:
+- 「この局面で藤原が１７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲淡路３時間１７分、△藤原３時間４６分。」 → ルール3
+
+手数55: 
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路３時間３０分、△藤原４時間２１分。」 → ルール3
+
+手数64: 取ると△５五角の王手飛車。
+
+削除理由:
+
+手数79: 
+
+削除理由:
+- 「２２時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲淡路４時間１６分、△藤原５時間３８分。」 → ルール3
+
+手数94: ▲６四歩に△５三銀右（左）が厳しいと見られている。
+
+削除理由:
+
+手数96: 角の利きがあるため、▲同歩成とはできない。先手は入玉が難しそうだ。
+
+削除理由:
+- 「さすがの不倒流・淡路でも」 → ルール1, 5
+
+手数100: 王手飛車。
+
+削除理由:
+
+手数104: △５三桂以下の詰めろ。
+
+削除理由:
+
+手数106: 
+
+削除理由:
+- 「２３時ごろの局面。」 → ルール3
+- 「消費時間は▲淡路４時間３２分、△藤原５時間５６分。」 → ルール3
+
+手数114: ▲同飛成は△８三桂の一手詰がある。
+
+削除理由:
+
+手数115: 飛車を取れず、銀取りも防がなければならないので▲７二銀不成。しかしこれで先手玉が相当安全になってきた。
+
+削除理由:
+- 「飛車を取れない」 → 指し手の解説として自然にするため整形
+- 「なので」 → 指し手の解説として自然にするため整形
+
+手数118: 
+
+削除理由:
+- 「藤原はここから一分将棋。」 → ルール1, 3
+
+手数119: 
+
+削除理由:
+- 「「大丈夫なの！？」と驚きの声があがる。」 → ルール1
+
+手数120: 
+
+削除理由:
+- 「残り時間は淡路１時間１３分、藤原１分。」 → ルール1, 3
+
+手数135: これは危険とされていた。△６三銀引があるが、９一馬が浮いている。▲８三桂として馬にひもをつけながら７一にも利かすのが有力だった。
+
+削除理由:
+
+手数137: 強く取った。
+
+削除理由:
+
+手数138: 入玉できるかと思われていたが、一気に混戦模様になった。
+
+削除理由:
+
+手数154: ▲７四同龍は△８二金以下の詰み。先手玉がついに捕まったか。
+
+削除理由:
+- 「不倒流、ついに捕まったか。」 → ルール5, 対局者の棋風に関する表現のため削除し、整形
+
+手数160: ▲７一同玉は△６二銀以下の即詰み。先手はここで投了した。
+
+削除理由:
+- 「淡路はここで投了した。」 → ルール1
+- 「消費時間は▲淡路５時間３分、△藤原５時間５９分。」 → ルール3
+- 「勝った藤原は５勝２敗、敗れた淡路は３勝４敗となった。」 → ルール4

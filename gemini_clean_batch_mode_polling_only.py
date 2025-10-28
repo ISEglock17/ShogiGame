@@ -558,145 +558,170 @@ def process_shogi_json(client, json_data, base_name: str, jsonl_directory: str) 
     
     
 def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval: int = 10, timeout: int = 30,) -> list:
-    memo_lines = []
-    processed_lines = []
-    
-    
-    # プーリングでバッチの完了を待つ
-    poll_interval = int(os.environ.get('BATCH_POLL_INTERVAL', poll_interval))  # seconds
-    poll_timeout = int(os.environ.get('BATCH_POLL_TIMEOUT', timeout))  # seconds, default 30 min
-    elapsed = 0 # 経過時間
-    batch_name = batch_job_name
-    print(f"{base_name}のバッチステータスを {poll_interval}秒ごとに調べます。 (タイムアウトは {poll_timeout}秒後)")
-    final_batch = None
-    
-    # エラーが出たものを一時的にスキップするための早期リターン
-    """
-    if base_name == '10730_memo':
-        return processed_lines, memo_lines  # テスト用に早期リターン
-    """
+    # バッチジョブのコスト記録用
+    import csv, os
+
+    output_file = "gemini_usage_log.csv"
+    write_header = not os.path.exists(output_file)
+
+    with open(output_file, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if write_header:
+            writer.writerow([
+                "batch_id", "key", "input_tokens", "output_tokens", 
+                "thinking_tokens", "total_tokens", "cost_usd", "cost_jpy"
+            ])
+    # コスト記録ここまで---------------------------------------
         
-    while elapsed < poll_timeout:
-        try:
-            current = client.batches.get(name=batch_name)
-        except Exception as e:
-            print(f"警告: バッチステータスの取得に失敗 {e}")
-            current = None
+        memo_lines = []
+        processed_lines = []
+        
+        
+        # プーリングでバッチの完了を待つ
+        poll_interval = int(os.environ.get('BATCH_POLL_INTERVAL', poll_interval))  # seconds
+        poll_timeout = int(os.environ.get('BATCH_POLL_TIMEOUT', timeout))  # seconds, default 30 min
+        elapsed = 0 # 経過時間
+        batch_name = batch_job_name
+        print(f"{base_name}のバッチステータスを {poll_interval}秒ごとに調べます。 (タイムアウトは {poll_timeout}秒後)")
+        final_batch = None
+        
+        # エラーが出たものを一時的にスキップするための早期リターン
+        """
+        if base_name == '10730_memo':
+            return processed_lines, memo_lines  # テスト用に早期リターン
+        """
             
-        completed_states = set([
-            'JOB_STATE_SUCCEEDED',
-            'JOB_STATE_FAILED',
-            'JOB_STATE_CANCELLED',
-            'JOB_STATE_EXPIRED',
-        ])
-
-        if current is not None:
-            state = current.state.name
-            print(f"バッチ名 {batch_name} ステータス: {state}")
-            if state in completed_states:
-                final_batch = current
-                break
-
-        time.sleep(poll_interval)
-        elapsed += poll_interval
-
-    if final_batch is None:
-        print(f"バッチ名 {batch_name} はタイムアウト時間 {poll_timeout} 秒にて に完了しませんでした。")
-        # Save last known status for inspection
-        try:
-            status_snapshot = client.batches.get(name=batch_name)
-            memo_lines.append("=== タイムアウト時のバッチステータス ===")
-            memo_lines.append(_json.dumps(status_snapshot.__dict__, default=str, ensure_ascii=False, indent=2))
-        except Exception as e:
-            memo_lines.append(f"バッチステータスの取得に失敗: {e}")
-        return processed_lines, memo_lines
-
-    # Attempt to extract outputs from the final batch object
-    memo_lines.append(f"=== バッチの最終結果: {batch_name} ===")
-    if state == 'JOB_STATE_SUCCEEDED':
-
-        # If batch job was created with a file
-        if current.dest and current.dest.file_name:
-            # Results are in a file
-            result_file_name = current.dest.file_name
-            print(f"Results are in file: {result_file_name}")
-
-            print("Downloading result file content...")
-            file_content = client.files.download(file=result_file_name)
-            # Process file_content (bytes) as needed
-            # 1. JSON文字列を辞書に変換
-            data = json.loads(file_content.decode('utf-8'))
-            memo_lines.append("=== バッチ出力ファイル内容（JSON） ===")
-            memo_lines.append(_json.dumps(data, ensure_ascii=False, indent=2))
-
-            # 2. "content.parts[].text" をすべて抽出して結合
-            # --- 構造チェック ---
-            if "response" not in data:
-                print(f"❌ 'response'キーが存在しません。data.keys() = {list(data.keys())}")
-                print(_json.dumps(data, ensure_ascii=False, indent=2))
+        while elapsed < poll_timeout:
+            try:
+                current = client.batches.get(name=batch_name)
+            except Exception as e:
+                print(f"警告: バッチステータスの取得に失敗 {e}")
+                current = None
                 
-                input_directory = './ProcessedComments_batch_memo'
-                target_file = os.path.join(input_directory, f"{base_name}.txt")
+            completed_states = set([
+                'JOB_STATE_SUCCEEDED',
+                'JOB_STATE_FAILED',
+                'JOB_STATE_CANCELLED',
+                'JOB_STATE_EXPIRED',
+            ])
 
-                if os.path.exists(target_file):
-                    try:
-                        os.remove(target_file)
-                        print(f"🗑️ {target_file} を削除しました。")
-                    except Exception as e:
-                        print(f"⚠️ ファイル削除中にエラーが発生しました: {e}")
-                else:
-                    print(f"⚠️ 削除対象のファイルが存在しません: {target_file}")
+            if current is not None:
+                state = current.state.name
+                print(f"バッチ名 {batch_name} ステータス: {state}")
+                if state in completed_states:
+                    final_batch = current
+                    break
+
+            time.sleep(poll_interval)
+            elapsed += poll_interval
+
+        if final_batch is None:
+            print(f"バッチ名 {batch_name} はタイムアウト時間 {poll_timeout} 秒にて に完了しませんでした。")
+            # Save last known status for inspection
+            try:
+                status_snapshot = client.batches.get(name=batch_name)
+                memo_lines.append("=== タイムアウト時のバッチステータス ===")
+                memo_lines.append(_json.dumps(status_snapshot.__dict__, default=str, ensure_ascii=False, indent=2))
+            except Exception as e:
+                memo_lines.append(f"バッチステータスの取得に失敗: {e}")
+            return processed_lines, memo_lines
+
+        # Attempt to extract outputs from the final batch object
+        memo_lines.append(f"=== バッチの最終結果: {batch_name} ===")
+        if state == 'JOB_STATE_SUCCEEDED':
+
+            # If batch job was created with a file
+            if current.dest and current.dest.file_name:
+                # Results are in a file
+                result_file_name = current.dest.file_name
+                print(f"Results are in file: {result_file_name}")
+
+                print("Downloading result file content...")
+                file_content = client.files.download(file=result_file_name)
+                # Process file_content (bytes) as needed
+                # 1. JSON文字列を辞書に変換
+                data = json.loads(file_content.decode('utf-8'))
+                print(data)
+                memo_lines.append("=== バッチ出力ファイル内容（JSON） ===")
+                memo_lines.append(_json.dumps(data, ensure_ascii=False, indent=2))
+
+                # 2. "content.parts[].text" をすべて抽出して結合
+                # --- 構造チェック ---
+                if "response" not in data:
+                    print(f"❌ 'response'キーが存在しません。data.keys() = {list(data.keys())}")
+                    print(_json.dumps(data, ensure_ascii=False, indent=2))
+                    
+                    input_directory = './ProcessedComments_batch_memo'
+                    target_file = os.path.join(input_directory, f"{base_name}.txt")
+
+                    if os.path.exists(target_file):
+                        try:
+                            os.remove(target_file)
+                            print(f"🗑️ {target_file} を削除しました。")
+                        except Exception as e:
+                            print(f"⚠️ ファイル削除中にエラーが発生しました: {e}")
+                    else:
+                        print(f"⚠️ 削除対象のファイルが存在しません: {target_file}")
+                    
+                    client.batches.delete(name=batch_name)                
+                    
+                    return processed_lines, memo_lines
+                    
+                    raise KeyError("'response'キーが存在しません")
+
+                if "candidates" not in data["response"]:
+                    print(f"❌ 'response.candidates'が存在しません。")
+                    print(_json.dumps(data, ensure_ascii=False, indent=2))
+                    raise KeyError("'response.candidates'が存在しません")
                 
-                client.batches.delete(name=batch_name)                
                 
-                return processed_lines, memo_lines
+                texts = []
+                for candidate in data["response"]["candidates"]:
+                    if "content" in candidate and "parts" in candidate["content"]:
+                        for part in candidate["content"]["parts"]:
+                            if "text" in part:
+                                texts.append(part["text"])
+
+                # 3. 複数ある場合は結合（\n区切りなど）
+                result = "\n".join(texts)
+
+                # 4. 出力
+                processed_lines.append(result)
                 
-                raise KeyError("'response'キーが存在しません")
+                usage = data["response"]["usageMetadata"]
 
-            if "candidates" not in data["response"]:
-                print(f"❌ 'response.candidates'が存在しません。")
-                print(_json.dumps(data, ensure_ascii=False, indent=2))
-                raise KeyError("'response.candidates'が存在しません")
-            
-            
-            texts = []
-            for candidate in data["response"]["candidates"]:
-                if "content" in candidate and "parts" in candidate["content"]:
-                    for part in candidate["content"]["parts"]:
-                        if "text" in part:
-                            texts.append(part["text"])
+                input_tokens = usage["promptTokenCount"]
+                output_tokens = usage["candidatesTokenCount"]
+                thinking_tokens = usage.get("thoughtsTokenCount", 0)
+                total_tokens = input_tokens + output_tokens + thinking_tokens
 
-            # 3. 複数ある場合は結合（\n区切りなど）
-            result = "\n".join(texts)
+                # --- 単価設定（USD） ---
+                price_input_per_million = 0.625
+                price_output_per_million = 5.0
 
-            # 4. 出力
-            processed_lines.append(result)
-            
-            usage = data["response"]["usageMetadata"]
+                # --- コスト計算 ---
+                cost_input = input_tokens / 1_000_000 * price_input_per_million
+                cost_output = (output_tokens + thinking_tokens) / 1_000_000 * price_output_per_million
+                total_cost = cost_input + cost_output
+                total_cost_yen = total_cost * 152  # 為替レート152円/USDで換算（必要に応じて調整）
+                
 
-                        
-            input_tokens = usage["promptTokenCount"]
-            output_tokens = usage["candidatesTokenCount"]
-
-            # --- 単価設定（USD） ---
-            price_input_per_million = 0.625
-            price_output_per_million = 5.0
-
-            # --- コスト計算 ---
-            cost_input = input_tokens / 1_000_000 * price_input_per_million
-            cost_output = output_tokens / 1_000_000 * price_output_per_million
-            total_cost = cost_input + cost_output
-            total_cost_yen = total_cost * 152  # 為替レート152円/USDで換算（必要に応じて調整）
-
-            print(f"Input tokens: {input_tokens}")
-            print(f"Output tokens: {output_tokens}")
-            print(f"Total tokens: {input_tokens + output_tokens}")
-            print(f"Estimated cost: ${total_cost:.6f} (USD)")
-            print(f"Estimated cost: ¥{total_cost_yen:.2f} (JPY)")
-            
-            # 使用済みのバッチジョブを削除する。
-            client.batches.delete(name=batch_name)
-            print(f"削除したバッチジョブ: {base_name}: {batch_name}")
+                print(f"インプット: {input_tokens}")
+                print(f"アウトプット: {output_tokens}")
+                print(f"思考トークン数: {thinking_tokens}")
+                print("------------------------------------------")
+                print(f"トータル: {total_tokens}")
+                print(f"見積コスト: ${total_cost:.6f} (USD)")
+                print(f"見積コスト: ¥{total_cost_yen:.2f} (JPY)")
+                
+                writer.writerow([
+                    base_name, 0, input_tokens, output_tokens, thinking_tokens,
+                    total_tokens, round(total_cost, 6), round(total_cost_yen, 2)
+                ])
+                
+                # 使用済みのバッチジョブを削除する。
+                client.batches.delete(name=batch_name)
+                print(f"削除したバッチジョブ: {base_name}: {batch_name}")
     """
     try:
         # Try common locations for outputs
@@ -752,6 +777,21 @@ def pooling_batch_job(client, base_name: str, batch_job_name: str, poll_interval
     return processed_lines, memo_lines
 
 def main():
+    import os
+    import csv
+
+    output_file = "gemini_usage_log.csv"
+    write_header = not os.path.exists(output_file)  # ファイルがなければヘッダーを書く
+
+    with open(output_file, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if write_header:
+            writer.writerow([
+                "batch_id", "key", "input_tokens", "output_tokens", 
+                "thinking_tokens", "total_tokens", "cost_usd", "cost_jpy"
+            ])
+    
+    
     input_directory = './ProcessedComments_batch_memo'
     output_directory = './ProcessedComments_batch'
     memo_directory = './ProcessedComments_batch_result_memo'

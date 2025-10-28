@@ -1,0 +1,136 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Deeper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. I get it. We've all been there – wading through a sea of extraneous details to find the actual insights. The goal is to strip away all the fluff: the metadata, the introductions, the clock information... anything that doesn't directly relate to the board state or the moves themselves. My mission is to isolate the *core* – the raw, insightful commentary on the plays.
+
+Essentially, I need to methodically go through each comment. I'll need to develop some solid rules for what gets the axe and what stays. Then, with the essential information identified, I need to intelligently rephrase and restructure it. The end product should be a concise, coherent narrative that highlights the strategic nuances of the game, making it far more valuable for any deeper analytical work. It's about turning noise into signal.
+
+手数1:
+
+削除理由:
+- 「菅井の今年度成績は１３勝４敗（０．７６５）。」 → ルール4
+- 「通算成績は１３勝４敗（０．７６５）。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「伊奈の今年度成績は７勝６敗（０．５３９）。」 → ルール4
+- 「通算成績は２０６勝１７０敗（０．５４８）。」 → ルール4
+
+手数3: 先手は初手に▲５六歩と突き、３手目に早くも中飛車に構えた。
+
+削除理由:
+- 「菅井は振り飛車党。石田流とゴキゲン中飛車を得意としている。」 → ルール5
+- 「今期棋士デビューしていきなり６連勝し、注目を集めた。現在も４連勝中。」 → ルール4
+
+手数4: 相手の早い中飛車をみて、後手は相振り飛車を選択した。後手の振り飛車は非常に珍しい。
+
+削除理由:
+- 「伊奈は居飛車党。対振り飛車戦では居飛車穴熊を得意にしている。」 → ルール5
+- 「伊奈」 → ルール1
+
+手数9: 放っておけば▲２六飛が受けづらい。
+
+削除理由:
+
+手数15:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井１３分、△伊奈３８分。」 → ルール3
+- 「この局面で伊奈が１時間１３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲菅井１３分、△伊奈１時間５１分。」 → ルール3
+
+手数23: ３八銀なら美濃囲いだが、こう上がると穴熊の可能性が大きい。
+
+削除理由:
+
+手数25:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井４１分、△伊奈２時間１１分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井１時間２分、△伊奈２時間３４分。」 → ルール3
+
+手数33: 先手は今度は７筋の歩を切りに行く。
+
+削除理由:
+- 「菅井」 → ルール1
+
+手数35:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井１時間３０分、△伊奈３時間０分。」 → ルール3
+
+手数44: 後手は▲８五桂からの端攻めを緩和する。場合によっては銀冠に組み直す狙いだろう。
+
+削除理由:
+- 「伊奈」 → ルール1
+- 「１７時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井１時間４２分、△伊奈３時間５９分。」 → ルール3
+
+手数48: 銀冠への組み換えが完成した。
+
+削除理由:
+
+手数51: 今度は先手が穴熊への組み換えを見せた。
+
+削除理由:
+- 「菅井」 → ルール1
+
+手数54:
+
+削除理由:
+- 「この局面で菅井が９分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「ここまでの消費時間は▲菅井２時間１分、△伊奈４時間５３分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井２時間５８分、△伊奈４時間５３分。」 → ルール3
+
+手数56: 相手の駒を呼び込むが、後手は勝負に出た。
+
+削除理由:
+- 「伊奈」 → ルール1
+
+手数62: ２筋の攻めは穴熊攻略の急所。▲２七同金には△２六角の強襲が利くかもしれない。
+
+削除理由:
+
+手数63:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲菅井３時間０分、△伊奈５時間２７分。」 → ルール3
+
+手数65: 手抜きもすごいがこの進軍もすごい。
+
+削除理由:
+
+手数69: ここにきて▲５二歩の手裏剣の効果が絶大に成りつつある。
+
+削除理由:
+
+手数75: 先手はここできめに出た。
+
+削除理由:
+- 「菅井」 → ルール1
+
+手数85: この手が詰めろになっているようだ。
+
+削除理由:
+
+手数89: この局面で後手の投了となった。投了図からは△８三同玉に▲７四銀△同玉▲６四飛成△８三玉▲７四銀以下詰みがある。
+
+削除理由:
+- 「伊奈」 → ルール1
+- 「終了時刻は２１時４５分。」 → ルール3
+- 「消費時間は▲菅井３時間２０分、△伊奈５時間５９分。」 → ルール3
+- 「勝った菅井は２勝２敗、敗れた伊奈は１勝３敗となった。」 → ルール4

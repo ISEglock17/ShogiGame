@@ -1,0 +1,103 @@
+**Structuring & Cleaning Up Those Game Comments**
+
+Okay, so I've got a user who wants me to clean up and structure some Shogi game commentary. I get it, they probably want to focus on the key insights from a game, not just every little detail. The goal is to strip out the fluff – the stuff that's not directly related to the board position or the moves themselves – and leave behind a clear, concise narrative of the game's progress and the reasoning behind each move.
+
+My process will be straightforward: I'll carefully go through the comments, following a pre-defined set of rules to identify and remove all the unnecessary information. Once I've got a cleaned-up version, I'll work on making sure the remaining commentary reads smoothly and naturally, like a professional analysis. Finally, I'll output the structured commentary in whatever format the user specified – keeping everything organized and easy to digest. That should give them the concise analysis they need.
+
+手数4: 指し直し局でも後手は中飛車志向の出だし。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数13: ここでこの歩を突くのが流行手順の駒組み。▲４六銀の形を早めに作って後手の態度をみてから指し手を決める作戦だ。
+
+削除理由:
+- 削除対象なし
+
+手数14: 後手は少し早い感じのタイミングで金を上がった。穴熊を誘っているのだろうか。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数25: 先手は穴熊を視野に入れながら駒組みを進めてるようだ。
+
+削除理由:
+- 「高野」 → ルール1
+
+手数26:
+
+削除理由:
+- 「２２時３０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５時間５分、△長沼４時間１７分。」 → ルール3, 1
+
+手数27: やはり穴熊。指し直し局で時間が短い為、玉をできるだけ固めておきたい。
+
+削除理由:
+- 削除対象なし
+
+手数29: 穴熊の駒組みを進めると思いきや、先手は突然開戦した。△４五歩と二つ目の位を取られるのを嫌ったのかもしれない。
+
+削除理由:
+- 「高野」 → ルール1
+
+手数36: 後手は千日手局は向かい飛車〜中飛車、指し直し局では中飛車〜向かい飛車と、飛車を大きく使っている。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数37: 先手は揺さぶりをかける。後手が△４二角と６四の歩を受けても、▲６五歩〜▲７七桂と攻めかかる順がありそうだ。
+
+削除理由:
+- 「高野」 → ルール1
+
+手数43: △同歩は▲４二角成から▲３一角成がある。
+
+削除理由:
+- 「２３時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５時間２５分、△長沼４時間２２分。」 → ルール3, 1
+
+手数44: 形は△３四歩だが、後手は△３三歩と低く受けた。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数46: 後手は歩を取り払いに行った。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数54: 後手は押さえ込まれる前にさばきで勝負に出たい。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数59: △２二飛なら▲６四歩が痛そうだ。
+
+削除理由:
+- 削除対象なし
+
+手数62: 後手は渋く傷を消した。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数64:
+
+削除理由:
+- 「２３時４５分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲高野５時間３１分、△長沼４時間４９分。」 → ルール3, 1
+
+手数66: 利かされだが▲３一歩成を許すと悪いとみて後手は辛抱した。
+
+削除理由:
+- 「長沼」 → ルール1
+
+手数69: 手厚く馬を作ったが歩切れも気になるところ。うまく角をいじめながら２四の歩が取れるのが理想だ。
+
+削除理由:
+- 削除対象なし
+
+手数81: 一時は押さえ込まれそうな後手だったが、飛車交換を果たし手番を握ったので、好転を感じてるかもしれない。
+
+削除理由:
+- 「長沼」 → ルール1

@@ -1,0 +1,100 @@
+**Processing Shogi Commentary: My Approach**
+
+Okay, so I'm presented with the task of cleaning up and standardizing these Shogi game commentaries.  Essentially, the user wants me to take this raw, potentially messy data and transform it into something clean and presentable.  This isn't just about deleting stuff; it's about crafting readable, natural sentences.
+
+Here's how I see this playing out: I'll tackle this move-by-move. First, I'll need to dissect each comment, breaking it down to understand what's being said at each stage. Then comes the critical part: identifying those specific phrases or elements that fall under the "delete" rules.  I'll have a clear, rule-based system to follow here, so that should be fairly straightforward.
+
+Once I've identified the "trash," I can remove it. But I can't just leave a bunch of fragments behind.  My next step is to reconstruct the remaining parts into coherent, grammatically sound Japanese sentences. It's about preserving the essence of the comment while eliminating the unnecessary noise.
+
+And finally, to keep things consistent and focused, I'll replace those player names with the generic "Sente" (先手) and "Gote" (後手) – making it clear who's who without cluttering the text with specific names that might not be relevant to the general analysis.  I'll also need to output the cleaned-up comment alongside an explanation of *why* I removed what I did.  This documentation is crucial for transparency and helps track any issues in the analysis. This should ensure the user will be satisfied.
+
+手数6: 持久戦になれば、位を取った分だけ得をする。
+
+削除理由:
+- 「佐藤康光二冠が多用している、端歩突き越し戦法。」 → ルール1, 2, 5
+
+手数9:
+
+削除理由:
+- 「１０時４５分過ぎの局面。」 → ルール3
+- 「消費時間は森２３分、野月１４分。」 → ルール3
+
+手数14:
+
+削除理由:
+- 「△２二飛の局面で森が１時間３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は森１時間３０分、野月３０分。」 → ルール3
+
+手数15:
+
+削除理由:
+- 「昼食休憩を挟んで１時間１１分の長考。」 → ルール3, 7
+
+手数18: これは珍しい手。従来は△５二金右だった（形よく△５二金左は▲２四歩△同歩▲２三歩で失敗）。これは後手の研究手であることがうかがえる。
+
+削除理由:
+- 「ノータイムで指していることから、」 → ルール3
+- 「野月の」 → ルール1
+
+手数26: ▲３二角を防ぐ。見たこともない乱戦になっている。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は森２時間２０分、野月３２分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１５時２０分の局面。」 → ルール3
+- 「消費時間は森２時間２０分、野月１時間３３分。」 → ルール3
+- 「野月は△２五歩に１時間１分の長考。」 → ルール1, 3
+
+手数35: この手が先手の狙っていた手か。後手は馬取りをどう受けるか。
+
+削除理由:
+- 「森の」 → ルール1
+
+手数36:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は森３時間１１分、野月１時間５７分。」 → ルール3
+
+手数38: 玉が薄くなるが、先手の攻め駒は飛角歩の３種類しかない。後手は玉の堅さよりも押さえ込みを狙っている。
+
+削除理由:
+- 「野月は」 → ルール1
+
+手数46: 桂得とと金はどちらの方が価値が高いのだろう。どちらかが良くなっているのは間違いなさそうだ。
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は森４時間５分、野月２時間５分。」 → ルール3
+
+手数57: 玉が飛び出してしまった。
+
+削除理由:
+
+手数60: 激痛。▲７七玉は△６六角で（１）▲８六玉は△３九龍が詰めろ。（２）▲６八玉は△８八角成が王手。
+
+削除理由:
+
+手数62: あっという間に進んでいく。
+
+削除理由:
+
+手数64: ばっさり。▲同金に△６五金▲８五玉△７六銀▲８四玉△７二桂で受けがなさそうだ。
+
+削除理由:
+
+手数72: 左右挟撃の典型的な必至。△３八銀と△５八銀が受からない。ここで先手の投了となった。
+
+削除理由:
+- 「ここで森の投了となった。」 → ルール1
+- 「終局時刻は１８時３分。」 → ルール3
+- 「消費時間は森４時間２４分、野月２時間１１分。」 → ルール3
+- 「勝った野月は１勝１敗、敗れた森は０勝２敗となった。」 → ルール1, 4

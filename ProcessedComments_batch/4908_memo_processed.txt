@@ -1,0 +1,92 @@
+**Cleaning Up My Commentary for Analysis**
+
+Okay, so I'm presented with this real mess of comments from a Shogi game record. The user wants me to clean it up, to streamline it for analysis. My goal, clearly, is to extract the pure, juicy stuff – the insightful commentary on the board state and the moves themselves. Everything else? Gone. Bye-bye.
+
+My approach is straightforward: I'll carefully sift through the comments. I'll have a set of rules – a mental checklist – and I'll use those to identify and discard all the irrelevant fluff.  I'm talking about the metadata, the pre-game introductions, the timestamps, all that noise that just gets in the way of understanding the actual tactical thinking. My focus is laser-sharp: I want the *essence* of the commentary, presented as flowing, meaningful sentences, ready for deeper examination.
+
+手数1:
+
+削除理由:
+- 「永瀬の本年度の成績は１０勝９敗。」 → ルール4
+- 「通算成績は１６勝１３敗（０．５５２）」 → ルール4
+
+手数2:
+
+削除理由:
+- 「増田の本年度の成績は９勝１０敗。」 → ルール4
+- 「通算成績は２３８勝１９１敗（０．５５５）」 → ルール4
+
+手数13:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「消費時間は▲永瀬２９分、△増田７分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「ここで永瀬が１３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬５７分、△増田５６分。」 → ルール3
+- 「昼食の注文は増田が鍋焼きうどん、永瀬が親子丼。」 → ルール7
+
+手数32:
+
+削除理由:
+- 「１４時過ぎの局面。」 → ルール3
+- 「消費時間は▲永瀬１時間１分、△増田１時間５２分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は▲永瀬１時間３１分、△増田２時間６分。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「増田はこの手に１時間９分使った。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１６時１０分頃の局面。」 → ルール3
+- 「消費時間は▲永瀬１時間３６分、△増田３時間１７分。」 → ルール3
+
+手数46:
+
+削除理由:
+- 「１７時１０分頃の局面。」 → ルール3
+- 「消費時間は▲永瀬２時間８分、△増田３時間４１分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「ここで増田が２１分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲永瀬２時間３３分、△増田４時間１４分。」 → ルール3
+- 「夕食の注文は増田が天丼、永瀬は玉子とじうどん。」 → ルール7
+
+手数78:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「消費時間は▲永瀬３時間２分、△増田４時間２５分。」 → ルール3
+
+手数89:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「消費時間は▲永瀬３時間５１分、△増田４時間３８分。」 → ルール3
+
+手数102:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「消費時間は▲永瀬４時間６分、△増田５時間１２分。」 → ルール3
+
+手数117:
+
+削除理由:
+- 「ここで増田が投了した。」 → ルール3
+- 「終了時刻は２３時２分。」 → ルール3
+- 「消費時間は▲永瀬４時間４３分、△増田５時間４１分。」 → ルール3
+- 「勝った永瀬は３勝３敗、敗れた増田は２勝４敗となった。」 → ルール4

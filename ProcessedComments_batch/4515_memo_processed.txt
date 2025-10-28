@@ -1,0 +1,142 @@
+**Refining Commentary in Shogi Data**
+
+Okay, so I'm presented with this Shogi対局 data and the user wants me to clean up the comments within it. It's a pretty straightforward task, really. The goal is to strip away all the extraneous information clogging up the commentary, leaving behind only the concise and insightful explanations of the board state and the moves themselves.
+
+My process will be methodical, of course. First, I need to define the "rules" of what constitutes unnecessary content. Once I have those criteria established, I'll systematically comb through each comment, identifying and eliminating any information that doesn't contribute to a clear understanding of the game's progression. Then comes the more interesting part: ensuring that the remaining fragments of analysis are reassembled into coherent, naturally flowing sentences. The aim is to create a refined commentary that's both informative and easy to read, highlighting only the crucial points.
+
+手数7: 先手は得意の四間飛車に構える。
+
+削除理由:
+- 「室岡」 → ルール1
+
+手数17: 先手が最近数局指している形。通常の美濃囲いとは異なった構えだ。
+
+削除理由:
+- 「室岡」 → ルール1
+
+手数21: 急戦を見せられたら自玉を安全な位置（この場合は３八）へ動かすのが藤井システムを指すコツ。
+
+削除理由:
+- 「藤井」 → ルール1
+
+手数22:
+
+削除理由:
+- 「１１時前の局面。」 → ルール3
+- 「消費時間は室岡７分、松本４３分。」 → ルール3
+- 「ここで室岡が１時間１１分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は室か１時間１８分、松本４３分となった。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「松本が１時間以上考えている。」 → ルール1, 3
+
+手数24:
+
+削除理由:
+- 「１時間２６分の長考で指された。」 → ルール3
+
+手数25:
+
+削除理由:
+- 「２５分の考慮。」 → ルール3
+
+手数30: 部分的には鷺宮定跡と同じ順。
+
+削除理由:
+- 「鷺宮定跡」 → ルール2
+
+手数31:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「消費時間は室岡１時間５８分、松本２時間１０分。」 → ルール3
+
+手数34: ▲８六歩には△７七歩成▲同歩△８六銀が部分的な定跡。
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は室岡２時間２７分、松本２時間５４分。」 → ルール3
+
+手数39: △２二銀などとすれば、▲８四歩で桂を助けられる。
+
+削除理由:
+- 「１７時３０分の局面。」 → ルール3
+- 「消費時間は室岡３時間２分、松本２時間５８分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+
+手数42: 後手はひねった順に出た。△７七銀不成を狙い、▲３三同角成には△同銀と形良く取れる。
+
+削除理由:
+- 「使って夕食休憩に入った。」 → ルール7
+- 「消費時間は室岡３時間２８分、松本３時間３２分。」 → ルール3
+- 「松本」 → ルール1
+
+手数48:
+
+削除理由:
+- 「１９時５０分ごろの局面。」 → ルール3
+- 「消費時間は室岡３時間３３分、松本４時間１２分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「松本はこの手を指して、湯のみ片手に席を立った。」 → ルール1
+
+手数52:
+
+削除理由:
+- 「２１時前の局面。」 → ルール3
+- 「消費時間は室岡４時間１５分、松本４時間３１分。」 → ルール3
+
+手数57: 先手は飛車を押さえ込もうとしている。１筋の位も大きく、金無双が遠い。
+
+削除理由:
+- 「室岡」 → ルール1
+
+手数59: 飛車を押さえ込む。振り飛車良しといわれている。左桂がさばけているのも大きい。
+
+削除理由:
+- 「といわれている」は前例に関する表現と判断し削除 → ルール2
+
+手数61: ▲５六角が成銀取りになる。
+
+削除理由:
+- 「２２時前の局面。」 → ルール3
+- 「残り時間は室岡１時間２０分、松本１時間。」 → ルール3
+
+手数72: こうなって居飛車側が面白くなっているようだ。
+
+削除理由:
+
+手数77: ７四角の利きを避ける。
+
+削除理由:
+
+手数89: 互いに簡単には寄らない玉になっている。
+
+削除理由:
+- 「２３時過ぎからの攻防で、」 → ルール3
+
+手数95:
+
+削除理由:
+- 「０時の局面。」 → ルール3
+- 「残り時間は室岡２５分、松本７分。」 → ルール3
+
+手数96: ２七の地点を狙う。
+
+削除理由:
+
+手数97: ここで後手の投了となった。目ぼしい攻め手がなく、▲６四香や▲７一となどの厳しい攻めが受からない。
+
+削除理由:
+- 「松本」 → ルール1
+- 「終局時刻は０時１０分。」 → ルール3
+- 「消費時間は室岡５時間４２分、松本５時間５９分。」 → ルール3
+- 「勝った室岡、敗れた松本ともに３勝４敗となった。」 → ルール4

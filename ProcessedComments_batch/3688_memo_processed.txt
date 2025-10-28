@@ -1,0 +1,68 @@
+**Initial Assessment: Reformatting Game Commentary**
+
+Okay, so I'm presented with a task: to clean up and reformat some Shogi game commentary. The user wants the information to be presented naturally, essentially removing the extraneous details while retaining the core game-related data. I see a specific set of rules in play here, which is great – it gives me a clear direction to follow.
+
+Looking at the first example, I immediately recognize that some information is being flagged for removal. Specifically, the bit about Nakamura's tardiness and the time penalty is probably extraneous according to the time rule. And then there's the note about the lunch break. This seems like a detail that could easily be cut or summarized better to keep things focused on the game's immediate state.
+
+Based on the rules, my goal is to distill the commentary down to the relevant details. I need to keep the actual moves and timings, which I can see are implied in the given sentence. This is going to be straightforward, really. I just need to figure out the best way to present it.
+
+手数1:
+
+削除理由:
+- 「中村亮は１時間５７分の遅刻で、持ち時間から５時間５１分引かれ、残り９分の状態で対局が開始された。」 → ルール3
+- 「この局面で遠山が１０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村亮５時間５１分、遠山１０分。」 → ルール3
+
+手数21:
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「残り時間は中村亮９分、遠山５時間２０分。」 → ルール3
+
+手数38: ▲７四歩に意表を突かれたか。
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「残り時間は中村亮９分、遠山４時間５分。」 → ルール3
+- 「対局が開始されてからというもの、中村亮はすべてノータイムで飛ばしている。」 → ルール3
+
+手数47:
+
+削除理由:
+- 「中村亮は対局開始後、初めて１分消費した。」 → ルール3
+- 「残り８分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「残り時間は中村亮６分、遠山３時間２１分。」 → ルール3
+
+手数80: △７九飛成は▲２四角が王手飛車。
+
+削除理由:
+- （なし）
+
+手数85:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮３分、遠山２時間２０分。」 → ルール3
+
+手数86: これで先手玉は△４九金▲５七玉△４五桂▲４六玉△３五銀打までの詰めろ。しかし、後手玉は▲５一角成△３二玉▲５二龍△２三玉▲２六香の筋がある。
+
+削除理由:
+- （なし）
+
+手数91: ここで後手が投了。以下△３四玉▲４六桂△４五玉▲５七桂△３五玉▲２四馬までの詰み。
+
+削除理由:
+- 「遠山」 → 先手・後手への置換ルール
+- 「終局時刻は１７時３３分。」 → ルール3
+- 「消費時間は中村亮５時間５７分、遠山３時間４９分。」 → ルール3
+- 「勝った中村亮は５勝５敗、敗れた遠山は４勝６敗で今期順位戦を終えた。」 → ルール4

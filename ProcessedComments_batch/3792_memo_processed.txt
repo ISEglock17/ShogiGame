@@ -1,0 +1,108 @@
+**Structuring Shogi Commentary for Clarity**
+
+Okay, so I'm tasked with refining these Shogi commentary logs. The goal is to distill them into concise, insightful explanations of the game's progress, focusing only on the crucial elements. This means ditching the fluff – the stuff that's not directly related to the board position or the moves themselves.
+
+My process will be methodical. First, I need to meticulously analyze each comment, zeroing in on phrases and sentences that fall under the "delete" category based on the provided rules. This could be anything from unnecessary greetings to extraneous speculation about the players' thoughts.
+
+Once I've identified the dispensable parts, I'll move on to the replacement stage. This involves ensuring consistent naming, replacing generic labels with the appropriate player names. Then, I'll be ready for the final, critical step.
+
+手数9: ▲７七角は△３三角ならそのまま駒組みを進めて手得をはかる意味。
+
+削除理由:
+- 「は１０分の考慮」 → ルール3
+
+手数10: 形は悪いが辛抱。
+
+削除理由:
+- 「佐藤二冠が指した手でもある。」 → ルール1, 2
+
+手数21:
+
+削除理由:
+- 「１１時３０分ころの局面。」 → ルール3
+- 「消費時間は豊島４８分、田中１８分。」 → ルール3, 4
+- 「このまま田中が５０分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は豊島４８分、田中１時間６分。」 → ルール3, 4
+- 「昼食の注文は両者ともになし。」 → ルール7
+- 「雨の中外に出たのだろうか。」 → ルール6
+
+手数28:
+
+削除理由:
+- 「１５時前の局面。」 → ルール3
+- 「消費時間は豊島１時間５７分、田中１時間３７分。」 → ルール3, 4
+
+手数38: 銀をやわらかく組み替えて立て直しを図る。
+
+削除理由:
+
+手数39:
+
+削除理由:
+- 「１６時過ぎの局面。」 → ルール3
+- 「消費時間は豊島２時間５０分、田中１時間５６分。」 → ルール3, 4
+
+手数44: 後手も自陣角を打つ。
+
+削除理由:
+- 「田中」 → 置換ルール
+
+手数45:
+
+削除理由:
+- 「１７時ころの局面。」 → ルール3
+- 「消費時間は豊島３時間１０分、田中２時間２８分。」 → ルール3, 4
+- 「夕食の注文は田中は月見そばと水２リットル。」 → ルール7
+- 「豊島はなし。」 → ルール7
+
+手数52:
+
+削除理由:
+- 「ここで豊島が１４分考えて夕食休憩に入った。」 → ルール3, 4, 7
+- 「消費時間は豊島３時間４８分、田中２時間５８分。」 → ルール3, 4
+
+手数61: 後手は苦しいながらも少しずつ形を整えて力を出しつつあるところという評判。
+
+削除理由:
+- 「２０時ころの局面。」 → ルール3
+- 「残り時間は豊島１時間４３分、田中２時間３８分。」 → ルール3, 4
+- 「「〜ですね」」 → 整形
+
+手数76: 振り飛車対急戦から成功した形のようだ。
+
+削除理由:
+- 「２１時ころの局面。」 → ルール3
+- 「残り時間は豊島１時間２１分、田中２時間１２分。」 → ルール3, 4
+
+手数86:
+
+削除理由:
+- 「２１時３０分ころの局面。」 → ルール3
+- 「残り時間は豊島１時間１４分。田中１時間４５分。」 → ルール3, 4
+- 「「先ほどより難しくなったかもしれないが、後手はいつまでたっても苦しいですね」と控え室。」 → ルール1, 6
+
+手数97: どんどん手が進む。「先手相当負けない形」という評判。
+
+削除理由:
+- 「２２時を過ぎた。」 → ルール3
+- 「残り時間は豊島１時間４分、田中１時間３５分。」 → ルール3, 4
+
+手数101: 金を取って先手大きな駒得に。
+
+削除理由:
+
+手数105:
+
+削除理由:
+- 「２２時３０分ころの局面。」 → ルール3
+- 「残り時間は豊島５５分、田中１時間２１分。」 → ルール3, 4
+- 「田中がしばらく固まっている。」 → 盤面解説ではないため削除
+- 「対局を終えた木下浩一六段が「田中君はどうですか？　勝勢？」と尋ね、「敗勢です」との答えにガッカリした表情をみせた。」 → ルール1
+- 「木下六段にとって田中は同郷でずっとかわいがっていた後輩だ。」 → ルール1
+
+手数123: 先手の勝ち。投了図からは△６二同金▲同金△同玉▲５四桂以下詰み。
+
+削除理由:
+- 「２３時２１分、１２３手で豊島の勝ち。」 → ルール3, 4
+- 「残り時間は豊島５１分、田中３８分。」 → ルール3, 4
+- 「田中は順位戦黒星デビューとなった。」 → ルール4

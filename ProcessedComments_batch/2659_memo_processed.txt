@@ -1,0 +1,103 @@
+**My Approach to Transforming Shogi Commentary**
+
+Okay, so I'm presented with this Shogi commentary snippet, and the user wants me to clean it up and make it sound natural. My goal is to follow their specified rules, removing extraneous information and focusing on the essential elements of the move.
+
+Here's how I'm thinking:
+
+First, I see "手数5: 中村、今度は三間飛車."  I immediately identify that I need to replace "中村" with "先手" based on the provided rule. "今度は" seems a bit redundant in a purely technical description, but it also adds a subtle flavor to the commentary. It feels natural, a human touch, and I'll keep it as the user didn't specify that it must be deleted. Ultimately, I'm aiming for concise yet understandable commentary.
+
+手数5: 先手は、今度は三間飛車。
+
+削除理由:
+- 「中村」 → 置換ルール
+
+手数19: 石田流から主導権を取ろうとする動き。
+
+削除理由:
+- 
+
+手数26:
+
+削除理由:
+- 「１６時４０分の局面。」 → ルール3
+- 「消費時間は中村１時間５１分。」 → ルール3
+- 「小野が２時間４８分。」 → ルール3
+
+手数37: 端桂で揺さぶりをかける。
+
+削除理由:
+- 
+
+手数41: 先手は▲６七銀と引かされた代償に７筋の交換を狙う。
+
+削除理由:
+- 「ここで小野が２０分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村２時間１７分、小野３時間４３分。」 → ルール3
+- 「夕食の注文は中村、小野ともになし。」 → ルール7
+- 「中村は」 → 置換ルール
+
+手数42: 後手は▲７三歩成としてもらいたい。
+
+削除理由:
+- 「小野」 → 置換ルール
+
+手数57: これぞ不思議流の一手。
+
+削除理由:
+- 
+
+手数58: △７二飛からの進行は虚々実々の見ごたえのある応酬。
+
+削除理由:
+- 「２０時３０分の局面。」 → ルール3
+- 「消費時間は中村３時間４分、小野が４時間１４分。」 → ルール3
+
+手数63: 先手が駒損なしで飛車が成れ優勢のようだが、８七の銀が遊んでいてバランスが取れている。
+
+削除理由:
+- 
+
+手数71: 先手は手順に銀を活用した。
+
+削除理由:
+- 「２１時３０分の局面。」 → ルール3
+- 「残り時間は中村２時間３０分、小野、１時間２６分。」 → ルール3
+- 「中村は」 → 置換ルール
+
+手数75: 巧妙な手順で馬を詰ました。
+
+削除理由:
+- 
+
+手数76: 後手も攻防の角打ちで負けていない。
+
+削除理由:
+- 「小野も」 → 置換ルール
+
+手数80: 穴熊が再生した。
+
+削除理由:
+- 
+
+手数85: コビン攻めを米長玉で受ける。
+
+削除理由:
+- 
+
+手数86: 端玉には端歩の格言の通りの一手。
+
+削除理由:
+- 
+
+手数92:
+
+削除理由:
+- 「２２時３０分の局面。」 → ルール3
+- 「残り時間は中村２時間１２分。」 → ルール3
+- 「小野が５６分。」 → ルール3
+
+手数100:
+
+削除理由:
+- 「２３時１５分ごろの局面。」 → ルール3
+- 「残り時間は中村１時間５２分、小野３０分。」 → ルール3

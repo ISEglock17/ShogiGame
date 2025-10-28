@@ -1,0 +1,140 @@
+**Streamlining Commentary for Sharper Insights**
+
+Okay, so I understand the task. The user, another expert in the field of Shogi analysis, wants me to clean up the commentary associated with a game record. The goal is to distill the often-verbose comments into something more concise and focused, extracting only the really valuable information – the key insights into the board state and the reasoning behind each move. It's about removing the noise and highlighting the signal, essentially.
+
+The process is straightforward enough: I'll analyze each comment block, move by move. My expertise in Shogi should allow me to quickly identify and filter out the irrelevant fluff, like casual asides or general observations that don't directly contribute to the analysis of the board position or the player's intentions. I'll need to pay close attention to the specific formatting rules provided, making sure the final product reads smoothly, almost like a direct transcript of a high-level game discussion. It's about presenting a clear, coherent narrative that benefits any serious student of the game.
+
+手数3: 後手得意のゴキゲン中飛車をけん制した手。△５四歩なら▲２二角成△同銀▲５三角△５五角に▲７七桂がある。
+
+削除理由:
+- 「遠山」 → ルール1
+
+手数4: 居飛車を選択した。
+
+削除理由:
+- 「７分考えて」 → ルール3
+
+手数10:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は小林２７分、遠山１１分。」 → ルール3
+
+手数12: △７六飛は▲２二角成△同銀▲６五角でまずい。
+
+削除理由:
+- 
+
+手数14: 頑張った手という印象を与える。これまでは△３二金として相掛かりになっていた。
+
+削除理由:
+- 「同一局面の将棋はなかった。新手ということになる。」 → ルール2
+
+手数17: ▲２四歩△同歩▲同飛は△４五桂で△３五角や△３三角を見せられて危険と見たのだろうか。
+
+削除理由:
+- 
+
+手数21:
+
+削除理由:
+- 「▲３六歩の局面で遠山が３０分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は小林１時間１１分、遠山５５分。」 → ルール3
+- 「昼食の注文は小林がうな重（梅）、遠山がスタミナ焼き定食。」 → ルール7
+
+手数23: ▲２四歩△同歩▲同飛は△２五歩とフタをされる手が気になる。
+
+削除理由:
+- 
+
+手数24: 変わった駒組み。△４二金右で（１）△４一玉なら▲２四歩が成立する。以下△同歩▲同飛△２五歩に▲同桂△２三銀▲３三桂不成が王手になるから。また、（２）△６二銀も▲２四歩以下△２三銀に▲３三桂成△２四銀▲３二成桂で先手良し。△４二金右は▲２四歩に備えているというわけだ。
+
+削除理由:
+- 
+
+手数26:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は小林１時間４５分、遠山５９分。」 → ルール3
+
+手数28: 後手は△４一玉と寄せにくい。
+
+削除理由:
+- 
+
+手数31:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は小林２時間３７分、遠山１時間１７分。」 → ルール3
+
+手数33: 積極的に行った。
+
+削除理由:
+- 「攻めの棋風の小林らしく」 → ルール1, 5
+
+手数38: △２三歩は▲２九飛で次の▲３四歩が受からない。
+
+削除理由:
+- 
+
+手数41:
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は小林２時間４０分、遠山１時間５２分。」 → ルール3
+
+手数42: 手筋の取り方。次の▲２五同桂に手抜きが利く。
+
+削除理由:
+- 「５３分の長考。」 → ルール3
+
+手数47: ２五桂はそのままに駒組みが進む。△２五歩は▲同飛△２四歩▲３五飛のように暴れられるのが後手は気になる。
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は小林３時間７分、遠山３時間１５分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「ここで小林が２３分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は小林３時間３０分、遠山３時間３３分。」 → ルール3
+
+手数56: ▲３六銀に△２九角から△５六角成がある。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は小林３時間３２分、遠山４時間３分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２０時４５分の局面。」 → ルール3
+- 「消費時間は小林４時間７分、遠山４時間１０分。」 → ルール3
+
+手数66:
+
+削除理由:
+- 「２１時１５分ごろの局面。」 → ルール3
+- 「消費時間は小林４時間７分、遠山４時間４３分。」 → ルール3
+
+手数76: ここで先手から攻めがあるかどうか。▲６八金右は△６六歩と桂を取られてしまう。
+
+削除理由:
+- 
+
+手数84:
+
+削除理由:
+- 「２２時４０分の局面。」 → ルール3
+- 「残り時間は小林１時間３分、遠山３６分。」 → ルール3
+
+手数89: ▲６二馬の詰めろが受けにくい。△５三角などは▲８一飛成が詰めろ銀取りだ。
+
+削除理由:
+- 「ここで遠山が６分考えて投了した。」 → ルール1, 3
+- 「終局時刻は２２時５５分。」 → ルール3
+- 「消費時間は小林５時間９分、遠山５時間３０分。」 → ルール3
+- 「勝った小林は３勝０敗、敗れた遠山は０勝３敗となった。」 → ルール1, 4

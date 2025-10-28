@@ -1,0 +1,88 @@
+**Processing Shogi Game Commentary**
+
+Okay, so I'm presented with a Shogi game commentary, and the goal is clear: to streamline this into something useful for serious analysis. I need to strip away all the fluff – the introductions, player bios, time stamps, all that noise – and focus exclusively on the actual moves and insightful commentary about the board state.
+
+Essentially, I'm performing a surgical extraction. I'll read through the text, identify the irrelevant sections based on the provided rules, and excise them. Then, with the core commentary remaining, I'll need to reconstruct it into a smooth, readable format. This involves making sure the remaining sentences flow logically and effectively communicate the key points of each move and its impact on the game. It's about distillation – taking a verbose explanation and reducing it to its essential, analytical components.
+
+手数32:
+
+削除理由:
+- 「１０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕１１分、△広瀬２０分。」 → ルール3
+- 「しばらくして、広瀬が棋士室に降りてきて浦野七段と言葉をかわしていた。詰将棋の話題だろうか。」 → ルール1, 6
+- 「まもなく小林裕が棋士室に姿を見せ、それを目にした広瀬が対局室に戻って行った。」 → ルール1, 6
+
+手数44:
+
+削除理由:
+- 「この局面で先手が２２分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手５１分、△後手５５分。」 → ルール3
+- 「１３時５０分現在、先手が次の手を考慮中。」 → ルール3
+
+手数45:
+
+削除理由:
+- 「１時間１４分の長考だった。」 → ルール3
+
+手数51: 力強く金を上がって行った。
+
+削除理由:
+
+手数52:
+
+削除理由:
+- 「１５時１０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕１時間５１分、△広瀬１時間２４分。」 → ルール3
+
+手数53:
+
+削除理由:
+- 「４４分の長考。」 → ルール3
+
+手数55: 次に▲４五桂と跳ねようとしている。
+
+削除理由:
+
+手数56: ４五を受けた。▲６二銀もありそうだ。
+
+削除理由:
+- 「３９分の長考で」 → ルール3
+- 「１６時半頃の局面。」 → ルール3
+- 「消費時間は▲小林裕２時間３５分、△広瀬２時間５分。」 → ルール3
+
+手数66: △４二同角なら角の利きがそれるので、▲５七金右とできる。金で取ったので、４七金が動きにくい。▲５七金左に△４七銀成▲同金△４六金で後手が優勢とみられている。
+
+削除理由:
+- 「この局面で小林裕が１３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲小林裕３時間４９分、△広瀬２時間５４分。」 → ルール3
+
+手数70: （１）▲６二銀は△５六金▲７八玉△６七金▲同玉△５九飛成▲２一飛成△４八龍のときに後手玉が詰まず、先手勝てない。（２）▲５七銀は△５七同金。（３）▲７八玉△５六飛（△５六金は▲５二歩と叩く筋がある）▲６八銀が、最も粘り強そうだ。
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕３時間５５分、△広瀬３時間２９分。」 → ルール3
+- 「棋士室では鈴木八段や阪口五段らが検討している。」 → ルール1, 6
+- 「検討の中心は本局。先ほどまで居飛車側を持って何度も投了に追い込まれていた鈴木八段が、今度は振り飛車側を持って豪快に決め続けている。」 → ルール1
+
+手数79: これは後手勝ちと言われていた手順と同じだ。
+
+削除理由:
+- 「棋士室で「詰まないので後手勝ち」と言われていた」 → ルール1, 6
+
+手数81: 先手、粘る。
+
+削除理由:
+
+手数82: 後手勝ちとみられている。
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲小林裕４時間５２分、△広瀬３時間４４分。」 → ルール3
+- 「検討陣は後手勝ちと断言。」 → ルール1
+
+手数88: 先手玉はまだ詰まないが、△６五桂▲同歩の効果で後手玉も詰まなくなっているので△５七龍で先手玉は寄り。先手はここで投了した。
+
+削除理由:
+- 「消費時間は▲小林裕４時間５６分、△広瀬３時間４４分。」 → ルール3
+- 「これで両者とも６勝２敗。」 → ルール4
+- 「昇級を目指していた小林裕には大きな黒星がついた。」 → ルール4

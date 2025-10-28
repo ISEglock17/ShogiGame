@@ -1,0 +1,82 @@
+**Focusing the Lens: Refining Shogi Commentary for Analysis**
+
+Okay, so the user wants me to clean up shogi commentary. They've got a pile of text, likely from a game log or something similar, and it's filled with all sorts of extraneous information that's getting in the way of a proper analysis. My task is to strip away the fluff – the metadata, the names, the timestamps, the general chit-chat – and get right down to the meat of the discussion: the board states and the actual moves being made. Essentially, I'm streamlining the commentary for a more focused, computational approach.
+
+The goal is precision. We want to extract only the core elements that are relevant for understanding the flow of the game, the strategic considerations, and the tactical battles that are unfolding. It's about data integrity – ensuring that the information we use for analysis is clean, accurate, and completely devoid of distractions. This means meticulous application of the defined rules, leaving no room for ambiguity.
+
+手数8: 早くも定跡を外れた戦い。
+
+削除理由:
+- 該当なし
+
+---
+手数20:
+
+削除理由:
+- 「ここまでの消費時間は佐藤４１分、真部１３分。」 → ルール3
+
+---
+手数23:
+
+削除理由:
+- 「真部が３８分を使って、ここで昼食休憩。」 → ルール3, 7
+- 「消費時間は佐藤１時間８分、真部５２分。」 → ルール3
+- 「昼食の注文は、真部は冷やし中華。佐藤はなし。」 → ルール7
+
+---
+手数32:
+
+削除理由:
+- 「１４時半前の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤１時間５３分、真部１時間１６分。」 → ルール3
+
+---
+手数39:
+
+削除理由:
+- 「１５時半過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は佐藤２時間３２分、真部１時間５５分。」 → ルール3
+
+---
+手数45:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は佐藤３時間２分、真部２時間４８分。」 → ルール3
+
+---
+手数56:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は佐藤３時間４０分。真部３時間８分。」 → ルール3
+- 「夕食の注文は、真部はしょうが焼き定食。佐藤はなし。」 → ルール7
+
+---
+手数62:
+
+削除理由:
+- 「１９時４０分頃の局面。」 → ルール3
+- 「消費時間は佐藤３時間４１分、真部３時間３４分。」 → ルール3
+
+---
+手数91:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は佐藤４時間２９分、真部４時間１３分。」 → ルール3
+
+---
+手数93: 先手玉は危ないようだが、後続がない。
+
+削除理由:
+- 該当なし
+
+---
+手数97: 手堅く受け切って、先手の勝ちとなった。
+
+削除理由:
+- 「佐藤の」 → 置換ルール
+- 「終了時刻は２１時５６分。」 → ルール3
+- 「消費時間は佐藤４時間４０分、真部４時間４４分。」 → ルール3
+- 「勝った佐藤は２連勝。負けた真部は２連敗となった。」 → ルール4

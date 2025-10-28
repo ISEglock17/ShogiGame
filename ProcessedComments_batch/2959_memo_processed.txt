@@ -1,0 +1,65 @@
+**Focusing the Commentary: Streamlining Shogi Analysis**
+
+Alright, so the task at hand is to refine these Shogi game commentaries. The user, and I, understand the value of concise, relevant analysis. We need to strip away the fluff – the unnecessary commentary that clogs up the signal – and leave behind only the truly insightful observations about the board positions and the specific moves made. Essentially, we're aiming to distill the essence of the analysis into a clean, readable narrative. My process will involve identifying and discarding the extraneous information based on the established rules for what constitutes noise. The goal is to produce a commentary that provides direct and uncluttered understanding of the game's flow.
+
+手数5: 相掛かりの出だしになった。いきなり▲２四歩は△同歩▲同飛△８六歩▲同歩△８七歩とされて先手が悪いとされている。
+
+削除理由:
+- 「とされている」 → ルール2
+
+手数11: 
+
+削除理由:
+- 「一昔前は▲２六飛が主流だったが最近は▲２八飛が多い。」 → ルール2
+
+手数24: 
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は田中魁８分、西川４４分。」 → ルール3, 1
+
+手数28: 
+
+削除理由:
+- 「ここで田中魁が２０分考えて昼食休憩に入った。」 → ルール3, 7, 1
+- 「消費時間は田中魁３３分、西川１時間２５分。」 → ルール3, 1
+
+手数32: △８二飛では▲２四歩△同歩▲同飛△２三歩▲３四飛でつまらないと見たか。▲７七桂なら△２五飛と激しい展開になることも考えられる。
+
+削除理由:
+- 「１４時３０分の局面。」 → ルール3
+- 「消費時間は田中魁４５分、西川１時間５７分。」 → ルール3, 1
+
+手数34: △２五飛からの荒捌きは無理と判断したようだ。局面が落ち着けば桂頭の薄さが傷になりそうだ。
+
+削除理由:
+- （削除なし）
+
+手数35: 桂頭が弱いのはお互い様。先手も桂頭攻めを狙う。
+
+削除理由:
+- 「１５時５０分の局面。」 → ルール3
+- 「消費時間は田中魁２時間２０分、西川２時間７分。」 → ルール3, 1
+
+手数39: 
+
+削除理由:
+- 「１７時１０分過ぎの局面。」 → ルール3
+- 「消費時間は田中魁３時間３分、西川２時間２４分。」 → ルール3, 1
+
+手数41: 
+
+削除理由:
+- 「ここで西川が３１分考えて夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は田中魁３時間２９分、西川３時間３０分。」 → ルール1, 3
+
+手数45: 
+
+削除理由:
+- 「２０時１０分の局面。」 → ルール3
+- 「消費時間は田中魁４時間８分、西川３時間５０分。」 → ルール3, 1
+
+手数46: △９八歩を狙う。
+
+削除理由:
+- （削除なし）

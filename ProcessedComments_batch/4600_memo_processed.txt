@@ -1,0 +1,115 @@
+**Cleaning Up and Formatting Those Game Comments**
+
+Okay, so I've got this request to clean up some comments that came with a Shogi game dataset. The goal here is pretty straightforward: get rid of all the fluff and irrelevant information so I'm left with only the good stuff - those key insights about the board positions and specific moves that are actually helpful for analyzing the game.
+
+My plan of attack is clear. First, I'll go through the comments and apply a set of pre-defined rules to delete any information that doesn't fit the bill. Then, I'll work on making sure the remaining comments read smoothly and naturally, like actual explanations. Finally, I'll package it all up into the exact format that was requested, ready for further analysis.
+
+手数5: 本局は先手の石田流となりそうだ。
+
+削除理由:
+- 「阪口」 → 先手（置換ルール）
+
+---
+手数7: ▲７四歩と突けば激しい将棋になるところだ。
+
+削除理由:
+- なし
+
+---
+手数16: △８八角成〜△２二銀は▲３六飛の筋に備えたもの。
+
+削除理由:
+- なし
+
+---
+手数20: 飛車を浮くのが最新形。▲７四歩の筋を消している。
+
+削除理由:
+- なし
+
+---
+手数27:
+
+削除理由:
+- 「１週間前に行われたＣ級１組▲戸辺−△小林裕戦と同じ進行。」 → ルール2
+
+---
+手数35:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は阪口２時間３７分、及川２時間１９分。」 → ルール3
+
+---
+手数42:
+
+削除理由:
+- 「ここで阪口が２４分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は阪口３時間１３分、及川２時間５０分。」 → ルール3
+
+---
+手数43: △２四歩を突かれると手詰まりになってしまう。
+
+削除理由:
+- なし
+
+---
+手数47:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は阪口３時間４２分、及川３時間３１分。」 → ルール3
+
+---
+手数52: ▲８八金は△６七角成でまずい。先手にどのような手があるのか。
+
+削除理由:
+- 「阪口」 → 先手（置換ルール）
+
+---
+手数53: 角を打ち込んだ。
+
+削除理由:
+- 「５０分の長考で」 → ルール3
+- 「控え室から「ワンパクだなぁ」の声が出た。」 → ルール1, 6
+
+---
+手数59: 先手は勢いよく攻め込む。
+
+削除理由:
+- 「阪口」 → 先手（置換ルール）
+- 「消費時間は阪口４時間４８分、及川４時間６分。」 → ルール3
+
+---
+手数68: 金銀を自陣に打って、攻めを受け止める。
+
+削除理由:
+- なし
+
+---
+手数70: 絶好の一手。自陣に利かしながら４九金を狙っている。
+
+削除理由:
+- なし
+
+---
+手数76: 後手は決めに出た。
+
+削除理由:
+- 「及川」 → 後手（置換ルール）
+- 「さわやかに」 → 盤面解説に不要な表現
+
+---
+手数78: ▲同玉は△２七飛成▲３八金△３七金で受けなしのようだ。鋭い寄せ。
+
+削除理由:
+- なし
+
+---
+手数86: ここで先手の投了となった。先手玉は受けても一手一手の寄せ。
+
+削除理由:
+- 「阪口」 → 先手（置換ルール）
+- 「終局時刻は２３時１５分。」 → ルール3
+- 「消費時間は阪口５時間２９分、及川４時間２９分。」 → ルール3
+- 「勝った及川は４勝２敗、敗れた阪口は２勝４敗となった。」 → ルール4

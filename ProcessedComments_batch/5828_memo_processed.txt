@@ -1,0 +1,112 @@
+**My Task: Refining Shogi Game Commentary**
+
+Okay, so I'm looking at this Shogi game data with commentary, and my goal is clear: I need to clean it up. The user, who I assume is as sharp as I am when it comes to this, wants me to refine the comments within the game records.  The idea is to strip away all the extraneous, irrelevant details – anything that doesn't contribute to a clear understanding of the board state or the moves being played. Basically, I want to keep only the insightful commentary, the explanations that would actually aid in analyzing the game.
+
+The process is straightforward: I'll carefully review the commentary, apply the established rules for what's expendable, and then remove those unwanted segments.  I'm aiming for concise, natural-sounding sentences that focus on the "why" and "how" of each move, retaining the essence of the game's unfolding story without any unnecessary fluff. The user knows this is the process and the expected outcome.
+
+手数1:
+
+削除理由:
+- 「佐藤和俊五段のプロフィール（日本将棋連盟ＨＰ）」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｓａｔｏｕ―ｋａｚｕｔｏｓｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「長岡裕也五段のプロフィール（日本将棋連盟ＨＰ）」 → ルール1, 4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｎａｇａｏｋａ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「佐藤の今期成績は１３勝１３敗／０．５００」 → ルール4
+- 「通算成績は１８５勝１１０敗／０．６２７」 → ルール4
+
+手数4:
+
+削除理由:
+- 「長岡の今期成績は９勝１３敗／０．４０９」 → ルール4
+- 「通算成績は１０１勝１１０敗／０．４７９」 → ルール4
+
+手数5: ▲７五歩に後手がいきなり角交換をしたのは石田流封じの一つの手法としてよく指されている手。対して▲８八同飛もあったが、これはお互いに角を打ち合って乱戦になる。本譜▲８八同銀なら、角交換振り飛車と似たような進行が予想される。
+
+削除理由:
+- 「長岡」 → ルール1
+
+手数14: 後手が早くも突っかけた。新手かもしれない。
+
+削除理由:
+- 「長岡」 → ルール1
+- 「手元のデータベースでは前例が見つからない。」 → ルール2
+- 「のようだ」 → 文体整形
+
+手数15:
+
+削除理由:
+- 「１１時頃▲６六角までの消費時間は▲佐藤４６分、△長岡０分。」 → ルール3
+
+手数18:
+
+削除理由:
+- 「１２時１０分、この局面で佐藤が４５分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲佐藤１時間３３分、△長岡２７分。」 → ルール3
+- 「対局は１３時に再開する。」 → ルール7
+
+手数19: 先手は飛車のコビン攻めを決行した。
+
+削除理由:
+- 「佐藤は昼食休憩を挟んで１時間３９分の大長考で▲７四歩。」 → ルール3, 7
+- 「１４時頃▲７四歩までの消費時間は▲佐藤２時間２７分、△長岡２７分。」 → ルール3
+
+手数23:
+
+削除理由:
+- 「１５時過ぎ▲４六角までの消費時間は▲佐藤２時間４３分、△長岡１時間１２分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「１６時過ぎ△６五桂までの消費時間は▲佐藤２時間４３分、△長岡２時間７分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１７時過ぎ△５六飛までの消費時間は▲佐藤３時間１８分、△長岡２時間３３分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「１８時１０分、この局面で長岡が４７分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲佐藤３時間４５分、△長岡３時間２０分。」 → ルール3
+- 「対局は１９時に再開する。」 → ルール7
+
+手数33:
+
+削除理由:
+- 「２０時頃▲７八飛までの消費時間は▲佐藤４時間１６分、△長岡３時間３５分。」 → ルール3
+
+手数37:
+
+削除理由:
+- 「２１時頃▲３八銀までの消費時間は▲佐藤４時間４８分、△長岡４時間４分。」 → ルール3
+
+手数38: まだ序盤戦のような手が続いている。
+
+削除理由:
+
+手数49:
+
+削除理由:
+- 「２３時頃▲２六桂までの消費時間は▲佐藤５時間２６分、△長岡５時間２６分。」 → ルール3
+
+手数54:
+
+削除理由:
+- 「２３時２０分頃、残り時間は▲佐藤３２分、△長岡２４分。」 → ルール3
+
+手数67: 後手玉は受けなし、先手玉はまだ堅く投了やむなし。
+
+削除理由:
+- 「ここで長岡が投了を告げた。」 → ルール1
+- 「終局時刻は２３時４３分、消費時間は▲佐藤５時間４４分、△長岡５時間５０分。」 → ルール3
+- 「勝った佐藤は５勝４敗、長岡は３勝６敗。」 → ルール4

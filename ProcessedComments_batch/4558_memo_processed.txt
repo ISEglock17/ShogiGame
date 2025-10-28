@@ -1,0 +1,193 @@
+**Cleaning Up the Commentary: My Approach**
+
+Okay, so I'm looking at this data, which is essentially commentary attached to Shogi game records. The user wants me to go through it and essentially *clean it up*. The goal is to strip out the fluff – anything that's irrelevant to the analysis of the moves themselves – and leave behind only the genuinely insightful commentary on the board state and the individual moves.
+
+I've got a specific set of guidelines, which I need to systematically apply to each comment. I'll need to be vigilant about identifying and removing the following:
+
+*   Any mention of people other than the players involved. That includes names, ranks, who their teacher was, etc. It's all noise in this context.
+*   Anything that references prior games, precedents, or the history between these players. Not relevant for this particular analysis.
+*   All time-related information. Thinking time, clock readings, the game's duration… gone.
+*   Anything detailing the player profiles or stats. Their ranking, performance history, previous battles, etc. Not needed.
+*   Comments about the players' general styles and strategies. We're focused on the specific game at hand, not broad tendencies.
+*   Any mention of the location, weather, accommodation, or any other extraneous details.
+
+Essentially, I'm aiming to distill the commentary down to its purest form – the objective analysis of the moves and the board. I need to treat each comment with extreme care to maintain the context of the moves.
+
+手数7: 先手は角換わりを目指す。
+
+削除理由:
+- 「長岡」 → 先手（置換）
+
+手数20: 手の損得のない角換わりへ。
+
+削除理由:
+- （削除なし）
+
+手数26: 角換わり腰掛け銀では端の位は大きい。
+
+削除理由:
+- （削除なし）
+
+手数30: 相腰掛け銀へ。
+
+削除理由:
+- （削除なし）
+
+手数31:
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「消費時間は長岡１３分、村田２２分。」 → ルール3, 4
+
+手数32: 後手の変化球。先手の進展性を奪う。また、△６四角と好位置に角を据える変化もある。
+
+削除理由:
+- （削除なし）
+
+手数33: 後手の右桂の活用を押さえる位取り。次に▲７六銀は△８六歩から歩交換されてしまうため、当面はこのまま戦うことになるだろう。
+
+削除理由:
+- 「ここで村田が５６分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡１５分、村田１時間４０分。」 → ルール3, 4
+- 「昼食の注文は村田がチャーハンと天然水２リットル。」 → ルール7
+- 「長岡は注文なし。」 → ルール7
+
+手数36:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は長岡２６分、村田智２時間３分。」 → ルール3, 4
+
+手数38: 前手△４二金はこの形で戦うためのもの。３３手目の局面から玉と金が入れ替わったことになる。△２二玉・△３二金よりも角打ちに強い（▲４一角がない）メリットがある。
+
+削除理由:
+- （削除なし）
+
+手数41: 穴熊へ組み替えた。
+
+削除理由:
+- （削除なし）
+
+手数42:
+
+削除理由:
+- 「１５時過ぎの局面。」 → ルール3
+- 「消費時間は長岡１時間２１分、村田智２時間２１分。」 → ルール3, 4
+
+手数43: 果敢に銀をぶつけていった。
+
+削除理由:
+- 「２０分の考慮で」 → ルール3
+
+手数44: 平凡に△４五同銀▲同歩となっては後手玉のコビンに歩が伸びてしまう。
+
+削除理由:
+- （削除なし）
+
+手数45: 軽快な活用。３筋の歩を突かないことで△３七角を消している。
+
+削除理由:
+- （削除なし）
+
+手数46: 銀を追う。△８四飛と横利きを通すのは▲７四歩△同歩とされるのが嫌。
+
+削除理由:
+- 「３１分の長考で」 → ルール3
+
+手数48: △４六銀は▲２五桂△２二銀▲４八飛△３七銀成▲４四飛と暴れられる。
+
+削除理由:
+- （削除なし）
+
+手数52: 端を狙う馬。
+
+削除理由:
+- （削除なし）
+
+手数55: いかにも筋の突き出し。△同歩と取られることで▲４三歩や▲４四歩と歩を使って攻められるようになるし、▲５五角のような手も生じてくる。
+
+削除理由:
+- 「１６時３０分の局面。」 → ルール3
+- 「消費時間は長岡２時間１２分、村田智２時間５６分。」 → ルール3, 4
+
+手数58:
+
+削除理由:
+- 「１７時３０分ごろの局面。」 → ルール3
+- 「消費時間は長岡２時間３２分、村田智３時間１５分。」 → ルール3, 4
+
+手数59:
+
+削除理由:
+- 「３４分の長考。」 → ルール3
+
+手数60:
+
+削除理由:
+- 「ここで長岡が８分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は長岡３時間１４分。村田智３時間３７分。」 → ルール3, 4
+
+手数72:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は長岡３時間４４分、村田智３時間５３分。」 → ルール3, 4
+
+手数80:
+
+削除理由:
+- 「２０時４５分の局面。」 → ルール3
+- 「消費時間は長岡４時間１５分、村田智３時間５６分。」 → ルール3, 4
+
+手数85: 飛車を取ったが、この金はあまり働きがない。
+
+削除理由:
+- （削除なし）
+
+手数87:
+
+削除理由:
+- 「２１時４５分ごろの局面。」 → ルール3
+- 「残り時間は長岡１時間１６分、村田智１時間２２分。」 → ルール3, 4
+
+手数93: 金を使って後手陣の駒を掃除した。
+
+削除理由:
+- （削除なし）
+
+手数97:
+
+削除理由:
+- 「２２時１０分ごろの局面。」 → ルール3
+- 「残り時間は長岡１時間３分、村田智１時間１２分。」 → ルール3, 4
+
+手数107: 手段を尽くして王手角取りをかけた。
+
+削除理由:
+- （削除なし）
+
+手数109: 後手は何枚か歩を持っていれば△９七歩▲同桂△９六歩が厳しいのだが、現在は歩切れ。
+
+削除理由:
+- 「２２時４０分の局面。」 → ルール3
+- 「残り時間は長岡５７分、村田５３分。」 → ルール3, 4
+
+手数117:
+
+削除理由:
+- 「２３時１０分ごろの局面。」 → ルール3
+- 「残り時間は長岡５３分、村田智３７分。」 → ルール3, 4
+
+手数124:
+
+削除理由:
+- 「２３時３５分ごろの局面。」 → ルール3
+- 「残り時間は長岡５１分、村田智１１分。」 → ルール3, 4
+
+手数144: 以下▲７六玉△８六金▲６五玉△７四馬までの詰み。先手の投了となった。
+
+削除理由:
+- 「長岡の」 → 先手の（置換）
+- 「終局時刻は２３時５６分。」 → ルール3
+- 「消費時間は長岡５時間１６分、村田智５時間５４分。」 → ルール3, 4
+- 「勝った村田智、敗れた長岡ともに１勝２敗となった。」 → ルール4

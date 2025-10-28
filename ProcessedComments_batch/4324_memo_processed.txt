@@ -1,0 +1,103 @@
+**Cleaning Up Game Analysis Commentary**
+
+Okay, so I'm looking at this dataset of Shogi game records, and specifically, the comments that accompany each move.  The goal here is to refine those comments.  Essentially, I need to strip away all the extraneous noise - things like metadata, introductions to the players, timestamps, all that jazz.  My focus needs to be laser-sharp on the *actual* Shogi analysis within the comment. I want to retain the core explanations of the board state, the reasoning behind the move, and any strategic insights, but presented in a smooth, natural-sounding narrative. This should make the data much cleaner and more valuable for further analysis or study. Think of it like distilling the essence of the game's commentary.
+
+手数17:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎２８分、△北島２７分。」 → ルール3
+
+手数24:
+
+削除理由:
+- 「この局面で福崎が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲福崎１時間４分、△北島５４分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「１４時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎１時間３３分、△北島１時間３９分。」 → ルール3
+
+手数33: 穴熊に組み替える。
+
+削除理由:
+
+手数43:
+
+削除理由:
+- 「１５時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎２時間１７分、△北島１時間５９分。」 → ルール3
+
+手数44: 攻めの態勢を十分に築いて仕掛ける。
+
+削除理由:
+
+手数47: ▲５五同歩は△同銀と、６六に殺到される。
+
+削除理由:
+
+手数49: ▲５六同銀は△５五歩で、銀の行く場所がない。
+
+削除理由:
+
+手数50: 角が間接的に玉をにらんでいる。
+
+削除理由:
+- 「１６時４０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎２時間２４分、△北島２時間４４分。」 → ルール3
+
+手数54: ５筋に飛角銀を集中させる。金取りが受けにくい。
+
+削除理由:
+
+手数55: ▲５八飛は△４五銀で受けにくいと見たのだろう。それにしてもすごい受け方だ。
+
+削除理由:
+- 「見た」 → 自然な文章にするため修正
+
+手数59: なんとか穴熊を補強したが、大駒の働きが違うので後手が指せるようだ。
+
+削除理由:
+- 「この局面で北島が２３分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲福崎２時間５６分、△北島３時間５２分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎３時間３５分、△北島４時間６分。」 → ルール3
+
+手数68: もちろん８八が急所。
+
+削除理由:
+
+手数73: 必死に粘る。
+
+削除理由:
+
+手数76: 大駒を渡しているので、一度冷静に手を入れておく。
+
+削除理由:
+
+手数77: 角の利きを止めて緩和させる。
+
+削除理由:
+
+手数79:
+
+削除理由:
+- 「２１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲福崎４時間３分、△北島４時間２７分。」 → ルール3
+
+手数82: 金取りは放置して決めに行く。
+
+削除理由:
+
+手数96: 先手玉は△５五歩〜△５六歩が詰めろで、これが受からない形。対して後手玉は▲４二飛〜▲６三歩成が詰めろになっていない。
+
+削除理由:
+- 「この局面で福崎は３分考えて投了した。」 → ルール3
+- 「消費時間は▲福崎４時間１９分、△北島４時間５７分。」 → ルール3
+- 「勝った北島は４勝３敗、敗れた福崎は２勝５敗となった。」 → ルール4

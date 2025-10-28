@@ -1,0 +1,119 @@
+**Focusing the Commentary: Streamlining Shogi Game Analysis**
+
+Okay, so the user wants me to clean up these Shogi game commentaries, right? My task is pretty straightforward: whip these comments into shape for effective kifu analysis. I need to get rid of all the noise - the metadata, player introductions, time stamps... anything that doesn't directly contribute to understanding the board state or the reasoning behind a specific move.
+
+Essentially, I need to sift through each comment and apply a set of rules to decide what's essential and what's extraneous. Then, I'll take the remaining information and structure it into clear, coherent sentences that focus on the actual tactical and strategic considerations. It's all about extracting the valuable insights and presenting them in a digestible format for my analysis. Let's get to it!
+
+手数5: 先手は得意の四間飛車。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+手数14: 後手は持久戦を目指している。
+
+削除理由:
+- 「小林宏」 → ルール1
+
+手数19: 先手は藤井システムの駒組みを進めている。
+
+削除理由:
+- 「中村亮」 → ルール1
+
+手数26:
+
+削除理由:
+- 「１１時過ぎの局面。」 → ルール3
+- 「消費時間は中村亮２４分、小林宏２２分。」 → ルール1, 3
+
+手数29: 藤井システムの定跡形。
+
+削除理由:
+- 「数十局指されているが、いまだはっきりした結論は出ていないようだ。」 → ルール2
+
+手数32: 後手は変化球を投げる。穴熊ではなく、米長玉で戦う。
+
+削除理由:
+- 「小林宏」 → ルール1
+
+手数34: ▲７五銀に備える。
+
+削除理由:
+
+手数37: ▲５六歩は△４二銀に▲５五歩や▲５七銀〜▲６四歩を用意した意味がある。
+
+削除理由:
+- 「▲５六歩の局面で小林宏が３分使って昼食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村亮１時間２分、小林宏５０分。」 → ルール1, 3
+- 「昼食の注文は小林宏がきつねうどん、おにぎり（梅）。中村亮は注文なし。」 → ルール1, 7
+
+手数38:
+
+削除理由:
+- 「中村亮が１時間以上考えている。」 → ルール1, 3
+
+手数39:
+
+削除理由:
+- 「１時間２０分の長考で指された。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間２８分、小林宏１時間３４分。」 → ルール1, 3
+
+手数53: △１九角成には▲１六香の狙い。単に▲１六香は△１七角成と背中を狙われてしまう。現状は互いに攻め駒が少ない。後手は△７六歩からと金作りを狙いたい。先手は▲２五歩△同歩に▲２四歩や▲２五同桂と桂香歩を使った攻めを考えてみたいところだろう。
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は中村亮３時間１１分、小林宏２時間１０分。」 → ルール1, 3
+- 「小林宏」 → ルール1
+- 「中村亮」 → ルール1
+
+手数58:
+
+削除理由:
+- 「ここで中村亮が７分使って夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は中村亮３時間４２分、小林宏３時間１１分。」 → ルール1, 3
+
+手数60:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は中村亮３時間４２分、小林宏３時間４５分。」 → ルール1, 3
+
+手数63:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は中村亮４時間２１分、小林宏４時間２２分。」 → ルール1, 3
+
+手数68: 後手は中段玉で頑張る。入玉の可能性もあるか。
+
+削除理由:
+- 「小林宏」 → ルール1
+
+手数74: 後手玉は入玉の味もある。特に△１七歩成が利けば、相当。しかし、▲４二角成△同銀▲１一龍で振り飛車勝勢。
+
+削除理由:
+- 「２１時４５分の局面。」 → ルール3
+- 「残り時間は中村亮１時間２３分、小林宏１時間１０分。」 → ルール1, 3
+- 「小林玉」 → ルール1
+- 「、と上野五段」 → ルール1
+
+手数77: ▲２九香が厳しい。
+
+削除理由:
+- 「上野五段が述べた通りの攻め。」 → ルール1
+
+手数81: 厳しい。先手勝勢のようだ。
+
+削除理由:
+
+手数95: 以下△同玉▲３三龍△同銀▲６四香△同玉▲７四金までの詰み。後手の投了となった。
+
+削除理由:
+- 「小林宏」 → ルール1
+- 「終局時刻は２２時３９分。」 → ルール3
+- 「消費時間は中村亮４時間５７分、小林宏５時間１７分。」 → ルール1, 3
+- 「勝った中村亮は４勝１敗、敗れた小林宏は３勝２敗となった。」 → ルール1, 4

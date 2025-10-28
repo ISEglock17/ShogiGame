@@ -1,0 +1,134 @@
+**Structuring Shogi Commentary: My Approach**
+
+Okay, so I'm tackling this task of formatting shogi commentary. Essentially, someone wants me to take raw commentary and clean it up, making it more digestible. My mental checklist for this is pretty straightforward:
+
+First, I need to understand what's in front of me – I have to read each piece of commentary. Then, I'll be looking for specific patterns based on the provided rules, things that need to be trimmed or removed entirely. Once I've pinpointed those areas, it's about applying the rules meticulously, deleting those parts according to the instructions. Finally, the real art begins: taking what's left and shaping it into clear, natural Japanese explanations. I'm essentially distilling the essence of each move into concise and insightful commentary.
+
+手数6: ゴキゲン中飛車。
+
+削除理由:
+
+---
+手数7: これもよく指されている形。
+
+削除理由:
+- 「▲２二角成△同銀▲９六歩△９四歩▲７八銀の進行が最新の流行形だが、」 → ルール2
+
+---
+手数19:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦３１分、△福崎２１分。」 → ルール3
+
+---
+手数26:
+
+削除理由:
+- 「この局面で先手が２５分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲先手１時間１３分、△後手４３分。」 → ルール3
+
+---
+手数27:
+
+削除理由:
+- 「昼食休憩をはさんで１時間２分の長考。」 → ルール3, 7
+
+---
+手数30:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦１時間５８分、△福崎５０分。」 → ルール3
+
+---
+手数42:
+
+削除理由:
+- 「１５時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦２時間２６分、△福崎１時間８分。」 → ルール3
+
+---
+手数46:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦３時間１６分、△福崎１時間４５分。」 → ルール3
+
+---
+手数50:
+
+削除理由:
+- 「１７時２０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦３時間３６分、△福崎２時間２９分。」 → ルール3
+
+---
+手数57:
+
+削除理由:
+- 「この局面で後手が１９分考えて夕食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は▲宮田敦４時間０分、△福崎２時間５１分。」 → ルール3
+
+---
+手数62: ▲５五歩には△同桂を用意し、反撃の含みを残している。
+
+削除理由:
+
+---
+手数64:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田４時間３０分、△福崎３時間１分。」 → ルール3
+
+---
+手数71: 厳しい飛桂両取り。
+
+削除理由:
+
+---
+手数75: 銀は取らせて攻め合い勝ちと見ている。
+
+削除理由:
+- 「宮田は残り１時間を切った。」 → ルール3
+
+---
+手数76:
+
+削除理由:
+- 「２０時５０分頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦５時間５分、△福崎３時間１４分。」 → ルール3
+
+---
+手数79: △同歩なら▲６二馬△同金▲８三金まで。
+
+削除理由:
+
+---
+手数82: 先手が優勢と見られている。後手は△７四歩が楽しみになるが、▲６三歩と叩く手があるので単純に桂馬を取り切る展開にはなりにくい。
+
+削除理由:
+- 「棋士室では」 → ルール1, 6
+- 「宮田が２０分ほど考えている。」 → ルール3
+- 「２１時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦５時間６分、△福崎３時間３７分。」 → ルール3
+
+---
+手数85: 桂馬を取られる前に一仕事。
+
+削除理由:
+
+---
+手数88:
+
+削除理由:
+- 「２２時過ぎの局面。」 → ルール3
+- 「ここまでの消費時間は▲宮田敦５時間４０分、△福崎３時間５５分。」 → ルール3
+
+---
+手数109: ▲６二歩を金銀どちらで取っても▲７三歩成が厳しい。先手玉は全く寄らない形。
+
+削除理由:
+- 「この局面で福崎が投了した。」 → ルール8
+- 「消費時間は▲宮田敦５時間４９分、△福崎４時間８分。」 → ルール3
+- 「勝った宮田敦は４勝２敗、敗れた福崎は１勝５敗。」 → ルール4

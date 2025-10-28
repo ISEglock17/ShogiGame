@@ -1,0 +1,132 @@
+**Streamlining Game Commentary for Clarity**
+
+Okay, so I'm presented with a task: to take messy, raw commentary from a Shogi match and whip it into shape. The user wants clean, focused analysis, stripped of unnecessary fluff.  Basically, I need to create a well-structured summary of the game, highlighting the critical moves.
+
+Here's my thought process.  I'll need to dissect the commentary move by move, right? First, I'll *carefully* analyze each sentence.  Then, I'll reference my pre-defined ruleset to identify the bits that need to go. Anything about the spectators, breaks, or anything *not* directly related to the board position and the played move is automatically suspect.  I'll apply those rules meticulously to flag each irrelevant section.
+
+Next, the actual pruning begins. Rule by rule, I'll delete the identified sections. Finally, I'll need to use my expertise in natural language processing (NLP) to rephrase the remaining text into grammatically correct sentences that read smoothly and concisely. The final output is key! I'll need to present each move clearly, along with its associated analysis and a *reason* for why certain parts were removed.  This way, the user can easily review the changes and understand the rationale behind the edits.
+
+手数1:
+
+削除理由:
+- 「◆土佐　浩司（とさ　こうじ）八段◆」 → ルール1, 4
+- 「１９５５年３月３０日生まれ、新潟県南魚沼市出身。（故）清野静男八段門下。１９７６年、四段。２０１４年、八段。棋士番号は１２４。」 → ルール4
+- 「棋戦優勝は１回。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「◆村中　秀史（むらなか　しゅうじ）六段◆」 → ルール1, 4
+- 「１９８１年３月１２日生まれ、東京都北区出身。（故）高柳敏夫名誉九段門下。２００４年、四段。２００９年、六段。棋士番号は２５３。」 → ルール4
+
+手数3:
+
+削除理由:
+- 「土佐の通算成績は６５０勝６５９敗（勝率０．４９７）。」 → ルール4
+- 「本年度成績は２勝５敗（０．２８６）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「村中の通算成績は１８４勝１５２敗（勝率０．５４８）。」 → ルール4
+- 「本年度成績は１１勝１４敗（０．４４０）。」 → ルール4
+
+手数12: 矢倉模様となった。
+
+削除理由:
+
+手数23: 形を決めずに様子をうかがう。
+
+削除理由:
+
+手数27: 早い角上がりには、本局のような桂跳ねの選択も可能となる。形を決めずに様子を見た効果だ。
+
+削除理由:
+
+手数28:
+
+削除理由:
+- 「１１時頃の局面。」 → ルール3
+- 「△３一玉までの消費時間は▲土佐１６分、△村中２８分。」 → ルール3
+
+手数34:
+
+削除理由:
+- 「１２時１０分、ここで土佐が２３分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲土佐１時間１３分、△村中４９分。」 → ルール3
+- 「対局再開は１３時。」 → ルール3, 7
+
+手数39:
+
+削除理由:
+- 「１４時頃の局面。」 → ルール3
+- 「▲６五歩までの消費時間は▲土佐１時間２５分、△村中１時間３６分。」 → ルール3
+
+手数41: 森下システムでよく目指すべき目標となる矢倉＋６六銀右の構え。受けに手厚く、▲５五歩から攻めへの転身も見込める。
+
+削除理由:
+
+手数42: 後手は８四の銀をどう使っていくか。すぐに△９五銀では▲４六角の味が絶品だ。
+
+削除理由:
+
+手数48:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「△９四歩までの消費時間は▲土佐１時間３２分、△村中２時間１１分。」 → ルール3
+- 「現局面の前例は１局。」 → ルール2
+- 「室岡七段「１局しかないというのは意外ですね。昔やっていたはずなんですけど」」 → ルール1, 2
+
+手数53: 類例では▲３七角と引くことが多かった。▲４六歩〜▲４五歩△同歩▲５五歩△同歩▲同角という軽くて厳しい仕掛けが見えるからだ。しかし実現することは少なく、▲４六歩に△７五歩や△８六歩▲同銀△９五銀などと動かれてしまう。▲４六角はどうせ実現しないならば突かずに進めようとしている。
+
+削除理由:
+
+手数56:
+
+削除理由:
+- 「１６時頃の局面。」 → ルール3
+- 「△９五歩までの消費時間は▲土佐２時間１７分、△村中２時間３１分。」 → ルール3
+
+手数57: 深い場所にスペースを作り、そこに角をしまった。
+
+削除理由:
+
+手数59: ここで▲４六歩。手損したが角の当たりが弱まり、相手の攻め筋を△７五歩に限定させた。どうやるのだろうか。△７五歩、△６四歩などが考えられる。しかし角道が止まったところだから、後手としては行きたいところだ。似た形では△９六歩▲同歩△同香▲同香△９五歩と攻める手があった。先手からは▲４五歩△同歩▲１五歩△同歩▲５五歩の攻めでどちらが早いか。
+
+削除理由:
+- 「１７時頃の局面。」 → ルール3
+- 「▲４六歩までの消費時間は▲土佐３時間１２分、△村中２時間４２分。」 → ルール3
+- 「室岡七段「どうやるのでしょうか。△７五歩、△６四歩などですかね。しかし角道が止まったところだから、後手としては行きたいですよね」」 → ルール1
+- 「その後、勝又清和六段が中継室へ。」 → ルール1, 6
+- 「「似た形で、加藤一二三先生が△９六歩▲同歩△同香▲同香△９五歩と攻めていましたね。先手からは▲４五歩△同歩▲１五歩△同歩▲５五歩の攻めでどっちが早いか」」 → ルール1, 2
+
+手数75:
+
+削除理由:
+- 「１８時１０分、ここで村中が２６分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は▲土佐３時間１５分、△村中３時間５２分。」 → ルール3
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数82: 質駒を食いちぎって桂を据える。
+
+削除理由:
+
+手数83:
+
+削除理由:
+- 「※８３手目に入力のミスがありました。正しくは▲７七銀左でした。訂正してお詫びいたします。」 → ルール8
+
+手数84: さらに桂で襲い掛かる。
+
+削除理由:
+
+手数85: 逃げると追撃がある。駒を足して受けに回った。
+
+削除理由:
+
+手数89:
+
+削除理由:
+- 「２０時頃の局面。」 → ルール3
+- 「▲９七金までの消費時間は▲土佐３時間３４分、△村中４時間１６分。」 → ルール3

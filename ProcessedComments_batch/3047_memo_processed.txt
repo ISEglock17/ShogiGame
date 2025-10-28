@@ -1,0 +1,75 @@
+**Cleaning Up My Commentary for Sharp Analysis**
+
+Okay, so I've been handed some raw game commentary from Shogi matches, and my task is to refine it for deeper analysis. The goal is clear: I need to transform these comments into concise, focused explanations of the game's actual moves and positions.  I can't be bogged down with irrelevant details!
+
+My brain immediately starts running through the process.  First, I'll need to meticulously scan each comment and follow my internal rules for eliminating the noise. That means ditching any metadata, those introductions to the players, and any time stamps that don't contribute to understanding the board state or the reasoning behind the moves.  Anything that's simply not directly relevant to the chess is out.
+
+Then, I'll have to massage the remaining material, restructuring it to flow as natural and coherent prose. Basically, I will streamline and clean up the language, making sure the essence of the analysis is captured in a clear, easy-to-digest manner.
+
+手数5: 先手は得意の四間飛車。
+
+削除理由:
+- 「横山、」 → ルール1
+
+手数20:
+
+削除理由:
+- 「ここまでの消費時間は横山１４分、大平８分。」 → ルール3
+
+手数29:
+
+削除理由:
+- 「横山は３４分考えて銀を上がる。」 → ルール1, 3
+- 「大平も３４分を使い、ここで昼食休憩。」 → ルール1, 3, 7
+- 「消費時間は横山１時間８分、大平４７分。」 → ルール3
+- 「昼食の注文は、横山はすき焼き丼。大平はなし。」 → ルール7
+
+手数43:
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「ここまでの消費時間は横山１時間３８分、大平１時間１分。」 → ルール3
+
+手数50:
+
+削除理由:
+- 「１５時頃の局面。」 → ルール3
+- 「ここまでの消費時間は横山２時間４分、大平１時間４２分。」 → ルール3
+
+手数55:
+
+削除理由:
+- 「横山、５０分の長考。」 → ルール1, 3
+
+手数56:
+
+削除理由:
+- 「１６時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は横山３時間２１分、大平１時間５１分。」 → ルール3
+
+手数64:
+
+削除理由:
+- 「ここで夕食休憩。」 → ルール7
+- 「消費時間は横山４時間３３分、大平２時間１０分。」 → ルール3
+- 「夕食の注文は、横山は梅雑炊。大平はなし。」 → ルール7
+
+手数71:
+
+削除理由:
+- 「１９時半頃の局面。」 → ルール3
+- 「ここまでの消費時間は横山４時間５２分、大平２時間１２分。」 → ルール3
+
+手数80:
+
+削除理由:
+- 「２０時過ぎの局面。」 → ルール3
+- 「消費時間は消費時間は横山５時間５分、大平２時間１５分。」 → ルール3
+
+手数93: △３二同銀は▲２二桂成以下詰み。受けるスペースもなく、後手はここで投了した。
+
+削除理由:
+- 「大平は」 → ルール1
+- 「終了時刻は２０時２８分。」 → ルール3
+- 「消費時間は横山５時間３０分、大平２時間２９分。」 → ルール3
+- 「勝った横山は２連勝。負けた大平は１勝１敗となった。」 → ルール4

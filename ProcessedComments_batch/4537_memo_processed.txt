@@ -1,0 +1,149 @@
+**Processing Game Commentaries for Sharper Analysis**
+
+Okay, so I'm presented with a task, a familiar one: cleaning up and preparing game commentaries from shogi datasets.  The core of what's being asked of me is pretty straightforward, but crucial.  I need to take these often-verbose comments and strip away the noise.  Think of it like filtering out static, leaving only the signal.
+
+The real goal here is to get down to the brass tacks: the actual insights into the board state and the reasoning behind each move. I'm talking about the pure, distilled analysis that fuels deeper understanding and, ultimately, stronger play.  Everything else - the author's name, the time it took to move, the initial pleasantries - it's just clutter when I'm trying to extract meaningful data.
+
+The process itself is clear: I've got a set of rules, the criteria for what needs to be removed. I'll need to carefully analyze each comment, identify the irrelevant bits based on those rules, and surgically excise them.  It's a matter of precision and a keen eye, ensuring that I preserve the integrity of the analysis while eliminating the distractions.  Think of it as transforming raw data into something much more valuable, something I can actually use in my work.
+
+手数1:
+
+削除理由:
+- 「大石の本年度の成績は７勝４敗／勝率は０．６３６　　通算成績は７勝４敗／勝率は０．６３６」 → ルール4
+- 「佐藤紳の本年度の成績は７勝７敗／勝率は０．５００　通算成績は２５５勝１７７敗／勝率は０．５９０」 → ルール4
+
+手数2:
+
+削除理由:
+- 「記録係の高野初段の師匠である木村一基八段は第５０期王位戦第７局を対局中。」 → ルール1
+- 「初タイトルは成るだろうか。」 → ルール1
+
+手数20:
+横歩取り△８五飛型となった。
+
+削除理由:
+- 「佐藤紳の」 → ルール1
+
+手数27:
+「新山崎流」と呼ばれる形。先手の有力策と見られている。
+
+削除理由:
+
+手数32:
+△３五同飛は▲４六角がある。
+
+削除理由:
+
+手数39:
+
+削除理由:
+- 「１１時１０分ごろの局面。」 → ルール3
+- 「消費時間は大石８分、佐藤紳１４分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「３８分の長考で指されている。」 → ルール3
+
+手数41:
+
+削除理由:
+- 「▲６九玉の局面で佐藤紳が４２分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は大石１８分、佐藤紳１時間３４分。」 → ルール3
+- 「昼食の注文は佐藤紳がおにぎり（サケ、明太子）。大石は注文なし。」 → ルール7
+
+手数42:
+ぼんやりとしていて、意味の難しい手。△９五歩から９筋を狙うつもりだろうか。
+
+削除理由:
+- 「昼食休憩後すぐに指された。」 → ルール7
+
+手数43:
+先手は金を寄せた。先手も中原囲い。△２六歩には▲２八歩と受けることになるだろう。先手は▲２三歩の筋がなくなるが、後手も２六歩はタダで取られる恐れがあり、損得は微妙だ。
+
+削除理由:
+- 「１４時１０分ごろの局面。」 → ルール3
+- 「消費時間は大石１時間１３分、佐藤紳１時間３４分。」 → ルール3
+- 「大石は５５分の長考で」 → ルール3
+- 「ここまでは実戦例がある。」 → ルール2
+
+手数46:
+
+削除理由:
+- 「１５時３０分ごろの局面。」 → ルール3
+- 「消費時間は大石１時間１８分、佐藤紳２時間３０分。」 → ルール3
+- 「△４四角は４４分の長考で指された。」 → ルール3
+
+手数47:
+△７七角成と後手から交換されると、▲同桂は△７五歩、▲同銀も△６五桂が嫌みだ。
+
+削除理由:
+- 「５４分の長考。」 → ルール3
+
+手数49:
+△１四角や△２七角を避ける。
+
+削除理由:
+
+手数53:
+
+削除理由:
+- 「１６時４５分ごろの局面。」 → ルール3
+- 「消費時間は大石２時間２３分、佐藤紳２時間３８分。」 → ルール3
+
+手数62:
+
+削除理由:
+- 「１７時４０分ごろの局面。」 → ルール3
+- 「消費時間は大石２時間４８分、佐藤紳３時間２９分。」 → ルール3
+- 「大石はここで３５分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は大石３時間２３分、佐藤紳３時間２９分となった。」 → ルール3
+
+手数67:
+
+削除理由:
+- 「２０時３０分ごろの局面。」 → ルール3
+- 「消費時間は大石３時間３７分、佐藤紳４時間４６分。」 → ルール3
+
+手数72:
+
+削除理由:
+- 「２１時過ぎの局面。」 → ルール3
+- 「消費時間は大石３時間４１分、佐藤紳４時間４８分。」 → ルール3
+
+手数73:
+
+削除理由:
+- 「１時間１６分の長考で指された。」 → ルール3
+
+手数77:
+
+削除理由:
+- 「２２時１５分の局面。」 → ルール3
+- 「残り時間はともに１時間３分。」 → ルール3
+
+手数80:
+馬を自陣に利かす攻防手。先手玉は△７七桂打から危ない。
+
+削除理由:
+
+手数82:
+▲３七飛成が詰めろ逃れになっていればいいが、△７七桂打から王手は続く。
+
+削除理由:
+- 「２２時４０分ごろの局面。」 → ルール3
+- 「残り時間は大石５９分、佐藤紳４３分。」 → ルール3
+
+手数90:
+桂頭玉寄せにくし。
+
+削除理由:
+
+手数94:
+△５九飛成を受けるには▲同飛成と取るしかないが、△同馬でやはり受けのない格好だ。後手玉は▲６一角△７三玉で上が広い。
+
+削除理由:
+- 「大石は７分考えて投了を告げた。」 → ルール3
+- 「終局時刻は２３時４５分。」 → ルール3
+- 「消費時間は大石５時間３３分、佐藤紳５時間４５分。」 → ルール3
+- 「勝った佐藤紳、敗れた大石ともに２勝２敗となった。」 → ルール4

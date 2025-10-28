@@ -1,0 +1,111 @@
+**Focusing the Lens: Cleaning Up Game Comments for Sharper Analysis**
+
+Okay, so the user wants me to clean up these comments from Shogi game data. They're looking for a refined set, something focused solely on the critical insights of the game. I get it; sifting through all the extraneous chatter - the metadata, player intros, time stamps - is a pain. It muddies the water when you're trying to perform serious game analysis.
+
+So, the game plan is clear. I need to develop a systematic approach, a set of rules, if you will, to discern what's core and what's fluff within these comments. The aim is to surgically remove anything that doesn't directly pertain to the board state or the reasoning behind a player's move. Essentially, I'm building a filter, a sophisticated one, that leaves only the pure, distilled essence of the game's unfolding drama. This will give me a cleaner, more focused dataset to work with, making the analysis process much more efficient and insightful.
+
+手数1:
+
+削除理由:
+- 「【藤森哲也四段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｆｕｊｉｍｏｒｉ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「【伊藤真吾四段のプロフィール】」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｉｔｏ―ｓｈｉｎ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「藤森の今年度成績は７勝６敗（０．５３９）」 → ルール4
+- 「通算成績は１０勝９敗（０．５２６）」 → ルール4
+
+手数4:
+
+削除理由:
+- 「伊藤の今年度成績は４勝６敗（０．４００）」 → ルール4
+- 「通算成績は６９勝５６敗（０．５５２）」 → ルール4
+
+手数12: ここから▲４三角成△５二金右（または△５二金左）▲同馬△同金▲７五金△６四歩▲７四金△同歩というのも最近よく見かける将棋で、持ち金対１歩得の力将棋のような展開になる。結構後手も戦えている印象がある。
+
+削除理由:
+- 「東京・対局立会人の田村康介六段が中継室を訪れた。」 → ルール1, 6
+- 「田村六段「」 → ルール1
+- 「ですね」 → (自然な文章にするため削除)
+
+手数13: 先手は▲４三角成ではなく▲７四同角を選択。
+
+削除理由:
+- 「藤森は」 → (先手に置換)
+
+手数15: 先手はこのままだとただの一手損になってしまうので▲７五歩と突く一手。△同歩は▲６五角でまずいので△７二飛と振り戻して、▲７四歩に△３二金か△４二玉と一旦我慢してから歩を取り返すような展開になるだろう。すぐに△７四同飛は▲６五角で飛車取りと角成りが受からない。
+
+削除理由:
+- 「１１時ごろの局面。」 → ルール3
+- 「▲７五歩までの消費時間は▲藤森４１分、△伊藤９分。」 → ルール3
+- 「田村六段「」 → ルール1
+- 「ですね」 → (自然な文章にするため削除)
+- 「思いますね」 → (自然な文章にするため変更)
+- 「ません」 → (自然な文章にするため変更)
+
+手数29: 後手は飛車と歩以外だと５手しか進んでいない。先手は７手。やや先手が手得している格好だ。後手の構想がわからず、何か動く手があればいいのだが。
+
+削除理由:
+- 「この局面で伊藤が１７分使って昼食休憩に入った。」 → ルール3, 7
+- 「昼食休憩までの消費時間は▲藤森１時間１１分、△伊藤４５分。」 → ルール3, 7
+- 「対局再開は１３時。」 → ルール3, 7
+- 「田村六段「」 → ルール1
+- 「ません」 → (自然な文章にするため変更)
+- 「ですね」 → (自然な文章にするため変更)
+- 「んですけど」 → (自然な文章にするため変更)
+
+手数37:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「▲５六銀までの消費時間は▲藤森１時間４４分、△伊藤１時間１５分。」 → ルール3
+
+手数40:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「△６二飛までの消費時間は▲藤森１時間４６分、△伊藤１時間３６分。」 → ルール3
+
+手数44:
+
+削除理由:
+- 「１６時ごろの局面。」 → ルール3
+- 「△２二玉までの消費時間は▲藤森２時間２３分、△伊藤２時間１３分。」 → ルール3
+
+手数48:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「△４三銀までの消費時間は▲藤森２時間３７分、△伊藤２時間５０分。」 → ルール3
+
+手数51:
+
+削除理由:
+- 「この局面で伊藤が１６分考えて夕食休憩に入った。」 → ルール3, 7
+- 「夕食休憩までの消費時間は▲藤森３時間３６分、△伊藤３時間１７分。」 → ルール3, 7
+- 「対局再開は１９時。」 → ルール3, 7
+
+手数58: 形勢は不明とされている。
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「△６五歩までの消費時間は▲藤森３時間４８分、△伊藤３時間５７分。」 → ルール3
+- 「控え室では」 → ルール6
+
+手数64:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「△４八歩成までの消費時間は▲藤森４時間１２分、△伊藤４時間２９分。」 → ルール3
+
+手数85:
+
+削除理由:
+- 「残り時間は▲藤森７分、△伊藤５３分。」 → ルール3

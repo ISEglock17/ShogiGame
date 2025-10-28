@@ -1,0 +1,166 @@
+**Cleaning Up Commentary for Deep Analysis**
+
+Okay, so I'm presented with a task, and it's something I've dealt with countless times: cleaning up game commentary, specifically from Shogi (Japanese Chess) matches. The goal is straightforward, and the need is clear: I need to transform the raw commentary – the chatty, often rambling text that surrounds a game – into something lean and mean, something that can feed directly into my analysis engines. 
+
+What I *don't* want is all the fluff. I'm talking about the metadata, the introductions to the players, the running clock updates, any of that. It's noise, and it dilutes the signal. I'm after the core of the matter: the actual explanations of the board state, the justifications for each move, the strategic reasoning behind the play. I need that in fluent, naturally flowing sentences, devoid of extraneous distractions.
+
+Essentially, I want the essence of the game's unfolding in a format that's ready for serious computational analysis. The raw material is there; I just have to refine it into its most potent form.
+
+手数1:
+
+削除理由:
+- 「高野の本年度の成績は０勝６敗。」 → ルール4
+- 「通算成績は２１３勝１８３敗（０．５３８）」 → ルール4
+- 「高野はあと７勝で六段昇段となる。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「千葉の本年度の成績は５勝４敗（０．５５６）」 → ルール4
+- 「通算成績は１８３勝１４６敗０．５５６」 → ルール4
+- 「千葉はあと４勝で六段昇段となる。」 → ルール4
+
+手数4: 後手の作戦は４手目△３三角戦法。
+
+削除理由:
+- 「千葉の」 → ルール1
+
+手数7: ▲６八玉や▲２五歩も多く指されている。
+
+削除理由:
+- （なし）
+
+手数10: 後手は中飛車へ。△４二飛から立石流を目指す作戦も考えられた。
+
+削除理由:
+- 「千葉は」 → ルール1
+
+手数12:
+
+削除理由:
+- 「１１時の局面。」 → ルール3
+- 「消費時間は高野２５分、千葉２３分。」 → ルール3
+
+手数17:
+
+削除理由:
+- 「１１時４５分ごろの局面。」 → ルール3
+- 「消費時間は高野４３分、千葉４７分。」 → ルール3
+
+手数18: 美濃囲い。５筋を突かない中飛車は不思議な形だ。
+
+削除理由:
+- （なし）
+
+手数19:
+
+削除理由:
+- 「▲９六歩の局面で千葉が１９分使って昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は高野４３分、千葉１時間１８分。」 → ルール3
+- 「昼食の注文は千葉がさばみそ煮定食。」 → ルール7
+- 「高野は注文なし。」 → ルール7
+
+手数21: 銀冠を目指す。
+
+削除理由:
+- （なし）
+
+手数23: △５五歩に▲４七銀を用意。
+
+削除理由:
+- （なし）
+
+手数24: ならばと後手は歩を狙いに行った。
+
+削除理由:
+- 「千葉は」 → ルール1
+
+手数27:
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は高野１時間１３分、千葉１時間４９分。」 → ルール3
+
+手数31: 先手は銀冠へ。
+
+削除理由:
+- 「高野は」 → ルール1
+
+手数33: 角のラインに備えて一安心。終盤で玉頭方面を攻めることもできる。
+
+削除理由:
+- （なし）
+
+手数34: 後手は手持ちの歩を生かして２筋逆襲を狙っている。
+
+削除理由:
+- 「１５時２０分ごろの局面。」 → ルール3
+- 「消費時間は高野１時間２５分、千葉２時間３５分。」 → ルール3
+- 「△２一飛は４４分の長考で指されている。」 → ルール3
+- 「千葉は」 → ルール1
+
+手数35: 玉形で差をつける。
+
+削除理由:
+- （なし）
+
+手数36: △２四歩▲同歩△２六歩は▲３六歩△４四角▲４六角でうまくいかない。
+
+削除理由:
+- （なし）
+
+手数38:
+
+削除理由:
+- 「１６時４０分ごろの局面。」 → ルール3
+- 「消費時間は高野２時間４４分、千葉２時間４６分。」 → ルール3
+
+手数40: 相手の歩がいない筋が弱点になりやすい。
+
+削除理由:
+- （なし）
+
+手数41:
+
+削除理由:
+- 「１７時４０分ごろの局面。」 → ルール3
+- 「消費時間は高野３時間９分、千葉２時間５８分。」 → ルール3
+- 「千葉はここで５３分使って夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は高野３時間９分、千葉３時間５１分となった。」 → ルール3
+- 「夕飯を食べ終えた千葉は、対局室に戻って険しい表情で考えていた。」 → ルール7, 1
+
+手数57:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は高野３時間２２分、千葉４時間２３分。」 → ルール3
+
+手数63:
+
+削除理由:
+- 「２１時ごろの局面。」 → ルール3
+- 「消費時間は高野３時間５２分、千葉４時間４９分。」 → ルール3
+
+手数70:
+
+削除理由:
+- 「２２時ごろの局面。」 → ルール3
+- 「残り時間は高野１時間５８分、千葉２０分。」 → ルール3
+
+手数73: 先手が玉頭をいじったのは損ではないかと言われている。強力な厚みが消えてしまった。
+
+削除理由:
+- （なし）
+
+手数76: 先手は８筋と６筋に触らなければ、この反撃はなかった。
+
+削除理由:
+- 「２２時２５分ごろの局面。」 → ルール3
+- 「残り時間は高野１時間４１分、千葉１４分。」 → ルール3
+- 「高野は」 → ルール1
+
+手数84:
+
+削除理由:
+- 「２２時４５分の局面。」 → ルール3
+- 「残り時間は高野１時間２７分、千葉９分。」 → ルール3

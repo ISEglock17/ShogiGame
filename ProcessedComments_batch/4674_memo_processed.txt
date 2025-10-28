@@ -1,0 +1,132 @@
+**Processing and Refining Shogi Commentary**
+
+Okay, so the user wants me to clean up these Shogi commentary comments from game data. The goal is clear: they want to strip out all the fluff that's not relevant to analyzing the game's flow and just keep the insightful, natural-language explanations of the board state and the moves themselves. Essentially, I need to create a refined commentary stream.
+
+My process will be straightforward, adhering to the specified rules. First, I'll meticulously go through each comment, identifying and eliminating the unnecessary bits based on those rules. This could be anything from redundant information to tangential remarks. Then, I'll take what's left and work on crafting it into a coherent, flowing sentence.  It's about polishing the language, making sure it sounds natural and easy to follow. Finally, I'll package up these refined comments into the specified output format, which I'm assuming is designed to integrate nicely with their analysis tools.
+
+手数1:
+
+削除理由:
+- 「及川拓馬（おいかわ・たくま）四段」 → ルール1, 4
+- 「埼玉県北葛飾郡松伏町出身、１９８７年５月６日生まれの２３歳。」 → ルール4, 6
+- 「伊藤果七段門下。」 → ルール1, 4
+- 「棋士番号２６８。」 → ルール4
+- 「１９９８年９月で奨励会入会、２００７年１０月１日に四段昇段。」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｉｋａｗａ．ｈｔｍｌ」 → ルール8
+
+手数2:
+
+削除理由:
+- 「大石直嗣（おおいし・ただし）四段」 → ルール1, 4
+- 「大阪府八尾市出身、１９８９年９月１６日生まれの２０歳。」 → ルール4, 6
+- 「森信雄七段門下。」 → ルール1, 4
+- 「棋士番号２７５。」 → ルール4
+- 「１９９３年６級で奨励会入会、２００９年４月１日に四段昇段。」 → ルール4
+- 「ｈｔｔｐ：／／ｗｗｗ．ｓｈｏｇｉ．ｏｒ．ｊｐ／ｐｌａｙｅｒ／ｋｉｓｈｉ／ｏｏｉｓｈｉ．ｈｔｍｌ」 → ルール8
+
+手数3:
+
+削除理由:
+- 「及川の今年度成績は４勝６敗（勝率　０．４０００）、通算成績は４８勝３６敗（勝率　０．５７１４）。」 → ルール4
+- 「今年度の星並びは、●●●○●○○●●○（右が直近）。」 → ルール4
+
+手数4:
+
+削除理由:
+- 「大石の今年度成績は４勝８敗（勝率　０．３３３３）、通算成績は２１勝２３敗（勝率　０．４７７３）。」 → ルール4
+- 「今年度の星並びは、●●●○●○○●○●●●（右が直近）。」 → ルール4
+
+手数8: 一手損角換わりの立ち上がり。
+
+削除理由:
+
+手数21: 相腰掛け銀に。
+
+削除理由:
+
+手数26: 早いタイミングの自陣角。ニラミで先手攻撃陣を牽制する作戦。
+
+削除理由:
+
+手数29:
+
+削除理由:
+- 「この局面で大石が１３分考えて昼食休憩に入った。」 → ルール3, 7
+- 「ここまでの消費時間は及川４８分、大石１時間６分。」 → ルール3
+- 「昼食の注文は両者なし。」 → ルール7
+
+手数34:
+
+削除理由:
+- 「１５時ころの局面。」 → ルール3
+- 「消費時間は及川１時間３４分、大石２時間８分。」 → ルール3
+- 「△４四歩２６分、▲７九玉３１分、△９四歩３４分と力のこもった長考が続いている。」 → ルール3
+
+手数37: 角筋を避けつつ、▲１八飛からの端攻めも視野に入れている。
+
+削除理由:
+
+手数38: 後手の攻撃形も整ってきた。
+
+削除理由:
+
+手数39: △８五桂の当たりをあらかじめ避けたものか。渋い。
+
+削除理由:
+- 「１７時ころの局面。」 → ルール3
+- 「消費時間は及川２時間１５分、大石２時間５２分。」 → ルール3
+
+手数40: 先手は仕掛けた。▲９五同歩として、後手は歩も持っていない。どう攻める？
+
+削除理由:
+- 「１時間６分の長考の末、」 → ルール3
+- 「及川は」 → ルール1
+
+手数43: ▲５五同銀△同角は▲７七銀△８五桂と好調な攻めが続く。△４六銀のすり込みを受けた。
+
+削除理由:
+
+手数44:
+
+削除理由:
+- 「ここで及川が２６分考えて、夕食休憩に入った。」 → ルール1, 3, 7
+- 「消費時間は及川２時間２４分、大石４時間３２分。」 → ルール3
+- 「夕食の注文はともになし。」 → ルール7
+
+手数45: 強い手。▲９三歩成を見せて「攻めてこい」と後手を催促した。
+
+削除理由:
+
+手数51:
+
+削除理由:
+- 「２０時ころの局面。」 → ルール3
+- 「消費時間は及川３時間５分、大石４時間１１分。」 → ルール3
+
+手数57: 馬の力で押さえ込みをはかる。
+
+削除理由:
+
+手数60:
+
+削除理由:
+- 「２０時４０分ころの局面。」 → ルール3
+- 「消費時間は及川３時間４２分、大石４時間４０分。」 → ルール3
+
+手数72: 端から食いついていく。
+
+削除理由:
+- 「２１時４０分ころの局面。」 → ルール3
+- 「消費時間は及川３時間５５分、大石５時間２０分、」 → ルール3
+
+手数85:
+
+削除理由:
+- 「２２時１０分ころの局面。」 → ルール3
+- 「消費時間は及川４時間９分、大石５時間２５分。」 → ルール3
+
+手数96: △５五金から△５六歩の突撃が狙い。先手がいいと見られている。
+
+削除理由:
+- 「２２時４０分ころの局面。」 → ルール3
+- 「消費時間は及川４時間１３分、大石５時間４０分。」 → ルール3

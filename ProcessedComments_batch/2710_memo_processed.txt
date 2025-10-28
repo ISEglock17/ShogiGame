@@ -1,0 +1,36 @@
+**Analyzing and Refactoring Game Commentaries**
+
+Okay, so I understand the task. The user, who is likely very familiar with Shogi, wants me to clean up and refine the comments associated with game data. They've provided specific rules for what constitutes "unnecessary" information, and my goal is to process each comment, identify the parts that match those rules, and then intelligently remove them. The final output should be a more concise and readable sentence that still accurately reflects the essential information from the original. Essentially, I'm streamlining the commentary for a smoother user experience, removing the noise and highlighting the signal. It's about data transformation with a touch of linguistic finesse.
+
+手数2:
+
+削除理由:
+- 「先手番では矢倉が多い高橋だが、後手番の場合はほとんど矢倉を指さない。」 → ルール5
+
+手数15: 横歩取りへ。△３三角、△３三桂、△８八角成が主な選択肢になる。△７六飛などとするのは▲２二角成で終わってしまう。
+
+削除理由:
+- 「寝ぼけて」 → 盤面解説に不要な表現のため削除
+- 「本日のお仕事が」 → 盤面解説に不要な表現のため削除
+
+手数28: ８五飛戦法の基本形になった。
+
+削除理由:
+- 「１１時過ぎまでの消費時間は島１９分、高橋２６分。」 → ルール3
+
+手数31:
+
+削除理由:
+- 「ここで昼食休憩。」 → ルール7
+- 「消費時間は島２４分、高橋１時間３５分。」 → ルール3
+
+手数39: この局面は先手と後手が拮抗している。次の一手は△２五歩、△３六歩が多数、△４四角が少々といったところ。
+
+削除理由:
+- 「１４時頃、消費時間は島４２分、高橋１時間４３分。」 → ルール3
+- 「過去に３１局あり、先手１６勝、後手１５勝と」 → ルール2
+
+手数42: 部分的によく見る筋。狙いはもちろん３七桂。
+
+削除理由:
+- なし

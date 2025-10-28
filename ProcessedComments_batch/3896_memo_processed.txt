@@ -1,0 +1,114 @@
+**Focusing the Lens: Cleaning Up Game Commentary for Deeper Analysis**
+
+Okay, so the user wants me to clean up some Japanese Shogi game commentary. The goal here is pretty clear: they want to strip away all the fluff – the introductions, the player biographies, the time updates, any extraneous meta-data – and leave only the pure, distilled essence of the game. I understand, I do this all the time. It's about getting to the meat of the analysis.
+
+My process will be straightforward. I'll need to define the "rules" of what constitutes noise, and then ruthlessly apply those rules to eliminate it. Once I've excised the unwanted elements, I can then reshape the remaining snippets into natural, flowing sentences. Finally, I'll need to output the cleaned-up commentary in the specific format the user requested. No problem. That should provide a much cleaner dataset for their deeper analysis.
+
+手数1:
+
+削除理由:
+- 「中村は高橋道雄九段門下。」 → ルール1, 4
+- 「埼玉県出身、２２歳。」 → ルール4
+- 「順位戦は参加５期目。」 → ルール4
+- 「過去は５勝５敗が３回、６勝４敗が１回と意外にふるわない。」 → ルール2, 4
+- 「前期新人王戦で決勝３番勝負まで勝ち上がったが村山慈明五段に敗れた。」 → ルール1, 2, 4
+- 「今期成績は２勝３敗。」 → ルール4
+- 「通算成績は９５勝６３敗、０．６０１３。」 → ルール4
+
+手数2:
+
+削除理由:
+- 「木下は松田茂役九段門下。」 → ルール1, 4
+- 「長野県出身、４０歳。」 → ルール4
+- 「順位戦参加２１期目。」 → ルール4
+- 「降級点をひとつ持っている。」 → ルール4
+- 「今期成績は２勝０敗。」 → ルール4
+- 「通算成績は２９１勝３３６敗、０．４６４１。」 → ルール4
+
+手数11: 相振り飛車となった。
+
+削除理由:
+
+手数18: 後手は穴熊の準備を進める。
+
+削除理由:
+- 「木下」 → ルール1
+
+手数19:
+
+削除理由:
+- 「木下は」 → ルール1
+- 「１時間１分考えて」 → ルール3
+- 「昼食休憩に入った。」 → ルール7
+- 「消費時間は中村４１分、木下１時間２０分。」 → ルール3
+- 「互いに昼食の注文はなし。」 → ルール7
+
+手数20: ６筋の逆襲を含みにしている。後手は△２四歩と指していないので、▲２三角の反撃がない。
+
+削除理由:
+- 「１時間１３分の長考。」 → ルール3
+
+手数24: 後手は穴熊を目指す。
+
+削除理由:
+- 「１４時ごろの局面。」 → ルール3
+- 「消費時間は中村５４分、木下１時間４４分。」 → ルール3
+- 「木下」 → ルール1
+
+手数31: 浮き飛車は相振り飛車の形。
+
+削除理由:
+
+手数34:
+
+削除理由:
+- 「１５時ごろの局面。」 → ルール3
+- 「消費時間は中村１時間３５分、木下２時間８分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「３０分の長考。」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１６時１０分ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間１３分、木下２時間３８分。」 → ルール3
+
+手数42:
+
+削除理由:
+- 「１７時ごろの局面。」 → ルール3
+- 「消費時間は中村亮２時間１６分、木下２時間５８分。」 → ルール3
+- 「中村亮は４０分以上の長考をしている。」 → ルール3
+
+手数43:
+
+削除理由:
+- 「中村亮は▲８四歩に４７分の長考。」 → ルール3
+- 「ここで木下が５７分考えて夕食休憩に入った。」 → ルール3, 7
+- 「消費時間は中村３時間３分、木下３時間５５分。」 → ルール3
+
+手数55: すべての駒がさばけた。
+
+削除理由:
+
+手数56: △７二金は▲７三歩から攻めが続きそうなので、臨機の受けだが。
+
+削除理由:
+
+手数57:
+
+削除理由:
+- 「２０時ごろの局面。」 → ルール3
+- 「消費時間は中村亮３時間４３分、木下４時間６分。」 → ルール3
+
+手数59: 後手の投了となった。先手は▲８一銀成△同玉▲７六桂や▲７三歩など攻め手に困らない。一方、先手玉は寄り付きがなく、後手は見込みなしと判断したようだ。
+
+削除理由:
+- 「ここで木下の投了となった。」 → ルール1
+- 「木下」 → ルール1
+- 「終局時刻は２０時１９分。」 → ルール3
+- 「消費時間は中村亮３時間４３分、木下４時間２７分。」 → ルール3
+- 「勝った中村亮は１勝０敗、敗れた木下は０勝１敗となった。」 → ルール4

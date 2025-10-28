@@ -1,0 +1,117 @@
+**Cleaning Up Those Game Comments**
+
+Okay, so I'm looking at this dataset of Shogi game comments and, as usual, I see a mountain of noise. The user wants me to clean this up, and I can definitely see why. It's filled with all this extraneous information - meta details, player introductions, timestamps... all cluttering up what's actually important: the analysis of the board position and the moves themselves.
+
+My goal here is clear: strip away everything that isn't directly related to the actual on-board strategy and present the remaining analysis in a clear, natural, and flowing way. I want to leave behind a concise and insightful commentary on the game's evolution, not a history lesson or a time log.  I need to distill these comments down to their essence. Now, I have to figure out the best method to get this done effectively. 
+
+手数5: 相矢倉模様の立ち上がり。
+
+削除理由:
+
+
+手数16: 定跡形からは外れる。
+
+削除理由:
+
+
+手数18:
+
+削除理由:
+- 「ここまでの消費時間は飯塚１５分、泉１０分」 → ルール3
+
+手数27:
+
+削除理由:
+- 「１１時半頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚１時間０分、泉１４分」 → ルール3
+
+手数29:
+
+削除理由:
+- 「ここで昼食休憩」 → ルール7
+- 「消費時間は飯塚１時間１４分、泉３９分」 → ルール3
+- 「昼食の注文は両者ともになし」 → ルール7
+
+手数32:
+
+削除理由:
+- 「１３時４５分頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚１時間２７分、泉４４分」 → ルール3
+
+手数38:
+
+削除理由:
+- 「１４時４５分頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚２時間１４分、泉５５分」 → ルール3
+
+手数44: 手に乗って行動。
+
+削除理由:
+
+
+手数47:
+
+削除理由:
+- 「１５時４５分頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚３時間０分、泉１時間３５分」 → ルール3
+
+手数52: 盤上のあちこちで戦いが起こるのが矢倉戦。
+
+削除理由:
+
+
+手数54:
+
+削除理由:
+- 「１６時４５分頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚３時間１８分、泉１時間５８分」 → ルール3
+
+手数58:
+
+削除理由:
+- 「１７時半頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚３時間４８分、泉２時間１９分」 → ルール3
+
+手数59: 一気に終盤戦に。
+
+削除理由:
+
+
+手数61:
+
+削除理由:
+- 「ここで夕食休憩」 → ルール7
+- 「消費時間は飯塚４時間６分、泉２時間３９分」 → ルール7
+- 「夕食の注文は、飯塚はきつねうどん。泉はなし。」 → ルール7
+
+手数64:
+
+削除理由:
+- 「１９時２０分頃の局面」 → ルール3
+- 「ここまでの消費時間は飯塚４時間９分、２時間４０分」 → ルール3
+
+手数71:
+
+削除理由:
+- 「ここまでの消費時間は飯塚４時間４４分、泉２時間４５分」 → ルール3
+
+手数95:
+
+削除理由:
+- 「２１時頃の局面」 → ルール3
+- 「残り時間は飯塚５７分、泉２時間４４分」 → ルール3
+
+手数98:
+
+削除理由:
+- 「２１時半頃の局面」 → ルール3
+- 「残り時間は飯塚５５分、泉２時間１４分」 → ルール3
+
+手数119: 後手は投了した。
+
+削除理由:
+- 「は１分考えて」 → ルール3
+- 「次の手を指さずに」 → 不要な情報
+- 「終了時刻は２２時９分」 → ルール3
+- 「消費時間は飯塚５時間２７分、泉３時間５９分」 → ルール3
+- 「勝った飯塚、敗れた泉は、ともに３勝４敗となった」 → ルール4

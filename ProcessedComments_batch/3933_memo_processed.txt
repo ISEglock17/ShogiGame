@@ -1,0 +1,82 @@
+**Focusing the Analysis: Streamlining Game Commentaries**
+
+Okay, so I'm presented with a pretty interesting task here. Someone wants me to go through these comments attached to Shogi game data and essentially *clean them up*. The goal is clear: I need to transform these comments into concise, helpful insights about the game, stripping away all the fluff.
+
+My mind immediately starts sorting the different types of information. It's like I have a mental checklist. I need to identify and remove all the unnecessary noise: the metadata, the player introductions (unless they're actually relevant to the move's reasoning), the time stamps... all the things that clutter the analysis. It's about getting down to the core of the game commentary.
+
+Once I've purged the comments of this extraneous material, the real work begins: the *re-writing*. I need to take the remaining fragments and weave them into a clear, natural explanation of the board position and the move in question. This means making sure each sentence flows logically and maintains the contextual meaning within the move's context. I can't leave out any important explanation, but I have to do it neatly.
+
+手数16:
+
+削除理由:
+- 「１０時４５分の局面。」 → ルール3
+- 「消費時間は田丸２３分、島本９分。」 → ルール3
+
+手数28:
+
+削除理由:
+- 「１１時３０分の局面。」 → ルール3
+- 「消費時間は田丸４８分、島本２０分。」 → ルール3
+
+手数30:
+
+削除理由:
+- 「ここで先手が２９分考えて昼食休憩に入った。」 → ルール3, 7
+- 「消費時間は先手１時間２４分、後手２８分。」 → ルール3
+
+手数36:
+
+削除理由:
+- 「１４時前の局面。」 → ルール3
+- 「消費時間は田丸１時間４９分、島本５０分。」 → ルール3
+
+手数46: 後手は▲３六歩と取ってもらいたい意味がある。▲３六歩には△同飛▲３七歩△５六銀と切り込む筋がある。
+
+削除理由:
+- 「島本は」 → ルール1
+
+手数52:
+
+削除理由:
+- 「１５時１５分ごろの局面。」 → ルール3
+- 「消費時間は田丸２時間１２分、島本１時間３４分。」 → ルール3
+
+手数55: ▲７四同銀は△８二玉▲５五角△７三歩で受けられるのを気にしたか。△７五歩なら▲９一角成△８二銀▲９二馬で▲７四香を狙う。
+
+削除理由:
+- 
+
+手数56: ▲同角なら後で△６六歩が生じるという意味。
+
+削除理由:
+- 
+
+手数59:
+
+削除理由:
+- 「１６時１５分ごろの局面。」 → ルール3
+- 「消費時間は田丸２時間４９分、島本１時間５２分。」 → ルール3
+
+手数62: △５七角成を含みに厳しく攻める。
+
+削除理由:
+- 
+
+手数66: ▲８三飛成には△５八銀から攻めて行ける。
+
+削除理由:
+- 
+
+手数67: ▲７二香成△同金▲８一龍△６二玉▲７四桂△６三玉▲６四馬の詰めろ。しかし、自玉は大丈夫か？
+
+削除理由:
+- 
+
+手数74: 後手は飛車を抜きにいく。▲６九玉は△５八と▲同玉△３八飛成。ここで先手の投了となった。以下▲同龍は△同金▲同玉のとき後手玉が詰まないので△３八飛成と金を取って後手勝ちだ。
+
+削除理由:
+- 「島本は」 → ルール1
+- 「田丸の投了」 → ルール1
+- 「終局時刻は１７時０分。」 → ルール3
+- 「消費時間は田丸３時間２１分、島本２時間１０分。」 → ルール3
+- 「勝った島本は４勝６敗、敗れた田丸は０勝１０敗となった。」 → ルール4
